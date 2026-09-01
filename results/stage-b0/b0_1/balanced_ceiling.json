@@ -1,0 +1,205 @@
+{
+  "strict_hop_match": {
+    "subset": "Strict-Hop-Match",
+    "n_min": 0,
+    "balanced_total_ceiling": 0,
+    "bottleneck_cells": [
+      {
+        "computed_hop": 1,
+        "canonical_relation": "ABOVE",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "BELOW",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "UPPER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "UPPER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LOWER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LOWER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "ABOVE",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "BELOW",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "UPPER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "UPPER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LOWER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LOWER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "ABOVE",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "BELOW",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "UPPER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "UPPER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LOWER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LOWER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "ABOVE",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "BELOW",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "UPPER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "UPPER_RIGHT",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LOWER_LEFT",
+        "count": 0
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LOWER_RIGHT",
+        "count": 0
+      }
+    ]
+  },
+  "all_parsed": {
+    "subset": "Primary-All",
+    "n_min": 78,
+    "balanced_total_ceiling": 3120,
+    "bottleneck_cells": [
+      {
+        "computed_hop": 5,
+        "canonical_relation": "RIGHT",
+        "count": 78
+      }
+    ]
+  },
+  "template_clean": {
+    "subset": "Primary-Template-Clean",
+    "n_min": 56,
+    "balanced_total_ceiling": 2240,
+    "bottleneck_cells": [
+      {
+        "computed_hop": 5,
+        "canonical_relation": "RIGHT",
+        "count": 56
+      }
+    ]
+  },
+  "target_absent_derived_template_clean": {
+    "subset": "Primary-Target-Absent+Template-Clean h=2..5",
+    "n_min": 22,
+    "balanced_total_ceiling": 704,
+    "bottleneck_cells": [
+      {
+        "computed_hop": 5,
+        "canonical_relation": "RIGHT",
+        "count": 22
+      }
+    ]
+  }
+}

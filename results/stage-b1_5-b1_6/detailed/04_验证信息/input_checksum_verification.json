@@ -1,0 +1,580 @@
+{
+  "stage": "B1.5-B1.6",
+  "checked_utc": "2026-08-25T05:24:21.976961+00:00",
+  "status": "PASS",
+  "checks": {
+    "all_stage_b1_checksum_manifest_entries_match": true,
+    "all_formal_manifest_hashes_recomputed_match": true,
+    "all_32_activation_shards_match": true,
+    "activation_row_ids_hash_match": true,
+    "activation_row_ids_exact_union_order": true,
+    "activation_row_ids_unique": true,
+    "primary_balanced_row_id_sets_exact": true,
+    "prompt_protocol_frozen": true,
+    "stage_b1_gate_pass": true,
+    "stage_b1_validation_pass": true
+  },
+  "failed_checks": [],
+  "details": {
+    "stage_b1_artifacts": [
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/model_audit.json",
+        "expected_sha256": "a52e06f84fd35d2083e08abc77bc0cb2f8cf988fa33f5a9de142d730a03ed85f",
+        "actual_sha256": "a52e06f84fd35d2083e08abc77bc0cb2f8cf988fa33f5a9de142d730a03ed85f",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/prompt_protocol.json",
+        "expected_sha256": "28153cfc46797c29d0b7ff2426e556733116c2805cb215f44ebfa27524926874",
+        "actual_sha256": "28153cfc46797c29d0b7ff2426e556733116c2805cb215f44ebfa27524926874",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/probe_protocol.json",
+        "expected_sha256": "6d9fbb0e36021c3d6ef701c12cb210407b74bbdd7b654ff2789e3d6688f99e9f",
+        "actual_sha256": "6d9fbb0e36021c3d6ef701c12cb210407b74bbdd7b654ff2789e3d6688f99e9f",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/split_checksum_verification.json",
+        "expected_sha256": "913466a33fb1fc84dfcddae78270804c36f02cb3a181e1d2b50100402074e969",
+        "actual_sha256": "913466a33fb1fc84dfcddae78270804c36f02cb3a181e1d2b50100402074e969",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/tokenization_audit.json",
+        "expected_sha256": "76696e88726e0e3a97ff50c1dff5c6fb243c2070223180f560f6242cbe3632f9",
+        "actual_sha256": "76696e88726e0e3a97ff50c1dff5c6fb243c2070223180f560f6242cbe3632f9",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/activation_sanity.json",
+        "expected_sha256": "9e7b1e860730d30e8fa99967d89e9d30a0f534f4090a8819358c9983acc8bbc0",
+        "actual_sha256": "9e7b1e860730d30e8fa99967d89e9d30a0f534f4090a8819358c9983acc8bbc0",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/activation_integrity.json",
+        "expected_sha256": "11a0993c5cf475ad2e9a26a116f461e8d59e5faee1b848bb8caeda6dc51015b4",
+        "actual_sha256": "11a0993c5cf475ad2e9a26a116f461e8d59e5faee1b848bb8caeda6dc51015b4",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/union_manifest.csv",
+        "expected_sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c",
+        "actual_sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/primary_probe.csv",
+        "expected_sha256": "dc10b3da832911bb929ed760a64cc95f24ae12b61698ce5f3bf805a5cb7ef05e",
+        "actual_sha256": "dc10b3da832911bb929ed760a64cc95f24ae12b61698ce5f3bf805a5cb7ef05e",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/balanced_probe.csv",
+        "expected_sha256": "1262dd340cc0be5f7191ea356952771be02600d6b21ec28ce00a57227789122a",
+        "actual_sha256": "1262dd340cc0be5f7191ea356952771be02600d6b21ec28ce00a57227789122a",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/target_absent_eval.csv",
+        "expected_sha256": "4de5dd8ce8c28a8e0ced3d7d793247721c1e584790340798d842ebe851f49f61",
+        "actual_sha256": "4de5dd8ce8c28a8e0ced3d7d793247721c1e584790340798d842ebe851f49f61",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/composition_heldout_probe.csv",
+        "expected_sha256": "2c77785b10ac96e0e4e841d01540e338b30afcd19938034ace4f9b94fb6f5f47",
+        "actual_sha256": "2c77785b10ac96e0e4e841d01540e338b30afcd19938034ace4f9b94fb6f5f47",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/template_test_probe.csv",
+        "expected_sha256": "daecc354a7d0de5d5f7e97f5ab2e0302ad3e4aa0df90a4240c890f4a35b64cf5",
+        "actual_sha256": "daecc354a7d0de5d5f7e97f5ab2e0302ad3e4aa0df90a4240c890f4a35b64cf5",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/random_label_control.csv",
+        "expected_sha256": "68a6276462adb7b563d665c671544b16f23766cc1a13d455c4933da4b527a1da",
+        "actual_sha256": "68a6276462adb7b563d665c671544b16f23766cc1a13d455c4933da4b527a1da",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/baselines.csv",
+        "expected_sha256": "d878ecf55ed975ad68d2e19d46aa17516d3711258571588f69349b04a107e9e8",
+        "actual_sha256": "d878ecf55ed975ad68d2e19d46aa17516d3711258571588f69349b04a107e9e8",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/layer_summary.csv",
+        "expected_sha256": "dd30ebc83d8a2df1f9f2f62521ae94b9e40084b6e8e173fe5efc731473b84469",
+        "actual_sha256": "dd30ebc83d8a2df1f9f2f62521ae94b9e40084b6e8e173fe5efc731473b84469",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/primary_peak_bootstrap.csv",
+        "expected_sha256": "c47d7b80ea0b679bf5db3745a50a870fe879bbc64ef8c0f25b5e883e0b62e6f1",
+        "actual_sha256": "c47d7b80ea0b679bf5db3745a50a870fe879bbc64ef8c0f25b5e883e0b62e6f1",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/c_selection_trace.csv",
+        "expected_sha256": "5f4efa22ba46425b675f3a06c3ed5759674b8f5fdf796f03d5c549f93ce8bada",
+        "actual_sha256": "5f4efa22ba46425b675f3a06c3ed5759674b8f5fdf796f03d5c549f93ce8bada",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/convergence_refit_sensitivity.csv",
+        "expected_sha256": "11a47dc62b43b31c9a519a6c4dabcb4e41370cfe6fa4eb880bf74e3eb779b06e",
+        "actual_sha256": "11a47dc62b43b31c9a519a6c4dabcb4e41370cfe6fa4eb880bf74e3eb779b06e",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/validation_pre_report.json",
+        "expected_sha256": "eb037bcd741dabe01e9c984bb8d10cdf0cc9f50778ae36de7f5863cf62761666",
+        "actual_sha256": "eb037bcd741dabe01e9c984bb8d10cdf0cc9f50778ae36de7f5863cf62761666",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure1_primary_macro_f1.png",
+        "expected_sha256": "e20d1dfee33ab23ea79b7c57a5f0565022c7e53bcbedff1fa02a0a61343930c3",
+        "actual_sha256": "e20d1dfee33ab23ea79b7c57a5f0565022c7e53bcbedff1fa02a0a61343930c3",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure2_balanced_macro_f1.png",
+        "expected_sha256": "fe99a85c064733813f1913274e099f149f5d13d4b416e93407cd839c4319c9cd",
+        "actual_sha256": "fe99a85c064733813f1913274e099f149f5d13d4b416e93407cd839c4319c9cd",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure3_target_absent.png",
+        "expected_sha256": "7cc8abeb5e379db1e6491132b75f349cc03c61e0bee193f8d11503bb7722ba12",
+        "actual_sha256": "7cc8abeb5e379db1e6491132b75f349cc03c61e0bee193f8d11503bb7722ba12",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure4_composition_heldout.png",
+        "expected_sha256": "d21adacd96a1a3f068cbc0e3cef83c2c8c75cdc73465ef21b7a333443bd232c2",
+        "actual_sha256": "d21adacd96a1a3f068cbc0e3cef83c2c8c75cdc73465ef21b7a333443bd232c2",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure5_template_test_only.png",
+        "expected_sha256": "ceac1c34139dbc79fa381291d9111a285603d0a13390125c504b7d81dc59d531",
+        "actual_sha256": "ceac1c34139dbc79fa381291d9111a285603d0a13390125c504b7d81dc59d531",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure6_primary_layer_hop_heatmap.png",
+        "expected_sha256": "f0680a72f33fe9a25b49e04dc107248d1e8ff316826d636b6a182da0a42bc1b3",
+        "actual_sha256": "f0680a72f33fe9a25b49e04dc107248d1e8ff316826d636b6a182da0a42bc1b3",
+        "match": true
+      },
+      {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/B1_LLAMA31_BASE_RELATION_PROBE_REPORT.md",
+        "expected_sha256": "e4847b9772a06e4ce836d9b5e03c52ecbb94bbc23271c9058942881d974bbfc3",
+        "actual_sha256": "e4847b9772a06e4ce836d9b5e03c52ecbb94bbc23271c9058942881d974bbfc3",
+        "match": true
+      }
+    ],
+    "formal_manifests": [
+      {
+        "dataset": "balanced",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/balanced_test.csv",
+        "expected_sha256": "d819e6831dd21be6389b584a14d4129d7a2889e1616c46921eb2e50ce5035f81",
+        "actual_sha256": "d819e6831dd21be6389b584a14d4129d7a2889e1616c46921eb2e50ce5035f81",
+        "match": true
+      },
+      {
+        "dataset": "balanced",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/balanced_train.csv",
+        "expected_sha256": "fbe9024e564130215112aaf91a50e8e967e92117af187e6c103f2963c1003152",
+        "actual_sha256": "fbe9024e564130215112aaf91a50e8e967e92117af187e6c103f2963c1003152",
+        "match": true
+      },
+      {
+        "dataset": "balanced",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/balanced_val.csv",
+        "expected_sha256": "5e1e84cd4ab642863f73dd67fa6481a74d2868eb619062fd12f73eae29a4b393",
+        "actual_sha256": "5e1e84cd4ab642863f73dd67fa6481a74d2868eb619062fd12f73eae29a4b393",
+        "match": true
+      },
+      {
+        "dataset": "composition",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/composition_heldout_test.csv",
+        "expected_sha256": "132db51c7579a61f6431a81ccd2911a3eb6225ff0efd3ab0ba2787c6e2c15ba8",
+        "actual_sha256": "132db51c7579a61f6431a81ccd2911a3eb6225ff0efd3ab0ba2787c6e2c15ba8",
+        "match": true
+      },
+      {
+        "dataset": "composition",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/composition_heldout_train.csv",
+        "expected_sha256": "e294d120dd6516087cdf7535573fe05dccc5beb92ef751a7a803c4ea3ca11fa6",
+        "actual_sha256": "e294d120dd6516087cdf7535573fe05dccc5beb92ef751a7a803c4ea3ca11fa6",
+        "match": true
+      },
+      {
+        "dataset": "composition",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/composition_heldout_val.csv",
+        "expected_sha256": "18be21cff83e9ffa202b3c1db8afc8ac4db275cea15f1a76458660bcf023bdb6",
+        "actual_sha256": "18be21cff83e9ffa202b3c1db8afc8ac4db275cea15f1a76458660bcf023bdb6",
+        "match": true
+      },
+      {
+        "dataset": "primary",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/primary_test.csv",
+        "expected_sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049",
+        "actual_sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049",
+        "match": true
+      },
+      {
+        "dataset": "primary",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/primary_train.csv",
+        "expected_sha256": "f4cb33f2d7cc270d5220031dba953f4aad7e08ed63029ebf3fd11b803a21dc4a",
+        "actual_sha256": "f4cb33f2d7cc270d5220031dba953f4aad7e08ed63029ebf3fd11b803a21dc4a",
+        "match": true
+      },
+      {
+        "dataset": "primary",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/primary_val.csv",
+        "expected_sha256": "9d98da85a9ad3384a4313e0e10c65db4495dbff2068ab20fac608303c1b159e0",
+        "actual_sha256": "9d98da85a9ad3384a4313e0e10c65db4495dbff2068ab20fac608303c1b159e0",
+        "match": true
+      },
+      {
+        "dataset": "target",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/target_absent_test.csv",
+        "expected_sha256": "047eda214e648cce4a1efbbf71242d4377a43417dd3a6adaa9a6956590f2c2c6",
+        "actual_sha256": "047eda214e648cce4a1efbbf71242d4377a43417dd3a6adaa9a6956590f2c2c6",
+        "match": true
+      },
+      {
+        "dataset": "target",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/target_absent_train.csv",
+        "expected_sha256": "8817b67ec290d92f44ac2b1fb9c5a22ef64a3efb64e2f549f3c350cb41cd0374",
+        "actual_sha256": "8817b67ec290d92f44ac2b1fb9c5a22ef64a3efb64e2f549f3c350cb41cd0374",
+        "match": true
+      },
+      {
+        "dataset": "target",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/target_absent_val.csv",
+        "expected_sha256": "b53c6185d49856ee70add823f2f8ab2f6463f64976427b4b51d264ccd8745b80",
+        "actual_sha256": "b53c6185d49856ee70add823f2f8ab2f6463f64976427b4b51d264ccd8745b80",
+        "match": true
+      },
+      {
+        "dataset": "template_test_only",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_distribution.csv",
+        "expected_sha256": "b99fe2aca9a3ba19b856bba5780481303dd6cce3258c575dfcedc5b4a01e06c4",
+        "actual_sha256": "b99fe2aca9a3ba19b856bba5780481303dd6cce3258c575dfcedc5b4a01e06c4",
+        "match": true
+      },
+      {
+        "dataset": "template_test_only",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_test.csv",
+        "expected_sha256": "c934b5db6e78181d988e632e632c65cf7f4d756c6d52382c5b9ca72c7566afd1",
+        "actual_sha256": "c934b5db6e78181d988e632e632c65cf7f4d756c6d52382c5b9ca72c7566afd1",
+        "match": true
+      },
+      {
+        "dataset": "template_test_only",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_train.csv",
+        "expected_sha256": "a8219ffc95a5fce7e7242b898807335f52ae8f12a4d30eed63cacbb3dba1fc55",
+        "actual_sha256": "a8219ffc95a5fce7e7242b898807335f52ae8f12a4d30eed63cacbb3dba1fc55",
+        "match": true
+      },
+      {
+        "dataset": "template_test_only",
+        "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_val.csv",
+        "expected_sha256": "c0e564d56ea58400e983f7573692fb9d9ecd8ad185a3f28224f469a6c210eb96",
+        "actual_sha256": "c0e564d56ea58400e983f7573692fb9d9ecd8ad185a3f28224f469a6c210eb96",
+        "match": true
+      }
+    ],
+    "activation_shards": [
+      {
+        "layer": 0,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_00.npy",
+        "expected_sha256": "21661c593d2f2f19daeecf0c90b9a01eaf605691db99b485a6741b9965b8782a",
+        "actual_sha256": "21661c593d2f2f19daeecf0c90b9a01eaf605691db99b485a6741b9965b8782a",
+        "match": true
+      },
+      {
+        "layer": 1,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_01.npy",
+        "expected_sha256": "59dbbe916b6e343b7f46c4faf4bba17a3938cc6505b9c0025e4da75529a63d35",
+        "actual_sha256": "59dbbe916b6e343b7f46c4faf4bba17a3938cc6505b9c0025e4da75529a63d35",
+        "match": true
+      },
+      {
+        "layer": 2,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_02.npy",
+        "expected_sha256": "1d85501da76f852b576ffbc7f86ab82a13c424ec22b09135b1ee3494b646fa22",
+        "actual_sha256": "1d85501da76f852b576ffbc7f86ab82a13c424ec22b09135b1ee3494b646fa22",
+        "match": true
+      },
+      {
+        "layer": 3,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_03.npy",
+        "expected_sha256": "0dc2e06d9a34dab7809e770ef52f2189af41fc7b7ae32b42f28a1c887d0228dc",
+        "actual_sha256": "0dc2e06d9a34dab7809e770ef52f2189af41fc7b7ae32b42f28a1c887d0228dc",
+        "match": true
+      },
+      {
+        "layer": 4,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_04.npy",
+        "expected_sha256": "6f3c2f662524095b88e11aa395adcb750514d011585ca06120de9b35de3dbfbe",
+        "actual_sha256": "6f3c2f662524095b88e11aa395adcb750514d011585ca06120de9b35de3dbfbe",
+        "match": true
+      },
+      {
+        "layer": 5,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_05.npy",
+        "expected_sha256": "f123ed737b2c34bb2b161a594864b041e12b6306abe1355d229cc420be743088",
+        "actual_sha256": "f123ed737b2c34bb2b161a594864b041e12b6306abe1355d229cc420be743088",
+        "match": true
+      },
+      {
+        "layer": 6,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_06.npy",
+        "expected_sha256": "ecee12cacbf23a8070676a4045e0cb35753a96660fe111e4a7430861b6c82b16",
+        "actual_sha256": "ecee12cacbf23a8070676a4045e0cb35753a96660fe111e4a7430861b6c82b16",
+        "match": true
+      },
+      {
+        "layer": 7,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_07.npy",
+        "expected_sha256": "d2d97ff2af876861da52a0fdc6bf3b52785a180582b63f85ba16d3b59aadb2d1",
+        "actual_sha256": "d2d97ff2af876861da52a0fdc6bf3b52785a180582b63f85ba16d3b59aadb2d1",
+        "match": true
+      },
+      {
+        "layer": 8,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_08.npy",
+        "expected_sha256": "cea7f0432878134add417c6f0cede0d84e26f377e6b287e9cbdd0e52edf3fb60",
+        "actual_sha256": "cea7f0432878134add417c6f0cede0d84e26f377e6b287e9cbdd0e52edf3fb60",
+        "match": true
+      },
+      {
+        "layer": 9,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_09.npy",
+        "expected_sha256": "7ef17a2e54b361f9e0bd24882f4f79b3bc50fb21827c8a05e967bb1bcec6f57a",
+        "actual_sha256": "7ef17a2e54b361f9e0bd24882f4f79b3bc50fb21827c8a05e967bb1bcec6f57a",
+        "match": true
+      },
+      {
+        "layer": 10,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_10.npy",
+        "expected_sha256": "408ea0ed49087edf55e4901181ef0a12963d859632d229849ed8e363e4062424",
+        "actual_sha256": "408ea0ed49087edf55e4901181ef0a12963d859632d229849ed8e363e4062424",
+        "match": true
+      },
+      {
+        "layer": 11,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_11.npy",
+        "expected_sha256": "8718e5a39511f2d68f769dcc9d1b37b73e216887dc11ceff53177dd859e6ba19",
+        "actual_sha256": "8718e5a39511f2d68f769dcc9d1b37b73e216887dc11ceff53177dd859e6ba19",
+        "match": true
+      },
+      {
+        "layer": 12,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_12.npy",
+        "expected_sha256": "e07bd06d7b59e5f1e4564db035c9915929fcd7d1d09cbc6dbe46abb63f7bc1fe",
+        "actual_sha256": "e07bd06d7b59e5f1e4564db035c9915929fcd7d1d09cbc6dbe46abb63f7bc1fe",
+        "match": true
+      },
+      {
+        "layer": 13,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_13.npy",
+        "expected_sha256": "6e6dc24aaaa25bd35a4ce278e0d2fb0720803df1cff2b36dc3ae546797d3aee0",
+        "actual_sha256": "6e6dc24aaaa25bd35a4ce278e0d2fb0720803df1cff2b36dc3ae546797d3aee0",
+        "match": true
+      },
+      {
+        "layer": 14,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_14.npy",
+        "expected_sha256": "fceb9c7f49b0f90e599d7c2897b0ffb5ef9795e6abeef8d42c08227d55d097da",
+        "actual_sha256": "fceb9c7f49b0f90e599d7c2897b0ffb5ef9795e6abeef8d42c08227d55d097da",
+        "match": true
+      },
+      {
+        "layer": 15,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_15.npy",
+        "expected_sha256": "bb30ddaa9e8da3f9f4e99fc06c391c13d2dde3544213a59e04223d592231b8c5",
+        "actual_sha256": "bb30ddaa9e8da3f9f4e99fc06c391c13d2dde3544213a59e04223d592231b8c5",
+        "match": true
+      },
+      {
+        "layer": 16,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_16.npy",
+        "expected_sha256": "534c1f6712d86d432ed26fd0db311522b523994cbf69a6d1e54520776e6a8c49",
+        "actual_sha256": "534c1f6712d86d432ed26fd0db311522b523994cbf69a6d1e54520776e6a8c49",
+        "match": true
+      },
+      {
+        "layer": 17,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_17.npy",
+        "expected_sha256": "ac0ad654f4597aba235667e4b7fb97526a38f71e9b3cb684c62006b8776cbd37",
+        "actual_sha256": "ac0ad654f4597aba235667e4b7fb97526a38f71e9b3cb684c62006b8776cbd37",
+        "match": true
+      },
+      {
+        "layer": 18,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_18.npy",
+        "expected_sha256": "39a5a0c24df3b19f4735478debe410c7a6850b53238e82a39154322881577139",
+        "actual_sha256": "39a5a0c24df3b19f4735478debe410c7a6850b53238e82a39154322881577139",
+        "match": true
+      },
+      {
+        "layer": 19,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_19.npy",
+        "expected_sha256": "b1264f5507d82f686ddef2512117cdc267f285a96de3b4970496b864b38b23b7",
+        "actual_sha256": "b1264f5507d82f686ddef2512117cdc267f285a96de3b4970496b864b38b23b7",
+        "match": true
+      },
+      {
+        "layer": 20,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_20.npy",
+        "expected_sha256": "c789b73fe1c6587e1631bd84709f203309278ab7b8c6493d2ea5898c2eb66c3c",
+        "actual_sha256": "c789b73fe1c6587e1631bd84709f203309278ab7b8c6493d2ea5898c2eb66c3c",
+        "match": true
+      },
+      {
+        "layer": 21,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_21.npy",
+        "expected_sha256": "b764e8f7ac264da419cf29cf0b0e9d284f76a67a092be93c1c60887933068e52",
+        "actual_sha256": "b764e8f7ac264da419cf29cf0b0e9d284f76a67a092be93c1c60887933068e52",
+        "match": true
+      },
+      {
+        "layer": 22,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_22.npy",
+        "expected_sha256": "320476e7efdb82ec6786b75eb742b328570686757f09da0ac1406415f00216cc",
+        "actual_sha256": "320476e7efdb82ec6786b75eb742b328570686757f09da0ac1406415f00216cc",
+        "match": true
+      },
+      {
+        "layer": 23,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_23.npy",
+        "expected_sha256": "0417f68af23bdb9c251e88667877f772bbb8668353e02044e8e778305637c5e2",
+        "actual_sha256": "0417f68af23bdb9c251e88667877f772bbb8668353e02044e8e778305637c5e2",
+        "match": true
+      },
+      {
+        "layer": 24,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_24.npy",
+        "expected_sha256": "5b7afc4f7871fd72bf84f767e3a7c5390aade8cf31846911e84c298fabf11fed",
+        "actual_sha256": "5b7afc4f7871fd72bf84f767e3a7c5390aade8cf31846911e84c298fabf11fed",
+        "match": true
+      },
+      {
+        "layer": 25,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_25.npy",
+        "expected_sha256": "7132cf4fec1ccd3983f892803d68b132ea5a013d31f625ab40fb9127722a873b",
+        "actual_sha256": "7132cf4fec1ccd3983f892803d68b132ea5a013d31f625ab40fb9127722a873b",
+        "match": true
+      },
+      {
+        "layer": 26,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_26.npy",
+        "expected_sha256": "8d67ebb26cd57a7ed669d97d1cdf2d83db41dd6f32f89ccc4af88b05a1ac4a14",
+        "actual_sha256": "8d67ebb26cd57a7ed669d97d1cdf2d83db41dd6f32f89ccc4af88b05a1ac4a14",
+        "match": true
+      },
+      {
+        "layer": 27,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_27.npy",
+        "expected_sha256": "db6ad69ed861963b48bfef77c441ed8118a5c35d53d8d36a8bc58c2a52f9b949",
+        "actual_sha256": "db6ad69ed861963b48bfef77c441ed8118a5c35d53d8d36a8bc58c2a52f9b949",
+        "match": true
+      },
+      {
+        "layer": 28,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_28.npy",
+        "expected_sha256": "5d0f0b88dcb8a576e2300052c601eb26fc864f457a62a8a37c923855efa2baa9",
+        "actual_sha256": "5d0f0b88dcb8a576e2300052c601eb26fc864f457a62a8a37c923855efa2baa9",
+        "match": true
+      },
+      {
+        "layer": 29,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_29.npy",
+        "expected_sha256": "ca70c41637c7b961ac71864e4709384bdab06556b053b0c97763df917f8d5e93",
+        "actual_sha256": "ca70c41637c7b961ac71864e4709384bdab06556b053b0c97763df917f8d5e93",
+        "match": true
+      },
+      {
+        "layer": 30,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_30.npy",
+        "expected_sha256": "642a5af920027a63550f4a275d9fc24518e47e349ca17a80d4760cfac668b331",
+        "actual_sha256": "642a5af920027a63550f4a275d9fc24518e47e349ca17a80d4760cfac668b331",
+        "match": true
+      },
+      {
+        "layer": 31,
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/layer_31.npy",
+        "expected_sha256": "1a7f77bcaf58e328a9acef964e1418a2e0c8ec7b73534e231b85c9f36b4883de",
+        "actual_sha256": "1a7f77bcaf58e328a9acef964e1418a2e0c8ec7b73534e231b85c9f36b4883de",
+        "match": true
+      }
+    ],
+    "row_ids": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b1/llama31_base/stepgame/row_ids.npy",
+      "expected_sha256": "17d3e41775f3dd1aee137676236b6e442dee849d89f0b92f1f3fe023fd54fc20",
+      "actual_sha256": "17d3e41775f3dd1aee137676236b6e442dee849d89f0b92f1f3fe023fd54fc20",
+      "rows": 13758
+    },
+    "row_id_split_checks": [
+      {
+        "dataset": "primary",
+        "split": "train",
+        "manifest_rows": 9630,
+        "union_rows": 9630,
+        "exact_row_id_set": true,
+        "manifest_unique": true
+      },
+      {
+        "dataset": "primary",
+        "split": "val",
+        "manifest_rows": 2065,
+        "union_rows": 2065,
+        "exact_row_id_set": true,
+        "manifest_unique": true
+      },
+      {
+        "dataset": "primary",
+        "split": "test",
+        "manifest_rows": 2063,
+        "union_rows": 2063,
+        "exact_row_id_set": true,
+        "manifest_unique": true
+      },
+      {
+        "dataset": "balanced",
+        "split": "train",
+        "manifest_rows": 1360,
+        "union_rows": 1360,
+        "exact_row_id_set": true,
+        "manifest_unique": true
+      },
+      {
+        "dataset": "balanced",
+        "split": "val",
+        "manifest_rows": 440,
+        "union_rows": 440,
+        "exact_row_id_set": true,
+        "manifest_unique": true
+      },
+      {
+        "dataset": "balanced",
+        "split": "test",
+        "manifest_rows": 440,
+        "union_rows": 440,
+        "exact_row_id_set": true,
+        "manifest_unique": true
+      }
+    ]
+  }
+}

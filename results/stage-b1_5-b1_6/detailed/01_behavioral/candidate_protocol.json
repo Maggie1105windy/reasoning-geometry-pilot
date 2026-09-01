@@ -1,0 +1,153 @@
+{
+  "stage": "B1.5",
+  "status": "FROZEN_BEFORE_BEHAVIOR_RESULTS",
+  "model": "Meta-Llama-3.1-8B Base",
+  "model_revision": "24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea",
+  "tokenizer_revision": "c52792af35fe806a76530f3028f037d1af4e3490",
+  "prompt_protocol_path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/prompt_protocol.json",
+  "prompt_protocol_sha256": "28153cfc46797c29d0b7ff2426e556733116c2805cb215f44ebfa27524926874",
+  "prompt_template": "Story:\n{one original StepGame sentence per line}\n\nQuestion:\n{original StepGame question}",
+  "chat_template": false,
+  "few_shot": false,
+  "chain_of_thought": false,
+  "gold_answer_in_prompt": false,
+  "candidate_verbalizations": {
+    "ABOVE": " above",
+    "BELOW": " below",
+    "LEFT": " left",
+    "RIGHT": " right",
+    "UPPER_LEFT": " upper-left",
+    "UPPER_RIGHT": " upper-right",
+    "LOWER_LEFT": " lower-left",
+    "LOWER_RIGHT": " lower-right"
+  },
+  "leading_space_policy": "one literal leading ASCII space after the prompt-final question mark",
+  "primary_scoring": "sum conditional log-probability across all candidate tokens",
+  "sensitivity_scoring": "mean conditional log-probability per candidate token",
+  "candidate_tokenization": [
+    {
+      "relation": "ABOVE",
+      "candidate_string": " above",
+      "token_ids": [
+        3485
+      ],
+      "tokens": [
+        "Ġabove"
+      ],
+      "decoded": " above",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "BELOW",
+      "candidate_string": " below",
+      "token_ids": [
+        3770
+      ],
+      "tokens": [
+        "Ġbelow"
+      ],
+      "decoded": " below",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "LEFT",
+      "candidate_string": " left",
+      "token_ids": [
+        2163
+      ],
+      "tokens": [
+        "Ġleft"
+      ],
+      "decoded": " left",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "RIGHT",
+      "candidate_string": " right",
+      "token_ids": [
+        1314
+      ],
+      "tokens": [
+        "Ġright"
+      ],
+      "decoded": " right",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "UPPER_LEFT",
+      "candidate_string": " upper-left",
+      "token_ids": [
+        8582,
+        8109
+      ],
+      "tokens": [
+        "Ġupper",
+        "-left"
+      ],
+      "decoded": " upper-left",
+      "token_count": 2,
+      "contains_special_token": false
+    },
+    {
+      "relation": "UPPER_RIGHT",
+      "candidate_string": " upper-right",
+      "token_ids": [
+        8582,
+        6840
+      ],
+      "tokens": [
+        "Ġupper",
+        "-right"
+      ],
+      "decoded": " upper-right",
+      "token_count": 2,
+      "contains_special_token": false
+    },
+    {
+      "relation": "LOWER_LEFT",
+      "candidate_string": " lower-left",
+      "token_ids": [
+        4827,
+        8109
+      ],
+      "tokens": [
+        "Ġlower",
+        "-left"
+      ],
+      "decoded": " lower-left",
+      "token_count": 2,
+      "contains_special_token": false
+    },
+    {
+      "relation": "LOWER_RIGHT",
+      "candidate_string": " lower-right",
+      "token_ids": [
+        4827,
+        6840
+      ],
+      "tokens": [
+        "Ġlower",
+        "-right"
+      ],
+      "decoded": " lower-right",
+      "token_count": 2,
+      "contains_special_token": false
+    }
+  ],
+  "bos": {
+    "explicit": true,
+    "token_id": 128000
+  },
+  "padding": {
+    "side": "right",
+    "token": "EOS",
+    "token_id": 128001
+  },
+  "candidate_eos_in_score": false,
+  "candidate_pad_in_score": false,
+  "seed": 20260825
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_new_model_gates_pass": true,
+    "all_random_accuracy_near_chance": true,
+    "all_random_below_matched_normal": true,
+    "all_target_absent_128_rows": true,
+    "all_composition_128_rows": true,
+    "all_template_160_rows": true
+  },
+  "random_summary": [
+    {
+      "model": "base",
+      "mean_accuracy": 0.1284677570365659,
+      "mean_macro_f1": 0.12474756004848243,
+      "matched_normal_macro_f1": 0.17903994521236327,
+      "macro_f1_drop": 0.05429238516388084,
+      "chance": 0.125
+    },
+    {
+      "model": "sft",
+      "mean_accuracy": 0.12542210770346557,
+      "mean_macro_f1": 0.1208653911802536,
+      "matched_normal_macro_f1": 0.1897445849887204,
+      "macro_f1_drop": 0.0688791938084668,
+      "chance": 0.125
+    },
+    {
+      "model": "dpo",
+      "mean_accuracy": 0.12744208206799768,
+      "mean_macro_f1": 0.12179397669648902,
+      "matched_normal_macro_f1": 0.2006402099358909,
+      "macro_f1_drop": 0.07884623323940189,
+      "chance": 0.125
+    },
+    {
+      "model": "final",
+      "mean_accuracy": 0.12902449844709662,
+      "mean_macro_f1": 0.12530127077485986,
+      "matched_normal_macro_f1": 0.19727952566374485,
+      "macro_f1_drop": 0.07197825488888498,
+      "chance": 0.125
+    }
+  ]
+}

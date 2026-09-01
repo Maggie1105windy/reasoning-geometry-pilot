@@ -1,0 +1,13 @@
+{
+  "stage": "B1",
+  "status": "PASS",
+  "model_scope": "Meta-Llama-3.1-8B Base only",
+  "independent_checks_passed": 38,
+  "failed_checks": [],
+  "random_label_mean_accuracy": 0.1284677570365659,
+  "random_label_mean_macro_f1": 0.12474756004848243,
+  "matched_normal_mean_macro_f1": 0.17903994521236327,
+  "normal_warning_refits_all_converged": true,
+  "post_trained_checkpoint_run": false,
+  "report": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/B1_LLAMA31_BASE_RELATION_PROBE_REPORT.md"
+}

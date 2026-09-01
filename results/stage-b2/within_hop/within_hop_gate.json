@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "models": [
+    "base",
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "primary_rows_per_model": 160,
+  "balanced_rows_per_model": 160,
+  "summary_rows": 40,
+  "layerwise_delta_rows": 1280
+}

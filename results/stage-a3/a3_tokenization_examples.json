@@ -1,0 +1,1154 @@
+[
+  {
+    "sample_order": 0,
+    "row_id": 26573,
+    "entity": "Barjora",
+    "prompt": "What are the lat/lon coordinates of Barjora",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Barjora",
+    "canonical_tokenized_entity": "Barjora",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": true,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      4821,
+      73,
+      6347
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        39
+      ],
+      [
+        39,
+        40
+      ],
+      [
+        40,
+        43
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 11,
+    "entity_last_token_id": 6347,
+    "entity_last_token": "ora",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠBar",
+      "j",
+      "ora"
+    ]
+  },
+  {
+    "sample_order": 1,
+    "row_id": 9184,
+    "entity": "Georgia's Heard County",
+    "prompt": "What are the lat/lon coordinates of Georgia's Heard County",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Georgia's Heard County",
+    "canonical_tokenized_entity": "Georgia's Heard County",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": false,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      16272,
+      596,
+      95208,
+      6406
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        35
+      ],
+      [
+        43,
+        43
+      ],
+      [
+        45,
+        45
+      ],
+      [
+        51,
+        51
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 12,
+    "entity_last_token_id": 6406,
+    "entity_last_token": "ĠCounty",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠGeorgia",
+      "'s",
+      "ĠHeard",
+      "ĠCounty"
+    ]
+  },
+  {
+    "sample_order": 2,
+    "row_id": 30195,
+    "entity": "Sangaste",
+    "prompt": "What are the lat/lon coordinates of Sangaste",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Sangaste",
+    "canonical_tokenized_entity": "Sangaste",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": true,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      52022,
+      5642
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        40
+      ],
+      [
+        40,
+        44
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 10,
+    "entity_last_token_id": 5642,
+    "entity_last_token": "aste",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠSang",
+      "aste"
+    ]
+  },
+  {
+    "sample_order": 3,
+    "row_id": 536,
+    "entity": "Brisbane's Inner City Bypass",
+    "prompt": "What are the lat/lon coordinates of Brisbane's Inner City Bypass",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Brisbane's Inner City Bypass",
+    "canonical_tokenized_entity": "Brisbane's Inner City Bypass",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": false,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      47335,
+      596,
+      37456,
+      4409,
+      426,
+      51011
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        35
+      ],
+      [
+        44,
+        44
+      ],
+      [
+        46,
+        46
+      ],
+      [
+        52,
+        52
+      ],
+      [
+        57,
+        59
+      ],
+      [
+        59,
+        64
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 14,
+    "entity_last_token_id": 51011,
+    "entity_last_token": "ypass",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠBrisbane",
+      "'s",
+      "ĠInner",
+      "ĠCity",
+      "ĠB",
+      "ypass"
+    ]
+  },
+  {
+    "sample_order": 4,
+    "row_id": 4489,
+    "entity": "Tenth Presbyterian Church",
+    "prompt": "What are the lat/lon coordinates of Tenth Presbyterian Church",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Tenth Presbyterian Church",
+    "canonical_tokenized_entity": "Tenth Presbyterian Church",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": true,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      350,
+      21341,
+      86464,
+      9441
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        37
+      ],
+      [
+        37,
+        41
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        54,
+        54
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 12,
+    "entity_last_token_id": 9441,
+    "entity_last_token": "ĠChurch",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠT",
+      "enth",
+      "ĠPresbyterian",
+      "ĠChurch"
+    ]
+  },
+  {
+    "sample_order": 5,
+    "row_id": 5512,
+    "entity": "Carlsberg Museum",
+    "prompt": "What are the lat/lon coordinates of Carlsberg Museum",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Carlsberg Museum",
+    "canonical_tokenized_entity": "Carlsberg Museum",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": true,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      3341,
+      4835,
+      7881,
+      16730
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        39
+      ],
+      [
+        39,
+        41
+      ],
+      [
+        41,
+        45
+      ],
+      [
+        45,
+        45
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 12,
+    "entity_last_token_id": 16730,
+    "entity_last_token": "ĠMuseum",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠCar",
+      "ls",
+      "berg",
+      "ĠMuseum"
+    ]
+  },
+  {
+    "sample_order": 6,
+    "row_id": 38447,
+    "entity": "Lake Ram",
+    "prompt": "What are the lat/lon coordinates of Lake Ram",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Lake Ram",
+    "canonical_tokenized_entity": "Lake Ram",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": false,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      11940,
+      15504
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        35
+      ],
+      [
+        40,
+        40
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 10,
+    "entity_last_token_id": 15504,
+    "entity_last_token": "ĠRam",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠLake",
+      "ĠRam"
+    ]
+  },
+  {
+    "sample_order": 7,
+    "row_id": 39527,
+    "entity": "Salim Ali Lake",
+    "prompt": "What are the lat/lon coordinates of Salim Ali Lake",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Salim Ali Lake",
+    "canonical_tokenized_entity": "Salim Ali Lake",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": true,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      8375,
+      318,
+      14925,
+      11940
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        39
+      ],
+      [
+        39,
+        41
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        45,
+        45
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 12,
+    "entity_last_token_id": 11940,
+    "entity_last_token": "ĠLake",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠSal",
+      "im",
+      "ĠAli",
+      "ĠLake"
+    ]
+  },
+  {
+    "sample_order": 8,
+    "row_id": 30990,
+    "entity": "Rocha Department",
+    "prompt": "What are the lat/lon coordinates of Rocha Department",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Rocha Department",
+    "canonical_tokenized_entity": "Rocha Department",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": true,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      36969,
+      64,
+      6011
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        40
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        41,
+        41
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 11,
+    "entity_last_token_id": 6011,
+    "entity_last_token": "ĠDepartment",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠRoch",
+      "a",
+      "ĠDepartment"
+    ]
+  },
+  {
+    "sample_order": 9,
+    "row_id": 30203,
+    "entity": "Sandy Bay First Nation",
+    "prompt": "What are the lat/lon coordinates of Sandy Bay First Nation",
+    "alignment_method": "fixed-prefix token-ID longest common prefix",
+    "prefix_token_count": 9,
+    "prefix_prompt_common_token_count": 8,
+    "boundary_token_merged": true,
+    "decoded_entity_suffix": "Sandy Bay First Nation",
+    "canonical_tokenized_entity": "Sandy Bay First Nation",
+    "decoded_entity_matches": true,
+    "offset_mapping_usable": true,
+    "offset_mapping_agrees": false,
+    "input_ids": [
+      128000,
+      3923,
+      527,
+      279,
+      6987,
+      14,
+      12490,
+      14259,
+      315,
+      39485,
+      9332,
+      5629,
+      17671
+    ],
+    "offsets": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        35,
+        35
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        45,
+        45
+      ],
+      [
+        51,
+        51
+      ]
+    ],
+    "entity_mask": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "entity_first_token_index": 9,
+    "entity_last_token_index": 12,
+    "entity_last_token_id": 17671,
+    "entity_last_token": "ĠNation",
+    "tokens": [
+      "<|begin_of_text|>",
+      "What",
+      "Ġare",
+      "Ġthe",
+      "Ġlat",
+      "/",
+      "lon",
+      "Ġcoordinates",
+      "Ġof",
+      "ĠSandy",
+      "ĠBay",
+      "ĠFirst",
+      "ĠNation"
+    ]
+  }
+]

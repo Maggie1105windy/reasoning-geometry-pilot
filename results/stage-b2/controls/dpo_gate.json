@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "model": "dpo",
+  "composition_rows": 128,
+  "template_rows": 160,
+  "random_rows": 15,
+  "selected_warnings": 18,
+  "sensitivity_rows": 18,
+  "sensitivity_still_warning": 0,
+  "abs_delta_gt_0_02": 0,
+  "test_selection_leakage": false
+}

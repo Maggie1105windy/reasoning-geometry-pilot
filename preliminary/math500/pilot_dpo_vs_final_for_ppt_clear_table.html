@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Tülu-3-8B MATH-500 Pilot-20: DPO vs Final/RLVR</title>
+<style>
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+  margin: 36px;
+  color: #111827;
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+.subtitle {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 17px;
+}
+th, td {
+  border: 1.4px solid #111827;
+  padding: 13px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+th {
+  background: #e8f0ff;
+  font-weight: 700;
+}
+td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+tr.highlight td {
+  background: #fff4cc;
+  font-weight: 800;
+}
+.note {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<h1>Tülu-3-8B MATH-500 Pilot-20：DPO vs Final/RLVR</h1>
+<div class="subtitle">同一题集 · greedy decoding · k=1 · max_new_tokens=1024 · feasibility pilot</div>
+<table>
+<thead>
+<tr>
+<th>指标</th><th>DPO 阶段</th><th>Final/RLVR 阶段</th><th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>样本规模</td><td>20 题 / 20 生成</td><td>20 题 / 20 生成</td><td>同一批题目</td></tr>
+<tr><td>生成设置</td><td>greedy, k=1</td><td>greedy, k=1</td><td>设置一致</td></tr>
+<tr><td>自动严格判对</td><td>3 / 20</td><td>5 / 20</td><td>+2</td></tr>
+<tr><td>自动准确率</td><td>15%</td><td>25%</td><td>+10 个百分点</td></tr>
+<tr><td>人工复核后判对</td><td>4 / 20</td><td>7 / 20</td><td>+3</td></tr>
+<tr class="highlight"><td>人工复核后准确率 / pass@1</td><td>20%</td><td>35%</td><td>+15 个百分点</td></tr>
+<tr><td>人工复核数</td><td>20</td><td>20</td><td>复核流程一致</td></tr>
+<tr><td>未解决复核项</td><td>0</td><td>0</td><td>均已解决</td></tr>
+<tr><td>平均生成长度</td><td>670.2 tokens</td><td>819.6 tokens</td><td>+149.4 tokens</td></tr>
+<tr><td>中位生成长度</td><td>652.0 tokens</td><td>820.5 tokens</td><td>+168.5 tokens</td></tr>
+</tbody>
+</table>
+<div class="note">
+说明：该结果为答辩前 feasibility pilot，使用同一批 MATH-500 pilot-20 题目、同一 greedy decoding 设置、同一答案抽取与人工复核流程。该结果用于展示跨后训练阶段行为层复现 pipeline 已跑通，不作为最终 benchmark 结论。
+</div>
+</body>
+</html>

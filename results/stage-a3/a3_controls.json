@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "r2_overall": -0.0021222925908113144,
+    "r2_longitude": -0.0040426576113412604,
+    "r2_latitude": -0.00020192757027959196
+  },
+  "random_label": {
+    "layer": 15,
+    "seed": 42,
+    "alpha": 4096.0,
+    "shuffle_scope": "training labels only",
+    "test_labels_unchanged": true,
+    "r2_overall": -0.0023866960305241602,
+    "r2_longitude": -0.005493266990107548,
+    "r2_latitude": 0.0007198749290626694,
+    "normal_r2_overall": 0.3636306675128678,
+    "drop_vs_normal": 0.366017363543392,
+    "runtime_seconds": 0.44540834054350853
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_01_behavior_accuracy_by_hop.png",
+    "source": "behavior/all_models.csv",
+    "claim": "Checkpoint-wise Primary behavioral accuracy with paired rows and independent CIs."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_02_behavior_delta_by_hop.png",
+    "source": "behavior/stagewise_delta.csv",
+    "claim": "Paired story-group bootstrap deltas; intervals crossing zero are not treated as improvements."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_03_within_hop_heatmaps.png",
+    "source": "within_hop/*_primary.csv",
+    "claim": "All 32×5 cells are shown on a common scale; no peak-only selection."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_04_derived_late_layer_mean.png",
+    "source": "within_hop/summaries.csv",
+    "claim": "Pre-registered L16–31 mean by derived hop and checkpoint."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_05_stagewise_delta_layer_profiles.png",
+    "source": "within_hop/layerwise_delta.csv",
+    "claim": "Full derived-hop delta profiles, including consecutive-stage and Final−Base contrasts."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_06_h1_to_derived_transfer.png",
+    "source": "cross_hop/{model}.csv",
+    "claim": "All 32-layer h1→h2–h5 transfer curves for each checkpoint."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_07_transfer_gap_late_mean.png",
+    "source": "cross_hop/transfer_gap.csv",
+    "claim": "Pre-registered absolute transfer gap averaged over L16–31."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_08_behavior_vs_decodability.png",
+    "source": "behavior/all_models.csv; within_hop/summaries.csv",
+    "claim": "Separate aligned panels avoid implying comparable scales or causality."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_09_template_test_only.png",
+    "source": "controls/template/{model}.csv",
+    "claim": "Reserved Mid-level template families unseen during probe train/validation; h1 and derived trends separated."
+  },
+  {
+    "figure": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b2/figures/figure_10_composition_heldout.png",
+    "source": "controls/composition/{model}.csv",
+    "claim": "Generalization to frozen unseen unordered composition signatures across all layers."
+  }
+]

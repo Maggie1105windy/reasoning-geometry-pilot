@@ -1,0 +1,57 @@
+{
+  "status": "FROZEN_BEFORE_PROBE_RESULTS",
+  "classifier": "sklearn LogisticRegression multinomial loss, solver=lbfgs",
+  "feature_scaling": "per experiment/layer StandardScaler fit on train only",
+  "C_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "C_selection": "maximum validation Macro-F1; exact ties choose smaller C; test never used",
+  "primary_class_weight": "balanced",
+  "balanced_class_weight": null,
+  "composition_class_weight": "balanced",
+  "template_class_weight": "balanced",
+  "metrics": [
+    "macro_f1",
+    "accuracy"
+  ],
+  "random_label": {
+    "scope": "Primary train labels only",
+    "validation_and_test_labels": "real and unchanged",
+    "layers": [
+      0,
+      7,
+      15,
+      23,
+      31
+    ],
+    "hops": [
+      1,
+      3,
+      5
+    ],
+    "seed": 20260824
+  },
+  "layer_summary": {
+    "control": "per-hop Primary test majority-class Macro-F1",
+    "normalized_gain": "(F_layer - F_control) / (F_peak - F_control)",
+    "L50": "first layer with normalized_gain >= 0.50",
+    "L90": "first layer with normalized_gain >= 0.90 and that layer plus next two available layers all >= 0.85; through layer 31 when fewer than two remain",
+    "rules_frozen_before_results": true
+  },
+  "bootstrap": {
+    "unit": "story_group_id",
+    "resamples": 1000,
+    "confidence": 0.95,
+    "scope": "Primary peak layer for each hop",
+    "seed": 20260824
+  },
+  "interpretation_boundary": "linear decodability only; no causal, grounding-layer, symbolic-reasoning, or step-localization claim"
+}

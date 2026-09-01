@@ -1,0 +1,11 @@
+sample_index,row_id,split,entity,prompt,entity_first_token_index,entity_last_token_index,entity_last_token_id,entity_last_token,entity_mask_true_count,row_alignment_ok
+2522,14857,train,Bacchus Marsh,What are the lat/lon coordinates of Bacchus Marsh,9,11,15463,ĠMarsh,3,True
+4194,1480,test,Preston Road tube station,What are the lat/lon coordinates of Preston Road tube station,9,12,4660,Ġstation,4,True
+218,7979,train,Champhai district,What are the lat/lon coordinates of Champhai district,9,13,3286,Ġdistrict,5,True
+2882,22359,train,Switzerland's Trient,What are the lat/lon coordinates of Switzerland's Trient,9,12,5692,rient,4,True
+3256,10462,train,Kuala Penyu,What are the lat/lon coordinates of Kuala Penyu,9,13,30838,yu,5,True
+2321,34601,train,Peover Superior,What are the lat/lon coordinates of Peover Superior,9,11,21112,ĠSuperior,3,True
+100,32040,train,New South Wales's Rydalmere,What are the lat/lon coordinates of New South Wales's Rydalmere,9,16,37166,mere,8,True
+1382,1910,train,Leicester Square tube station,What are the lat/lon coordinates of Leicester Square tube station,9,12,4660,Ġstation,4,True
+2003,20481,train,Monkey Bay,What are the lat/lon coordinates of Monkey Bay,9,11,6912,ĠBay,3,True
+2935,28728,train,Borg El Arab,What are the lat/lon coordinates of Borg El Arab,9,11,8365,ĠArab,3,True

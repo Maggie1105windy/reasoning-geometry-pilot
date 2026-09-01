@@ -1,0 +1,500 @@
+{
+  "dataset": "StepGame",
+  "source": "Official StepGame GitHub repository; 2024-02 regenerated dataset",
+  "repository_url": "https://github.com/ShiZhengyan/StepGame.git",
+  "git_commit": "5e6aff1563a6d7f46ee1f1aeff98b94e68c29005",
+  "git_clean_at_audit": true,
+  "download_date": "2026-08-23T13:20:45.732905+00:00",
+  "dataset_variant": "CompleteVersion",
+  "clean_or_noise": "clean (Primary); noise inventoried but not used for Primary metadata",
+  "official_readme_latest_dataset_note": "2024-03 README recommends Hugging Face; HF exposes TrainVersion-sized consolidated splits, while repository also carries CompleteVersion.",
+  "actual_complete_version_counts": {
+    "clean": {
+      "test": 100000,
+      "total": 210000,
+      "train": 100000,
+      "valid": 10000
+    },
+    "noise": {
+      "test": 100000,
+      "total": 210000,
+      "train": 100000,
+      "valid": 10000
+    }
+  },
+  "train_version_json_inventory": [
+    {
+      "path": "Dataset/TrainVersion/qa10_test.json",
+      "n_records": 10000,
+      "size_bytes": 9329058,
+      "sha256": "04ce84720b536b534b00505f9f793aa4be18508cca76ba4fda788736129a5c8a"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa1_test.json",
+      "n_records": 10000,
+      "size_bytes": 2493834,
+      "sha256": "9953229a4b50201b3421ed2decaa2e5e43659dbaf17afd30b9f6d8110c68d90c"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa1_valid.json",
+      "n_records": 1000,
+      "size_bytes": 154003,
+      "sha256": "c94cedd801351b7592b28f886f9734e66bb9ef81833724ee6759682213fbc662"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa2_test.json",
+      "n_records": 10000,
+      "size_bytes": 3187586,
+      "sha256": "40e93c82041399111e40f1be9b922f121a74466fe13034913549d82fa2549e36"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa2_valid.json",
+      "n_records": 1000,
+      "size_bytes": 201646,
+      "sha256": "27f2780360bbce7a60f650e6e81126f18443bbc6958ddbb5eb7f2a83863febd4"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa3_test.json",
+      "n_records": 10000,
+      "size_bytes": 3664415,
+      "sha256": "3d7d8fd9d4a5f0227f19304a2518d9e68931b03ea7f1a2af85dc1647c0255c55"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa3_valid.json",
+      "n_records": 1000,
+      "size_bytes": 247621,
+      "sha256": "8e1f695283d3880c710f5a17ccee21daec02430fd8b84a5bb2fbb4968e1106b1"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa4_test.json",
+      "n_records": 10000,
+      "size_bytes": 5165513,
+      "sha256": "a3c14eb1191c2830fe0d60481e52efb31ca6f2ced19ac0bfff197e43469f69c0"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa4_valid.json",
+      "n_records": 1000,
+      "size_bytes": 295529,
+      "sha256": "16753e0bcc99bd9be21d3d715537d42eca49ce00216457e1dd4f96def10d5074"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa5_test.json",
+      "n_records": 10000,
+      "size_bytes": 6242764,
+      "sha256": "c3abc6f8335829ef53cd53555704ee625fa3f027c8885569223ad7bfe8f8ef8f"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa5_valid.json",
+      "n_records": 1000,
+      "size_bytes": 340340,
+      "sha256": "5b200ef174a36c5567f59dcc7a68ddd9795e795d66155c7109ec2e9a70cb241f"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa6_test.json",
+      "n_records": 10000,
+      "size_bytes": 6784410,
+      "sha256": "e3003d7997156677e91364695f1aca956c666b818b9f19443b7e51d14433ad8d"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa7_test.json",
+      "n_records": 10000,
+      "size_bytes": 7303577,
+      "sha256": "a30a75efc63250efab476a96cccbe4744b9a77fce813d08c28bc9f80e03229f8"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa8_test.json",
+      "n_records": 10000,
+      "size_bytes": 8302663,
+      "sha256": "aa7a66a677a97cee6348fa634a1c77baf5b5740dc51c32da5c0c41f779793166"
+    },
+    {
+      "path": "Dataset/TrainVersion/qa9_test.json",
+      "n_records": 10000,
+      "size_bytes": 8776489,
+      "sha256": "3eb269930ba3007b4e5f7a51a627ee329b63f90ac6ebfb75f1b7970c65364226"
+    },
+    {
+      "path": "Dataset/TrainVersion/train.json",
+      "n_records": 50000,
+      "size_bytes": 12512972,
+      "sha256": "baaab6f2542aa564571419f08bedeb898df2ce562e529dedfc31274861ea94b8"
+    }
+  ],
+  "files": [
+    {
+      "path": "Dataset/CompleteVersion/clean/qa10_test.json",
+      "size_bytes": 5779849,
+      "sha256": "670e8e04ff6fd247b969f71ce9a6c059eebc7882ab889679b9c2b50715ef706d",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa10_train.json",
+      "size_bytes": 5776569,
+      "sha256": "02b1b06cae2f8a695cdfe87965b4340e530298dc414b4e51ea7debf213966ff2",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa10_valid.json",
+      "size_bytes": 578301,
+      "sha256": "7796903007a8e8f10bad07fa3ace4fbfaabfd8fe62ab6018606ed6d9fdff8e3d",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa1_test.json",
+      "size_bytes": 1555202,
+      "sha256": "f7fec6152e5ba9b3b8bd8b1ee6715efa4960549624816c4c2bc03d82c874bbb0",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa1_train.json",
+      "size_bytes": 1554789,
+      "sha256": "63a0dd031fe86f8cb4ebf266235af594fb682b5860f5b31514ff7d4382309d67",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa1_valid.json",
+      "size_bytes": 154003,
+      "sha256": "c94cedd801351b7592b28f886f9734e66bb9ef81833724ee6759682213fbc662",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa2_test.json",
+      "size_bytes": 2019777,
+      "sha256": "ba087aec84fa56d9b6d3a6ceca47dc502de3cc784e425d5eec8196cd41fdb25a",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa2_train.json",
+      "size_bytes": 2022646,
+      "sha256": "af5027774534b6ed52f265affd23c444bcf7781b81c168afb926f480fba00feb",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa2_valid.json",
+      "size_bytes": 201646,
+      "sha256": "27f2780360bbce7a60f650e6e81126f18443bbc6958ddbb5eb7f2a83863febd4",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa3_test.json",
+      "size_bytes": 2494902,
+      "sha256": "3e2ce1e6b53cb7770b0151406a6234eebb832fb5e7fcf57c36d7f277705c818b",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa3_train.json",
+      "size_bytes": 2491271,
+      "sha256": "da947e2e3673e358aa91ed66886f583974976550e41fa38a37bda4f9995d831d",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa3_valid.json",
+      "size_bytes": 247621,
+      "sha256": "8e1f695283d3880c710f5a17ccee21daec02430fd8b84a5bb2fbb4968e1106b1",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa4_test.json",
+      "size_bytes": 2960861,
+      "sha256": "c7e7cce0c7cac2bfab5fbc963129881a1ccfcded7ce7e19459a6eaaa909288fd",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa4_train.json",
+      "size_bytes": 2965989,
+      "sha256": "263ca23c93d1ad0d81c4b5c7864df2585b46430cc6c056bb933e4b6361c0fe4c",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa4_valid.json",
+      "size_bytes": 295529,
+      "sha256": "16753e0bcc99bd9be21d3d715537d42eca49ce00216457e1dd4f96def10d5074",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa5_test.json",
+      "size_bytes": 3429272,
+      "sha256": "65244429a28cb0f5efe7623abcc8075a94782c6c67513981bc20ae4cc06b89d9",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa5_train.json",
+      "size_bytes": 3433837,
+      "sha256": "9b45d6d4d64ed2177d30382618b21d422d6cc731cdd3a4f7fd870f8080ef4693",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa5_valid.json",
+      "size_bytes": 340340,
+      "sha256": "5b200ef174a36c5567f59dcc7a68ddd9795e795d66155c7109ec2e9a70cb241f",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa6_test.json",
+      "size_bytes": 3897257,
+      "sha256": "077b55eeb1427384c27c38ad920d8a4e308b2b55680084fdba8a901d631baa13",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa6_train.json",
+      "size_bytes": 3901724,
+      "sha256": "77ec5ee0a9428bf7fdf46342eb36befd35e1234b4ee689ab37fc5443ac14a47d",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa6_valid.json",
+      "size_bytes": 387469,
+      "sha256": "d808b7b351735344b9ac83830eed668c177db9af3c2d473f06ead28167547906",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa7_test.json",
+      "size_bytes": 4364218,
+      "sha256": "a0bf7ec0c873ad1caca0e361c91869c3b5ac0d38c72dbc411dd2db0a83029c25",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa7_train.json",
+      "size_bytes": 4369585,
+      "sha256": "7d159373d0c22ea8d5e404eeeb2d73b3d0cb2a5ea14c0111eea35c86db468563",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa7_valid.json",
+      "size_bytes": 435576,
+      "sha256": "33612e6cfaa22b1a10970075ac35ade0dc31a96cb605d5f96158dd6f3d68760c",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa8_test.json",
+      "size_bytes": 4852002,
+      "sha256": "81452da27fe5eb74d7300dfe2010b8b273f42271ceccf66463fbab9121927763",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa8_train.json",
+      "size_bytes": 4836972,
+      "sha256": "b462941408c4c9f998eb6a0ee5256da7147ccf630f8ca7d13d1885e85cf035a6",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa8_valid.json",
+      "size_bytes": 483412,
+      "sha256": "c84412747f3fc92b9d556921f2aa408d4c284ad5e0578254ad651eac5cbc2807",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa9_test.json",
+      "size_bytes": 5312076,
+      "sha256": "77f61fcb867354bf8ef47ce333bdddbc008037225ccadc0d9aa871a2f44345e5",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa9_train.json",
+      "size_bytes": 5296725,
+      "sha256": "6cb55c3a07597c18982cc97db96cb316b2f92f96a724d7e7f1342bcce27f62a2",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/clean/qa9_valid.json",
+      "size_bytes": 527660,
+      "sha256": "5af178c3b96cfb0167496ae9149832c66d59e79bc077534cd26740f7de001df7",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa10_test.json",
+      "size_bytes": 9329058,
+      "sha256": "04ce84720b536b534b00505f9f793aa4be18508cca76ba4fda788736129a5c8a",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa10_train.json",
+      "size_bytes": 9309169,
+      "sha256": "32ed73051b97a67fb2a3a56b90468ac4822ef84df4a5d57ccce302cc4ff50754",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa10_valid.json",
+      "size_bytes": 932445,
+      "sha256": "e05be3985a57cacf0a4b0ce7b88e017055e1121e994a101fdfddbe8bcf005154",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa1_test.json",
+      "size_bytes": 2493834,
+      "sha256": "9953229a4b50201b3421ed2decaa2e5e43659dbaf17afd30b9f6d8110c68d90c",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa1_train.json",
+      "size_bytes": 2495986,
+      "sha256": "9bc81385ddd5ec347104db8b8e6f77be83c3776a8bf706e44532a2c599f5bf3b",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa1_valid.json",
+      "size_bytes": 248429,
+      "sha256": "7c38a1ed78ad1457ae4a87ce561ff23af9ae073199536a43c1286e7c794039da",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa2_test.json",
+      "size_bytes": 3187586,
+      "sha256": "40e93c82041399111e40f1be9b922f121a74466fe13034913549d82fa2549e36",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa2_train.json",
+      "size_bytes": 3192823,
+      "sha256": "0326fcd60b9bbc5222e4cd873569271a9daf30c3d1e4f28a65e032b1f031130f",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa2_valid.json",
+      "size_bytes": 319045,
+      "sha256": "1e22a13fe4216bfa4c62d4ff79e0413dd32e2990de46bf748d4dd789f7bcb38a",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa3_test.json",
+      "size_bytes": 3664415,
+      "sha256": "3d7d8fd9d4a5f0227f19304a2518d9e68931b03ea7f1a2af85dc1647c0255c55",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa3_train.json",
+      "size_bytes": 3664959,
+      "sha256": "aa1fa96d57a9dd2d8f668224690f578578608fa070dabd57e3ee12757c77ab85",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa3_valid.json",
+      "size_bytes": 365472,
+      "sha256": "b0b78301d16864208b270d75e673b3f781aab973758beacccb1f152e4d81829e",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa4_test.json",
+      "size_bytes": 5165513,
+      "sha256": "a3c14eb1191c2830fe0d60481e52efb31ca6f2ced19ac0bfff197e43469f69c0",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa4_train.json",
+      "size_bytes": 5171035,
+      "sha256": "47d3d6f174033af1bcecc5974e6e292d72c34e2becd56149f14d996c4e14bb17",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa4_valid.json",
+      "size_bytes": 521082,
+      "sha256": "6857d26197d1b83d8262d84137faa5b0576d5e48da1d7d8725b9ec7b4df070a8",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa5_test.json",
+      "size_bytes": 6242764,
+      "sha256": "c3abc6f8335829ef53cd53555704ee625fa3f027c8885569223ad7bfe8f8ef8f",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa5_train.json",
+      "size_bytes": 6243755,
+      "sha256": "fe46b0b5185ab9cf96a52d9a797e3f339ee35febd51fbe0a7c5b71f2461267d5",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa5_valid.json",
+      "size_bytes": 623797,
+      "sha256": "f439dd89206fb71ca272097dc550801ccfa240d1e75c3920add3633715f7e6e7",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa6_test.json",
+      "size_bytes": 6784410,
+      "sha256": "e3003d7997156677e91364695f1aca956c666b818b9f19443b7e51d14433ad8d",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa6_train.json",
+      "size_bytes": 6778948,
+      "sha256": "ab4fc2158296661f8c092018638969dc5691934473d1288dde0c20d0295f997a",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa6_valid.json",
+      "size_bytes": 677268,
+      "sha256": "361ccb934db3b9921d5d2150f72399f79f3db138ad89978407ee5d3cd2952479",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa7_test.json",
+      "size_bytes": 7303577,
+      "sha256": "a30a75efc63250efab476a96cccbe4744b9a77fce813d08c28bc9f80e03229f8",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa7_train.json",
+      "size_bytes": 7286300,
+      "sha256": "41e90f04b2a0c461db44226ce4faf12ceff9b7a7aec9991c84f8e7f6ef05535c",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa7_valid.json",
+      "size_bytes": 727617,
+      "sha256": "1808c87fe649daed2021b4e97006247bb0899cccb280debdf08a0669f123733b",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa8_test.json",
+      "size_bytes": 8302663,
+      "sha256": "aa7a66a677a97cee6348fa634a1c77baf5b5740dc51c32da5c0c41f779793166",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa8_train.json",
+      "size_bytes": 8280757,
+      "sha256": "f29e8a2c9b82998028bb30434f48b72dbb8876f94eeaab197a61106672d4ae4f",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa8_valid.json",
+      "size_bytes": 828985,
+      "sha256": "192fdf8c94c0e571b845f194069896f7ad46cb5c56a453e464701bc33c521947",
+      "n_records": 1000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa9_test.json",
+      "size_bytes": 8776489,
+      "sha256": "3eb269930ba3007b4e5f7a51a627ee329b63f90ac6ebfb75f1b7970c65364226",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa9_train.json",
+      "size_bytes": 8803408,
+      "sha256": "030f928dbc9c53dfa1b4893f491d38773a504cc7f6aef40a68f4c4bb8a0a587e",
+      "n_records": 10000
+    },
+    {
+      "path": "Dataset/CompleteVersion/noise/qa9_valid.json",
+      "size_bytes": 869231,
+      "sha256": "e6c42de9c1541fd36bc82bd4ed284bda32a02eaa2b25e82fbbcbb830074c9cca",
+      "n_records": 1000
+    },
+    {
+      "path": "Code/template.py",
+      "size_bytes": 15558,
+      "sha256": "c9ff684b7674a2c8c11af6d584619c24786d704d6eaa031d28d50e3983db0c02"
+    },
+    {
+      "path": "Code/parameterized_step_game_8relation.py",
+      "size_bytes": 13288,
+      "sha256": "5144f62caf6adcca80ae282c02693a49b842e6150487aed50c624f2239a244c5"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4454,
+      "sha256": "c4a70674e950b9ed153d90f6333362b5d203e99ac240fc9255969f807dec59ac"
+    }
+  ]
+}

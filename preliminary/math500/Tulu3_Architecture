@@ -1,0 +1,66 @@
+// Tulu 3 Post-training & Mechanistic Interpretability
+digraph Tulu3_Mechanistic_Architecture {
+	fontname=SimHei fontsize=12 rankdir=LR splines=ortho
+	subgraph cluster_pipeline {
+		node [fillcolor=white fontname=SimHei shape=box style="filled, rounded" width=2.5]
+		color="#e3f2fd" fontcolor="#0d47a1" fontname=SimHei fontsize=14 label="区域 1：全开源后训练管道与 Checkpoints" style="filled, rounded"
+		Base [label="Tulu 3 Base Model
+(基于 Llama 3.1 架构)
+完全开源基座"]
+		SFT [label="SFT Checkpoints
+(监督微调阶段)
+行为模仿"]
+		DPO [label="DPO Checkpoints
+(直接偏好优化阶段)
+偏好对齐"]
+		RLVR [label="RLVR Checkpoints
+(可验证奖励强化学习)
+策略探索"]
+		Base -> SFT [label=" 参数与日志" fontname=SimHei fontsize=10]
+		SFT -> DPO [label=" 参数与日志" fontname=SimHei fontsize=10]
+		DPO -> RLVR [label=" 参数与日志" fontname=SimHei fontsize=10]
+	}
+	subgraph cluster_applications {
+		color="#757575" fontname=SimHei fontsize=14 label="区域 2：机制可解释性 (Mechanistic Interpretability) 研究应用" style=dashed
+		subgraph cluster_rep {
+			node [fillcolor=white fontname=SimHei shape=box style=filled]
+			color="#f3e5f5" fontcolor="#4a148c" fontname=SimHei label="表征演化与几何
+(Representation Evolution)" style="filled, rounded"
+			Rep_Traj [label="表征轨迹追踪
+提取多阶段 Hidden States"]
+			Rep_Geom [label="概念几何结构变化
+残差流重构分析"]
+			Rep_Phase [label="相变点定位
+定位几何重构关键层"]
+			Rep_Traj -> Rep_Geom [style=invis]
+			Rep_Geom -> Rep_Phase [style=invis]
+		}
+		subgraph cluster_causal {
+			node [fillcolor="#c8e6c9" fontname=SimHei penwidth=2 shape=box style=filled]
+			color="#e8f5e9" fontcolor="#1b5e20" fontname=SimHei label="因果干预与验证
+(Causal Verification)" style="filled, rounded"
+			Cau_Patch [label="激活修补 (Activation Patching)
+将 RLVR 激活注入 SFT
+直接干预并修复推理错误"]
+			Cau_Graph [label="神经回路因果验证
+证明特定特征间的因果效应
+(拒绝单纯相关性分析)"]
+			Cau_Patch -> Cau_Graph [color="#2e7d32" penwidth=1.5]
+		}
+		subgraph cluster_reward {
+			node [fillcolor=white fontname=SimHei shape=box style=filled]
+			color="#fff8e1" fontcolor="#e65100" fontname=SimHei label="奖励机制与子空间
+(Reward & Subspace)" style="filled, rounded"
+			Rew_Trace [label="奖励信号逆向追踪
+分析形式化验证信号的反向传播"]
+			Rew_Tax [label="对齐税 (Alignment Tax) 分析
+定位灾难性遗忘的参数子空间"]
+			Rew_Trace -> Rew_Tax [color="#f57f17"]
+		}
+	}
+	Base -> Rep_Traj [arrowhead=vee color="#9e9e9e" style=dashed]
+	RLVR -> Rep_Phase [arrowhead=vee color="#9e9e9e" style=dashed]
+	SFT -> Cau_Patch [label="提供干预对照(错误推理)" color="#d32f2f" fontcolor="#d32f2f" fontname=SimHei style=dashed]
+	RLVR -> Cau_Patch [label="提供干预变量(正确激活)" color="#388e3c" fontcolor="#388e3c" fontname=SimHei style=dashed]
+	RLVR -> Rew_Trace [label="提取奖励日志" color="#f57f17" fontname=SimHei style=dashed]
+}

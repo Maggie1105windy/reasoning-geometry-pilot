@@ -1,0 +1,19 @@
+{
+  "audience": "technical",
+  "delivery": "Markdown requested explicitly by user",
+  "report_structure": [
+    "technical summary",
+    "key findings",
+    "scope and definitions",
+    "method evidence",
+    "limitations and validations",
+    "recommended next steps",
+    "further questions"
+  ],
+  "visual_omission_reason": "Exact audit crosstabs and cell ceilings are the decision surface; charts would not improve lookup or protocol freezing.",
+  "sources": [
+    "data_provenance.json",
+    "stepgame_metadata.parquet",
+    "template_inventory.csv"
+  ]
+}

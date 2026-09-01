@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "model": "DPO",
+  "model_key": "dpo",
+  "path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-DPO",
+  "resolved_path": "/home/ai/projects/reasoning-geometry-pilot/models/allenai/Llama-3___1-Tulu-3-8B-DPO",
+  "model_file_revision": "2301bf3b5e8733aad822a59b93381369da1692eb",
+  "tokenizer_file_revision": "2301bf3b5e8733aad822a59b93381369da1692eb",
+  "parameters": 8030326784,
+  "layers": 32,
+  "hidden_size": 4096,
+  "model_dtype": "torch.bfloat16",
+  "weight_source": "safetensors only",
+  "transformers_version": "4.44.2",
+  "torch_version": "2.4.0+cu124",
+  "python": "3.11.15",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "load_seconds": 159.90529510751367,
+  "started_utc": "2026-08-31T18:27:21.097174+00:00"
+}

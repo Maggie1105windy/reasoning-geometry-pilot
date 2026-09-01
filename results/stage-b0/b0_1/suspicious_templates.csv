@@ -1,0 +1,12 @@
+template_id,declared_relation,semantic_relation,semantic_status,reason,template_text_or_pattern,affected_clean_sentence_count,affected_clean_sample_count,affected_noise_sentence_count,affected_noise_sample_count
+RIGHT_04,RIGHT,LEFT,ERROR,"After placeholder substitution, arg2—not arg1—is stated right of arg1.","AA and BB are parallel, and AA on the right of BB.",6021,5925,13951,13456
+RIGHT_14,RIGHT,LEFT,ERROR,"After placeholder substitution, arg2 is stated right of arg1.","AA and BB are parallel, and AA is to the right of BB.",5901,5826,13832,13316
+RIGHT_15,RIGHT,LEFT,ERROR,"After placeholder substitution, arg2 is stated right of arg1.",AA and BB are horizontal and AA is to the right of BB.,6040,5946,13884,13362
+RIGHT_21,RIGHT,LEFT,ERROR,"After placeholder substitution, arg2 is stated right of arg1.",AA and BB are both there with the object AA is to the right of object BB.,5968,5887,13872,13376
+BELOW_12,BELOW,ABOVE,ERROR,"The sentence states arg2 at the bottom of arg1, so arg1 is above arg2.",AA is placed at the bottom of BB.,5028,4964,11972,11604
+LOWER_LEFT_13,LOWER_LEFT,UPPER_LEFT,ERROR,"10 o'clock denotes upper-left, not lower-left.",BB is there and AA is at the 10 position of a clock face.,10566,10291,16992,16285
+LOWER_LEFT_19,LOWER_LEFT,UPPER_RIGHT,ERROR,"The sentence places arg2 below-left of arg1, making arg1 upper-right of arg2.",BB is positioned below AA and to the left.,5372,5291,8645,8453
+UPPER_RIGHT_04,UPPER_RIGHT,,UNKNOWN,'front right' does not uniquely map to upper-right in the canonical 2D relation set.,BB is positioned in the front right corner of AA.,5408,5316,8699,8499
+LOWER_RIGHT_15,LOWER_RIGHT,UPPER_RIGHT,ERROR,"The sentence explicitly says right and above, not lower-right.",AA is to the right and above BB at an angle of about 45 degrees.,15613,14988,25167,23620
+UPPER_LEFT_11,UPPER_LEFT,,ERROR,The template relates arg1 to itself and omits arg2.,BB is diagonally left and above BB.,5153,5083,8218,8068
+UPPER_LEFT_15,UPPER_LEFT,UPPER_RIGHT,ERROR,"The sentence explicitly says right and above, not upper-left.",BB is to the right and above AA at an angle of about 45 degrees.,15613,14988,25167,23620

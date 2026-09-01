@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "models": [
+    "base",
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "summary_rows": 80,
+  "delta_rows": 160,
+  "primary_scoring": "sum",
+  "sensitivity_scoring": "mean",
+  "paired_bootstrap_complete": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "model": "sft",
+  "primary_rows": 160,
+  "balanced_rows": 160,
+  "selected_warnings": 8,
+  "sensitivity_rows": 8,
+  "sensitivity_still_warning": 0,
+  "abs_delta_gt_0_02": 0,
+  "test_selection_leakage": false
+}

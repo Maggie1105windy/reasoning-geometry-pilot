@@ -4,17 +4,23 @@
 
 ### A2 — Pythia-2.8B World spatial probing
 
+- 完整正式报告：[`docs/stage-a/A2_FULL_REPRODUCTION_REPORT.md`](docs/stage-a/A2_FULL_REPRODUCTION_REPORT.md)
+- 激活 sanity：[`docs/stage-a/a2_2_activation_sanity_report.md`](docs/stage-a/a2_2_activation_sanity_report.md)
+- Mini probe 报告：[`docs/stage-a/a2_3_mini_probe_report.md`](docs/stage-a/a2_3_mini_probe_report.md)
 - 配置与精确复现边界：[`docs/stage-a/a2_0_exact_config_audit.md`](docs/stage-a/a2_0_exact_config_audit.md)
 - Gate 1 模型和环境验证：[`docs/stage-a/a2_1_gate1_report.md`](docs/stage-a/a2_1_gate1_report.md)
 - 兼容性说明：[`docs/stage-a/a2_compatibility_notes.md`](docs/stage-a/a2_compatibility_notes.md)
 - 32 层总 R² 图：[`figures/stage-a/a2_4_full_layer_r2.png`](figures/stage-a/a2_4_full_layer_r2.png)
 - 经纬度分项图：[`figures/stage-a/a2_4_lat_lon_layer_r2.png`](figures/stage-a/a2_4_lat_lon_layer_r2.png)
+- 机器可读结果：[`results/stage-a2/`](results/stage-a2/)
 
 ### A3 — Llama-3.1-8B World migration
 
 - 正式报告：[`docs/stage-a/A3_LLAMA31_MIGRATION_REPORT.md`](docs/stage-a/A3_LLAMA31_MIGRATION_REPORT.md)
 - 模型审计：[`docs/stage-a/a3_llama31_model_audit.md`](docs/stage-a/a3_llama31_model_audit.md)
+- 激活 sanity：[`docs/stage-a/a3_activation_sanity_report.md`](docs/stage-a/a3_activation_sanity_report.md)
 - 代表层 R²：[`figures/stage-a/a3_llama31_layer_r2.png`](figures/stage-a/a3_llama31_layer_r2.png)
+- 机器可读结果：[`results/stage-a3/`](results/stage-a3/)
 
 ## Stage B
 
@@ -29,6 +35,8 @@
 ### B1 — Base relation probing
 
 - 正式英文技术报告：[`docs/stage-b/B1_LLAMA31_BASE_RELATION_PROBE_REPORT.md`](docs/stage-b/B1_LLAMA31_BASE_RELATION_PROBE_REPORT.md)
+- 独立验证：[`results/stage-b1/validation_pre_report.json`](results/stage-b1/validation_pre_report.json)
+- 完整聚合结果与逐层检查点表：[`results/stage-b1/`](results/stage-b1/)
 - 主要峰值：h1 0.3573@L17；h2 0.1670@L19；h3 0.1702@L31；h4 0.1563@L30；h5 0.1485@L1。
 - 结果图：[`figures/stage-b1/`](figures/stage-b1/)
 
@@ -39,7 +47,21 @@
 - 机器可读摘要：[`results/stage-b1_5-b1_6/`](results/stage-b1_5-b1_6/)
 - 结果图：[`figures/stage-b1_5-b1_6/`](figures/stage-b1_5-b1_6/)
 
+### B2 — Base/SFT/DPO/Final comparison
+
+- 正式中文报告：[`docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md`](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md)
+- 最终验证：[`results/stage-b2/B2_final_validation.json`](results/stage-b2/B2_final_validation.json)
+- 结果摘要：[`results/stage-b2/b2_summary.json`](results/stage-b2/b2_summary.json)
+- 模型谱系审计：[`docs/stage-b/model_lineage_audit.md`](docs/stage-b/model_lineage_audit.md)
+- 聚合结果：[`results/stage-b2/`](results/stage-b2/)
+- 10 张正式图：[`figures/stage-b2/`](figures/stage-b2/)
+- 逐图中文解释：[`docs/stage-b/B2_FIGURE_GUIDE_ZH.md`](docs/stage-b/B2_FIGURE_GUIDE_ZH.md)
+
+### Preliminary — MATH-500 pilot-20
+
+- 四阶段结果与人工复核材料：[`preliminary/math500/`](preliminary/math500/)
+- 人工复核准确率：Base 25%、SFT 20%、DPO 20%、Final/RLVR 35%。由于每阶段只有 20 题，不用于模型能力排名或正式 benchmark 推断。
+
 ## Interpretation boundary
 
 线性 probe 结果只说明信息可以从冻结隐藏状态中线性解码，不证明模型在生成答案时实际使用该信息。峰值层、L50 和 L90 也不能被解释为推理操作发生的时间或因果层。
-

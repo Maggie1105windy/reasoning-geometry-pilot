@@ -1,0 +1,11 @@
+{
+  "runtime_seconds": 427.32411758601665,
+  "peak_allocated_gib": 18.26834726333618,
+  "peak_reserved_gib": 23.283203125,
+  "status": "PASS",
+  "model": "dpo",
+  "rows": 2435,
+  "candidate_sequences": 19480,
+  "batch_size": 32,
+  "total_seconds": 579.7139465995133
+}

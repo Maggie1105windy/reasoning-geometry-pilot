@@ -1,0 +1,12 @@
+analysis,layer,coef_shape,intercept_shape,coef_l2_norm,coef_nan_count,coef_inf_count
+fixed_alpha,0,"[2, 4096]",[2],0.06729787588119507,0,0
+ridgecv_sensitivity,0,"[2, 4096]",[2],8.15852874829099,0,0
+fixed_alpha,7,"[2, 4096]",[2],0.43893805146217346,0,0
+ridgecv_sensitivity,7,"[2, 4096]",[2],5.247175751227173,0,0
+fixed_alpha,15,"[2, 4096]",[2],0.5350398421287537,0,0
+ridgecv_sensitivity,15,"[2, 4096]",[2],4.211187737465091,0,0
+fixed_alpha,23,"[2, 4096]",[2],0.530061662197113,0,0
+ridgecv_sensitivity,23,"[2, 4096]",[2],1.2147271748806063,0,0
+fixed_alpha,31,"[2, 4096]",[2],0.35911110043525696,0,0
+ridgecv_sensitivity,31,"[2, 4096]",[2],0.6583359163651553,0,0
+layer15_shuffled_train_labels,15,"[2, 4096]",[2],0.12290448695421219,0,0

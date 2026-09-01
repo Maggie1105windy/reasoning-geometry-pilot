@@ -1,0 +1,906 @@
+{
+  "stage": "B2 activation integrity dpo",
+  "status": "PASS",
+  "checks": {
+    "all_32_layers_exist": true,
+    "all_shapes_13758x4096": true,
+    "all_float16": true,
+    "nan_inf_zero": true,
+    "row_ids_exact_union": true,
+    "row_ids_exact_base": true,
+    "reforward_pass": true,
+    "layer31_indexing_pass": true
+  },
+  "activation_definition": "raw decoder block output before final model RMSNorm",
+  "batch_trials": [
+    {
+      "batch_size": 32,
+      "status": "PASS",
+      "seconds": 1.4856971129775047,
+      "peak_allocated_gib": 17.631301403045654,
+      "peak_reserved_gib": 18.25,
+      "max_sequence_length": 115
+    }
+  ],
+  "extraction": {
+    "rows": 13758,
+    "layers": 32,
+    "hidden_size": 4096,
+    "dtype": "float16",
+    "batch_size": 32,
+    "runtime_seconds": 344.29526441544294,
+    "peak_allocated_gib": 17.631301403045654,
+    "peak_reserved_gib": 21.41796875,
+    "per_layer": {
+      "0": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_00.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "1": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_01.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "2": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_02.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "3": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_03.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "4": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_04.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "5": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_05.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "6": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_06.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "7": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_07.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "8": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_08.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "9": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_09.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "10": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_10.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "11": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_11.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "12": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_12.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "13": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_13.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "14": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_14.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "15": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_15.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "16": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_16.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "17": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_17.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "18": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_18.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "19": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_19.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "20": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_20.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "21": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_21.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "22": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_22.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "23": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_23.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "24": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_24.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "25": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_25.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "26": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_26.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "27": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_27.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "28": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_28.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "29": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_29.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "30": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_30.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "31": {
+        "path": "/home/ai/projects/reasoning-geometry-pilot/activations/stage_b2/tulu_dpo/layer_31.npy",
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "nan_count": 0,
+        "inf_count": 0
+      }
+    },
+    "row_ids_sha256": "17d3e41775f3dd1aee137676236b6e442dee849d89f0b92f1f3fe023fd54fc20"
+  },
+  "reforward": {
+    "status": "PASS",
+    "checks": {
+      "comparisons_10x5": true,
+      "minimum_cosine_at_least_0_9999": true,
+      "all_errors_finite": true
+    },
+    "minimum_cosine": 1.0000007152557373,
+    "mean_mae": 0.0,
+    "maximum_absolute_error": 0.0,
+    "records": [
+      {
+        "row_id": 94160,
+        "union_index": 6698,
+        "layer": 0,
+        "batch_start": 6688,
+        "batch_end": 6720,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 94160,
+        "union_index": 6698,
+        "layer": 7,
+        "batch_start": 6688,
+        "batch_end": 6720,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 94160,
+        "union_index": 6698,
+        "layer": 15,
+        "batch_start": 6688,
+        "batch_end": 6720,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 94160,
+        "union_index": 6698,
+        "layer": 23,
+        "batch_start": 6688,
+        "batch_end": 6720,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 94160,
+        "union_index": 6698,
+        "layer": 31,
+        "batch_start": 6688,
+        "batch_end": 6720,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 93655,
+        "union_index": 6353,
+        "layer": 0,
+        "batch_start": 6336,
+        "batch_end": 6368,
+        "cosine_similarity": 1.000001311302185,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 93655,
+        "union_index": 6353,
+        "layer": 7,
+        "batch_start": 6336,
+        "batch_end": 6368,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 93655,
+        "union_index": 6353,
+        "layer": 15,
+        "batch_start": 6336,
+        "batch_end": 6368,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 93655,
+        "union_index": 6353,
+        "layer": 23,
+        "batch_start": 6336,
+        "batch_end": 6368,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 93655,
+        "union_index": 6353,
+        "layer": 31,
+        "batch_start": 6336,
+        "batch_end": 6368,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 103845,
+        "union_index": 12988,
+        "layer": 0,
+        "batch_start": 12960,
+        "batch_end": 12992,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 103845,
+        "union_index": 12988,
+        "layer": 7,
+        "batch_start": 12960,
+        "batch_end": 12992,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 103845,
+        "union_index": 12988,
+        "layer": 15,
+        "batch_start": 12960,
+        "batch_end": 12992,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 103845,
+        "union_index": 12988,
+        "layer": 23,
+        "batch_start": 12960,
+        "batch_end": 12992,
+        "cosine_similarity": 1.0000011920928955,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 103845,
+        "union_index": 12988,
+        "layer": 31,
+        "batch_start": 12960,
+        "batch_end": 12992,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 89671,
+        "union_index": 3753,
+        "layer": 0,
+        "batch_start": 3744,
+        "batch_end": 3776,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 89671,
+        "union_index": 3753,
+        "layer": 7,
+        "batch_start": 3744,
+        "batch_end": 3776,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 89671,
+        "union_index": 3753,
+        "layer": 15,
+        "batch_start": 3744,
+        "batch_end": 3776,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 89671,
+        "union_index": 3753,
+        "layer": 23,
+        "batch_start": 3744,
+        "batch_end": 3776,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 89671,
+        "union_index": 3753,
+        "layer": 31,
+        "batch_start": 3744,
+        "batch_end": 3776,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 101203,
+        "union_index": 11277,
+        "layer": 0,
+        "batch_start": 11264,
+        "batch_end": 11296,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 101203,
+        "union_index": 11277,
+        "layer": 7,
+        "batch_start": 11264,
+        "batch_end": 11296,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 101203,
+        "union_index": 11277,
+        "layer": 15,
+        "batch_start": 11264,
+        "batch_end": 11296,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 101203,
+        "union_index": 11277,
+        "layer": 23,
+        "batch_start": 11264,
+        "batch_end": 11296,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 101203,
+        "union_index": 11277,
+        "layer": 31,
+        "batch_start": 11264,
+        "batch_end": 11296,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 91735,
+        "union_index": 5079,
+        "layer": 0,
+        "batch_start": 5056,
+        "batch_end": 5088,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 91735,
+        "union_index": 5079,
+        "layer": 7,
+        "batch_start": 5056,
+        "batch_end": 5088,
+        "cosine_similarity": 1.0000011920928955,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 91735,
+        "union_index": 5079,
+        "layer": 15,
+        "batch_start": 5056,
+        "batch_end": 5088,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 91735,
+        "union_index": 5079,
+        "layer": 23,
+        "batch_start": 5056,
+        "batch_end": 5088,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 91735,
+        "union_index": 5079,
+        "layer": 31,
+        "batch_start": 5056,
+        "batch_end": 5088,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 87150,
+        "union_index": 2106,
+        "layer": 0,
+        "batch_start": 2080,
+        "batch_end": 2112,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 87150,
+        "union_index": 2106,
+        "layer": 7,
+        "batch_start": 2080,
+        "batch_end": 2112,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 87150,
+        "union_index": 2106,
+        "layer": 15,
+        "batch_start": 2080,
+        "batch_end": 2112,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 87150,
+        "union_index": 2106,
+        "layer": 23,
+        "batch_start": 2080,
+        "batch_end": 2112,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 87150,
+        "union_index": 2106,
+        "layer": 31,
+        "batch_start": 2080,
+        "batch_end": 2112,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 84864,
+        "union_index": 579,
+        "layer": 0,
+        "batch_start": 576,
+        "batch_end": 608,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 84864,
+        "union_index": 579,
+        "layer": 7,
+        "batch_start": 576,
+        "batch_end": 608,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 84864,
+        "union_index": 579,
+        "layer": 15,
+        "batch_start": 576,
+        "batch_end": 608,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 84864,
+        "union_index": 579,
+        "layer": 23,
+        "batch_start": 576,
+        "batch_end": 608,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 84864,
+        "union_index": 579,
+        "layer": 31,
+        "batch_start": 576,
+        "batch_end": 608,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 97555,
+        "union_index": 8912,
+        "layer": 0,
+        "batch_start": 8896,
+        "batch_end": 8928,
+        "cosine_similarity": 1.000001072883606,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 97555,
+        "union_index": 8912,
+        "layer": 7,
+        "batch_start": 8896,
+        "batch_end": 8928,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 97555,
+        "union_index": 8912,
+        "layer": 15,
+        "batch_start": 8896,
+        "batch_end": 8928,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 97555,
+        "union_index": 8912,
+        "layer": 23,
+        "batch_start": 8896,
+        "batch_end": 8928,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 97555,
+        "union_index": 8912,
+        "layer": 31,
+        "batch_start": 8896,
+        "batch_end": 8928,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 104598,
+        "union_index": 13488,
+        "layer": 0,
+        "batch_start": 13472,
+        "batch_end": 13504,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 104598,
+        "union_index": 13488,
+        "layer": 7,
+        "batch_start": 13472,
+        "batch_end": 13504,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 104598,
+        "union_index": 13488,
+        "layer": 15,
+        "batch_start": 13472,
+        "batch_end": 13504,
+        "cosine_similarity": 1.0000009536743164,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 104598,
+        "union_index": 13488,
+        "layer": 23,
+        "batch_start": 13472,
+        "batch_end": 13504,
+        "cosine_similarity": 1.0000008344650269,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      },
+      {
+        "row_id": 104598,
+        "union_index": 13488,
+        "layer": 31,
+        "batch_start": 13472,
+        "batch_end": 13504,
+        "cosine_similarity": 1.0000007152557373,
+        "mean_absolute_error": 0.0,
+        "max_absolute_error": 0.0
+      }
+    ]
+  },
+  "layer_sha256": {
+    "0": "4f09303e64b805e1bc471b227f7b11889c8b66ec9de9a1078fbda7a89b471f81",
+    "1": "f9f07b6a0722f66679a0d8ac45850c158cce3baebbde7e0817c0ccf2f1af46cd",
+    "2": "28b2b88bd2ef1832ac1b7497ec8f908f291a32c4f39738e3a8f952c25440ef6c",
+    "3": "18405d13a8c33713ce8a3e0b6d4cad66ae457d9206a21c3a26b6e43ed926a342",
+    "4": "9492dbf2826238c5cec5b6de94fa31987f034a50fa223e07f7e7cf8fac1a84b0",
+    "5": "69edbdb5e2787c136f9f54ee21fd6120fcbf4205ed13be9980549ed05d77cfc0",
+    "6": "32e02c5262eaeb9eb040ad8187662ac953aecdf12d0b2b75cceacaee05020be4",
+    "7": "91181f9ca42b73d0b8739a566f0e352cc387e608d6b5aa184e4bc3ff51572458",
+    "8": "d2fb90d5b64a8cd5c9276ab564271d7c95ed284fc32254e1f1fcda10f9b0dcbe",
+    "9": "50979b5ac673a6868cdad7c02075120b4f2bfa65dd4fe98f8c7016b7c7f34dd6",
+    "10": "f800a035ea974f752dbd8b50c6a3ab517fa628bfaa3def2f2d323ac0ddb00149",
+    "11": "e8f8fc6584bbd132af2730a1e3e67524641aa37ff0f5047b918c681f86dd1d93",
+    "12": "4c4603ac412cd39990914942aa618c340d8e9fae0479392ec7c726532dcdd007",
+    "13": "d7bda4f6de051db30717f04006dde3e30746a47b37a24e11b47968ddd5ebf029",
+    "14": "fbd3ee449b758c1b45c729a19241f61a2db1f42a3b5cada34c1a5841233421c4",
+    "15": "95d16cd1ca992018e1c7c063f9dbba5f87b196a616a5fcb826336e65342155c0",
+    "16": "bc25b5eb1d6e9c3396dd60c0aea57e855cde889c8f2a8c7e1cda580b0bfd7f05",
+    "17": "0c1edc91bc46e2a65e85c37780b4de9a7b9136d8878732bd717d94856cfb6539",
+    "18": "5fb8822010280d648fd78c79b1a17fee9c8f906de441169b1ac62a22166c604d",
+    "19": "e5d5a3f0086812179e0d3b5057f60dac797469add2d87d0daa0a9d0c2fdff56d",
+    "20": "1420626c2756f1f3e0ce5418883be50568e6abf53a35a90a041e5802da4617c5",
+    "21": "d95cd43d8528c6bb633376a44493d7064213dcc66e962a2ea7f217de48ff0152",
+    "22": "6954cf5abbebd5072631aaecafca00a0b750a0e42fc82110a4b2b43395cc4a11",
+    "23": "2c2198da1b848c9ee342913a680e1303b608a2b7d7413e63cb4475141137cd1a",
+    "24": "229d80259c760c3b666c1cf6fb2d5b702767037ec1956f44432924ca550335b8",
+    "25": "bd028b66775f559c654878edf598619ffbb9f87e869faed87cb4f6faeb5e7270",
+    "26": "3245ff493542c3b85255342fe0e73034f08ed22fb98ad0c40fa3e4fe353bd049",
+    "27": "745f9ae3a4dc6c475f5df9df8e68296f753e7237eff7e64318dfcae4fb8ac778",
+    "28": "942f8aecfadf2e529721b6a0f1930787c08c26dfbf0af31e4fe430bb9da4b7b3",
+    "29": "9a13454911ac3f899bdb4b61206c7e6b760c7fb245996438c1efed2880baeea4",
+    "30": "83d3bc23809458026f6973df00ce38f027767ea9bd8814d693b42e28214d58df",
+    "31": "195e07876d9ef3da7c3218fc952d036cdd8f256fb4caad56da8e9518389fd55c"
+  },
+  "completed_utc": "2026-08-31T18:36:04.735457+00:00"
+}

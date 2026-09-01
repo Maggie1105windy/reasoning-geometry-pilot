@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "refit": false,
+  "sources": {
+    "base": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/cross_hop/h1_to_all_layers.csv",
+      "sha256": "d0d328b0286132988b560aa84b9e6f3e510550236457e91bf626c391d556d1b3"
+    },
+    "base_derived": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/cross_hop/derived_pooled_to_all_layers.csv",
+      "sha256": "15c8b4b701b94410571f3b3a79b348cec8d776331193a4eef003e75cdcc3ddbf"
+    },
+    "base_balanced": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/cross_hop/balanced_h1_to_all_layers.csv",
+      "sha256": "60c94827c12eb26297e4bee0aa90870c9ca6cd5414898084adf95e884e3d501c"
+    }
+  }
+}

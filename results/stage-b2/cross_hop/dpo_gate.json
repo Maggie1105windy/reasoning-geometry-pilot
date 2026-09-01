@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "model": "dpo",
+  "rows_per_analysis": 160,
+  "selected_warnings": 10,
+  "sensitivity_rows": 10,
+  "sensitivity_still_warning": 0,
+  "abs_delta_gt_0_02": 0,
+  "test_selection_leakage": false
+}

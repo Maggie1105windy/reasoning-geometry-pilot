@@ -1,0 +1,139 @@
+{
+  "stage": "B1 pre-model checksum gate",
+  "checked_utc": "2026-08-24T12:18:07.396460+00:00",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "dataset": "balanced",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/balanced_test.csv",
+      "file": "balanced_test.csv",
+      "expected_sha256": "d819e6831dd21be6389b584a14d4129d7a2889e1616c46921eb2e50ce5035f81",
+      "actual_sha256": "d819e6831dd21be6389b584a14d4129d7a2889e1616c46921eb2e50ce5035f81",
+      "match": true
+    },
+    {
+      "dataset": "balanced",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/balanced_train.csv",
+      "file": "balanced_train.csv",
+      "expected_sha256": "fbe9024e564130215112aaf91a50e8e967e92117af187e6c103f2963c1003152",
+      "actual_sha256": "fbe9024e564130215112aaf91a50e8e967e92117af187e6c103f2963c1003152",
+      "match": true
+    },
+    {
+      "dataset": "balanced",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/balanced_val.csv",
+      "file": "balanced_val.csv",
+      "expected_sha256": "5e1e84cd4ab642863f73dd67fa6481a74d2868eb619062fd12f73eae29a4b393",
+      "actual_sha256": "5e1e84cd4ab642863f73dd67fa6481a74d2868eb619062fd12f73eae29a4b393",
+      "match": true
+    },
+    {
+      "dataset": "composition",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/composition_heldout_test.csv",
+      "file": "composition_heldout_test.csv",
+      "expected_sha256": "132db51c7579a61f6431a81ccd2911a3eb6225ff0efd3ab0ba2787c6e2c15ba8",
+      "actual_sha256": "132db51c7579a61f6431a81ccd2911a3eb6225ff0efd3ab0ba2787c6e2c15ba8",
+      "match": true
+    },
+    {
+      "dataset": "composition",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/composition_heldout_train.csv",
+      "file": "composition_heldout_train.csv",
+      "expected_sha256": "e294d120dd6516087cdf7535573fe05dccc5beb92ef751a7a803c4ea3ca11fa6",
+      "actual_sha256": "e294d120dd6516087cdf7535573fe05dccc5beb92ef751a7a803c4ea3ca11fa6",
+      "match": true
+    },
+    {
+      "dataset": "composition",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/composition_heldout_val.csv",
+      "file": "composition_heldout_val.csv",
+      "expected_sha256": "18be21cff83e9ffa202b3c1db8afc8ac4db275cea15f1a76458660bcf023bdb6",
+      "actual_sha256": "18be21cff83e9ffa202b3c1db8afc8ac4db275cea15f1a76458660bcf023bdb6",
+      "match": true
+    },
+    {
+      "dataset": "primary",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/primary_test.csv",
+      "file": "primary_test.csv",
+      "expected_sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049",
+      "actual_sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049",
+      "match": true
+    },
+    {
+      "dataset": "primary",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/primary_train.csv",
+      "file": "primary_train.csv",
+      "expected_sha256": "f4cb33f2d7cc270d5220031dba953f4aad7e08ed63029ebf3fd11b803a21dc4a",
+      "actual_sha256": "f4cb33f2d7cc270d5220031dba953f4aad7e08ed63029ebf3fd11b803a21dc4a",
+      "match": true
+    },
+    {
+      "dataset": "primary",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/primary_val.csv",
+      "file": "primary_val.csv",
+      "expected_sha256": "9d98da85a9ad3384a4313e0e10c65db4495dbff2068ab20fac608303c1b159e0",
+      "actual_sha256": "9d98da85a9ad3384a4313e0e10c65db4495dbff2068ab20fac608303c1b159e0",
+      "match": true
+    },
+    {
+      "dataset": "target",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/target_absent_test.csv",
+      "file": "target_absent_test.csv",
+      "expected_sha256": "047eda214e648cce4a1efbbf71242d4377a43417dd3a6adaa9a6956590f2c2c6",
+      "actual_sha256": "047eda214e648cce4a1efbbf71242d4377a43417dd3a6adaa9a6956590f2c2c6",
+      "match": true
+    },
+    {
+      "dataset": "target",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/target_absent_train.csv",
+      "file": "target_absent_train.csv",
+      "expected_sha256": "8817b67ec290d92f44ac2b1fb9c5a22ef64a3efb64e2f549f3c350cb41cd0374",
+      "actual_sha256": "8817b67ec290d92f44ac2b1fb9c5a22ef64a3efb64e2f549f3c350cb41cd0374",
+      "match": true
+    },
+    {
+      "dataset": "target",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2/target_absent_val.csv",
+      "file": "target_absent_val.csv",
+      "expected_sha256": "b53c6185d49856ee70add823f2f8ab2f6463f64976427b4b51d264ccd8745b80",
+      "actual_sha256": "b53c6185d49856ee70add823f2f8ab2f6463f64976427b4b51d264ccd8745b80",
+      "match": true
+    },
+    {
+      "dataset": "template_test_only",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_distribution.csv",
+      "file": "mid_template_test_distribution.csv",
+      "expected_sha256": "b99fe2aca9a3ba19b856bba5780481303dd6cce3258c575dfcedc5b4a01e06c4",
+      "actual_sha256": "b99fe2aca9a3ba19b856bba5780481303dd6cce3258c575dfcedc5b4a01e06c4",
+      "match": true
+    },
+    {
+      "dataset": "template_test_only",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_test.csv",
+      "file": "mid_template_test_test.csv",
+      "expected_sha256": "c934b5db6e78181d988e632e632c65cf7f4d756c6d52382c5b9ca72c7566afd1",
+      "actual_sha256": "c934b5db6e78181d988e632e632c65cf7f4d756c6d52382c5b9ca72c7566afd1",
+      "match": true
+    },
+    {
+      "dataset": "template_test_only",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_train.csv",
+      "file": "mid_template_test_train.csv",
+      "expected_sha256": "a8219ffc95a5fce7e7242b898807335f52ae8f12a4d30eed63cacbb3dba1fc55",
+      "actual_sha256": "a8219ffc95a5fce7e7242b898807335f52ae8f12a4d30eed63cacbb3dba1fc55",
+      "match": true
+    },
+    {
+      "dataset": "template_test_only",
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_2c/mid_template_test_val.csv",
+      "file": "mid_template_test_val.csv",
+      "expected_sha256": "c0e564d56ea58400e983f7573692fb9d9ecd8ad185a3f28224f469a6c210eb96",
+      "actual_sha256": "c0e564d56ea58400e983f7573692fb9d9ecd8ad185a3f28224f469a6c210eb96",
+      "match": true
+    }
+  ],
+  "all_formal_manifest_files_match": true,
+  "protected_b0_2_match_b0_2c_snapshot": true,
+  "broad_restricted_match_b0_2c_snapshot": true,
+  "status": "PASS"
+}

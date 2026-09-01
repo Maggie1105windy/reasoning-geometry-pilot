@@ -1,0 +1,25 @@
+{
+  "source": "Gurnee & Tegmark Figure 2, World Map panel",
+  "source_url": "https://arxiv.org/html/2310.02207",
+  "series": "Pythia-2.8B dashed purple curve",
+  "status": "approximate visual comparison only",
+  "official_raw_layer_values_found": false,
+  "reason_no_numeric_curve_metrics": "The released repository contains no Pythia raw layer-wise result artifact; visual estimates are not treated as exact values.",
+  "approximate_ranges": {
+    "depth_0": "roughly 0.30-0.35",
+    "depth_0.25": "roughly 0.48-0.52",
+    "depth_0.5": "roughly 0.60-0.65",
+    "late_plateau": "roughly 0.70-0.73"
+  },
+  "paper_qualitative_description": "quality rises smoothly through the first half of layers before reaching a plateau",
+  "our_values": {
+    "layer_0_depth_0": 0.2950673974941649,
+    "layer_8_depth_0.258": 0.5385042759826851,
+    "layer_16_depth_0.516": 0.63248487087512,
+    "layer_19_depth_0.613": 0.7102150727013693,
+    "peak_layer": 30,
+    "peak_r2": 0.7431573075478117,
+    "layer_31": 0.7418632786964844
+  },
+  "assessment": "Strong best-effort reproduction"
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "B1",
+  "status": "FROZEN_BEFORE_ACTIVATION_EXTRACTION",
+  "model_scope": "Meta-Llama-3.1-8B Base only",
+  "prompt_template": "Story:\n{one original StepGame sentence per line}\n\nQuestion:\n{original StepGame question}",
+  "story_handling": "parse official JSON sentence list; preserve sentence text and order; join with newline",
+  "question_handling": "preserve official question text; strip only outer whitespace",
+  "chat_template": false,
+  "few_shot": false,
+  "chain_of_thought": false,
+  "answer_choices": false,
+  "gold_relation_in_prompt": false,
+  "assistant_prefix": false,
+  "tokenization": {
+    "add_special_tokens": false,
+    "explicit_bos": true,
+    "bos_token_id": 128000,
+    "eos_as_pad": true,
+    "pad_token_id": 128001,
+    "padding_side": "right",
+    "truncation": false
+  },
+  "readout": {
+    "definition": "last non-special token at the end of the complete question",
+    "position": "len([BOS] + tokenizer(prompt, add_special_tokens=False).input_ids) - 1",
+    "answer_tokens_seen": false,
+    "gold_label_seen": false,
+    "pooling": "none"
+  },
+  "model_revision": "24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea",
+  "tokenizer_revision": "c52792af35fe806a76530f3028f037d1af4e3490",
+  "seed": 20260824
+}

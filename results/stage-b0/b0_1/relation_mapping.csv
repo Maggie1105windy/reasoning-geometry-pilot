@@ -1,0 +1,10 @@
+raw_label,canonical_label,inverse_relation,count,notes
+above,ABOVE,BELOW,22340,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+below,BELOW,ABOVE,22319,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+left,LEFT,RIGHT,22503,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+lower-left,LOWER_LEFT,UPPER_RIGHT,27641,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+lower-right,LOWER_RIGHT,UPPER_LEFT,27977,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+overlap,OVERLAP,OVERLAP,9130,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+right,RIGHT,LEFT,22083,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+upper-left,UPPER_LEFT,LOWER_RIGHT,27839,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.
+upper-right,UPPER_RIGHT,LOWER_LEFT,28168,Direct canonical mapping; raw values exhaustively enumerated from Primary clean data.

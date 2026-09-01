@@ -1,0 +1,51 @@
+{
+  "label": "surface_skeleton",
+  "group_column": "query_path_surface_skeletons",
+  "template_groups": 198,
+  "assigned_group_counts": {
+    "train": 40,
+    "val": 76,
+    "test": 82
+  },
+  "rows": 6604,
+  "sizes": {
+    "train": 1130,
+    "val": 2666,
+    "test": 2808
+  },
+  "covered_cells": {
+    "train": 40,
+    "val": 40,
+    "test": 40
+  },
+  "min_cells": {
+    "train": 1,
+    "val": 2,
+    "test": 2
+  },
+  "template_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "story_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "search_method": "deterministic multi-start coordinate search over global group ownership",
+  "objective": [
+    2,
+    40,
+    120,
+    2,
+    684,
+    206,
+    6604,
+    -142
+  ],
+  "best_restart": 5,
+  "best_sweep": 11,
+  "path_repair_steps_applied": 2,
+  "all_40_cells": true
+}

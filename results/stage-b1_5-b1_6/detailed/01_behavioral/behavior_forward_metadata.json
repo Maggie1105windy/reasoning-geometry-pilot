@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "rows_scored": 2435,
+  "candidate_sequences": 19480,
+  "runtime_seconds": 501.2100286632776,
+  "gpu_peak_allocated_gib": 18.268019199371338,
+  "gpu_peak_reserved_gib": 22.728515625,
+  "batch_size": 32,
+  "model": "Meta-Llama-3.1-8B Base",
+  "post_trained_model": false
+}

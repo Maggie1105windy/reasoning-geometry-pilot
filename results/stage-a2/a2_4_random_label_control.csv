@@ -1,0 +1,3 @@
+layer,seed,alpha,shuffle_scope,test_labels_unchanged,normal_r2_overall,random_label_r2_overall,r2_difference_normal_minus_random,random_label_r2_longitude,random_label_r2_latitude,fit_runtime_seconds
+15,42,2560.0,training labels only,True,0.6245976569231549,-0.04373497175087193,0.6683326286740269,-0.04454859766514807,-0.042921345836595126,0.6492642387747765
+31,42,2560.0,training labels only,True,0.7418632786964844,-0.07446456385769284,0.8163278425541772,-0.08129664725429397,-0.0676324804610906,1.0863285288214684

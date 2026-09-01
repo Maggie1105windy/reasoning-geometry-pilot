@@ -1,0 +1,474 @@
+{
+  "stage": "B2.0",
+  "checked_utc": "2026-08-31T18:15:21.419487+00:00",
+  "status": "PASS",
+  "checks": {
+    "four_models_present": true,
+    "all_32_decoder_blocks": true,
+    "all_hidden_size_4096": true,
+    "architecture_dimensions_compatible": true,
+    "parameter_counts_match_base_and_tulu_vocab_extension": true,
+    "all_safetensor_manifests_complete": true,
+    "all_bos_eos_match": true
+  },
+  "models": [
+    {
+      "model_key": "base",
+      "model_name": "Base",
+      "model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Meta-Llama-3.1-8B",
+      "resolved_model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Meta-Llama-3.1-8B",
+      "path_is_symlink": false,
+      "model_revision": "24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea",
+      "tokenizer_revision": "c52792af35fe806a76530f3028f037d1af4e3490",
+      "revision_provenance": "ModelScope local .msc file-level revision recovered during B2 audit; not claimed as Hugging Face repository commit",
+      "architecture": [
+        "LlamaForCausalLM"
+      ],
+      "model_type": "llama",
+      "parameters": 8030261248,
+      "layers": 32,
+      "hidden_size": 4096,
+      "attention_heads": 32,
+      "key_value_heads": 8,
+      "intermediate_size": 14336,
+      "dtype": "torch.bfloat16",
+      "vocab_size_config": 128256,
+      "vocab_size_tokenizer": 128256,
+      "bos_token_id": 128000,
+      "eos_token_id": 128001,
+      "transformers_version_config": "4.43.0.dev0",
+      "transformers_version_runtime": "4.44.2",
+      "safetensor_shards": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "tensor_count": 291,
+      "weight_loading_policy": "use_safetensors=True; local_files_only=True",
+      "model_files": {
+        "config.json": {
+          "bytes": 826,
+          "sha256": "54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 23950,
+          "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b"
+        },
+        "tokenizer.json": {
+          "bytes": 9085658,
+          "sha256": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa"
+        },
+        "tokenizer_config.json": {
+          "bytes": 50500,
+          "sha256": "8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a"
+        }
+      },
+      "readme_evidence": [
+        {
+          "line": 232,
+          "text": "## Model Information"
+        },
+        {
+          "line": 234,
+          "text": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks."
+        },
+        {
+          "line": 324,
+          "text": "**Intended Use Cases** Llama 3.1 is intended for commercial and research use in multiple languages. Instruction tuned text only models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. The Llama 3.1 model collection also supports the ability to leverage the outputs of its models to improve other models including synthetic data generation and distillation. The Llama 3.1 Community License allows for these use cases."
+        },
+        {
+          "line": 332,
+          "text": "This repository contains two versions of Meta's Llama-3.1-8B, for use with transformers and with the original `llama` codebase."
+        },
+        {
+          "line": 370,
+          "text": "**Training Greenhouse Gas Emissions** Estimated total location-based greenhouse gas emissions were **11,390** tons CO2eq for training. Since 2020, Meta has maintained net zero greenhouse gas emissions in its global operations and matched 100% of its electricity use with renewable energy, therefore the total market-based greenhouse gas emissions for training were 0 tons CO2eq."
+        },
+        {
+          "line": 381,
+          "text": "<td><strong>Training Location-Based Greenhouse Gas Emissions</strong>"
+        },
+        {
+          "line": 385,
+          "text": "<td><strong>Training Market-Based Greenhouse Gas Emissions</strong>"
+        },
+        {
+          "line": 449,
+          "text": "**Overview:** Llama 3.1 was pretrained on ~15 trillion tokens of data from publicly available sources. The fine-tuning data includes publicly available instruction datasets, as well as over 25M synthetically generated examples."
+        },
+        {
+          "line": 458,
+          "text": "### Base pretrained models"
+        },
+        {
+          "line": 865,
+          "text": "<td>MBPP ++ base version"
+        },
+        {
+          "line": 1169,
+          "text": "We employ a multi-faceted approach to data collection, combining human-generated data from our vendors with synthetic data to mitigate potential safety risks. We’ve developed many large language model (LLM)-based classifiers that enable us to thoughtfully select high-quality prompts and responses, enhancing data quality control."
+        },
+        {
+          "line": 1202,
+          "text": "We partnered early with subject-matter experts in critical risk areas to understand the nature of these real-world harms and how such models may lead to unintended harm for society. Based on these conversations, we derived a set of adversarial goals for the red team to attempt to achieve, such as extracting harmful information or reprogramming the model to act in a potentially harmful capacity.  The red team consisted of experts in cybersecurity, adversarial machine learning, responsible AI, and"
+        },
+        {
+          "line": 1216,
+          "text": "Child Safety risk assessments were conducted using a team of experts, to assess the model’s capability to produce outputs that could result in Child Safety risks and inform on any necessary and appropriate risk mitigations via fine tuning. We leveraged those expert red teaming sessions to expand the coverage of our evaluation benchmarks through Llama 3 model development.  For Llama 3, we conducted new in-depth sessions using objective based methodologies to assess the model risks along multiple "
+        }
+      ],
+      "final_rlvr_locally_confirmed": false
+    },
+    {
+      "model_key": "sft",
+      "model_name": "SFT",
+      "model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-SFT",
+      "resolved_model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-SFT",
+      "path_is_symlink": false,
+      "model_revision": "aa9a78450ea2c6916824501e276cb97b7caf47e6",
+      "tokenizer_revision": "aa9a78450ea2c6916824501e276cb97b7caf47e6",
+      "revision_provenance": "ModelScope local .msc file-level revision recovered during B2 audit; not claimed as Hugging Face repository commit",
+      "architecture": [
+        "LlamaForCausalLM"
+      ],
+      "model_type": "llama",
+      "parameters": 8030326784,
+      "layers": 32,
+      "hidden_size": 4096,
+      "attention_heads": 32,
+      "key_value_heads": 8,
+      "intermediate_size": 14336,
+      "dtype": "torch.bfloat16",
+      "vocab_size_config": 128264,
+      "vocab_size_tokenizer": 128257,
+      "bos_token_id": 128000,
+      "eos_token_id": 128001,
+      "transformers_version_config": "4.43.4",
+      "transformers_version_runtime": "4.44.2",
+      "safetensor_shards": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "tensor_count": 291,
+      "weight_loading_policy": "use_safetensors=True; local_files_only=True",
+      "model_files": {
+        "config.json": {
+          "bytes": 875,
+          "sha256": "20bb3e98dd3e4d2252bb9a914f9a131417869d29dc35781b6bde95f6e4d1cc95"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 23950,
+          "sha256": "513502e35214aed7674c3ce8f541b265af75a38ed9ceec90d67d014f4d0d251b"
+        },
+        "tokenizer.json": {
+          "bytes": 9085839,
+          "sha256": "a62e4ccfd19daf6c53aeca2c0f4474cb7d784bf1ee999f0214715615f46c802c"
+        },
+        "tokenizer_config.json": {
+          "bytes": 51220,
+          "sha256": "23345dedb8c151b92b97f4f92a7bbe2116abdebfd1f7c9ff0c1459f4e044a457"
+        }
+      },
+      "readme_evidence": [
+        {
+          "line": 7,
+          "text": "- allenai/tulu-3-sft-mixture"
+        },
+        {
+          "line": 15,
+          "text": "# Llama-3.1-Tulu-3-8B-SFT"
+        },
+        {
+          "line": 25,
+          "text": "- **Finetuned from model:** meta-llama/Llama-3.1-8B"
+        },
+        {
+          "line": 39,
+          "text": "| **SFT**              | [allenai/Llama-3.1-Tulu-3-8B-SFT](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT)                | [allenai/Llama-3.1-Tulu-3-70B-SFT](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-SFT)              |"
+        },
+        {
+          "line": 40,
+          "text": "| **DPO**              | [allenai/Llama-3.1-Tulu-3-8B-DPO](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO)                | [allenai/Llama-3.1-Tulu-3-70B-DPO](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO)              |"
+        },
+        {
+          "line": 41,
+          "text": "| **Final Models (RLVR)**     | [allenai/Llama-3.1-Tulu-3-8B](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B)                        | [allenai/Llama-3.1-Tulu-3-70B](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B)                      |"
+        },
+        {
+          "line": 47,
+          "text": "| **SFT** | [allenai/llama-3.1-Tulu-3-405B-SFT](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B-SFT) |"
+        },
+        {
+          "line": 48,
+          "text": "| **DPO** | [allenai/llama-3.1-Tulu-3-405B-DPO](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B-DPO) |"
+        },
+        {
+          "line": 49,
+          "text": "| **Final Model (RLVR)** | [allenai/llama-3.1-Tulu-3-405B](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B) |"
+        },
+        {
+          "line": 61,
+          "text": "tulu_model = AutoModelForCausalLM.from_pretrained(\"allenai/Llama-3.1-Tulu-3-8B-SFT\")"
+        },
+        {
+          "line": 68,
+          "text": "vllm serve allenai/Llama-3.1-Tulu-3-8B-SFT"
+        },
+        {
+          "line": 104,
+          "text": "| Benchmark (eval)                | Tülu 3 SFT 8B | Tülu 3 DPO 8B | Tülu 3 8B | Llama 3.1 8B Instruct | Qwen 2.5 7B Instruct | Magpie 8B | Gemma 2 9B Instruct | Ministral 8B Instruct |"
+        },
+        {
+          "line": 120,
+          "text": "| Benchmark (eval)                | Tülu 3 70B SFT | Tülu 3 DPO 70B | Tülu 3 70B | Llama 3.1 70B Instruct | Qwen 2.5 72B Instruct | Hermes 3 Llama 3.1 70B | Nemotron Llama 3.1 70B |"
+        },
+        {
+          "line": 136,
+          "text": "| Benchmark (eval) | Tülu 3 405B SFT | Tülu 3 405B DPO | Tülu 3 405B | Llama 3.1 405B Instruct | Nous Hermes 3 405B | Deepseek V3 | GPT 4o (11-24) |"
+        },
+        {
+          "line": 154,
+          "text": "SFT:"
+        }
+      ],
+      "final_rlvr_locally_confirmed": false
+    },
+    {
+      "model_key": "dpo",
+      "model_name": "DPO",
+      "model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-DPO",
+      "resolved_model_path": "/home/ai/projects/reasoning-geometry-pilot/models/allenai/Llama-3___1-Tulu-3-8B-DPO",
+      "path_is_symlink": true,
+      "model_revision": "2301bf3b5e8733aad822a59b93381369da1692eb",
+      "tokenizer_revision": "2301bf3b5e8733aad822a59b93381369da1692eb",
+      "revision_provenance": "ModelScope local .msc file-level revision recovered during B2 audit; not claimed as Hugging Face repository commit",
+      "architecture": [
+        "LlamaForCausalLM"
+      ],
+      "model_type": "llama",
+      "parameters": 8030326784,
+      "layers": 32,
+      "hidden_size": 4096,
+      "attention_heads": 32,
+      "key_value_heads": 8,
+      "intermediate_size": 14336,
+      "dtype": "torch.bfloat16",
+      "vocab_size_config": 128264,
+      "vocab_size_tokenizer": 128257,
+      "bos_token_id": 128000,
+      "eos_token_id": 128001,
+      "transformers_version_config": "4.43.4",
+      "transformers_version_runtime": "4.44.2",
+      "safetensor_shards": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "tensor_count": 291,
+      "weight_loading_policy": "use_safetensors=True; local_files_only=True",
+      "model_files": {
+        "config.json": {
+          "bytes": 850,
+          "sha256": "a8bd80e14deac086ca121be258191fad6f1acff43cf1cc9fe8eebf622aaf79d5"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 25125,
+          "sha256": "f16ab28239bb5e3ea718851ab9fd9fd9261f4356314a43b907c98957afc33583"
+        },
+        "tokenizer.json": {
+          "bytes": 9085839,
+          "sha256": "a62e4ccfd19daf6c53aeca2c0f4474cb7d784bf1ee999f0214715615f46c802c"
+        },
+        "tokenizer_config.json": {
+          "bytes": 51220,
+          "sha256": "23345dedb8c151b92b97f4f92a7bbe2116abdebfd1f7c9ff0c1459f4e044a457"
+        }
+      },
+      "readme_evidence": [
+        {
+          "line": 9,
+          "text": "- allenai/Llama-3.1-Tulu-3-8B-SFT"
+        },
+        {
+          "line": 15,
+          "text": "# Llama-3.1-Tulu-3-8B-DPO"
+        },
+        {
+          "line": 25,
+          "text": "- **Finetuned from model:** allenai/Llama-3.1-Tulu-3-8B-SFT"
+        },
+        {
+          "line": 39,
+          "text": "| **SFT**              | [allenai/Llama-3.1-Tulu-3-8B-SFT](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT)                | [allenai/Llama-3.1-Tulu-3-70B-SFT](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-SFT)              |"
+        },
+        {
+          "line": 40,
+          "text": "| **DPO**              | [allenai/Llama-3.1-Tulu-3-8B-DPO](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO)                | [allenai/Llama-3.1-Tulu-3-70B-DPO](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO)              |"
+        },
+        {
+          "line": 41,
+          "text": "| **Final Models (RLVR)**     | [allenai/Llama-3.1-Tulu-3-8B](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B)                        | [allenai/Llama-3.1-Tulu-3-70B](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B)                      |"
+        },
+        {
+          "line": 47,
+          "text": "| **SFT** | [allenai/llama-3.1-Tulu-3-405B-SFT](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B-SFT) |"
+        },
+        {
+          "line": 48,
+          "text": "| **DPO** | [allenai/llama-3.1-Tulu-3-405B-DPO](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B-DPO) |"
+        },
+        {
+          "line": 49,
+          "text": "| **Final Model (RLVR)** | [allenai/llama-3.1-Tulu-3-405B](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B) |"
+        },
+        {
+          "line": 61,
+          "text": "tulu_model = AutoModelForCausalLM.from_pretrained(\"allenai/Llama-3.1-Tulu-3-8B-DPO\")"
+        },
+        {
+          "line": 68,
+          "text": "vllm serve allenai/Llama-3.1-Tulu-3-8B-DPO"
+        },
+        {
+          "line": 104,
+          "text": "| Benchmark (eval)                | Tülu 3 SFT 8B | Tülu 3 DPO 8B | Tülu 3 8B | Llama 3.1 8B Instruct | Qwen 2.5 7B Instruct | Magpie 8B | Gemma 2 9B Instruct | Ministral 8B Instruct |"
+        },
+        {
+          "line": 120,
+          "text": "| Benchmark (eval)                | Tülu 3 70B SFT | Tülu 3 DPO 70B | Tülu 3 70B | Llama 3.1 70B Instruct | Qwen 2.5 72B Instruct | Hermes 3 Llama 3.1 70B | Nemotron Llama 3.1 70B |"
+        },
+        {
+          "line": 136,
+          "text": "| Benchmark (eval) | Tülu 3 405B SFT | Tülu 3 405B DPO | Tülu 3 405B | Llama 3.1 405B Instruct | Nous Hermes 3 405B | Deepseek V3 | GPT 4o (11-24) |"
+        },
+        {
+          "line": 154,
+          "text": "DPO:"
+        }
+      ],
+      "final_rlvr_locally_confirmed": false
+    },
+    {
+      "model_key": "final",
+      "model_name": "Final",
+      "model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B",
+      "resolved_model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B",
+      "path_is_symlink": false,
+      "model_revision": "c5d2996f1e01989a69bd740d8d034edf672cc1e0",
+      "tokenizer_revision": "191d2c80ef01945c2dee535a263a29e923b6002c",
+      "revision_provenance": "ModelScope local .msc file-level revision recovered during B2 audit; not claimed as Hugging Face repository commit",
+      "architecture": [
+        "LlamaForCausalLM"
+      ],
+      "model_type": "llama",
+      "parameters": 8030326784,
+      "layers": 32,
+      "hidden_size": 4096,
+      "attention_heads": 32,
+      "key_value_heads": 8,
+      "intermediate_size": 14336,
+      "dtype": "torch.bfloat16",
+      "vocab_size_config": 128264,
+      "vocab_size_tokenizer": 128257,
+      "bos_token_id": 128000,
+      "eos_token_id": 128001,
+      "transformers_version_config": "4.43.4",
+      "transformers_version_runtime": "4.44.2",
+      "safetensor_shards": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "tensor_count": 291,
+      "weight_loading_policy": "use_safetensors=True; local_files_only=True",
+      "model_files": {
+        "config.json": {
+          "bytes": 851,
+          "sha256": "692eda9d4959e31191a4e8f4b166c9622cd086c6f97fb02e955cc5b986203a68"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 23950,
+          "sha256": "513502e35214aed7674c3ce8f541b265af75a38ed9ceec90d67d014f4d0d251b"
+        },
+        "tokenizer.json": {
+          "bytes": 9085839,
+          "sha256": "a62e4ccfd19daf6c53aeca2c0f4474cb7d784bf1ee999f0214715615f46c802c"
+        },
+        "tokenizer_config.json": {
+          "bytes": 51220,
+          "sha256": "23345dedb8c151b92b97f4f92a7bbe2116abdebfd1f7c9ff0c1459f4e044a457"
+        }
+      },
+      "readme_evidence": [
+        {
+          "line": 7,
+          "text": "- allenai/RLVR-GSM-MATH-IF-Mixed-Constraints"
+        },
+        {
+          "line": 9,
+          "text": "- allenai/Llama-3.1-Tulu-3-8B-DPO"
+        },
+        {
+          "line": 125,
+          "text": "- **Finetuned from model:** allenai/Llama-3.1-Tulu-3-8B-DPO"
+        },
+        {
+          "line": 139,
+          "text": "| **SFT**              | [allenai/Llama-3.1-Tulu-3-8B-SFT](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT)                | [allenai/Llama-3.1-Tulu-3-70B-SFT](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-SFT)              |"
+        },
+        {
+          "line": 140,
+          "text": "| **DPO**              | [allenai/Llama-3.1-Tulu-3-8B-DPO](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO)                | [allenai/Llama-3.1-Tulu-3-70B-DPO](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO)              |"
+        },
+        {
+          "line": 141,
+          "text": "| **Final Models (RLVR)**     | [allenai/Llama-3.1-Tulu-3-8B](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B)                        | [allenai/Llama-3.1-Tulu-3-70B](https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B)                      |"
+        },
+        {
+          "line": 147,
+          "text": "| **SFT** | [allenai/llama-3.1-Tulu-3-405B-SFT](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B-SFT) |"
+        },
+        {
+          "line": 148,
+          "text": "| **DPO** | [allenai/llama-3.1-Tulu-3-405B-DPO](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B-DPO) |"
+        },
+        {
+          "line": 149,
+          "text": "| **Final Model (RLVR)** | [allenai/llama-3.1-Tulu-3-405B](https://huggingface.co/allenai/llama-3.1-Tulu-3-405B) |"
+        },
+        {
+          "line": 204,
+          "text": "| Benchmark (eval)                | Tülu 3 SFT 8B | Tülu 3 DPO 8B | Tülu 3 8B | Llama 3.1 8B Instruct | Qwen 2.5 7B Instruct | Magpie 8B | Gemma 2 9B Instruct | Ministral 8B Instruct |"
+        },
+        {
+          "line": 220,
+          "text": "| Benchmark (eval)                | Tülu 3 70B SFT | Tülu 3 DPO 70B | Tülu 3 70B | Llama 3.1 70B Instruct | Qwen 2.5 72B Instruct | Hermes 3 Llama 3.1 70B | Nemotron Llama 3.1 70B |"
+        },
+        {
+          "line": 235,
+          "text": "| Benchmark (eval) | Tülu 3 405B SFT | Tülu 3 405B DPO | Tülu 3 405B | Llama 3.1 405B Instruct | Nous Hermes 3 405B | Deepseek V3 | GPT 4o (11-24) |"
+        },
+        {
+          "line": 253,
+          "text": "PPO settings for RLVR:"
+        }
+      ],
+      "final_rlvr_locally_confirmed": true
+    }
+  ],
+  "lineage_naming": {
+    "formal_labels": [
+      "Base",
+      "SFT",
+      "DPO",
+      "Final"
+    ],
+    "final_rlvr_statement": "Local Final README explicitly identifies Final Models (RLVR), states finetuned from DPO, and documents PPO settings for RLVR. Formal tables retain label Final; report may parenthetically state locally documented RLVR."
+  },
+  "runtime_python": "3.11.15"
+}

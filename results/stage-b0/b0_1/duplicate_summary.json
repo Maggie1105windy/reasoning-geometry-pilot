@@ -1,0 +1,38 @@
+{
+  "exact_duplicate_group": {
+    "group_key": "exact_duplicate_group",
+    "total_groups": 209179,
+    "duplicate_groups": 806,
+    "rows_in_duplicate_groups": 1627,
+    "excess_duplicate_rows": 821,
+    "largest_group": 3
+  },
+  "story_group_id": {
+    "group_key": "story_group_id",
+    "total_groups": 208270,
+    "duplicate_groups": 1583,
+    "rows_in_duplicate_groups": 3313,
+    "excess_duplicate_rows": 1730,
+    "largest_group": 7
+  },
+  "normalized_duplicate_group": {
+    "group_key": "normalized_duplicate_group",
+    "total_groups": 189219,
+    "duplicate_groups": 627,
+    "rows_in_duplicate_groups": 21408,
+    "excess_duplicate_rows": 20781,
+    "largest_group": 98
+  },
+  "graph_template_group": {
+    "group_key": "graph_template_group",
+    "total_groups": 207869,
+    "duplicate_groups": 1651,
+    "rows_in_duplicate_groups": 3782,
+    "excess_duplicate_rows": 2131,
+    "largest_group": 381
+  },
+  "story_groups_with_multiple_queries": 827,
+  "rows": 210000,
+  "parquet_status": "written",
+  "parquet_error": null
+}

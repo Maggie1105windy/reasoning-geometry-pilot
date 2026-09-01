@@ -1,0 +1,29 @@
+{
+  "stage": "B1.5-B1.6",
+  "status": "PASS",
+  "B1.5_status": "PASS",
+  "B1.6_status": "PASS",
+  "checks": {
+    "input_checksum_gate_pass": true,
+    "candidate_audit_pass": true,
+    "candidate_protocol_complete": true,
+    "behavior_complete_h1_h5": true,
+    "behavior_baselines_and_bootstrap_complete": true,
+    "cross_hop_shapes_complete": true,
+    "activations_reused_no_reextraction": true,
+    "no_test_selection_leakage": true,
+    "fit_and_C_populations_exact": true,
+    "C_selection_and_smaller_tie_rule_exact": true,
+    "within_hop_gap_complete": true,
+    "random_label_control_degrades": true,
+    "convergence_sensitivity_pass": true,
+    "six_figures_complete": true,
+    "chart_map_complete": true
+  },
+  "failed_checks": [],
+  "visual_QA": {
+    "status": "PASS",
+    "method": "manual inspection of all six downloaded PNGs",
+    "notes": "No clipping, overlap, unreadable labels, or color-direction errors observed."
+  }
+}

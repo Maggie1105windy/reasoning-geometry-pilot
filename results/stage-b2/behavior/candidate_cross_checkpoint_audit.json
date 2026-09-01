@@ -1,0 +1,375 @@
+{
+  "stage": "B2.4",
+  "status": "PASS",
+  "checks": {
+    "b2_protocol_frozen": true,
+    "candidate_strings_exact_b1_5": true,
+    "candidate_token_ids_identical_all_models": true,
+    "no_empty_candidates": true,
+    "primary_sum_sensitivity_mean": true
+  },
+  "candidate_tokenization": {
+    "base": [
+      {
+        "relation": "ABOVE",
+        "string": " above",
+        "token_ids": [
+          3485
+        ],
+        "tokens": [
+          "Ġabove"
+        ]
+      },
+      {
+        "relation": "BELOW",
+        "string": " below",
+        "token_ids": [
+          3770
+        ],
+        "tokens": [
+          "Ġbelow"
+        ]
+      },
+      {
+        "relation": "LEFT",
+        "string": " left",
+        "token_ids": [
+          2163
+        ],
+        "tokens": [
+          "Ġleft"
+        ]
+      },
+      {
+        "relation": "RIGHT",
+        "string": " right",
+        "token_ids": [
+          1314
+        ],
+        "tokens": [
+          "Ġright"
+        ]
+      },
+      {
+        "relation": "UPPER_LEFT",
+        "string": " upper-left",
+        "token_ids": [
+          8582,
+          8109
+        ],
+        "tokens": [
+          "Ġupper",
+          "-left"
+        ]
+      },
+      {
+        "relation": "UPPER_RIGHT",
+        "string": " upper-right",
+        "token_ids": [
+          8582,
+          6840
+        ],
+        "tokens": [
+          "Ġupper",
+          "-right"
+        ]
+      },
+      {
+        "relation": "LOWER_LEFT",
+        "string": " lower-left",
+        "token_ids": [
+          4827,
+          8109
+        ],
+        "tokens": [
+          "Ġlower",
+          "-left"
+        ]
+      },
+      {
+        "relation": "LOWER_RIGHT",
+        "string": " lower-right",
+        "token_ids": [
+          4827,
+          6840
+        ],
+        "tokens": [
+          "Ġlower",
+          "-right"
+        ]
+      }
+    ],
+    "sft": [
+      {
+        "relation": "ABOVE",
+        "string": " above",
+        "token_ids": [
+          3485
+        ],
+        "tokens": [
+          "Ġabove"
+        ]
+      },
+      {
+        "relation": "BELOW",
+        "string": " below",
+        "token_ids": [
+          3770
+        ],
+        "tokens": [
+          "Ġbelow"
+        ]
+      },
+      {
+        "relation": "LEFT",
+        "string": " left",
+        "token_ids": [
+          2163
+        ],
+        "tokens": [
+          "Ġleft"
+        ]
+      },
+      {
+        "relation": "RIGHT",
+        "string": " right",
+        "token_ids": [
+          1314
+        ],
+        "tokens": [
+          "Ġright"
+        ]
+      },
+      {
+        "relation": "UPPER_LEFT",
+        "string": " upper-left",
+        "token_ids": [
+          8582,
+          8109
+        ],
+        "tokens": [
+          "Ġupper",
+          "-left"
+        ]
+      },
+      {
+        "relation": "UPPER_RIGHT",
+        "string": " upper-right",
+        "token_ids": [
+          8582,
+          6840
+        ],
+        "tokens": [
+          "Ġupper",
+          "-right"
+        ]
+      },
+      {
+        "relation": "LOWER_LEFT",
+        "string": " lower-left",
+        "token_ids": [
+          4827,
+          8109
+        ],
+        "tokens": [
+          "Ġlower",
+          "-left"
+        ]
+      },
+      {
+        "relation": "LOWER_RIGHT",
+        "string": " lower-right",
+        "token_ids": [
+          4827,
+          6840
+        ],
+        "tokens": [
+          "Ġlower",
+          "-right"
+        ]
+      }
+    ],
+    "dpo": [
+      {
+        "relation": "ABOVE",
+        "string": " above",
+        "token_ids": [
+          3485
+        ],
+        "tokens": [
+          "Ġabove"
+        ]
+      },
+      {
+        "relation": "BELOW",
+        "string": " below",
+        "token_ids": [
+          3770
+        ],
+        "tokens": [
+          "Ġbelow"
+        ]
+      },
+      {
+        "relation": "LEFT",
+        "string": " left",
+        "token_ids": [
+          2163
+        ],
+        "tokens": [
+          "Ġleft"
+        ]
+      },
+      {
+        "relation": "RIGHT",
+        "string": " right",
+        "token_ids": [
+          1314
+        ],
+        "tokens": [
+          "Ġright"
+        ]
+      },
+      {
+        "relation": "UPPER_LEFT",
+        "string": " upper-left",
+        "token_ids": [
+          8582,
+          8109
+        ],
+        "tokens": [
+          "Ġupper",
+          "-left"
+        ]
+      },
+      {
+        "relation": "UPPER_RIGHT",
+        "string": " upper-right",
+        "token_ids": [
+          8582,
+          6840
+        ],
+        "tokens": [
+          "Ġupper",
+          "-right"
+        ]
+      },
+      {
+        "relation": "LOWER_LEFT",
+        "string": " lower-left",
+        "token_ids": [
+          4827,
+          8109
+        ],
+        "tokens": [
+          "Ġlower",
+          "-left"
+        ]
+      },
+      {
+        "relation": "LOWER_RIGHT",
+        "string": " lower-right",
+        "token_ids": [
+          4827,
+          6840
+        ],
+        "tokens": [
+          "Ġlower",
+          "-right"
+        ]
+      }
+    ],
+    "final": [
+      {
+        "relation": "ABOVE",
+        "string": " above",
+        "token_ids": [
+          3485
+        ],
+        "tokens": [
+          "Ġabove"
+        ]
+      },
+      {
+        "relation": "BELOW",
+        "string": " below",
+        "token_ids": [
+          3770
+        ],
+        "tokens": [
+          "Ġbelow"
+        ]
+      },
+      {
+        "relation": "LEFT",
+        "string": " left",
+        "token_ids": [
+          2163
+        ],
+        "tokens": [
+          "Ġleft"
+        ]
+      },
+      {
+        "relation": "RIGHT",
+        "string": " right",
+        "token_ids": [
+          1314
+        ],
+        "tokens": [
+          "Ġright"
+        ]
+      },
+      {
+        "relation": "UPPER_LEFT",
+        "string": " upper-left",
+        "token_ids": [
+          8582,
+          8109
+        ],
+        "tokens": [
+          "Ġupper",
+          "-left"
+        ]
+      },
+      {
+        "relation": "UPPER_RIGHT",
+        "string": " upper-right",
+        "token_ids": [
+          8582,
+          6840
+        ],
+        "tokens": [
+          "Ġupper",
+          "-right"
+        ]
+      },
+      {
+        "relation": "LOWER_LEFT",
+        "string": " lower-left",
+        "token_ids": [
+          4827,
+          8109
+        ],
+        "tokens": [
+          "Ġlower",
+          "-left"
+        ]
+      },
+      {
+        "relation": "LOWER_RIGHT",
+        "string": " lower-right",
+        "token_ids": [
+          4827,
+          6840
+        ],
+        "tokens": [
+          "Ġlower",
+          "-right"
+        ]
+      }
+    ]
+  },
+  "source_candidate_protocol": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/behavioral/candidate_protocol.json",
+  "source_sha256": "8b25508ef109f7887fc915cb3f8787cbaf48ebfbd979f862a33806ba9aadf163"
+}

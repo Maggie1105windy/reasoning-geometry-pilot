@@ -1,0 +1,42 @@
+{
+  "delivery_surface": "static PNG figures embedded/referenced by the technical Markdown report",
+  "palette_policy": "relaxed multi-category up to five restrained roots; line style and marker duplicate color encoding",
+  "charts": [
+    {
+      "file": "figure1_primary_macro_f1.png",
+      "family": "Trend",
+      "variant": "five-series line",
+      "claim": "Primary layer profiles by hop"
+    },
+    {
+      "file": "figure2_balanced_macro_f1.png",
+      "family": "Trend",
+      "variant": "five-series line",
+      "claim": "sample/class-balanced layer profiles"
+    },
+    {
+      "file": "figure3_target_absent.png",
+      "family": "Uncertainty & Benchmark",
+      "variant": "faceted two-series line",
+      "claim": "Derived-All versus Target-Absent"
+    },
+    {
+      "file": "figure4_composition_heldout.png",
+      "family": "Trend",
+      "variant": "four-series line",
+      "claim": "composition generalization layer profiles"
+    },
+    {
+      "file": "figure5_template_test_only.png",
+      "family": "Trend",
+      "variant": "five-series line",
+      "claim": "reserved-template-family examples"
+    },
+    {
+      "file": "figure6_primary_layer_hop_heatmap.png",
+      "family": "Matrix & Cohort",
+      "variant": "heatmap",
+      "claim": "joint layer×hop pattern"
+    }
+  ]
+}

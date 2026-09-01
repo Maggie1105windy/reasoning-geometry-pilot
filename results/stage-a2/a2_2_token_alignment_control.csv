@@ -1,0 +1,7 @@
+sample_index,row_id,entity,layer,first_index,last_index,sequence_final_index,last_equals_sequence_final_index,first_vs_last_identical,last_vs_final_identical,first_last_max_absolute_difference,first_last_mean_absolute_difference,first_last_cosine_similarity
+0,26573,Barjora,0,9,11,11,True,False,True,5.890625,0.44009464979171753,0.7026475667953491
+0,26573,Barjora,15,9,11,11,True,False,True,5.9375,0.9905096888542175,0.7365242838859558
+0,26573,Barjora,31,9,11,11,True,False,True,77.875,2.103937864303589,0.4568721652030945
+1,9184,Georgia's Heard County,0,9,13,13,True,False,True,2.1083984375,0.4542003571987152,0.6833887696266174
+1,9184,Georgia's Heard County,15,9,13,13,True,False,True,13.125,1.059522271156311,0.7546221613883972
+1,9184,Georgia's Heard County,31,9,13,13,True,False,True,29.25,1.5446562767028809,0.7648047208786011

@@ -1,0 +1,11 @@
+{
+  "stage": "B2.0",
+  "status": "PASS",
+  "checked_utc": "2026-08-31T18:15:23.522955+00:00",
+  "lineage": "PASS",
+  "frozen_inputs": "PASS",
+  "protocol": "FROZEN_BEFORE_FIRST_TULU_MODEL_LOAD",
+  "tokenization": "PASS",
+  "large_model_loaded": false,
+  "safe_to_start_b2_1_sft": true
+}

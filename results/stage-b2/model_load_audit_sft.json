@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "model": "SFT",
+  "model_key": "sft",
+  "path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-SFT",
+  "resolved_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-SFT",
+  "model_file_revision": "aa9a78450ea2c6916824501e276cb97b7caf47e6",
+  "tokenizer_file_revision": "aa9a78450ea2c6916824501e276cb97b7caf47e6",
+  "parameters": 8030326784,
+  "layers": 32,
+  "hidden_size": 4096,
+  "model_dtype": "torch.bfloat16",
+  "weight_source": "safetensors only",
+  "transformers_version": "4.44.2",
+  "torch_version": "2.4.0+cu124",
+  "python": "3.11.15",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "load_seconds": 68.64056707918644,
+  "started_utc": "2026-08-31T18:19:27.626125+00:00"
+}

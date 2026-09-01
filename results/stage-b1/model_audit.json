@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "model": "Meta-Llama-3.1-8B Base",
+  "model_path": "/home/ai/projects/reasoning-geometry-pilot/models/Meta-Llama-3.1-8B",
+  "model_revision": "24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea",
+  "tokenizer_revision": "c52792af35fe806a76530f3028f037d1af4e3490",
+  "parameter_count": 8030261248,
+  "layers": 32,
+  "hidden_size": 4096,
+  "model_dtype": "torch.bfloat16",
+  "activation_storage_dtype": "float16",
+  "transformers_version": "4.44.2",
+  "torch_version": "2.4.0+cu124",
+  "python_version": "3.11.15",
+  "cuda_runtime": "12.4",
+  "cudnn_version": 90100,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_total_gib": 23.68426513671875,
+  "config_sha256": "54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd",
+  "tokenizer_json_sha256": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa",
+  "model_load_seconds": 8.771280266344547,
+  "started_utc": "2026-08-24T12:21:18.529695+00:00"
+}

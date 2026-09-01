@@ -1,0 +1,26 @@
+{
+  "rows": 210000,
+  "columns": 59,
+  "row_id_unique": true,
+  "required_columns_present": {
+    "row_id": true,
+    "story_group_id": true,
+    "exact_duplicate_group": true,
+    "computed_hop": true,
+    "canonical_relation": true,
+    "template_ids": true,
+    "template_families": true,
+    "unordered_composition_signature": true,
+    "target_absent_anywhere": true
+  },
+  "parsing_status": {
+    "FULL_OK": 190237,
+    "PATH_ONLY": 10574,
+    "FAILED": 9189
+  },
+  "primary_before_exact_dedup": 13758,
+  "primary_after_exact_dedup": 13758,
+  "primary_exact_duplicates_excluded": 0,
+  "candidate_story_groups": 13758,
+  "candidate_exact_groups_unique": true
+}

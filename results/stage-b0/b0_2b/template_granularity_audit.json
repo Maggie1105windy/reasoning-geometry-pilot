@@ -1,0 +1,18 @@
+{
+  "primary_candidates": 13758,
+  "exact_duplicates_excluded": 0,
+  "template_definitions_all": 214,
+  "surface_skeletons_all": 209,
+  "template_definitions_ok": 203,
+  "surface_skeletons_all_ok": 201,
+  "mid_level_families_all_ok": 95,
+  "broad_families_all_ok": 7,
+  "query_path_groups_in_candidates": {
+    "template_id": 198,
+    "surface_skeleton": 198,
+    "mid_level_family": 93,
+    "broad_family": 7
+  },
+  "story_groups_unique_in_candidate": true,
+  "protected_file_count": 16
+}

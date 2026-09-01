@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "refit": false,
+  "primary_source": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/primary_probe.csv",
+  "primary_sha256": "dc10b3da832911bb929ed760a64cc95f24ae12b61698ce5f3bf805a5cb7ef05e",
+  "balanced_source": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/balanced_probe.csv",
+  "balanced_sha256": "1262dd340cc0be5f7191ea356952771be02600d6b21ec28ce00a57227789122a",
+  "predictions_source": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/primary_test_predictions.csv",
+  "predictions_sha256": "b99cba1b9d941ec5084f01733358909057f008d566c8570530030deccd4b88e2"
+}

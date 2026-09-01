@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "sources": {
+    "composition": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/composition_heldout_probe.csv",
+      "sha256": "2c77785b10ac96e0e4e841d01540e338b30afcd19938034ace4f9b94fb6f5f47"
+    },
+    "template": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/template_test_probe.csv",
+      "sha256": "daecc354a7d0de5d5f7e97f5ab2e0302ad3e4aa0df90a4240c890f4a35b64cf5"
+    },
+    "target_absent": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/target_absent_eval.csv",
+      "sha256": "4de5dd8ce8c28a8e0ced3d7d793247721c1e584790340798d842ebe851f49f61"
+    },
+    "random_label": {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/random_label_control.csv",
+      "sha256": "68a6276462adb7b563d665c671544b16f23766cc1a13d455c4933da4b527a1da"
+    }
+  }
+}

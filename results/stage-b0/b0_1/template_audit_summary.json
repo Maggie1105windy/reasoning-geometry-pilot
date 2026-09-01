@@ -1,0 +1,42 @@
+{
+  "template_definitions": 214,
+  "unique_surface_skeletons": 209,
+  "non_ok_template_definitions": 11,
+  "semantic_status_counts": {
+    "OK": 203,
+    "ERROR": 10,
+    "UNKNOWN": 1
+  },
+  "templates_per_declared_relation": {
+    "LEFT": 24,
+    "RIGHT": 24,
+    "ABOVE": 28,
+    "BELOW": 28,
+    "LOWER_LEFT": 27,
+    "UPPER_RIGHT": 27,
+    "LOWER_RIGHT": 28,
+    "UPPER_LEFT": 28
+  },
+  "total_sentences": {
+    "clean": 1155000,
+    "noise": 2270255
+  },
+  "matched_sentences": {
+    "clean": 1155000,
+    "noise": 2270255
+  },
+  "usable_sentences": {
+    "clean": 1134127,
+    "noise": 2236697
+  },
+  "unmatched_sentence_count": 0,
+  "unmatched_sentences_by_variant": {},
+  "ambiguous_sentence_count": 121616,
+  "ambiguous_sentences_by_variant": {
+    "clean": 46586,
+    "noise": 75030
+  },
+  "validation_sample_size": 500,
+  "validation_failure_count": 0,
+  "primary_clean_non_ok_affected_sample_union": 59531
+}

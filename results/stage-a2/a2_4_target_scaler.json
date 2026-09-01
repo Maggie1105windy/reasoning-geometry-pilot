@@ -1,0 +1,13 @@
+{
+  "target_order": [
+    "longitude",
+    "latitude"
+  ],
+  "ddof": 0,
+  "fit_split": "all official is_test=False rows",
+  "fit_rows": 31668,
+  "longitude_mean": 14.906220305833743,
+  "longitude_std": 78.03314672628153,
+  "latitude_mean": 26.505868671428864,
+  "latitude_std": 28.377352306499102
+}

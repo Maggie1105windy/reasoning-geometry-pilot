@@ -1,0 +1,4 @@
+experiment,analysis,hop,n_train,n_val,n_test,hidden_size,selected_C,validation_macro_f1,validation_accuracy,test_macro_f1,test_accuracy,selected_fit_convergence_warning,task_seconds,scaler_fit_split,C_selection_split,test_used_for_selection,class_weight,layer
+primary,random_train_labels,1,3330,714,712,4096,10000.0,0.13714388809516526,0.13725490196078433,0.12165366638410832,0.12219101123595505,True,252.90783888474107,train_only,validation_only,False,balanced,0
+primary,random_train_labels,3,1971,422,422,4096,1000.0,0.1695321684518855,0.17298578199052134,0.1511511652466474,0.15639810426540285,True,207.1901891939342,train_only,validation_only,False,balanced,0
+primary,random_train_labels,5,665,143,142,4096,1.0,0.13842134445204463,0.15384615384615385,0.12087442675838533,0.11971830985915492,True,119.4544164352119,train_only,validation_only,False,balanced,0

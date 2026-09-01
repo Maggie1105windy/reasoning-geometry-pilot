@@ -1,0 +1,386 @@
+{
+  "stage": "B1",
+  "validator": "independent_fail_closed_post_run_audit",
+  "status": "PASS",
+  "checks": {
+    "frozen_split_checksums_recomputed": true,
+    "frozen_snapshot_checks_pass": true,
+    "tokenization_readout_audit": true,
+    "token_audit_sample_and_cell_coverage": true,
+    "model_is_llama31_base_only": true,
+    "raw_decoder_layer_activation_definition": true,
+    "recorded_activation_integrity": true,
+    "row_alignment_recomputed": true,
+    "row_ids_unique": true,
+    "all_32_activation_files": true,
+    "activation_shapes_dtypes_finite_recomputed": true,
+    "primary_complete": true,
+    "primary_metrics_valid": true,
+    "primary_protocol_columns": true,
+    "balanced_complete": true,
+    "balanced_metrics_valid": true,
+    "balanced_protocol_columns": true,
+    "composition_complete": true,
+    "composition_metrics_valid": true,
+    "composition_protocol_columns": true,
+    "template_complete": true,
+    "template_metrics_valid": true,
+    "template_protocol_columns": true,
+    "target_absent_complete": true,
+    "random_label_complete": true,
+    "random_label_clearly_degraded": true,
+    "C_trace_has_nine_candidates": true,
+    "test_never_used_for_C_selection": true,
+    "validation_selection_and_smaller_C_tie_rule": true,
+    "normal_selected_warning_refits_converged": true,
+    "majority_baselines_complete": true,
+    "story_group_bootstrap_complete": true,
+    "layer_dynamics_summary_complete": true,
+    "primary_predictions_complete": true,
+    "all_scaler_checkpoints": true,
+    "all_probe_model_checkpoints": true,
+    "all_six_figures_present": true,
+    "no_post_trained_checkpoint_used": true
+  },
+  "failed_checks": [],
+  "details": {
+    "split_files_recomputed": 16,
+    "activation_scan": [
+      {
+        "layer": 0,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 1,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 2,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 3,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 4,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 5,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 6,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 7,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 8,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 9,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 10,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 11,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 12,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 13,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 14,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 15,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 16,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 17,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 18,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 19,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 20,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 21,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 22,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 23,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 24,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 25,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 26,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 27,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 28,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 29,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 30,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      },
+      {
+        "layer": 31,
+        "present": true,
+        "shape": [
+          13758,
+          4096
+        ],
+        "dtype": "float16",
+        "finite": true
+      }
+    ],
+    "random_label": {
+      "mean_accuracy": 0.1284677570365659,
+      "mean_macro_f1": 0.12474756004848243,
+      "matched_normal_mean_macro_f1": 0.17903994521236327,
+      "mean_macro_f1_drop": 0.054292385163880824
+    },
+    "convergence_sensitivity": {
+      "normal_refits": 41,
+      "normal_remaining_warnings": 0,
+      "normal_max_abs_test_macro_f1_delta": 0.0116018844508457,
+      "normal_mean_abs_test_macro_f1_delta": 0.0009722588604163269,
+      "random_refits": 5,
+      "random_remaining_warnings": 2,
+      "random_max_abs_test_macro_f1_delta": 0.0036407980952612
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "late_layer_definition": "layers 16-31; frozen before results",
+  "primary_rows": 160,
+  "derived_pooled_rows": 160,
+  "balanced_rows": 160,
+  "random_rows": 30,
+  "random_mean_accuracy": 0.1239530659810533,
+  "random_mean_macro_f1": 0.12150082943855652,
+  "matched_normal_mean_accuracy": 0.1703905249736593,
+  "matched_normal_mean_macro_f1": 0.1653207177622103,
+  "test_accessed_for_selection_any": false,
+  "selected_fit_convergence_warnings": 33,
+  "activation_reextracted": false
+}

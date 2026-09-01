@@ -1,0 +1,51 @@
+sample_order,row_id,entity,prompt,entity_last_token_index,entity_last_token,layer,mae,max_absolute_error,cosine_similarity
+0,3401,San Gregorio Armeno,What are the lat/lon coordinates of San Gregorio Armeno,13,eno,0,0.0023856586776673794,0.018198013305664062,0.9999916553497314
+0,3401,San Gregorio Armeno,What are the lat/lon coordinates of San Gregorio Armeno,13,eno,7,0.004442316945642233,0.012913703918457031,0.9999870657920837
+0,3401,San Gregorio Armeno,What are the lat/lon coordinates of San Gregorio Armeno,13,eno,15,0.005502591375261545,0.13455963134765625,0.9999918341636658
+0,3401,San Gregorio Armeno,What are the lat/lon coordinates of San Gregorio Armeno,13,eno,23,0.009734214283525944,0.16359710693359375,0.9999951124191284
+0,3401,San Gregorio Armeno,What are the lat/lon coordinates of San Gregorio Armeno,13,eno,31,0.027640417218208313,0.35845184326171875,0.999950110912323
+1,30630,San Mauro Pascoli,What are the lat/lon coordinates of San Mauro Pascoli,13,coli,0,0.002523384988307953,0.01899433135986328,0.9999913573265076
+1,30630,San Mauro Pascoli,What are the lat/lon coordinates of San Mauro Pascoli,13,coli,7,0.004786343313753605,0.027722954750061035,0.999987781047821
+1,30630,San Mauro Pascoli,What are the lat/lon coordinates of San Mauro Pascoli,13,coli,15,0.005570738576352596,0.020036697387695312,0.9999923706054688
+1,30630,San Mauro Pascoli,What are the lat/lon coordinates of San Mauro Pascoli,13,coli,23,0.008999204263091087,0.12548828125,0.9999960064888
+1,30630,San Mauro Pascoli,What are the lat/lon coordinates of San Mauro Pascoli,13,coli,31,0.031404078006744385,0.3122520446777344,0.9999232292175293
+2,3532,"Lexington, Kentucky's Christ Church Cathedral ","What are the lat/lon coordinates of Lexington, Kentucky's Christ Church Cathedral ",17,Ġ,0,0.002379907527938485,0.011098343878984451,0.999991774559021
+2,3532,"Lexington, Kentucky's Christ Church Cathedral ","What are the lat/lon coordinates of Lexington, Kentucky's Christ Church Cathedral ",17,Ġ,7,0.0044171130284667015,0.01401662826538086,0.9999873638153076
+2,3532,"Lexington, Kentucky's Christ Church Cathedral ","What are the lat/lon coordinates of Lexington, Kentucky's Christ Church Cathedral ",17,Ġ,15,0.005362853407859802,0.018607348203659058,0.9999926090240479
+2,3532,"Lexington, Kentucky's Christ Church Cathedral ","What are the lat/lon coordinates of Lexington, Kentucky's Christ Church Cathedral ",17,Ġ,23,0.008544362150132656,0.1208343505859375,0.9999954104423523
+2,3532,"Lexington, Kentucky's Christ Church Cathedral ","What are the lat/lon coordinates of Lexington, Kentucky's Christ Church Cathedral ",17,Ġ,31,0.021726008504629135,0.31764793395996094,0.9999254941940308
+3,25906,India's Belonia,What are the lat/lon coordinates of India's Belonia,12,onia,0,0.002583895344287157,0.016973495483398438,0.9999891519546509
+3,25906,India's Belonia,What are the lat/lon coordinates of India's Belonia,12,onia,7,0.004820907488465309,0.047794342041015625,0.9999879598617554
+3,25906,India's Belonia,What are the lat/lon coordinates of India's Belonia,12,onia,15,0.005788193084299564,0.07646942138671875,0.9999917149543762
+3,25906,India's Belonia,What are the lat/lon coordinates of India's Belonia,12,onia,23,0.008983982726931572,0.09999847412109375,0.9999962449073792
+3,25906,India's Belonia,What are the lat/lon coordinates of India's Belonia,12,onia,31,0.019889652729034424,0.15091705322265625,0.9999716281890869
+4,17370,Virginia's Lowes Island,What are the lat/lon coordinates of Virginia's Lowes Island,13,ĠIsland,0,0.002501158509403467,0.013909339904785156,0.9999901056289673
+4,17370,Virginia's Lowes Island,What are the lat/lon coordinates of Virginia's Lowes Island,13,ĠIsland,7,0.004809875972568989,0.042278289794921875,0.9999880790710449
+4,17370,Virginia's Lowes Island,What are the lat/lon coordinates of Virginia's Lowes Island,13,ĠIsland,15,0.005904398858547211,0.030851364135742188,0.9999932646751404
+4,17370,Virginia's Lowes Island,What are the lat/lon coordinates of Virginia's Lowes Island,13,ĠIsland,23,0.008602241054177284,0.08087921142578125,0.9999966621398926
+4,17370,Virginia's Lowes Island,What are the lat/lon coordinates of Virginia's Lowes Island,13,ĠIsland,31,0.025380875915288925,0.21033239364624023,0.9999478459358215
+5,17138,Shklow,What are the lat/lon coordinates of Shklow,11,low,0,0.0025564173702150583,0.024234771728515625,0.9999891519546509
+5,17138,Shklow,What are the lat/lon coordinates of Shklow,11,low,7,0.004886407405138016,0.015033304691314697,0.9999861717224121
+5,17138,Shklow,What are the lat/lon coordinates of Shklow,11,low,15,0.005922389216721058,0.06740188598632812,0.9999911785125732
+5,17138,Shklow,What are the lat/lon coordinates of Shklow,11,low,23,0.008604462258517742,0.24044036865234375,0.9999947547912598
+5,17138,Shklow,What are the lat/lon coordinates of Shklow,11,low,31,0.026901016011834145,0.3568611145019531,0.99992436170578
+6,27603,Hampshire's Bramley,What are the lat/lon coordinates of Hampshire's Bramley,13,ley,0,0.002535507082939148,0.020740509033203125,0.9999884366989136
+6,27603,Hampshire's Bramley,What are the lat/lon coordinates of Hampshire's Bramley,13,ley,7,0.0048241931945085526,0.015605807304382324,0.9999873638153076
+6,27603,Hampshire's Bramley,What are the lat/lon coordinates of Hampshire's Bramley,13,ley,15,0.00571573618799448,0.01753997802734375,0.9999908208847046
+6,27603,Hampshire's Bramley,What are the lat/lon coordinates of Hampshire's Bramley,13,ley,23,0.008379103615880013,0.07132720947265625,0.9999958872795105
+6,27603,Hampshire's Bramley,What are the lat/lon coordinates of Hampshire's Bramley,13,ley,31,0.023926014080643654,0.4805145263671875,0.9999133944511414
+7,3728,Los Angeles's St. Thomas the Apostle Catholic Church ,What are the lat/lon coordinates of Los Angeles's St. Thomas the Apostle Catholic Church ,20,Ġ,0,0.0023532507475465536,0.023207664489746094,0.9999910593032837
+7,3728,Los Angeles's St. Thomas the Apostle Catholic Church ,What are the lat/lon coordinates of Los Angeles's St. Thomas the Apostle Catholic Church ,20,Ġ,7,0.004195035435259342,0.02765035629272461,0.9999876618385315
+7,3728,Los Angeles's St. Thomas the Apostle Catholic Church ,What are the lat/lon coordinates of Los Angeles's St. Thomas the Apostle Catholic Church ,20,Ġ,15,0.0052128201350569725,0.04534149169921875,0.9999937415122986
+7,3728,Los Angeles's St. Thomas the Apostle Catholic Church ,What are the lat/lon coordinates of Los Angeles's St. Thomas the Apostle Catholic Church ,20,Ġ,23,0.009995704516768456,0.23970794677734375,0.9999945759773254
+7,3728,Los Angeles's St. Thomas the Apostle Catholic Church ,What are the lat/lon coordinates of Los Angeles's St. Thomas the Apostle Catholic Church ,20,Ġ,31,0.036959458142519,0.35735321044921875,0.9998708367347717
+8,7974,Chancheng District,What are the lat/lon coordinates of Chancheng District,12,ĠDistrict,0,0.0022371106315404177,0.014245986938476562,0.9999927878379822
+8,7974,Chancheng District,What are the lat/lon coordinates of Chancheng District,12,ĠDistrict,7,0.004342807922512293,0.05637359619140625,0.999992311000824
+8,7974,Chancheng District,What are the lat/lon coordinates of Chancheng District,12,ĠDistrict,15,0.005298222880810499,0.024139404296875,0.9999945163726807
+8,7974,Chancheng District,What are the lat/lon coordinates of Chancheng District,12,ĠDistrict,23,0.008625087328255177,0.18097305297851562,0.9999960064888
+8,7974,Chancheng District,What are the lat/lon coordinates of Chancheng District,12,ĠDistrict,31,0.023235078901052475,0.45833587646484375,0.9999588131904602
+9,33984,El Jebha,What are the lat/lon coordinates of El Jebha,12,ha,0,0.00253925914876163,0.0196685791015625,0.9999890327453613
+9,33984,El Jebha,What are the lat/lon coordinates of El Jebha,12,ha,7,0.004896186292171478,0.0275726318359375,0.9999852776527405
+9,33984,El Jebha,What are the lat/lon coordinates of El Jebha,12,ha,15,0.005920527968555689,0.05698394775390625,0.9999913573265076
+9,33984,El Jebha,What are the lat/lon coordinates of El Jebha,12,ha,23,0.008526144549250603,0.0656890869140625,0.9999961853027344
+9,33984,El Jebha,What are the lat/lon coordinates of El Jebha,12,ha,31,0.03880356624722481,0.311767578125,0.9999003410339355

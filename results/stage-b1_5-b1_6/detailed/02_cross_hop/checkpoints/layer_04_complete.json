@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "layer": 4,
+  "tasks": [
+    "primary_h1",
+    "primary_derived_pooled",
+    "balanced_h1"
+  ],
+  "result_rows": 15,
+  "relationwise_rows": 120,
+  "trace_rows": 27,
+  "runtime_seconds": 722.2994367107749,
+  "activation_reextracted": false
+}

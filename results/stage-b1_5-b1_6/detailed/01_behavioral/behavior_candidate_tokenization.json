@@ -1,0 +1,122 @@
+{
+  "stage": "B1.5",
+  "status": "PASS",
+  "records": [
+    {
+      "relation": "ABOVE",
+      "candidate_string": " above",
+      "token_ids": [
+        3485
+      ],
+      "tokens": [
+        "Ġabove"
+      ],
+      "decoded": " above",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "BELOW",
+      "candidate_string": " below",
+      "token_ids": [
+        3770
+      ],
+      "tokens": [
+        "Ġbelow"
+      ],
+      "decoded": " below",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "LEFT",
+      "candidate_string": " left",
+      "token_ids": [
+        2163
+      ],
+      "tokens": [
+        "Ġleft"
+      ],
+      "decoded": " left",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "RIGHT",
+      "candidate_string": " right",
+      "token_ids": [
+        1314
+      ],
+      "tokens": [
+        "Ġright"
+      ],
+      "decoded": " right",
+      "token_count": 1,
+      "contains_special_token": false
+    },
+    {
+      "relation": "UPPER_LEFT",
+      "candidate_string": " upper-left",
+      "token_ids": [
+        8582,
+        8109
+      ],
+      "tokens": [
+        "Ġupper",
+        "-left"
+      ],
+      "decoded": " upper-left",
+      "token_count": 2,
+      "contains_special_token": false
+    },
+    {
+      "relation": "UPPER_RIGHT",
+      "candidate_string": " upper-right",
+      "token_ids": [
+        8582,
+        6840
+      ],
+      "tokens": [
+        "Ġupper",
+        "-right"
+      ],
+      "decoded": " upper-right",
+      "token_count": 2,
+      "contains_special_token": false
+    },
+    {
+      "relation": "LOWER_LEFT",
+      "candidate_string": " lower-left",
+      "token_ids": [
+        4827,
+        8109
+      ],
+      "tokens": [
+        "Ġlower",
+        "-left"
+      ],
+      "decoded": " lower-left",
+      "token_count": 2,
+      "contains_special_token": false
+    },
+    {
+      "relation": "LOWER_RIGHT",
+      "candidate_string": " lower-right",
+      "token_ids": [
+        4827,
+        6840
+      ],
+      "tokens": [
+        "Ġlower",
+        "-right"
+      ],
+      "decoded": " lower-right",
+      "token_count": 2,
+      "contains_special_token": false
+    }
+  ],
+  "token_count_min": 1,
+  "token_count_max": 2,
+  "lengths_equal": false,
+  "sum_and_length_normalized_both_required": true
+}

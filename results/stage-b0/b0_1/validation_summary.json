@@ -1,0 +1,14 @@
+{
+  "row_id_unique": true,
+  "row_id_contiguous": true,
+  "canonical_relations_legal": true,
+  "query_entities_in_graph_when_parse_success": true,
+  "computed_hop_at_least_one": true,
+  "hop1_has_direct_path": true,
+  "inverse_mapping_complete": true,
+  "no_silent_template_unmatched": true,
+  "metadata_rows_equal_input": true,
+  "candidate_reason_complete": true,
+  "raw_repository_clean": true,
+  "parquet_exists": true
+}

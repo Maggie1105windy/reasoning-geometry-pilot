@@ -1,0 +1,11 @@
+sample_index,row_id,entity,layer,comparison,hf_hidden_states_index,max_absolute_difference,mean_absolute_difference,cosine_similarity
+0,26573,Barjora,0,raw_decoder_hook_vs_hidden_states_tuple,1,0.0,0.0,1.0000011920928955
+0,26573,Barjora,15,raw_decoder_hook_vs_hidden_states_tuple,16,0.0,0.0,1.0000007152557373
+0,26573,Barjora,31,raw_decoder_hook_vs_hidden_states_tuple,32,7.6875,0.878773033618927,0.9891723990440369
+0,26573,Barjora,31,raw_decoder_hook_vs_post_final_RMSNorm,32,7.6875,0.878773033618927,0.9891723990440369
+0,26573,Barjora,31,RMSNorm_raw_hook_vs_hidden_states_32,32,0.0,0.0,1.0000009536743164
+8,30990,Rocha Department,0,raw_decoder_hook_vs_hidden_states_tuple,1,0.0,0.0,1.0000011920928955
+8,30990,Rocha Department,15,raw_decoder_hook_vs_hidden_states_tuple,16,0.0,0.0,1.0000007152557373
+8,30990,Rocha Department,31,raw_decoder_hook_vs_hidden_states_tuple,32,11.125,1.0620732307434082,0.9920386672019958
+8,30990,Rocha Department,31,raw_decoder_hook_vs_post_final_RMSNorm,32,11.125,1.0620732307434082,0.9920386672019958
+8,30990,Rocha Department,31,RMSNorm_raw_hook_vs_hidden_states_32,32,0.0,0.0,1.0000009536743164

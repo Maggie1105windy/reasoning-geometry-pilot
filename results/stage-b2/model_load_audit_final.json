@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "model": "Final",
+  "model_key": "final",
+  "path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B",
+  "resolved_path": "/home/ai/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B",
+  "model_file_revision": "c5d2996f1e01989a69bd740d8d034edf672cc1e0",
+  "tokenizer_file_revision": "191d2c80ef01945c2dee535a263a29e923b6002c",
+  "parameters": 8030326784,
+  "layers": 32,
+  "hidden_size": 4096,
+  "model_dtype": "torch.bfloat16",
+  "weight_source": "safetensors only",
+  "transformers_version": "4.44.2",
+  "torch_version": "2.4.0+cu124",
+  "python": "3.11.15",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "load_seconds": 140.66748819500208,
+  "started_utc": "2026-08-31T18:36:40.816772+00:00"
+}

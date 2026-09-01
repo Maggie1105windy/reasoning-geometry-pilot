@@ -1,0 +1,17 @@
+sample_order,row_id,entity,latitude,longitude,is_test,entity_type,entity_subtype,country,raw_entity
+0,26573,Barjora,23.43,87.28,False,populated_place,PopulatedPlace,India,Barjora
+1,9184,Georgia's Heard County,33.3,-85.13,False,populated_place,Region,United_States,"Heard County, Georgia"
+2,30195,Sangaste,57.9261,26.3319,False,populated_place,PopulatedPlace,Estonia,Sangaste
+3,536,Brisbane's Inner City Bypass,-27.4531,153.024,False,structure,Road,Australia,"Inner City Bypass, Brisbane"
+4,4489,Tenth Presbyterian Church,39.947,-75.1699,False,structure,HistoricBuilding,United_States,Tenth Presbyterian Church
+5,5512,Carlsberg Museum,55.6674,12.5307,False,structure,Building,Denmark,Carlsberg Museum
+6,38447,Lake Ram,33.2325,35.7663,False,natural_place,Lake,Golan_Heights,Lake Ram
+7,39527,Salim Ali Lake,19.8992,75.3423,False,natural_place,BodyOfWater,India,Salim Ali Lake
+8,30990,Rocha Department,-34.4833,-54.35,True,populated_place,PopulatedPlace,Uruguay,Rocha Department
+9,30203,Sandy Bay First Nation,50.55,-98.6472,True,populated_place,PopulatedPlace,Canada,Sandy Bay First Nation
+10,28883,Puncheston,51.93,-4.9,True,populated_place,PopulatedPlace,United_Kingdom,Puncheston
+11,3307,"Lewiston, Maine's Basilica of Saints Peter and Paul ",44.0982,-70.2123,True,structure,HistoricBuilding,United_States,"Basilica of Saints Peter and Paul (Lewiston, Maine)"
+12,5510,Ormeley Lodge,51.4353,-0.302222,True,structure,Building,England,Ormeley Lodge
+13,2932,Khindsi Lake,21.3965,79.3721,True,structure,Dam,India,Khindsi Lake
+14,39395,Lake Saroma,44.1667,143.717,True,natural_place,BodyOfWater,Japan,Lake Saroma
+15,39142,Chamonix's Lac Blanc ,45.9822,6.88944,True,natural_place,Lake,France,Lac Blanc (Chamonix)

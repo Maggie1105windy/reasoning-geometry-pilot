@@ -1,0 +1,9 @@
+row_id,layer,comparison,hf_index,cosine_similarity,mean_absolute_error,max_absolute_error
+85702,0,raw_hook_vs_hidden_states_layer_plus_1,1,1.0000009536743164,0.0,0.0
+85702,15,raw_hook_vs_hidden_states_layer_plus_1,16,1.0000009536743164,0.0,0.0
+85702,31,raw_hook_vs_hidden_states_32_post_final_RMSNorm,32,0.9855002164840698,0.8187810778617859,7.875
+85702,31,final_RMSNorm_raw_hook_vs_hidden_states_32,32,1.0000009536743164,0.0,0.0
+90635,0,raw_hook_vs_hidden_states_layer_plus_1,1,1.000001072883606,0.0,0.0
+90635,15,raw_hook_vs_hidden_states_layer_plus_1,16,1.0000009536743164,0.0,0.0
+90635,31,raw_hook_vs_hidden_states_32_post_final_RMSNorm,32,0.9881349802017212,0.9324140548706055,6.8125
+90635,31,final_RMSNorm_raw_hook_vs_hidden_states_32,32,1.0000007152557373,0.0,0.0

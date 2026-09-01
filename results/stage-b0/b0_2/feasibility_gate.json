@@ -1,0 +1,20 @@
+{
+  "status": "PASS_WITH_LIMITATION",
+  "hard_checks": {
+    "primary_all_40_cells": true,
+    "primary_zero_story_leakage": true,
+    "balanced_eval_cells_at_least_10": true,
+    "balanced_zero_story_leakage": true,
+    "template_all_splits_nonempty": true,
+    "template_zero_family_overlap": true,
+    "template_zero_story_leakage": true,
+    "composition_all_32_cells": true,
+    "composition_zero_signature_overlap": true,
+    "composition_zero_story_leakage": true
+  },
+  "limitation_checks": {
+    "template_all_40_cells": false,
+    "template_eval_min_cell_at_least_10": false,
+    "primary_eval_min_cell_at_least_20": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "selection_rule_unchanged": true,
+  "selected_C_frozen": true,
+  "test_used_for_C_selection": false,
+  "max_iter": 5000,
+  "tasks_escalated_from_2000": 6,
+  "remaining_warning_tasks": 0,
+  "max_abs_test_macro_f1_delta_vs_2000": 0.013276986341766467,
+  "mean_abs_test_macro_f1_delta_vs_2000": 0.0023904967732286462,
+  "output_csv": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/cross_hop/convergence_sensitivity_5000.csv"
+}

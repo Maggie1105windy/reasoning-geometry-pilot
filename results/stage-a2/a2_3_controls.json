@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "r2_overall": -0.002122292590810426,
+    "r2_longitude": -0.0040426576113412604,
+    "r2_latitude": -0.00020192757027959196
+  },
+  "random_label_control": {
+    "layer": 15,
+    "seed": 42,
+    "shuffle_scope": "training targets only",
+    "test_targets_unchanged": true,
+    "alpha": 2560.0,
+    "r2_overall": -0.07236984520621437,
+    "r2_longitude": -0.08085061694217854,
+    "r2_latitude": -0.0638890734702513,
+    "normal_layer15_r2_overall": 0.5541402437995666,
+    "r2_drop_vs_normal": 0.626510089005781,
+    "fit_predict_runtime_seconds": 0.2516332305967808
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "models": [
+    "base",
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "primary_rows_per_model": 160,
+  "gap_rows": 640,
+  "summary_rows": 16
+}

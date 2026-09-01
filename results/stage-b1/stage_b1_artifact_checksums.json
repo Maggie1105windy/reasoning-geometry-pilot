@@ -1,0 +1,141 @@
+{
+  "generated_utc": "2026-08-24T14:35:17.478125+00:00",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/model_audit.json",
+      "sha256": "a52e06f84fd35d2083e08abc77bc0cb2f8cf988fa33f5a9de142d730a03ed85f",
+      "bytes": 932
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/prompt_protocol.json",
+      "sha256": "28153cfc46797c29d0b7ff2426e556733116c2805cb215f44ebfa27524926874",
+      "bytes": 1245
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/probe_protocol.json",
+      "sha256": "6d9fbb0e36021c3d6ef701c12cb210407b74bbdd7b654ff2789e3d6688f99e9f",
+      "bytes": 1588
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/split_checksum_verification.json",
+      "sha256": "913466a33fb1fc84dfcddae78270804c36f02cb3a181e1d2b50100402074e969",
+      "bytes": 6601
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/tokenization_audit.json",
+      "sha256": "76696e88726e0e3a97ff50c1dff5c6fb243c2070223180f560f6242cbe3632f9",
+      "bytes": 2791
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/activation_sanity.json",
+      "sha256": "9e7b1e860730d30e8fa99967d89e9d30a0f534f4090a8819358c9983acc8bbc0",
+      "bytes": 11379
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/activation_integrity.json",
+      "sha256": "11a0993c5cf475ad2e9a26a116f461e8d59e5faee1b848bb8caeda6dc51015b4",
+      "bytes": 46779
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/union_manifest.csv",
+      "sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c",
+      "bytes": 15437324
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/primary_probe.csv",
+      "sha256": "dc10b3da832911bb929ed760a64cc95f24ae12b61698ce5f3bf805a5cb7ef05e",
+      "bytes": 29823
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/balanced_probe.csv",
+      "sha256": "1262dd340cc0be5f7191ea356952771be02600d6b21ec28ce00a57227789122a",
+      "bytes": 28579
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/target_absent_eval.csv",
+      "sha256": "4de5dd8ce8c28a8e0ced3d7d793247721c1e584790340798d842ebe851f49f61",
+      "bytes": 17490
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/composition_heldout_probe.csv",
+      "sha256": "2c77785b10ac96e0e4e841d01540e338b30afcd19938034ace4f9b94fb6f5f47",
+      "bytes": 24453
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/template_test_probe.csv",
+      "sha256": "daecc354a7d0de5d5f7e97f5ab2e0302ad3e4aa0df90a4240c890f4a35b64cf5",
+      "bytes": 29918
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/random_label_control.csv",
+      "sha256": "68a6276462adb7b563d665c671544b16f23766cc1a13d455c4933da4b527a1da",
+      "bytes": 3229
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/baselines.csv",
+      "sha256": "d878ecf55ed975ad68d2e19d46aa17516d3711258571588f69349b04a107e9e8",
+      "bytes": 1465
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/layer_summary.csv",
+      "sha256": "dd30ebc83d8a2df1f9f2f62521ae94b9e40084b6e8e173fe5efc731473b84469",
+      "bytes": 586
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/primary_peak_bootstrap.csv",
+      "sha256": "c47d7b80ea0b679bf5db3745a50a870fe879bbc64ef8c0f25b5e883e0b62e6f1",
+      "bytes": 501
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/c_selection_trace.csv",
+      "sha256": "5f4efa22ba46425b675f3a06c3ed5759674b8f5fdf796f03d5c549f93ce8bada",
+      "bytes": 550780
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/convergence_refit_sensitivity.csv",
+      "sha256": "11a47dc62b43b31c9a519a6c4dabcb4e41370cfe6fa4eb880bf74e3eb779b06e",
+      "bytes": 11101
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/validation_pre_report.json",
+      "sha256": "eb037bcd741dabe01e9c984bb8d10cdf0cc9f50778ae36de7f5863cf62761666",
+      "bytes": 7977
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure1_primary_macro_f1.png",
+      "sha256": "e20d1dfee33ab23ea79b7c57a5f0565022c7e53bcbedff1fa02a0a61343930c3",
+      "bytes": 130476
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure2_balanced_macro_f1.png",
+      "sha256": "fe99a85c064733813f1913274e099f149f5d13d4b416e93407cd839c4319c9cd",
+      "bytes": 144817
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure3_target_absent.png",
+      "sha256": "7cc8abeb5e379db1e6491132b75f349cc03c61e0bee193f8d11503bb7722ba12",
+      "bytes": 122650
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure4_composition_heldout.png",
+      "sha256": "d21adacd96a1a3f068cbc0e3cef83c2c8c75cdc73465ef21b7a333443bd232c2",
+      "bytes": 118107
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure5_template_test_only.png",
+      "sha256": "ceac1c34139dbc79fa381291d9111a285603d0a13390125c504b7d81dc59d531",
+      "bytes": 123420
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/figures/figure6_primary_layer_hop_heatmap.png",
+      "sha256": "f0680a72f33fe9a25b49e04dc107248d1e8ff316826d636b6a182da0a42bc1b3",
+      "bytes": 46200
+    },
+    {
+      "path": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1/B1_LLAMA31_BASE_RELATION_PROBE_REPORT.md",
+      "sha256": "e4847b9772a06e4ce836d9b5e03c52ecbb94bbc23271c9058942881d974bbfc3",
+      "bytes": 11066
+    }
+  ]
+}

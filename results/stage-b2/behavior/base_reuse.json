@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "base_rescored": false,
+  "predictions_source": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/behavioral/all_behavior_predictions.csv",
+  "predictions_sha256": "f7dc8754e759ba3549123f870be40c1aef876fab05669c17e542a2c507f0845a",
+  "candidate_scores_source": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/behavioral/all_candidate_scores.csv",
+  "candidate_scores_sha256": "626dcf868c2de50e36ef7cbbdd6c07cf248d2a8db3a09bd562e842bd368aea29"
+}
