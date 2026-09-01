@@ -4,6 +4,21 @@
 
 本仓库保存项目的公开研究层：实验方法、冻结协议、结果报告、图表、CSV/JSON 摘要、验证文件和复现脚本。模型权重、完整激活矩阵、缓存、虚拟环境、原始论文 PDF 和凭据不进入仓库。
 
+> 更新于 2026-09-01：Stage A2–A3、B0–B2 和 MATH-500 pilot-20 的现有正式结果已经完成本地恢复与 Git 友好归档。
+
+## 快速入口
+
+| 内容 | 入口 |
+|---|---|
+| 全部阶段结果索引 | [RESULTS.md](RESULTS.md) |
+| B1–B1.6 中文整合报告 | [EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md) |
+| B2 Base/SFT/DPO/Final 正式报告 | [B2_BASE_TULU_STAGE_COMPARISON_REPORT.md](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md) |
+| B2 十张图逐图解释 | [B2_FIGURE_GUIDE_ZH.md](docs/stage-b/B2_FIGURE_GUIDE_ZH.md) |
+| MATH-500 pilot-20 | [preliminary/math500/README.md](preliminary/math500/README.md) |
+| 完成范围与排除资产 | [STATUS.md](STATUS.md) |
+| 云端恢复核验 | [SYNC_AUDIT.md](SYNC_AUDIT.md) |
+| 文件大小与 SHA-256 | [FILE_INVENTORY.csv](FILE_INVENTORY.csv) |
+
 ## 研究问题
 
 1. 语言模型的中间层是否形成可线性读取的空间表示？
@@ -11,6 +26,25 @@
 3. hop 增加是否对应更晚的可解码层？
 4. 线性可解码信息是否与模型自身的答案行为一致？
 5. 显式关系解码器能否跨 hop 迁移，以及后训练是否改变这种结构？
+
+## 方法概览
+
+1. **Stage A — 空间坐标复现**：在 World 数据上抽取冻结模型的 residual-stream 表征，使用线性 Ridge probe 预测经纬度，并通过随机标签、均值基线、量化往返、HF/TransformerLens 对齐和重前向检查约束解释。
+2. **Stage B0 — StepGame 数据冻结**：独立重建 query path 与实际 hop，审计重复、解析失败、模板和 composition，随后冻结 Primary、Balanced、Target-Absent、Composition-heldout 与 Template Test-only 划分。
+3. **Stage B1 — 逐层关系 probe**：在 Llama-3.1-8B Base 的 32 层 question-end hidden state 上训练八分类线性 probe；标准化只拟合训练集，正则参数只由验证集选择，测试集只用于最终评价。
+4. **Stage B1.5–B1.6 — 行为与迁移**：用八个候选方向答案的条件对数似然衡量模型行为；再把 h1 probe 直接应用到 h2–h5，比较 within-hop 与 cross-hop Macro-F1。
+5. **Stage B2 — 后训练比较**：在完全相同的冻结样本、token readout、probe 协议和控制实验下比较 Base、SFT、DPO、Final，并使用 story-group paired bootstrap 评价阶段差值。
+6. **MATH-500 preliminary**：使用同一批 20 题、greedy decoding 和人工复核流程验证 Base→SFT→DPO→Final 行为评测链路；该小样本不作为正式 benchmark。
+
+## 数据集与模型
+
+| 实验 | 数据集 | 模型 |
+|---|---|---|
+| A2 | World spatial coordinates | Pythia-2.8B |
+| A3 | World spatial coordinates | Llama-3.1-8B Base |
+| B0–B1.6 | StepGame CompleteVersion/clean | Llama-3.1-8B Base |
+| B2 | StepGame 冻结划分 | Llama-3.1-8B Base、Tülu-3 SFT、DPO、Final |
+| Preliminary | MATH-500 pilot-20 | 同一 Base/SFT/DPO/Final 序列 |
 
 ## 当前阶段
 
@@ -38,7 +72,7 @@
 - B2 的 derived behavioral mean 分别为 Base **0.1134**、SFT **0.1008**、DPO **0.1120**、Final **0.1112**；行为层面没有随训练阶段单调提升。
 - MATH-500 pilot-20 的人工复核准确率为 Base **25%**、SFT **20%**、DPO **20%**、Final/RLVR **35%**。样本仅 20 题，只用于证明完整评测流程可运行。
 
-完整结果索引见 [RESULTS.md](RESULTS.md)，中文技术报告见 [EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md)。
+完整结果索引见 [RESULTS.md](RESULTS.md)。[EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md) 汇总 B1–B1.6；B2 使用独立的[正式报告](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md)和[逐图解释](docs/stage-b/B2_FIGURE_GUIDE_ZH.md)。
 
 ## 代表性图表
 
@@ -105,6 +139,12 @@
 - B2 比较 Base、SFT、DPO 和 Final 四个 checkpoint；谱系、tokenization 一致性及冻结输入验证见 `results/stage-b2/`。
 - 历史执行脚本保留了服务器项目布局，用于审计已执行流程；在新环境运行前应把项目根目录改为可配置路径。
 - 大型二进制资产、activation tensors 和 `.npz` probe 参数不在 Git 中。报告及 `artifact_checksums.json` 通过 shape、dtype、row order 和 checksum 记录其完整性。
+
+## 归档完整性
+
+SSH 恢复后已核对服务器正式 artifact：B0.2c 为 8 个文件，B1 为 321 个文件，B2 为 1,500 个文件，Math500 远端报告为 18 个文件。完整恢复副本保留在本地暂存区，Git 仓库保存其中适合版本控制和公开审阅的研究层。
+
+仓库当前不追求逐字节复制服务器运行目录。未纳入 Git 的主要是模型与 activation、大型 `.npz` probe 参数、冗余逐层 checkpoint/prediction、环境缓存和日志；正式结论所需的报告、协议、聚合结果、验证文件、图表与 checksum 均已纳入。详细记录见 [SYNC_AUDIT.md](SYNC_AUDIT.md)。
 
 ## 引用与数据来源
 
