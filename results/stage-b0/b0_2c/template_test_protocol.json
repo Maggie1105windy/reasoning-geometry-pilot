@@ -1,0 +1,618 @@
+{
+  "stage": "B0.2c",
+  "status": "PASS",
+  "adopted_control": "Mid-level Test-only Template Holdout",
+  "created_utc": "2026-08-24T10:30:28.830700+00:00",
+  "seed": 20260823,
+  "candidate_cohort": {
+    "rows": 13758,
+    "filters": [
+      "parsing_status == FULL_OK",
+      "story_len == 5",
+      "computed_hop in {1,2,3,4,5}",
+      "canonical_relation in exactly eight non-overlap relations",
+      "contains_suspicious_template == False"
+    ],
+    "group_key": "story_group_id",
+    "exact_duplicates_excluded": 0
+  },
+  "grouping": {
+    "name": "mid_level_template_family",
+    "source": "unchanged audited B0.2b definition",
+    "groups_total": 93,
+    "heldout_test_groups": [
+      "clock_face|<e> is at the <dir> o'clock position relative to <e>.",
+      "clock_face|<e> is there and <e> is at the <dir> position of a clock face.",
+      "clock_face|if <e> is the center of a clock face, <e> is located between <dir> and <dir>.",
+      "vertical|<e> and <e> are in a vertical line with <e> on <dir>."
+    ]
+  },
+  "test_only_rule": {
+    "formal": "T_test intersect (T_train union T_val) is empty",
+    "row_assignment": "all rows containing at least one T_test query-path group enter test",
+    "train_val_group_overlap_allowed": true,
+    "nonheldout_groups_may_cooccur_in_test_rows": true
+  },
+  "development_split": {
+    "rule": "deterministic per-hop-relation-cell story_group_id hash split",
+    "train_share": 0.85,
+    "validation_share": 0.15
+  },
+  "optimization": {
+    "solver": "scipy.optimize.milp (HiGHS)",
+    "solver_success": false,
+    "optimality_proven": false,
+    "feasible_incumbent_used": true,
+    "solver_status": 1,
+    "solver_message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "solver_mip_gap": 0.9312499140157988,
+    "objective_rule": "lexicographic: maximize test rows, then held-out group diversity",
+    "test_cell_balance_cap": 0.25,
+    "test_cell_lower_target": 10,
+    "group_count_total": 93,
+    "heldout_group_count": 4,
+    "test_rows": 1739,
+    "cell_constraints": [
+      {
+        "computed_hop": 1,
+        "canonical_relation": "ABOVE",
+        "candidate_rows": 606,
+        "test_lower": 10,
+        "test_upper": 151
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "BELOW",
+        "candidate_rows": 661,
+        "test_lower": 10,
+        "test_upper": 165
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LEFT",
+        "candidate_rows": 603,
+        "test_lower": 10,
+        "test_upper": 150
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "RIGHT",
+        "candidate_rows": 573,
+        "test_lower": 10,
+        "test_upper": 143
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "UPPER_LEFT",
+        "candidate_rows": 550,
+        "test_lower": 10,
+        "test_upper": 137
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "UPPER_RIGHT",
+        "candidate_rows": 594,
+        "test_lower": 10,
+        "test_upper": 148
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LOWER_LEFT",
+        "candidate_rows": 584,
+        "test_lower": 10,
+        "test_upper": 146
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LOWER_RIGHT",
+        "candidate_rows": 585,
+        "test_lower": 10,
+        "test_upper": 146
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "ABOVE",
+        "candidate_rows": 428,
+        "test_lower": 10,
+        "test_upper": 107
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "BELOW",
+        "candidate_rows": 387,
+        "test_lower": 10,
+        "test_upper": 96
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LEFT",
+        "candidate_rows": 419,
+        "test_lower": 10,
+        "test_upper": 104
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "RIGHT",
+        "candidate_rows": 453,
+        "test_lower": 10,
+        "test_upper": 113
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "UPPER_LEFT",
+        "candidate_rows": 396,
+        "test_lower": 10,
+        "test_upper": 99
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "UPPER_RIGHT",
+        "candidate_rows": 445,
+        "test_lower": 10,
+        "test_upper": 111
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LOWER_LEFT",
+        "candidate_rows": 441,
+        "test_lower": 10,
+        "test_upper": 110
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LOWER_RIGHT",
+        "candidate_rows": 387,
+        "test_lower": 10,
+        "test_upper": 96
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "ABOVE",
+        "candidate_rows": 307,
+        "test_lower": 10,
+        "test_upper": 76
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "BELOW",
+        "candidate_rows": 282,
+        "test_lower": 10,
+        "test_upper": 70
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LEFT",
+        "candidate_rows": 260,
+        "test_lower": 10,
+        "test_upper": 65
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "RIGHT",
+        "candidate_rows": 262,
+        "test_lower": 10,
+        "test_upper": 65
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "UPPER_LEFT",
+        "candidate_rows": 439,
+        "test_lower": 10,
+        "test_upper": 109
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "UPPER_RIGHT",
+        "candidate_rows": 412,
+        "test_lower": 10,
+        "test_upper": 103
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LOWER_LEFT",
+        "candidate_rows": 418,
+        "test_lower": 10,
+        "test_upper": 104
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LOWER_RIGHT",
+        "candidate_rows": 435,
+        "test_lower": 10,
+        "test_upper": 108
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "ABOVE",
+        "candidate_rows": 168,
+        "test_lower": 10,
+        "test_upper": 42
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "BELOW",
+        "candidate_rows": 168,
+        "test_lower": 10,
+        "test_upper": 42
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LEFT",
+        "candidate_rows": 192,
+        "test_lower": 10,
+        "test_upper": 48
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "RIGHT",
+        "candidate_rows": 182,
+        "test_lower": 10,
+        "test_upper": 45
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "UPPER_LEFT",
+        "candidate_rows": 299,
+        "test_lower": 10,
+        "test_upper": 74
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "UPPER_RIGHT",
+        "candidate_rows": 303,
+        "test_lower": 10,
+        "test_upper": 75
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LOWER_LEFT",
+        "candidate_rows": 278,
+        "test_lower": 10,
+        "test_upper": 69
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LOWER_RIGHT",
+        "candidate_rows": 291,
+        "test_lower": 10,
+        "test_upper": 72
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "ABOVE",
+        "candidate_rows": 87,
+        "test_lower": 10,
+        "test_upper": 21
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "BELOW",
+        "candidate_rows": 93,
+        "test_lower": 10,
+        "test_upper": 23
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "LEFT",
+        "candidate_rows": 73,
+        "test_lower": 10,
+        "test_upper": 18
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "RIGHT",
+        "candidate_rows": 56,
+        "test_lower": 10,
+        "test_upper": 14
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "UPPER_LEFT",
+        "candidate_rows": 137,
+        "test_lower": 10,
+        "test_upper": 34
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "UPPER_RIGHT",
+        "candidate_rows": 167,
+        "test_lower": 10,
+        "test_upper": 41
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "LOWER_LEFT",
+        "candidate_rows": 176,
+        "test_lower": 10,
+        "test_upper": 44
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "LOWER_RIGHT",
+        "candidate_rows": 161,
+        "test_lower": 10,
+        "test_upper": 40
+      }
+    ],
+    "selected_cell_counts": [
+      {
+        "computed_hop": 1,
+        "canonical_relation": "ABOVE",
+        "test_rows": 38
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "BELOW",
+        "test_rows": 38
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LEFT",
+        "test_rows": 27
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LOWER_LEFT",
+        "test_rows": 39
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "LOWER_RIGHT",
+        "test_rows": 33
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "RIGHT",
+        "test_rows": 28
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "UPPER_LEFT",
+        "test_rows": 32
+      },
+      {
+        "computed_hop": 1,
+        "canonical_relation": "UPPER_RIGHT",
+        "test_rows": 35
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "ABOVE",
+        "test_rows": 40
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "BELOW",
+        "test_rows": 44
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LEFT",
+        "test_rows": 42
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LOWER_LEFT",
+        "test_rows": 60
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "LOWER_RIGHT",
+        "test_rows": 42
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "RIGHT",
+        "test_rows": 43
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "UPPER_LEFT",
+        "test_rows": 43
+      },
+      {
+        "computed_hop": 2,
+        "canonical_relation": "UPPER_RIGHT",
+        "test_rows": 50
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "ABOVE",
+        "test_rows": 48
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "BELOW",
+        "test_rows": 45
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LEFT",
+        "test_rows": 37
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LOWER_LEFT",
+        "test_rows": 63
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "LOWER_RIGHT",
+        "test_rows": 81
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "RIGHT",
+        "test_rows": 35
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "UPPER_LEFT",
+        "test_rows": 81
+      },
+      {
+        "computed_hop": 3,
+        "canonical_relation": "UPPER_RIGHT",
+        "test_rows": 80
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "ABOVE",
+        "test_rows": 28
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "BELOW",
+        "test_rows": 36
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LEFT",
+        "test_rows": 45
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LOWER_LEFT",
+        "test_rows": 63
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "LOWER_RIGHT",
+        "test_rows": 69
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "RIGHT",
+        "test_rows": 41
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "UPPER_LEFT",
+        "test_rows": 68
+      },
+      {
+        "computed_hop": 4,
+        "canonical_relation": "UPPER_RIGHT",
+        "test_rows": 67
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "ABOVE",
+        "test_rows": 18
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "BELOW",
+        "test_rows": 21
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "LEFT",
+        "test_rows": 18
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "LOWER_LEFT",
+        "test_rows": 41
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "LOWER_RIGHT",
+        "test_rows": 37
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "RIGHT",
+        "test_rows": 14
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "UPPER_LEFT",
+        "test_rows": 29
+      },
+      {
+        "computed_hop": 5,
+        "canonical_relation": "UPPER_RIGHT",
+        "test_rows": 40
+      }
+    ]
+  },
+  "metrics": {
+    "splits": {
+      "train": {
+        "rows": 10217,
+        "supported_cells": 40,
+        "min_cell": 36,
+        "max_cell": 530,
+        "unique_story_groups": 10217,
+        "unique_exact_duplicate_groups": 10217,
+        "observed_template_groups": 89
+      },
+      "val": {
+        "rows": 1802,
+        "supported_cells": 40,
+        "min_cell": 6,
+        "max_cell": 93,
+        "unique_story_groups": 1802,
+        "unique_exact_duplicate_groups": 1802,
+        "observed_template_groups": 89
+      },
+      "test": {
+        "rows": 1739,
+        "supported_cells": 40,
+        "min_cell": 14,
+        "max_cell": 81,
+        "unique_story_groups": 1739,
+        "unique_exact_duplicate_groups": 1739,
+        "observed_template_groups": 93
+      }
+    },
+    "heldout_test_groups": 4,
+    "heldout_group_leakage": {
+      "train": 0,
+      "val": 0
+    },
+    "all_observed_group_overlap_diagnostic": {
+      "train_val": 89,
+      "train_test_nonheldout": 89,
+      "val_test_nonheldout": 89
+    },
+    "story_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "exact_duplicate_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "strict_gate": {
+    "test_template_leakage_zero": true,
+    "story_leakage_zero": true,
+    "exact_duplicate_leakage_zero": true,
+    "test_supported_cells": 40,
+    "minimum_test_cell_gate": 5,
+    "minimum_test_cell_actual": 14,
+    "passed": true
+  },
+  "surface_formal_attempt": "NOT_RUN_AFTER_MID_PASS",
+  "broad_restricted_control": {
+    "unchanged": true,
+    "common_cells": 28,
+    "total_cells": 40,
+    "usable_hops": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "prohibitions_observed": {
+    "model_loaded": false,
+    "activations_extracted": false,
+    "probe_trained": false,
+    "new_taxonomy_created": false
+  }
+}

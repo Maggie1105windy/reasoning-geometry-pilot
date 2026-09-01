@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "failed_checks": [],
+  "checks": {
+    "formal_status_pass": true,
+    "surface_not_formally_run": true,
+    "all_candidate_rows_partitioned_once": true,
+    "exact_duplicates_excluded_zero": true,
+    "source_fields_match": true,
+    "full_ok": true,
+    "hops_exact": true,
+    "relations_exact": true,
+    "suspicious_templates_zero": true,
+    "test_is_exactly_all_rows_containing_heldout": true,
+    "contains_flag_exact": true,
+    "heldout_absent_train": true,
+    "heldout_absent_val": true,
+    "all_heldout_observed_test": true,
+    "story_group_id_overlap_zero": true,
+    "exact_duplicate_group_overlap_zero": true,
+    "train_40_cells": true,
+    "val_40_cells": true,
+    "test_40_cells": true,
+    "test_min_cell_gate": true,
+    "test_min_cell_priority_target": true,
+    "train_larger_than_test": true,
+    "train_larger_than_val": true,
+    "manifest_hashes_match": true,
+    "manifest_aggregate_matches": true,
+    "protected_b0_2_unchanged": true,
+    "broad_restricted_unchanged": true,
+    "no_model_work": true
+  },
+  "observed": {
+    "rows": {
+      "train": 10217,
+      "val": 1802,
+      "test": 1739
+    },
+    "min_cells": {
+      "train": 36,
+      "val": 6,
+      "test": 14
+    },
+    "heldout_groups": 4,
+    "heldout_leakage_train": 0,
+    "heldout_leakage_val": 0,
+    "story_overlap_total": 0
+  }
+}

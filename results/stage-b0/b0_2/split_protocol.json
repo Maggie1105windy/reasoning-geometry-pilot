@@ -1,0 +1,81 @@
+{
+  "stage": "B0.2",
+  "freeze_timestamp_utc": "2026-08-23T14:11:04.012451+00:00",
+  "source_metadata": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_1/stepgame_metadata.parquet",
+  "source_metadata_sha256": "5ae78eb1d830b04d4fb29fdc6833854725e77ed8142b7d805d9a1b3cc49d28fd",
+  "dataset_commit": "5e6aff1563a6d7f46ee1f1aeff98b94e68c29005",
+  "random_seed": 20260823,
+  "primary_definition": {
+    "dataset": "StepGame CompleteVersion/clean",
+    "parsing_status": "FULL_OK",
+    "story_len": 5,
+    "computed_hop": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "canonical_relation": [
+      "ABOVE",
+      "BELOW",
+      "LEFT",
+      "RIGHT",
+      "UPPER_LEFT",
+      "UPPER_RIGHT",
+      "LOWER_LEFT",
+      "LOWER_RIGHT"
+    ],
+    "contains_suspicious_template": false,
+    "recorded_hop_or_hop_match_used": false
+  },
+  "group_key": "story_group_id",
+  "relation_classes": [
+    "ABOVE",
+    "BELOW",
+    "LEFT",
+    "RIGHT",
+    "UPPER_LEFT",
+    "UPPER_RIGHT",
+    "LOWER_LEFT",
+    "LOWER_RIGHT"
+  ],
+  "hop_values": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "template_policy": "exclude all B0.1 ERROR/UNKNOWN templates from every cohort; template held-out uses query-path broad template_family sets and permits distractor-family reuse",
+  "duplicate_policy": "retain one representative per exact_duplicate_group; keep same-story/different-query rows together",
+  "primary_split_method": "deterministic 70/15/15 hop×relation×target-absent secondary stratification; audited Primary story groups are singleton after filtering",
+  "balanced_split_method": "maximize common N/class/hop; group assignment plus capacity repair; exact 34/11/11 rows per cell",
+  "template_heldout_method": "exhaustive three-way partition of seven broad B0.1 families; maximize common cell coverage; exclude cross-partition query paths; story groups indivisible",
+  "composition_heldout_method": "union unordered signatures linked by a story; deterministic component stratification plus coverage repair",
+  "target_absent_method": "subset of frozen Primary membership; computed_hop>=2 and target_relation_present_anywhere=False",
+  "feasibility_gate": {
+    "status": "PASS_WITH_LIMITATION",
+    "hard_checks": {
+      "primary_all_40_cells": true,
+      "primary_zero_story_leakage": true,
+      "balanced_eval_cells_at_least_10": true,
+      "balanced_zero_story_leakage": true,
+      "template_all_splits_nonempty": true,
+      "template_zero_family_overlap": true,
+      "template_zero_story_leakage": true,
+      "composition_all_32_cells": true,
+      "composition_zero_signature_overlap": true,
+      "composition_zero_story_leakage": true
+    },
+    "limitation_checks": {
+      "template_all_40_cells": false,
+      "template_eval_min_cell_at_least_10": false,
+      "primary_eval_min_cell_at_least_20": false
+    }
+  },
+  "known_limitations": [
+    "Broad-family template held-out cannot cover all 40 hop×relation cells in all three splits.",
+    "Primary validation/test minimum cells are below 20 and are not oversampled."
+  ]
+}

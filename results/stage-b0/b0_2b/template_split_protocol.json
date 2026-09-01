@@ -1,0 +1,186 @@
+{
+  "stage": "B0.2b",
+  "timestamp_utc": "2026-08-23T16:41:12.799564+00:00",
+  "dataset_commit": "5e6aff1563a6d7f46ee1f1aeff98b94e68c29005",
+  "source_metadata": "/home/ai/projects/reasoning-geometry-pilot/artifacts/stage_b0_1/stepgame_metadata.parquet",
+  "seed": 20260823,
+  "candidate_definition": {
+    "parsing_status": "FULL_OK",
+    "story_len": 5,
+    "computed_hop": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "relations": [
+      "ABOVE",
+      "BELOW",
+      "LEFT",
+      "RIGHT",
+      "UPPER_LEFT",
+      "UPPER_RIGHT",
+      "LOWER_LEFT",
+      "LOWER_RIGHT"
+    ],
+    "contains_suspicious_template": false
+  },
+  "group_key": "story_group_id",
+  "heldout_scope": "query shortest-path templates; distractor templates are not constrained",
+  "surface_skeleton_rule": "official template text with AA/BB entity placeholders normalized to <E>; duplicate skeletons are one group",
+  "mid_level_rule": "broad family plus direction-lexeme-normalized syntactic frame; clock values, compass/directional phrases and degree adverbs are normalized without using model outcomes",
+  "formal_gate": {
+    "story_overlap": 0,
+    "query_path_group_overlap": 0,
+    "exact_duplicate_leakage": 0,
+    "relations": [
+      "ABOVE",
+      "BELOW",
+      "LEFT",
+      "RIGHT",
+      "UPPER_LEFT",
+      "UPPER_RIGHT",
+      "LOWER_LEFT",
+      "LOWER_RIGHT"
+    ],
+    "hops": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "suspicious_templates": 0,
+    "all_train_val_test_cells_positive": true,
+    "minimum_val_cell": 5,
+    "minimum_test_cell": 5
+  },
+  "status": "FAIL",
+  "adopted_control": null,
+  "surface_result": {
+    "label": "surface_skeleton",
+    "group_column": "query_path_surface_skeletons",
+    "template_groups": 198,
+    "assigned_group_counts": {
+      "train": 40,
+      "val": 76,
+      "test": 82
+    },
+    "rows": 6604,
+    "sizes": {
+      "train": 1130,
+      "val": 2666,
+      "test": 2808
+    },
+    "covered_cells": {
+      "train": 40,
+      "val": 40,
+      "test": 40
+    },
+    "min_cells": {
+      "train": 1,
+      "val": 2,
+      "test": 2
+    },
+    "template_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "story_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "search_method": "deterministic multi-start coordinate search over global group ownership",
+    "objective": [
+      2,
+      40,
+      120,
+      2,
+      684,
+      206,
+      6604,
+      -142
+    ],
+    "best_restart": 5,
+    "best_sweep": 11,
+    "path_repair_steps_applied": 2,
+    "all_40_cells": true
+  },
+  "mid_result": {
+    "label": "mid_level_family",
+    "group_column": "query_path_mid_families",
+    "template_groups": 93,
+    "assigned_group_counts": {
+      "train": 19,
+      "val": 39,
+      "test": 35
+    },
+    "rows": 6466,
+    "sizes": {
+      "train": 1487,
+      "val": 2185,
+      "test": 2794
+    },
+    "covered_cells": {
+      "train": 40,
+      "val": 40,
+      "test": 40
+    },
+    "min_cells": {
+      "train": 1,
+      "val": 1,
+      "test": 2
+    },
+    "template_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "story_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "search_method": "deterministic multi-start coordinate search over global group ownership",
+    "objective": [
+      1,
+      40,
+      120,
+      1,
+      631,
+      222,
+      6466,
+      -609
+    ],
+    "best_restart": 9,
+    "best_sweep": 6,
+    "path_repair_steps_applied": 1,
+    "all_40_cells": true
+  },
+  "broad_result": {
+    "families": 7,
+    "sizes": {
+      "train": 2756,
+      "val": 1644,
+      "test": 1921
+    },
+    "covered_cells": {
+      "train": 38,
+      "val": 30,
+      "test": 30
+    },
+    "common_supported_cells": 28,
+    "missing_common_cells": 12,
+    "usable_hops": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "solver_note": "Finite deterministic local search found full nonzero support; fixed >=5 feasibility MILPs timed out without a feasible seed and without proving infeasibility.",
+  "protected_b0_2_hashes_unchanged": true
+}

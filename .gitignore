@@ -1,0 +1,54 @@
+# Large model and activation assets
+models/
+activations/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.npy
+*.npz
+
+# Data and caches that should not be redistributed by default
+data/raw/
+datasets/
+cache/
+.cache/
+huggingface/
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.conda/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local scratch and generated logs
+tmp/
+temp/
+logs/
+*.log
+
+# Papers are referenced by citation rather than redistributed
+references/papers/
+*.pdf
+
