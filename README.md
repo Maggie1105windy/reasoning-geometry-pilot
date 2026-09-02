@@ -14,6 +14,7 @@
 | B1–B1.6 中文整合报告 | [EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md) |
 | B2 Base/SFT/DPO/Final 正式报告 | [B2_BASE_TULU_STAGE_COMPARISON_REPORT.md](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md) |
 | Stage B 完整中文研究报告 | [STAGE_B_RESEARCH_REPORT_ZH.md](docs/stage-b/STAGE_B_RESEARCH_REPORT_ZH.md) |
+| Stage B 正式 PDF 研究报告 | [STAGE_B_RESEARCH_REPORT_ZH.pdf](output/pdf/STAGE_B_RESEARCH_REPORT_ZH.pdf) |
 | Stage B 离线交互式数据报告 | [reports/stage-b/index.html](reports/stage-b/index.html) |
 | B2 十张图逐图解释 | [B2_FIGURE_GUIDE_ZH.md](docs/stage-b/B2_FIGURE_GUIDE_ZH.md) |
 | MATH-500 pilot-20 | [preliminary/math500/README.md](preliminary/math500/README.md) |

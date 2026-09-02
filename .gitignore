@@ -51,4 +51,4 @@ logs/
 # Papers are referenced by citation rather than redistributed
 references/papers/
 *.pdf
-
+!output/pdf/STAGE_B_RESEARCH_REPORT_ZH.pdf
