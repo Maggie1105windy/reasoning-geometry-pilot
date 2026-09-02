@@ -24,6 +24,10 @@
 
 ## Stage B
 
+完整研究方法、实验步骤、图像数据分析与综合结论：[`docs/stage-b/STAGE_B_RESEARCH_REPORT_ZH.md`](docs/stage-b/STAGE_B_RESEARCH_REPORT_ZH.md)
+
+配套的可筛选图表、逐图证据说明与数据来源面板：[`reports/stage-b/index.html`](reports/stage-b/index.html)。下载后可在浏览器离线打开。
+
 ### B0 — StepGame data and splits
 
 - 数据审计：[`docs/stage-b/B0_1_DATA_AUDIT_REPORT.md`](docs/stage-b/B0_1_DATA_AUDIT_REPORT.md)

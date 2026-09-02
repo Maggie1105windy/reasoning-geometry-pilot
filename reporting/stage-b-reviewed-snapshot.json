@@ -1,0 +1,746 @@
+{
+  "title": "Stage B：后训练增强了显式关系读出，但未形成稳定的多步推理提升",
+  "generatedAt": "2026-09-02T00:00:00+08:00",
+  "status": "reviewed",
+  "filters": [],
+  "queries": {
+    "b0_audit": {
+      "rows": [
+        {
+          "records": 210000,
+          "fullOk": 190237,
+          "computedPath": 200811,
+          "kMatchesComputedHop": 36693,
+          "kMatchRate": 0.1747,
+          "exactDuplicateGroups": 806,
+          "repeatedStoryGroups": 1583
+        }
+      ],
+      "source": {
+        "label": "Stage B0.1 frozen StepGame audit",
+        "files": [
+          "docs/stage-b/B0_1_DATA_AUDIT_REPORT.md",
+          "results/stage-b0/b0_1/summary_metrics.json"
+        ],
+        "filters": [
+          "CompleteVersion/clean; official frozen commit 5e6aff1563a6d7f46ee1f1aeff98b94e68c29005"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "computed hop",
+            "definition": "BFS shortest-path edge count between query entities in the independently parsed semantic graph.",
+            "componentIds": [
+              "report-methods",
+              "report-b0"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "docs/stage-b/B0_1_DATA_AUDIT_REPORT.md"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "b0_splits": {
+      "rows": [
+        {
+          "split": "Primary",
+          "train": 9630,
+          "validation": 2065,
+          "test": 2063,
+          "status": "PASS_WITH_LIMITATION"
+        },
+        {
+          "split": "Balanced",
+          "train": 1360,
+          "validation": 440,
+          "test": 440,
+          "status": "PASS"
+        },
+        {
+          "split": "Target-Absent",
+          "train": 2814,
+          "validation": 605,
+          "test": 604,
+          "status": "PASS"
+        },
+        {
+          "split": "Composition-heldout",
+          "train": 5901,
+          "validation": 1501,
+          "test": 1600,
+          "status": "PASS"
+        },
+        {
+          "split": "Template Test-only",
+          "train": 10217,
+          "validation": 1802,
+          "test": 1739,
+          "status": "PASS"
+        }
+      ],
+      "source": {
+        "label": "Frozen Stage B0 split reports and validation",
+        "files": [
+          "docs/stage-b/B0_2_SPLIT_REPORT.md",
+          "docs/stage-b/B0_2C_TEMPLATE_TEST_REPORT.md",
+          "results/stage-b0/b0_2/validation_summary.json",
+          "results/stage-b0/b0_2c/validation_summary.json"
+        ],
+        "metricDefinitions": []
+      }
+    },
+    "b1_probe": {
+      "rows": [
+        {
+          "hop": 1,
+          "peakMacroF1": 0.357260517937956,
+          "peakLayer": 17,
+          "nTest": 712
+        },
+        {
+          "hop": 2,
+          "peakMacroF1": 0.1669538603259403,
+          "peakLayer": 19,
+          "nTest": 505
+        },
+        {
+          "hop": 3,
+          "peakMacroF1": 0.1701664997439183,
+          "peakLayer": 31,
+          "nTest": 422
+        },
+        {
+          "hop": 4,
+          "peakMacroF1": 0.1563295905650899,
+          "peakLayer": 30,
+          "nTest": 282
+        },
+        {
+          "hop": 5,
+          "peakMacroF1": 0.1485164212903121,
+          "peakLayer": 1,
+          "nTest": 142
+        }
+      ],
+      "source": {
+        "label": "Stage B1 Primary layerwise probe results",
+        "files": [
+          "results/stage-b1_5-b1_6/b1_primary_probe.csv",
+          "results/stage-b1/validation_pre_report.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Macro-F1",
+            "definition": "Unweighted mean of per-class F1 across the eight non-overlap spatial relations.",
+            "componentIds": [
+              "report-b1-probe",
+              "chart-b1-probe",
+              "report-conclusions"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/stage-b1_5-b1_6/b1_primary_probe.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "b1_behavior": {
+      "rows": [
+        {
+          "hop": 1,
+          "nTest": 712,
+          "accuracy": 0.15168539325842698,
+          "macroF1": 0.059905047445240375,
+          "ciLow": 0.12917837078651687,
+          "ciHigh": 0.17837078651685392,
+          "chance": 0.125
+        },
+        {
+          "hop": 2,
+          "nTest": 505,
+          "accuracy": 0.14653465346534653,
+          "macroF1": 0.06372276947658528,
+          "ciLow": 0.11876237623762376,
+          "ciHigh": 0.17623762376237623,
+          "chance": 0.125
+        },
+        {
+          "hop": 3,
+          "nTest": 422,
+          "accuracy": 0.10900473933649289,
+          "macroF1": 0.045183185352776774,
+          "ciLow": 0.07819905213270142,
+          "ciHigh": 0.13981042654028436,
+          "chance": 0.125
+        },
+        {
+          "hop": 4,
+          "nTest": 282,
+          "accuracy": 0.10638297872340426,
+          "macroF1": 0.046823242546926755,
+          "ciLow": 0.07092198581560284,
+          "ciHigh": 0.1453900709219858,
+          "chance": 0.125
+        },
+        {
+          "hop": 5,
+          "nTest": 142,
+          "accuracy": 0.09154929577464789,
+          "macroF1": 0.04095982142857142,
+          "ciLow": 0.04929577464788732,
+          "ciHigh": 0.14084507042253522,
+          "chance": 0.125
+        }
+      ],
+      "source": {
+        "label": "Stage B1.5 Primary candidate-likelihood behavior",
+        "files": [
+          "results/stage-b1_5-b1_6/primary_behavior.csv",
+          "docs/stage-b/B1_5_B1_6_BEHAVIOR_TRANSFER_REPORT.md"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Behavior accuracy",
+            "definition": "Fraction of test examples where the highest summed conditional log-probability among eight frozen answer candidates matches the gold relation.",
+            "componentIds": [
+              "report-b15",
+              "chart-b1-behavior",
+              "report-conclusions"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/stage-b1_5-b1_6/primary_behavior.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "b2_behavior": {
+      "rows": [
+        {
+          "model": "base",
+          "hop": 1,
+          "accuracy": 0.1516853932584269,
+          "macroF1": 0.0599050474452403,
+          "ciLow": 0.1235955056179775,
+          "ciHigh": 0.1797752808988764,
+          "nTest": 712
+        },
+        {
+          "model": "base",
+          "hop": 2,
+          "accuracy": 0.1465346534653465,
+          "macroF1": 0.0637227694765852,
+          "ciLow": 0.1128712871287128,
+          "ciHigh": 0.1762376237623762,
+          "nTest": 505
+        },
+        {
+          "model": "base",
+          "hop": 3,
+          "accuracy": 0.1090047393364928,
+          "macroF1": 0.0451831853527767,
+          "ciLow": 0.0805687203791469,
+          "ciHigh": 0.1374407582938388,
+          "nTest": 422
+        },
+        {
+          "model": "base",
+          "hop": 4,
+          "accuracy": 0.1063829787234042,
+          "macroF1": 0.0468232425469267,
+          "ciLow": 0.0709219858156028,
+          "ciHigh": 0.1453900709219858,
+          "nTest": 282
+        },
+        {
+          "model": "base",
+          "hop": 5,
+          "accuracy": 0.0915492957746478,
+          "macroF1": 0.0409598214285714,
+          "ciLow": 0.0492957746478873,
+          "ciHigh": 0.1478873239436619,
+          "nTest": 142
+        },
+        {
+          "model": "sft",
+          "hop": 1,
+          "accuracy": 0.1769662921348314,
+          "macroF1": 0.0989773253915589,
+          "ciLow": 0.148876404494382,
+          "ciHigh": 0.2050561797752809,
+          "nTest": 712
+        },
+        {
+          "model": "sft",
+          "hop": 2,
+          "accuracy": 0.1267326732673267,
+          "macroF1": 0.0668485541389504,
+          "ciLow": 0.097029702970297,
+          "ciHigh": 0.1564356435643564,
+          "nTest": 505
+        },
+        {
+          "model": "sft",
+          "hop": 3,
+          "accuracy": 0.1279620853080568,
+          "macroF1": 0.0742930473590122,
+          "ciLow": 0.0971563981042654,
+          "ciHigh": 0.1587677725118483,
+          "nTest": 422
+        },
+        {
+          "model": "sft",
+          "hop": 4,
+          "accuracy": 0.0709219858156028,
+          "macroF1": 0.0383471897250363,
+          "ciLow": 0.0425531914893617,
+          "ciHigh": 0.0993794326241134,
+          "nTest": 282
+        },
+        {
+          "model": "sft",
+          "hop": 5,
+          "accuracy": 0.0774647887323943,
+          "macroF1": 0.036774628879892,
+          "ciLow": 0.0352112676056338,
+          "ciHigh": 0.1267605633802817,
+          "nTest": 142
+        },
+        {
+          "model": "dpo",
+          "hop": 1,
+          "accuracy": 0.1853932584269663,
+          "macroF1": 0.1010431094969989,
+          "ciLow": 0.1558988764044943,
+          "ciHigh": 0.2121137640449437,
+          "nTest": 712
+        },
+        {
+          "model": "dpo",
+          "hop": 2,
+          "accuracy": 0.1267326732673267,
+          "macroF1": 0.0663102507037967,
+          "ciLow": 0.0989603960396039,
+          "ciHigh": 0.1544554455445544,
+          "nTest": 505
+        },
+        {
+          "model": "dpo",
+          "hop": 3,
+          "accuracy": 0.1374407582938388,
+          "macroF1": 0.0797070505528931,
+          "ciLow": 0.1042654028436018,
+          "ciHigh": 0.1682464454976303,
+          "nTest": 422
+        },
+        {
+          "model": "dpo",
+          "hop": 4,
+          "accuracy": 0.0921985815602836,
+          "macroF1": 0.0481515421702661,
+          "ciLow": 0.0567375886524822,
+          "ciHigh": 0.1276595744680851,
+          "nTest": 282
+        },
+        {
+          "model": "dpo",
+          "hop": 5,
+          "accuracy": 0.0915492957746478,
+          "macroF1": 0.0433868858583971,
+          "ciLow": 0.0492957746478873,
+          "ciHigh": 0.1408450704225352,
+          "nTest": 142
+        },
+        {
+          "model": "final",
+          "hop": 1,
+          "accuracy": 0.1825842696629213,
+          "macroF1": 0.0952397100572512,
+          "ciLow": 0.1530898876404494,
+          "ciHigh": 0.2106741573033707,
+          "nTest": 712
+        },
+        {
+          "model": "final",
+          "hop": 2,
+          "accuracy": 0.1188118811881188,
+          "macroF1": 0.0562056553443167,
+          "ciLow": 0.093019801980198,
+          "ciHigh": 0.1485148514851485,
+          "nTest": 505
+        },
+        {
+          "model": "final",
+          "hop": 3,
+          "accuracy": 0.1421800947867298,
+          "macroF1": 0.0840551082818448,
+          "ciLow": 0.1090047393364928,
+          "ciHigh": 0.1753554502369668,
+          "nTest": 422
+        },
+        {
+          "model": "final",
+          "hop": 4,
+          "accuracy": 0.0992907801418439,
+          "macroF1": 0.0470629736499984,
+          "ciLow": 0.0638297872340425,
+          "ciHigh": 0.1382978723404255,
+          "nTest": 282
+        },
+        {
+          "model": "final",
+          "hop": 5,
+          "accuracy": 0.0845070422535211,
+          "macroF1": 0.0380295250320924,
+          "ciLow": 0.0422535211267605,
+          "ciHigh": 0.1338028169014084,
+          "nTest": 142
+        }
+      ],
+      "source": {
+        "label": "Stage B2 checkpoint-wise Primary behavior",
+        "files": [
+          "results/stage-b2/behavior/all_models.csv",
+          "results/stage-b2/B2_final_validation.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Behavior accuracy",
+            "definition": "Frozen summed candidate conditional-log-probability accuracy; chance is 0.125.",
+            "componentIds": [
+              "report-b2",
+              "chart-b2-behavior"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/stage-b2/behavior/all_models.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "b2_within": {
+      "rows": [
+        {
+          "model": "base",
+          "hop": 1,
+          "lateMean": 0.32178120654304593,
+          "peakMacroF1": 0.357260517937956,
+          "peakLayer": 17
+        },
+        {
+          "model": "base",
+          "hop": 2,
+          "lateMean": 0.1506783175952911,
+          "peakMacroF1": 0.1669538603259403,
+          "peakLayer": 19
+        },
+        {
+          "model": "base",
+          "hop": 3,
+          "lateMean": 0.1437066331729222,
+          "peakMacroF1": 0.1701664997439183,
+          "peakLayer": 31
+        },
+        {
+          "model": "base",
+          "hop": 4,
+          "lateMean": 0.1168125792535793,
+          "peakMacroF1": 0.1563295905650899,
+          "peakLayer": 30
+        },
+        {
+          "model": "base",
+          "hop": 5,
+          "lateMean": 0.116237517217847,
+          "peakMacroF1": 0.1485164212903121,
+          "peakLayer": 1
+        },
+        {
+          "model": "sft",
+          "hop": 1,
+          "lateMean": 0.39072794486941953,
+          "peakMacroF1": 0.4287918843475549,
+          "peakLayer": 18
+        },
+        {
+          "model": "sft",
+          "hop": 2,
+          "lateMean": 0.15244123208590385,
+          "peakMacroF1": 0.1792917633897596,
+          "peakLayer": 10
+        },
+        {
+          "model": "sft",
+          "hop": 3,
+          "lateMean": 0.14158655658145247,
+          "peakMacroF1": 0.1729739924637658,
+          "peakLayer": 5
+        },
+        {
+          "model": "sft",
+          "hop": 4,
+          "lateMean": 0.14398706600401237,
+          "peakMacroF1": 0.1916945074651447,
+          "peakLayer": 6
+        },
+        {
+          "model": "sft",
+          "hop": 5,
+          "lateMean": 0.12012391450967294,
+          "peakMacroF1": 0.1715317391013985,
+          "peakLayer": 3
+        },
+        {
+          "model": "dpo",
+          "hop": 1,
+          "lateMean": 0.4045094856743656,
+          "peakMacroF1": 0.4318986843018531,
+          "peakLayer": 17
+        },
+        {
+          "model": "dpo",
+          "hop": 2,
+          "lateMean": 0.1564898074897465,
+          "peakMacroF1": 0.1907026442326741,
+          "peakLayer": 13
+        },
+        {
+          "model": "dpo",
+          "hop": 3,
+          "lateMean": 0.1354644809761933,
+          "peakMacroF1": 0.1680223762716083,
+          "peakLayer": 1
+        },
+        {
+          "model": "dpo",
+          "hop": 4,
+          "lateMean": 0.15744839711582323,
+          "peakMacroF1": 0.175754639781097,
+          "peakLayer": 23
+        },
+        {
+          "model": "dpo",
+          "hop": 5,
+          "lateMean": 0.12473821382885375,
+          "peakMacroF1": 0.1734523001572273,
+          "peakLayer": 0
+        },
+        {
+          "model": "final",
+          "hop": 1,
+          "lateMean": 0.39475156590534743,
+          "peakMacroF1": 0.4228910302439148,
+          "peakLayer": 14
+        },
+        {
+          "model": "final",
+          "hop": 2,
+          "lateMean": 0.1610753579728012,
+          "peakMacroF1": 0.1932798225223703,
+          "peakLayer": 13
+        },
+        {
+          "model": "final",
+          "hop": 3,
+          "lateMean": 0.13078005579762497,
+          "peakMacroF1": 0.1589421142002469,
+          "peakLayer": 31
+        },
+        {
+          "model": "final",
+          "hop": 4,
+          "lateMean": 0.14895855953545728,
+          "peakMacroF1": 0.1767947844005956,
+          "peakLayer": 15
+        },
+        {
+          "model": "final",
+          "hop": 5,
+          "lateMean": 0.11899920458395113,
+          "peakMacroF1": 0.1659503195217481,
+          "peakLayer": 0
+        }
+      ],
+      "source": {
+        "label": "Stage B2 within-hop probe summaries",
+        "files": [
+          "results/stage-b2/within_hop/summaries.csv",
+          "results/stage-b2/B2_final_validation.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Late-layer mean Macro-F1",
+            "definition": "Arithmetic mean of layerwise Macro-F1 across preregistered layers L16 through L31.",
+            "componentIds": [
+              "report-b2",
+              "chart-b2-within",
+              "report-conclusions"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/stage-b2/within_hop/summaries.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "b2_transfer": {
+      "rows": [
+        {
+          "model": "base",
+          "targetHop": 2,
+          "lateTransferMean": 0.1253314524659595,
+          "lateGapMean": 0.025346865129331635
+        },
+        {
+          "model": "base",
+          "targetHop": 3,
+          "lateTransferMean": 0.13451255455594663,
+          "lateGapMean": 0.00919407861697557
+        },
+        {
+          "model": "base",
+          "targetHop": 4,
+          "lateTransferMean": 0.14405477070329534,
+          "lateGapMean": -0.02724219144971605
+        },
+        {
+          "model": "base",
+          "targetHop": 5,
+          "lateTransferMean": 0.12604093535891536,
+          "lateGapMean": -0.009803418141068384
+        },
+        {
+          "model": "sft",
+          "targetHop": 2,
+          "lateTransferMean": 0.13442818955681266,
+          "lateGapMean": 0.018013042529091222
+        },
+        {
+          "model": "sft",
+          "targetHop": 3,
+          "lateTransferMean": 0.1508741066293407,
+          "lateGapMean": -0.009287550047888182
+        },
+        {
+          "model": "sft",
+          "targetHop": 4,
+          "lateTransferMean": 0.14441397926203964,
+          "lateGapMean": -0.0004269132580272672
+        },
+        {
+          "model": "sft",
+          "targetHop": 5,
+          "lateTransferMean": 0.12136043959786387,
+          "lateGapMean": -0.0012365250881909333
+        },
+        {
+          "model": "dpo",
+          "targetHop": 2,
+          "lateTransferMean": 0.13976282361696118,
+          "lateGapMean": 0.01672698387278531
+        },
+        {
+          "model": "dpo",
+          "targetHop": 3,
+          "lateTransferMean": 0.14540921072217097,
+          "lateGapMean": -0.009944729745977706
+        },
+        {
+          "model": "dpo",
+          "targetHop": 4,
+          "lateTransferMean": 0.1459366571445776,
+          "lateGapMean": 0.011511739971245608
+        },
+        {
+          "model": "dpo",
+          "targetHop": 5,
+          "lateTransferMean": 0.13741183877807187,
+          "lateGapMean": -0.012673624949218126
+        },
+        {
+          "model": "final",
+          "targetHop": 2,
+          "lateTransferMean": 0.14227222627789485,
+          "lateGapMean": 0.01880313169490635
+        },
+        {
+          "model": "final",
+          "targetHop": 3,
+          "lateTransferMean": 0.1494201613352277,
+          "lateGapMean": -0.01864010553760274
+        },
+        {
+          "model": "final",
+          "targetHop": 4,
+          "lateTransferMean": 0.14976635211846445,
+          "lateGapMean": -0.0008077925830071607
+        },
+        {
+          "model": "final",
+          "targetHop": 5,
+          "lateTransferMean": 0.14121908487717905,
+          "lateGapMean": -0.022219880293227884
+        }
+      ],
+      "source": {
+        "label": "Stage B2 h1-to-derived transfer summaries",
+        "files": [
+          "results/stage-b2/cross_hop/summaries.csv",
+          "results/stage-b2/B2_final_validation.json"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Late transfer mean",
+            "definition": "Macro-F1 of the h1-trained decoder on the target hop, averaged over layers L16 through L31.",
+            "componentIds": [
+              "report-b2",
+              "chart-b2-transfer",
+              "report-conclusions"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/stage-b2/cross_hop/summaries.csv"
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Transfer gap",
+            "definition": "Within-hop Macro-F1 minus h1-trained transfer Macro-F1 on the same target hop and layer; summarized over L16–L31.",
+            "componentIds": [
+              "report-b2"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "results/stage-b2/cross_hop/summaries.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -24,7 +24,16 @@ Frozen commit: `5e6aff1563a6d7f46ee1f1aeff98b94e68c29005`
 Li, F., Hogg, D. C., & Cohn, A. G. (2024). *Advancing Spatial Reasoning in Large Language Models: An In-Depth Evaluation and Enhancement Using the StepGame Benchmark*. arXiv:2401.03991.  
 https://arxiv.org/abs/2401.03991
 
+## Llama 3
+
+Grattafiori, A., et al. (2024). *The Llama 3 Herd of Models*. arXiv:2407.21783.
+https://arxiv.org/abs/2407.21783
+
+## Tülu 3 post-training
+
+Lambert, N., et al. (2024). *Tülu 3: Pushing Frontiers in Open Language Model Post-Training*. arXiv:2411.15124.
+https://arxiv.org/abs/2411.15124
+
 ## Redistribution note
 
 This repository cites papers and datasets but does not redistribute paper PDFs, model weights, or raw third-party datasets. Users must obtain those resources under their respective licenses and terms.
-
