@@ -1,0 +1,33 @@
+model,relation,string,token_ids,token_count
+base,ABOVE, above,[3485],1
+base,BELOW, below,[3770],1
+base,LEFT, left,[2163],1
+base,RIGHT, right,[1314],1
+base,UPPER_LEFT, upper-left,"[8582, 8109]",2
+base,UPPER_RIGHT, upper-right,"[8582, 6840]",2
+base,LOWER_LEFT, lower-left,"[4827, 8109]",2
+base,LOWER_RIGHT, lower-right,"[4827, 6840]",2
+sft,ABOVE, above,[3485],1
+sft,BELOW, below,[3770],1
+sft,LEFT, left,[2163],1
+sft,RIGHT, right,[1314],1
+sft,UPPER_LEFT, upper-left,"[8582, 8109]",2
+sft,UPPER_RIGHT, upper-right,"[8582, 6840]",2
+sft,LOWER_LEFT, lower-left,"[4827, 8109]",2
+sft,LOWER_RIGHT, lower-right,"[4827, 6840]",2
+dpo,ABOVE, above,[3485],1
+dpo,BELOW, below,[3770],1
+dpo,LEFT, left,[2163],1
+dpo,RIGHT, right,[1314],1
+dpo,UPPER_LEFT, upper-left,"[8582, 8109]",2
+dpo,UPPER_RIGHT, upper-right,"[8582, 6840]",2
+dpo,LOWER_LEFT, lower-left,"[4827, 8109]",2
+dpo,LOWER_RIGHT, lower-right,"[4827, 6840]",2
+final,ABOVE, above,[3485],1
+final,BELOW, below,[3770],1
+final,LEFT, left,[2163],1
+final,RIGHT, right,[1314],1
+final,UPPER_LEFT, upper-left,"[8582, 8109]",2
+final,UPPER_RIGHT, upper-right,"[8582, 6840]",2
+final,LOWER_LEFT, lower-left,"[4827, 8109]",2
+final,LOWER_RIGHT, lower-right,"[4827, 6840]",2

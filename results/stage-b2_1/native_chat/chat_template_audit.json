@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "templates_identical": true,
+  "template_sha256": {
+    "sft": "ac7498a36a719da630e99d48e6ebc4409de85a77556c2b6159eeb735bcbd11df",
+    "dpo": "ac7498a36a719da630e99d48e6ebc4409de85a77556c2b6159eeb735bcbd11df",
+    "final": "ac7498a36a719da630e99d48e6ebc4409de85a77556c2b6159eeb735bcbd11df"
+  },
+  "rendered_prompt_checks": {
+    "sft": {
+      "prompt_sha256": "c6f010c861989d33555dd83ac78bb2becf6000f434b780ea410c0d1bc601619f",
+      "special_tokens": {
+        "bos_token": "<|begin_of_text|>",
+        "eos_token": "<|end_of_text|>",
+        "pad_token": "<pad>"
+      }
+    },
+    "dpo": {
+      "prompt_sha256": "c6f010c861989d33555dd83ac78bb2becf6000f434b780ea410c0d1bc601619f",
+      "special_tokens": {
+        "bos_token": "<|begin_of_text|>",
+        "eos_token": "<|end_of_text|>",
+        "pad_token": "<pad>"
+      }
+    },
+    "final": {
+      "prompt_sha256": "c6f010c861989d33555dd83ac78bb2becf6000f434b780ea410c0d1bc601619f",
+      "special_tokens": {
+        "bos_token": "<|begin_of_text|>",
+        "eos_token": "<|end_of_text|>",
+        "pad_token": "<pad>"
+      }
+    }
+  },
+  "comparison_interpretation": "shared-native-interface task fitness",
+  "templates": {
+    "sft": "{% for message in messages %}{% if message['role'] == 'system' %}{{ '<|system|>\n' + message['content'] + '\n' }}{% elif message['role'] == 'user' %}{{ '<|user|>\n' + message['content'] + '\n' }}{% elif message['role'] == 'assistant' %}{% if not loop.last %}{{ '<|assistant|>\n'  + message['content'] + eos_token + '\n' }}{% else %}{{ '<|assistant|>\n'  + message['content'] + eos_token }}{% endif %}{% endif %}{% if loop.last and add_generation_prompt %}{{ '<|assistant|>\n' }}{% endif %}{% endfor %}",
+    "dpo": "{% for message in messages %}{% if message['role'] == 'system' %}{{ '<|system|>\n' + message['content'] + '\n' }}{% elif message['role'] == 'user' %}{{ '<|user|>\n' + message['content'] + '\n' }}{% elif message['role'] == 'assistant' %}{% if not loop.last %}{{ '<|assistant|>\n'  + message['content'] + eos_token + '\n' }}{% else %}{{ '<|assistant|>\n'  + message['content'] + eos_token }}{% endif %}{% endif %}{% if loop.last and add_generation_prompt %}{{ '<|assistant|>\n' }}{% endif %}{% endfor %}",
+    "final": "{% for message in messages %}{% if message['role'] == 'system' %}{{ '<|system|>\n' + message['content'] + '\n' }}{% elif message['role'] == 'user' %}{{ '<|user|>\n' + message['content'] + '\n' }}{% elif message['role'] == 'assistant' %}{% if not loop.last %}{{ '<|assistant|>\n'  + message['content'] + eos_token + '\n' }}{% else %}{{ '<|assistant|>\n'  + message['content'] + eos_token }}{% endif %}{% endif %}{% if loop.last and add_generation_prompt %}{{ '<|assistant|>\n' }}{% endif %}{% endfor %}"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "Figure 1": {
+    "file": "figure_1_raw_sum_by_hop.png",
+    "source": "statistics/core_summary.csv"
+  },
+  "Figure 2": {
+    "file": "figure_2_raw_sum_vs_mean.png",
+    "source": "statistics/core_summary.csv"
+  },
+  "Figure 3": {
+    "file": "figure_3_raw_vs_native.png",
+    "source": "statistics/core_summary.csv"
+  },
+  "Figure 4": {
+    "file": "figure_4_natural_vs_equal_length.png",
+    "source": "statistics/core_summary.csv"
+  },
+  "Figure 5": {
+    "file": "figure_5_derived_mean_all_protocols.png",
+    "source": "statistics/core_summary.csv"
+  },
+  "Figure 6": {
+    "file": "figure_6_cardinal_diagonal_frequency.png",
+    "source": "statistics/figure_6_data.csv"
+  },
+  "Figure 7": {
+    "file": "figure_7_final_confusion_matrices.png",
+    "source": "row-level reconstructed predictions"
+  },
+  "Figure 8": {
+    "file": "figure_8_fitness_gate_summary.png",
+    "source": "statistics/core_summary.csv"
+  }
+}

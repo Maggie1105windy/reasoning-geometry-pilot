@@ -1,0 +1,192 @@
+{
+  "gate": "Gate A",
+  "status": "PASS",
+  "checks": {
+    "rows_2063_each_model": true,
+    "row_ids_exact": true,
+    "eight_candidates_each_row_model": true,
+    "prompt_hash_matches_frozen_manifest": true,
+    "candidate_strings_exact": true,
+    "all_results_finite": true,
+    "accuracy_exactly_matches_frozen_B2": true,
+    "gold_leakage": false
+  },
+  "models": {
+    "base": {
+      "status": "PASS",
+      "source": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b1_5_1_6/behavioral/all_candidate_scores.csv",
+      "source_sha256": "626dcf868c2de50e36ef7cbbdd6c07cf248d2a8db3a09bd562e842bd368aea29",
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "finite": true,
+      "accuracy_by_hop": {
+        "1": 0.15168539325842698,
+        "2": 0.14653465346534653,
+        "3": 0.10900473933649289,
+        "4": 0.10638297872340426,
+        "5": 0.09154929577464789
+      },
+      "frozen_accuracy_by_hop": {
+        "1": 0.1516853932584269,
+        "2": 0.1465346534653465,
+        "3": 0.1090047393364928,
+        "4": 0.1063829787234042,
+        "5": 0.0915492957746478
+      },
+      "absolute_difference_by_hop": {
+        "1": 8.326672684688674e-17,
+        "2": 2.7755575615628914e-17,
+        "3": 9.71445146547012e-17,
+        "4": 5.551115123125783e-17,
+        "5": 9.71445146547012e-17
+      },
+      "computed_correct_count_by_hop": {
+        "1": 108,
+        "2": 74,
+        "3": 46,
+        "4": 30,
+        "5": 13
+      },
+      "frozen_correct_count_by_hop": {
+        "1": 108,
+        "2": 74,
+        "3": 46,
+        "4": 30,
+        "5": 13
+      },
+      "comparison_definition": "exact equality of integer correct counts at identical n; float CSV display deltas are retained"
+    },
+    "sft": {
+      "status": "PASS",
+      "source": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2/behavior/sft_candidate_scores.csv",
+      "source_sha256": "bf992ec2ba32dae55547bd13c0cfdf63bdf53c9597b2d8c05ac87f78b120e2da",
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "finite": true,
+      "accuracy_by_hop": {
+        "1": 0.17696629213483145,
+        "2": 0.12673267326732673,
+        "3": 0.12796208530805686,
+        "4": 0.07092198581560284,
+        "5": 0.07746478873239436
+      },
+      "frozen_accuracy_by_hop": {
+        "1": 0.1769662921348314,
+        "2": 0.1267326732673267,
+        "3": 0.1279620853080568,
+        "4": 0.0709219858156028,
+        "5": 0.0774647887323943
+      },
+      "absolute_difference_by_hop": {
+        "1": 5.551115123125783e-17,
+        "2": 2.7755575615628914e-17,
+        "3": 5.551115123125783e-17,
+        "4": 4.163336342344337e-17,
+        "5": 5.551115123125783e-17
+      },
+      "computed_correct_count_by_hop": {
+        "1": 126,
+        "2": 64,
+        "3": 54,
+        "4": 20,
+        "5": 11
+      },
+      "frozen_correct_count_by_hop": {
+        "1": 126,
+        "2": 64,
+        "3": 54,
+        "4": 20,
+        "5": 11
+      },
+      "comparison_definition": "exact equality of integer correct counts at identical n; float CSV display deltas are retained"
+    },
+    "dpo": {
+      "status": "PASS",
+      "source": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2/behavior/dpo_candidate_scores.csv",
+      "source_sha256": "8b99625412f2ba3cb4afb91535ca4b3f2eb880831c08ddbe7071addbd9002fdf",
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "finite": true,
+      "accuracy_by_hop": {
+        "1": 0.1853932584269663,
+        "2": 0.12673267326732673,
+        "3": 0.13744075829383887,
+        "4": 0.09219858156028368,
+        "5": 0.09154929577464789
+      },
+      "frozen_accuracy_by_hop": {
+        "1": 0.1853932584269663,
+        "2": 0.1267326732673267,
+        "3": 0.1374407582938388,
+        "4": 0.0921985815602836,
+        "5": 0.0915492957746478
+      },
+      "absolute_difference_by_hop": {
+        "1": 0.0,
+        "2": 2.7755575615628914e-17,
+        "3": 5.551115123125783e-17,
+        "4": 8.326672684688674e-17,
+        "5": 9.71445146547012e-17
+      },
+      "computed_correct_count_by_hop": {
+        "1": 132,
+        "2": 64,
+        "3": 58,
+        "4": 26,
+        "5": 13
+      },
+      "frozen_correct_count_by_hop": {
+        "1": 132,
+        "2": 64,
+        "3": 58,
+        "4": 26,
+        "5": 13
+      },
+      "comparison_definition": "exact equality of integer correct counts at identical n; float CSV display deltas are retained"
+    },
+    "final": {
+      "status": "PASS",
+      "source": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2/behavior/final_candidate_scores.csv",
+      "source_sha256": "527f9a4c936fdc935678271598e9b477cc0c169132a05fb5901992a191073fde",
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "finite": true,
+      "accuracy_by_hop": {
+        "1": 0.18258426966292135,
+        "2": 0.1188118811881188,
+        "3": 0.14218009478672985,
+        "4": 0.09929078014184398,
+        "5": 0.08450704225352113
+      },
+      "frozen_accuracy_by_hop": {
+        "1": 0.1825842696629213,
+        "2": 0.1188118811881188,
+        "3": 0.1421800947867298,
+        "4": 0.0992907801418439,
+        "5": 0.0845070422535211
+      },
+      "absolute_difference_by_hop": {
+        "1": 5.551115123125783e-17,
+        "2": 0.0,
+        "3": 5.551115123125783e-17,
+        "4": 6.938893903907228e-17,
+        "5": 2.7755575615628914e-17
+      },
+      "computed_correct_count_by_hop": {
+        "1": 130,
+        "2": 60,
+        "3": 60,
+        "4": 28,
+        "5": 12
+      },
+      "frozen_correct_count_by_hop": {
+        "1": 130,
+        "2": 60,
+        "3": 60,
+        "4": 28,
+        "5": 12
+      },
+      "comparison_definition": "exact equality of integer correct counts at identical n; float CSV display deltas are retained"
+    }
+  }
+}

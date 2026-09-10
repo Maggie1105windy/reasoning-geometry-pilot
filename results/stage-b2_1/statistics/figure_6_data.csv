@@ -1,0 +1,17 @@
+Model,Scoring,Predicted type,Frequency
+Base,Raw-Sum,Cardinal,1.0
+Base,Raw-Sum,Diagonal,0.0
+Base,Raw-Mean,Cardinal,0.04992729035385361
+Base,Raw-Mean,Diagonal,0.9500727096461464
+SFT,Raw-Sum,Cardinal,1.0
+SFT,Raw-Sum,Diagonal,0.0
+SFT,Raw-Mean,Cardinal,0.018904507998061076
+SFT,Raw-Mean,Diagonal,0.9810954920019389
+DPO,Raw-Sum,Cardinal,0.9995152690256908
+DPO,Raw-Sum,Diagonal,0.0004847309743092584
+DPO,Raw-Mean,Cardinal,0.024721279689772176
+DPO,Raw-Mean,Diagonal,0.9752787203102278
+Final,Raw-Sum,Cardinal,0.9995152690256908
+Final,Raw-Sum,Diagonal,0.0004847309743092584
+Final,Raw-Mean,Cardinal,0.016965584100824042
+Final,Raw-Mean,Diagonal,0.983034415899176

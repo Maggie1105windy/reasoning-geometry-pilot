@@ -63,6 +63,17 @@
 - 10 张正式图：[`figures/stage-b2/`](figures/stage-b2/)
 - 逐图中文解释：[`docs/stage-b/B2_FIGURE_GUIDE_ZH.md`](docs/stage-b/B2_FIGURE_GUIDE_ZH.md)
 
+### B2.1 — Model-task Fitness Gate
+
+- 正式报告：[`docs/stage-b/STAGE_B2_1_MODEL_TASK_FITNESS_REPORT.md`](docs/stage-b/STAGE_B2_1_MODEL_TASK_FITNESS_REPORT.md)
+- 独立验证：[`results/stage-b2_1/validation/validation_report.md`](results/stage-b2_1/validation/validation_report.md)
+- 核心总表：[`results/stage-b2_1/statistics/core_summary.csv`](results/stage-b2_1/statistics/core_summary.csv)
+- 配对 bootstrap：[`results/stage-b2_1/statistics/paired_bootstrap.csv`](results/stage-b2_1/statistics/paired_bootstrap.csv)
+- 协议与审计：[`results/stage-b2_1/audit/`](results/stage-b2_1/audit/)
+- 8 张正式图：[`figures/stage-b2_1/`](figures/stage-b2_1/)
+- 关键结果：Final Raw-Sum derived mean 0.1112，Native-Sum 0.1829（增量 95% CI [0.0396, 0.1035]），Raw-Mean 0.1599，Native-Mean 0.1917，EqualLength-Native 0.1522。
+- Fitness decision：接口与 token-length scoring 都明显影响原 Raw 结果，但 Final 在最公平的等长 native 协议下 h2–h5 仍未稳定高于 0.125。建议保留当前模型作 weak-reasoning control，新增 strong-behavior model，不自动进入因果干预。
+
 ### Preliminary — MATH-500 pilot-20
 
 - 四阶段结果与人工复核材料：[`preliminary/math500/`](preliminary/math500/)

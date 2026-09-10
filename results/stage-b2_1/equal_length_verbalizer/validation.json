@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "models_raw": [
+    "base",
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "models_native": [
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "rows_each": 2063,
+  "all_finite": true
+}

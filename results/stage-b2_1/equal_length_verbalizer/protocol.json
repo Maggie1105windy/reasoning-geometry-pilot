@@ -1,0 +1,54 @@
+{
+  "stage": "B2.1",
+  "frozen_before_full_model_evaluation": true,
+  "primary_test_rows": 2063,
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "bootstrap_unit": "story_group_id",
+  "bootstrap_resamples": 2000,
+  "seed": 20260910,
+  "uniform_chance": 0.125,
+  "no_test_set_tuning": true,
+  "candidate_score_tolerance": {
+    "absolute_log_probability": 1e-05,
+    "accuracy": 0.0
+  },
+  "protocol": [
+    "EqualLength-Raw",
+    "EqualLength-Native"
+  ],
+  "relation_to_label": {
+    "ABOVE": "A",
+    "BELOW": "B",
+    "LEFT": "C",
+    "RIGHT": "D",
+    "UPPER_LEFT": "E",
+    "UPPER_RIGHT": "F",
+    "LOWER_LEFT": "G",
+    "LOWER_RIGHT": "H"
+  },
+  "selected_labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "selection_algorithm": "preferred_A_to_H_all_boundaries_single_token",
+  "prompt_mapping": {
+    "ABOVE": "above",
+    "BELOW": "below",
+    "LEFT": "left",
+    "RIGHT": "right",
+    "UPPER_LEFT": "upper-left",
+    "UPPER_RIGHT": "upper-right",
+    "LOWER_LEFT": "lower-left",
+    "LOWER_RIGHT": "lower-right"
+  },
+  "score": "sum teacher-forced label-token log probabilities",
+  "no_truncation": true,
+  "candidate_selection_audit_sha256": "7c982dc4f638207064abdf6970acdf57a0a04c3d4987dd9f4e1d65aaca2c2cfb",
+  "protocol_sha256": "806e532d9e1d681c395d3c6dee9af40721f61df9dee50326931f298a132d3202"
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS_WITH_LIMITATION",
+  "checks": {
+    "primary_rows_2063": true,
+    "hop_counts_exact": true,
+    "row_ids_exact_b0_vs_b1": true,
+    "row_ids_unique": true,
+    "relations_exact": true,
+    "story_groups_present": true,
+    "raw_prompts_exact": true,
+    "protected_B0_to_B2_unchanged": true,
+    "protocol_hashes_and_seed_valid": true,
+    "native_boundary_audit_at_least_120_each": true,
+    "native_boundary_matches_standalone": true,
+    "equal_length_gate": true,
+    "candidate_selection_score_independent": true,
+    "independent_chat_render_boundary": true,
+    "all_expected_outputs_present": true,
+    "independent_argmax_and_metric_reconstruction": true,
+    "all_model_runs_pass": true,
+    "no_truncation": true,
+    "eight_nonempty_figures": true,
+    "gate_A_pass": true
+  },
+  "errors": [],
+  "limitations": [
+    "New diagnostic protocols ran with transformers 4.57.6; frozen B2 metadata used 4.44.2. Gate A exact reproduction mitigates but does not eliminate interface-version risk."
+  ],
+  "figure_dimensions": {
+    "figure_1_raw_sum_by_hop.png": [
+      1722,
+      1060
+    ],
+    "figure_2_raw_sum_vs_mean.png": [
+      2376,
+      1803
+    ],
+    "figure_3_raw_vs_native.png": [
+      2807,
+      941
+    ],
+    "figure_4_natural_vs_equal_length.png": [
+      2602,
+      1011
+    ],
+    "figure_5_derived_mean_all_protocols.png": [
+      2603,
+      1169
+    ],
+    "figure_6_cardinal_diagonal_frequency.png": [
+      2602,
+      1123
+    ],
+    "figure_7_final_confusion_matrices.png": [
+      3888,
+      1134
+    ],
+    "figure_8_fitness_gate_summary.png": [
+      3042,
+      1123
+    ]
+  },
+  "protected_changed_files": []
+}

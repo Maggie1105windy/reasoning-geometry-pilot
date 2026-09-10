@@ -1,0 +1,41 @@
+{
+  "stage": "B2.1",
+  "frozen_before_full_model_evaluation": true,
+  "primary_test_rows": 2063,
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "bootstrap_unit": "story_group_id",
+  "bootstrap_resamples": 2000,
+  "seed": 20260910,
+  "uniform_chance": 0.125,
+  "no_test_set_tuning": true,
+  "candidate_score_tolerance": {
+    "absolute_log_probability": 1e-05,
+    "accuracy": 0.0
+  },
+  "protocol": "Raw-Sum",
+  "prompt_builder": "B1/B2 exact Story/Question raw prompt",
+  "tokenization": {
+    "add_special_tokens": false,
+    "explicit_bos": true,
+    "no_truncation": true,
+    "gold_answer_in_prompt": false
+  },
+  "candidate_strings": {
+    "ABOVE": " above",
+    "BELOW": " below",
+    "LEFT": " left",
+    "RIGHT": " right",
+    "UPPER_LEFT": " upper-left",
+    "UPPER_RIGHT": " upper-right",
+    "LOWER_LEFT": " lower-left",
+    "LOWER_RIGHT": " lower-right"
+  },
+  "score": "sum teacher-forced candidate token log probabilities",
+  "source_scores": {
+    "base": "artifacts/stage_b1_5_1_6/behavioral/all_candidate_scores.csv",
+    "sft": "artifacts/stage_b2/behavior/sft_candidate_scores.csv",
+    "dpo": "artifacts/stage_b2/behavior/dpo_candidate_scores.csv",
+    "final": "artifacts/stage_b2/behavior/final_candidate_scores.csv"
+  },
+  "protocol_sha256": "5c179c139ae723f8e73c51be3f6a2d19ca1125263ca198558c0146947c2f6146"
+}

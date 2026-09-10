@@ -4,7 +4,7 @@
 
 本仓库保存项目的公开研究层：实验方法、冻结协议、结果报告、图表、CSV/JSON 摘要、验证文件和复现脚本。模型权重、完整激活矩阵、缓存、虚拟环境、原始论文 PDF 和凭据不进入仓库。
 
-> 更新于 2026-09-01：Stage A2–A3、B0–B2 和 MATH-500 pilot-20 的现有正式结果已经完成本地恢复与 Git 友好归档。
+> 更新于 2026-09-10：Stage B2.1 Model-task Fitness Gate 已完成；正式报告、8 张图、协议、审计、聚合结果和独立验证已同步入库。
 
 ## 快速入口
 
@@ -13,6 +13,7 @@
 | 全部阶段结果索引 | [RESULTS.md](RESULTS.md) |
 | B1–B1.6 中文整合报告 | [EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md) |
 | B2 Base/SFT/DPO/Final 正式报告 | [B2_BASE_TULU_STAGE_COMPARISON_REPORT.md](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md) |
+| B2.1 Model-task Fitness Gate | [STAGE_B2_1_MODEL_TASK_FITNESS_REPORT.md](docs/stage-b/STAGE_B2_1_MODEL_TASK_FITNESS_REPORT.md) |
 | Stage B 完整中文研究报告 | [STAGE_B_RESEARCH_REPORT_ZH.md](docs/stage-b/STAGE_B_RESEARCH_REPORT_ZH.md) |
 | Stage B 正式 PDF 研究报告 | [STAGE_B_RESEARCH_REPORT_ZH.pdf](output/pdf/STAGE_B_RESEARCH_REPORT_ZH.pdf) |
 | Stage B 离线交互式数据报告 | [reports/stage-b/index.html](reports/stage-b/index.html) |
@@ -37,7 +38,8 @@
 3. **Stage B1 — 逐层关系 probe**：在 Llama-3.1-8B Base 的 32 层 question-end hidden state 上训练八分类线性 probe；标准化只拟合训练集，正则参数只由验证集选择，测试集只用于最终评价。
 4. **Stage B1.5–B1.6 — 行为与迁移**：用八个候选方向答案的条件对数似然衡量模型行为；再把 h1 probe 直接应用到 h2–h5，比较 within-hop 与 cross-hop Macro-F1。
 5. **Stage B2 — 后训练比较**：在完全相同的冻结样本、token readout、probe 协议和控制实验下比较 Base、SFT、DPO、Final，并使用 story-group paired bootstrap 评价阶段差值。
-6. **MATH-500 preliminary**：使用同一批 20 题、greedy decoding 和人工复核流程验证 Base→SFT→DPO→Final 行为评测链路；该小样本不作为正式 benchmark。
+6. **Stage B2.1 — 模型–任务适配性门控**：先精确复现 Raw-Sum，再比较 native chat、mean-token 与等长 verbalizer；使用同一 2,063-row Primary test 和 2,000 次 story-group paired bootstrap 区分接口效应与模型能力。
+7. **MATH-500 preliminary**：使用同一批 20 题、greedy decoding 和人工复核流程验证 Base→SFT→DPO→Final 行为评测链路；该小样本不作为正式 benchmark。
 
 ## 数据集与模型
 
@@ -47,6 +49,7 @@
 | A3 | World spatial coordinates | Llama-3.1-8B Base |
 | B0–B1.6 | StepGame CompleteVersion/clean | Llama-3.1-8B Base |
 | B2 | StepGame 冻结划分 | Llama-3.1-8B Base、Tülu-3 SFT、DPO、Final |
+| B2.1 | StepGame 冻结 Primary test | 同一 Base/SFT/DPO/Final，评价接口适配性 |
 | Preliminary | MATH-500 pilot-20 | 同一 Base/SFT/DPO/Final 序列 |
 
 ## 当前阶段
@@ -60,6 +63,7 @@
 | B1.5 | Llama-3.1-8B Base × StepGame | 候选答案条件似然行为基线 | PASS |
 | B1.6 | Llama-3.1-8B Base × StepGame | 跨 hop 线性迁移 | PASS |
 | B2 | Base/SFT/DPO/Final × StepGame | 行为、within-hop、cross-hop 与冻结控制比较 | PASS |
+| B2.1 | Base/SFT/DPO/Final × StepGame | Raw/native、sum/mean-token、等长 verbalizer 适配性门控 | PASS_WITH_LIMITATION |
 | Preliminary | Base/SFT/DPO/Final × MATH-500 pilot-20 | 小样本行为层可行性验证 | 完成（非正式 benchmark） |
 
 详细完成边界见 [STATUS.md](STATUS.md)，云端恢复核验见 [SYNC_AUDIT.md](SYNC_AUDIT.md)。
@@ -73,6 +77,8 @@
 - B1.6 支持有限、较弱的跨 hop 线性迁移，但不支持统一符号关系代码或可定位的“推理层”。
 - B2 中，后训练明显提高 h1 的晚层可解码性，但 h2–h5 的改善不稳定：derived late-layer mean 从 Base **0.1319** 到 SFT **0.1395**、DPO **0.1435**、Final **0.1400**。这不构成稳定的多步推理增强证据。
 - B2 的 derived behavioral mean 分别为 Base **0.1134**、SFT **0.1008**、DPO **0.1120**、Final **0.1112**；行为层面没有随训练阶段单调提升。
+- B2.1 精确复现 Raw 行为。Final Native-Sum derived mean 由 **0.1112** 升至 **0.1829**（增量 95% CI **[0.0396, 0.1035]**）；Raw-Mean 升至 **0.1599**，显示 interface 与 token-length scoring 均有实质影响。
+- 但 Final 最强预注册协议 Native-Mean 的 derived mean 仍仅 **0.1917**；EqualLength-Native 的 h3–h5 CI 未稳定高于 0.125。因此当前模型更适合作 weak-reasoning control，不应自动进入因果干预。
 - MATH-500 pilot-20 的人工复核准确率为 Base **25%**、SFT **20%**、DPO **20%**、Final/RLVR **35%**。样本仅 20 题，只用于证明完整评测流程可运行。
 
 完整结果索引见 [RESULTS.md](RESULTS.md)。[EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md) 汇总 B1–B1.6；B2 使用独立的[正式报告](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md)和[逐图解释](docs/stage-b/B2_FIGURE_GUIDE_ZH.md)。
@@ -99,6 +105,12 @@
 
 左右面板分别展示模型答案行为和隐藏状态线性可解码性，纵轴尺度与统计含义不同。后训练可提高部分关系的线性读出，并不自动带来行为正确率提升；两者分离是本实验最重要的解释边界之一。
 
+### B2.1：评价接口适配性
+
+![Model-task Fitness Gate summary](figures/stage-b2_1/figure_8_fitness_gate_summary.png)
+
+左图 h1 显示 native interface 对 post-trained checkpoint 的直接关系任务改善很大；右图 derived mean 显示 h2–h5 也有提升，但绝对水平仍低。因此结论不是“原评价全错”或“模型完全不会推理”，而是原 Raw-Sum 同时受接口与 verbalizer 长度影响，且修正后仍未建立稳健的成功多跳推理能力。
+
 ## 仓库结构
 
 ```text
@@ -115,14 +127,16 @@
 │   ├── stage-a/
 │   ├── stage-b1/
 │   ├── stage-b1_5-b1_6/
-│   └── stage-b2/
+│   ├── stage-b2/
+│   └── stage-b2_1/
 ├── results/
 │   ├── stage-a2/
 │   ├── stage-a3/
 │   ├── stage-b0/
 │   ├── stage-b1/
 │   ├── stage-b1_5-b1_6/
-│   └── stage-b2/
+│   ├── stage-b2/
+│   └── stage-b2_1/
 ├── preliminary/
 │   └── math500/
 ├── scripts/
@@ -130,7 +144,8 @@
 │   ├── stage-b0/
 │   ├── stage-b1/
 │   ├── stage-b1_5-b1_6/
-│   └── stage-b2/
+│   ├── stage-b2/
+│   └── stage-b2_1/
 └── environment/
 ```
 
@@ -140,6 +155,7 @@
 - Stage B 使用 StepGame 官方仓库冻结 commit `5e6aff1563a6d7f46ee1f1aeff98b94e68c29005`。
 - Llama-3.1-8B Base 模型 revision 为 `24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea`，tokenizer revision 为 `c52792af35fe806a76530f3028f037d1af4e3490`。
 - B2 比较 Base、SFT、DPO 和 Final 四个 checkpoint；谱系、tokenization 一致性及冻结输入验证见 `results/stage-b2/`。
+- B2.1 使用同一 2,063-row Primary test，四个 protocol JSON 在全量运行前冻结；完整审计与独立验证见 `results/stage-b2_1/`。
 - 历史执行脚本保留了服务器项目布局，用于审计已执行流程；在新环境运行前应把项目根目录改为可配置路径。
 - 大型二进制资产、activation tensors 和 `.npz` probe 参数不在 Git 中。报告及 `artifact_checksums.json` 通过 shape、dtype、row order 和 checksum 记录其完整性。
 

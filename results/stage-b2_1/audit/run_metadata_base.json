@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "model": "base",
+  "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Meta-Llama-3.1-8B",
+  "revision": "24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea",
+  "rows": 2063,
+  "batch_size": 32,
+  "no_truncation": true,
+  "prompt_limits": {
+    "equal_raw": {
+      "max_prompt_tokens": 150,
+      "max_total_tokens": 151
+    }
+  },
+  "tasks": {
+    "equal_raw": {
+      "runtime_seconds": 71.54684353619814,
+      "peak_allocated_gib": 19.55232572555542,
+      "peak_reserved_gib": 21.9140625,
+      "candidate_sequences": 16504,
+      "forward_prompt_count": 2063,
+      "single_token_shared_forward_optimization": true,
+      "batch_size": 32,
+      "output": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2_1/equal_length_verbalizer/per_model/base_equal_raw_scores.csv",
+      "output_sha256": "88d788343dfa47fd93fe571f3ab1d4b2d9f18d09007457c6c557dccd44479ce0",
+      "all_finite": true,
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "candidate_token_ids": {
+        "ABOVE": [
+          362
+        ],
+        "BELOW": [
+          426
+        ],
+        "LEFT": [
+          356
+        ],
+        "RIGHT": [
+          423
+        ],
+        "UPPER_LEFT": [
+          469
+        ],
+        "UPPER_RIGHT": [
+          435
+        ],
+        "LOWER_LEFT": [
+          480
+        ],
+        "LOWER_RIGHT": [
+          473
+        ]
+      }
+    }
+  },
+  "total_runtime_seconds": 122.72994668781757
+}

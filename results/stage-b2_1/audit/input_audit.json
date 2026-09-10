@@ -1,0 +1,393 @@
+{
+  "status": "PASS",
+  "project_root_requested": "/home/ai/projects/reasoning-geometry-pilot",
+  "project_root_resolved": "/home/ai/chenchen/projects/reasoning-geometry-pilot",
+  "environment": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+    "platform": "Linux-5.4.0-196-generic-x86_64-with-glibc2.31",
+    "torch": "2.4.0+cu124",
+    "transformers": "4.57.6",
+    "cuda_available": true
+  },
+  "primary": {
+    "checks": {
+      "rows_2063": true,
+      "hop_counts_exact": true,
+      "row_ids_unique": true,
+      "story_group_ids_present": true,
+      "relations_exact": true,
+      "computed_hops_exact": true
+    },
+    "status": "PASS",
+    "rows": 2063,
+    "hop_counts": {
+      "1": 712,
+      "2": 505,
+      "3": 422,
+      "4": 282,
+      "5": 142
+    },
+    "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950"
+  },
+  "manifest": {
+    "path": "artifacts/stage_b1/union_manifest.csv",
+    "sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c"
+  },
+  "primary_test": {
+    "path": "artifacts/stage_b0_2/primary_test.csv",
+    "sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049"
+  },
+  "raw_prompt_exact_for_all_primary_rows": true,
+  "raw_prompt_function": "Story:\\n<sentences joined by newline>\\n\\nQuestion:\\n<question stripped>",
+  "candidate_strings": {
+    "ABOVE": " above",
+    "BELOW": " below",
+    "LEFT": " left",
+    "RIGHT": " right",
+    "UPPER_LEFT": " upper-left",
+    "UPPER_RIGHT": " upper-right",
+    "LOWER_LEFT": " lower-left",
+    "LOWER_RIGHT": " lower-right"
+  },
+  "models": {
+    "base": {
+      "label": "Base",
+      "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Meta-Llama-3.1-8B",
+      "revision_kind": "ModelScope .msc local revision",
+      "revision": "24ce1d3ac24d46a14b16dcb666c4fdd9147b87ea",
+      "model_type": "llama",
+      "num_hidden_layers": 32,
+      "hidden_size": 4096,
+      "tokenizer_vocab_size": 128256,
+      "config_vocab_size": 128256,
+      "bos_token": "<|begin_of_text|>",
+      "bos_token_id": 128000,
+      "eos_token": "<|end_of_text|>",
+      "eos_token_id": 128001,
+      "pad_token": null,
+      "pad_token_id": null,
+      "chat_template_present": false,
+      "chat_template_sha256": null,
+      "candidate_tokenization": {
+        "ABOVE": {
+          "string": " above",
+          "token_ids": [
+            3485
+          ],
+          "token_count": 1
+        },
+        "BELOW": {
+          "string": " below",
+          "token_ids": [
+            3770
+          ],
+          "token_count": 1
+        },
+        "LEFT": {
+          "string": " left",
+          "token_ids": [
+            2163
+          ],
+          "token_count": 1
+        },
+        "RIGHT": {
+          "string": " right",
+          "token_ids": [
+            1314
+          ],
+          "token_count": 1
+        },
+        "UPPER_LEFT": {
+          "string": " upper-left",
+          "token_ids": [
+            8582,
+            8109
+          ],
+          "token_count": 2
+        },
+        "UPPER_RIGHT": {
+          "string": " upper-right",
+          "token_ids": [
+            8582,
+            6840
+          ],
+          "token_count": 2
+        },
+        "LOWER_LEFT": {
+          "string": " lower-left",
+          "token_ids": [
+            4827,
+            8109
+          ],
+          "token_count": 2
+        },
+        "LOWER_RIGHT": {
+          "string": " lower-right",
+          "token_ids": [
+            4827,
+            6840
+          ],
+          "token_count": 2
+        }
+      },
+      "existing_behavioral_scores": "artifacts/stage_b1_5_1_6/behavioral/all_candidate_scores.csv",
+      "existing_behavioral_scores_sha256": "626dcf868c2de50e36ef7cbbdd6c07cf248d2a8db3a09bd562e842bd368aea29"
+    },
+    "sft": {
+      "label": "SFT",
+      "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-SFT",
+      "revision_kind": "ModelScope .msc local revision",
+      "revision": "aa9a78450ea2c6916824501e276cb97b7caf47e6",
+      "model_type": "llama",
+      "num_hidden_layers": 32,
+      "hidden_size": 4096,
+      "tokenizer_vocab_size": 128257,
+      "config_vocab_size": 128264,
+      "bos_token": "<|begin_of_text|>",
+      "bos_token_id": 128000,
+      "eos_token": "<|end_of_text|>",
+      "eos_token_id": 128001,
+      "pad_token": "<pad>",
+      "pad_token_id": 128256,
+      "chat_template_present": true,
+      "chat_template_sha256": "ac7498a36a719da630e99d48e6ebc4409de85a77556c2b6159eeb735bcbd11df",
+      "candidate_tokenization": {
+        "ABOVE": {
+          "string": " above",
+          "token_ids": [
+            3485
+          ],
+          "token_count": 1
+        },
+        "BELOW": {
+          "string": " below",
+          "token_ids": [
+            3770
+          ],
+          "token_count": 1
+        },
+        "LEFT": {
+          "string": " left",
+          "token_ids": [
+            2163
+          ],
+          "token_count": 1
+        },
+        "RIGHT": {
+          "string": " right",
+          "token_ids": [
+            1314
+          ],
+          "token_count": 1
+        },
+        "UPPER_LEFT": {
+          "string": " upper-left",
+          "token_ids": [
+            8582,
+            8109
+          ],
+          "token_count": 2
+        },
+        "UPPER_RIGHT": {
+          "string": " upper-right",
+          "token_ids": [
+            8582,
+            6840
+          ],
+          "token_count": 2
+        },
+        "LOWER_LEFT": {
+          "string": " lower-left",
+          "token_ids": [
+            4827,
+            8109
+          ],
+          "token_count": 2
+        },
+        "LOWER_RIGHT": {
+          "string": " lower-right",
+          "token_ids": [
+            4827,
+            6840
+          ],
+          "token_count": 2
+        }
+      },
+      "existing_behavioral_scores": "artifacts/stage_b2/behavior/sft_candidate_scores.csv",
+      "existing_behavioral_scores_sha256": "bf992ec2ba32dae55547bd13c0cfdf63bdf53c9597b2d8c05ac87f78b120e2da"
+    },
+    "dpo": {
+      "label": "DPO",
+      "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B-DPO",
+      "revision_kind": "ModelScope .msc local revision",
+      "revision": "2301bf3b5e8733aad822a59b93381369da1692eb",
+      "model_type": "llama",
+      "num_hidden_layers": 32,
+      "hidden_size": 4096,
+      "tokenizer_vocab_size": 128257,
+      "config_vocab_size": 128264,
+      "bos_token": "<|begin_of_text|>",
+      "bos_token_id": 128000,
+      "eos_token": "<|end_of_text|>",
+      "eos_token_id": 128001,
+      "pad_token": "<pad>",
+      "pad_token_id": 128256,
+      "chat_template_present": true,
+      "chat_template_sha256": "ac7498a36a719da630e99d48e6ebc4409de85a77556c2b6159eeb735bcbd11df",
+      "candidate_tokenization": {
+        "ABOVE": {
+          "string": " above",
+          "token_ids": [
+            3485
+          ],
+          "token_count": 1
+        },
+        "BELOW": {
+          "string": " below",
+          "token_ids": [
+            3770
+          ],
+          "token_count": 1
+        },
+        "LEFT": {
+          "string": " left",
+          "token_ids": [
+            2163
+          ],
+          "token_count": 1
+        },
+        "RIGHT": {
+          "string": " right",
+          "token_ids": [
+            1314
+          ],
+          "token_count": 1
+        },
+        "UPPER_LEFT": {
+          "string": " upper-left",
+          "token_ids": [
+            8582,
+            8109
+          ],
+          "token_count": 2
+        },
+        "UPPER_RIGHT": {
+          "string": " upper-right",
+          "token_ids": [
+            8582,
+            6840
+          ],
+          "token_count": 2
+        },
+        "LOWER_LEFT": {
+          "string": " lower-left",
+          "token_ids": [
+            4827,
+            8109
+          ],
+          "token_count": 2
+        },
+        "LOWER_RIGHT": {
+          "string": " lower-right",
+          "token_ids": [
+            4827,
+            6840
+          ],
+          "token_count": 2
+        }
+      },
+      "existing_behavioral_scores": "artifacts/stage_b2/behavior/dpo_candidate_scores.csv",
+      "existing_behavioral_scores_sha256": "8b99625412f2ba3cb4afb91535ca4b3f2eb880831c08ddbe7071addbd9002fdf"
+    },
+    "final": {
+      "label": "Final",
+      "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B",
+      "revision_kind": "ModelScope .msc local revision",
+      "revision": "c5d2996f1e01989a69bd740d8d034edf672cc1e0",
+      "model_type": "llama",
+      "num_hidden_layers": 32,
+      "hidden_size": 4096,
+      "tokenizer_vocab_size": 128257,
+      "config_vocab_size": 128264,
+      "bos_token": "<|begin_of_text|>",
+      "bos_token_id": 128000,
+      "eos_token": "<|end_of_text|>",
+      "eos_token_id": 128001,
+      "pad_token": "<pad>",
+      "pad_token_id": 128256,
+      "chat_template_present": true,
+      "chat_template_sha256": "ac7498a36a719da630e99d48e6ebc4409de85a77556c2b6159eeb735bcbd11df",
+      "candidate_tokenization": {
+        "ABOVE": {
+          "string": " above",
+          "token_ids": [
+            3485
+          ],
+          "token_count": 1
+        },
+        "BELOW": {
+          "string": " below",
+          "token_ids": [
+            3770
+          ],
+          "token_count": 1
+        },
+        "LEFT": {
+          "string": " left",
+          "token_ids": [
+            2163
+          ],
+          "token_count": 1
+        },
+        "RIGHT": {
+          "string": " right",
+          "token_ids": [
+            1314
+          ],
+          "token_count": 1
+        },
+        "UPPER_LEFT": {
+          "string": " upper-left",
+          "token_ids": [
+            8582,
+            8109
+          ],
+          "token_count": 2
+        },
+        "UPPER_RIGHT": {
+          "string": " upper-right",
+          "token_ids": [
+            8582,
+            6840
+          ],
+          "token_count": 2
+        },
+        "LOWER_LEFT": {
+          "string": " lower-left",
+          "token_ids": [
+            4827,
+            8109
+          ],
+          "token_count": 2
+        },
+        "LOWER_RIGHT": {
+          "string": " lower-right",
+          "token_ids": [
+            4827,
+            6840
+          ],
+          "token_count": 2
+        }
+      },
+      "existing_behavioral_scores": "artifacts/stage_b2/behavior/final_candidate_scores.csv",
+      "existing_behavioral_scores_sha256": "527f9a4c936fdc935678271598e9b477cc0c169132a05fb5901992a191073fde"
+    }
+  },
+  "protected_snapshot_sha256": "f657fe06d92ba4edffdee769ac392945ce6101fc2df9a3029df7aa9ced404579",
+  "protocol_checksums": {
+    "raw_reproduction": "5c179c139ae723f8e73c51be3f6a2d19ca1125263ca198558c0146947c2f6146",
+    "native_chat": "dfd800d5b7272ccd666c776c221310797d697fa8e4459b3716a5cb203341804f",
+    "scoring_sensitivity": "8f4497162f38e264f298348ff72d36edacadcdde865c8b0dcb2c1c983753972c",
+    "equal_length_verbalizer": "806e532d9e1d681c395d3c6dee9af40721f61df9dee50326931f298a132d3202"
+  }
+}

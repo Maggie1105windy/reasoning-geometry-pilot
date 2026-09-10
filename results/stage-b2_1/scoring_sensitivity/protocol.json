@@ -1,0 +1,32 @@
+{
+  "stage": "B2.1",
+  "frozen_before_full_model_evaluation": true,
+  "primary_test_rows": 2063,
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "bootstrap_unit": "story_group_id",
+  "bootstrap_resamples": 2000,
+  "seed": 20260910,
+  "uniform_chance": 0.125,
+  "no_test_set_tuning": true,
+  "candidate_score_tolerance": {
+    "absolute_log_probability": 1e-05,
+    "accuracy": 0.0
+  },
+  "protocol": [
+    "Raw-Sum",
+    "Raw-Mean"
+  ],
+  "models": [
+    "base",
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "same_frozen_raw_prompt_and_candidates_as_experiment_A": true,
+  "score": [
+    "sum",
+    "arithmetic mean over candidate tokens"
+  ],
+  "no_length_penalty_calibration_temperature_or_tuning": true,
+  "protocol_sha256": "8f4497162f38e264f298348ff72d36edacadcdde865c8b0dcb2c1c983753972c"
+}

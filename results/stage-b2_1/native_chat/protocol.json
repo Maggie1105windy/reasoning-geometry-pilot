@@ -1,0 +1,45 @@
+{
+  "stage": "B2.1",
+  "frozen_before_full_model_evaluation": true,
+  "primary_test_rows": 2063,
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "bootstrap_unit": "story_group_id",
+  "bootstrap_resamples": 2000,
+  "seed": 20260910,
+  "uniform_chance": 0.125,
+  "no_test_set_tuning": true,
+  "candidate_score_tolerance": {
+    "absolute_log_probability": 1e-05,
+    "accuracy": 0.0
+  },
+  "protocol": [
+    "Native-Sum",
+    "Native-Mean"
+  ],
+  "models": [
+    "sft",
+    "dpo",
+    "final"
+  ],
+  "prompt_builder": "tokenizer.apply_chat_template(user-only, add_generation_prompt=True)",
+  "candidate_strings": {
+    "ABOVE": " above",
+    "BELOW": " below",
+    "LEFT": " left",
+    "RIGHT": " right",
+    "UPPER_LEFT": " upper-left",
+    "UPPER_RIGHT": " upper-right",
+    "LOWER_LEFT": " lower-left",
+    "LOWER_RIGHT": " lower-right"
+  },
+  "boundary_selection": "exact assistant continuation prefix, not accuracy",
+  "score": [
+    "sum",
+    "mean-token"
+  ],
+  "no_cot_or_few_shot": true,
+  "no_truncation": true,
+  "chat_template_audit_sha256": "b8dd3ce9e2ba074948e3cf9409513b081f9c0cc70b9489197bfa69042cb469fe",
+  "token_boundary_audit_sha256": "11bfa6cb0215903a1f918b7f5d4b32fca036489a3dc6d07e5cbff8ee3b1a1fbd",
+  "protocol_sha256": "dfd800d5b7272ccd666c776c221310797d697fa8e4459b3716a5cb203341804f"
+}

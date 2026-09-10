@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "model": "final",
+  "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Llama-3.1-Tulu-3-8B",
+  "revision": "c5d2996f1e01989a69bd740d8d034edf672cc1e0",
+  "rows": 2063,
+  "batch_size": 32,
+  "no_truncation": true,
+  "prompt_limits": {
+    "native_natural": {
+      "max_prompt_tokens": 141,
+      "max_total_tokens": 143
+    },
+    "equal_raw": {
+      "max_prompt_tokens": 150,
+      "max_total_tokens": 151
+    },
+    "equal_native": {
+      "max_prompt_tokens": 159,
+      "max_total_tokens": 160
+    }
+  },
+  "tasks": {
+    "native_natural": {
+      "runtime_seconds": 502.12137753516436,
+      "peak_allocated_gib": 19.338667392730713,
+      "peak_reserved_gib": 23.21875,
+      "candidate_sequences": 16504,
+      "batch_size": 32,
+      "output": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2_1/native_chat/per_model/final_scores.csv",
+      "output_sha256": "24b20d2b8209b3c1a5ecbcaef74ff8961a9c9e1b4957daa4b60dc933aa28c805",
+      "all_finite": true,
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "candidate_token_ids": {
+        "ABOVE": [
+          3485
+        ],
+        "BELOW": [
+          3770
+        ],
+        "LEFT": [
+          2163
+        ],
+        "RIGHT": [
+          1314
+        ],
+        "UPPER_LEFT": [
+          8582,
+          8109
+        ],
+        "UPPER_RIGHT": [
+          8582,
+          6840
+        ],
+        "LOWER_LEFT": [
+          4827,
+          8109
+        ],
+        "LOWER_RIGHT": [
+          4827,
+          6840
+        ]
+      }
+    },
+    "equal_raw": {
+      "runtime_seconds": 72.28891277685761,
+      "peak_allocated_gib": 19.552733898162842,
+      "peak_reserved_gib": 21.931640625,
+      "candidate_sequences": 16504,
+      "forward_prompt_count": 2063,
+      "single_token_shared_forward_optimization": true,
+      "batch_size": 32,
+      "output": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2_1/equal_length_verbalizer/per_model/final_equal_raw_scores.csv",
+      "output_sha256": "96978f450b3243b1774e0e90674a4c98bacb9a8fa41d1b03d7a54bbf0dfefd09",
+      "all_finite": true,
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "candidate_token_ids": {
+        "ABOVE": [
+          362
+        ],
+        "BELOW": [
+          426
+        ],
+        "LEFT": [
+          356
+        ],
+        "RIGHT": [
+          423
+        ],
+        "UPPER_LEFT": [
+          469
+        ],
+        "UPPER_RIGHT": [
+          435
+        ],
+        "LOWER_LEFT": [
+          480
+        ],
+        "LOWER_RIGHT": [
+          473
+        ]
+      }
+    },
+    "equal_native": {
+      "runtime_seconds": 76.01826103404164,
+      "peak_allocated_gib": 19.828941822052002,
+      "peak_reserved_gib": 22.345703125,
+      "candidate_sequences": 16504,
+      "forward_prompt_count": 2063,
+      "single_token_shared_forward_optimization": true,
+      "batch_size": 32,
+      "output": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2_1/equal_length_verbalizer/per_model/final_equal_native_scores.csv",
+      "output_sha256": "c923bd7a8af3c8600fadea6a949e8034e3b7159c6eb157d3c8cbfdda069835ef",
+      "all_finite": true,
+      "rows": 2063,
+      "candidate_rows": 16504,
+      "candidate_token_ids": {
+        "ABOVE": [
+          362
+        ],
+        "BELOW": [
+          426
+        ],
+        "LEFT": [
+          356
+        ],
+        "RIGHT": [
+          423
+        ],
+        "UPPER_LEFT": [
+          469
+        ],
+        "UPPER_RIGHT": [
+          435
+        ],
+        "LOWER_LEFT": [
+          480
+        ],
+        "LOWER_RIGHT": [
+          473
+        ]
+      }
+    }
+  },
+  "total_runtime_seconds": 737.6306492686272
+}

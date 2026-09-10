@@ -1,0 +1,80 @@
+{
+  "raw_reproduced": "YES",
+  "native_improves": "YES",
+  "token_length_affects": "YES",
+  "equal_length_improves": "MIXED",
+  "final_h2_h5_robust_above_chance": "NO",
+  "successful_mechanism_target": "NO",
+  "evidence": {
+    "final_native_minus_raw_derived": {
+      "hop": "derived_mean",
+      "metric": "accuracy",
+      "point_difference_b_minus_a": 0.07168144157845122,
+      "ci95_low": 0.039646978192483404,
+      "ci95_high": 0.10347585999799826,
+      "n": 1351,
+      "ci_excludes_zero": true,
+      "comparison_code": "C",
+      "model": "final",
+      "protocol_a": "Raw-Sum",
+      "protocol_b": "Native-Sum",
+      "bootstrap_unit": "story_group_id",
+      "bootstrap_resamples": 2000,
+      "seed": 20260910
+    },
+    "final_raw_mean_minus_sum_derived": {
+      "hop": "derived_mean",
+      "metric": "accuracy",
+      "point_difference_b_minus_a": 0.04866534546033431,
+      "ci95_low": 0.019449776372403943,
+      "ci95_high": 0.07819038892573149,
+      "n": 1351,
+      "ci_excludes_zero": true,
+      "comparison_code": "A",
+      "model": "final",
+      "protocol_a": "Raw-Sum",
+      "protocol_b": "Raw-Mean",
+      "bootstrap_unit": "story_group_id",
+      "bootstrap_resamples": 2000,
+      "seed": 20260910
+    },
+    "final_equal_raw_minus_raw_sum_derived": {
+      "hop": "derived_mean",
+      "metric": "accuracy",
+      "point_difference_b_minus_a": 0.02694125746555144,
+      "ci95_low": 1.8426395832493077e-06,
+      "ci95_high": 0.05320851007278037,
+      "n": 1351,
+      "ci_excludes_zero": true,
+      "comparison_code": "B",
+      "model": "final",
+      "protocol_a": "Raw-Sum",
+      "protocol_b": "EqualLength-Raw",
+      "bootstrap_unit": "story_group_id",
+      "bootstrap_resamples": 2000,
+      "seed": 20260910
+    },
+    "final_equal_native_minus_native_sum_derived": {
+      "hop": "derived_mean",
+      "metric": "accuracy",
+      "point_difference_b_minus_a": -0.030642700987245405,
+      "ci95_low": -0.055783343477376415,
+      "ci95_high": -0.00610792118217614,
+      "n": 1351,
+      "ci_excludes_zero": true,
+      "comparison_code": "E",
+      "model": "final",
+      "protocol_a": "Native-Sum",
+      "protocol_b": "EqualLength-Native",
+      "bootstrap_unit": "story_group_id",
+      "bootstrap_resamples": 2000,
+      "seed": 20260910
+    },
+    "final_equal_native_h2_h5_ci_low": {
+      "2": 0.13861386138613863,
+      "3": 0.12085308056872038,
+      "4": 0.09574468085106383,
+      "5": 0.09154929577464789
+    }
+  }
+}
