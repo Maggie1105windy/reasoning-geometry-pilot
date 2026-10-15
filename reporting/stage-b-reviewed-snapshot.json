@@ -1,7 +1,10 @@
 {
-  "title": "Stage B：后训练增强了显式关系读出，但未形成稳定的多步推理提升",
-  "generatedAt": "2026-09-02T00:00:00+08:00",
+  "title": "StepGame：预算完成问题已定位，研究转向关系状态与答案使用",
+  "generatedAt": "2026-10-15T00:00:00+08:00",
   "status": "reviewed",
+  "report": {
+    "asOf": "2026-10-15"
+  },
   "filters": [],
   "queries": {
     "b0_audit": {
@@ -741,6 +744,1988 @@
           }
         ]
       }
+    },
+    "qwen_full": {
+      "rows": [
+        {
+          "protocol": "B2.2 Native-Sum",
+          "hop": 1,
+          "n": 712,
+          "accuracyRate": 0.2303370786516854,
+          "parseRate": 1.0,
+          "protocolLabel": "候选评分",
+          "hopLabel": "h1"
+        },
+        {
+          "protocol": "B2.2 Native-Sum",
+          "hop": 2,
+          "n": 505,
+          "accuracyRate": 0.17623762376237623,
+          "parseRate": 1.0,
+          "protocolLabel": "候选评分",
+          "hopLabel": "h2"
+        },
+        {
+          "protocol": "B2.2 Native-Sum",
+          "hop": 3,
+          "n": 422,
+          "accuracyRate": 0.15876777251184834,
+          "parseRate": 1.0,
+          "protocolLabel": "候选评分",
+          "hopLabel": "h3"
+        },
+        {
+          "protocol": "B2.2 Native-Sum",
+          "hop": 4,
+          "n": 282,
+          "accuracyRate": 0.17375886524822695,
+          "parseRate": 1.0,
+          "protocolLabel": "候选评分",
+          "hopLabel": "h4"
+        },
+        {
+          "protocol": "B2.2 Native-Sum",
+          "hop": 5,
+          "n": 142,
+          "accuracyRate": 0.2323943661971831,
+          "parseRate": 1.0,
+          "protocolLabel": "候选评分",
+          "hopLabel": "h5"
+        },
+        {
+          "protocol": "FG-N",
+          "hop": 1,
+          "n": 712,
+          "accuracyRate": 0.702247191011236,
+          "parseRate": 0.9269662921348315,
+          "protocolLabel": "非思考生成",
+          "hopLabel": "h1"
+        },
+        {
+          "protocol": "FG-N",
+          "hop": 2,
+          "n": 505,
+          "accuracyRate": 0.3306930693069307,
+          "parseRate": 0.9366336633663367,
+          "protocolLabel": "非思考生成",
+          "hopLabel": "h2"
+        },
+        {
+          "protocol": "FG-N",
+          "hop": 3,
+          "n": 422,
+          "accuracyRate": 0.23933649289099526,
+          "parseRate": 0.9004739336492891,
+          "protocolLabel": "非思考生成",
+          "hopLabel": "h3"
+        },
+        {
+          "protocol": "FG-N",
+          "hop": 4,
+          "n": 282,
+          "accuracyRate": 0.23049645390070922,
+          "parseRate": 0.9113475177304965,
+          "protocolLabel": "非思考生成",
+          "hopLabel": "h4"
+        },
+        {
+          "protocol": "FG-N",
+          "hop": 5,
+          "n": 142,
+          "accuracyRate": 0.22535211267605634,
+          "parseRate": 0.9507042253521126,
+          "protocolLabel": "非思考生成",
+          "hopLabel": "h5"
+        },
+        {
+          "protocol": "FG-T",
+          "hop": 1,
+          "n": 712,
+          "accuracyRate": 0.43820224719101125,
+          "parseRate": 0.45224719101123595,
+          "protocolLabel": "思考生成（2K）",
+          "hopLabel": "h1"
+        },
+        {
+          "protocol": "FG-T",
+          "hop": 2,
+          "n": 505,
+          "accuracyRate": 0.09108910891089109,
+          "parseRate": 0.11089108910891089,
+          "protocolLabel": "思考生成（2K）",
+          "hopLabel": "h2"
+        },
+        {
+          "protocol": "FG-T",
+          "hop": 3,
+          "n": 422,
+          "accuracyRate": 0.014218009478672985,
+          "parseRate": 0.02843601895734597,
+          "protocolLabel": "思考生成（2K）",
+          "hopLabel": "h3"
+        },
+        {
+          "protocol": "FG-T",
+          "hop": 4,
+          "n": 282,
+          "accuracyRate": 0.02127659574468085,
+          "parseRate": 0.02127659574468085,
+          "protocolLabel": "思考生成（2K）",
+          "hopLabel": "h4"
+        },
+        {
+          "protocol": "FG-T",
+          "hop": 5,
+          "n": 142,
+          "accuracyRate": 0.014084507042253521,
+          "parseRate": 0.014084507042253521,
+          "protocolLabel": "思考生成（2K）",
+          "hopLabel": "h5"
+        }
+      ],
+      "source": {
+        "label": "同一2063题，h1—h5 n=712/505/422/282/142。accuracy含INVALID计错；derived为h2—h5等权平均，非全体样本加权。",
+        "files": [
+          "artifacts/stage_b2_3_qwen3_generation/statistics/full_metrics_by_hop.csv",
+          "artifacts/stage_b2_3_qwen3_generation/analysis_20261013/corrected_generation_stats.csv"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "同一2063题，h1—h5 n=712/505/422/282/142。accuracy含INVALID计错；derived为h2—h5等权平均，非全体样本加权。",
+            "componentIds": [
+              "current-sec-1",
+              "current-sec-2",
+              "current-sec-4",
+              "current-sec-5",
+              "current-chart-full",
+              "current-chart-completion",
+              "current-sec-14"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_qwen3_generation/statistics/full_metrics_by_hop.csv",
+                  "artifacts/stage_b2_3_qwen3_generation/analysis_20261013/corrected_generation_stats.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "qwen_confusion": {
+      "rows": [
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "ABOVE",
+          "count": 108,
+          "rowRate": 0.45188284518828453
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "BELOW",
+          "count": 13,
+          "rowRate": 0.05439330543933055
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "LEFT",
+          "count": 12,
+          "rowRate": 0.0502092050209205
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "RIGHT",
+          "count": 20,
+          "rowRate": 0.08368200836820083
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "UPPER_LEFT",
+          "count": 39,
+          "rowRate": 0.16317991631799164
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "UPPER_RIGHT",
+          "count": 24,
+          "rowRate": 0.100418410041841
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "LOWER_LEFT",
+          "count": 4,
+          "rowRate": 0.016736401673640166
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "LOWER_RIGHT",
+          "count": 8,
+          "rowRate": 0.03347280334728033
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "ABOVE",
+          "prediction": "INVALID",
+          "count": 11,
+          "rowRate": 0.04602510460251046
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "ABOVE",
+          "count": 45,
+          "rowRate": 0.18672199170124482
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "BELOW",
+          "count": 82,
+          "rowRate": 0.34024896265560167
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "LEFT",
+          "count": 14,
+          "rowRate": 0.058091286307053944
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "RIGHT",
+          "count": 14,
+          "rowRate": 0.058091286307053944
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "UPPER_LEFT",
+          "count": 18,
+          "rowRate": 0.07468879668049792
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "UPPER_RIGHT",
+          "count": 15,
+          "rowRate": 0.06224066390041494
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "LOWER_LEFT",
+          "count": 20,
+          "rowRate": 0.08298755186721991
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "LOWER_RIGHT",
+          "count": 17,
+          "rowRate": 0.07053941908713693
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "BELOW",
+          "prediction": "INVALID",
+          "count": 16,
+          "rowRate": 0.06639004149377593
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "ABOVE",
+          "count": 10,
+          "rowRate": 0.04329004329004329
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "BELOW",
+          "count": 6,
+          "rowRate": 0.025974025974025976
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "LEFT",
+          "count": 104,
+          "rowRate": 0.45021645021645024
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "RIGHT",
+          "count": 27,
+          "rowRate": 0.11688311688311688
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "UPPER_LEFT",
+          "count": 26,
+          "rowRate": 0.11255411255411256
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "UPPER_RIGHT",
+          "count": 11,
+          "rowRate": 0.047619047619047616
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "LOWER_LEFT",
+          "count": 27,
+          "rowRate": 0.11688311688311688
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "LOWER_RIGHT",
+          "count": 6,
+          "rowRate": 0.025974025974025976
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LEFT",
+          "prediction": "INVALID",
+          "count": 14,
+          "rowRate": 0.06060606060606061
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "ABOVE",
+          "count": 13,
+          "rowRate": 0.056768558951965066
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "BELOW",
+          "count": 7,
+          "rowRate": 0.03056768558951965
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "LEFT",
+          "count": 28,
+          "rowRate": 0.1222707423580786
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "RIGHT",
+          "count": 97,
+          "rowRate": 0.42358078602620086
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "UPPER_LEFT",
+          "count": 15,
+          "rowRate": 0.06550218340611354
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "UPPER_RIGHT",
+          "count": 26,
+          "rowRate": 0.11353711790393013
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "LOWER_LEFT",
+          "count": 10,
+          "rowRate": 0.043668122270742356
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "LOWER_RIGHT",
+          "count": 18,
+          "rowRate": 0.07860262008733625
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "RIGHT",
+          "prediction": "INVALID",
+          "count": 15,
+          "rowRate": 0.06550218340611354
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "ABOVE",
+          "count": 24,
+          "rowRate": 0.08791208791208792
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "BELOW",
+          "count": 5,
+          "rowRate": 0.018315018315018316
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "LEFT",
+          "count": 28,
+          "rowRate": 0.10256410256410256
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "RIGHT",
+          "count": 12,
+          "rowRate": 0.04395604395604396
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "UPPER_LEFT",
+          "count": 136,
+          "rowRate": 0.4981684981684982
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "UPPER_RIGHT",
+          "count": 11,
+          "rowRate": 0.040293040293040296
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "LOWER_LEFT",
+          "count": 14,
+          "rowRate": 0.05128205128205128
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "LOWER_RIGHT",
+          "count": 22,
+          "rowRate": 0.08058608058608059
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_LEFT",
+          "prediction": "INVALID",
+          "count": 21,
+          "rowRate": 0.07692307692307693
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "ABOVE",
+          "count": 26,
+          "rowRate": 0.0896551724137931
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "BELOW",
+          "count": 5,
+          "rowRate": 0.017241379310344827
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "LEFT",
+          "count": 16,
+          "rowRate": 0.05517241379310345
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "RIGHT",
+          "count": 40,
+          "rowRate": 0.13793103448275862
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "UPPER_LEFT",
+          "count": 26,
+          "rowRate": 0.0896551724137931
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "UPPER_RIGHT",
+          "count": 129,
+          "rowRate": 0.44482758620689655
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "LOWER_LEFT",
+          "count": 22,
+          "rowRate": 0.07586206896551724
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "LOWER_RIGHT",
+          "count": 8,
+          "rowRate": 0.027586206896551724
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "UPPER_RIGHT",
+          "prediction": "INVALID",
+          "count": 18,
+          "rowRate": 0.06206896551724138
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "ABOVE",
+          "count": 7,
+          "rowRate": 0.024734982332155476
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "BELOW",
+          "count": 14,
+          "rowRate": 0.04946996466431095
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "LEFT",
+          "count": 38,
+          "rowRate": 0.13427561837455831
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "RIGHT",
+          "count": 19,
+          "rowRate": 0.06713780918727916
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "UPPER_LEFT",
+          "count": 18,
+          "rowRate": 0.0636042402826855
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "UPPER_RIGHT",
+          "count": 45,
+          "rowRate": 0.15901060070671377
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "LOWER_LEFT",
+          "count": 106,
+          "rowRate": 0.3745583038869258
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "LOWER_RIGHT",
+          "count": 5,
+          "rowRate": 0.0176678445229682
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_LEFT",
+          "prediction": "INVALID",
+          "count": 31,
+          "rowRate": 0.10954063604240283
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "ABOVE",
+          "count": 8,
+          "rowRate": 0.02888086642599278
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "BELOW",
+          "count": 17,
+          "rowRate": 0.061371841155234655
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "LEFT",
+          "count": 18,
+          "rowRate": 0.06498194945848375
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "RIGHT",
+          "count": 39,
+          "rowRate": 0.1407942238267148
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "UPPER_LEFT",
+          "count": 38,
+          "rowRate": 0.1371841155234657
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "UPPER_RIGHT",
+          "count": 15,
+          "rowRate": 0.05415162454873646
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "LOWER_LEFT",
+          "count": 7,
+          "rowRate": 0.02527075812274368
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "LOWER_RIGHT",
+          "count": 103,
+          "rowRate": 0.37184115523465705
+        },
+        {
+          "protocol": "FG-N",
+          "gold": "LOWER_RIGHT",
+          "prediction": "INVALID",
+          "count": 32,
+          "rowRate": 0.11552346570397112
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "ABOVE",
+          "count": 57,
+          "rowRate": 0.2384937238493724
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "BELOW",
+          "count": 3,
+          "rowRate": 0.012552301255230125
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "UPPER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "UPPER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "LOWER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "ABOVE",
+          "prediction": "INVALID",
+          "count": 179,
+          "rowRate": 0.7489539748953975
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "ABOVE",
+          "count": 1,
+          "rowRate": 0.004149377593360996
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "BELOW",
+          "count": 56,
+          "rowRate": 0.23236514522821577
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "UPPER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "UPPER_RIGHT",
+          "count": 1,
+          "rowRate": 0.004149377593360996
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "LOWER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "BELOW",
+          "prediction": "INVALID",
+          "count": 183,
+          "rowRate": 0.7593360995850622
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "ABOVE",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "BELOW",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "LEFT",
+          "count": 36,
+          "rowRate": 0.15584415584415584
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "RIGHT",
+          "count": 3,
+          "rowRate": 0.012987012987012988
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "UPPER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "UPPER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "LOWER_RIGHT",
+          "count": 2,
+          "rowRate": 0.008658008658008658
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LEFT",
+          "prediction": "INVALID",
+          "count": 190,
+          "rowRate": 0.8225108225108225
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "ABOVE",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "BELOW",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "RIGHT",
+          "count": 43,
+          "rowRate": 0.18777292576419213
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "UPPER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "UPPER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "LOWER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "RIGHT",
+          "prediction": "INVALID",
+          "count": 186,
+          "rowRate": 0.8122270742358079
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "ABOVE",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "BELOW",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "UPPER_LEFT",
+          "count": 33,
+          "rowRate": 0.12087912087912088
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "UPPER_RIGHT",
+          "count": 1,
+          "rowRate": 0.003663003663003663
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "LOWER_RIGHT",
+          "count": 5,
+          "rowRate": 0.018315018315018316
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_LEFT",
+          "prediction": "INVALID",
+          "count": 234,
+          "rowRate": 0.8571428571428571
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "ABOVE",
+          "count": 3,
+          "rowRate": 0.010344827586206896
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "BELOW",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "UPPER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "UPPER_RIGHT",
+          "count": 49,
+          "rowRate": 0.16896551724137931
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "LOWER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "UPPER_RIGHT",
+          "prediction": "INVALID",
+          "count": 238,
+          "rowRate": 0.8206896551724138
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "ABOVE",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "BELOW",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "LEFT",
+          "count": 2,
+          "rowRate": 0.007067137809187279
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "UPPER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "UPPER_RIGHT",
+          "count": 4,
+          "rowRate": 0.014134275618374558
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "LOWER_LEFT",
+          "count": 54,
+          "rowRate": 0.19081272084805653
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "LOWER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_LEFT",
+          "prediction": "INVALID",
+          "count": 223,
+          "rowRate": 0.7879858657243817
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "ABOVE",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "BELOW",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "UPPER_LEFT",
+          "count": 1,
+          "rowRate": 0.0036101083032490976
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "UPPER_RIGHT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "LOWER_LEFT",
+          "count": 0,
+          "rowRate": 0.0
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "LOWER_RIGHT",
+          "count": 44,
+          "rowRate": 0.1588447653429603
+        },
+        {
+          "protocol": "FG-T",
+          "gold": "LOWER_RIGHT",
+          "prediction": "INVALID",
+          "count": 232,
+          "rowRate": 0.8375451263537906
+        }
+      ],
+      "source": {
+        "label": "两模式全部2063题构建8×9矩阵，INVALID保留为第九列；rowRate为每个gold类中所占比例。",
+        "files": [
+          "artifacts/stage_b2_3_qwen3_generation/full/fg_nonthinking/row_generations.jsonl",
+          "artifacts/stage_b2_3_qwen3_generation/full/fg_thinking/row_generations.jsonl"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "两模式全部2063题构建8×9矩阵，INVALID保留为第九列；rowRate为每个gold类中所占比例。",
+            "componentIds": [
+              "current-sec-5",
+              "current-fig02_confusion_with_invalid"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_qwen3_generation/full/fg_nonthinking/row_generations.jsonl",
+                  "artifacts/stage_b2_3_qwen3_generation/full/fg_thinking/row_generations.jsonl"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "qwen_derived": {
+      "rows": [
+        {
+          "protocol": "B2.2 Native-Sum",
+          "scope": "h2-h5-derived",
+          "hop": "derived",
+          "n": "1351",
+          "accuracy": "0.18528965692990865",
+          "macro_f1": "0.12361307426221671",
+          "balanced_accuracy": "0.15740633526221742",
+          "parse_success_rate": "1.0",
+          "recall_ABOVE": "0.014775815217391304",
+          "recall_BELOW": "0.06700881893037983",
+          "recall_LEFT": "0.012896825396825396",
+          "recall_RIGHT": "0.0",
+          "recall_UPPER_LEFT": "0.1862179487179487",
+          "recall_UPPER_RIGHT": "0.1318183940242764",
+          "recall_LOWER_LEFT": "0.5946543970934215",
+          "recall_LOWER_RIGHT": "0.25187848271749635",
+          "prediction_frequency_ABOVE": "0.02136985246030877",
+          "prediction_frequency_BELOW": "0.10123962662703048",
+          "prediction_frequency_LEFT": "0.007309755125961321",
+          "prediction_frequency_RIGHT": "0.0",
+          "prediction_frequency_UPPER_LEFT": "0.1629514219872663",
+          "prediction_frequency_UPPER_RIGHT": "0.057756778767606015",
+          "prediction_frequency_LOWER_LEFT": "0.4797084168889516",
+          "prediction_frequency_LOWER_RIGHT": "0.1696641481428755",
+          "invalid_frequency": "0.0",
+          "cardinal_prediction_frequency": "0.12991923421330057",
+          "diagonal_prediction_frequency": "0.8700807657866994",
+          "max_single_relation_frequency": "0.4797084168889516",
+          "prediction_collapse": "False"
+        },
+        {
+          "protocol": "FG-N",
+          "scope": "h2-h5-derived",
+          "hop": "derived",
+          "n": "1351",
+          "accuracy": "0.25646953219367286",
+          "macro_f1": "0.25651752283693696",
+          "balanced_accuracy": "0.2513485384523634",
+          "parse_success_rate": "0.9247898350245587",
+          "recall_ABOVE": "0.18866272993311037",
+          "recall_BELOW": "0.13980451948524475",
+          "recall_LEFT": "0.22111222111222112",
+          "recall_RIGHT": "0.21668448080986782",
+          "recall_UPPER_LEFT": "0.3783119658119658",
+          "recall_UPPER_RIGHT": "0.3070378151260504",
+          "recall_LOWER_LEFT": "0.27343726733970636",
+          "recall_LOWER_RIGHT": "0.28573730800074026",
+          "prediction_frequency_ABOVE": "0.0970245137087508",
+          "prediction_frequency_BELOW": "0.051718935504762975",
+          "prediction_frequency_LEFT": "0.13725559549551097",
+          "prediction_frequency_RIGHT": "0.13914935160174635",
+          "prediction_frequency_UPPER_LEFT": "0.1728871116109476",
+          "prediction_frequency_UPPER_RIGHT": "0.13442741818873247",
+          "prediction_frequency_LOWER_LEFT": "0.10226563025522004",
+          "prediction_frequency_LOWER_RIGHT": "0.09006127865888744",
+          "invalid_frequency": "0.07521016497544128",
+          "cardinal_prediction_frequency": "0.42514839631077117",
+          "diagonal_prediction_frequency": "0.4996414387137875",
+          "max_single_relation_frequency": "0.18268002752225704",
+          "prediction_collapse": "False"
+        },
+        {
+          "protocol": "FG-T",
+          "scope": "h2-h5-derived",
+          "hop": "derived",
+          "n": "1351",
+          "accuracy": "0.03516705529412461",
+          "macro_f1": "0.06174042858989221",
+          "balanced_accuracy": "0.033957443354653366",
+          "parse_success_rate": "0.04367205271329781",
+          "recall_ABOVE": "0.02734375",
+          "recall_BELOW": "0.029661016949152543",
+          "recall_LEFT": "0.011904761904761904",
+          "recall_RIGHT": "0.025762936753648828",
+          "recall_UPPER_LEFT": "0.025",
+          "recall_UPPER_RIGHT": "0.03761437908496732",
+          "recall_LOWER_LEFT": "0.04864945352750231",
+          "recall_LOWER_RIGHT": "0.0657232486171941",
+          "prediction_frequency_ABOVE": "0.005145230162826709",
+          "prediction_frequency_BELOW": "0.0034653465346534654",
+          "prediction_frequency_LEFT": "0.0025726150814133547",
+          "prediction_frequency_RIGHT": "0.0030614579558187745",
+          "prediction_frequency_UPPER_LEFT": "0.0034653465346534654",
+          "prediction_frequency_UPPER_RIGHT": "0.007694950809142555",
+          "prediction_frequency_LOWER_LEFT": "0.00652680449047224",
+          "prediction_frequency_LOWER_RIGHT": "0.011740301144317244",
+          "invalid_frequency": "0.9563279472867022",
+          "cardinal_prediction_frequency": "0.014244649734712303",
+          "diagonal_prediction_frequency": "0.029427402978585506",
+          "max_single_relation_frequency": "0.011740301144317244",
+          "prediction_collapse": "False"
+        }
+      ],
+      "source": {
+        "label": "h2—h5每hop等权；95%区间为hop内story_group_id配对bootstrap，2000次。matched250题中多步200题。",
+        "files": [
+          "artifacts/stage_b2_3_qwen3_generation/statistics/derived_summary.csv",
+          "artifacts/stage_b2_3_qwen3_generation/statistics/paired_bootstrap.csv",
+          "artifacts/stage_b2_3_qwen3_generation/statistics/matched_decoding_metrics.csv"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "h2—h5每hop等权；95%区间为hop内story_group_id配对bootstrap，2000次。matched250题中多步200题。",
+            "componentIds": [
+              "current-sec-1",
+              "current-sec-5"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_qwen3_generation/statistics/derived_summary.csv",
+                  "artifacts/stage_b2_3_qwen3_generation/statistics/paired_bootstrap.csv",
+                  "artifacts/stage_b2_3_qwen3_generation/statistics/matched_decoding_metrics.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "budget100": {
+      "rows": [
+        {
+          "budget": "8K",
+          "hop": "全部",
+          "n": 100,
+          "accuracyRate": 0.59,
+          "parseRate": 0.77,
+          "正确": 59,
+          "已解析但错误": 18,
+          "截断无正式答案": 23,
+          "meanTokens": 5165.28,
+          "generationHours": 6.442018265098127,
+          "meanMinutes": 3.865210959058876,
+          "peakAllocatedGiB": 16.543188095092773
+        },
+        {
+          "budget": "16K",
+          "hop": "全部",
+          "n": 100,
+          "accuracyRate": 0.64,
+          "parseRate": 0.96,
+          "正确": 64,
+          "已解析但错误": 32,
+          "截断无正式答案": 4,
+          "meanTokens": 5947.53,
+          "generationHours": 7.613559975895202,
+          "meanMinutes": 4.568135985537122,
+          "peakAllocatedGiB": 17.79071617126465
+        },
+        {
+          "budget": "32K",
+          "hop": "全部",
+          "n": 100,
+          "accuracyRate": 0.64,
+          "parseRate": 0.96,
+          "正确": 64,
+          "已解析但错误": 32,
+          "截断无正式答案": 4,
+          "meanTokens": 6602.89,
+          "generationHours": 9.313436862124751,
+          "meanMinutes": 5.58806211727485,
+          "peakAllocatedGiB": 20.291894912719727
+        }
+      ],
+      "source": {
+        "label": "同一100题，各hop20；排除旧10题，抽样seed20261014。三档从原提示独立运行，batch1，同题同派生seed；正确/解析错误/截断互斥。诊断样本不估计自然总体。",
+        "files": [
+          "artifacts/stage_b2_3_budget100_20261014/audit_completion_metrics.csv",
+          "artifacts/stage_b2_3_budget100_20261014/experiment_plan.json",
+          "artifacts/stage_b2_3_budget100_20261014/paired_budget_changes.csv"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "同一100题，各hop20；排除旧10题，抽样seed20261014。三档从原提示独立运行，batch1，同题同派生seed；正确/解析错误/截断互斥。诊断样本不估计自然总体。",
+            "componentIds": [
+              "current-sec-1",
+              "current-sec-6",
+              "current-chart-budget",
+              "current-chart-cost",
+              "current-sec-11",
+              "current-sec-13",
+              "current-sec-14"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_budget100_20261014/audit_completion_metrics.csv",
+                  "artifacts/stage_b2_3_budget100_20261014/experiment_plan.json",
+                  "artifacts/stage_b2_3_budget100_20261014/paired_budget_changes.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "budget_hop": {
+      "rows": [
+        {
+          "budget": "8K",
+          "hop": "h1",
+          "n": 20,
+          "accuracyRate": 1.0,
+          "parseRate": 1.0,
+          "正确": 20,
+          "已解析但错误": 0,
+          "截断无正式答案": 0,
+          "meanTokens": 2230.7,
+          "generationHours": 0.5167249988795568,
+          "meanMinutes": 1.5501749966386706,
+          "peakAllocatedGiB": 16.213534355163574
+        },
+        {
+          "budget": "8K",
+          "hop": "h2",
+          "n": 20,
+          "accuracyRate": 0.6,
+          "parseRate": 0.85,
+          "正确": 12,
+          "已解析但错误": 5,
+          "截断无正式答案": 3,
+          "meanTokens": 5305.1,
+          "generationHours": 1.3709654778024802,
+          "meanMinutes": 4.112896433407441,
+          "peakAllocatedGiB": 16.54237937927246
+        },
+        {
+          "budget": "8K",
+          "hop": "h3",
+          "n": 20,
+          "accuracyRate": 0.6,
+          "parseRate": 0.65,
+          "正确": 12,
+          "已解析但错误": 1,
+          "截断无正式答案": 7,
+          "meanTokens": 5779.05,
+          "generationHours": 1.3699450706131757,
+          "meanMinutes": 4.109835211839527,
+          "peakAllocatedGiB": 16.543188095092773
+        },
+        {
+          "budget": "8K",
+          "hop": "h4",
+          "n": 20,
+          "accuracyRate": 0.5,
+          "parseRate": 0.6,
+          "正确": 10,
+          "已解析但错误": 2,
+          "截断无正式答案": 8,
+          "meanTokens": 6090.1,
+          "generationHours": 1.5273494307872735,
+          "meanMinutes": 4.58204829236182,
+          "peakAllocatedGiB": 16.540630340576172
+        },
+        {
+          "budget": "8K",
+          "hop": "h5",
+          "n": 20,
+          "accuracyRate": 0.25,
+          "parseRate": 0.75,
+          "正确": 5,
+          "已解析但错误": 10,
+          "截断无正式答案": 5,
+          "meanTokens": 6421.45,
+          "generationHours": 1.6570332870156401,
+          "meanMinutes": 4.971099861046921,
+          "peakAllocatedGiB": 16.54306411743164
+        },
+        {
+          "budget": "16K",
+          "hop": "h1",
+          "n": 20,
+          "accuracyRate": 1.0,
+          "parseRate": 1.0,
+          "正确": 20,
+          "已解析但错误": 0,
+          "截断无正式答案": 0,
+          "meanTokens": 2230.7,
+          "generationHours": 0.5161576256994158,
+          "meanMinutes": 1.5484728770982474,
+          "peakAllocatedGiB": 16.213534355163574
+        },
+        {
+          "budget": "16K",
+          "hop": "h2",
+          "n": 20,
+          "accuracyRate": 0.6,
+          "parseRate": 1.0,
+          "正确": 12,
+          "已解析但错误": 8,
+          "截断无正式答案": 0,
+          "meanTokens": 5665.8,
+          "generationHours": 1.4791863587881542,
+          "meanMinutes": 4.437559076364463,
+          "peakAllocatedGiB": 17.28609275817871
+        },
+        {
+          "budget": "16K",
+          "hop": "h3",
+          "n": 20,
+          "accuracyRate": 0.6,
+          "parseRate": 0.9,
+          "正确": 12,
+          "已解析但错误": 6,
+          "截断无正式答案": 2,
+          "meanTokens": 7106.5,
+          "generationHours": 1.7741724474428016,
+          "meanMinutes": 5.322517342328405,
+          "peakAllocatedGiB": 17.79071617126465
+        },
+        {
+          "budget": "16K",
+          "hop": "h4",
+          "n": 20,
+          "accuracyRate": 0.65,
+          "parseRate": 0.9,
+          "正确": 13,
+          "已解析但错误": 5,
+          "截断无正式答案": 2,
+          "meanTokens": 7942.35,
+          "generationHours": 2.07881713381658,
+          "meanMinutes": 6.23645140144974,
+          "peakAllocatedGiB": 17.790385246276855
+        },
+        {
+          "budget": "16K",
+          "hop": "h5",
+          "n": 20,
+          "accuracyRate": 0.35,
+          "parseRate": 1.0,
+          "正确": 7,
+          "已解析但错误": 13,
+          "截断无正式答案": 0,
+          "meanTokens": 6792.3,
+          "generationHours": 1.7652264101482513,
+          "meanMinutes": 5.295679230444754,
+          "peakAllocatedGiB": 17.26618194580078
+        },
+        {
+          "budget": "32K",
+          "hop": "h1",
+          "n": 20,
+          "accuracyRate": 1.0,
+          "parseRate": 1.0,
+          "正确": 20,
+          "已解析但错误": 0,
+          "截断无正式答案": 0,
+          "meanTokens": 2230.7,
+          "generationHours": 0.5172332406861501,
+          "meanMinutes": 1.5516997220584503,
+          "peakAllocatedGiB": 16.213534355163574
+        },
+        {
+          "budget": "32K",
+          "hop": "h2",
+          "n": 20,
+          "accuracyRate": 0.6,
+          "parseRate": 1.0,
+          "正确": 12,
+          "已解析但错误": 8,
+          "截断无正式答案": 0,
+          "meanTokens": 5665.8,
+          "generationHours": 1.4721792165024412,
+          "meanMinutes": 4.416537649507323,
+          "peakAllocatedGiB": 17.28609275817871
+        },
+        {
+          "budget": "32K",
+          "hop": "h3",
+          "n": 20,
+          "accuracyRate": 0.6,
+          "parseRate": 0.9,
+          "正确": 12,
+          "已解析但错误": 6,
+          "截断无正式答案": 2,
+          "meanTokens": 8744.9,
+          "generationHours": 2.613116225559885,
+          "meanMinutes": 7.8393486766796565,
+          "peakAllocatedGiB": 20.291894912719727
+        },
+        {
+          "budget": "32K",
+          "hop": "h4",
+          "n": 20,
+          "accuracyRate": 0.65,
+          "parseRate": 0.9,
+          "正确": 13,
+          "已解析但错误": 5,
+          "截断无正式答案": 2,
+          "meanTokens": 9580.75,
+          "generationHours": 2.9460694051389065,
+          "meanMinutes": 8.83820821541672,
+          "peakAllocatedGiB": 20.291111946105957
+        },
+        {
+          "budget": "32K",
+          "hop": "h5",
+          "n": 20,
+          "accuracyRate": 0.35,
+          "parseRate": 1.0,
+          "正确": 7,
+          "已解析但错误": 13,
+          "截断无正式答案": 0,
+          "meanTokens": 6792.3,
+          "generationHours": 1.764838774237368,
+          "meanMinutes": 5.294516322712103,
+          "peakAllocatedGiB": 17.26618194580078
+        }
+      ],
+      "source": {
+        "label": "每预算每hop20题；accuracyRate含截断计错，parseRate是交付可解析最终答案的比例。单seed小样本，不排序总体难度。",
+        "files": [
+          "artifacts/stage_b2_3_budget100_20261014/audit_completion_metrics.csv"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "每预算每hop20题；accuracyRate含截断计错，parseRate是交付可解析最终答案的比例。单seed小样本，不排序总体难度。",
+            "componentIds": [
+              "current-sec-6",
+              "current-chart-hop"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_budget100_20261014/audit_completion_metrics.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "trace_frequency": {
+      "rows": [
+        {
+          "phrase": "maybe",
+          "coverageRate": 1.0,
+          "occurrences": 2797,
+          "meaning": "猜测／不确定表达"
+        },
+        {
+          "phrase": "wait",
+          "coverageRate": 1.0,
+          "occurrences": 2601,
+          "meaning": "中断、回看或自我检查"
+        },
+        {
+          "phrase": "let me try",
+          "coverageRate": 0.96,
+          "occurrences": 816,
+          "meaning": "尝试新推导或布局"
+        },
+        {
+          "phrase": "coordinates",
+          "coverageRate": 0.95,
+          "occurrences": 726,
+          "meaning": "坐标构造"
+        },
+        {
+          "phrase": "let me think",
+          "coverageRate": 0.91,
+          "occurrences": 620,
+          "meaning": "思考过程提示语"
+        },
+        {
+          "phrase": "alternatively",
+          "coverageRate": 0.91,
+          "occurrences": 906,
+          "meaning": "切换假设／推导方式"
+        },
+        {
+          "phrase": "perhaps",
+          "coverageRate": 0.82,
+          "occurrences": 688,
+          "meaning": "猜测／不确定表达"
+        },
+        {
+          "phrase": "let's think",
+          "coverageRate": 0.46,
+          "occurrences": 95,
+          "meaning": "思考过程提示语"
+        }
+      ],
+      "source": {
+        "label": "100条唯一32K可见thinking_text，排除prompt/final；coverageRate为出现该精确短语的题数/100。精确重复为同一规范化句子额外出现词数/总词数，不代表过程无效。",
+        "files": [
+          "artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/phrase_frequencies.csv",
+          "artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/frequency_summary.json",
+          "artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/per_trajectory_repetition.csv"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "100条唯一32K可见thinking_text，排除prompt/final；coverageRate为出现该精确短语的题数/100。精确重复为同一规范化句子额外出现词数/总词数，不代表过程无效。",
+            "componentIds": [
+              "current-sec-7",
+              "current-chart-frequency",
+              "current-fig_03_long_tail_repetition"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/phrase_frequencies.csv",
+                  "artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/frequency_summary.json",
+                  "artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/per_trajectory_repetition.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "trajectory_cases": {
+      "rows": [
+        {
+          "row_id": 91319,
+          "hop": 4,
+          "gold": "ABOVE",
+          "parsed": "INVALID",
+          "final_correct": false,
+          "process_assessment": "最终INVALID；过程未完成",
+          "note": "尾段反复重复J是N的西南方、N在O西方，未完成I相对J的查询组合。"
+        },
+        {
+          "row_id": 94943,
+          "hop": 4,
+          "gold": "ABOVE",
+          "parsed": "INVALID",
+          "final_correct": false,
+          "process_assessment": "最终INVALID；过程未完成",
+          "note": "反复循环G在D南方、D在F西南方，未输出真实思考关闭边界。"
+        },
+        {
+          "row_id": 95732,
+          "hop": 3,
+          "gold": "UPPER_LEFT",
+          "parsed": "INVALID",
+          "final_correct": false,
+          "process_assessment": "最终INVALID；过程未完成",
+          "note": "尾段反复重复Y在K左方、K在L右方，停留在局部关系，没有完成L相对S的推导。"
+        },
+        {
+          "row_id": 99424,
+          "hop": 3,
+          "gold": "LOWER_LEFT",
+          "parsed": "INVALID",
+          "final_correct": false,
+          "process_assessment": "最终INVALID；过程未完成",
+          "note": "尾段反复重复T在J上方、J在K右方，局部关系文本没有收敛到W相对T的最终回答。"
+        },
+        {
+          "row_id": 90898,
+          "hop": 5,
+          "gold": "UPPER_RIGHT",
+          "parsed": "LOWER_LEFT",
+          "final_correct": false,
+          "process_assessment": "最终错误；末尾坐标计算局部一致，最终查询方向错误",
+          "note": "末尾给出D=(0,0)、B=(-3,-2)，这支持D在B右上方，却按B相对D回答LOWER_LEFT。局部坐标计算与最终答案正确性可以分离。"
+        },
+        {
+          "row_id": 94828,
+          "hop": 5,
+          "gold": "BELOW",
+          "parsed": "LOWER_RIGHT",
+          "final_correct": false,
+          "process_assessment": "最终错误；未形成可靠的单位位移组合",
+          "note": "引入自由距离和多个布局，末尾选择其认为多数例子出现的LOWER_RIGHT；按数据集单位位移约定横向抵消，应为BELOW。"
+        },
+        {
+          "row_id": 86290,
+          "hop": 4,
+          "gold": "UPPER_LEFT",
+          "parsed": "UPPER_LEFT",
+          "final_correct": true,
+          "process_assessment": "最终正确；整段过程有效性未验证，末尾论证不足",
+          "note": "末尾明确在假设P在B左上方的前提下选择UPPER_LEFT，没有在该段证明此目标关系。不能把最终正确直接标为已验证正确过程。"
+        },
+        {
+          "row_id": 95279,
+          "hop": 4,
+          "gold": "RIGHT",
+          "parsed": "RIGHT",
+          "final_correct": true,
+          "process_assessment": "最终正确；末尾单位坐标算例局部一致，整段过程未完全验证",
+          "note": "末尾算例G=(0,3)、D=(1,2)、W=(2,1)、Z=(2,2)、A=(0,2)符合查询链并支持RIGHT；此前反复考虑自由距离与其他布局，因此这里只认可所检查末尾算例。"
+        }
+      ],
+      "source": {
+        "label": "8个诊断个案代表性片段人工审阅，不是100条全轨迹过程审计；最终正确与过程有效分开。90898末尾坐标支持右上，最终答左下。",
+        "files": [
+          "artifacts/stage_b2_3_budget100_20261014/audit_cases.json"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "8个诊断个案代表性片段人工审阅，不是100条全轨迹过程审计；最终正确与过程有效分开。90898末尾坐标支持右上，最终答左下。",
+            "componentIds": [
+              "current-sec-8",
+              "current-fig07_state_vs_answer_case"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_3_budget100_20261014/audit_cases.json"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
+    },
+    "candidate_sensitivity": {
+      "rows": [
+        {
+          "model": "qwen3_8b",
+          "protocol": "EqualLength-Native",
+          "accuracy_h2_h5": "0.10059835124537896",
+          "macro_f1_h2_h5": "0.055846134853432344",
+          "balanced_accuracy_h2_h5": "0.12195839628896281"
+        },
+        {
+          "model": "qwen3_8b",
+          "protocol": "EqualLength-Raw",
+          "accuracy_h2_h5": "0.11439510316513034",
+          "macro_f1_h2_h5": "0.05488638822231413",
+          "balanced_accuracy_h2_h5": "0.13138956560717402"
+        },
+        {
+          "model": "qwen3_8b",
+          "protocol": "Native-Mean",
+          "accuracy_h2_h5": "0.19870363507185407",
+          "macro_f1_h2_h5": "0.11572224731048585",
+          "balanced_accuracy_h2_h5": "0.1653369978190099"
+        },
+        {
+          "model": "qwen3_8b",
+          "protocol": "Native-Sum",
+          "accuracy_h2_h5": "0.18528965692990865",
+          "macro_f1_h2_h5": "0.12361307426221671",
+          "balanced_accuracy_h2_h5": "0.15740633526221742"
+        },
+        {
+          "model": "qwen3_8b",
+          "protocol": "Raw-Mean",
+          "accuracy_h2_h5": "0.16599343286787893",
+          "macro_f1_h2_h5": "0.07158651792667718",
+          "balanced_accuracy_h2_h5": "0.1363207412242978"
+        },
+        {
+          "model": "qwen3_8b",
+          "protocol": "Raw-Sum",
+          "accuracy_h2_h5": "0.10606663778191791",
+          "macro_f1_h2_h5": "0.048772197065969386",
+          "balanced_accuracy_h2_h5": "0.12892464018476824"
+        },
+        {
+          "model": "tulu_final",
+          "protocol": "Native-Sum",
+          "accuracy_h2_h5": "0.18287889117100464",
+          "macro_f1_h2_h5": "0.13680812259154512",
+          "balanced_accuracy_h2_h5": "0.16256022843400963"
+        },
+        {
+          "model": "tulu_final",
+          "protocol": "Raw-Sum",
+          "accuracy_h2_h5": "0.11119744959255345",
+          "macro_f1_h2_h5": "0.05633831557706311",
+          "balanced_accuracy_h2_h5": "0.14057634912160488"
+        }
+      ],
+      "source": {
+        "label": "B2.2八种候选接口结果。Qwen六条件为h2—h5等hop平均；等长候选同时改变表述，不是纯长度干预。",
+        "files": [
+          "artifacts/stage_b2_2_qwen3/statistics/derived_summary.csv"
+        ],
+        "filters": [
+          "冻结原始实验；本次整理不重新生成"
+        ],
+        "metricDefinitions": [
+          {
+            "label": "范围与定义",
+            "definition": "B2.2八种候选接口结果。Qwen六条件为h2—h5等hop平均；等长候选同时改变表述，不是纯长度干预。",
+            "componentIds": [
+              "current-sec-2",
+              "current-sec-4"
+            ],
+            "sourceLineage": [
+              {
+                "files": [
+                  "artifacts/stage_b2_2_qwen3/statistics/derived_summary.csv"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "由本地冻结指标/逐题审计读取；复现路径：build_stage_figures.py、make_budget_figures.py、build_report_app.py。保留分母与等hop定义。"
+        }
+      ]
     }
-  }
+  },
+  "surface": "report",
+  "id": "report:28540df5-c2d9-4c20-8629-a5c4acb85aa2",
+  "buildStatus": "complete"
 }

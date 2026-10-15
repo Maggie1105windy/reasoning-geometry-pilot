@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Qwen3-8B",
+  "architecture": [
+    "Qwen3ForCausalLM"
+  ],
+  "num_hidden_layers": 36,
+  "hidden_size": 4096,
+  "dtype": "torch.bfloat16",
+  "model_eval": true,
+  "inference_mode": true,
+  "enable_thinking": false,
+  "empty_think_scaffold_present": true,
+  "forward_checks": [
+    {
+      "interface": "raw",
+      "prompt_tokens": 87,
+      "last_logits_finite": true
+    },
+    {
+      "interface": "native_non_thinking",
+      "prompt_tokens": 123,
+      "last_logits_finite": true
+    }
+  ],
+  "load_and_smoke_seconds": 9.552593905478716,
+  "peak_allocated_gib": 15.30243444442749,
+  "peak_reserved_gib": 15.48828125,
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

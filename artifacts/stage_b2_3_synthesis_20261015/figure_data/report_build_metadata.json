@@ -1,0 +1,22 @@
+{
+  "artifactId": "report:28540df5-c2d9-4c20-8629-a5c4acb85aa2",
+  "sections": 14,
+  "queryIds": [
+    "b0_audit",
+    "b0_splits",
+    "b1_probe",
+    "b1_behavior",
+    "b2_behavior",
+    "b2_within",
+    "b2_transfer",
+    "qwen_full",
+    "qwen_confusion",
+    "qwen_derived",
+    "budget100",
+    "budget_hop",
+    "trace_frequency",
+    "trajectory_cases",
+    "candidate_sensitivity"
+  ],
+  "companionMarkdownSha256": "f3f12470e4307e8b51d46aa4e68650eeaccc29e232b5544c33124522fda7bce2"
+}

@@ -1,0 +1,29 @@
+{
+  "version": "stage_b2_3_budget_pilot_20261013_v1",
+  "status": "COMPLETE",
+  "pid": 189151,
+  "host": "BNU",
+  "updated_utc": "2026-10-13T15:13:25.335411+00:00",
+  "started_utc": "2026-10-13T13:28:24.349700+00:00",
+  "budgets": [
+    8192,
+    16384,
+    32768
+  ],
+  "expected_rows": 10,
+  "total_selected_runs": 30,
+  "plan_sha256": "eddb121853b4d0c68f42aea7ad1986fdbf7fd414a7744f349f075be859a3b98d",
+  "phase": "FINISHED",
+  "pending_runs": 30,
+  "completed_runs": 30,
+  "current_row_id": 93456,
+  "current_hop": 5,
+  "current_budget": 32768,
+  "current_run_started_utc": "2026-10-13T15:07:40.869062+00:00",
+  "model_load_seconds": 16.990239791572094,
+  "last_completed_row_id": 93456,
+  "last_completed_budget": 32768,
+  "last_completed_tokens": 8100,
+  "last_completed_seconds": 343.4836123660207,
+  "ended_utc": "2026-10-13T15:13:25.334433+00:00"
+}

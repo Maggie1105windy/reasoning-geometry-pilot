@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "method": "All four exported PNG figures were opened with the image viewer and inspected visually at full rendered view; the updated third figure was inspected again.",
+  "reviewed": [
+    "fig_01_budget_outcomes_cost",
+    "fig_02_budget_hop_accuracy_completion",
+    "fig_03_long_tail_repetition",
+    "fig_04_trace_frequency_coverage"
+  ],
+  "checks": {
+    "chinese_font_rendered": true,
+    "titles_and_notes_inside_canvas": true,
+    "mark_labels_readable": true,
+    "denominators_and_units_visible": true,
+    "zero_baselines_for_absolute_bars": true,
+    "different_completion_and_correctness_visible": true,
+    "word_count_distinguished_from_model_tokens": true,
+    "coverage_distinguished_from_total_occurrences": true
+  },
+  "scope": "Standalone scientific figures, PNG and editable SVG; responsive report application verification is owned by the report author. No browser or mobile layout claim is made here."
+}

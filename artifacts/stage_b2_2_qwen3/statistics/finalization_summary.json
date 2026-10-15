@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "metrics_sha256": "36e12edb7680b3db473552d760fdc9b7c43fc86983cdf752a31854541bb44049",
+  "paired_bootstrap_sha256": "11982fbed306691c3179a9f81d1c229762849ee020ba8e490f79df0362672a0f",
+  "figures": [
+    "figure_1_raw_vs_native_by_hop.png",
+    "figure_2_native_metrics_qwen_vs_tulu.png",
+    "figure_3_cardinal_diagonal_frequency.png",
+    "figure_4_qwen_confusion_matrices.png",
+    "figure_5_derived_protocol_comparison.png"
+  ],
+  "strong_reasoning_target": "UNCERTAIN"
+}

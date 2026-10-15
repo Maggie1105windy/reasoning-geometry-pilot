@@ -4,12 +4,16 @@
 
 本仓库保存项目的公开研究层：实验方法、冻结协议、结果报告、图表、CSV/JSON 摘要、验证文件和复现脚本。模型权重、完整激活矩阵、缓存、虚拟环境、原始论文 PDF 和凭据不进入仓库。
 
-> 更新于 2026-09-10：Stage B2.1 Model-task Fitness Gate 已完成；正式报告、8 张图、协议、审计、聚合结果和独立验证已同步入库。
+> 更新于 2026-10-15：Stage B2.2—B2.3、10题／100题思考预算实验及可见轨迹分析已归档。包含原始逐题输出、代码、统计、独立审计与图文报告；62MB合并输出以可校验的无损gzip保存。正在运行的B3不属于本次同步。
 
 ## 快速入口
 
 | 内容 | 入口 |
 |---|---|
+| B2.2—B2.3 最新综合报告（8张重点图） | [STAGE_B2_3_RESEARCH_SUMMARY_ZH.md](docs/stage-b/STAGE_B2_3_RESEARCH_SUMMARY_ZH.md) |
+| B2.3 全部结果、压缩还原与文件清单 | [results/stage-b2_3_sync/README.md](results/stage-b2_3_sync/README.md) |
+| 100题三预算实验 | [100题实验总结](artifacts/stage_b2_3_budget100_20261014/8K_16K_32K_100题实验总结_20261015.md) |
+| 可见思考轨迹高频分析 | [高频内容与循环诊断](artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/思考轨迹高频内容_20261015.md) |
 | 全部阶段结果索引 | [RESULTS.md](RESULTS.md) |
 | B1–B1.6 中文整合报告 | [EXPERIMENT_REPORT_ZH.md](EXPERIMENT_REPORT_ZH.md) |
 | B2 Base/SFT/DPO/Final 正式报告 | [B2_BASE_TULU_STAGE_COMPARISON_REPORT.md](docs/stage-b/B2_BASE_TULU_STAGE_COMPARISON_REPORT.md) |
@@ -39,7 +43,8 @@
 4. **Stage B1.5–B1.6 — 行为与迁移**：用八个候选方向答案的条件对数似然衡量模型行为；再把 h1 probe 直接应用到 h2–h5，比较 within-hop 与 cross-hop Macro-F1。
 5. **Stage B2 — 后训练比较**：在完全相同的冻结样本、token readout、probe 协议和控制实验下比较 Base、SFT、DPO、Final，并使用 story-group paired bootstrap 评价阶段差值。
 6. **Stage B2.1 — 模型–任务适配性门控**：先精确复现 Raw-Sum，再比较 native chat、mean-token 与等长 verbalizer；使用同一 2,063-row Primary test 和 2,000 次 story-group paired bootstrap 区分接口效应与模型能力。
-7. **MATH-500 preliminary**：使用同一批 20 题、greedy decoding 和人工复核流程验证 Base→SFT→DPO→Final 行为评测链路；该小样本不作为正式 benchmark。
+7. **Stage B2.2—B2.3 — Qwen行为与预算校准**：比较候选评分与两模式自由生成，复核2K完成失败；随后真实独立运行8K／16K／32K，分析100题的完成、正确性、成本和可见轨迹。
+8. **MATH-500 preliminary**：使用同一批 20 题、greedy decoding 和人工复核流程验证 Base→SFT→DPO→Final 行为评测链路；该小样本不作为正式 benchmark。
 
 ## 数据集与模型
 
@@ -50,6 +55,7 @@
 | B0–B1.6 | StepGame CompleteVersion/clean | Llama-3.1-8B Base |
 | B2 | StepGame 冻结划分 | Llama-3.1-8B Base、Tülu-3 SFT、DPO、Final |
 | B2.1 | StepGame 冻结 Primary test | 同一 Base/SFT/DPO/Final，评价接口适配性 |
+| B2.2—B2.3 | 同一2063题及10题／100题分层诊断子集 | Qwen/Qwen3-8B；思考／非思考为同一后训练权重 |
 | Preliminary | MATH-500 pilot-20 | 同一 Base/SFT/DPO/Final 序列 |
 
 ## 当前阶段
@@ -64,12 +70,19 @@
 | B1.6 | Llama-3.1-8B Base × StepGame | 跨 hop 线性迁移 | PASS |
 | B2 | Base/SFT/DPO/Final × StepGame | 行为、within-hop、cross-hop 与冻结控制比较 | PASS |
 | B2.1 | Base/SFT/DPO/Final × StepGame | Raw/native、sum/mean-token、等长 verbalizer 适配性门控 | PASS_WITH_LIMITATION |
+| B2.2 | Qwen3-8B × StepGame | 原生候选评分、sum/mean与等长候选敏感性 | 完成，有行为局限 |
+| B2.3 | Qwen3-8B × StepGame | 2063题两模式自由生成、匹配解码与复核 | 完成；2K思考结果严重截断 |
+| B2.3预算与轨迹 | Qwen3-8B × 10题／100题 | 三档真实生成、严格解析、成本、高频与个案分析 | 完成，诊断样本 |
 | Preliminary | Base/SFT/DPO/Final × MATH-500 pilot-20 | 小样本行为层可行性验证 | 完成（非正式 benchmark） |
 
 详细完成边界见 [STATUS.md](STATUS.md)，云端恢复核验见 [SYNC_AUDIT.md](SYNC_AUDIT.md)。
 
 ## 核心结果
 
+- B2.3 非思考自由生成的 h2—h5 等权准确率为 **25.65%**，比候选 Native-Sum **18.53%** 高 **7.12个百分点**，95%配对区间 **[3.85,10.55]个百分点**，但未满足完整预设强行为门槛。
+- 原2K思考模式 **1665/2063（80.71%）** 截断；固定预算低分不能直接解释为thinking损害推理能力。
+- 新100题（各hop20题）在8K／16K／32K上正确 **59／64／64**、解析 **77／96／96**。16K→32K增加约1小时42分钟，无新增有效答案。该样本用于预算诊断，不估计自然测试总体准确率，也不证明16K普遍最优。
+- 100条唯一32K思考轨迹中，4条循环贡献了 **77.3%** 的精确重复词。可见坐标正确与最终回答正确可分离，尚未证明隐藏状态的因果使用或后训练改变。
 - B1 中，显式 h1 的峰值 Macro-F1 为 **0.3573@L17**；h2–h5 峰值仅为 **0.1485–0.1702**。
 - h2–h5 没有呈现“hop 越大、可解码层越晚”的单调顺序。
 - 平衡控制使 h1 峰值降至 **0.2163**；未见模板测试使其降至 **0.1794**，说明强显式读出对数据分布和表面模板敏感。
@@ -148,6 +161,8 @@
 │   └── stage-b2_1/
 └── environment/
 ```
+
+本次新增的完整运行层位于 `artifacts/stage_b2_2_qwen3` 与四个 `artifacts/stage_b2_3_*` 目录；复现代码在 `scripts/stage-b2_2`、`scripts/stage-b2_3*`。运行记录保留实际提示文本、生成token与身份信息。完整上游数据集仍需从引用来源取得。
 
 ## 复现边界
 

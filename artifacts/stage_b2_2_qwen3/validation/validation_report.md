@@ -1,0 +1,59 @@
+# Stage B2.2 independent validation
+
+Final status: **PASS**
+
+## Checks
+
+- PASS: `frozen_rows_2063`
+- PASS: `frozen_hop_counts_exact`
+- PASS: `frozen_row_hash_exact`
+- PASS: `frozen_rows_unique`
+- PASS: `frozen_relations_exact`
+- PASS: `preflight_summary_pass`
+- PASS: `model_load_smoke_pass`
+- PASS: `audit_summary_pass`
+- PASS: `tokenizer_audit_pass`
+- PASS: `equal_length_gate_pass`
+- PASS: `full_run_pass`
+- PASS: `all_four_components_pass`
+- PASS: `raw_sum_candidate_rows`
+- PASS: `raw_sum_every_frozen_row_once`
+- PASS: `raw_sum_eight_candidates`
+- PASS: `raw_sum_candidate_set`
+- PASS: `raw_sum_finite`
+- PASS: `raw_sum_no_truncation`
+- PASS: `raw_mean_candidate_rows`
+- PASS: `raw_mean_every_frozen_row_once`
+- PASS: `raw_mean_eight_candidates`
+- PASS: `raw_mean_candidate_set`
+- PASS: `raw_mean_finite`
+- PASS: `raw_mean_no_truncation`
+- PASS: `native_sum_candidate_rows`
+- PASS: `native_sum_every_frozen_row_once`
+- PASS: `native_sum_eight_candidates`
+- PASS: `native_sum_candidate_set`
+- PASS: `native_sum_finite`
+- PASS: `native_sum_no_truncation`
+- PASS: `native_mean_candidate_rows`
+- PASS: `native_mean_every_frozen_row_once`
+- PASS: `native_mean_eight_candidates`
+- PASS: `native_mean_candidate_set`
+- PASS: `native_mean_finite`
+- PASS: `native_mean_no_truncation`
+- PASS: `equallength_raw_candidate_rows`
+- PASS: `equallength_raw_every_frozen_row_once`
+- PASS: `equallength_raw_eight_candidates`
+- PASS: `equallength_raw_candidate_set`
+- PASS: `equallength_raw_finite`
+- PASS: `equallength_raw_no_truncation`
+- PASS: `equallength_native_candidate_rows`
+- PASS: `equallength_native_every_frozen_row_once`
+- PASS: `equallength_native_eight_candidates`
+- PASS: `equallength_native_candidate_set`
+- PASS: `equallength_native_finite`
+- PASS: `equallength_native_no_truncation`
+- PASS: `independent_argmax_metrics_confusions`
+- PASS: `protected_b0_to_b21_unchanged`
+- PASS: `required_outputs_present`
+- PASS: `tulu_reference_reproduced`
+- PASS: `five_nonempty_figures`

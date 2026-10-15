@@ -1,6 +1,18 @@
 # Synchronization audit
 
-Audit date: 2026-09-10
+Latest archive preparation: 2026-10-15. Historical recovery notes below remain unchanged.
+
+## Stage B2.3 archive, 2026-10-15
+
+The completed B2.3 generation runs, ten-input and hundred-input budget studies, visible-trace analysis and synthesis are included, with B2.2 reference dependencies and reproducibility scripts. The live B3 study is outside this sync.
+
+`results/stage-b2_3_sync/SYNC_MANIFEST.csv` records original and published exact-byte SHA-256 values. `EXCLUDED_FILES.csv` enumerates cache, rendering scratch and local automation/process files. Original data were not rewritten. One 62.42MiB merged JSONL is represented by a deterministic gzip file; a full decompress-and-hash roundtrip was checked. `RAW_ARCHIVES.json` and `scripts/stage-b2_3/restore_archived_results.py` restore its original path and bytes.
+
+Scoped `.gitattributes` disable line-ending conversion for audited artifacts and frozen scripts, preserving hashes on Windows and Linux. Relevant completed run logs and final report PDFs are intentionally included despite the repository's general log/PDF ignore rules. No model weights, full activations, environment or SSH key content is included.
+
+The report HTML and reviewed snapshot are updated from the same completed local report. Static figures were inspected; a browser security policy prevented live webpage inspection, so no responsive visual acceptance is claimed.
+
+## Earlier recovery, 2026-09-10
 
 The cloud SSH endpoint was reachable again during the repository audit. The completed formal artifact directories were copied into a local recovery staging area and checked by file count and total byte size:
 

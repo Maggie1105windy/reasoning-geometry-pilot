@@ -1,0 +1,2680 @@
+{
+  "scope": "100 unique 32K-cap visible thinking traces as primary corpus; separate 8K/16K paired diagnostics; no pooling of shared budget prefixes",
+  "primary_rows": 100,
+  "all_budget_records": 300,
+  "only_field": "thinking_text; excludes prompt and final_response_text",
+  "sentence_normalization": "casefold, curly apostrophe normalization, whitespace normalization, strip outer punctuation; retain entity letters and internal coordinate numbers",
+  "sentence_segmentation": "split at terminal punctuation followed by whitespace or at newlines; heuristic, no semantic claim",
+  "word_tokenizer": "[a-z]+(?:'[a-z]+)?|\\d+(?:\\.\\d+)?",
+  "ngram_boundary": "within sentence/newline parts only",
+  "repetition_metric": "extra occurrences after first exact normalized sentence occurrence, weighted by sentence word count / all thinking words; descriptive exact repetition, not a semantic validity label",
+  "stopwords": [
+    "a",
+    "again",
+    "all",
+    "also",
+    "am",
+    "an",
+    "and",
+    "another",
+    "any",
+    "are",
+    "as",
+    "at",
+    "be",
+    "because",
+    "been",
+    "being",
+    "both",
+    "but",
+    "by",
+    "can",
+    "could",
+    "d",
+    "did",
+    "do",
+    "does",
+    "down",
+    "each",
+    "either",
+    "for",
+    "from",
+    "had",
+    "has",
+    "have",
+    "he",
+    "her",
+    "here",
+    "him",
+    "his",
+    "how",
+    "i",
+    "if",
+    "in",
+    "into",
+    "is",
+    "it",
+    "its",
+    "just",
+    "let",
+    "let's",
+    "ll",
+    "m",
+    "may",
+    "me",
+    "might",
+    "more",
+    "most",
+    "must",
+    "my",
+    "neither",
+    "no",
+    "not",
+    "now",
+    "of",
+    "on",
+    "one",
+    "or",
+    "other",
+    "our",
+    "out",
+    "over",
+    "re",
+    "really",
+    "s",
+    "shall",
+    "she",
+    "should",
+    "since",
+    "so",
+    "some",
+    "t",
+    "than",
+    "that",
+    "the",
+    "their",
+    "them",
+    "then",
+    "there",
+    "these",
+    "they",
+    "this",
+    "those",
+    "to",
+    "two",
+    "under",
+    "up",
+    "us",
+    "ve",
+    "very",
+    "was",
+    "we",
+    "were",
+    "what",
+    "when",
+    "where",
+    "which",
+    "while",
+    "who",
+    "will",
+    "with",
+    "would",
+    "yes",
+    "you",
+    "your"
+  ],
+  "script_sha256": "f087953e1eeefc656eca159610b1303bf96e1a8af0e263096c41eab74d10a6d8",
+  "primary": {
+    "budget": 32768,
+    "group": "all",
+    "n": 100,
+    "thinking_tokens": 659460,
+    "words": 507319,
+    "extra_repeated_sentence_words": 127357,
+    "weighted_repeated_sentence_word_fraction": 0.25103928691809296,
+    "median_trace_repeat_fraction": 0.06156891235306053,
+    "max_sentence_repetitions": 2208
+  },
+  "truncated": {
+    "budget": 32768,
+    "group": "truncated",
+    "n": 4,
+    "thinking_tokens": 131068,
+    "words": 107059,
+    "extra_repeated_sentence_words": 98441,
+    "weighted_repeated_sentence_word_fraction": 0.919502330490664,
+    "median_trace_repeat_fraction": 0.9478584792267217,
+    "max_sentence_repetitions": 2208
+  },
+  "truncated_token_share": 0.1987504928274649,
+  "truncated_repeat_word_share": 0.7729531945633141,
+  "groups": [
+    {
+      "budget": 8192,
+      "group": "all",
+      "n": 100,
+      "thinking_tokens": 515843,
+      "words": 393116,
+      "extra_repeated_sentence_words": 42190,
+      "weighted_repeated_sentence_word_fraction": 0.10732201182348212,
+      "median_trace_repeat_fraction": 0.05914887687503741,
+      "max_sentence_repetitions": 452
+    },
+    {
+      "budget": 8192,
+      "group": "correct",
+      "n": 59,
+      "thinking_tokens": 229212,
+      "words": 175628,
+      "extra_repeated_sentence_words": 10818,
+      "weighted_repeated_sentence_word_fraction": 0.061596100849522856,
+      "median_trace_repeat_fraction": 0.054838709677419356,
+      "max_sentence_repetitions": 10
+    },
+    {
+      "budget": 8192,
+      "group": "wrong_parsed",
+      "n": 18,
+      "thinking_tokens": 98238,
+      "words": 75420,
+      "extra_repeated_sentence_words": 5481,
+      "weighted_repeated_sentence_word_fraction": 0.07267303102625298,
+      "median_trace_repeat_fraction": 0.07012198579585757,
+      "max_sentence_repetitions": 10
+    },
+    {
+      "budget": 8192,
+      "group": "truncated",
+      "n": 23,
+      "thinking_tokens": 188393,
+      "words": 142068,
+      "extra_repeated_sentence_words": 25891,
+      "weighted_repeated_sentence_word_fraction": 0.18224371427766986,
+      "median_trace_repeat_fraction": 0.06830309498399147,
+      "max_sentence_repetitions": 452
+    },
+    {
+      "budget": 16384,
+      "group": "all",
+      "n": 100,
+      "thinking_tokens": 593924,
+      "words": 453596,
+      "extra_repeated_sentence_words": 73642,
+      "weighted_repeated_sentence_word_fraction": 0.16235151985467244,
+      "median_trace_repeat_fraction": 0.06156891235306053,
+      "max_sentence_repetitions": 1038
+    },
+    {
+      "budget": 16384,
+      "group": "correct",
+      "n": 64,
+      "thinking_tokens": 279762,
+      "words": 213202,
+      "extra_repeated_sentence_words": 13943,
+      "weighted_repeated_sentence_word_fraction": 0.06539807318880686,
+      "median_trace_repeat_fraction": 0.05486565555470013,
+      "max_sentence_repetitions": 18
+    },
+    {
+      "budget": 16384,
+      "group": "wrong_parsed",
+      "n": 32,
+      "thinking_tokens": 248630,
+      "words": 187058,
+      "extra_repeated_sentence_words": 14973,
+      "weighted_repeated_sentence_word_fraction": 0.0800446920206567,
+      "median_trace_repeat_fraction": 0.07072662672978386,
+      "max_sentence_repetitions": 19
+    },
+    {
+      "budget": 16384,
+      "group": "truncated",
+      "n": 4,
+      "thinking_tokens": 65532,
+      "words": 53336,
+      "extra_repeated_sentence_words": 44726,
+      "weighted_repeated_sentence_word_fraction": 0.8385705714714264,
+      "median_trace_repeat_fraction": 0.8959547444868354,
+      "max_sentence_repetitions": 1038
+    },
+    {
+      "budget": 32768,
+      "group": "all",
+      "n": 100,
+      "thinking_tokens": 659460,
+      "words": 507319,
+      "extra_repeated_sentence_words": 127357,
+      "weighted_repeated_sentence_word_fraction": 0.25103928691809296,
+      "median_trace_repeat_fraction": 0.06156891235306053,
+      "max_sentence_repetitions": 2208
+    },
+    {
+      "budget": 32768,
+      "group": "correct",
+      "n": 64,
+      "thinking_tokens": 279762,
+      "words": 213202,
+      "extra_repeated_sentence_words": 13943,
+      "weighted_repeated_sentence_word_fraction": 0.06539807318880686,
+      "median_trace_repeat_fraction": 0.05486565555470013,
+      "max_sentence_repetitions": 18
+    },
+    {
+      "budget": 32768,
+      "group": "wrong_parsed",
+      "n": 32,
+      "thinking_tokens": 248630,
+      "words": 187058,
+      "extra_repeated_sentence_words": 14973,
+      "weighted_repeated_sentence_word_fraction": 0.0800446920206567,
+      "median_trace_repeat_fraction": 0.07072662672978386,
+      "max_sentence_repetitions": 19
+    },
+    {
+      "budget": 32768,
+      "group": "truncated",
+      "n": 4,
+      "thinking_tokens": 131068,
+      "words": 107059,
+      "extra_repeated_sentence_words": 98441,
+      "weighted_repeated_sentence_word_fraction": 0.919502330490664,
+      "median_trace_repeat_fraction": 0.9478584792267217,
+      "max_sentence_repetitions": 2208
+    }
+  ],
+  "phrases": [
+    {
+      "budget": 32768,
+      "phrase": "maybe",
+      "meaning": "猜测／不确定表达",
+      "total_occurrences": 2797,
+      "trajectories_with_phrase": 100,
+      "occurrences_per_1000_words": 5.513296367768603,
+      "max_in_one_trace": 73,
+      "row_of_max": 103101
+    },
+    {
+      "budget": 32768,
+      "phrase": "perhaps",
+      "meaning": "猜测／不确定表达",
+      "total_occurrences": 688,
+      "trajectories_with_phrase": 82,
+      "occurrences_per_1000_words": 1.356148695396782,
+      "max_in_one_trace": 33,
+      "row_of_max": 99878
+    },
+    {
+      "budget": 32768,
+      "phrase": "wait",
+      "meaning": "中断、回看或自我检查",
+      "total_occurrences": 2601,
+      "trajectories_with_phrase": 100,
+      "occurrences_per_1000_words": 5.126951681289287,
+      "max_in_one_trace": 88,
+      "row_of_max": 103101
+    },
+    {
+      "budget": 32768,
+      "phrase": "let me think",
+      "meaning": "思考过程提示语",
+      "total_occurrences": 620,
+      "trajectories_with_phrase": 91,
+      "occurrences_per_1000_words": 1.2221107429447744,
+      "max_in_one_trace": 27,
+      "row_of_max": 101092
+    },
+    {
+      "budget": 32768,
+      "phrase": "let's think",
+      "meaning": "思考过程提示语",
+      "total_occurrences": 95,
+      "trajectories_with_phrase": 46,
+      "occurrences_per_1000_words": 0.18725890416089286,
+      "max_in_one_trace": 10,
+      "row_of_max": 86290
+    },
+    {
+      "budget": 32768,
+      "phrase": "let me try",
+      "meaning": "尝试新推导或布局",
+      "total_occurrences": 816,
+      "trajectories_with_phrase": 96,
+      "occurrences_per_1000_words": 1.6084554294240903,
+      "max_in_one_trace": 36,
+      "row_of_max": 103906
+    },
+    {
+      "budget": 32768,
+      "phrase": "alternatively",
+      "meaning": "切换假设／推导方式",
+      "total_occurrences": 906,
+      "trajectories_with_phrase": 91,
+      "occurrences_per_1000_words": 1.7858586017870413,
+      "max_in_one_trace": 41,
+      "row_of_max": 99878
+    },
+    {
+      "budget": 32768,
+      "phrase": "I'm not sure",
+      "meaning": "不确定表达",
+      "total_occurrences": 65,
+      "trajectories_with_phrase": 33,
+      "occurrences_per_1000_words": 0.1281245133732425,
+      "max_in_one_trace": 9,
+      "row_of_max": 98789
+    },
+    {
+      "budget": 32768,
+      "phrase": "not necessarily",
+      "meaning": "否定必然性",
+      "total_occurrences": 120,
+      "trajectories_with_phrase": 48,
+      "occurrences_per_1000_words": 0.2365375631506015,
+      "max_in_one_trace": 10,
+      "row_of_max": 98237
+    },
+    {
+      "budget": 32768,
+      "phrase": "for example",
+      "meaning": "构造具体例子",
+      "total_occurrences": 566,
+      "trajectories_with_phrase": 90,
+      "occurrences_per_1000_words": 1.1156688395270038,
+      "max_in_one_trace": 27,
+      "row_of_max": 103101
+    },
+    {
+      "budget": 32768,
+      "phrase": "guess / guessing",
+      "meaning": "猜测表达",
+      "total_occurrences": 19,
+      "trajectories_with_phrase": 15,
+      "occurrences_per_1000_words": 0.037451780832178566,
+      "max_in_one_trace": 2,
+      "row_of_max": 101274
+    },
+    {
+      "budget": 32768,
+      "phrase": "ambiguous / ambiguity",
+      "meaning": "歧义表达",
+      "total_occurrences": 93,
+      "trajectories_with_phrase": 41,
+      "occurrences_per_1000_words": 0.18331661144171615,
+      "max_in_one_trace": 7,
+      "row_of_max": 99878
+    },
+    {
+      "budget": 32768,
+      "phrase": "not enough information",
+      "meaning": "信息不足表达",
+      "total_occurrences": 4,
+      "trajectories_with_phrase": 4,
+      "occurrences_per_1000_words": 0.007884585438353384,
+      "max_in_one_trace": 1,
+      "row_of_max": 100614
+    },
+    {
+      "budget": 32768,
+      "phrase": "cannot determine",
+      "meaning": "无法确定表达",
+      "total_occurrences": 0,
+      "trajectories_with_phrase": 0,
+      "occurrences_per_1000_words": 0.0,
+      "max_in_one_trace": 0,
+      "row_of_max": 100046
+    },
+    {
+      "budget": 32768,
+      "phrase": "coordinates",
+      "meaning": "坐标构造",
+      "total_occurrences": 726,
+      "trajectories_with_phrase": 95,
+      "occurrences_per_1000_words": 1.431052257061139,
+      "max_in_one_trace": 26,
+      "row_of_max": 97613
+    },
+    {
+      "budget": 32768,
+      "phrase": "coordinate system",
+      "meaning": "坐标构造",
+      "total_occurrences": 169,
+      "trajectories_with_phrase": 82,
+      "occurrences_per_1000_words": 0.33312373477043045,
+      "max_in_one_trace": 8,
+      "row_of_max": 91221
+    },
+    {
+      "budget": 32768,
+      "phrase": "unit steps",
+      "meaning": "单位步长约定",
+      "total_occurrences": 4,
+      "trajectories_with_phrase": 4,
+      "occurrences_per_1000_words": 0.007884585438353384,
+      "max_in_one_trace": 1,
+      "row_of_max": 100046
+    },
+    {
+      "budget": 32768,
+      "phrase": "clock",
+      "meaning": "时钟方位理解",
+      "total_occurrences": 3764,
+      "trajectories_with_phrase": 48,
+      "occurrences_per_1000_words": 7.419394897490533,
+      "max_in_one_trace": 505,
+      "row_of_max": 103906
+    },
+    {
+      "budget": 32768,
+      "phrase": "the question is",
+      "meaning": "重新陈述任务",
+      "total_occurrences": 372,
+      "trajectories_with_phrase": 97,
+      "occurrences_per_1000_words": 0.7332664457668646,
+      "max_in_one_trace": 15,
+      "row_of_max": 96175
+    },
+    {
+      "budget": 32768,
+      "phrase": "but how",
+      "meaning": "追问或推导停滞",
+      "total_occurrences": 446,
+      "trajectories_with_phrase": 72,
+      "occurrences_per_1000_words": 0.8791312763764022,
+      "max_in_one_trace": 24,
+      "row_of_max": 100962
+    },
+    {
+      "budget": 32768,
+      "phrase": "to the left of",
+      "meaning": "空间关系重述",
+      "total_occurrences": 2052,
+      "trajectories_with_phrase": 90,
+      "occurrences_per_1000_words": 4.0447923298752855,
+      "max_in_one_trace": 114,
+      "row_of_max": 89458
+    },
+    {
+      "budget": 32768,
+      "phrase": "to the right of",
+      "meaning": "空间关系重述",
+      "total_occurrences": 3903,
+      "trajectories_with_phrase": 97,
+      "occurrences_per_1000_words": 7.693384241473313,
+      "max_in_one_trace": 1807,
+      "row_of_max": 99424
+    },
+    {
+      "budget": 32768,
+      "phrase": "same level",
+      "meaning": "对齐／抵消关系",
+      "total_occurrences": 101,
+      "trajectories_with_phrase": 20,
+      "occurrences_per_1000_words": 0.19908578231842292,
+      "max_in_one_trace": 40,
+      "row_of_max": 93992
+    },
+    {
+      "budget": 32768,
+      "phrase": "Final answer",
+      "meaning": "思考区中的答案字样，非正式最终输出",
+      "total_occurrences": 41,
+      "trajectories_with_phrase": 37,
+      "occurrences_per_1000_words": 0.08081700074312217,
+      "max_in_one_trace": 2,
+      "row_of_max": 104039
+    }
+  ],
+  "phrase_examples": {
+    "maybe": {
+      "row_id": 103101,
+      "count": 73,
+      "example": "150 degrees. so between 4 and 5 is between 120 and 150 degrees. so w is somewhere in that area. but maybe i need to think in terms of positions relative to other objects.\n\nnext clue: object w is below object o and to the right of it too. so, if i imagine o's position, w is both below "
+    },
+    "perhaps": {
+      "row_id": 99878,
+      "count": 33,
+      "example": "on the left.\" maybe \"over there\" is a way to say that g is in some position relative to others. but perhaps the next sentence clarifies. let me check the next part.\n\n3. \"v is sitting in the left direction of r.\" so v is to the left of r. so r is somewhere, and v is to the left of r. but"
+    },
+    "wait": {
+      "row_id": 103101,
+      "count": 88,
+      "example": "s per hour). so, between 4 and 5 would be 4.5 hours, which is 135 degrees from 12 o'clock position? wait, no. wait, each hour mark is 30 degrees. so 12 is 0 degrees, 3 is 90 degrees, 6 is 180 degrees, 9 is 270 degrees. so 4 is at 120 degrees (since 4*30=120), and 5 is 150 degrees. so"
+    },
+    "let me think": {
+      "row_id": 101092,
+      "count": 27,
+      "example": " of z. then, \"u is directly north west of i.\" so u is northwest of i. \n\nlet me try to map this out. let me think of a grid or coordinate system. let's assume that \"north\" is up, \"south\" is down, \"east\" is right, \"west\" is left. \n\nfirst, i is at the bottom. so maybe i is at the bottom of some"
+    },
+    "let's think": {
+      "row_id": 86290,
+      "count": 10,
+      "example": "of z's x, but since z's x is less than b_x, p's x could be less than or greater than b_x? not sure. let's think.\n\nalternatively, maybe we can find relations between p and b through other points.\n\nlet me try to assign coordinates step by step. let me assume some coordinates for simplicity.\n\n"
+    },
+    "let me try": {
+      "row_id": 103906,
+      "count": 36,
+      "example": "\nokay, let me try to figure this out. so, there's a story with several agents positioned in some way, and i need to find the relation between k and a. let me break down the information step by step"
+    },
+    "alternatively": {
+      "row_id": 99878,
+      "count": 41,
+      "example": "ed to find s's position relative to v. let's think if there are any constraints that link s and v.\n\nalternatively, maybe there's a way to find the positions of s and v relative to each other based on the given relations.\n\nlet me think again. let's see:\n\nwe know v is to the left of r. so v's x"
+    },
+    "I'm not sure": {
+      "row_id": 98789,
+      "count": 9,
+      "example": " as o, but we need to determine their exact positions.\n\nwait, perhaps the answer is upper-left. but i'm not sure. alternatively, maybe it's left, or something else.\n\nwait, let's try to think of it differently. if y is above and to the left of v, and v is between 2 and 3, then y is in the upp"
+    },
+    "not necessarily": {
+      "row_id": 98237,
+      "count": 10,
+      "example": "ns are not all on the same grid? or maybe i need to adjust the coordinates. maybe the positions are not necessarily aligned in a grid with integer steps. or perhaps the directions are relative in a different way. \n\nalternatively, perhaps \"diagonally left and below o\" means that r is southwest o"
+    },
+    "for example": {
+      "row_id": 103101,
+      "count": 27,
+      "example": " but that's conflicting. maybe i need to consider that the 2 o'clock position is a reference point. for example, maybe g is located at the 2 o'clock position, and t is above g. but that would require that t is above g, which would mean that g is below t. but if g is at 2 o'clock, which is a"
+    },
+    "guess / guessing": {
+      "row_id": 90221,
+      "count": 2,
+      "example": "ch is p's position. conflict. \n\nthis is not working. i think i need to give up and make an educated guess. given the clues, the only way for b to be bottom left of x is for x to be to the right and above b. if b is below v, and v is to the left of e, and h is upper left of e, then per"
+    },
+    "ambiguous / ambiguity": {
+      "row_id": 99878,
+      "count": 7,
+      "example": "r.\n\n2. \"g is over there and v is on the left.\" hmm, the first part \"g is over there\" might be a bit ambiguous. maybe \"over there\" refers to a specific position? but maybe it's better to look at the next statements. wait, maybe \"over there\" is part of the same sentence as the next one. let"
+    },
+    "not enough information": {
+      "row_id": 93706,
+      "count": 1,
+      "example": "ch would be to the left of z as well. so both scenarios are possible.\n\nhmm, this seems like there's not enough information to determine the exact relation. but since the problem is given, it must have a unique answer. maybe i made a wrong assumption earlier.\n\nlet me go back. the story says \"g is on th"
+    },
+    "cannot determine": {
+      "row_id": 84008,
+      "count": 0,
+      "example": ""
+    },
+    "coordinates": {
+      "row_id": 97613,
+      "count": 26,
+      "example": "und 4 or 5? but w is between 4 and 5. wait, but f is lower and slightly right of t. let me think of coordinates. let's imagine a coordinate system where t is at (0,0). then lower would be negative y-direction, and right would be positive x-direction. so f is lower (negative y) and slightly "
+    },
+    "coordinate system": {
+      "row_id": 91221,
+      "count": 8,
+      "example": "tatement one by one.\n\nthe first statement says, \"o is to the bottom right of e.\" so, if i imagine a coordinate system where the bottom right would be a direction relative to e. let me think: bottom right would mean that o is positioned such that if e is at some point, o is to the southeast of e? "
+    },
+    "unit steps": {
+      "row_id": 90898,
+      "count": 1,
+      "example": "h coordinates.\n\nlet me assume d is at (0,0). then h is directly above d, so h is at (0,1) (assuming unit steps for simplicity). now, u is in the lower left corner of h. if h is at (0,1), then the lower left corner would be (0-1, 1-1) = (-1, 0), assuming h is a square of size 1x1. so, u is "
+    },
+    "clock": {
+      "row_id": 103906,
+      "count": 505,
+      "example": "mation step by step.\n\nfirst, the story says: \"y is diagonally left and below w.\" so, if i imagine a clock face, maybe w is somewhere, and y is diagonally left and below it. diagonally left and below would mean that if w is at a certain position, y is in the direction that's both left "
+    },
+    "the question is": {
+      "row_id": 96175,
+      "count": 15,
+      "example": "r left to p.\" so d is lower and left of p. so if p is somewhere, d is to the lower left of p.\n\nnow, the question is: what is the relation of the agent c to the agent d?\n\nso i need to find where d is relative to c.\n\nlet me try to map out the positions step by step. maybe i can assign coordinates"
+    },
+    "but how": {
+      "row_id": 100962,
+      "count": 24,
+      "example": "the left of object w.\" so l is to the left of w. so if i imagine a horizontal line, l is left of w. but how does that fit with the other positions?\n\nalso, e is at the 6 o'clock position relative to j. 6 o'clock position is directly below j, right? because on a clock, 6 o'clock is straig"
+    },
+    "to the left of": {
+      "row_id": 89458,
+      "count": 114,
+      "example": "d j on the left of p.\" since they are parallel, they must be aligned in the same direction. if j is to the left of p, then j is positioned to the left of p. but i need to visualize this. let me think of p as a point, and j is to the left of it. but since they are parallel, maybe they are both "
+    },
+    "to the right of": {
+      "row_id": 99424,
+      "count": 1807,
+      "example": " of w. that means if i imagine a grid or some layout, k is on the left side of w. so w is somewhere to the right of k.\n\nnext, j is sitting in the right direction of k. wait, the wording here is a bit confusing. \"j is sitting in the right direction of k.\" does that mean j is to the right of k? i"
+    },
+    "same level": {
+      "row_id": 93992,
+      "count": 40,
+      "example": "at the same vertical level, but e is to the left of a. but a is at the bottom. so maybe e is at the same level as a but to the left? but then if e is above x, that would mean x is below e. but a is at the bottom. so x could be somewhere else. wait, this is getting a bit confusing. let me t"
+    },
+    "Final answer": {
+      "row_id": 92689,
+      "count": 2,
+      "example": "s above z, which is at y=0. so z is below j. therefore, the relation of z to j is \"below\". \n\nso the final answer would be \"below\". \n\nbut let me check if there's another interpretation. \n\nanother approach: maybe the positions are not on the clock face but in a 2d plane. the story says z is th"
+    }
+  },
+  "top_repeated_sentences": [
+    {
+      "sentence": "Therefore, J is southwest of N, which is west of O.",
+      "normalized_sentence": "therefore, j is southwest of n, which is west of o",
+      "total_occurrences": 2208,
+      "trajectories": 1,
+      "row_ids": "91319",
+      "max_in_one_trace": 2208,
+      "row_of_max": 91319
+    },
+    {
+      "sentence": "Therefore, Y is left of K, which is right of L.",
+      "normalized_sentence": "therefore, y is left of k, which is right of l",
+      "total_occurrences": 2194,
+      "trajectories": 1,
+      "row_ids": "95732",
+      "max_in_one_trace": 2194,
+      "row_of_max": 95732
+    },
+    {
+      "sentence": "So T is upper of J, which is to the right of K.",
+      "normalized_sentence": "so t is upper of j, which is to the right of k",
+      "total_occurrences": 1701,
+      "trajectories": 1,
+      "row_ids": "99424",
+      "max_in_one_trace": 1701,
+      "row_of_max": 99424
+    },
+    {
+      "sentence": "Therefore, G is located in the south direction from D, which is southwest of F.",
+      "normalized_sentence": "therefore, g is located in the south direction from d, which is southwest of f",
+      "total_occurrences": 710,
+      "trajectories": 1,
+      "row_ids": "94943",
+      "max_in_one_trace": 710,
+      "row_of_max": 94943
+    },
+    {
+      "sentence": "Therefore, G is located in the south direction from D, so G is further south than D, which is southwest of F.",
+      "normalized_sentence": "therefore, g is located in the south direction from d, so g is further south than d, which is southwest of f",
+      "total_occurrences": 709,
+      "trajectories": 1,
+      "row_ids": "94943",
+      "max_in_one_trace": 709,
+      "row_of_max": 94943
+    },
+    {
+      "sentence": "Let me think again.",
+      "normalized_sentence": "let me think again",
+      "total_occurrences": 173,
+      "trajectories": 73,
+      "row_ids": "84008;85242;85914;86290;86592;86606;86694;87055;88204;88527;88719;88999;89054;89092;89435;89458;90120;90149;90221;90634;90898;91221;91319;91373;91418;91880;92265;92689;93270;93532;93706;94140;94592;95279;95870;96175;96380;97230;97320;97530;97550;97613;97877;98237;98424;98755;98789;99424;99523;99633;99878;100046;100256;100614;100962;101092;101274;101371;101850;102164;102494;102510;102690;103101;103518;103654;103698;103826;103906;104039;104263;104379;104683",
+      "max_in_one_trace": 8,
+      "row_of_max": 97530
+    },
+    {
+      "sentence": "Let me try to assign coordinates.",
+      "normalized_sentence": "let me try to assign coordinates",
+      "total_occurrences": 56,
+      "trajectories": 45,
+      "row_ids": "85242;86592;87158;88527;88999;89458;90149;90179;90221;90634;91221;91373;91418;91880;92970;93270;93706;93992;94140;94592;95732;95870;96087;97223;97230;97877;98424;98865;99424;99878;100046;100256;100614;101092;101246;101274;101371;101850;102164;102494;102510;103906;104263;104379;104683",
+      "max_in_one_trace": 3,
+      "row_of_max": 93992
+    },
+    {
+      "sentence": "Let me check again.",
+      "normalized_sentence": "let me check again",
+      "total_occurrences": 48,
+      "trajectories": 38,
+      "row_ids": "84114;86592;86606;87055;87158;88527;88719;88999;89054;89092;91373;91418;92689;93706;94140;94864;95870;96175;97223;97320;97550;97613;98237;98424;99404;99523;99633;99878;100962;101274;101850;102494;102690;103365;103483;103826;104263;104683",
+      "max_in_one_trace": 3,
+      "row_of_max": 87055
+    },
+    {
+      "sentence": "But I'm not sure.",
+      "normalized_sentence": "but i'm not sure",
+      "total_occurrences": 36,
+      "trajectories": 23,
+      "row_ids": "84008;84506;86606;88719;89054;89435;90221;91373;91418;93992;94592;96175;97320;97550;97613;98789;100256;100614;101092;101274;102164;103101;104379",
+      "max_in_one_trace": 3,
+      "row_of_max": 84008
+    },
+    {
+      "sentence": "So the answer would be lower-right.",
+      "normalized_sentence": "so the answer would be lower-right",
+      "total_occurrences": 33,
+      "trajectories": 20,
+      "row_ids": "85914;86606;87055;87158;89092;90149;90634;91221;91373;92265;93270;93532;94828;95870;96175;99523;101092;103698;103826;104039",
+      "max_in_one_trace": 3,
+      "row_of_max": 90149
+    },
+    {
+      "sentence": "Let me try again.",
+      "normalized_sentence": "let me try again",
+      "total_occurrences": 32,
+      "trajectories": 20,
+      "row_ids": "84506;87055;87158;90179;92265;93532;94592;95870;96087;97877;98237;98789;99424;101246;101274;102164;102494;102510;104039;104379",
+      "max_in_one_trace": 3,
+      "row_of_max": 98789
+    },
+    {
+      "sentence": "But let me check again.",
+      "normalized_sentence": "but let me check again",
+      "total_occurrences": 30,
+      "trajectories": 24,
+      "row_ids": "84008;89515;90634;91880;92265;92342;92735;92970;93270;93532;93992;96380;97005;98424;98865;99633;102494;102690;103365;103483;103654;103698;103826;104683",
+      "max_in_one_trace": 3,
+      "row_of_max": 102494
+    },
+    {
+      "sentence": "So the relation is left.",
+      "normalized_sentence": "so the relation is left",
+      "total_occurrences": 28,
+      "trajectories": 12,
+      "row_ids": "84008;85242;86592;89054;89458;91418;93992;96087;96175;97550;98424;100962",
+      "max_in_one_trace": 5,
+      "row_of_max": 98424
+    },
+    {
+      "sentence": "So the relation is lower-left.",
+      "normalized_sentence": "so the relation is lower-left",
+      "total_occurrences": 26,
+      "trajectories": 15,
+      "row_ids": "88204;91418;91880;96087;97223;97230;98865;100046;100962;102164;102494;103483;103518;104039;104379",
+      "max_in_one_trace": 4,
+      "row_of_max": 102494
+    },
+    {
+      "sentence": "But the problem must have a unique answer.",
+      "normalized_sentence": "but the problem must have a unique answer",
+      "total_occurrences": 26,
+      "trajectories": 12,
+      "row_ids": "86290;86592;89458;93706;94828;95279;96087;97530;97550;99878;100614;102690",
+      "max_in_one_trace": 4,
+      "row_of_max": 95279
+    },
+    {
+      "sentence": "So the answer would be lower-left.",
+      "normalized_sentence": "so the answer would be lower-left",
+      "total_occurrences": 25,
+      "trajectories": 13,
+      "row_ids": "88204;91880;93706;94592;96087;97223;98865;100962;102164;102494;103483;103654;104379",
+      "max_in_one_trace": 5,
+      "row_of_max": 94592
+    },
+    {
+      "sentence": "Let me try to assign coordinates step by step.",
+      "normalized_sentence": "let me try to assign coordinates step by step",
+      "total_occurrences": 24,
+      "trajectories": 22,
+      "row_ids": "85914;86290;86592;87158;89458;90149;91221;91880;92735;97005;97320;97530;99424;99523;99878;100614;101092;101850;102510;102690;103654;104039",
+      "max_in_one_trace": 2,
+      "row_of_max": 99878
+    },
+    {
+      "sentence": "Let me assign coordinates.",
+      "normalized_sentence": "let me assign coordinates",
+      "total_occurrences": 24,
+      "trajectories": 21,
+      "row_ids": "84506;86606;87055;88719;89435;90634;90898;91373;92265;94943;96087;97550;99523;100962;101274;101371;102510;102788;103365;103518;104039",
+      "max_in_one_trace": 2,
+      "row_of_max": 87055
+    },
+    {
+      "sentence": "So E is to the right and below H.",
+      "normalized_sentence": "so e is to the right and below h",
+      "total_occurrences": 22,
+      "trajectories": 2,
+      "row_ids": "90221;91221",
+      "max_in_one_trace": 18,
+      "row_of_max": 90221
+    },
+    {
+      "sentence": "Let me try to sketch this mentally.",
+      "normalized_sentence": "let me try to sketch this mentally",
+      "total_occurrences": 19,
+      "trajectories": 19,
+      "row_ids": "85242;87158;89458;91221;92342;92689;93706;93765;93992;95870;97005;97320;97550;98237;100962;101092;103365;103518;104379",
+      "max_in_one_trace": 1,
+      "row_of_max": 85242
+    },
+    {
+      "sentence": "Let me try that.",
+      "normalized_sentence": "let me try that",
+      "total_occurrences": 17,
+      "trajectories": 13,
+      "row_ids": "84506;85914;87055;89458;90179;90898;91221;93706;97230;97530;100962;102690;103906",
+      "max_in_one_trace": 2,
+      "row_of_max": 85914
+    },
+    {
+      "sentence": "So the answer would be upper-left.",
+      "normalized_sentence": "so the answer would be upper-left",
+      "total_occurrences": 17,
+      "trajectories": 8,
+      "row_ids": "88527;90120;94140;96175;99633;102510;103365;103698",
+      "max_in_one_trace": 4,
+      "row_of_max": 103698
+    },
+    {
+      "sentence": "So T is upper right of J, which is to the right of K.",
+      "normalized_sentence": "so t is upper right of j, which is to the right of k",
+      "total_occurrences": 17,
+      "trajectories": 1,
+      "row_ids": "99424",
+      "max_in_one_trace": 17,
+      "row_of_max": 99424
+    },
+    {
+      "sentence": "Let me try to assign positions step by step.",
+      "normalized_sentence": "let me try to assign positions step by step",
+      "total_occurrences": 16,
+      "trajectories": 13,
+      "row_ids": "89054;90149;90221;93992;96087;98424;98789;100614;102494;103101;103365;103518;104379",
+      "max_in_one_trace": 3,
+      "row_of_max": 103518
+    },
+    {
+      "sentence": "So the answer would be left.",
+      "normalized_sentence": "so the answer would be left",
+      "total_occurrences": 16,
+      "trajectories": 11,
+      "row_ids": "84008;85242;86592;89054;89458;89515;91418;93992;97550;98424;100962",
+      "max_in_one_trace": 2,
+      "row_of_max": 84008
+    }
+  ],
+  "top_broad_ngrams": [
+    {
+      "n": 4,
+      "phrase": "to the right of",
+      "total_occurrences": 3903,
+      "trajectories": 97
+    },
+    {
+      "n": 4,
+      "phrase": "let me try to",
+      "total_occurrences": 693,
+      "trajectories": 96
+    },
+    {
+      "n": 4,
+      "phrase": "is to the right",
+      "total_occurrences": 3748,
+      "trajectories": 92
+    },
+    {
+      "n": 4,
+      "phrase": "to the left of",
+      "total_occurrences": 2054,
+      "trajectories": 90
+    },
+    {
+      "n": 4,
+      "phrase": "try to figure out",
+      "total_occurrences": 91,
+      "trajectories": 89
+    },
+    {
+      "n": 4,
+      "phrase": "is to the left",
+      "total_occurrences": 1609,
+      "trajectories": 88
+    },
+    {
+      "n": 4,
+      "phrase": "let's try to figure",
+      "total_occurrences": 86,
+      "trajectories": 85
+    },
+    {
+      "n": 4,
+      "phrase": "okay let's try to",
+      "total_occurrences": 85,
+      "trajectories": 85
+    },
+    {
+      "n": 4,
+      "phrase": "to the right and",
+      "total_occurrences": 646,
+      "trajectories": 78
+    },
+    {
+      "n": 4,
+      "phrase": "let me think again",
+      "total_occurrences": 215,
+      "trajectories": 78
+    },
+    {
+      "n": 4,
+      "phrase": "me try to assign",
+      "total_occurrences": 171,
+      "trajectories": 78
+    },
+    {
+      "n": 4,
+      "phrase": "try to assign coordinates",
+      "total_occurrences": 130,
+      "trajectories": 77
+    },
+    {
+      "n": 4,
+      "phrase": "is at x y",
+      "total_occurrences": 381,
+      "trajectories": 75
+    },
+    {
+      "n": 4,
+      "phrase": "to figure out the",
+      "total_occurrences": 84,
+      "trajectories": 75
+    },
+    {
+      "n": 4,
+      "phrase": "the answer would be",
+      "total_occurrences": 175,
+      "trajectories": 74
+    },
+    {
+      "n": 4,
+      "phrase": "above below left right",
+      "total_occurrences": 121,
+      "trajectories": 74
+    },
+    {
+      "n": 4,
+      "phrase": "the question is about",
+      "total_occurrences": 150,
+      "trajectories": 73
+    },
+    {
+      "n": 4,
+      "phrase": "so if i imagine",
+      "total_occurrences": 103,
+      "trajectories": 73
+    },
+    {
+      "n": 4,
+      "phrase": "if i imagine a",
+      "total_occurrences": 90,
+      "trajectories": 73
+    },
+    {
+      "n": 4,
+      "phrase": "and to the right",
+      "total_occurrences": 528,
+      "trajectories": 71
+    },
+    {
+      "n": 4,
+      "phrase": "but the question is",
+      "total_occurrences": 151,
+      "trajectories": 71
+    },
+    {
+      "n": 4,
+      "phrase": "first the story says",
+      "total_occurrences": 71,
+      "trajectories": 71
+    },
+    {
+      "n": 4,
+      "phrase": "and to the left",
+      "total_occurrences": 507,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "upper left upper right",
+      "total_occurrences": 115,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "right lower left lower",
+      "total_occurrences": 109,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "left upper right lower",
+      "total_occurrences": 108,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "lower left lower right",
+      "total_occurrences": 108,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "upper right lower left",
+      "total_occurrences": 108,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "below left right upper",
+      "total_occurrences": 106,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "left right upper left",
+      "total_occurrences": 106,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "right upper left upper",
+      "total_occurrences": 106,
+      "trajectories": 70
+    },
+    {
+      "n": 4,
+      "phrase": "but let me check",
+      "total_occurrences": 149,
+      "trajectories": 69
+    },
+    {
+      "n": 4,
+      "phrase": "let me check if",
+      "total_occurrences": 135,
+      "trajectories": 68
+    },
+    {
+      "n": 4,
+      "phrase": "are above below left",
+      "total_occurrences": 103,
+      "trajectories": 68
+    },
+    {
+      "n": 4,
+      "phrase": "is at 1 1",
+      "total_occurrences": 735,
+      "trajectories": 67
+    },
+    {
+      "n": 4,
+      "phrase": "the question is asking",
+      "total_occurrences": 137,
+      "trajectories": 66
+    },
+    {
+      "n": 4,
+      "phrase": "is at 0 0",
+      "total_occurrences": 576,
+      "trajectories": 65
+    },
+    {
+      "n": 4,
+      "phrase": "let me assume that",
+      "total_occurrences": 170,
+      "trajectories": 65
+    },
+    {
+      "n": 4,
+      "phrase": "is at some position",
+      "total_occurrences": 127,
+      "trajectories": 65
+    },
+    {
+      "n": 4,
+      "phrase": "let me assign coordinates",
+      "total_occurrences": 86,
+      "trajectories": 65
+    },
+    {
+      "n": 4,
+      "phrase": "so the relation is",
+      "total_occurrences": 163,
+      "trajectories": 64
+    },
+    {
+      "n": 4,
+      "phrase": "so the answer would",
+      "total_occurrences": 121,
+      "trajectories": 63
+    },
+    {
+      "n": 4,
+      "phrase": "let me check again",
+      "total_occurrences": 97,
+      "trajectories": 63
+    },
+    {
+      "n": 4,
+      "phrase": "which is to the",
+      "total_occurrences": 2064,
+      "trajectories": 62
+    },
+    {
+      "n": 4,
+      "phrase": "a coordinate system where",
+      "total_occurrences": 76,
+      "trajectories": 62
+    },
+    {
+      "n": 4,
+      "phrase": "let me start by",
+      "total_occurrences": 69,
+      "trajectories": 62
+    },
+    {
+      "n": 4,
+      "phrase": "question is about the",
+      "total_occurrences": 98,
+      "trajectories": 61
+    },
+    {
+      "n": 4,
+      "phrase": "what is the relation",
+      "total_occurrences": 92,
+      "trajectories": 61
+    },
+    {
+      "n": 4,
+      "phrase": "above and to the",
+      "total_occurrences": 425,
+      "trajectories": 60
+    },
+    {
+      "n": 4,
+      "phrase": "the relation would be",
+      "total_occurrences": 122,
+      "trajectories": 60
+    },
+    {
+      "n": 4,
+      "phrase": "asking for the relation",
+      "total_occurrences": 112,
+      "trajectories": 60
+    },
+    {
+      "n": 4,
+      "phrase": "is about the relation",
+      "total_occurrences": 97,
+      "trajectories": 60
+    },
+    {
+      "n": 4,
+      "phrase": "options are above below",
+      "total_occurrences": 84,
+      "trajectories": 60
+    },
+    {
+      "n": 4,
+      "phrase": "the options are above",
+      "total_occurrences": 83,
+      "trajectories": 60
+    },
+    {
+      "n": 4,
+      "phrase": "be to the right",
+      "total_occurrences": 140,
+      "trajectories": 59
+    },
+    {
+      "n": 4,
+      "phrase": "maybe i need to",
+      "total_occurrences": 135,
+      "trajectories": 59
+    },
+    {
+      "n": 4,
+      "phrase": "is asking for the",
+      "total_occurrences": 112,
+      "trajectories": 59
+    },
+    {
+      "n": 4,
+      "phrase": "question is asking for",
+      "total_occurrences": 110,
+      "trajectories": 59
+    },
+    {
+      "n": 4,
+      "phrase": "to the left and",
+      "total_occurrences": 279,
+      "trajectories": 57
+    },
+    {
+      "n": 4,
+      "phrase": "for the relation of",
+      "total_occurrences": 122,
+      "trajectories": 57
+    },
+    {
+      "n": 4,
+      "phrase": "about the relation between",
+      "total_occurrences": 87,
+      "trajectories": 57
+    },
+    {
+      "n": 4,
+      "phrase": "now the question is",
+      "total_occurrences": 80,
+      "trajectories": 57
+    },
+    {
+      "n": 4,
+      "phrase": "is the relation of",
+      "total_occurrences": 73,
+      "trajectories": 57
+    },
+    {
+      "n": 4,
+      "phrase": "would be to the",
+      "total_occurrences": 174,
+      "trajectories": 56
+    },
+    {
+      "n": 4,
+      "phrase": "let me think of",
+      "total_occurrences": 123,
+      "trajectories": 55
+    },
+    {
+      "n": 4,
+      "phrase": "but i need to",
+      "total_occurrences": 121,
+      "trajectories": 55
+    },
+    {
+      "n": 4,
+      "phrase": "me try to think",
+      "total_occurrences": 124,
+      "trajectories": 54
+    },
+    {
+      "n": 4,
+      "phrase": "based on the given",
+      "total_occurrences": 83,
+      "trajectories": 54
+    },
+    {
+      "n": 4,
+      "phrase": "the right and below",
+      "total_occurrences": 281,
+      "trajectories": 53
+    },
+    {
+      "n": 4,
+      "phrase": "me try to map",
+      "total_occurrences": 59,
+      "trajectories": 53
+    },
+    {
+      "n": 4,
+      "phrase": "at x y then",
+      "total_occurrences": 110,
+      "trajectories": 52
+    },
+    {
+      "n": 4,
+      "phrase": "so the relation would",
+      "total_occurrences": 97,
+      "trajectories": 52
+    },
+    {
+      "n": 4,
+      "phrase": "but how does that",
+      "total_occurrences": 120,
+      "trajectories": 51
+    },
+    {
+      "n": 4,
+      "phrase": "is above and to",
+      "total_occurrences": 320,
+      "trajectories": 50
+    },
+    {
+      "n": 4,
+      "phrase": "is at 0 1",
+      "total_occurrences": 352,
+      "trajectories": 48
+    },
+    {
+      "n": 4,
+      "phrase": "is at 2 1",
+      "total_occurrences": 273,
+      "trajectories": 48
+    },
+    {
+      "n": 4,
+      "phrase": "could be at 1",
+      "total_occurrences": 137,
+      "trajectories": 48
+    },
+    {
+      "n": 4,
+      "phrase": "x y where x",
+      "total_occurrences": 84,
+      "trajectories": 48
+    },
+    {
+      "n": 4,
+      "phrase": "at 0 0 then",
+      "total_occurrences": 131,
+      "trajectories": 47
+    },
+    {
+      "n": 4,
+      "phrase": "we need to find",
+      "total_occurrences": 109,
+      "trajectories": 47
+    },
+    {
+      "n": 4,
+      "phrase": "imagine a coordinate system",
+      "total_occurrences": 57,
+      "trajectories": 47
+    },
+    {
+      "n": 4,
+      "phrase": "me check if there's",
+      "total_occurrences": 69,
+      "trajectories": 46
+    },
+    {
+      "n": 4,
+      "phrase": "try to think of",
+      "total_occurrences": 99,
+      "trajectories": 45
+    },
+    {
+      "n": 4,
+      "phrase": "to find the relation",
+      "total_occurrences": 83,
+      "trajectories": 45
+    },
+    {
+      "n": 4,
+      "phrase": "the answer should be",
+      "total_occurrences": 57,
+      "trajectories": 45
+    },
+    {
+      "n": 4,
+      "phrase": "is to the lower",
+      "total_occurrences": 166,
+      "trajectories": 44
+    },
+    {
+      "n": 4,
+      "phrase": "but the options are",
+      "total_occurrences": 62,
+      "trajectories": 44
+    },
+    {
+      "n": 4,
+      "phrase": "is to the upper",
+      "total_occurrences": 163,
+      "trajectories": 43
+    },
+    {
+      "n": 4,
+      "phrase": "at 1 1 then",
+      "total_occurrences": 114,
+      "trajectories": 43
+    },
+    {
+      "n": 4,
+      "phrase": "how does that relate",
+      "total_occurrences": 65,
+      "trajectories": 43
+    },
+    {
+      "n": 4,
+      "phrase": "positions step by step",
+      "total_occurrences": 57,
+      "trajectories": 43
+    },
+    {
+      "n": 4,
+      "phrase": "me start by breaking",
+      "total_occurrences": 43,
+      "trajectories": 43
+    },
+    {
+      "n": 4,
+      "phrase": "start by breaking down",
+      "total_occurrences": 43,
+      "trajectories": 43
+    },
+    {
+      "n": 4,
+      "phrase": "find the relation between",
+      "total_occurrences": 82,
+      "trajectories": 42
+    },
+    {
+      "n": 4,
+      "phrase": "does that relate to",
+      "total_occurrences": 63,
+      "trajectories": 42
+    },
+    {
+      "n": 4,
+      "phrase": "need to find the",
+      "total_occurrences": 76,
+      "trajectories": 41
+    },
+    {
+      "n": 4,
+      "phrase": "relation of the agent",
+      "total_occurrences": 50,
+      "trajectories": 41
+    },
+    {
+      "n": 4,
+      "phrase": "is what is the",
+      "total_occurrences": 47,
+      "trajectories": 41
+    },
+    {
+      "n": 4,
+      "phrase": "question is what is",
+      "total_occurrences": 46,
+      "trajectories": 41
+    },
+    {
+      "n": 4,
+      "phrase": "the question is what",
+      "total_occurrences": 46,
+      "trajectories": 41
+    }
+  ],
+  "source_provenance": [
+    {
+      "path": "budget_8192/shards/row_100046.json",
+      "sha256": "4ff96a5c8b94878653a83d8f8ad009033f556ef8a04beb310b62ff94b8147c9c"
+    },
+    {
+      "path": "budget_8192/shards/row_100256.json",
+      "sha256": "f6761904b0ab40887a8bda3ca78645b2bfccad484b2c04ef95a1b60d655d8bb6"
+    },
+    {
+      "path": "budget_8192/shards/row_100614.json",
+      "sha256": "14b0bbf1dc8965a856f5ea045906d1c75b5353ab472e44454aa66ffc4078ed43"
+    },
+    {
+      "path": "budget_8192/shards/row_100962.json",
+      "sha256": "ec77285ab343e0ae233f089297c76f4189a7d08481ee17f9c7129721697603c9"
+    },
+    {
+      "path": "budget_8192/shards/row_101092.json",
+      "sha256": "77589e329f1d8f0ab6b2b558a8ab4471faae1128817d50188022e0264ad4c2a8"
+    },
+    {
+      "path": "budget_8192/shards/row_101246.json",
+      "sha256": "e13110157c2f9a274787a70bca0c6a52f3b6b96920674fe8856c5a60f0ab290e"
+    },
+    {
+      "path": "budget_8192/shards/row_101274.json",
+      "sha256": "6444698eca5edf0bb14848056dc18b4cb562fd4f572f678179f0fc6c1e2af0ef"
+    },
+    {
+      "path": "budget_8192/shards/row_101371.json",
+      "sha256": "7fba29eca11515e722b16a3eb8c2c5d92b80578684bf2ed763b6c119457756c4"
+    },
+    {
+      "path": "budget_8192/shards/row_101760.json",
+      "sha256": "941b7974a194871d26aebc5d815e2c6ebb6ec3d8ce83e27c455773c98e2621ee"
+    },
+    {
+      "path": "budget_8192/shards/row_101850.json",
+      "sha256": "d18d4704d18857c066ad5320540c46170044563af11ce3c5fbd1d0acea0e7aa2"
+    },
+    {
+      "path": "budget_8192/shards/row_102164.json",
+      "sha256": "3815beb661747b4b4b94ddc2e0dd306fea12a1b3e8b7faf13f01f37ecf00d603"
+    },
+    {
+      "path": "budget_8192/shards/row_102494.json",
+      "sha256": "63522221d9cf4fa63f872762a9cd265549c15ceeca7a286fbdaf5271c0764812"
+    },
+    {
+      "path": "budget_8192/shards/row_102510.json",
+      "sha256": "89bc86a713c488e2c6aa66e55de5165b5fe9f6fd7f00953725a40c5d54a61cbc"
+    },
+    {
+      "path": "budget_8192/shards/row_102589.json",
+      "sha256": "1a8ce24ad84b5e498083e424714a23a226d2f4c26e7cf3f84b81a5b0c095287a"
+    },
+    {
+      "path": "budget_8192/shards/row_102690.json",
+      "sha256": "7af94bca17754b5cd16876f6d0c09b7130ec639caecea9430fe071551d55e6ad"
+    },
+    {
+      "path": "budget_8192/shards/row_102788.json",
+      "sha256": "a037e4837774d7d9fca4c35c4621e689ab665f6254467f9707eb030bf472114e"
+    },
+    {
+      "path": "budget_8192/shards/row_103101.json",
+      "sha256": "8a808b2f91720c725d09401d564041946f9171dc12ac75bcc8ac5174266ddada"
+    },
+    {
+      "path": "budget_8192/shards/row_103365.json",
+      "sha256": "ff084a633c2bde64b98db66cf84eec237aeb97b1e6159c3b57f97d9aee6b8587"
+    },
+    {
+      "path": "budget_8192/shards/row_103483.json",
+      "sha256": "d36f09dc08ae8e6fc4961057e188b677bb0175c2a81cbb0822d3dc3fa6443381"
+    },
+    {
+      "path": "budget_8192/shards/row_103518.json",
+      "sha256": "1d7406bccb9c3d4ddb0c04667e72c502aa12161ddca008b0ac3c9b6269c8f60a"
+    },
+    {
+      "path": "budget_8192/shards/row_103654.json",
+      "sha256": "c2e7980f27ace95078c78deeb0ccdc58a5f8d31c1644bf3b29250b83851f4c1f"
+    },
+    {
+      "path": "budget_8192/shards/row_103698.json",
+      "sha256": "42d0c86df4c4b132591255ae8abb21091234b61155bb72fe8a094cf2c183a195"
+    },
+    {
+      "path": "budget_8192/shards/row_103826.json",
+      "sha256": "f11e050bb7b098c80a5db74836b5dcfe57f0f8c50e61f71f4cb1512b977fbd28"
+    },
+    {
+      "path": "budget_8192/shards/row_103906.json",
+      "sha256": "f44c8f044c9fa3f979c7c2d694db39a7649090d5a62bbadb8a72a69b0e411221"
+    },
+    {
+      "path": "budget_8192/shards/row_104039.json",
+      "sha256": "8ba16b881be655232bf86298b561598b0da273f42aa1902795db23ae07e1ca0c"
+    },
+    {
+      "path": "budget_8192/shards/row_104263.json",
+      "sha256": "154373a6bc31e96ab6bccec725a143e924f9822636c316852228d62497c9dd65"
+    },
+    {
+      "path": "budget_8192/shards/row_104379.json",
+      "sha256": "d37d3744e200c24205914a0d18509d6f5c158cdc5b01b3d556ee549c0ce9eca9"
+    },
+    {
+      "path": "budget_8192/shards/row_104683.json",
+      "sha256": "a95410b7f9884f6e718e63f5ef002a8b4881a750c00dceba8795c20c15ca9c38"
+    },
+    {
+      "path": "budget_8192/shards/row_84008.json",
+      "sha256": "4fedc43c8027beb7cd0087304cfd12c85972b0ede9b18481615b3a8814b885f4"
+    },
+    {
+      "path": "budget_8192/shards/row_84114.json",
+      "sha256": "43f62b1f0a5dbf47117b425a69623ad0591cd37731102c564ecc9069f4a6eeb9"
+    },
+    {
+      "path": "budget_8192/shards/row_84506.json",
+      "sha256": "759b77fcce2e77a4c354acaa0c026c74a19d5ecd9ec836ddd51e1115a8ac8a6b"
+    },
+    {
+      "path": "budget_8192/shards/row_85242.json",
+      "sha256": "a56540f5e384322bda544552319edd77a4bf4753c7a953c97b2963266f4bd2fe"
+    },
+    {
+      "path": "budget_8192/shards/row_85914.json",
+      "sha256": "b3928e32911bb4757d7052c62c72b7dc046a4af1289975d43889069547d15997"
+    },
+    {
+      "path": "budget_8192/shards/row_86290.json",
+      "sha256": "1eb6c79aa8d612ffa6dd511adc6a8d888bbf739e1f173ecb589e48b7df4f2f25"
+    },
+    {
+      "path": "budget_8192/shards/row_86592.json",
+      "sha256": "3d3325136b97d63eca60dd1ad5c00e546c6a7ac7ca4165407a16606a82415aa8"
+    },
+    {
+      "path": "budget_8192/shards/row_86606.json",
+      "sha256": "de027164fa56418700c28c243e6da71d3b7dd52ad1b51716a3723523f25b2167"
+    },
+    {
+      "path": "budget_8192/shards/row_86694.json",
+      "sha256": "18f995b6c68110cfd4e74a1ce8121c0c01dbe4219f29f1acba83d86c9482ff6b"
+    },
+    {
+      "path": "budget_8192/shards/row_87055.json",
+      "sha256": "2160dc1ea8957a94f6b15f629f066d8ff399a13dedb240a69b4f5375f318b9e5"
+    },
+    {
+      "path": "budget_8192/shards/row_87158.json",
+      "sha256": "e4bb36c62ce04cef43560fd383763e67929495e8f9cf3d872b6b4b84615139db"
+    },
+    {
+      "path": "budget_8192/shards/row_88204.json",
+      "sha256": "7bd421f0778148df5901b16ea07ca2a70ccb9f64fc1163e48cfc505abc84eab5"
+    },
+    {
+      "path": "budget_8192/shards/row_88527.json",
+      "sha256": "13f352a9da9e37fd74bb5d3f405fc3688b2f649132ad99b91117b8db59736473"
+    },
+    {
+      "path": "budget_8192/shards/row_88719.json",
+      "sha256": "f44e44e149faaca149420217562fa019e97c10f4ac9a5df3c5a9926d66a1b327"
+    },
+    {
+      "path": "budget_8192/shards/row_88999.json",
+      "sha256": "0210ac56b7c8df08c86dcf59d58bb639601ded90537e5d05ef3e8cc31c3585a9"
+    },
+    {
+      "path": "budget_8192/shards/row_89054.json",
+      "sha256": "6f922e1969d965af348339f4114b4537963f7ec0425cb2a5c9099c8a24dde844"
+    },
+    {
+      "path": "budget_8192/shards/row_89092.json",
+      "sha256": "a95e96d0a93622f186d04d429cedf8eb2fe34bf038031612829bc0ba653c5838"
+    },
+    {
+      "path": "budget_8192/shards/row_89435.json",
+      "sha256": "51d01d2586f08bf67db2dc3b19ce6dd8d30b17800196588122d6100ed58612ef"
+    },
+    {
+      "path": "budget_8192/shards/row_89458.json",
+      "sha256": "3912ad68b5bce29f30ffdee9a11796e831a3165f71310896313809cbf1c3fc9a"
+    },
+    {
+      "path": "budget_8192/shards/row_89515.json",
+      "sha256": "5d0224124e4dafe3178d381a6eede9eb9781df678a41c9b2af40e6f6756d330b"
+    },
+    {
+      "path": "budget_8192/shards/row_90120.json",
+      "sha256": "ce6ff8732c2a974b3f0ed4e8430f4aafae3e51f4609ceb1f43b159a0295c7523"
+    },
+    {
+      "path": "budget_8192/shards/row_90149.json",
+      "sha256": "08548cb3bd2320648abb5796f4455ca37191202dc097cd476230e89a756a6082"
+    },
+    {
+      "path": "budget_8192/shards/row_90179.json",
+      "sha256": "80d22e4249d633a70f125db651570bc8dd2d7a352a1d6947e6030976339684e9"
+    },
+    {
+      "path": "budget_8192/shards/row_90221.json",
+      "sha256": "13493ea02381ef91eeed307c94bff0b2ee773cf8b5a020a5af59481ef808ad46"
+    },
+    {
+      "path": "budget_8192/shards/row_90634.json",
+      "sha256": "3d982b65067b5751c21a94e2491ea0d4973e6bb6231b06b0472be7d869ae2e53"
+    },
+    {
+      "path": "budget_8192/shards/row_90898.json",
+      "sha256": "91e37d7be2947bdbdebc2615fef272c4b05bdfbdf9fe3b69916197206bf25c5a"
+    },
+    {
+      "path": "budget_8192/shards/row_91221.json",
+      "sha256": "a7473e42be235f9e193787c3e602aa59e3825b2b7e6332369d859d9fc2f9cd88"
+    },
+    {
+      "path": "budget_8192/shards/row_91319.json",
+      "sha256": "25b5f983b68ca82c73422867142e313a4dd66aece0172273b011b65ba2666851"
+    },
+    {
+      "path": "budget_8192/shards/row_91373.json",
+      "sha256": "2a3422ade0582a82f621d468603ebaad31c7685a65f17e73193ccc2a216ef5bb"
+    },
+    {
+      "path": "budget_8192/shards/row_91418.json",
+      "sha256": "cf2b463ba929e6958d0c2e45a430cd0b8fc0c98f28099e96e679d5cdc44b6d6d"
+    },
+    {
+      "path": "budget_8192/shards/row_91880.json",
+      "sha256": "cf9e18365f565a24893edda4753d54f1d491cabbceef49896e9ac6d4144f54cc"
+    },
+    {
+      "path": "budget_8192/shards/row_92265.json",
+      "sha256": "e7d5c57f95d462a7885d7556481d91e9a037c4cbd818659927bf69d2a9022a03"
+    },
+    {
+      "path": "budget_8192/shards/row_92342.json",
+      "sha256": "67c5cb2641ad0668feec12c049ce802e52f2e554e92721c1da384057456e6663"
+    },
+    {
+      "path": "budget_8192/shards/row_92689.json",
+      "sha256": "9c7aa5b53f2dc674fc2318e72ce978dab5448e75db0755b55abee1350fe7766d"
+    },
+    {
+      "path": "budget_8192/shards/row_92735.json",
+      "sha256": "0dc34b57aa7c2ee0650bc2b9d0a49cfc81b4a50406170658b4e739f85d72f507"
+    },
+    {
+      "path": "budget_8192/shards/row_92970.json",
+      "sha256": "54ee8a386f8469b632c211881af9b0fafcfd5a410e09eda41d8d3abe446b15b7"
+    },
+    {
+      "path": "budget_8192/shards/row_93270.json",
+      "sha256": "5c80767d3648204b70cbd6642f1c664388a70d429b2ce75e7bc253c71c8fcbeb"
+    },
+    {
+      "path": "budget_8192/shards/row_93532.json",
+      "sha256": "2f066d8a6047d9cfa9600a5f79cac842b2e32f6b49dd142e91c7b47f58ca30b0"
+    },
+    {
+      "path": "budget_8192/shards/row_93706.json",
+      "sha256": "127b40f983a37117ceea85c1995a6395ed0fc43d1730528af50840d093f34fc2"
+    },
+    {
+      "path": "budget_8192/shards/row_93765.json",
+      "sha256": "e2654ef86e2fa7c65c24653e9b9598751d26f60dc5bdc4d31e6a688339ce6265"
+    },
+    {
+      "path": "budget_8192/shards/row_93992.json",
+      "sha256": "9154d92decc99c8dff8e2e65fb5a3693c33772296b2afc2142a893049b09d505"
+    },
+    {
+      "path": "budget_8192/shards/row_94140.json",
+      "sha256": "1b4ae1536363446e81b831afb433c84cb244ce714a5609ba4506b2ef11cb5ba4"
+    },
+    {
+      "path": "budget_8192/shards/row_94592.json",
+      "sha256": "20de8d6899ab6dd4c67def62b9c1df8830b1581031decf3675fa3c8de2d99e7e"
+    },
+    {
+      "path": "budget_8192/shards/row_94828.json",
+      "sha256": "5bfeec449ba6799ca2cbb2397648c5d47bc02a140524a989886903a08752546c"
+    },
+    {
+      "path": "budget_8192/shards/row_94864.json",
+      "sha256": "bfc8387265ea28b012d3c0a34f830cdfe79b90d0f845ecc3a809f8bf9bcb1075"
+    },
+    {
+      "path": "budget_8192/shards/row_94943.json",
+      "sha256": "00ef3b0f7e9ca147e8ebe20cbd7ed3df81500ed14da72680cd6ff33125675557"
+    },
+    {
+      "path": "budget_8192/shards/row_94974.json",
+      "sha256": "afd53e149e48ebdf5fb4c27351453af8199818b3e61aef2b9cf9d307966b8b9e"
+    },
+    {
+      "path": "budget_8192/shards/row_95279.json",
+      "sha256": "1898bdac494ff78ebfec47da72f1e2892ca8d70e8f093ac1eb70503fef08bdb9"
+    },
+    {
+      "path": "budget_8192/shards/row_95336.json",
+      "sha256": "a001a175d89da8761a86a9b2b7c264b1afb3707e9f0fab8ae0c1b37ad5eeedd2"
+    },
+    {
+      "path": "budget_8192/shards/row_95732.json",
+      "sha256": "21dfa48464d52b4aed4880ad5c606631717cbcb3fae0de9e2dac28cc4df4118f"
+    },
+    {
+      "path": "budget_8192/shards/row_95870.json",
+      "sha256": "6d3f5e8d4c9db1aea20130729b10d45d4c6618cb9e6838fdc08566ca144f1710"
+    },
+    {
+      "path": "budget_8192/shards/row_96087.json",
+      "sha256": "e47058e5f7eae703ef411adbb40a988d244d40c4e7fe59ff35fffeef3ae9063a"
+    },
+    {
+      "path": "budget_8192/shards/row_96175.json",
+      "sha256": "165c77a5865fcbf2bc1278c6d02cb96f6db3b1e8af53796ffe11338dc7f919c6"
+    },
+    {
+      "path": "budget_8192/shards/row_96380.json",
+      "sha256": "de1bde721720e35d27bf6f5a2305a91854377e2f832a01210296cf78eca24399"
+    },
+    {
+      "path": "budget_8192/shards/row_97005.json",
+      "sha256": "2019b801414c0f8c746b3f8790e39aeed44edec9924b8ebc32fb3c8cb9f98e8e"
+    },
+    {
+      "path": "budget_8192/shards/row_97223.json",
+      "sha256": "205a7ae2a9c49fd71b70ef5e7793e0c0fc528e30230f43217b7390409671681d"
+    },
+    {
+      "path": "budget_8192/shards/row_97230.json",
+      "sha256": "3f0fe26fdc99678f3794f1c6355939a6eecd88a947c67ba484cec0219811ec6b"
+    },
+    {
+      "path": "budget_8192/shards/row_97320.json",
+      "sha256": "4d67f30f19a1a5924d3d45ae075c13c0a53e66842287c5303f0d30c1398885b9"
+    },
+    {
+      "path": "budget_8192/shards/row_97530.json",
+      "sha256": "61e6331a1ff2efff274fb541d7674c96962e0aa77bb47c72fa7416dfca6b8aa0"
+    },
+    {
+      "path": "budget_8192/shards/row_97550.json",
+      "sha256": "34682e1bf7b168cbd0808dde620751103470ce4c09cfb3f5d5daa2117dbb1884"
+    },
+    {
+      "path": "budget_8192/shards/row_97613.json",
+      "sha256": "2655dc1bc02922e8460725a35d63bebe8f59ce5202f0420afe05664c174dd18a"
+    },
+    {
+      "path": "budget_8192/shards/row_97877.json",
+      "sha256": "294da314f3a2f542be595381e88cb8a36e8f0cdee3bcf468603e747601e355f4"
+    },
+    {
+      "path": "budget_8192/shards/row_98237.json",
+      "sha256": "9b2db3abb2148b481c8631ab33bcd80c24cef807ed985844bc475bc41590859f"
+    },
+    {
+      "path": "budget_8192/shards/row_98424.json",
+      "sha256": "255213c89a4bca1e29134579e5e297e76f9cf5775d6901fc4b5840240dce4ba8"
+    },
+    {
+      "path": "budget_8192/shards/row_98755.json",
+      "sha256": "42c0f0d389e3a4fa1c22c666eed8f9c9e7fdf7a47f2c8b71cb34aae94b84229d"
+    },
+    {
+      "path": "budget_8192/shards/row_98789.json",
+      "sha256": "125899cd5e7af7ce51fa54dbd4cf2f44b0b4aea16e211c00c1ce8965fb55a9c8"
+    },
+    {
+      "path": "budget_8192/shards/row_98865.json",
+      "sha256": "95f17472fbf7a23b2f4a3b8752fb43927b994b4d4fdc743c115190ac9f550e64"
+    },
+    {
+      "path": "budget_8192/shards/row_99404.json",
+      "sha256": "8e80aea67c29ac7f4d0ce3b32c6f76f8d6302c2397ae009e18a7c095258be7c3"
+    },
+    {
+      "path": "budget_8192/shards/row_99424.json",
+      "sha256": "c41b4d5273d9447f0ddf45c7e7928027926871d2e3f751540a91685d613fcdec"
+    },
+    {
+      "path": "budget_8192/shards/row_99523.json",
+      "sha256": "deedc1ad5634c91689b076f6426a60aa54f58cf5717caf11e559f1b9c8721c07"
+    },
+    {
+      "path": "budget_8192/shards/row_99633.json",
+      "sha256": "07b7f28e669b9e965e82178a3a02ccc973416f4e80bb5a34ade7d58e3e7616d2"
+    },
+    {
+      "path": "budget_8192/shards/row_99878.json",
+      "sha256": "8685e71b055abf7372a7d3bcd0980cb7244cfbe6e1e1a9c31fdf55fec6bca7cc"
+    },
+    {
+      "path": "budget_16384/shards/row_100046.json",
+      "sha256": "fc5b93f2c8651f805fb1d548acba4cfd7c32bbb84efe6cd04c9019dba6a40265"
+    },
+    {
+      "path": "budget_16384/shards/row_100256.json",
+      "sha256": "71eabf1a6a80bb3c0dbbcf02233745187031ae017ebae4359bfb617bd2bb8526"
+    },
+    {
+      "path": "budget_16384/shards/row_100614.json",
+      "sha256": "78f8f6d93aa91ad5651e82c9a739596171aa095abd809a9303541d6ad66cac5d"
+    },
+    {
+      "path": "budget_16384/shards/row_100962.json",
+      "sha256": "15c0a57d421f881370b4353eb0c6e3e7a79d31840468b326c23d917471edec3f"
+    },
+    {
+      "path": "budget_16384/shards/row_101092.json",
+      "sha256": "50465f3ba9e41641be7284ef22c5df9ed9ee72cd5ddf9739c44d862a0a05d688"
+    },
+    {
+      "path": "budget_16384/shards/row_101246.json",
+      "sha256": "b562d7931bfaa50779aecc65739e4fcec87bb8e319c228b02fb05893ca6e4c08"
+    },
+    {
+      "path": "budget_16384/shards/row_101274.json",
+      "sha256": "eb30f641202dff03f99502814b2a71d08677eb1e6980aa01477275d2a6d7215e"
+    },
+    {
+      "path": "budget_16384/shards/row_101371.json",
+      "sha256": "9a2b9e4704c71d8370bf8450854fb1ae7fb48997719ebf982820d604f04ba3c2"
+    },
+    {
+      "path": "budget_16384/shards/row_101760.json",
+      "sha256": "ce19d978a4793a4e7dff796c39fbd145aebe17a0f09c8860458a946d62f2d222"
+    },
+    {
+      "path": "budget_16384/shards/row_101850.json",
+      "sha256": "d9dbc96e21131c025d940ef3b0840ee0ee78dab08b49b739990f5f7737bce555"
+    },
+    {
+      "path": "budget_16384/shards/row_102164.json",
+      "sha256": "dbaf2c3e7b3dfca7c7561866f965d15db3a97ad266318743396c2396a81428da"
+    },
+    {
+      "path": "budget_16384/shards/row_102494.json",
+      "sha256": "26a3e96982c9843c3efb3fc95b3db7ce70c81f519937a4b6d0b7aa0fe097c98c"
+    },
+    {
+      "path": "budget_16384/shards/row_102510.json",
+      "sha256": "2d24f5c3ec0442388349a44873f1261abc4d3870639e0e49fb302177b3b2b1c2"
+    },
+    {
+      "path": "budget_16384/shards/row_102589.json",
+      "sha256": "2901af4bbdbee459cea12fe20aca076fda4be55abc096d07177aed1c3a23d585"
+    },
+    {
+      "path": "budget_16384/shards/row_102690.json",
+      "sha256": "19a87a5cc79f551b45bc5ab6097a71515ee1b5e379188cde78a5c4c83e049783"
+    },
+    {
+      "path": "budget_16384/shards/row_102788.json",
+      "sha256": "2639482bce5ef9bd9a5946341fc4658e1b45170d762b90cb52663ad53fd2babb"
+    },
+    {
+      "path": "budget_16384/shards/row_103101.json",
+      "sha256": "0b3cd1fc33ae778d69bc93cf529ab3cc09b891653a65e004720bd1fdfb77bb4d"
+    },
+    {
+      "path": "budget_16384/shards/row_103365.json",
+      "sha256": "e7e4f2609acd55c71678d495a5e4523b6f1a65b82116626709a4848822840945"
+    },
+    {
+      "path": "budget_16384/shards/row_103483.json",
+      "sha256": "4ed0ae2e23053dd1397f4a8a70fdd2e95b093e0b18a16401d01e696b860f7d8c"
+    },
+    {
+      "path": "budget_16384/shards/row_103518.json",
+      "sha256": "b645be750554642b17a8a8f6f7f2e3475681910251ef8e66ce180e9c0c04cd2a"
+    },
+    {
+      "path": "budget_16384/shards/row_103654.json",
+      "sha256": "4a39563f6cf01a321fa0edab78bae278c3fea2c1b82900cc05189c57c1ac5e35"
+    },
+    {
+      "path": "budget_16384/shards/row_103698.json",
+      "sha256": "0e7ecee8f711b162e0a229860013ac872bbaedfad17a3139317842d1ba4bff3d"
+    },
+    {
+      "path": "budget_16384/shards/row_103826.json",
+      "sha256": "30301f7db2fb1fa95ae4aff65c9eb4a282fe61dcd76a4595779e076723a8a062"
+    },
+    {
+      "path": "budget_16384/shards/row_103906.json",
+      "sha256": "d2983995f7301761014fd0360914ba2b226f0a35308f7f91640c95ebd3f831e7"
+    },
+    {
+      "path": "budget_16384/shards/row_104039.json",
+      "sha256": "4b0d004890ffabceb925f0bbe640dba0eaf358e767f155ad3cb5268855174690"
+    },
+    {
+      "path": "budget_16384/shards/row_104263.json",
+      "sha256": "3a188901d506a94fdb52d341fddc1f66fdea558a419d6e18772e63cbefda1529"
+    },
+    {
+      "path": "budget_16384/shards/row_104379.json",
+      "sha256": "2999b7cee88f364c40b4a2720a137294a4f6d530c0482614663a9d86b3583bb8"
+    },
+    {
+      "path": "budget_16384/shards/row_104683.json",
+      "sha256": "2b319c6a464a17639d73c4c76029928f9f366441c92e288acbe208d947bd395a"
+    },
+    {
+      "path": "budget_16384/shards/row_84008.json",
+      "sha256": "814aeb9a7af0a0c8c422e521632388c00b994d111c02716654f69aec36612da8"
+    },
+    {
+      "path": "budget_16384/shards/row_84114.json",
+      "sha256": "bd3440b18c191c8d3b9d3d707a720caad4e47c9d17c3743085eb64d1f222df8f"
+    },
+    {
+      "path": "budget_16384/shards/row_84506.json",
+      "sha256": "960a1370ee0550f465b091e292a197dbe74499842130e58c1e6618dde2ef9e2e"
+    },
+    {
+      "path": "budget_16384/shards/row_85242.json",
+      "sha256": "309bd239d670c04ccf6799ae657832fa31029fe036e1b9b1087f8c5a9931aa1c"
+    },
+    {
+      "path": "budget_16384/shards/row_85914.json",
+      "sha256": "d87594ecea2d4f14a1f530412bc11d32b85f8e58efcafc642c870f790f873b09"
+    },
+    {
+      "path": "budget_16384/shards/row_86290.json",
+      "sha256": "598bbf03ff93fea45d977cd562fb80d80e8eea578d394912cac1efde6dc56651"
+    },
+    {
+      "path": "budget_16384/shards/row_86592.json",
+      "sha256": "2cb8e48780d0328936c2878b55cb4e9c49ff5a73c519998f7a465f350c043f4e"
+    },
+    {
+      "path": "budget_16384/shards/row_86606.json",
+      "sha256": "103a58918621870f1022b922bcc67d091b9b86a37cb6f41ec75b69fd0d8d8502"
+    },
+    {
+      "path": "budget_16384/shards/row_86694.json",
+      "sha256": "c85c035d40a62aac86ee9d0b8c572dc7d64d0e5fc7ea9f35d7c98442972df508"
+    },
+    {
+      "path": "budget_16384/shards/row_87055.json",
+      "sha256": "00d49d244c265843ff247e1260b591db69473a065d08457beb3c098f3e5538c6"
+    },
+    {
+      "path": "budget_16384/shards/row_87158.json",
+      "sha256": "f86fa421444c9d05b8d505411316a0fc9b30a199eca3bb1430ab5f1a1769caec"
+    },
+    {
+      "path": "budget_16384/shards/row_88204.json",
+      "sha256": "6b92e08d7aa87f1a762c4c5522fa1021445bba6ea8acd9f4452fc983c6b60ac0"
+    },
+    {
+      "path": "budget_16384/shards/row_88527.json",
+      "sha256": "3a8708c432da1a9beacabba1774c870292fdeb9484cdd3449472ce5b87ac7edb"
+    },
+    {
+      "path": "budget_16384/shards/row_88719.json",
+      "sha256": "ff30ca3be1f51e1ec894121c2616de4fb24ed4268a0a4b84db5992ba5a4d9f57"
+    },
+    {
+      "path": "budget_16384/shards/row_88999.json",
+      "sha256": "3c293ac84d51ac74b9482e957b8a51b90139ef7480fd53d3a475a7f1a57e0bc3"
+    },
+    {
+      "path": "budget_16384/shards/row_89054.json",
+      "sha256": "01a8ea8689514302e0b326e51e2ea4ba693a70df3967b43be80aa4b6b5573b36"
+    },
+    {
+      "path": "budget_16384/shards/row_89092.json",
+      "sha256": "dcb29e3b3ebcf79459017d6b34791c066af1f9352158d37eb3eead392c78a390"
+    },
+    {
+      "path": "budget_16384/shards/row_89435.json",
+      "sha256": "a72e84446da19d3864a4438f921fb9f436137dd12e708098c557b0fb527b8ab6"
+    },
+    {
+      "path": "budget_16384/shards/row_89458.json",
+      "sha256": "731b7ab8eb491c81212c170e8697ef174799044c02773507b22f00884b601c07"
+    },
+    {
+      "path": "budget_16384/shards/row_89515.json",
+      "sha256": "d322117a114dd219469e5e32bdfb0ff097e85de83684ce8f1aa5459a0de817a5"
+    },
+    {
+      "path": "budget_16384/shards/row_90120.json",
+      "sha256": "a57c3943eb4dff1f084c70254c3ac3a04001eb80283f013783338f00c1459b1c"
+    },
+    {
+      "path": "budget_16384/shards/row_90149.json",
+      "sha256": "e5705e4a85f9a64c57b546ad9c1d60c35333109ef1f2c9edbcf8a19423162f23"
+    },
+    {
+      "path": "budget_16384/shards/row_90179.json",
+      "sha256": "801505105dbdf4dc8c8e4c9352070fae300a7ec66209a64bae0879dae627d4b0"
+    },
+    {
+      "path": "budget_16384/shards/row_90221.json",
+      "sha256": "1c5f13643081164ea0f036eda84c44707e196e16583e180aea3677b65929503d"
+    },
+    {
+      "path": "budget_16384/shards/row_90634.json",
+      "sha256": "89bf41b2caea24bad835efa19e635058e9a70555720eda92234e3897cd30181e"
+    },
+    {
+      "path": "budget_16384/shards/row_90898.json",
+      "sha256": "853d86b760e54076037d07dae896fc874e919da40dd2ebfce9d610c714fa8f5d"
+    },
+    {
+      "path": "budget_16384/shards/row_91221.json",
+      "sha256": "2e06bd03f5150ebb40785cc912e3e54aca8ec891ddd0a14c44cc157201d754e0"
+    },
+    {
+      "path": "budget_16384/shards/row_91319.json",
+      "sha256": "c44144c79d457684d70ac2c868a65c1a16f6a0e0d745dff81b04422c7c5c2fd6"
+    },
+    {
+      "path": "budget_16384/shards/row_91373.json",
+      "sha256": "030531791958849f603f98f7c44f030b2e92b15cf3fc86d7b52365ba7655295a"
+    },
+    {
+      "path": "budget_16384/shards/row_91418.json",
+      "sha256": "029408e777de61dc2b65c06e07112b4ad510e731fc5b3655f939592d38c87a63"
+    },
+    {
+      "path": "budget_16384/shards/row_91880.json",
+      "sha256": "2b18b201884eb987deae48802ec10fab214db4ff79f40c37b5ceca0b1ee914fc"
+    },
+    {
+      "path": "budget_16384/shards/row_92265.json",
+      "sha256": "5b6242236f8e9d9259a2e4c1dc4f0915c9768d1bf7183611a86001e73d320570"
+    },
+    {
+      "path": "budget_16384/shards/row_92342.json",
+      "sha256": "fe3f9c0741800575ececb7fe397cbacc464478d97d85c9e8c4b7d75e33ec6c19"
+    },
+    {
+      "path": "budget_16384/shards/row_92689.json",
+      "sha256": "3fe7c459bc54f81fc95ea036557ae8ab2e529a0a3e3c3693bde0f28d4020146d"
+    },
+    {
+      "path": "budget_16384/shards/row_92735.json",
+      "sha256": "5568f8aa626faa83e1ae7669ba24e16fe0664f7dbe5df325d49f95559bf7d914"
+    },
+    {
+      "path": "budget_16384/shards/row_92970.json",
+      "sha256": "fde89b1b2046b34e6bc886b1b5352675a5e0151105d4e272f4658bb67b080d89"
+    },
+    {
+      "path": "budget_16384/shards/row_93270.json",
+      "sha256": "6c1b7a0532668a329e0b69fcfdceb007fc58cedfc742d5d1a6bb93c9e9aede42"
+    },
+    {
+      "path": "budget_16384/shards/row_93532.json",
+      "sha256": "ca25be643c5ea350ac149e9c549eb33ab0dd2698bbb3c45a7071d19ad47d61d9"
+    },
+    {
+      "path": "budget_16384/shards/row_93706.json",
+      "sha256": "3f223f97717ec919c1bd1cfbc0db8f06a931801033f4fed9a14f03f0851fa2d8"
+    },
+    {
+      "path": "budget_16384/shards/row_93765.json",
+      "sha256": "415769f83510d294404f1a1e21e4eae5fdea6fe796aad1e754b9224bd4854d1e"
+    },
+    {
+      "path": "budget_16384/shards/row_93992.json",
+      "sha256": "58922173150662c690ea9b48ffe39ebb2cc80f27d154ca551e3b1bb3cfae08b4"
+    },
+    {
+      "path": "budget_16384/shards/row_94140.json",
+      "sha256": "c9fed4a233f71d5f40f7ecb75d58bdc2042c5dac8f4b5cce5045d2d67c4eb7a9"
+    },
+    {
+      "path": "budget_16384/shards/row_94592.json",
+      "sha256": "0928c563f34a20e94f87567c4660fef29a177edf2ada6700a7f06c51fb5d3f7f"
+    },
+    {
+      "path": "budget_16384/shards/row_94828.json",
+      "sha256": "5015fce92dbad9a1b213288cdc72dafce0f16095e04b57dc63fda2fa0ed46750"
+    },
+    {
+      "path": "budget_16384/shards/row_94864.json",
+      "sha256": "e1a54f4a3b5d728850a51b36bbffb09a9e615464c356000f5cfeb94d0d0c5d9f"
+    },
+    {
+      "path": "budget_16384/shards/row_94943.json",
+      "sha256": "9430d73c68e1cbb12493727bd870422453c55ed2612ec3c564be0c7d6e8a7c4b"
+    },
+    {
+      "path": "budget_16384/shards/row_94974.json",
+      "sha256": "563f790d936deeedb048cc6894d74452e53775879333249f2cfd34819228662c"
+    },
+    {
+      "path": "budget_16384/shards/row_95279.json",
+      "sha256": "990ac830f6323d5317203df147e85f9ae973d0db34bcf7b007c0797dc82e1550"
+    },
+    {
+      "path": "budget_16384/shards/row_95336.json",
+      "sha256": "97757257507099f31102a873aba4314b3946489e1bb75a98732a9551e93d2077"
+    },
+    {
+      "path": "budget_16384/shards/row_95732.json",
+      "sha256": "baf7aadc005685aef3f6c0d389e22d39e1a567d25f76a96e87e69b329992fbca"
+    },
+    {
+      "path": "budget_16384/shards/row_95870.json",
+      "sha256": "55cbe4ad2d0ed5a8a289785fcdc17c03f87ccf532a3222210f60efa0e38e12a9"
+    },
+    {
+      "path": "budget_16384/shards/row_96087.json",
+      "sha256": "9ce7e6537e59555e2334ad92bb05beb603c428c4d76510be99f8276fc1907bb7"
+    },
+    {
+      "path": "budget_16384/shards/row_96175.json",
+      "sha256": "a36cbe1b70615ffc8423da0496b6a5b45dabf4eb510ecca85c5e259ed997fa59"
+    },
+    {
+      "path": "budget_16384/shards/row_96380.json",
+      "sha256": "cf6901f77230dd98c44bbff8e1ac3a7075dfe1d06c12b8a4d98ac47f075f2407"
+    },
+    {
+      "path": "budget_16384/shards/row_97005.json",
+      "sha256": "5a1500d7f8c0d2dad1902acabfb418bb0a772fcbd1832f7537733948b468afb8"
+    },
+    {
+      "path": "budget_16384/shards/row_97223.json",
+      "sha256": "3b484897f1492cf99f2825328db6e73c3d0ca71e244cfb52fb252cda36e7b14f"
+    },
+    {
+      "path": "budget_16384/shards/row_97230.json",
+      "sha256": "6e5ae5c3d7a53179d5ac436649652d6dbe36116c9331e3cd34a095abafc20a51"
+    },
+    {
+      "path": "budget_16384/shards/row_97320.json",
+      "sha256": "d9a7faf2950f1f83681ac75200240af0ab6794accf503cf3762222f85a639412"
+    },
+    {
+      "path": "budget_16384/shards/row_97530.json",
+      "sha256": "45d65b76307c053864def2656c2fd4d68aaeecb41a72386597d991fcdb126831"
+    },
+    {
+      "path": "budget_16384/shards/row_97550.json",
+      "sha256": "183145011106094b2324cde87e2e870b453cb73856b05ee82e9f5b0bb97c6a59"
+    },
+    {
+      "path": "budget_16384/shards/row_97613.json",
+      "sha256": "1b9c55afd590f6cfa4f3ed5a3027064bae98b92119a7edf2cac8ce448da49760"
+    },
+    {
+      "path": "budget_16384/shards/row_97877.json",
+      "sha256": "42df37f5d796f7a55d629470487df73ce0ec9d1b3e1e5ebb6f5f98c2db97ee71"
+    },
+    {
+      "path": "budget_16384/shards/row_98237.json",
+      "sha256": "1438034c27f4bd0c90d7f3a478a6df77d74d8787858a04191ebddf684f519c5d"
+    },
+    {
+      "path": "budget_16384/shards/row_98424.json",
+      "sha256": "be300a219d3bb0a35a84531278dae93eebc23e2314aa3c49f3126510e0d26322"
+    },
+    {
+      "path": "budget_16384/shards/row_98755.json",
+      "sha256": "3a980fe16972dafb0b6df06c42d878bcf6b56cb496b8e501624af9fa93616960"
+    },
+    {
+      "path": "budget_16384/shards/row_98789.json",
+      "sha256": "3f8d657d4299cda77bb2303902071d07259d10cabd1c2d7dd5f7e6e4b2c19d0f"
+    },
+    {
+      "path": "budget_16384/shards/row_98865.json",
+      "sha256": "83e2cca10189afd78fbb701c5f18f71a9dc92c9363edb30f2369857239d46612"
+    },
+    {
+      "path": "budget_16384/shards/row_99404.json",
+      "sha256": "8df83fa5401cbadc2f4f0acbdce0a93e8d360553b9d7f8ffdda740c67e24b591"
+    },
+    {
+      "path": "budget_16384/shards/row_99424.json",
+      "sha256": "89fae863b0d6f691a017cf475ab99bbd09aa93d95fa380e1abf766806945e3be"
+    },
+    {
+      "path": "budget_16384/shards/row_99523.json",
+      "sha256": "c5c78c5e19ca8b6a5cfb13e4b2ef84870c17350e5a2f988ce01086241cd8f9d6"
+    },
+    {
+      "path": "budget_16384/shards/row_99633.json",
+      "sha256": "f135a01790925bca299bf634d9335c3c62684492081f2d85de8b299a3f743d27"
+    },
+    {
+      "path": "budget_16384/shards/row_99878.json",
+      "sha256": "758373734d3e11b329be52362fa7a226e588e93d6a24cc1ed96df5337cf6062e"
+    },
+    {
+      "path": "budget_32768/shards/row_100046.json",
+      "sha256": "eae1a43cf07d6baf548f259606093960f39de370cc1b808128bc701eeab37802"
+    },
+    {
+      "path": "budget_32768/shards/row_100256.json",
+      "sha256": "4fa7fdcc3fd1c0f55b569d625675aa7b65bb4f1ca41c83962ec5ee1c0eca01da"
+    },
+    {
+      "path": "budget_32768/shards/row_100614.json",
+      "sha256": "fa1fa478057d3a71211dd4dfc23fcde7190e15ae43ca4a53574b7e0ef5693b54"
+    },
+    {
+      "path": "budget_32768/shards/row_100962.json",
+      "sha256": "5be129aa6cec14f3056e340e8370d664ac8cfa119b61f2b328b62d6b95a27be8"
+    },
+    {
+      "path": "budget_32768/shards/row_101092.json",
+      "sha256": "a16778df19896e42f878ce45c37b44cdf485c75cefa3d9c7140b8f9c38df8050"
+    },
+    {
+      "path": "budget_32768/shards/row_101246.json",
+      "sha256": "1fca248ef9782ed86c01a014fe1d8364688f8fe34a30626fc1888b56299cd3ed"
+    },
+    {
+      "path": "budget_32768/shards/row_101274.json",
+      "sha256": "69041e5573196e8281f260dd0e6515546c1ed0e0ff95fea876b3fdeba2c8f2b4"
+    },
+    {
+      "path": "budget_32768/shards/row_101371.json",
+      "sha256": "ad84d6aa179aef1fa7977f6f523781adbf7ebfc559ba13fe41d38d7aa857b064"
+    },
+    {
+      "path": "budget_32768/shards/row_101760.json",
+      "sha256": "b54598e4b0366dbc33f8d5979c7d1a1822be070c687598cd461824391b4af602"
+    },
+    {
+      "path": "budget_32768/shards/row_101850.json",
+      "sha256": "957eb96055a5fac273a06472762e86ccf63d10b86ddf9f0854f4c24452a6fcf6"
+    },
+    {
+      "path": "budget_32768/shards/row_102164.json",
+      "sha256": "3401effa7b9d76fa74a6acc28141e017eb3d1a987849a3f20dee2216f4508bb2"
+    },
+    {
+      "path": "budget_32768/shards/row_102494.json",
+      "sha256": "9912c844fb71f4d8113ffb39029d1a8ada4f8b8353ceef64ca597bfb68cd5fcf"
+    },
+    {
+      "path": "budget_32768/shards/row_102510.json",
+      "sha256": "72fe1fa66f974dcd274f1ef69d3673df9c758f91f6be10268ac24c48ecbafcbc"
+    },
+    {
+      "path": "budget_32768/shards/row_102589.json",
+      "sha256": "787ec7551afa90d4809b1bc7383fcb0be3c95bdb15453f941ecdf3dab9fb3539"
+    },
+    {
+      "path": "budget_32768/shards/row_102690.json",
+      "sha256": "19e5fa2be7dfc05ab7480ca036dcb39b4cd1fbb1449a0846d4681e117a067ee8"
+    },
+    {
+      "path": "budget_32768/shards/row_102788.json",
+      "sha256": "0fc6924c41fc0c6dce95943eb0522003744327cbbf4a7fc38631107e33ec0b37"
+    },
+    {
+      "path": "budget_32768/shards/row_103101.json",
+      "sha256": "fc7ad9641ebbf02bc51e70482c77cbc3003bffca692a832b0b19627396f9f5d1"
+    },
+    {
+      "path": "budget_32768/shards/row_103365.json",
+      "sha256": "a5cb64b406a7d467b9deb655259f7846ce11d9c6e95040f1642477612d7e017c"
+    },
+    {
+      "path": "budget_32768/shards/row_103483.json",
+      "sha256": "0732e950d84b918d9e8f758417fdc754ad19e4c268802f4c751b4c61cad0ff5c"
+    },
+    {
+      "path": "budget_32768/shards/row_103518.json",
+      "sha256": "7fc26c688d3ea0de3251107661ba1e36b9377dae9b5d6e326f7df866240d423c"
+    },
+    {
+      "path": "budget_32768/shards/row_103654.json",
+      "sha256": "eb3235dc26c3f7b2b1e428a64be9405260d026da9c9c6515b15da73797fcbfac"
+    },
+    {
+      "path": "budget_32768/shards/row_103698.json",
+      "sha256": "0286411c08d94391628b2f3420d788b5438f700003704456f9d9148ba1f474e9"
+    },
+    {
+      "path": "budget_32768/shards/row_103826.json",
+      "sha256": "1ffdc871db3b47468eb11637546e40923a9ccafafa7b54f53ce7c0602e1e1e6a"
+    },
+    {
+      "path": "budget_32768/shards/row_103906.json",
+      "sha256": "a551a504afc46ab69bb4dd1eb1bac0d6e2b63d207e33ff9be967a5ee8ebc6ed7"
+    },
+    {
+      "path": "budget_32768/shards/row_104039.json",
+      "sha256": "181a41f68b8ac5d6c61ab17568ce1d413de665b9655a264348a7b0640a819e7c"
+    },
+    {
+      "path": "budget_32768/shards/row_104263.json",
+      "sha256": "572ec7fdd795c3892eb5307cfffb739c324878b815e1649eefb88cb62249060f"
+    },
+    {
+      "path": "budget_32768/shards/row_104379.json",
+      "sha256": "c1d133a4e372d4b4a70b9b3076d66432b9d93cb791f4b2a2c70bb93b61780a86"
+    },
+    {
+      "path": "budget_32768/shards/row_104683.json",
+      "sha256": "70915c60fa9bc01c046df4963783c4d865f07c0be01b8088fca286692c7a2436"
+    },
+    {
+      "path": "budget_32768/shards/row_84008.json",
+      "sha256": "2f591d3a3a3069691d8b0469f89da47718245b024063c305f22e3bc40f76e5b4"
+    },
+    {
+      "path": "budget_32768/shards/row_84114.json",
+      "sha256": "ba265c53ee7ce3bf93efaa76d167b826f871c42f186a0c398457411e1df7174e"
+    },
+    {
+      "path": "budget_32768/shards/row_84506.json",
+      "sha256": "786658f6303c770726d2e132be0efcec425eb5abdaf8e6a9dd6a726e2f12b01a"
+    },
+    {
+      "path": "budget_32768/shards/row_85242.json",
+      "sha256": "c00e5e3109561663e408b697207fc415179a3ea3dab3be5115b6c4011c018e1c"
+    },
+    {
+      "path": "budget_32768/shards/row_85914.json",
+      "sha256": "a0f4bb06248c0bcd642105d6adb02b68ccf764ed6289e4580c1c65f2566f7636"
+    },
+    {
+      "path": "budget_32768/shards/row_86290.json",
+      "sha256": "2d51aee4b63ae518f558d316bb0631d51b596750653ed0dc118ec11554ce8300"
+    },
+    {
+      "path": "budget_32768/shards/row_86592.json",
+      "sha256": "7790feed97d0247ffc3daf053584ec915d854dbcdb579f406c8e46df84dd6f49"
+    },
+    {
+      "path": "budget_32768/shards/row_86606.json",
+      "sha256": "0b459bb23ff92e3a1e17c1d7e8b8e00a088a549968ae726dbc950123785377ad"
+    },
+    {
+      "path": "budget_32768/shards/row_86694.json",
+      "sha256": "321caa25d56a5a89242a79cff3732eea703d285b22c41aac350256dad6ef0d52"
+    },
+    {
+      "path": "budget_32768/shards/row_87055.json",
+      "sha256": "8f84ddbe4faf81771924a4d26dc607732c39329c012e052af912e3e803e1c848"
+    },
+    {
+      "path": "budget_32768/shards/row_87158.json",
+      "sha256": "2b7e3ea0a07b80ced655592297521f366e2dd3c7202bd3c9d1dcebb97b84806a"
+    },
+    {
+      "path": "budget_32768/shards/row_88204.json",
+      "sha256": "cf3a43133f082144a6301b157bf26d1549b02e42fd53c090ea732dc40197d33f"
+    },
+    {
+      "path": "budget_32768/shards/row_88527.json",
+      "sha256": "2552d02c2baaf986c2ba95a9ffcd5f92231891587d59cc76c91f9e9c68de34df"
+    },
+    {
+      "path": "budget_32768/shards/row_88719.json",
+      "sha256": "09abf2e941c486c8de2445698078d09cee30820dca2494ceca630b3fe1c3895d"
+    },
+    {
+      "path": "budget_32768/shards/row_88999.json",
+      "sha256": "17e3b3d970d3155256f5bbda4fff372d737c95f4d6b75c532b85d4855e42ec71"
+    },
+    {
+      "path": "budget_32768/shards/row_89054.json",
+      "sha256": "2f41d253bf13592cefbd4a63fd1b60a1e322929c5629e51a2638548837f2ae1b"
+    },
+    {
+      "path": "budget_32768/shards/row_89092.json",
+      "sha256": "86dcd1fca5ac78929e0491e65357f53ca8cfd05a0cfc9e0561d85f19e496666c"
+    },
+    {
+      "path": "budget_32768/shards/row_89435.json",
+      "sha256": "7f43f1c4c81777a2aaf56d11d2b2116b0463e1a74b1f6f5f7b1de80772acff59"
+    },
+    {
+      "path": "budget_32768/shards/row_89458.json",
+      "sha256": "4b5ce0c8af7ffc898c2b20180af1ef809ea6117864856c5188e64a3c14629986"
+    },
+    {
+      "path": "budget_32768/shards/row_89515.json",
+      "sha256": "e325468d993ba8db0e0baca0771c8299a418e51a624be9a8a2b0084ff375661d"
+    },
+    {
+      "path": "budget_32768/shards/row_90120.json",
+      "sha256": "6ca1d07a238fc037af42749dbbb7dd48fac418bc7904c63b0ff3aec5a87166f3"
+    },
+    {
+      "path": "budget_32768/shards/row_90149.json",
+      "sha256": "c2dfa5af0f90fe0b4f84129cb6e731e062686a10301d7251ddfbb97a93ad3e97"
+    },
+    {
+      "path": "budget_32768/shards/row_90179.json",
+      "sha256": "e441f741c9ab6e1eeb39dcac2f48d5e412991925909b77cf743b31a93c679b6f"
+    },
+    {
+      "path": "budget_32768/shards/row_90221.json",
+      "sha256": "8ebed6ce675d650e4cd5775ca69cbf15e5f5471f9d77bef172ac321c1a20ebf6"
+    },
+    {
+      "path": "budget_32768/shards/row_90634.json",
+      "sha256": "ef7c50908c60e9e28a5880e55a227eb3629d1e07cc71a9e257f0714833940a96"
+    },
+    {
+      "path": "budget_32768/shards/row_90898.json",
+      "sha256": "09c75134251c2958ef24aa79435679079c6aed7d9c078ae9da7335bc77f929da"
+    },
+    {
+      "path": "budget_32768/shards/row_91221.json",
+      "sha256": "f6a6f798b55749585c020b04e0aee5308e13a70020b2c70d9ac8e86f7c960f27"
+    },
+    {
+      "path": "budget_32768/shards/row_91319.json",
+      "sha256": "8081ea5f9747413030e1f49a074347bf4408df6254cb7e9abaa23385de1d49d4"
+    },
+    {
+      "path": "budget_32768/shards/row_91373.json",
+      "sha256": "ba42fba165ac437b0d6177d7b955c93c1542231b030e955dcbdc4a63c31c6e25"
+    },
+    {
+      "path": "budget_32768/shards/row_91418.json",
+      "sha256": "87f3dd02962dec1d210ec8c08d118eabfff6268979946841c032604c0c485fac"
+    },
+    {
+      "path": "budget_32768/shards/row_91880.json",
+      "sha256": "adb7090c2160f1ff246d63e00f21fc36dfdfe137e7f1abb3b696d21a698d093f"
+    },
+    {
+      "path": "budget_32768/shards/row_92265.json",
+      "sha256": "d8f5eb6a4bc0fddf88357c52873e6ec60b4c7ef067e863875acefa1289dbdfda"
+    },
+    {
+      "path": "budget_32768/shards/row_92342.json",
+      "sha256": "9c0481f04380a64bb4b9a70e056f8cb404435a462d731fb82ed5f570da0e1563"
+    },
+    {
+      "path": "budget_32768/shards/row_92689.json",
+      "sha256": "3006e3f3db54ae1f795bca26a94ec588fc3e9ba2a822a0543e9f7cd0d2f7442d"
+    },
+    {
+      "path": "budget_32768/shards/row_92735.json",
+      "sha256": "f7d693e302a809dccb6e8c45346fb1538dd8d36481e23da51e10bcc08721b884"
+    },
+    {
+      "path": "budget_32768/shards/row_92970.json",
+      "sha256": "438257924003b7607d400b74bccccaafa35a0bac1d4a16e3fc20d6d1410da84c"
+    },
+    {
+      "path": "budget_32768/shards/row_93270.json",
+      "sha256": "226bdcb3546cce60685f7d7757e3eed37a1e9a7c6e04e5572e185cf2e8452f95"
+    },
+    {
+      "path": "budget_32768/shards/row_93532.json",
+      "sha256": "e839e5bbff603be43f690f6a2dc6d78177f8d2af0d56afa809595ff6b0b77a9c"
+    },
+    {
+      "path": "budget_32768/shards/row_93706.json",
+      "sha256": "1f35be68154bee4bac5c5256c76865da3aecf53ece8ef6c67c107691b2a7f9dd"
+    },
+    {
+      "path": "budget_32768/shards/row_93765.json",
+      "sha256": "aa336e93a6566fda395595938fe58f4809a1f2339ef6072b041409dd7183ab4e"
+    },
+    {
+      "path": "budget_32768/shards/row_93992.json",
+      "sha256": "72ee434f846a207b0693d31391d2ab26264b49e30ccc365cf268ad19a92a87a0"
+    },
+    {
+      "path": "budget_32768/shards/row_94140.json",
+      "sha256": "fda4ce5fe0b98bede2c2bf8597676eef2031e71447675adc914b1978f11449b3"
+    },
+    {
+      "path": "budget_32768/shards/row_94592.json",
+      "sha256": "fdd9ba73f85663179094ece82d9fcdc0a35e36f89e4c076b6b6b44ec8f10f4de"
+    },
+    {
+      "path": "budget_32768/shards/row_94828.json",
+      "sha256": "b428f3f4ee663d37bc9b4f52c6f66215f49444fe5c02005d8179de43e97c4f5b"
+    },
+    {
+      "path": "budget_32768/shards/row_94864.json",
+      "sha256": "77509436619581bd1b51e9f593e5bf77f49ca46d6cb224d533b38ef975a901b1"
+    },
+    {
+      "path": "budget_32768/shards/row_94943.json",
+      "sha256": "c60939b3dd22693360bbfc5fc99647acd8b68b4b9e978d122dd25e677a3897c2"
+    },
+    {
+      "path": "budget_32768/shards/row_94974.json",
+      "sha256": "3d38a3fa47c104c0bb1584a6fefd3adc879ee1c1ba9b4b2afb82c6b72ef47a4a"
+    },
+    {
+      "path": "budget_32768/shards/row_95279.json",
+      "sha256": "553cea3b0935451e9061a4bb92793f22f84e496bec597fd9f5c2b46fd48133fb"
+    },
+    {
+      "path": "budget_32768/shards/row_95336.json",
+      "sha256": "c5c5c249091a1061c2dad433b5dc008af4e061f46d0893feeee9cc98ded9a27b"
+    },
+    {
+      "path": "budget_32768/shards/row_95732.json",
+      "sha256": "353dfaa1627a2de483d0c56ac5c51e3da90dc8dbce966799bc8e11622d249ceb"
+    },
+    {
+      "path": "budget_32768/shards/row_95870.json",
+      "sha256": "661c6e71cdad2752701f6884ad1f75bbd6bcf3256fb503eb6b816a72b5c9ab20"
+    },
+    {
+      "path": "budget_32768/shards/row_96087.json",
+      "sha256": "07a8217b118e7bf94e5ec22fd41af0365316a4770723a7d11a7ea3eda5075371"
+    },
+    {
+      "path": "budget_32768/shards/row_96175.json",
+      "sha256": "bd31f8875f25a964bd1b6ed9cf6f7ba3c7841df5d52418131363c481d6ebff35"
+    },
+    {
+      "path": "budget_32768/shards/row_96380.json",
+      "sha256": "ebfd2b6c8d4630f155941cc1fe1c64d1359dc76d41a86dea8927f8e712e5d29c"
+    },
+    {
+      "path": "budget_32768/shards/row_97005.json",
+      "sha256": "c2b467e1cbce20e7b2655eeab5ab2b595d5451d6ddd46f8c6ee70a31ec92b5b5"
+    },
+    {
+      "path": "budget_32768/shards/row_97223.json",
+      "sha256": "ebf8214c6e59583f70bb73245ebbb5e2a4710dcf6b2a16b778435431e05362bf"
+    },
+    {
+      "path": "budget_32768/shards/row_97230.json",
+      "sha256": "fa002a441bb476ad637d0154d5fcd05736c326521bec47edf9c2e5401d3e76a0"
+    },
+    {
+      "path": "budget_32768/shards/row_97320.json",
+      "sha256": "a75826035a59a9bd54ada19e9d1b4ce7f7dd55699597075749293d613b2b60ba"
+    },
+    {
+      "path": "budget_32768/shards/row_97530.json",
+      "sha256": "b12da7375b980b5b075a2d8b1bc34b7d7f14040be8f7d13453cb8f30a1207c44"
+    },
+    {
+      "path": "budget_32768/shards/row_97550.json",
+      "sha256": "b9d6679ef2df141dbb2e707a1a22342a8b2aaedc051ab125eacb9ff5b82b7d06"
+    },
+    {
+      "path": "budget_32768/shards/row_97613.json",
+      "sha256": "26cdf7ff4360d931b68b7fd703d9e7853723d7400bbb4cad631e31cc5f86e8a0"
+    },
+    {
+      "path": "budget_32768/shards/row_97877.json",
+      "sha256": "d66fc6753b754f95c6ff2b8086566dcd51da74c32b6db7fac53fae6ea2bed473"
+    },
+    {
+      "path": "budget_32768/shards/row_98237.json",
+      "sha256": "eeec1a79facca24eb53968f18f7142f608a5575be5a568453c94bf4741b0c336"
+    },
+    {
+      "path": "budget_32768/shards/row_98424.json",
+      "sha256": "de828abdcb70d221cb5b9c0c66662e5a1e5b595629205a0bd0a51d14acd9a0d9"
+    },
+    {
+      "path": "budget_32768/shards/row_98755.json",
+      "sha256": "36da96149ae1eea992e4b4cac877d902ee159b65d5eb5a2aad8c0f03f533ffcc"
+    },
+    {
+      "path": "budget_32768/shards/row_98789.json",
+      "sha256": "98f2935733dc4b66b769e267e3be152d677c078439dd786b48a8437e356af25b"
+    },
+    {
+      "path": "budget_32768/shards/row_98865.json",
+      "sha256": "f454d9c81f80ad36c22a953fabb1647ab642ee7407fd590f5663cf4787ea33e9"
+    },
+    {
+      "path": "budget_32768/shards/row_99404.json",
+      "sha256": "7ad9b0a0cd46687c38bf366fd968053ba1be904c25e29b9ed1ee830f8aa7e6ac"
+    },
+    {
+      "path": "budget_32768/shards/row_99424.json",
+      "sha256": "d475721b4455f188b262fc0dc6bc5d12e917fc94ae65862f11b9a81669d689bd"
+    },
+    {
+      "path": "budget_32768/shards/row_99523.json",
+      "sha256": "23776e550cc97543d4691db6b68db442316dc8198885319714cfbb4b7ad71af1"
+    },
+    {
+      "path": "budget_32768/shards/row_99633.json",
+      "sha256": "af6ce6e05302a9987ca40c2b974b142eec0ec7f8d673fc8650471a99caafe316"
+    },
+    {
+      "path": "budget_32768/shards/row_99878.json",
+      "sha256": "414868537904ab1bcb0d10b3f106fdd755e7f32cf79404cc975ca9543df66790"
+    }
+  ]
+}

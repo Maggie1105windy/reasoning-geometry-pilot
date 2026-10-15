@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checks": {
+    "rows_exact": true,
+    "hop_counts_exact": true,
+    "row_ids_unique": true,
+    "row_ids_sha256_exact": true,
+    "story_group_ids_present": true,
+    "relations_exact": true,
+    "computed_hops_exact": true,
+    "raw_prompt_exact": true,
+    "b1_manifest_sha256_exact": true,
+    "b02_primary_sha256_exact": true
+  },
+  "rows": 2063,
+  "hop_counts": {
+    "1": 712,
+    "2": 505,
+    "3": 422,
+    "4": 282,
+    "5": 142
+  },
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "mismatched_raw_prompt_rows": [],
+  "content_hashes": {
+    "gold_relation": "8efe67034dd849945188e2a4e17dc911186f8bbd63381890086ed7942e692f79",
+    "story_question": "cf735bdff0781ab1aabbf84c4a034f7687cbcf71f0fd26082ede401a7d8005e3",
+    "raw_prompt": "ad4dd5ceb862f1dc1eccf7e61a401092d1b35bf10d8bd87526290c2fa6ab3218"
+  },
+  "b1_manifest": {
+    "path": "artifacts/stage_b1/union_manifest.csv",
+    "sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c",
+    "expected_sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c"
+  },
+  "b02_primary": {
+    "path": "artifacts/stage_b0_2/primary_test.csv",
+    "sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049",
+    "expected_sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049"
+  }
+}

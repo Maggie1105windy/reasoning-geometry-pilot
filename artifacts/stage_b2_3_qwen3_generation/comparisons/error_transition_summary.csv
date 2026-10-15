@@ -1,0 +1,16 @@
+grouping,hop,n,cl_wrong_to_fgn_correct,cl_correct_to_fgn_wrong,fgn_wrong_to_fgt_correct,fgn_correct_to_fgt_wrong,all_wrong,all_correct,gold_relation,relation_type
+hop,1.0,712,378,42,73,261,116,68,,
+hop,2.0,505,124,46,17,138,279,10,,
+hop,3.0,422,80,46,5,100,272,0,,
+hop,4.0,282,48,32,5,64,182,1,,
+hop,5.0,142,25,26,1,31,83,1,,
+gold_relation,,239,102,5,7,58,121,6,ABOVE,
+gold_relation,,241,78,7,19,45,133,3,BELOW,
+gold_relation,,231,95,2,5,73,120,5,LEFT,
+gold_relation,,283,32,95,20,72,76,26,LOWER_LEFT,
+gold_relation,,277,63,39,19,78,125,13,LOWER_RIGHT,
+gold_relation,,229,88,0,9,63,123,8,RIGHT,
+gold_relation,,273,100,27,9,112,101,9,UPPER_LEFT,
+gold_relation,,290,97,17,13,93,133,10,UPPER_RIGHT,
+relation_type,,940,363,14,40,239,497,22,,cardinal
+relation_type,,1123,292,178,61,355,435,58,,diagonal

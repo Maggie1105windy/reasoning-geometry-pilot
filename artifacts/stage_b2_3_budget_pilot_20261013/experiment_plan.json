@@ -1,0 +1,171 @@
+{
+  "version": "stage_b2_3_budget_pilot_20261013_v1",
+  "sample_rows": [
+    {
+      "row_id": 85935,
+      "computed_hop": 1,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "The object K is positioned above and to the left of object O.",
+        "O is over there and I is on the top of it.",
+        "U is upper left of V.",
+        "I is positioned in the lower left corner of W.",
+        "If U is the center of a clock face, K is located between 4 and 5."
+      ],
+      "question": "What is the relation of the agent W to the agent I?",
+      "content_sha256": "bd1f142174e8437c46744ec39bec86bd882029f38fbb69bd8ddb053076adc5a8"
+    },
+    {
+      "row_id": 94822,
+      "computed_hop": 1,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "V is over Y.",
+        "V is at the bottom of O vertically.",
+        "Z is over there and F is on the left.",
+        "Z is at the bottom of D.",
+        "Y is positioned in the lower left corner of F."
+      ],
+      "question": "What is the relation of the agent Y to the agent F?",
+      "content_sha256": "d1cbc6f6b7ca1f67a7271cd745efb3eb61fa2bfe1395563b96ebb0eadd873bd1"
+    },
+    {
+      "row_id": 85687,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "T is above S and to the left of S.",
+        "Y is sitting at the 6:00 position to B.",
+        "M is to the left of E.",
+        "The object labeled E is positioned to the right of the object labeled S.",
+        "T is at the bottom of Y and is on the same vertical plane."
+      ],
+      "question": "What is the relation of the agent E to the agent T?",
+      "content_sha256": "8ee60eaa075064b9bdd1680df2983ee268014b8fa73c5d353918207a1a78b7d3"
+    },
+    {
+      "row_id": 94405,
+      "computed_hop": 2,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "M is to the upper left of T.",
+        "K is over there and I is at the bottom of it.",
+        "F is south west of I.",
+        "H is placed in the left direction of F.",
+        "Object K is below object T and to the left of it, too."
+      ],
+      "question": "What is the relation of the agent I to the agent H?",
+      "content_sha256": "a65eb554fc6955424f31f476c7d45e48216fd43707c90969ca95553070e5451f"
+    },
+    {
+      "row_id": 86033,
+      "computed_hop": 3,
+      "canonical_relation": "LEFT",
+      "story": [
+        "F is directly south west of B.",
+        "R is on the upper right of U.",
+        "U and F are next to each other with F on the right and U on the left.",
+        "R is below Y and to the left of Y.",
+        "The object C is positioned below and to the right of the object Y."
+      ],
+      "question": "What is the relation of the agent R to the agent B?",
+      "content_sha256": "42eb5259ab52dc29025210328443b330dbe6cd338a7ad2a1f4dcc14e138c0758"
+    },
+    {
+      "row_id": 90023,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "C and K are side by side with C on the top and K at the bottom.",
+        "O is upper right to A.",
+        "O is below and to the right of N.",
+        "K is at the lower side of A.",
+        "U is upper right to N."
+      ],
+      "question": "What is the relation of the agent A to the agent U?",
+      "content_sha256": "a6f18caa95e556a007a6255ddc83ca2b6c797795e479624592e6ac0561ae0357"
+    },
+    {
+      "row_id": 101041,
+      "computed_hop": 4,
+      "canonical_relation": "BELOW",
+      "story": [
+        "T and O are in a horizontal line with T on the left.",
+        "D is sitting at the 9:00 position of J.",
+        "Y is on the right side to T.",
+        "D is positioned above and to the left of O.",
+        "J is to the upper left of A."
+      ],
+      "question": "What is the relation of the agent Y to the agent J?",
+      "content_sha256": "a1e67a699a553899ecaec20c8bbd0ea0d7c3546f6f7d22185258fc191e890572"
+    },
+    {
+      "row_id": 92078,
+      "computed_hop": 4,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "Y and F are next to each other with F on the right and Y on the left.",
+        "C is sitting at the upper right position to E.",
+        "The object W is positioned above and to the right of the object C.",
+        "The object D and E are there. The object E is above and slightly to the left of the object D.",
+        "F is sitting at the 6:00 position to D."
+      ],
+      "question": "What is the relation of the agent C to the agent Y?",
+      "content_sha256": "4fd7ef26401aedf0af2e61eefec55d0be760e582deac450470b61bf961cd9fff"
+    },
+    {
+      "row_id": 94459,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "E is over there and A is on the left of it.",
+        "I is positioned below and to the right of J.",
+        "I is lower left to S.",
+        "E is above and to the right of O.",
+        "J and A are in a vertical line with J on top."
+      ],
+      "question": "What is the relation of the agent S to the agent O?",
+      "content_sha256": "db5b24cac19ad5c04bb33cd9e0ee2bc9e3e7288e1c7aff4ce47a2578f6a38b1e"
+    },
+    {
+      "row_id": 93456,
+      "computed_hop": 5,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "Y and B are in a vertical line with B below Y.",
+        "U is at a 45 degree angle to B, in the upper righthand corner.",
+        "H is to the left of D.",
+        "D is to the left of U with a small gap between them.",
+        "The object labeled Y is positioned to the left of the object labeled V."
+      ],
+      "question": "What is the relation of the agent V to the agent H?",
+      "content_sha256": "47bd5d79ea72ed740025f9889c999782ce0979b10aead3c203ab9fb3be50630e"
+    }
+  ],
+  "generation_seed": 20260924,
+  "decoding": {
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "use_cache": true
+  },
+  "enable_thinking": true,
+  "batch_size": 1,
+  "dtype": "torch.bfloat16",
+  "attention": "sdpa",
+  "quantization": null,
+  "rng_policy": "Batch size 1; before each independent generate call, torch.manual_seed and torch.cuda.manual_seed_all use int(sha256(f'20260924:{row_id}')[:8],16) % (2**31-1). The budget is excluded from the seed. This new row RNG strategy does not require agreement with the historical batch-eight generation prefixes. Cross-budget prefix equality is measured rather than assumed.",
+  "allowed_budgets": [
+    8192,
+    16384,
+    32768
+  ],
+  "parser": "Frozen final-line parser applied only AFTER an observed generated </think> token boundary; missing/ambiguous boundary is INVALID",
+  "independence": "Every budget runs generate from the original prompt; no generated-prefix reuse",
+  "inference_boundary": "Ten equal-hop diagnostic items estimate completion/memory/runtime, not population accuracy",
+  "frozen_common_sha256": "46c0b05164d191fe48d5ffd0262959366488479880e0e240a02b4ac38e51f81b",
+  "runner_sha256": "2270403615c22695d653431e15cf19dff90fc47526d074e38f6a2fbf702feb93",
+  "plan_sha256": "eddb121853b4d0c68f42aea7ad1986fdbf7fd414a7744f349f075be859a3b98d"
+}

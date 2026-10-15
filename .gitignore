@@ -52,3 +52,6 @@ logs/
 references/papers/
 *.pdf
 !output/pdf/STAGE_B_RESEARCH_REPORT_ZH.pdf
+
+# Exact lossless gzip copy is published with SHA-256 and a restore script.
+artifacts/stage_b2_3_qwen3_generation/full/fg_thinking/row_generations.jsonl

@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "protocol": "Raw-Sum",
+      "hop": 1,
+      "current_correct": 130,
+      "expected_correct": 130,
+      "pass": true
+    },
+    {
+      "protocol": "Raw-Sum",
+      "hop": 2,
+      "current_correct": 60,
+      "expected_correct": 60,
+      "pass": true
+    },
+    {
+      "protocol": "Raw-Sum",
+      "hop": 3,
+      "current_correct": 60,
+      "expected_correct": 60,
+      "pass": true
+    },
+    {
+      "protocol": "Raw-Sum",
+      "hop": 4,
+      "current_correct": 28,
+      "expected_correct": 28,
+      "pass": true
+    },
+    {
+      "protocol": "Raw-Sum",
+      "hop": 5,
+      "current_correct": 12,
+      "expected_correct": 12,
+      "pass": true
+    },
+    {
+      "protocol": "Native-Sum",
+      "hop": 1,
+      "current_correct": 269,
+      "expected_correct": 269,
+      "pass": true
+    },
+    {
+      "protocol": "Native-Sum",
+      "hop": 2,
+      "current_correct": 93,
+      "expected_correct": 93,
+      "pass": true
+    },
+    {
+      "protocol": "Native-Sum",
+      "hop": 3,
+      "current_correct": 70,
+      "expected_correct": 70,
+      "pass": true
+    },
+    {
+      "protocol": "Native-Sum",
+      "hop": 4,
+      "current_correct": 48,
+      "expected_correct": 48,
+      "pass": true
+    },
+    {
+      "protocol": "Native-Sum",
+      "hop": 5,
+      "current_correct": 30,
+      "expected_correct": 30,
+      "pass": true
+    }
+  ],
+  "source": "/home/ai/chenchen/projects/reasoning-geometry-pilot/artifacts/stage_b2_1/statistics/all_hop_metrics.csv"
+}

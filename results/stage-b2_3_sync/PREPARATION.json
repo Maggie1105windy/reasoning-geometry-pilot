@@ -1,0 +1,13 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "date": "2026-10-15",
+  "repository": "Maggie1105windy/reasoning-geometry-pilot",
+  "selected_files": 7162,
+  "content_bytes_excluding_preparation": 333664372,
+  "source_records": 7145,
+  "excluded_files": 89,
+  "archives": 1,
+  "scope": "B2.2 dependency and completed B2.3 runs/budgets/trajectory analyses; excludes live B3",
+  "html_visual_verification": "Build verified and static figures inspected; live browser inspection unavailable due browser policy.",
+  "archive_roundtrip_verified": true
+}

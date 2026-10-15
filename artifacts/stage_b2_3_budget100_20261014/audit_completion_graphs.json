@@ -1,0 +1,6505 @@
+{
+  "88527": {
+    "query_arg1": "V",
+    "query_arg2": "R",
+    "path": [
+      "R",
+      "V"
+    ],
+    "path_relations": [
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "V",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Z is above V at 2 o'clock.",
+        "template_ids": [
+          "UPPER_RIGHT_07"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "B",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object H is upper and slightly to the left of the object B.",
+        "template_ids": [
+          "UPPER_LEFT_02"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "U",
+        "relation": "UPPER_LEFT",
+        "sentence": "R is to the upper left of U.",
+        "template_ids": [
+          "UPPER_LEFT_00",
+          "UPPER_LEFT_01"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "Z",
+        "relation": "LEFT",
+        "sentence": "The object labeled H is positioned to the left of the object labeled Z.",
+        "template_ids": [
+          "LEFT_06"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "V",
+        "relation": "LOWER_RIGHT",
+        "sentence": "R is diagonally right and below V.",
+        "template_ids": [
+          "LOWER_RIGHT_11"
+        ]
+      }
+    ]
+  },
+  "99633": {
+    "query_arg1": "Q",
+    "query_arg2": "A",
+    "path": [
+      "A",
+      "Q"
+    ],
+    "path_relations": [
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "X",
+        "arg2": "D",
+        "relation": "LOWER_RIGHT",
+        "sentence": "X is positioned below and to the right of D.",
+        "template_ids": [
+          "LOWER_RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "Q",
+        "relation": "LEFT",
+        "sentence": "C and Q are horizontal and C is to the left of Q.",
+        "template_ids": [
+          "LEFT_15"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "Q",
+        "relation": "LOWER_RIGHT",
+        "sentence": "A is diagonally to the bottom right of Q.",
+        "template_ids": [
+          "LOWER_RIGHT_24"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "L",
+        "relation": "ABOVE",
+        "sentence": "A is placed on the top of L.",
+        "template_ids": [
+          "ABOVE_12"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "X",
+        "relation": "BELOW",
+        "sentence": "The object L is positioned directly below the object X.",
+        "template_ids": [
+          "BELOW_10"
+        ]
+      }
+    ]
+  },
+  "94864": {
+    "query_arg1": "Z",
+    "query_arg2": "N",
+    "path": [
+      "N",
+      "Z"
+    ],
+    "path_relations": [
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "N",
+        "relation": "ABOVE",
+        "sentence": "Z is directly above N.",
+        "template_ids": [
+          "ABOVE_02"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "W",
+        "relation": "LOWER_LEFT",
+        "sentence": "The objects Z and W are over there. The object Z is lower and slightly to the left of the object W.",
+        "template_ids": [
+          "LOWER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "L",
+        "relation": "LOWER_LEFT",
+        "sentence": "P is below L and to the left of L.",
+        "template_ids": [
+          "LOWER_LEFT_26"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "L",
+        "relation": "ABOVE",
+        "sentence": "N is above L with a small gap between them.",
+        "template_ids": [
+          "ABOVE_21"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "P is positioned up and to the right of I.",
+        "template_ids": [
+          "UPPER_RIGHT_08"
+        ]
+      }
+    ]
+  },
+  "89515": {
+    "query_arg1": "F",
+    "query_arg2": "G",
+    "path": [
+      "G",
+      "F"
+    ],
+    "path_relations": [
+      "LEFT"
+    ],
+    "dx": -1,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "F",
+        "arg2": "G",
+        "relation": "LEFT",
+        "sentence": "F and G are parallel, and F is to the left of G.",
+        "template_ids": [
+          "LEFT_14"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "G",
+        "relation": "RIGHT",
+        "sentence": "G is over there and M is on the right.",
+        "template_ids": [
+          "RIGHT_07"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "F",
+        "relation": "LOWER_RIGHT",
+        "sentence": "W is below F at 4 o'clock.",
+        "template_ids": [
+          "LOWER_RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "B",
+        "relation": "LOWER_RIGHT",
+        "sentence": "W is positioned below B and to the right.",
+        "template_ids": [
+          "LOWER_RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "S",
+        "relation": "LOWER_LEFT",
+        "sentence": "B is diagonally below S to the left at a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_21"
+        ]
+      }
+    ]
+  },
+  "92342": {
+    "query_arg1": "T",
+    "query_arg2": "H",
+    "path": [
+      "H",
+      "T"
+    ],
+    "path_relations": [
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "C",
+        "relation": "RIGHT",
+        "sentence": "C and Z are in a horizontal line with Z on the right.",
+        "template_ids": [
+          "RIGHT_16"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "H",
+        "relation": "LEFT",
+        "sentence": "X is to the left of H.",
+        "template_ids": [
+          "LEFT_00"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "H",
+        "relation": "UPPER_LEFT",
+        "sentence": "T is at a 45 degree angle to H, in the upper lefthand corner.",
+        "template_ids": [
+          "UPPER_LEFT_21"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "C",
+        "relation": "UPPER_RIGHT",
+        "sentence": "T is upper right to C.",
+        "template_ids": [
+          "UPPER_RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "X",
+        "relation": "LOWER_LEFT",
+        "sentence": "D is sitting at the lower left position to X.",
+        "template_ids": [
+          "LOWER_LEFT_12"
+        ]
+      }
+    ]
+  },
+  "102788": {
+    "query_arg1": "D",
+    "query_arg2": "I",
+    "path": [
+      "I",
+      "D"
+    ],
+    "path_relations": [
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "I",
+        "relation": "ABOVE",
+        "sentence": "D and I are parallel, and D is on top of I.",
+        "template_ids": [
+          "ABOVE_18"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "G is diagonally right and above I.",
+        "template_ids": [
+          "UPPER_RIGHT_10"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "D",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Z presents lower right to D.",
+        "template_ids": [
+          "LOWER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "G",
+        "relation": "LEFT",
+        "sentence": "G is over there and U is on the left of it.",
+        "template_ids": [
+          "LEFT_12"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "Q",
+        "relation": "LOWER_LEFT",
+        "sentence": "Z is positioned down and to the left of Q.",
+        "template_ids": [
+          "LOWER_LEFT_08"
+        ]
+      }
+    ]
+  },
+  "97877": {
+    "query_arg1": "X",
+    "query_arg2": "Z",
+    "path": [
+      "Z",
+      "X"
+    ],
+    "path_relations": [
+      "RIGHT"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "X",
+        "arg2": "J",
+        "relation": "ABOVE",
+        "sentence": "X is on the top and J is at the bottom.",
+        "template_ids": [
+          "ABOVE_13"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "Q",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Z is on the right side and top of Q.",
+        "template_ids": [
+          "UPPER_RIGHT_03"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "Z",
+        "relation": "RIGHT",
+        "sentence": "Z and X are next to each other with Z on the left and X on the right.",
+        "template_ids": [
+          "RIGHT_22"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "Object J is above object V and to the left of it, too.",
+        "template_ids": [
+          "UPPER_LEFT_23"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "Q",
+        "relation": "LOWER_LEFT",
+        "sentence": "Y is diagonally to the bottom left of Q.",
+        "template_ids": [
+          "LOWER_LEFT_23"
+        ]
+      }
+    ]
+  },
+  "92970": {
+    "query_arg1": "F",
+    "query_arg2": "X",
+    "path": [
+      "X",
+      "F"
+    ],
+    "path_relations": [
+      "RIGHT"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "L",
+        "arg2": "W",
+        "relation": "LOWER_LEFT",
+        "sentence": "L is diagonally left and below W.",
+        "template_ids": [
+          "LOWER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "F",
+        "relation": "LOWER_RIGHT",
+        "sentence": "W is diagonally right and below F.",
+        "template_ids": [
+          "LOWER_RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "X",
+        "relation": "LOWER_RIGHT",
+        "sentence": "N is diagonally below X to the right at a 45 degree angle.",
+        "template_ids": [
+          "LOWER_RIGHT_22"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "C",
+        "relation": "LOWER_LEFT",
+        "sentence": "N is to the bottom-left of C.",
+        "template_ids": [
+          "LOWER_LEFT_06"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "X",
+        "relation": "RIGHT",
+        "sentence": "F is on the same horizontal plane directly right to X.",
+        "template_ids": [
+          "RIGHT_18"
+        ]
+      }
+    ]
+  },
+  "95336": {
+    "query_arg1": "G",
+    "query_arg2": "O",
+    "path": [
+      "O",
+      "G"
+    ],
+    "path_relations": [
+      "BELOW"
+    ],
+    "dx": 0,
+    "dy": -1,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "M",
+        "arg2": "G",
+        "relation": "BELOW",
+        "sentence": "G and M are both there with the object M below the object G.",
+        "template_ids": [
+          "BELOW_25"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "U",
+        "relation": "RIGHT",
+        "sentence": "M is placed in the right direction of U.",
+        "template_ids": [
+          "RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "N",
+        "relation": "ABOVE",
+        "sentence": "O presents over N.",
+        "template_ids": [
+          "ABOVE_27"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "N",
+        "relation": "UPPER_RIGHT",
+        "sentence": "I is placed at the upper right of N.",
+        "template_ids": [
+          "UPPER_RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "O",
+        "relation": "BELOW",
+        "sentence": "G presents below O.",
+        "template_ids": [
+          "BELOW_27"
+        ]
+      }
+    ]
+  },
+  "101850": {
+    "query_arg1": "U",
+    "query_arg2": "V",
+    "path": [
+      "V",
+      "U"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 1,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "X",
+        "relation": "RIGHT",
+        "sentence": "D is to the right of X horizontally.",
+        "template_ids": [
+          "RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "U",
+        "relation": "BELOW",
+        "sentence": "U and D are parallel, and D is below U.",
+        "template_ids": [
+          "BELOW_18"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "X",
+        "relation": "LOWER_LEFT",
+        "sentence": "H presents lower left to X.",
+        "template_ids": [
+          "LOWER_LEFT_24"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "V",
+        "relation": "UPPER_RIGHT",
+        "sentence": "U is upper right to V.",
+        "template_ids": [
+          "UPPER_RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "S",
+        "relation": "LOWER_RIGHT",
+        "sentence": "H is diagonally right and below S.",
+        "template_ids": [
+          "LOWER_RIGHT_11"
+        ]
+      }
+    ]
+  },
+  "97223": {
+    "query_arg1": "T",
+    "query_arg2": "N",
+    "path": [
+      "N",
+      "T"
+    ],
+    "path_relations": [
+      "LOWER_LEFT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "H",
+        "arg2": "A",
+        "relation": "LEFT",
+        "sentence": "A and H are side by side with A to the right and H to the left.",
+        "template_ids": [
+          "LEFT_20"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "T",
+        "relation": "LEFT",
+        "sentence": "B is to the left of T and is on the same horizontal plane.",
+        "template_ids": [
+          "LEFT_19"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "N",
+        "relation": "LOWER_LEFT",
+        "sentence": "H is to the bottom left of N.",
+        "template_ids": [
+          "LOWER_LEFT_01"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "B",
+        "relation": "UPPER_LEFT",
+        "sentence": "X is positioned in the top left corner of B.",
+        "template_ids": [
+          "UPPER_LEFT_05"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "N",
+        "relation": "LOWER_LEFT",
+        "sentence": "T is to the left of N and below N at approximately a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_14"
+        ]
+      }
+    ]
+  },
+  "94592": {
+    "query_arg1": "S",
+    "query_arg2": "P",
+    "path": [
+      "P",
+      "S"
+    ],
+    "path_relations": [
+      "LOWER_LEFT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "S",
+        "arg2": "M",
+        "relation": "UPPER_RIGHT",
+        "sentence": "M is there and S is at the 2 position of a clock face.",
+        "template_ids": [
+          "UPPER_RIGHT_13"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "P",
+        "relation": "ABOVE",
+        "sentence": "X and P are vertical and X is above P.",
+        "template_ids": [
+          "ABOVE_19"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "D",
+        "relation": "RIGHT",
+        "sentence": "M is at the 3 o'clock position relative to D.",
+        "template_ids": [
+          "RIGHT_13"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "X",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Z is placed at the lower right of X.",
+        "template_ids": [
+          "LOWER_RIGHT_12"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "S",
+        "relation": "UPPER_RIGHT",
+        "sentence": "P is north east of S.",
+        "template_ids": [
+          "UPPER_RIGHT_15"
+        ]
+      }
+    ]
+  },
+  "90634": {
+    "query_arg1": "D",
+    "query_arg2": "I",
+    "path": [
+      "I",
+      "D"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": -1,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "I",
+        "relation": "LOWER_RIGHT",
+        "sentence": "D is below and to the right of I.",
+        "template_ids": [
+          "LOWER_RIGHT_17"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "G",
+        "relation": "RIGHT",
+        "sentence": "A is on the same horizontal plane directly right to G.",
+        "template_ids": [
+          "RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "U",
+        "relation": "LEFT",
+        "sentence": "U and R are side by side with U to the right and R to the left.",
+        "template_ids": [
+          "LEFT_20"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "U",
+        "relation": "RIGHT",
+        "sentence": "I is to the right of U.",
+        "template_ids": [
+          "RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "D",
+        "relation": "LEFT",
+        "sentence": "A and D are parallel, and A is to the left of D.",
+        "template_ids": [
+          "LEFT_14"
+        ]
+      }
+    ]
+  },
+  "91221": {
+    "query_arg1": "E",
+    "query_arg2": "H",
+    "path": [
+      "H",
+      "E"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": -1,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "O",
+        "arg2": "E",
+        "relation": "LOWER_RIGHT",
+        "sentence": "O is to the bottom right of E.",
+        "template_ids": [
+          "LOWER_RIGHT_01"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "O",
+        "relation": "LEFT",
+        "sentence": "G is sitting at the 9:00 position of O.",
+        "template_ids": [
+          "LEFT_10"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "H",
+        "relation": "LOWER_RIGHT",
+        "sentence": "E is below H at 4 o'clock.",
+        "template_ids": [
+          "LOWER_RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "G",
+        "relation": "LOWER_LEFT",
+        "sentence": "W is directly south west of G.",
+        "template_ids": [
+          "LOWER_LEFT_18"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "D",
+        "relation": "LEFT",
+        "sentence": "H and D are horizontal and H is to the left of D.",
+        "template_ids": [
+          "LEFT_15"
+        ]
+      }
+    ]
+  },
+  "99404": {
+    "query_arg1": "J",
+    "query_arg2": "W",
+    "path": [
+      "W",
+      "J"
+    ],
+    "path_relations": [
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "J",
+        "arg2": "W",
+        "relation": "ABOVE",
+        "sentence": "J is over W.",
+        "template_ids": [
+          "ABOVE_00"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "U",
+        "relation": "BELOW",
+        "sentence": "J presents below U.",
+        "template_ids": [
+          "BELOW_27"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "U",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object V is lower and slightly to the right of the object U.",
+        "template_ids": [
+          "LOWER_RIGHT_02"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "W is directly north west of E.",
+        "template_ids": [
+          "UPPER_LEFT_19"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "I is positioned in the top left corner of V.",
+        "template_ids": [
+          "UPPER_LEFT_05"
+        ]
+      }
+    ]
+  },
+  "102589": {
+    "query_arg1": "Y",
+    "query_arg2": "D",
+    "path": [
+      "D",
+      "Y"
+    ],
+    "path_relations": [
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "T",
+        "arg2": "G",
+        "relation": "LEFT",
+        "sentence": "T is on the left and G is on the right.",
+        "template_ids": [
+          "LEFT_09"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "T",
+        "relation": "UPPER_RIGHT",
+        "sentence": "E is upper right to T.",
+        "template_ids": [
+          "UPPER_RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "G",
+        "relation": "ABOVE",
+        "sentence": "Y is above G with a small gap between them.",
+        "template_ids": [
+          "ABOVE_21"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "Y",
+        "relation": "BELOW",
+        "sentence": "Y and D are in a vertical line with D below Y.",
+        "template_ids": [
+          "BELOW_20"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "D",
+        "relation": "BELOW",
+        "sentence": "C is sitting at the 6:00 position to D.",
+        "template_ids": [
+          "BELOW_14"
+        ]
+      }
+    ]
+  },
+  "101760": {
+    "query_arg1": "A",
+    "query_arg2": "B",
+    "path": [
+      "B",
+      "A"
+    ],
+    "path_relations": [
+      "RIGHT"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "A",
+        "arg2": "B",
+        "relation": "RIGHT",
+        "sentence": "A is sitting in the right direction of B.",
+        "template_ids": [
+          "RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "L",
+        "relation": "LOWER_LEFT",
+        "sentence": "The objects I and L are over there. The object I is lower and slightly to the left of the object L.",
+        "template_ids": [
+          "LOWER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "O",
+        "relation": "LOWER_LEFT",
+        "sentence": "L is to the left of O and below O at approximately a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_14"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "B",
+        "relation": "LOWER_LEFT",
+        "sentence": "The object I is lower and slightly to the left of the object B.",
+        "template_ids": [
+          "LOWER_LEFT_02"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "A",
+        "relation": "LOWER_RIGHT",
+        "sentence": "U is directly south east of A.",
+        "template_ids": [
+          "LOWER_RIGHT_19"
+        ]
+      }
+    ]
+  },
+  "96380": {
+    "query_arg1": "N",
+    "query_arg2": "R",
+    "path": [
+      "R",
+      "N"
+    ],
+    "path_relations": [
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "R",
+        "arg2": "N",
+        "relation": "BELOW",
+        "sentence": "R and N are vertical and R is below N.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "R",
+        "relation": "LOWER_RIGHT",
+        "sentence": "E is lower right of R.",
+        "template_ids": [
+          "LOWER_RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "Q",
+        "arg2": "Y",
+        "relation": "ABOVE",
+        "sentence": "Q is on top of Y.",
+        "template_ids": [
+          "ABOVE_03"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "E",
+        "relation": "ABOVE",
+        "sentence": "Y and E are parallel, and Y is on top of E.",
+        "template_ids": [
+          "ABOVE_18"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "Q",
+        "relation": "ABOVE",
+        "sentence": "G is directly above Q.",
+        "template_ids": [
+          "ABOVE_02"
+        ]
+      }
+    ]
+  },
+  "93270": {
+    "query_arg1": "A",
+    "query_arg2": "W",
+    "path": [
+      "W",
+      "A"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": -1,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "L",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object L is positioned above and to the left of object V.",
+        "template_ids": [
+          "UPPER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "D",
+        "relation": "ABOVE",
+        "sentence": "W and D are side by side with W on the top and D at the bottom.",
+        "template_ids": [
+          "ABOVE_24"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "U",
+        "relation": "BELOW",
+        "sentence": "D is on the same vertical plane directly below U.",
+        "template_ids": [
+          "BELOW_22"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "V",
+        "relation": "UPPER_RIGHT",
+        "sentence": "U is above V at 2 o'clock.",
+        "template_ids": [
+          "UPPER_RIGHT_07"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "W",
+        "relation": "LOWER_RIGHT",
+        "sentence": "A is to the bottom-right of W.",
+        "template_ids": [
+          "LOWER_RIGHT_07"
+        ]
+      }
+    ]
+  },
+  "93765": {
+    "query_arg1": "A",
+    "query_arg2": "F",
+    "path": [
+      "F",
+      "A"
+    ],
+    "path_relations": [
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "O",
+        "arg2": "Y",
+        "relation": "UPPER_LEFT",
+        "sentence": "O is sitting at the upper left position to Y.",
+        "template_ids": [
+          "UPPER_LEFT_13"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "F",
+        "relation": "ABOVE",
+        "sentence": "The object A is positioned directly above the object F.",
+        "template_ids": [
+          "ABOVE_10"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "Y",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object F is positioned below and to the right of the object Y.",
+        "template_ids": [
+          "LOWER_RIGHT_10"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "A",
+        "relation": "BELOW",
+        "sentence": "L is sitting at the lower position to A.",
+        "template_ids": [
+          "BELOW_15"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "E",
+        "relation": "LEFT",
+        "sentence": "O is to the left of E and is on the same horizontal plane.",
+        "template_ids": [
+          "LEFT_19"
+        ]
+      }
+    ]
+  },
+  "93532": {
+    "query_arg1": "D",
+    "query_arg2": "E",
+    "path": [
+      "E",
+      "C",
+      "D"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 2,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "I",
+        "arg2": "W",
+        "relation": "BELOW",
+        "sentence": "I and W are vertical and I is below W.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "W",
+        "relation": "UPPER_LEFT",
+        "sentence": "E is north west of W.",
+        "template_ids": [
+          "UPPER_LEFT_16"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "E",
+        "relation": "LOWER_RIGHT",
+        "sentence": "C is to the bottom right of E.",
+        "template_ids": [
+          "LOWER_RIGHT_01"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "R",
+        "relation": "LEFT",
+        "sentence": "I is placed in the left direction of R.",
+        "template_ids": [
+          "LEFT_08"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "C",
+        "relation": "LOWER_RIGHT",
+        "sentence": "C is there and D is at the 5 position of a clock face.",
+        "template_ids": [
+          "LOWER_RIGHT_14"
+        ]
+      }
+    ]
+  },
+  "89435": {
+    "query_arg1": "C",
+    "query_arg2": "J",
+    "path": [
+      "J",
+      "G",
+      "C"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "UPPER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "C",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object C is positioned above and to the left of object E.",
+        "template_ids": [
+          "UPPER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "G",
+        "relation": "BELOW",
+        "sentence": "J is over there with G above.",
+        "template_ids": [
+          "BELOW_09"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "S",
+        "relation": "BELOW",
+        "sentence": "Y is over there with S above.",
+        "template_ids": [
+          "BELOW_09"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "G",
+        "relation": "UPPER_RIGHT",
+        "sentence": "C is positioned above G and to the right.",
+        "template_ids": [
+          "UPPER_RIGHT_19"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "J",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Y is above J at 2 o'clock.",
+        "template_ids": [
+          "UPPER_RIGHT_07"
+        ]
+      }
+    ]
+  },
+  "91418": {
+    "query_arg1": "T",
+    "query_arg2": "E",
+    "path": [
+      "E",
+      "O",
+      "T"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -2,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "N",
+        "arg2": "L",
+        "relation": "UPPER_LEFT",
+        "sentence": "N is above and to the left of L.",
+        "template_ids": [
+          "UPPER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "N",
+        "relation": "UPPER_RIGHT",
+        "sentence": "T is placed at the upper right of N.",
+        "template_ids": [
+          "UPPER_RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "T",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Object O is above object T and to the right of it, too.",
+        "template_ids": [
+          "UPPER_RIGHT_22"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "E",
+        "relation": "BELOW",
+        "sentence": "I is at the 6 o'clock position relative to E.",
+        "template_ids": [
+          "BELOW_17"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "O",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object E and O are there. The object E is below and slightly to the right of the object O.",
+        "template_ids": [
+          "LOWER_RIGHT_18"
+        ]
+      }
+    ]
+  },
+  "100256": {
+    "query_arg1": "T",
+    "query_arg2": "U",
+    "path": [
+      "U",
+      "O",
+      "T"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "LOWER_LEFT"
+    ],
+    "dx": 0,
+    "dy": -2,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "P",
+        "arg2": "R",
+        "relation": "UPPER_LEFT",
+        "sentence": "P is on the left side and above R.",
+        "template_ids": [
+          "UPPER_LEFT_03"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "T",
+        "relation": "UPPER_RIGHT",
+        "sentence": "O is north east of T.",
+        "template_ids": [
+          "UPPER_RIGHT_15"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "W",
+        "relation": "BELOW",
+        "sentence": "P is at the bottom of W and is on the same vertical plane.",
+        "template_ids": [
+          "BELOW_23"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "U",
+        "relation": "ABOVE",
+        "sentence": "W is over there with U below.",
+        "template_ids": [
+          "ABOVE_09"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "U",
+        "relation": "LOWER_RIGHT",
+        "sentence": "O is below U at 4 o'clock.",
+        "template_ids": [
+          "LOWER_RIGHT_08"
+        ]
+      }
+    ]
+  },
+  "93992": {
+    "query_arg1": "X",
+    "query_arg2": "A",
+    "path": [
+      "A",
+      "E",
+      "X"
+    ],
+    "path_relations": [
+      "LEFT",
+      "BELOW"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "G",
+        "arg2": "T",
+        "relation": "BELOW",
+        "sentence": "G is sitting at the lower position to T.",
+        "template_ids": [
+          "BELOW_15"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "X",
+        "relation": "ABOVE",
+        "sentence": "E is positioned above X.",
+        "template_ids": [
+          "ABOVE_05"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "A",
+        "relation": "ABOVE",
+        "sentence": "V is on the top and A is at the bottom.",
+        "template_ids": [
+          "ABOVE_13"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "E",
+        "relation": "RIGHT",
+        "sentence": "E and A are side by side with E to the left and A to the right.",
+        "template_ids": [
+          "RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "G",
+        "relation": "UPPER_RIGHT",
+        "sentence": "X is diagonally to the upper right of G.",
+        "template_ids": [
+          "UPPER_RIGHT_23"
+        ]
+      }
+    ]
+  },
+  "98865": {
+    "query_arg1": "P",
+    "query_arg2": "R",
+    "path": [
+      "R",
+      "Q",
+      "P"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "BELOW"
+    ],
+    "dx": -1,
+    "dy": -2,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "F",
+        "arg2": "B",
+        "relation": "UPPER_RIGHT",
+        "sentence": "F is on the right side and top of B.",
+        "template_ids": [
+          "UPPER_RIGHT_03"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "F",
+        "relation": "LOWER_LEFT",
+        "sentence": "The object L is lower and slightly to the left of the object F.",
+        "template_ids": [
+          "LOWER_LEFT_02"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "B",
+        "relation": "LOWER_RIGHT",
+        "sentence": "R is on the right side and below B.",
+        "template_ids": [
+          "LOWER_RIGHT_03"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "Q",
+        "relation": "BELOW",
+        "sentence": "Q is over there and P is at the bottom of it.",
+        "template_ids": [
+          "BELOW_16"
+        ]
+      },
+      {
+        "arg1": "Q",
+        "arg2": "R",
+        "relation": "LOWER_LEFT",
+        "sentence": "Q is lower left to R.",
+        "template_ids": [
+          "LOWER_LEFT_05"
+        ]
+      }
+    ]
+  },
+  "103698": {
+    "query_arg1": "F",
+    "query_arg2": "C",
+    "path": [
+      "C",
+      "U",
+      "F"
+    ],
+    "path_relations": [
+      "LEFT",
+      "UPPER_LEFT"
+    ],
+    "dx": -2,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "U",
+        "arg2": "F",
+        "relation": "LOWER_RIGHT",
+        "sentence": "U is positioned below F and to the right.",
+        "template_ids": [
+          "LOWER_RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "J",
+        "relation": "LEFT",
+        "sentence": "C and J are parallel, and C is to the left of J.",
+        "template_ids": [
+          "LEFT_14"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "U",
+        "relation": "RIGHT",
+        "sentence": "U and C are side by side with U to the left and C to the right.",
+        "template_ids": [
+          "RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "J",
+        "relation": "ABOVE",
+        "sentence": "Y is at J's 12 o'clock.",
+        "template_ids": [
+          "ABOVE_04"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "P",
+        "relation": "UPPER_RIGHT",
+        "sentence": "F is sitting at the upper right position to P.",
+        "template_ids": [
+          "UPPER_RIGHT_12"
+        ]
+      }
+    ]
+  },
+  "97320": {
+    "query_arg1": "N",
+    "query_arg2": "W",
+    "path": [
+      "W",
+      "M",
+      "N"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "BELOW"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "C",
+        "arg2": "N",
+        "relation": "BELOW",
+        "sentence": "C is sitting at the lower position to N.",
+        "template_ids": [
+          "BELOW_15"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "N",
+        "relation": "ABOVE",
+        "sentence": "M is above N.",
+        "template_ids": [
+          "ABOVE_01"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "G",
+        "relation": "RIGHT",
+        "sentence": "A is positioned right to G.",
+        "template_ids": [
+          "RIGHT_02"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "W",
+        "relation": "UPPER_RIGHT",
+        "sentence": "M is directly north east of W.",
+        "template_ids": [
+          "UPPER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "W",
+        "relation": "LEFT",
+        "sentence": "G is sitting in the left direction of W.",
+        "template_ids": [
+          "LEFT_11"
+        ]
+      }
+    ]
+  },
+  "94974": {
+    "query_arg1": "P",
+    "query_arg2": "C",
+    "path": [
+      "C",
+      "L",
+      "P"
+    ],
+    "path_relations": [
+      "BELOW",
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "L",
+        "arg2": "P",
+        "relation": "UPPER_LEFT",
+        "sentence": "L is placed at the upper left of P.",
+        "template_ids": [
+          "UPPER_LEFT_12"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "C",
+        "relation": "BELOW",
+        "sentence": "C and L are in a vertical line with L below C.",
+        "template_ids": [
+          "BELOW_20"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "P",
+        "relation": "RIGHT",
+        "sentence": "J is placed in the right direction of P.",
+        "template_ids": [
+          "RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "V",
+        "relation": "ABOVE",
+        "sentence": "E is over there with V below.",
+        "template_ids": [
+          "ABOVE_09"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "V",
+        "relation": "UPPER_RIGHT",
+        "sentence": "C presents upper right to V.",
+        "template_ids": [
+          "UPPER_RIGHT_24"
+        ]
+      }
+    ]
+  },
+  "101371": {
+    "query_arg1": "L",
+    "query_arg2": "I",
+    "path": [
+      "I",
+      "U",
+      "L"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": 0,
+    "dy": 2,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "U",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "U is sitting at the upper right position to I.",
+        "template_ids": [
+          "UPPER_RIGHT_12"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "U",
+        "relation": "UPPER_LEFT",
+        "sentence": "L is to the upper left of U.",
+        "template_ids": [
+          "UPPER_LEFT_00",
+          "UPPER_LEFT_01"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "Q",
+        "relation": "RIGHT",
+        "sentence": "L is to the right of Q.",
+        "template_ids": [
+          "RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "B",
+        "relation": "LEFT",
+        "sentence": "O presents left to B.",
+        "template_ids": [
+          "LEFT_23"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "B",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object I is positioned below and to the right of the object B.",
+        "template_ids": [
+          "LOWER_RIGHT_10"
+        ]
+      }
+    ]
+  },
+  "103365": {
+    "query_arg1": "X",
+    "query_arg2": "L",
+    "path": [
+      "L",
+      "D",
+      "X"
+    ],
+    "path_relations": [
+      "BELOW",
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "Q",
+        "arg2": "M",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Q is north east of M.",
+        "template_ids": [
+          "UPPER_RIGHT_15"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "D",
+        "relation": "ABOVE",
+        "sentence": "D is over there and L is directly above it.",
+        "template_ids": [
+          "ABOVE_11"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "X",
+        "relation": "RIGHT",
+        "sentence": "X and H are in a horizontal line with H on the right.",
+        "template_ids": [
+          "RIGHT_16"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "D",
+        "relation": "LOWER_RIGHT",
+        "sentence": "X is on the lower right of D.",
+        "template_ids": [
+          "LOWER_RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "H",
+        "relation": "ABOVE",
+        "sentence": "M is sitting at the top position to H.",
+        "template_ids": [
+          "ABOVE_15"
+        ]
+      }
+    ]
+  },
+  "99878": {
+    "query_arg1": "S",
+    "query_arg2": "V",
+    "path": [
+      "V",
+      "G",
+      "S"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "W",
+        "arg2": "R",
+        "relation": "BELOW",
+        "sentence": "R and W are in a vertical line with W below R.",
+        "template_ids": [
+          "BELOW_20"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "G",
+        "relation": "LEFT",
+        "sentence": "G is over there and V is on the left.",
+        "template_ids": [
+          "LEFT_07"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "R",
+        "relation": "LEFT",
+        "sentence": "V is sitting in the left direction of R.",
+        "template_ids": [
+          "LEFT_11"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "S",
+        "relation": "LOWER_RIGHT",
+        "sentence": "G is below S and to the right of S.",
+        "template_ids": [
+          "LOWER_RIGHT_27"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "U",
+        "relation": "UPPER_RIGHT",
+        "sentence": "S is on the right side and top of U.",
+        "template_ids": [
+          "UPPER_RIGHT_03"
+        ]
+      }
+    ]
+  },
+  "103483": {
+    "query_arg1": "Y",
+    "query_arg2": "X",
+    "path": [
+      "X",
+      "I",
+      "Y"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "LOWER_LEFT"
+    ],
+    "dx": 0,
+    "dy": -1,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "Q",
+        "arg2": "Y",
+        "relation": "RIGHT",
+        "sentence": "The object labeled Q is positioned to the right of the object labeled Y.",
+        "template_ids": [
+          "RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "I",
+        "relation": "LOWER_LEFT",
+        "sentence": "The objects Y and I are over there. The object Y is lower and slightly to the left of the object I.",
+        "template_ids": [
+          "LOWER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "Q",
+        "arg2": "K",
+        "relation": "ABOVE",
+        "sentence": "Q and K are in a vertical line with Q on top.",
+        "template_ids": [
+          "ABOVE_20"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "X",
+        "relation": "ABOVE",
+        "sentence": "P and X are both there with the object P above the object X.",
+        "template_ids": [
+          "ABOVE_25"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "X",
+        "relation": "RIGHT",
+        "sentence": "X and I are in a horizontal line with I on the right.",
+        "template_ids": [
+          "RIGHT_16"
+        ]
+      }
+    ]
+  },
+  "84008": {
+    "query_arg1": "I",
+    "query_arg2": "K",
+    "path": [
+      "K",
+      "G",
+      "I"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "BELOW"
+    ],
+    "dx": -1,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "I",
+        "arg2": "G",
+        "relation": "BELOW",
+        "sentence": "I presents below G.",
+        "template_ids": [
+          "BELOW_27"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "K",
+        "relation": "ABOVE",
+        "sentence": "T is directly above K.",
+        "template_ids": [
+          "ABOVE_02"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "G",
+        "relation": "LOWER_RIGHT",
+        "sentence": "K is lower right of G.",
+        "template_ids": [
+          "LOWER_RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "I",
+        "relation": "LEFT",
+        "sentence": "V is to the left of I horizontally.",
+        "template_ids": [
+          "LEFT_05"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "E",
+        "relation": "ABOVE",
+        "sentence": "V is at the 12 o'clock position relative to E.",
+        "template_ids": [
+          "ABOVE_17"
+        ]
+      }
+    ]
+  },
+  "90120": {
+    "query_arg1": "I",
+    "query_arg2": "P",
+    "path": [
+      "P",
+      "E",
+      "I"
+    ],
+    "path_relations": [
+      "BELOW",
+      "RIGHT"
+    ],
+    "dx": 1,
+    "dy": -1,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "I",
+        "arg2": "E",
+        "relation": "RIGHT",
+        "sentence": "I is to the right of E horizontally.",
+        "template_ids": [
+          "RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "E",
+        "relation": "ABOVE",
+        "sentence": "P is placed on the top of E.",
+        "template_ids": [
+          "ABOVE_12"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "H",
+        "relation": "RIGHT",
+        "sentence": "P is on the right and H is on the left.",
+        "template_ids": [
+          "RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "A",
+        "relation": "LOWER_LEFT",
+        "sentence": "R is to the left of A and below A at approximately a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_14"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "The objects A and I are over there. The object A is above and slightly to the right of the object I.",
+        "template_ids": [
+          "UPPER_RIGHT_17"
+        ]
+      }
+    ]
+  },
+  "89092": {
+    "query_arg1": "O",
+    "query_arg2": "J",
+    "path": [
+      "J",
+      "W",
+      "O"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 2,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "G",
+        "relation": "ABOVE",
+        "sentence": "Z and G are in a vertical line with Z on top.",
+        "template_ids": [
+          "ABOVE_20"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "J",
+        "relation": "LOWER_RIGHT",
+        "sentence": "W is below J and to the right of J.",
+        "template_ids": [
+          "LOWER_RIGHT_27"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "H",
+        "relation": "ABOVE",
+        "sentence": "Z is on the same vertical plane directly above H.",
+        "template_ids": [
+          "ABOVE_22"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "W",
+        "relation": "LOWER_RIGHT",
+        "sentence": "O is on the lower right of W.",
+        "template_ids": [
+          "LOWER_RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "H",
+        "relation": "UPPER_LEFT",
+        "sentence": "J is upper left of H.",
+        "template_ids": [
+          "UPPER_LEFT_06"
+        ]
+      }
+    ]
+  },
+  "90179": {
+    "query_arg1": "Z",
+    "query_arg2": "T",
+    "path": [
+      "T",
+      "S",
+      "Z"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "UPPER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "V",
+        "arg2": "M",
+        "relation": "BELOW",
+        "sentence": "V and M are vertical and V is below M.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "L",
+        "relation": "LOWER_RIGHT",
+        "sentence": "If T is the center of a clock face, L is located between 10 and 11.",
+        "template_ids": [
+          "LOWER_RIGHT_26"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "S",
+        "relation": "UPPER_RIGHT",
+        "sentence": "If S is the center of a clock face, Z is located between 2 and 3.",
+        "template_ids": [
+          "UPPER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "V",
+        "relation": "RIGHT",
+        "sentence": "V is over there and L is on the right of it.",
+        "template_ids": [
+          "RIGHT_12"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "S",
+        "relation": "BELOW",
+        "sentence": "S and T are next to each other with T at the bottom S on the top.",
+        "template_ids": [
+          "BELOW_26"
+        ]
+      }
+    ]
+  },
+  "98424": {
+    "query_arg1": "A",
+    "query_arg2": "T",
+    "path": [
+      "T",
+      "J",
+      "A"
+    ],
+    "path_relations": [
+      "LEFT",
+      "LEFT"
+    ],
+    "dx": -2,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "T",
+        "arg2": "K",
+        "relation": "LOWER_LEFT",
+        "sentence": "T is on the lower left of K.",
+        "template_ids": [
+          "LOWER_LEFT_00"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "L",
+        "relation": "LOWER_LEFT",
+        "sentence": "A is on the left side of and below L.",
+        "template_ids": [
+          "LOWER_LEFT_03"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "W",
+        "relation": "RIGHT",
+        "sentence": "W and L are side by side with W to the left and L to the right.",
+        "template_ids": [
+          "RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "T",
+        "relation": "LEFT",
+        "sentence": "J presents left to T.",
+        "template_ids": [
+          "LEFT_23"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "A",
+        "relation": "RIGHT",
+        "sentence": "J is to the right of A.",
+        "template_ids": [
+          "RIGHT_00"
+        ]
+      }
+    ]
+  },
+  "86606": {
+    "query_arg1": "L",
+    "query_arg2": "B",
+    "path": [
+      "B",
+      "Z",
+      "L"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "N",
+        "arg2": "B",
+        "relation": "BELOW",
+        "sentence": "B and N are parallel, and N is below B.",
+        "template_ids": [
+          "BELOW_18"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "Z",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object L is lower and slightly to the right of the object Z.",
+        "template_ids": [
+          "LOWER_RIGHT_02"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "Z",
+        "relation": "BELOW",
+        "sentence": "The object B is positioned directly below the object Z.",
+        "template_ids": [
+          "BELOW_10"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "L",
+        "relation": "LOWER_RIGHT",
+        "sentence": "I is directly south east of L.",
+        "template_ids": [
+          "LOWER_RIGHT_19"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "T",
+        "relation": "BELOW",
+        "sentence": "I is on the same vertical plane directly below T.",
+        "template_ids": [
+          "BELOW_22"
+        ]
+      }
+    ]
+  },
+  "103101": {
+    "query_arg1": "G",
+    "query_arg2": "W",
+    "path": [
+      "W",
+      "T",
+      "G"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -2,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "T",
+        "arg2": "W",
+        "relation": "UPPER_LEFT",
+        "sentence": "If T is the center of a clock face, W is located between 4 and 5.",
+        "template_ids": [
+          "UPPER_LEFT_26"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "O",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Object W is below object O and to the right of it, too.",
+        "template_ids": [
+          "LOWER_RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "G",
+        "relation": "UPPER_RIGHT",
+        "sentence": "T is above G at 2 o'clock.",
+        "template_ids": [
+          "UPPER_RIGHT_07"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "O",
+        "relation": "LEFT",
+        "sentence": "I is on the same horizontal plane directly left to O.",
+        "template_ids": [
+          "LEFT_18"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "B",
+        "relation": "ABOVE",
+        "sentence": "G and B are side by side with G on the top and B at the bottom.",
+        "template_ids": [
+          "ABOVE_24"
+        ]
+      }
+    ]
+  },
+  "96087": {
+    "query_arg1": "Z",
+    "query_arg2": "G",
+    "path": [
+      "G",
+      "A",
+      "E",
+      "Z"
+    ],
+    "path_relations": [
+      "LEFT",
+      "LOWER_RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "K",
+        "arg2": "Z",
+        "relation": "LOWER_LEFT",
+        "sentence": "K is positioned in the lower left corner of Z.",
+        "template_ids": [
+          "LOWER_LEFT_04"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "Z is sitting at the upper left position to E.",
+        "template_ids": [
+          "UPPER_LEFT_13"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "A is diagonally to the upper left of E.",
+        "template_ids": [
+          "UPPER_LEFT_24"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "G",
+        "relation": "LOWER_LEFT",
+        "sentence": "The object Y is positioned below and to the left of the object G.",
+        "template_ids": [
+          "LOWER_LEFT_09"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "A",
+        "relation": "RIGHT",
+        "sentence": "A is over there and G is on the right of it.",
+        "template_ids": [
+          "RIGHT_12"
+        ]
+      }
+    ]
+  },
+  "102690": {
+    "query_arg1": "X",
+    "query_arg2": "M",
+    "path": [
+      "M",
+      "P",
+      "W",
+      "X"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "BELOW",
+      "UPPER_RIGHT"
+    ],
+    "dx": 0,
+    "dy": -1,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "P",
+        "arg2": "M",
+        "relation": "LOWER_LEFT",
+        "sentence": "P is diagonally left and below M.",
+        "template_ids": [
+          "LOWER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "J",
+        "relation": "LOWER_LEFT",
+        "sentence": "M is below J and to the left of J.",
+        "template_ids": [
+          "LOWER_LEFT_26"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "W",
+        "relation": "ABOVE",
+        "sentence": "W is over there and P is on the top of it.",
+        "template_ids": [
+          "ABOVE_16"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "W",
+        "relation": "UPPER_RIGHT",
+        "sentence": "X is upper right to W.",
+        "template_ids": [
+          "UPPER_RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "U",
+        "relation": "UPPER_LEFT",
+        "sentence": "J is sitting at the upper left position to U.",
+        "template_ids": [
+          "UPPER_LEFT_13"
+        ]
+      }
+    ]
+  },
+  "102510": {
+    "query_arg1": "K",
+    "query_arg2": "E",
+    "path": [
+      "E",
+      "V",
+      "W",
+      "K"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "RIGHT",
+      "UPPER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "V",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "V is placed at the upper left of E.",
+        "template_ids": [
+          "UPPER_LEFT_12"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "G",
+        "relation": "LEFT",
+        "sentence": "Y and G are in a horizontal line with Y on the left.",
+        "template_ids": [
+          "LEFT_16"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "K",
+        "relation": "LOWER_LEFT",
+        "sentence": "W is sitting at the lower left position to K.",
+        "template_ids": [
+          "LOWER_LEFT_12"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "G",
+        "relation": "BELOW",
+        "sentence": "E and G are parallel, and E is under G.",
+        "template_ids": [
+          "BELOW_07"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "W",
+        "relation": "LEFT",
+        "sentence": "W is over there and V is on the left of it.",
+        "template_ids": [
+          "LEFT_12"
+        ]
+      }
+    ]
+  },
+  "95732": {
+    "query_arg1": "L",
+    "query_arg2": "S",
+    "path": [
+      "S",
+      "Y",
+      "K",
+      "L"
+    ],
+    "path_relations": [
+      "LEFT",
+      "RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "S",
+        "relation": "UPPER_RIGHT",
+        "sentence": "D is at a 45 degree angle to S, in the upper righthand corner.",
+        "template_ids": [
+          "UPPER_RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "Y",
+        "relation": "RIGHT",
+        "sentence": "S is to the right of Y.",
+        "template_ids": [
+          "RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "L",
+        "relation": "LOWER_RIGHT",
+        "sentence": "K is below L at 4 o'clock.",
+        "template_ids": [
+          "LOWER_RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "Q",
+        "relation": "RIGHT",
+        "sentence": "L is to the right of Q with a small gap between them.",
+        "template_ids": [
+          "RIGHT_17"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "K",
+        "relation": "LEFT",
+        "sentence": "Y is at K’s 9 o'clock.",
+        "template_ids": [
+          "LEFT_01"
+        ]
+      }
+    ]
+  },
+  "104683": {
+    "query_arg1": "U",
+    "query_arg2": "R",
+    "path": [
+      "R",
+      "S",
+      "J",
+      "U"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "UPPER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 3,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "L",
+        "arg2": "U",
+        "relation": "UPPER_RIGHT",
+        "sentence": "L is to the top right of U.",
+        "template_ids": [
+          "UPPER_RIGHT_01"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "U",
+        "relation": "UPPER_LEFT",
+        "sentence": "J is directly north west of U.",
+        "template_ids": [
+          "UPPER_LEFT_19"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "H",
+        "relation": "ABOVE",
+        "sentence": "L is over H.",
+        "template_ids": [
+          "ABOVE_00"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "R",
+        "relation": "RIGHT",
+        "sentence": "S is placed in the right direction of R.",
+        "template_ids": [
+          "RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "S",
+        "relation": "UPPER_RIGHT",
+        "sentence": "J is above and to the right of S.",
+        "template_ids": [
+          "UPPER_RIGHT_16"
+        ]
+      }
+    ]
+  },
+  "87158": {
+    "query_arg1": "Q",
+    "query_arg2": "R",
+    "path": [
+      "R",
+      "N",
+      "S",
+      "Q"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "LOWER_RIGHT",
+      "BELOW"
+    ],
+    "dx": 0,
+    "dy": -3,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "N",
+        "arg2": "S",
+        "relation": "UPPER_LEFT",
+        "sentence": "N is placed at the upper left of S.",
+        "template_ids": [
+          "UPPER_LEFT_12"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "Y",
+        "relation": "LEFT",
+        "sentence": "R is to the left of Y with a small gap between them.",
+        "template_ids": [
+          "LEFT_17"
+        ]
+      },
+      {
+        "arg1": "Q",
+        "arg2": "S",
+        "relation": "BELOW",
+        "sentence": "S and Q are both there with the object Q below the object S.",
+        "template_ids": [
+          "BELOW_25"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Object Y is above object I and to the right of it, too.",
+        "template_ids": [
+          "UPPER_RIGHT_22"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "R",
+        "relation": "LOWER_LEFT",
+        "sentence": "N is at a 45 degree angle to R, in the lower lefthand corner.",
+        "template_ids": [
+          "LOWER_LEFT_20"
+        ]
+      }
+    ]
+  },
+  "99424": {
+    "query_arg1": "W",
+    "query_arg2": "T",
+    "path": [
+      "T",
+      "J",
+      "K",
+      "W"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "LEFT",
+      "RIGHT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "K",
+        "arg2": "W",
+        "relation": "LEFT",
+        "sentence": "K is positioned left to W.",
+        "template_ids": [
+          "LEFT_02"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "K",
+        "relation": "RIGHT",
+        "sentence": "J is sitting in the right direction of K.",
+        "template_ids": [
+          "RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "T",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object P is upper and slightly to the left of the object T.",
+        "template_ids": [
+          "UPPER_LEFT_02"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "T",
+        "relation": "LOWER_LEFT",
+        "sentence": "J is positioned in the lower left corner of T.",
+        "template_ids": [
+          "LOWER_LEFT_04"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "G",
+        "relation": "LOWER_RIGHT",
+        "sentence": "P is on the lower right of G.",
+        "template_ids": [
+          "LOWER_RIGHT_00"
+        ]
+      }
+    ]
+  },
+  "89458": {
+    "query_arg1": "V",
+    "query_arg2": "I",
+    "path": [
+      "I",
+      "P",
+      "J",
+      "V"
+    ],
+    "path_relations": [
+      "BELOW",
+      "LEFT",
+      "ABOVE"
+    ],
+    "dx": -1,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "I",
+        "arg2": "P",
+        "relation": "ABOVE",
+        "sentence": "I is sitting at the 12:00 position to P.",
+        "template_ids": [
+          "ABOVE_14"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "P",
+        "relation": "LEFT",
+        "sentence": "J and P are parallel, and J on the left of P.",
+        "template_ids": [
+          "LEFT_04"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "B",
+        "relation": "LEFT",
+        "sentence": "V is at the 9 o'clock position relative to B.",
+        "template_ids": [
+          "LEFT_13"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "J",
+        "relation": "ABOVE",
+        "sentence": "V is above J.",
+        "template_ids": [
+          "ABOVE_01"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "U",
+        "relation": "UPPER_LEFT",
+        "sentence": "B is positioned above U and to the left.",
+        "template_ids": [
+          "UPPER_LEFT_20"
+        ]
+      }
+    ]
+  },
+  "97230": {
+    "query_arg1": "U",
+    "query_arg2": "S",
+    "path": [
+      "S",
+      "N",
+      "E",
+      "U"
+    ],
+    "path_relations": [
+      "LEFT",
+      "LOWER_RIGHT",
+      "LEFT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "J",
+        "arg2": "X",
+        "relation": "ABOVE",
+        "sentence": "J presents over X.",
+        "template_ids": [
+          "ABOVE_27"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "S",
+        "relation": "LEFT",
+        "sentence": "N is at the 9 o'clock position relative to S.",
+        "template_ids": [
+          "LEFT_13"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "N is above E at 10 o'clock.",
+        "template_ids": [
+          "UPPER_LEFT_08"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "U",
+        "relation": "RIGHT",
+        "sentence": "E is at the 3 o'clock position relative to U.",
+        "template_ids": [
+          "RIGHT_13"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "S",
+        "relation": "UPPER_LEFT",
+        "sentence": "J is at a 45 degree angle to S, in the upper lefthand corner.",
+        "template_ids": [
+          "UPPER_LEFT_21"
+        ]
+      }
+    ]
+  },
+  "88204": {
+    "query_arg1": "I",
+    "query_arg2": "G",
+    "path": [
+      "G",
+      "W",
+      "Z",
+      "I"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "LOWER_LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -3,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "W",
+        "relation": "LOWER_LEFT",
+        "sentence": "Z is diagonally to the bottom left of W.",
+        "template_ids": [
+          "LOWER_LEFT_23"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "F",
+        "relation": "RIGHT",
+        "sentence": "G is placed in the right direction of F.",
+        "template_ids": [
+          "RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "Z",
+        "relation": "LOWER_LEFT",
+        "sentence": "The objects I and Z are over there. The object I is lower and slightly to the left of the object Z.",
+        "template_ids": [
+          "LOWER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "G",
+        "relation": "UPPER_LEFT",
+        "sentence": "W is above G at 10 o'clock.",
+        "template_ids": [
+          "UPPER_LEFT_08"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "I",
+        "relation": "LOWER_LEFT",
+        "sentence": "T is to the left of I and below I at approximately a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_14"
+        ]
+      }
+    ]
+  },
+  "90149": {
+    "query_arg1": "Z",
+    "query_arg2": "U",
+    "path": [
+      "U",
+      "Q",
+      "J",
+      "Z"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "RIGHT",
+      "LEFT"
+    ],
+    "dx": 1,
+    "dy": -1,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "U",
+        "arg2": "Q",
+        "relation": "UPPER_LEFT",
+        "sentence": "U is to the upper left of Q.",
+        "template_ids": [
+          "UPPER_LEFT_00",
+          "UPPER_LEFT_01"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "K",
+        "relation": "UPPER_RIGHT",
+        "sentence": "N is diagonally right and above K.",
+        "template_ids": [
+          "UPPER_RIGHT_10"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "Z",
+        "relation": "RIGHT",
+        "sentence": "J is at Z's 3 o'clock.",
+        "template_ids": [
+          "RIGHT_01"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "Q",
+        "relation": "RIGHT",
+        "sentence": "J is on the right and Q is on the left.",
+        "template_ids": [
+          "RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "K",
+        "relation": "BELOW",
+        "sentence": "Z is under K.",
+        "template_ids": [
+          "BELOW_00"
+        ]
+      }
+    ]
+  },
+  "100046": {
+    "query_arg1": "X",
+    "query_arg2": "K",
+    "path": [
+      "K",
+      "M",
+      "Y",
+      "X"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "RIGHT",
+      "LEFT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "A",
+        "arg2": "K",
+        "relation": "LOWER_LEFT",
+        "sentence": "Object A is below object K and to the left of it, too.",
+        "template_ids": [
+          "LOWER_LEFT_22"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "X",
+        "relation": "RIGHT",
+        "sentence": "Y is sitting in the right direction of X.",
+        "template_ids": [
+          "RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "K",
+        "relation": "LOWER_LEFT",
+        "sentence": "M is sitting at the lower left position to K.",
+        "template_ids": [
+          "LOWER_LEFT_12"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "M",
+        "relation": "RIGHT",
+        "sentence": "Y is sitting at the 3:00 position to M.",
+        "template_ids": [
+          "RIGHT_10"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "L",
+        "relation": "UPPER_LEFT",
+        "sentence": "A is diagonally above L to the left at a 45 degree angle.",
+        "template_ids": [
+          "UPPER_LEFT_22"
+        ]
+      }
+    ]
+  },
+  "104263": {
+    "query_arg1": "F",
+    "query_arg2": "P",
+    "path": [
+      "P",
+      "Y",
+      "J",
+      "F"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "ABOVE",
+      "ABOVE"
+    ],
+    "dx": 1,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "P",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Z is diagonally to the upper right of P.",
+        "template_ids": [
+          "UPPER_RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "F",
+        "relation": "BELOW",
+        "sentence": "J is at the bottom of F.",
+        "template_ids": [
+          "BELOW_03"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "F",
+        "relation": "LOWER_RIGHT",
+        "sentence": "C is positioned below F and to the right.",
+        "template_ids": [
+          "LOWER_RIGHT_20"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "Y",
+        "relation": "LEFT",
+        "sentence": "Y is over there and P is on the left.",
+        "template_ids": [
+          "LEFT_07"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "Y",
+        "relation": "ABOVE",
+        "sentence": "J and Y are vertical and J is above Y.",
+        "template_ids": [
+          "ABOVE_19"
+        ]
+      }
+    ]
+  },
+  "100962": {
+    "query_arg1": "J",
+    "query_arg2": "L",
+    "path": [
+      "L",
+      "W",
+      "P",
+      "J"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "UPPER_LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "L",
+        "arg2": "A",
+        "relation": "UPPER_LEFT",
+        "sentence": "L is north west of A.",
+        "template_ids": [
+          "UPPER_LEFT_16"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "J",
+        "relation": "UPPER_RIGHT",
+        "sentence": "P is to the top-right of J.",
+        "template_ids": [
+          "UPPER_RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "P",
+        "relation": "LOWER_RIGHT",
+        "sentence": "W is diagonally right and below P.",
+        "template_ids": [
+          "LOWER_RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "W",
+        "relation": "LEFT",
+        "sentence": "L and W are both there with the object L is to the left of object W.",
+        "template_ids": [
+          "LEFT_21"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "J",
+        "relation": "BELOW",
+        "sentence": "E is at the 6 o'clock position relative to J.",
+        "template_ids": [
+          "BELOW_17"
+        ]
+      }
+    ]
+  },
+  "88719": {
+    "query_arg1": "Z",
+    "query_arg2": "T",
+    "path": [
+      "T",
+      "D",
+      "U",
+      "Z"
+    ],
+    "path_relations": [
+      "BELOW",
+      "UPPER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 1,
+    "dy": 1,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "K",
+        "relation": "ABOVE",
+        "sentence": "Z and K are parallel, and Z is on top of K.",
+        "template_ids": [
+          "ABOVE_18"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "U",
+        "relation": "ABOVE",
+        "sentence": "Z is placed on the top of U.",
+        "template_ids": [
+          "ABOVE_12"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "T",
+        "relation": "BELOW",
+        "sentence": "D is positioned below T.",
+        "template_ids": [
+          "BELOW_05"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "I",
+        "relation": "LOWER_LEFT",
+        "sentence": "T is diagonally left and below I.",
+        "template_ids": [
+          "LOWER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "U",
+        "relation": "LOWER_LEFT",
+        "sentence": "D is on the left side of and below U.",
+        "template_ids": [
+          "LOWER_LEFT_03"
+        ]
+      }
+    ]
+  },
+  "94140": {
+    "query_arg1": "C",
+    "query_arg2": "Y",
+    "path": [
+      "Y",
+      "E",
+      "F",
+      "C"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "UPPER_LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -2,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "E",
+        "arg2": "F",
+        "relation": "LOWER_RIGHT",
+        "sentence": "E is positioned below and to the right of F.",
+        "template_ids": [
+          "LOWER_RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "Y",
+        "relation": "ABOVE",
+        "sentence": "E is on the same vertical plane directly above Y.",
+        "template_ids": [
+          "ABOVE_22"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "F",
+        "relation": "LOWER_LEFT",
+        "sentence": "C is diagonally to the bottom left of F.",
+        "template_ids": [
+          "LOWER_LEFT_23"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "K",
+        "relation": "LEFT",
+        "sentence": "G is to the left of K with a small gap between them.",
+        "template_ids": [
+          "LEFT_17"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "Y",
+        "relation": "UPPER_RIGHT",
+        "sentence": "K is to the top right of Y.",
+        "template_ids": [
+          "UPPER_RIGHT_01"
+        ]
+      }
+    ]
+  },
+  "101274": {
+    "query_arg1": "N",
+    "query_arg2": "A",
+    "path": [
+      "A",
+      "U",
+      "V",
+      "N"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "LOWER_LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -3,
+    "dy": -3,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "O",
+        "relation": "BELOW",
+        "sentence": "D and O are vertical and D is below O.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "U",
+        "relation": "UPPER_RIGHT",
+        "sentence": "A is above U at 2 o'clock.",
+        "template_ids": [
+          "UPPER_RIGHT_07"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "O",
+        "relation": "BELOW",
+        "sentence": "The object N is positioned directly below the object O.",
+        "template_ids": [
+          "BELOW_10"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "V",
+        "relation": "UPPER_RIGHT",
+        "sentence": "U is diagonally to the upper right of V.",
+        "template_ids": [
+          "UPPER_RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "N",
+        "relation": "UPPER_RIGHT",
+        "sentence": "N is there and V is at the 2 position of a clock face.",
+        "template_ids": [
+          "UPPER_RIGHT_13"
+        ]
+      }
+    ]
+  },
+  "92735": {
+    "query_arg1": "M",
+    "query_arg2": "G",
+    "path": [
+      "G",
+      "I",
+      "L",
+      "M"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "UPPER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 2,
+    "dy": 1,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "G",
+        "arg2": "D",
+        "relation": "ABOVE",
+        "sentence": "G and D are vertical and G is above D.",
+        "template_ids": [
+          "ABOVE_19"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "G",
+        "relation": "LOWER_RIGHT",
+        "sentence": "I is below G at 4 o'clock.",
+        "template_ids": [
+          "LOWER_RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "L is diagonally to the upper right of I.",
+        "template_ids": [
+          "UPPER_RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "N",
+        "relation": "LOWER_LEFT",
+        "sentence": "The objects D and N are over there. The object D is lower and slightly to the left of the object N.",
+        "template_ids": [
+          "LOWER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "M",
+        "relation": "BELOW",
+        "sentence": "M and L are side by side with L at the bottom and M on the top.",
+        "template_ids": [
+          "BELOW_24"
+        ]
+      }
+    ]
+  },
+  "103518": {
+    "query_arg1": "M",
+    "query_arg2": "X",
+    "path": [
+      "X",
+      "U",
+      "B",
+      "M"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "UPPER_RIGHT",
+      "LOWER_LEFT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "X",
+        "arg2": "U",
+        "relation": "UPPER_RIGHT",
+        "sentence": "X is on the upper right of U.",
+        "template_ids": [
+          "UPPER_RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "I",
+        "relation": "ABOVE",
+        "sentence": "H and I are next to each other with H on the top and I at the bottom.",
+        "template_ids": [
+          "ABOVE_26"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "X",
+        "relation": "LEFT",
+        "sentence": "I and X are parallel, and I on the left of X.",
+        "template_ids": [
+          "LEFT_04"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "M",
+        "relation": "UPPER_RIGHT",
+        "sentence": "B is diagonally above M to the right at a 45 degree.",
+        "template_ids": [
+          "UPPER_RIGHT_21"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "B",
+        "relation": "LOWER_LEFT",
+        "sentence": "U is placed at the lower left of B.",
+        "template_ids": [
+          "LOWER_LEFT_11"
+        ]
+      }
+    ]
+  },
+  "95870": {
+    "query_arg1": "D",
+    "query_arg2": "C",
+    "path": [
+      "C",
+      "W",
+      "V",
+      "D"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "BELOW",
+      "UPPER_LEFT"
+    ],
+    "dx": -2,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "C",
+        "arg2": "W",
+        "relation": "LOWER_RIGHT",
+        "sentence": "C is below W at 4 o'clock.",
+        "template_ids": [
+          "LOWER_RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "D",
+        "relation": "LOWER_LEFT",
+        "sentence": "T is at a 45 degree angle to D, in the lower lefthand corner.",
+        "template_ids": [
+          "LOWER_LEFT_20"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "T",
+        "relation": "RIGHT",
+        "sentence": "U is on the right and T is on the left.",
+        "template_ids": [
+          "RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "D is at a 45 degree angle to V, in the upper lefthand corner.",
+        "template_ids": [
+          "UPPER_LEFT_21"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "W",
+        "relation": "BELOW",
+        "sentence": "V is at the 6 o'clock position relative to W.",
+        "template_ids": [
+          "BELOW_17"
+        ]
+      }
+    ]
+  },
+  "90221": {
+    "query_arg1": "H",
+    "query_arg2": "X",
+    "path": [
+      "X",
+      "B",
+      "V",
+      "E",
+      "H"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "ABOVE",
+      "RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "V",
+        "arg2": "E",
+        "relation": "LEFT",
+        "sentence": "E is over there and V is on the left of it.",
+        "template_ids": [
+          "LEFT_12"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "V",
+        "relation": "BELOW",
+        "sentence": "B is sitting at the lower position to V.",
+        "template_ids": [
+          "BELOW_15"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "H",
+        "relation": "BELOW",
+        "sentence": "H and P are side by side with P at the bottom and H on the top.",
+        "template_ids": [
+          "BELOW_24"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "H is upper left of E.",
+        "template_ids": [
+          "UPPER_LEFT_06"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "X",
+        "relation": "LOWER_LEFT",
+        "sentence": "B is to the bottom left of X.",
+        "template_ids": [
+          "LOWER_LEFT_01"
+        ]
+      }
+    ]
+  },
+  "91319": {
+    "query_arg1": "I",
+    "query_arg2": "J",
+    "path": [
+      "J",
+      "N",
+      "O",
+      "Q",
+      "I"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "RIGHT",
+      "LOWER_LEFT",
+      "UPPER_LEFT"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "O",
+        "arg2": "Q",
+        "relation": "UPPER_RIGHT",
+        "sentence": "O is to the top-right of Q.",
+        "template_ids": [
+          "UPPER_RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "J",
+        "relation": "UPPER_RIGHT",
+        "sentence": "N is positioned up and to the right of J.",
+        "template_ids": [
+          "UPPER_RIGHT_08"
+        ]
+      },
+      {
+        "arg1": "Q",
+        "arg2": "I",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Object Q is below object I and to the right of it, too.",
+        "template_ids": [
+          "LOWER_RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "O",
+        "relation": "LEFT",
+        "sentence": "N is at O’s 9 o'clock.",
+        "template_ids": [
+          "LEFT_01"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "F",
+        "relation": "UPPER_LEFT",
+        "sentence": "I is above F at 10 o'clock.",
+        "template_ids": [
+          "UPPER_LEFT_08"
+        ]
+      }
+    ]
+  },
+  "92265": {
+    "query_arg1": "P",
+    "query_arg2": "A",
+    "path": [
+      "A",
+      "F",
+      "Y",
+      "E",
+      "P"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "LOWER_RIGHT",
+      "BELOW",
+      "LOWER_LEFT"
+    ],
+    "dx": 1,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "F",
+        "arg2": "Y",
+        "relation": "UPPER_LEFT",
+        "sentence": "F is directly north west of Y.",
+        "template_ids": [
+          "UPPER_LEFT_19"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "H",
+        "relation": "BELOW",
+        "sentence": "A is below H.",
+        "template_ids": [
+          "BELOW_01"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "Y",
+        "relation": "BELOW",
+        "sentence": "Y and E are both there with the object E below the object Y.",
+        "template_ids": [
+          "BELOW_25"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "F",
+        "relation": "LOWER_LEFT",
+        "sentence": "A is south west of F.",
+        "template_ids": [
+          "LOWER_LEFT_15"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "E",
+        "relation": "LOWER_LEFT",
+        "sentence": "P is below E at 7 o'clock.",
+        "template_ids": [
+          "LOWER_LEFT_07"
+        ]
+      }
+    ]
+  },
+  "103906": {
+    "query_arg1": "K",
+    "query_arg2": "A",
+    "path": [
+      "A",
+      "Z",
+      "Y",
+      "W",
+      "K"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "LOWER_RIGHT",
+      "UPPER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 4,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "Y",
+        "arg2": "W",
+        "relation": "LOWER_LEFT",
+        "sentence": "Y is diagonally left and below W.",
+        "template_ids": [
+          "LOWER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "E",
+        "relation": "RIGHT",
+        "sentence": "A is to the right of E.",
+        "template_ids": [
+          "RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "A",
+        "relation": "LOWER_RIGHT",
+        "sentence": "A is there and Z is at the 5 position of a clock face.",
+        "template_ids": [
+          "LOWER_RIGHT_14"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "Z",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Y is on the right side and below Z.",
+        "template_ids": [
+          "LOWER_RIGHT_03"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "W",
+        "relation": "LOWER_RIGHT",
+        "sentence": "K is placed at the lower right of W.",
+        "template_ids": [
+          "LOWER_RIGHT_12"
+        ]
+      }
+    ]
+  },
+  "93706": {
+    "query_arg1": "B",
+    "query_arg2": "E",
+    "path": [
+      "E",
+      "Z",
+      "G",
+      "V",
+      "B"
+    ],
+    "path_relations": [
+      "BELOW",
+      "LEFT",
+      "LOWER_RIGHT",
+      "BELOW"
+    ],
+    "dx": 0,
+    "dy": -3,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "G",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "G is on the left side and above V.",
+        "template_ids": [
+          "UPPER_LEFT_03"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "Z",
+        "relation": "LEFT",
+        "sentence": "G and Z are parallel, and G is to the left of Z.",
+        "template_ids": [
+          "LEFT_14"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "B",
+        "relation": "LEFT",
+        "sentence": "T and B are both there with the object T is to the left of object B.",
+        "template_ids": [
+          "LEFT_21"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "V",
+        "relation": "BELOW",
+        "sentence": "B is positioned below V.",
+        "template_ids": [
+          "BELOW_05"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "Z",
+        "relation": "ABOVE",
+        "sentence": "E is at the 12 o'clock position relative to Z.",
+        "template_ids": [
+          "ABOVE_17"
+        ]
+      }
+    ]
+  },
+  "88999": {
+    "query_arg1": "Q",
+    "query_arg2": "N",
+    "path": [
+      "N",
+      "K",
+      "M",
+      "W",
+      "Q"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "RIGHT",
+      "ABOVE",
+      "ABOVE"
+    ],
+    "dx": 1,
+    "dy": 3,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "W",
+        "arg2": "M",
+        "relation": "ABOVE",
+        "sentence": "W and M are next to each other with W on the top and M at the bottom.",
+        "template_ids": [
+          "ABOVE_26"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "K",
+        "relation": "BELOW",
+        "sentence": "N and K are vertical and N is below K.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "N",
+        "relation": "LEFT",
+        "sentence": "G is sitting at the 9:00 position of N.",
+        "template_ids": [
+          "LEFT_10"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "Q",
+        "relation": "BELOW",
+        "sentence": "W and Q are vertical and W is below Q.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "K",
+        "relation": "RIGHT",
+        "sentence": "M is sitting in the right direction of K.",
+        "template_ids": [
+          "RIGHT_11"
+        ]
+      }
+    ]
+  },
+  "95279": {
+    "query_arg1": "Z",
+    "query_arg2": "A",
+    "path": [
+      "A",
+      "G",
+      "D",
+      "W",
+      "Z"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "LOWER_RIGHT",
+      "LOWER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 2,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "A",
+        "arg2": "G",
+        "relation": "BELOW",
+        "sentence": "A is at the bottom of G.",
+        "template_ids": [
+          "BELOW_03"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "D",
+        "relation": "UPPER_LEFT",
+        "sentence": "G is diagonally to the upper left of D.",
+        "template_ids": [
+          "UPPER_LEFT_24"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "Z",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Y presents lower right to Z.",
+        "template_ids": [
+          "LOWER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "W",
+        "relation": "UPPER_LEFT",
+        "sentence": "D is above W and to the left of W.",
+        "template_ids": [
+          "UPPER_LEFT_27"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "W",
+        "relation": "ABOVE",
+        "sentence": "W is over there and Z is directly above it.",
+        "template_ids": [
+          "ABOVE_11"
+        ]
+      }
+    ]
+  },
+  "96175": {
+    "query_arg1": "C",
+    "query_arg2": "D",
+    "path": [
+      "D",
+      "P",
+      "X",
+      "N",
+      "C"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "BELOW",
+      "UPPER_LEFT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "X",
+        "arg2": "N",
+        "relation": "LOWER_RIGHT",
+        "sentence": "X is lower right of N.",
+        "template_ids": [
+          "LOWER_RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "X",
+        "relation": "ABOVE",
+        "sentence": "P and X are parallel, and P is over X.",
+        "template_ids": [
+          "ABOVE_07"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "C",
+        "relation": "UPPER_LEFT",
+        "sentence": "N is to the top-left of C.",
+        "template_ids": [
+          "UPPER_LEFT_07"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "C",
+        "relation": "LEFT",
+        "sentence": "O is at the 9 o'clock position relative to C.",
+        "template_ids": [
+          "LEFT_13"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "P",
+        "relation": "LOWER_LEFT",
+        "sentence": "D is lower left to P.",
+        "template_ids": [
+          "LOWER_LEFT_05"
+        ]
+      }
+    ]
+  },
+  "91880": {
+    "query_arg1": "A",
+    "query_arg2": "Y",
+    "path": [
+      "Y",
+      "W",
+      "J",
+      "Z",
+      "A"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "LOWER_LEFT",
+      "ABOVE",
+      "LOWER_LEFT"
+    ],
+    "dx": -1,
+    "dy": -2,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "J",
+        "arg2": "W",
+        "relation": "LOWER_LEFT",
+        "sentence": "J is lower left to W.",
+        "template_ids": [
+          "LOWER_LEFT_05"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "J",
+        "relation": "ABOVE",
+        "sentence": "Z is placed on the top of J.",
+        "template_ids": [
+          "ABOVE_12"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "B",
+        "relation": "ABOVE",
+        "sentence": "Y is directly above B.",
+        "template_ids": [
+          "ABOVE_02"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "A",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Z is on the upper right of A.",
+        "template_ids": [
+          "UPPER_RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "Y",
+        "relation": "LOWER_RIGHT",
+        "sentence": "W is positioned below Y and to the right.",
+        "template_ids": [
+          "LOWER_RIGHT_20"
+        ]
+      }
+    ]
+  },
+  "101092": {
+    "query_arg1": "S",
+    "query_arg2": "G",
+    "path": [
+      "G",
+      "I",
+      "U",
+      "Z",
+      "S"
+    ],
+    "path_relations": [
+      "BELOW",
+      "UPPER_LEFT",
+      "RIGHT",
+      "LOWER_LEFT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "I",
+        "arg2": "G",
+        "relation": "BELOW",
+        "sentence": "I is at the bottom and G is on the top.",
+        "template_ids": [
+          "BELOW_13"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "Z",
+        "relation": "LOWER_LEFT",
+        "sentence": "S is positioned in the lower left corner of Z.",
+        "template_ids": [
+          "LOWER_LEFT_04"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "C",
+        "relation": "BELOW",
+        "sentence": "S is directly below C.",
+        "template_ids": [
+          "BELOW_02"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "Z",
+        "relation": "LEFT",
+        "sentence": "U and Z are parallel, and U on the left of Z.",
+        "template_ids": [
+          "LEFT_04"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "I",
+        "relation": "UPPER_LEFT",
+        "sentence": "U is directly north west of I.",
+        "template_ids": [
+          "UPPER_LEFT_19"
+        ]
+      }
+    ]
+  },
+  "86290": {
+    "query_arg1": "P",
+    "query_arg2": "B",
+    "path": [
+      "B",
+      "L",
+      "M",
+      "Z",
+      "P"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "UPPER_LEFT",
+      "LEFT",
+      "LOWER_RIGHT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "M",
+        "arg2": "L",
+        "relation": "UPPER_LEFT",
+        "sentence": "M is positioned above L and to the left.",
+        "template_ids": [
+          "UPPER_LEFT_20"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "Z",
+        "relation": "LOWER_RIGHT",
+        "sentence": "P is positioned below and to the right of Z.",
+        "template_ids": [
+          "LOWER_RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "B",
+        "relation": "ABOVE",
+        "sentence": "L is on the same vertical plane directly above B.",
+        "template_ids": [
+          "ABOVE_22"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "P",
+        "relation": "RIGHT",
+        "sentence": "K is to the right of P and is on the same horizontal plane.",
+        "template_ids": [
+          "RIGHT_19"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "Z",
+        "relation": "RIGHT",
+        "sentence": "M is at Z's 3 o'clock.",
+        "template_ids": [
+          "RIGHT_01"
+        ]
+      }
+    ]
+  },
+  "86694": {
+    "query_arg1": "K",
+    "query_arg2": "L",
+    "path": [
+      "L",
+      "H",
+      "A",
+      "E",
+      "K"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "LOWER_LEFT",
+      "BELOW",
+      "UPPER_RIGHT"
+    ],
+    "dx": -1,
+    "dy": -2,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "L",
+        "arg2": "H",
+        "relation": "UPPER_RIGHT",
+        "sentence": "L is placed at the upper right of H.",
+        "template_ids": [
+          "UPPER_RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "K",
+        "relation": "LOWER_LEFT",
+        "sentence": "E is on the lower left of K.",
+        "template_ids": [
+          "LOWER_LEFT_00"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "H",
+        "relation": "LOWER_LEFT",
+        "sentence": "A is to the left of H and below H at approximately a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_14"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "A",
+        "relation": "BELOW",
+        "sentence": "A and E are next to each other with E at the bottom A on the top.",
+        "template_ids": [
+          "BELOW_26"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object K is positioned above and to the left of object V.",
+        "template_ids": [
+          "UPPER_LEFT_10"
+        ]
+      }
+    ]
+  },
+  "104379": {
+    "query_arg1": "I",
+    "query_arg2": "N",
+    "path": [
+      "N",
+      "C",
+      "Z",
+      "T",
+      "I"
+    ],
+    "path_relations": [
+      "LEFT",
+      "UPPER_LEFT",
+      "LOWER_RIGHT",
+      "LOWER_LEFT"
+    ],
+    "dx": -2,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "I",
+        "arg2": "G",
+        "relation": "UPPER_LEFT",
+        "sentence": "I is above G at 10 o'clock.",
+        "template_ids": [
+          "UPPER_LEFT_08"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "T",
+        "relation": "UPPER_LEFT",
+        "sentence": "Z is upper left of T.",
+        "template_ids": [
+          "UPPER_LEFT_06"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "N",
+        "relation": "LEFT",
+        "sentence": "C and N are both there with the object C is to the left of object N.",
+        "template_ids": [
+          "LEFT_21"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "C",
+        "relation": "UPPER_LEFT",
+        "sentence": "Z is sitting at the upper left position to C.",
+        "template_ids": [
+          "UPPER_LEFT_13"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "T",
+        "relation": "LOWER_LEFT",
+        "sentence": "I is at a 45 degree angle to T, in the lower lefthand corner.",
+        "template_ids": [
+          "LOWER_LEFT_20"
+        ]
+      }
+    ]
+  },
+  "99523": {
+    "query_arg1": "Z",
+    "query_arg2": "N",
+    "path": [
+      "N",
+      "T",
+      "V",
+      "R",
+      "Z"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "ABOVE",
+      "UPPER_LEFT",
+      "BELOW"
+    ],
+    "dx": -2,
+    "dy": 2,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "V",
+        "arg2": "R",
+        "relation": "LOWER_RIGHT",
+        "sentence": "V is sitting at the lower right position to R.",
+        "template_ids": [
+          "LOWER_RIGHT_13"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "Z",
+        "relation": "ABOVE",
+        "sentence": "R is directly above Z.",
+        "template_ids": [
+          "ABOVE_02"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "Z",
+        "relation": "LEFT",
+        "sentence": "H is to the left of Z and is on the same horizontal plane.",
+        "template_ids": [
+          "LEFT_19"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "N",
+        "relation": "UPPER_LEFT",
+        "sentence": "T is positioned above and to the left of N.",
+        "template_ids": [
+          "UPPER_LEFT_09"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "V",
+        "relation": "BELOW",
+        "sentence": "T is directly below V.",
+        "template_ids": [
+          "BELOW_02"
+        ]
+      }
+    ]
+  },
+  "101246": {
+    "query_arg1": "K",
+    "query_arg2": "D",
+    "path": [
+      "D",
+      "Y",
+      "N",
+      "P",
+      "K"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "BELOW",
+      "LEFT",
+      "LEFT"
+    ],
+    "dx": -2,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "Y",
+        "relation": "BELOW",
+        "sentence": "Y is over there and D is directly below it.",
+        "template_ids": [
+          "BELOW_11"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "D",
+        "relation": "BELOW",
+        "sentence": "O is on the same vertical plane directly below D.",
+        "template_ids": [
+          "BELOW_22"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "N",
+        "relation": "LEFT",
+        "sentence": "P is to the left of N and is on the same horizontal plane.",
+        "template_ids": [
+          "LEFT_19"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "N",
+        "relation": "ABOVE",
+        "sentence": "Y is at N's 12 o'clock.",
+        "template_ids": [
+          "ABOVE_04"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "P",
+        "relation": "LEFT",
+        "sentence": "K presents left to P.",
+        "template_ids": [
+          "LEFT_23"
+        ]
+      }
+    ]
+  },
+  "94943": {
+    "query_arg1": "A",
+    "query_arg2": "I",
+    "path": [
+      "I",
+      "G",
+      "D",
+      "F",
+      "A"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "ABOVE",
+      "UPPER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 4,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "D",
+        "arg2": "F",
+        "relation": "LOWER_LEFT",
+        "sentence": "D is south west of F.",
+        "template_ids": [
+          "LOWER_LEFT_15"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "D",
+        "relation": "BELOW",
+        "sentence": "G is at D's 6 o'clock.",
+        "template_ids": [
+          "BELOW_04"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "A",
+        "relation": "BELOW",
+        "sentence": "U and A are parallel, and U is under A.",
+        "template_ids": [
+          "BELOW_07"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "G",
+        "relation": "LOWER_RIGHT",
+        "sentence": "I is on the right side and below G.",
+        "template_ids": [
+          "LOWER_RIGHT_03"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "A",
+        "relation": "BELOW",
+        "sentence": "F is sitting at the lower position to A.",
+        "template_ids": [
+          "BELOW_15"
+        ]
+      }
+    ]
+  },
+  "98237": {
+    "query_arg1": "V",
+    "query_arg2": "O",
+    "path": [
+      "O",
+      "I",
+      "P",
+      "B",
+      "V"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "UPPER_LEFT",
+      "LEFT",
+      "LEFT"
+    ],
+    "dx": -4,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "O",
+        "arg2": "I",
+        "relation": "UPPER_RIGHT",
+        "sentence": "O is directly north east of I.",
+        "template_ids": [
+          "UPPER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "B",
+        "relation": "LEFT",
+        "sentence": "V is to the left of B.",
+        "template_ids": [
+          "LEFT_00"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "I",
+        "relation": "UPPER_LEFT",
+        "sentence": "P is above and to the left of I.",
+        "template_ids": [
+          "UPPER_LEFT_17"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "O",
+        "relation": "LOWER_LEFT",
+        "sentence": "R is diagonally left and below O.",
+        "template_ids": [
+          "LOWER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "P",
+        "relation": "LEFT",
+        "sentence": "B is on the left side to P.",
+        "template_ids": [
+          "LEFT_03"
+        ]
+      }
+    ]
+  },
+  "85242": {
+    "query_arg1": "J",
+    "query_arg2": "Z",
+    "path": [
+      "Z",
+      "A",
+      "S",
+      "Y",
+      "J"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "LOWER_LEFT",
+      "UPPER_LEFT",
+      "ABOVE"
+    ],
+    "dx": -3,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "A",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Z is on the upper right of A.",
+        "template_ids": [
+          "UPPER_RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "S",
+        "relation": "UPPER_LEFT",
+        "sentence": "Y is above S at 10 o'clock.",
+        "template_ids": [
+          "UPPER_LEFT_08"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "A",
+        "relation": "LOWER_LEFT",
+        "sentence": "S is to the left of A and below A at approximately a 45 degree angle.",
+        "template_ids": [
+          "LOWER_LEFT_14"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "Y",
+        "relation": "ABOVE",
+        "sentence": "J and Y are parallel, and J is over Y.",
+        "template_ids": [
+          "ABOVE_07"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "I",
+        "relation": "ABOVE",
+        "sentence": "Z is on the top side to I.",
+        "template_ids": [
+          "ABOVE_06"
+        ]
+      }
+    ]
+  },
+  "98755": {
+    "query_arg1": "M",
+    "query_arg2": "K",
+    "path": [
+      "K",
+      "A",
+      "N",
+      "H",
+      "M"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "BELOW",
+      "BELOW",
+      "ABOVE"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "N",
+        "arg2": "H",
+        "relation": "ABOVE",
+        "sentence": "N is on the top and H is at the bottom.",
+        "template_ids": [
+          "ABOVE_13"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "A",
+        "relation": "LOWER_LEFT",
+        "sentence": "K is below A at 7 o'clock.",
+        "template_ids": [
+          "LOWER_LEFT_07"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "A",
+        "relation": "BELOW",
+        "sentence": "A and N are in a vertical line with N below A.",
+        "template_ids": [
+          "BELOW_20"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "J",
+        "relation": "RIGHT",
+        "sentence": "M presents right to J.",
+        "template_ids": [
+          "RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "M",
+        "relation": "BELOW",
+        "sentence": "M is over there and H is at the bottom of it.",
+        "template_ids": [
+          "BELOW_16"
+        ]
+      }
+    ]
+  },
+  "84114": {
+    "query_arg1": "H",
+    "query_arg2": "I",
+    "path": [
+      "I",
+      "O",
+      "B",
+      "F",
+      "H"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "UPPER_RIGHT",
+      "BELOW",
+      "BELOW"
+    ],
+    "dx": 1,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "H",
+        "arg2": "F",
+        "relation": "BELOW",
+        "sentence": "H is positioned below F.",
+        "template_ids": [
+          "BELOW_05"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "H",
+        "relation": "LOWER_LEFT",
+        "sentence": "X is directly south west of H.",
+        "template_ids": [
+          "LOWER_LEFT_18"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "B",
+        "relation": "BELOW",
+        "sentence": "The object F is positioned directly below the object B.",
+        "template_ids": [
+          "BELOW_10"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "O",
+        "relation": "BELOW",
+        "sentence": "I is below O with a small gap between them.",
+        "template_ids": [
+          "BELOW_21"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "B",
+        "relation": "LOWER_LEFT",
+        "sentence": "O is sitting at the lower left position to B.",
+        "template_ids": [
+          "LOWER_LEFT_12"
+        ]
+      }
+    ]
+  },
+  "98789": {
+    "query_arg1": "Y",
+    "query_arg2": "O",
+    "path": [
+      "O",
+      "K",
+      "S",
+      "D",
+      "V",
+      "Y"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "UPPER_RIGHT",
+      "LOWER_LEFT",
+      "UPPER_RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": 1,
+    "dy": 1,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "K",
+        "arg2": "S",
+        "relation": "LOWER_LEFT",
+        "sentence": "K is below S at 7 o'clock.",
+        "template_ids": [
+          "LOWER_LEFT_07"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "O",
+        "relation": "LOWER_RIGHT",
+        "sentence": "K is diagonally right and below O.",
+        "template_ids": [
+          "LOWER_RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "D",
+        "relation": "UPPER_RIGHT",
+        "sentence": "S is upper right to D.",
+        "template_ids": [
+          "UPPER_RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "D",
+        "relation": "UPPER_RIGHT",
+        "sentence": "If D is the center of a clock face, V is located between 2 and 3.",
+        "template_ids": [
+          "UPPER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object Y is positioned above and to the left of object V.",
+        "template_ids": [
+          "UPPER_LEFT_10"
+        ]
+      }
+    ]
+  },
+  "102164": {
+    "query_arg1": "Y",
+    "query_arg2": "R",
+    "path": [
+      "R",
+      "G",
+      "M",
+      "C",
+      "L",
+      "Y"
+    ],
+    "path_relations": [
+      "LEFT",
+      "LOWER_LEFT",
+      "UPPER_RIGHT",
+      "BELOW",
+      "LOWER_LEFT"
+    ],
+    "dx": -2,
+    "dy": -2,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "M",
+        "arg2": "G",
+        "relation": "LOWER_LEFT",
+        "sentence": "If G is the center of a clock face, M is located between 7 and 8.",
+        "template_ids": [
+          "LOWER_LEFT_25"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "L",
+        "relation": "ABOVE",
+        "sentence": "C is sitting at the 12:00 position to L.",
+        "template_ids": [
+          "ABOVE_14"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "L",
+        "relation": "LOWER_LEFT",
+        "sentence": "Y is positioned in the lower left corner of L.",
+        "template_ids": [
+          "LOWER_LEFT_04"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "G",
+        "relation": "RIGHT",
+        "sentence": "The object labeled R is positioned to the right of the object labeled G.",
+        "template_ids": [
+          "RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "M",
+        "relation": "UPPER_RIGHT",
+        "sentence": "The object C is positioned above and to the right of the object M.",
+        "template_ids": [
+          "UPPER_RIGHT_09"
+        ]
+      }
+    ]
+  },
+  "97530": {
+    "query_arg1": "H",
+    "query_arg2": "U",
+    "path": [
+      "U",
+      "F",
+      "V",
+      "E",
+      "C",
+      "H"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "ABOVE",
+      "LOWER_RIGHT",
+      "RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": 2,
+    "dy": 1,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "E",
+        "arg2": "V",
+        "relation": "LOWER_RIGHT",
+        "sentence": "E is diagonally below V to the right at a 45 degree angle.",
+        "template_ids": [
+          "LOWER_RIGHT_22"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "F",
+        "relation": "LEFT",
+        "sentence": "U is to the left of F and is on the same horizontal plane.",
+        "template_ids": [
+          "LEFT_19"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "V",
+        "relation": "BELOW",
+        "sentence": "F is at V's 6 o'clock.",
+        "template_ids": [
+          "BELOW_04"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "C",
+        "relation": "LEFT",
+        "sentence": "E and C are parallel, and E on the left of C.",
+        "template_ids": [
+          "LEFT_04"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "H",
+        "relation": "LOWER_RIGHT",
+        "sentence": "C is to the bottom right of H.",
+        "template_ids": [
+          "LOWER_RIGHT_01"
+        ]
+      }
+    ]
+  },
+  "97613": {
+    "query_arg1": "G",
+    "query_arg2": "O",
+    "path": [
+      "O",
+      "F",
+      "T",
+      "W",
+      "L",
+      "G"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "UPPER_LEFT",
+      "LOWER_RIGHT",
+      "LOWER_LEFT",
+      "UPPER_RIGHT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "T",
+        "arg2": "W",
+        "relation": "UPPER_LEFT",
+        "sentence": "If T is the center of a clock face, W is located between 4 and 5.",
+        "template_ids": [
+          "UPPER_LEFT_26"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "T",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object F is lower and slightly to the right of the object T.",
+        "template_ids": [
+          "LOWER_RIGHT_02"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "W",
+        "relation": "LOWER_LEFT",
+        "sentence": "L is below and to the left of W.",
+        "template_ids": [
+          "LOWER_LEFT_16"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "O",
+        "relation": "LOWER_LEFT",
+        "sentence": "Object F is below object O and to the left of it, too.",
+        "template_ids": [
+          "LOWER_LEFT_22"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "G",
+        "relation": "LOWER_LEFT",
+        "sentence": "L is sitting at the lower left position to G.",
+        "template_ids": [
+          "LOWER_LEFT_12"
+        ]
+      }
+    ]
+  },
+  "103826": {
+    "query_arg1": "B",
+    "query_arg2": "D",
+    "path": [
+      "D",
+      "S",
+      "E",
+      "T",
+      "Q",
+      "B"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "LOWER_LEFT",
+      "LOWER_LEFT",
+      "UPPER_RIGHT",
+      "LEFT"
+    ],
+    "dx": -3,
+    "dy": 0,
+    "gold": "LEFT",
+    "edges": [
+      {
+        "arg1": "Q",
+        "arg2": "B",
+        "relation": "RIGHT",
+        "sentence": "Q is at the 3 o'clock position relative to B.",
+        "template_ids": [
+          "RIGHT_13"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "S",
+        "relation": "LOWER_LEFT",
+        "sentence": "E is positioned in the lower left corner of S.",
+        "template_ids": [
+          "LOWER_LEFT_04"
+        ]
+      },
+      {
+        "arg1": "D",
+        "arg2": "S",
+        "relation": "LOWER_RIGHT",
+        "sentence": "D is on the lower right of S.",
+        "template_ids": [
+          "LOWER_RIGHT_00"
+        ]
+      },
+      {
+        "arg1": "Q",
+        "arg2": "T",
+        "relation": "UPPER_RIGHT",
+        "sentence": "Q is diagonally right and above T.",
+        "template_ids": [
+          "UPPER_RIGHT_10"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "T",
+        "relation": "UPPER_RIGHT",
+        "sentence": "E is on the upper right of T.",
+        "template_ids": [
+          "UPPER_RIGHT_00"
+        ]
+      }
+    ]
+  },
+  "86592": {
+    "query_arg1": "Z",
+    "query_arg2": "H",
+    "path": [
+      "H",
+      "P",
+      "K",
+      "V",
+      "X",
+      "Z"
+    ],
+    "path_relations": [
+      "UPPER_LEFT",
+      "ABOVE",
+      "LEFT",
+      "ABOVE",
+      "BELOW"
+    ],
+    "dx": -2,
+    "dy": 2,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "P",
+        "arg2": "H",
+        "relation": "UPPER_LEFT",
+        "sentence": "Object P is above object H and to the left of it, too.",
+        "template_ids": [
+          "UPPER_LEFT_23"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "K",
+        "relation": "BELOW",
+        "sentence": "P is directly below K.",
+        "template_ids": [
+          "BELOW_02"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "X",
+        "relation": "BELOW",
+        "sentence": "V is sitting at the lower position to X.",
+        "template_ids": [
+          "BELOW_15"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "Z",
+        "relation": "ABOVE",
+        "sentence": "X is sitting at the top position to Z.",
+        "template_ids": [
+          "ABOVE_15"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "K",
+        "relation": "LEFT",
+        "sentence": "V and K are parallel, and V on the left of K.",
+        "template_ids": [
+          "LEFT_04"
+        ]
+      }
+    ]
+  },
+  "85914": {
+    "query_arg1": "U",
+    "query_arg2": "X",
+    "path": [
+      "X",
+      "Q",
+      "L",
+      "I",
+      "M",
+      "U"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "UPPER_RIGHT",
+      "LEFT",
+      "RIGHT",
+      "BELOW"
+    ],
+    "dx": 2,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "M",
+        "arg2": "I",
+        "relation": "RIGHT",
+        "sentence": "M is sitting in the right direction of I.",
+        "template_ids": [
+          "RIGHT_11"
+        ]
+      },
+      {
+        "arg1": "X",
+        "arg2": "Q",
+        "relation": "LEFT",
+        "sentence": "X is on the left and Q is on the right.",
+        "template_ids": [
+          "LEFT_09"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "L",
+        "relation": "LEFT",
+        "sentence": "I is to the left of L with a small gap between them.",
+        "template_ids": [
+          "LEFT_17"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "Q",
+        "relation": "UPPER_RIGHT",
+        "sentence": "L is directly north east of Q.",
+        "template_ids": [
+          "UPPER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "M",
+        "relation": "BELOW",
+        "sentence": "U is at M's 6 o'clock.",
+        "template_ids": [
+          "BELOW_04"
+        ]
+      }
+    ]
+  },
+  "103654": {
+    "query_arg1": "W",
+    "query_arg2": "Y",
+    "path": [
+      "Y",
+      "Z",
+      "A",
+      "R",
+      "I",
+      "W"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "LOWER_RIGHT",
+      "ABOVE",
+      "LEFT",
+      "LOWER_LEFT"
+    ],
+    "dx": -2,
+    "dy": -2,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "Z",
+        "arg2": "A",
+        "relation": "UPPER_LEFT",
+        "sentence": "Z is placed at the upper left of A.",
+        "template_ids": [
+          "UPPER_LEFT_12"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "W",
+        "relation": "UPPER_RIGHT",
+        "sentence": "I is directly north east of W.",
+        "template_ids": [
+          "UPPER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "A",
+        "relation": "ABOVE",
+        "sentence": "R is to the top of A vertically.",
+        "template_ids": [
+          "ABOVE_08"
+        ]
+      },
+      {
+        "arg1": "I",
+        "arg2": "R",
+        "relation": "LEFT",
+        "sentence": "I is placed in the left direction of R.",
+        "template_ids": [
+          "LEFT_08"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "Y",
+        "relation": "LOWER_LEFT",
+        "sentence": "Z presents lower left to Y.",
+        "template_ids": [
+          "LOWER_LEFT_24"
+        ]
+      }
+    ]
+  },
+  "92689": {
+    "query_arg1": "Z",
+    "query_arg2": "J",
+    "path": [
+      "J",
+      "T",
+      "K",
+      "E",
+      "A",
+      "Z"
+    ],
+    "path_relations": [
+      "BELOW",
+      "RIGHT",
+      "LOWER_LEFT",
+      "RIGHT",
+      "LOWER_LEFT"
+    ],
+    "dx": 0,
+    "dy": -3,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "T",
+        "arg2": "K",
+        "relation": "LEFT",
+        "sentence": "T is to the left of K and is on the same horizontal plane.",
+        "template_ids": [
+          "LEFT_19"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "J",
+        "relation": "BELOW",
+        "sentence": "T is at the lower side of J.",
+        "template_ids": [
+          "BELOW_06"
+        ]
+      },
+      {
+        "arg1": "A",
+        "arg2": "Z",
+        "relation": "UPPER_RIGHT",
+        "sentence": "If Z is the center of a clock face, A is located between 2 and 3.",
+        "template_ids": [
+          "UPPER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "A",
+        "relation": "LEFT",
+        "sentence": "E is on the left side to A.",
+        "template_ids": [
+          "LEFT_03"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "E",
+        "relation": "UPPER_RIGHT",
+        "sentence": "The object K is upper and slightly to the right of the object E.",
+        "template_ids": [
+          "UPPER_RIGHT_02"
+        ]
+      }
+    ]
+  },
+  "91373": {
+    "query_arg1": "G",
+    "query_arg2": "B",
+    "path": [
+      "B",
+      "S",
+      "J",
+      "C",
+      "T",
+      "G"
+    ],
+    "path_relations": [
+      "LOWER_RIGHT",
+      "LEFT",
+      "RIGHT",
+      "RIGHT",
+      "BELOW"
+    ],
+    "dx": 2,
+    "dy": -2,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "C",
+        "arg2": "J",
+        "relation": "RIGHT",
+        "sentence": "C is to the right of J horizontally.",
+        "template_ids": [
+          "RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "C",
+        "relation": "RIGHT",
+        "sentence": "The object labeled T is positioned to the right of the object labeled C.",
+        "template_ids": [
+          "RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "S",
+        "relation": "UPPER_LEFT",
+        "sentence": "B is directly north west of S.",
+        "template_ids": [
+          "UPPER_LEFT_19"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "J",
+        "relation": "RIGHT",
+        "sentence": "S is at J's 3 o'clock.",
+        "template_ids": [
+          "RIGHT_01"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "T",
+        "relation": "BELOW",
+        "sentence": "G is directly below T.",
+        "template_ids": [
+          "BELOW_02"
+        ]
+      }
+    ]
+  },
+  "100614": {
+    "query_arg1": "L",
+    "query_arg2": "U",
+    "path": [
+      "U",
+      "M",
+      "Y",
+      "K",
+      "W",
+      "L"
+    ],
+    "path_relations": [
+      "LEFT",
+      "LOWER_LEFT",
+      "RIGHT",
+      "BELOW",
+      "ABOVE"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "W",
+        "arg2": "K",
+        "relation": "BELOW",
+        "sentence": "K is over there and W is directly below it.",
+        "template_ids": [
+          "BELOW_11"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "M",
+        "relation": "RIGHT",
+        "sentence": "U is positioned right to M.",
+        "template_ids": [
+          "RIGHT_02"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "K",
+        "relation": "LEFT",
+        "sentence": "The object labeled Y is positioned to the left of the object labeled K.",
+        "template_ids": [
+          "LEFT_06"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "W",
+        "relation": "ABOVE",
+        "sentence": "L is at the 12 o'clock position relative to W.",
+        "template_ids": [
+          "ABOVE_17"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "M",
+        "relation": "LOWER_LEFT",
+        "sentence": "Y is south west of M.",
+        "template_ids": [
+          "LOWER_LEFT_15"
+        ]
+      }
+    ]
+  },
+  "87055": {
+    "query_arg1": "F",
+    "query_arg2": "M",
+    "path": [
+      "M",
+      "W",
+      "Z",
+      "Q",
+      "N",
+      "F"
+    ],
+    "path_relations": [
+      "BELOW",
+      "ABOVE",
+      "UPPER_LEFT",
+      "UPPER_RIGHT",
+      "RIGHT"
+    ],
+    "dx": 1,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "W",
+        "arg2": "Z",
+        "relation": "BELOW",
+        "sentence": "W is at the bottom of Z vertically.",
+        "template_ids": [
+          "BELOW_08"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "Q",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Z presents lower right to Q.",
+        "template_ids": [
+          "LOWER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "F",
+        "arg2": "N",
+        "relation": "RIGHT",
+        "sentence": "F is on the right and N is on the left.",
+        "template_ids": [
+          "RIGHT_09"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "W",
+        "relation": "ABOVE",
+        "sentence": "M is positioned above W.",
+        "template_ids": [
+          "ABOVE_05"
+        ]
+      },
+      {
+        "arg1": "N",
+        "arg2": "Q",
+        "relation": "UPPER_RIGHT",
+        "sentence": "N is north east of Q.",
+        "template_ids": [
+          "UPPER_RIGHT_15"
+        ]
+      }
+    ]
+  },
+  "104039": {
+    "query_arg1": "T",
+    "query_arg2": "H",
+    "path": [
+      "H",
+      "E",
+      "L",
+      "R",
+      "F",
+      "T"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "BELOW",
+      "BELOW",
+      "LOWER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": -5,
+    "gold": "LOWER_RIGHT",
+    "edges": [
+      {
+        "arg1": "F",
+        "arg2": "R",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Object F is below object R and to the right of it, too.",
+        "template_ids": [
+          "LOWER_RIGHT_23"
+        ]
+      },
+      {
+        "arg1": "T",
+        "arg2": "F",
+        "relation": "LOWER_RIGHT",
+        "sentence": "T is positioned in the lower right corner of F.",
+        "template_ids": [
+          "LOWER_RIGHT_05"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "E",
+        "relation": "BELOW",
+        "sentence": "E and L are next to each other with L at the bottom E on the top.",
+        "template_ids": [
+          "BELOW_26"
+        ]
+      },
+      {
+        "arg1": "H",
+        "arg2": "E",
+        "relation": "UPPER_RIGHT",
+        "sentence": "H is to the top-right of E.",
+        "template_ids": [
+          "UPPER_RIGHT_06"
+        ]
+      },
+      {
+        "arg1": "L",
+        "arg2": "R",
+        "relation": "ABOVE",
+        "sentence": "L and R are side by side with L on the top and R at the bottom.",
+        "template_ids": [
+          "ABOVE_24"
+        ]
+      }
+    ]
+  },
+  "84506": {
+    "query_arg1": "R",
+    "query_arg2": "O",
+    "path": [
+      "O",
+      "L",
+      "U",
+      "F",
+      "K",
+      "R"
+    ],
+    "path_relations": [
+      "RIGHT",
+      "UPPER_LEFT",
+      "BELOW",
+      "ABOVE",
+      "UPPER_RIGHT"
+    ],
+    "dx": 1,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "F",
+        "arg2": "U",
+        "relation": "BELOW",
+        "sentence": "The object F is positioned directly below the object U.",
+        "template_ids": [
+          "BELOW_10"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "R",
+        "relation": "LOWER_LEFT",
+        "sentence": "If R is the center of a clock face, K is located between 7 and 8.",
+        "template_ids": [
+          "LOWER_LEFT_25"
+        ]
+      },
+      {
+        "arg1": "K",
+        "arg2": "F",
+        "relation": "ABOVE",
+        "sentence": "K is over there with F below.",
+        "template_ids": [
+          "ABOVE_09"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "L",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object U is positioned above and to the left of object L.",
+        "template_ids": [
+          "UPPER_LEFT_10"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "L",
+        "relation": "LEFT",
+        "sentence": "L and O are side by side with L to the right and O to the left.",
+        "template_ids": [
+          "LEFT_20"
+        ]
+      }
+    ]
+  },
+  "94828": {
+    "query_arg1": "U",
+    "query_arg2": "M",
+    "path": [
+      "M",
+      "I",
+      "O",
+      "J",
+      "Z",
+      "U"
+    ],
+    "path_relations": [
+      "LEFT",
+      "ABOVE",
+      "LOWER_LEFT",
+      "LOWER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 0,
+    "dy": -2,
+    "gold": "BELOW",
+    "edges": [
+      {
+        "arg1": "U",
+        "arg2": "Z",
+        "relation": "LOWER_RIGHT",
+        "sentence": "U presents lower right to Z.",
+        "template_ids": [
+          "LOWER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "I",
+        "relation": "RIGHT",
+        "sentence": "M is positioned right to I.",
+        "template_ids": [
+          "RIGHT_02"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "I",
+        "relation": "ABOVE",
+        "sentence": "O is on the top side to I.",
+        "template_ids": [
+          "ABOVE_06"
+        ]
+      },
+      {
+        "arg1": "O",
+        "arg2": "J",
+        "relation": "UPPER_RIGHT",
+        "sentence": "O is diagonally right and above J.",
+        "template_ids": [
+          "UPPER_RIGHT_10"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "J",
+        "relation": "LOWER_RIGHT",
+        "sentence": "Object Z is below object J and to the right of it, too.",
+        "template_ids": [
+          "LOWER_RIGHT_23"
+        ]
+      }
+    ]
+  },
+  "89054": {
+    "query_arg1": "Q",
+    "query_arg2": "J",
+    "path": [
+      "J",
+      "B",
+      "Z",
+      "K",
+      "U",
+      "Q"
+    ],
+    "path_relations": [
+      "LOWER_LEFT",
+      "ABOVE",
+      "LOWER_LEFT",
+      "LOWER_RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": -2,
+    "dy": -1,
+    "gold": "LOWER_LEFT",
+    "edges": [
+      {
+        "arg1": "K",
+        "arg2": "U",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object U and K are there. The object K is above and slightly to the left of the object U.",
+        "template_ids": [
+          "UPPER_LEFT_18"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "Q",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object U and Q are there. The object U is below and slightly to the right of the object Q.",
+        "template_ids": [
+          "LOWER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "B",
+        "arg2": "Z",
+        "relation": "BELOW",
+        "sentence": "B is under Z.",
+        "template_ids": [
+          "BELOW_00"
+        ]
+      },
+      {
+        "arg1": "Z",
+        "arg2": "K",
+        "relation": "UPPER_RIGHT",
+        "sentence": "If K is the center of a clock face, Z is located between 2 and 3.",
+        "template_ids": [
+          "UPPER_RIGHT_25"
+        ]
+      },
+      {
+        "arg1": "J",
+        "arg2": "B",
+        "relation": "UPPER_RIGHT",
+        "sentence": "J presents upper right to B.",
+        "template_ids": [
+          "UPPER_RIGHT_24"
+        ]
+      }
+    ]
+  },
+  "97550": {
+    "query_arg1": "E",
+    "query_arg2": "X",
+    "path": [
+      "X",
+      "Y",
+      "L",
+      "S",
+      "R",
+      "E"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "UPPER_LEFT",
+      "ABOVE",
+      "LOWER_LEFT",
+      "UPPER_RIGHT"
+    ],
+    "dx": -1,
+    "dy": 3,
+    "gold": "UPPER_LEFT",
+    "edges": [
+      {
+        "arg1": "E",
+        "arg2": "R",
+        "relation": "UPPER_RIGHT",
+        "sentence": "E is directly north east of R.",
+        "template_ids": [
+          "UPPER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "L",
+        "relation": "LOWER_RIGHT",
+        "sentence": "The object Y and L are there. The object Y is below and slightly to the right of the object L.",
+        "template_ids": [
+          "LOWER_RIGHT_18"
+        ]
+      },
+      {
+        "arg1": "S",
+        "arg2": "L",
+        "relation": "ABOVE",
+        "sentence": "S and L are both there with the object S above the object L.",
+        "template_ids": [
+          "ABOVE_25"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "X",
+        "relation": "ABOVE",
+        "sentence": "Y presents over X.",
+        "template_ids": [
+          "ABOVE_27"
+        ]
+      },
+      {
+        "arg1": "R",
+        "arg2": "S",
+        "relation": "LOWER_LEFT",
+        "sentence": "R is placed at the lower left of S.",
+        "template_ids": [
+          "LOWER_LEFT_11"
+        ]
+      }
+    ]
+  },
+  "97005": {
+    "query_arg1": "S",
+    "query_arg2": "O",
+    "path": [
+      "O",
+      "M",
+      "T",
+      "W",
+      "E",
+      "S"
+    ],
+    "path_relations": [
+      "UPPER_RIGHT",
+      "LOWER_RIGHT",
+      "RIGHT",
+      "LOWER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 4,
+    "dy": 0,
+    "gold": "RIGHT",
+    "edges": [
+      {
+        "arg1": "W",
+        "arg2": "E",
+        "relation": "UPPER_LEFT",
+        "sentence": "W is diagonally to the upper left of E.",
+        "template_ids": [
+          "UPPER_LEFT_24"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "T",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object M is upper and slightly to the left of the object T.",
+        "template_ids": [
+          "UPPER_LEFT_02"
+        ]
+      },
+      {
+        "arg1": "W",
+        "arg2": "T",
+        "relation": "RIGHT",
+        "sentence": "T and W are in a horizontal line with W on the right.",
+        "template_ids": [
+          "RIGHT_16"
+        ]
+      },
+      {
+        "arg1": "M",
+        "arg2": "O",
+        "relation": "UPPER_RIGHT",
+        "sentence": "M is above O at 2 o'clock.",
+        "template_ids": [
+          "UPPER_RIGHT_07"
+        ]
+      },
+      {
+        "arg1": "E",
+        "arg2": "S",
+        "relation": "BELOW",
+        "sentence": "E is directly below S.",
+        "template_ids": [
+          "BELOW_02"
+        ]
+      }
+    ]
+  },
+  "102494": {
+    "query_arg1": "G",
+    "query_arg2": "C",
+    "path": [
+      "C",
+      "Q",
+      "V",
+      "Y",
+      "H",
+      "G"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "LOWER_RIGHT",
+      "UPPER_LEFT",
+      "UPPER_LEFT",
+      "RIGHT"
+    ],
+    "dx": 0,
+    "dy": 2,
+    "gold": "ABOVE",
+    "edges": [
+      {
+        "arg1": "H",
+        "arg2": "Y",
+        "relation": "UPPER_LEFT",
+        "sentence": "H is upper left of Y.",
+        "template_ids": [
+          "UPPER_LEFT_06"
+        ]
+      },
+      {
+        "arg1": "V",
+        "arg2": "Q",
+        "relation": "LOWER_RIGHT",
+        "sentence": "V is sitting at the lower right position to Q.",
+        "template_ids": [
+          "LOWER_RIGHT_13"
+        ]
+      },
+      {
+        "arg1": "C",
+        "arg2": "Q",
+        "relation": "BELOW",
+        "sentence": "C and Q are vertical and C is below Q.",
+        "template_ids": [
+          "BELOW_19"
+        ]
+      },
+      {
+        "arg1": "Y",
+        "arg2": "V",
+        "relation": "UPPER_LEFT",
+        "sentence": "The object V and Y are there. The object Y is above and slightly to the left of the object V.",
+        "template_ids": [
+          "UPPER_LEFT_18"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "H",
+        "relation": "RIGHT",
+        "sentence": "H is over there and G is on the right of it.",
+        "template_ids": [
+          "RIGHT_12"
+        ]
+      }
+    ]
+  },
+  "90898": {
+    "query_arg1": "D",
+    "query_arg2": "B",
+    "path": [
+      "B",
+      "G",
+      "P",
+      "U",
+      "H",
+      "D"
+    ],
+    "path_relations": [
+      "ABOVE",
+      "RIGHT",
+      "UPPER_RIGHT",
+      "UPPER_RIGHT",
+      "BELOW"
+    ],
+    "dx": 3,
+    "dy": 2,
+    "gold": "UPPER_RIGHT",
+    "edges": [
+      {
+        "arg1": "H",
+        "arg2": "D",
+        "relation": "ABOVE",
+        "sentence": "D is over there and H is directly above it.",
+        "template_ids": [
+          "ABOVE_11"
+        ]
+      },
+      {
+        "arg1": "U",
+        "arg2": "H",
+        "relation": "LOWER_LEFT",
+        "sentence": "U is positioned in the lower left corner of H.",
+        "template_ids": [
+          "LOWER_LEFT_04"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "B",
+        "relation": "ABOVE",
+        "sentence": "G is on the top side to B.",
+        "template_ids": [
+          "ABOVE_06"
+        ]
+      },
+      {
+        "arg1": "G",
+        "arg2": "P",
+        "relation": "LEFT",
+        "sentence": "G is at P’s 9 o'clock.",
+        "template_ids": [
+          "LEFT_01"
+        ]
+      },
+      {
+        "arg1": "P",
+        "arg2": "U",
+        "relation": "LOWER_LEFT",
+        "sentence": "P is lower left to U.",
+        "template_ids": [
+          "LOWER_LEFT_05"
+        ]
+      }
+    ]
+  }
+}

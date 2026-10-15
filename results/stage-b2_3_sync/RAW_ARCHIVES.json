@@ -1,0 +1,15 @@
+{
+  "format_version": 1,
+  "archives": [
+    {
+      "original_path": "artifacts/stage_b2_3_qwen3_generation/full/fg_thinking/row_generations.jsonl",
+      "original_bytes": 65455675,
+      "original_sha256": "364fba2e7a9fc782c0bf2d9a6bb5f16e4be39edc946294450b477117ce2fddc4",
+      "archive_path": "artifacts/stage_b2_3_qwen3_generation/full/fg_thinking/row_generations.jsonl.gz",
+      "archive_bytes": 8830613,
+      "archive_sha256": "680e0e3cd54a42c2b7f99e7db795938a262c0aa8c883be4ec92f61aac673c62b"
+    }
+  ],
+  "restore_command": "python scripts/stage-b2_3/restore_archived_results.py",
+  "integrity": "SHA256 refers to exact bytes, without line-ending normalization"
+}

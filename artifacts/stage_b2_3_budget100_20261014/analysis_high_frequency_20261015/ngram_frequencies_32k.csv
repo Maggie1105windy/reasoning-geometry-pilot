@@ -1,0 +1,401 @@
+﻿n,phrase,total_occurrences,trajectories
+3,to the right,5047,100
+3,try to figure,102,100
+3,is to the,5886,99
+3,the right of,3976,97
+3,the question is,372,97
+3,let me try,816,96
+3,me try to,693,96
+3,step by step,197,95
+3,to the left,2663,94
+3,let me check,315,93
+3,the relation between,475,92
+3,let me think,620,91
+3,to figure out,113,91
+3,the left of,2166,90
+3,so the relation,448,89
+3,the relation of,422,89
+3,let's try to,163,89
+3,and to the,1036,87
+3,for example if,354,85
+3,okay let's try,85,85
+3,is at x,886,84
+3,i need to,364,84
+3,is at some,201,82
+3,so if i,216,81
+3,try to assign,182,80
+3,if i imagine,128,80
+3,the right and,730,79
+3,is at 1,1579,78
+3,at x y,417,78
+3,would be at,303,78
+3,let me assume,257,78
+3,me think again,215,78
+3,to assign coordinates,139,78
+3,the story says,206,77
+3,be to the,361,76
+3,the relation is,292,76
+3,but the question,198,76
+3,figure out the,85,76
+3,so the answer,199,75
+3,but let me,193,75
+3,answer would be,184,75
+3,is at 0,1235,74
+3,the answer would,175,74
+3,above below left,121,74
+3,below left right,121,74
+3,first the story,75,74
+3,is in the,728,73
+3,could be at,456,73
+3,the answer is,241,73
+3,question is about,151,73
+3,i imagine a,90,73
+3,left upper right,117,71
+3,right upper left,107,71
+3,let me start,95,71
+3,is at a,426,70
+3,that would mean,210,70
+3,upper left upper,116,70
+3,left lower right,112,70
+3,let me assign,112,70
+3,right lower left,110,70
+3,lower left lower,109,70
+3,upper right lower,109,70
+3,left right upper,106,70
+3,at 1 1,955,69
+3,for the relation,157,69
+3,wait but the,142,69
+3,at some position,131,69
+3,is the relation,110,69
+3,a coordinate system,97,69
+3,me check if,135,68
+3,the options are,126,68
+3,are above below,103,68
+3,at 0 0,687,67
+3,based on the,158,67
+3,about the relation,118,67
+3,is at 2,1092,66
+3,is on the,813,66
+3,question is asking,137,66
+3,coordinate system where,102,66
+3,but how does,238,65
+3,alternatively maybe the,234,65
+3,me assume that,170,65
+3,me assign coordinates,86,65
+3,try to map,74,65
+3,maybe there's a,207,64
+3,is at the,619,63
+3,need to find,169,63
+3,in terms of,160,63
+3,me check again,97,63
+3,which is to,2064,62
+3,relation would be,126,62
+3,me start by,69,62
+3,the left and,306,61
+3,position relative to,172,61
+3,is about the,98,61
+3,what is the,94,61
+3,options are above,85,61
+3,above and to,425,60
+3,which would be,208,60
+3,the relation would,124,60
+4,to the right of,3903,97
+4,let me try to,693,96
+4,is to the right,3748,92
+4,to the left of,2054,90
+4,try to figure out,91,89
+4,is to the left,1609,88
+4,let's try to figure,86,85
+4,okay let's try to,85,85
+4,to the right and,646,78
+4,let me think again,215,78
+4,me try to assign,171,78
+4,try to assign coordinates,130,77
+4,is at x y,381,75
+4,to figure out the,84,75
+4,the answer would be,175,74
+4,above below left right,121,74
+4,the question is about,150,73
+4,so if i imagine,103,73
+4,if i imagine a,90,73
+4,and to the right,528,71
+4,but the question is,151,71
+4,first the story says,71,71
+4,and to the left,507,70
+4,upper left upper right,115,70
+4,right lower left lower,109,70
+4,left upper right lower,108,70
+4,lower left lower right,108,70
+4,upper right lower left,108,70
+4,below left right upper,106,70
+4,left right upper left,106,70
+4,right upper left upper,106,70
+4,but let me check,149,69
+4,let me check if,135,68
+4,are above below left,103,68
+4,is at 1 1,735,67
+4,the question is asking,137,66
+4,is at 0 0,576,65
+4,let me assume that,170,65
+4,is at some position,127,65
+4,let me assign coordinates,86,65
+4,so the relation is,163,64
+4,so the answer would,121,63
+4,let me check again,97,63
+4,which is to the,2064,62
+4,a coordinate system where,76,62
+4,let me start by,69,62
+4,question is about the,98,61
+4,what is the relation,92,61
+4,above and to the,425,60
+4,the relation would be,122,60
+4,asking for the relation,112,60
+4,is about the relation,97,60
+4,options are above below,84,60
+4,the options are above,83,60
+4,be to the right,140,59
+4,maybe i need to,135,59
+4,is asking for the,112,59
+4,question is asking for,110,59
+4,to the left and,279,57
+4,for the relation of,122,57
+4,about the relation between,87,57
+4,now the question is,80,57
+4,is the relation of,73,57
+4,would be to the,174,56
+4,let me think of,123,55
+4,but i need to,121,55
+4,me try to think,124,54
+4,based on the given,83,54
+4,the right and below,281,53
+4,me try to map,59,53
+4,at x y then,110,52
+4,so the relation would,97,52
+4,but how does that,120,51
+4,is above and to,320,50
+4,is at 0 1,352,48
+4,is at 2 1,273,48
+4,could be at 1,137,48
+4,x y where x,84,48
+4,at 0 0 then,131,47
+4,we need to find,109,47
+4,imagine a coordinate system,57,47
+4,me check if there's,69,46
+4,try to think of,99,45
+4,to find the relation,83,45
+4,the answer should be,57,45
+4,is to the lower,166,44
+4,but the options are,62,44
+4,is to the upper,163,43
+4,at 1 1 then,114,43
+4,how does that relate,65,43
+4,positions step by step,57,43
+4,me start by breaking,43,43
+4,start by breaking down,43,43
+4,find the relation between,82,42
+4,does that relate to,63,42
+4,need to find the,76,41
+4,relation of the agent,50,41
+4,is what is the,47,41
+4,question is what is,46,41
+4,the question is what,46,41
+5,okay let's try to figure,85,85
+5,is to the left of,1376,83
+5,let's try to figure out,84,83
+5,is to the right of,3127,82
+5,let me try to assign,171,78
+5,me try to assign coordinates,124,75
+5,try to figure out the,76,75
+5,is to the right and,474,71
+5,left upper right lower left,108,70
+5,right lower left lower right,108,70
+5,upper left upper right lower,108,70
+5,upper right lower left lower,108,70
+5,above below left right upper,106,70
+5,below left right upper left,106,70
+5,left right upper left upper,106,70
+5,right upper left upper right,106,70
+5,are above below left right,103,68
+5,and to the right of,396,65
+5,so the answer would be,121,63
+5,so if i imagine a,75,63
+5,and to the left of,399,61
+5,the question is about the,97,61
+5,question is about the relation,97,60
+5,options are above below left,84,60
+5,is asking for the relation,111,59
+5,the question is asking for,110,59
+5,question is asking for the,109,59
+5,the options are above below,82,59
+5,what is the relation of,70,56
+5,let me try to think,124,54
+5,but let me check if,94,54
+5,to the right and below,278,53
+5,let me try to map,59,53
+5,which is to the right,1949,52
+5,is at x y then,109,52
+5,so the relation would be,97,52
+5,asking for the relation of,92,51
+5,is above and to the,320,50
+5,is about the relation between,71,50
+5,is at 0 0 then,128,47
+5,but the question is asking,79,47
+5,let me check if there's,69,46
+5,me try to think of,94,45
+5,is to the left and,158,44
+5,but the question is about,61,44
+5,above and to the left,272,43
+5,is at 1 1 then,108,43
+5,let me start by breaking,43,43
+5,me start by breaking down,43,43
+5,how does that relate to,63,42
+5,is what is the relation,47,41
+5,question is what is the,46,41
+5,the question is what is,46,41
+5,figure out the relation between,41,41
+5,to figure out the relation,41,41
+5,would be to the right,84,40
+5,to find the relation between,73,40
+5,imagine a coordinate system where,47,40
+5,the relation of the agent,46,40
+5,the answer would be lower,77,39
+5,but how does that relate,61,39
+5,is the relation of the,44,39
+5,i imagine a coordinate system,43,39
+5,if i imagine a coordinate,43,39
+5,to the right and above,139,38
+5,be to the right of,75,38
+5,need to find the relation,62,38
+5,to the left and below,94,36
+5,let me try to sketch,36,36
+5,is at x 1 y,153,35
+5,is below and to the,141,35
+5,we need to find the,59,35
+5,above and to the right,153,34
+5,at 1 1 which is,92,34
+5,which is to the left,88,34
+5,but the options are above,38,34
+5,maybe there's a way to,125,33
+5,let me assign coordinates to,40,33
+5,wait maybe i need to,40,32
+5,is to the lower right,114,31
+5,is at 1 1 which,71,31
+5,how does this relate to,62,31
+5,could be at 1 1,60,31
+5,b where a and b,58,31
+5,where a and b are,58,31
+5,a and b are positive,56,31
+5,but how does this relate,56,31
+5,to the lower right of,95,30
+5,is at 0 0 and,53,30
+5,so the relation is lower,52,29
+5,is at x y where,48,29
+5,but let me check again,38,29
+5,be to the left of,96,28
+5,to the upper left of,71,28
+5,at x y where x,52,28
+5,let me try to find,51,28
+5,let me try to imagine,42,28
+5,question asks for the relation,40,28
+5,the question asks for the,40,28
+5,me check if there's any,35,28
+6,okay let's try to figure out,83,83
+6,let me try to assign coordinates,124,75
+6,let's try to figure out the,71,71
+6,left upper right lower left lower,108,70
+6,upper left upper right lower left,108,70
+6,upper right lower left lower right,108,70
+6,above below left right upper left,106,70
+6,below left right upper left upper,106,70
+6,left right upper left upper right,106,70
+6,right upper left upper right lower,106,70
+6,are above below left right upper,97,64
+6,the question is about the relation,96,60
+6,options are above below left right,84,60
+6,the question is asking for the,109,59
+6,question is asking for the relation,108,59
+6,the options are above below left,82,59
+6,is asking for the relation of,91,50
+6,question is about the relation between,71,50
+6,is to the right and below,232,47
+6,but the question is asking for,75,46
+6,which is to the right of,1896,45
+6,let me try to think of,94,45
+6,let me start by breaking down,43,43
+6,above and to the left of,257,42
+6,is what is the relation of,47,41
+6,question is what is the relation,46,41
+6,the question is what is the,46,41
+6,to figure out the relation between,41,41
+6,try to figure out the relation,41,41
+6,is above and to the left,211,39
+6,is the relation of the agent,44,39
+6,what is the relation of the,44,39
+6,if i imagine a coordinate system,43,39
+6,but how does that relate to,59,38
+6,but let me check if there's,54,38
+6,need to find the relation between,57,37
+6,so the answer would be lower,60,35
+6,but the options are above below,38,34
+6,so if i imagine a coordinate,38,34
+6,above and to the right of,134,33
+6,is to the right and above,115,33
+6,we need to find the relation,50,33
+6,i imagine a coordinate system where,36,32
+6,is at 1 1 which is,71,31
+6,b where a and b are,58,31
+6,which is to the left of,77,30
+6,but how does this relate to,54,30
+6,where a and b are positive,54,30
+6,but the question is about the,36,30
+6,is to the left and below,68,29
+6,the question asks for the relation,40,28
+6,let me check if there's any,35,28
+6,is to the lower right of,84,27
+6,is to the upper left of,61,26
+6,would be to the right of,38,26
+6,so the relation would be lower,32,26
+6,let me check if there's another,28,26
+6,the positions are arranged in a,58,25
+6,now the question is about the,29,25
+6,below and to the right of,119,24
+6,alternatively maybe there's a way to,51,24
+6,me try to think of the,35,24
+6,y b where a and b,32,24
+6,a and b are positive numbers,28,24
+6,to assign coordinates step by step,27,24
+6,is above and to the right,109,23
+6,is to the upper right of,87,23
+6,is at x y where x,38,23
+6,so if i imagine a grid,26,23
+6,try to assign coordinates step by,26,23
+6,is below and to the right,102,22
+6,is at x 1 y 1,68,22
+6,the answer would be lower right,44,22
+6,x a y b where a,29,22
+6,at x a y b where,28,22
+6,a y b where a and,27,22
+6,question is about the relation of,26,22
+6,me try to assign coordinates step,25,22
+6,now the question is what is,24,22
+6,me start by breaking down each,22,22
+6,is at x a y b,37,21
+6,question asks for the relation of,29,21
+6,wait the options are above below,25,21
+6,let me try to map out,21,21
+6,let me try to sketch this,21,21
+6,are on the same horizontal line,71,20
+6,let me try to assign positions,31,20
+6,me check if there's any other,25,20
+6,wait but the question is asking,22,20
+6,let me try to map this,21,20
+6,to figure out the positions of,21,20
+6,is to the lower left of,44,19
+6,which is to the right and,40,19
+6,is both above and to the,26,19
+6,a coordinate system where up is,22,19
+6,me try to sketch this mentally,19,19
+6,problem must have a unique answer,60,18
+6,the problem must have a unique,60,18
+6,could be to the left of,57,18
+6,below and to the left of,48,18

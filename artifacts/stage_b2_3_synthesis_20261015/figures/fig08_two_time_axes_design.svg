@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="280.512pt" viewBox="0 0 684 280.512" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-15T13:24:51.838642</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 280.512 
+L 684 280.512 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 25.056 134.93376 
+L 153.954 134.93376 
+Q 160.65 134.93376 160.65 128.547072 
+L 160.65 82.775808 
+Q 160.65 76.38912 153.954 76.38912 
+L 25.056 76.38912 
+Q 18.36 76.38912 18.36 82.775808 
+L 18.36 128.547072 
+Q 18.36 134.93376 25.056 134.93376 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #edf5f5; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 192.456 134.93376 
+L 321.354 134.93376 
+Q 328.05 134.93376 328.05 128.547072 
+L 328.05 82.775808 
+Q 328.05 76.38912 321.354 76.38912 
+L 192.456 76.38912 
+Q 185.76 76.38912 185.76 82.775808 
+L 185.76 128.547072 
+Q 185.76 134.93376 192.456 134.93376 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #edf5f5; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 359.856 134.93376 
+L 488.754 134.93376 
+Q 495.45 134.93376 495.45 128.547072 
+L 495.45 82.775808 
+Q 495.45 76.38912 488.754 76.38912 
+L 359.856 76.38912 
+Q 353.16 76.38912 353.16 82.775808 
+L 353.16 128.547072 
+Q 353.16 134.93376 359.856 134.93376 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #edf5f5; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 527.256 134.93376 
+L 656.154 134.93376 
+Q 662.85 134.93376 662.85 128.547072 
+L 662.85 82.775808 
+Q 662.85 76.38912 656.154 76.38912 
+L 527.256 76.38912 
+Q 520.56 76.38912 520.56 82.775808 
+L 520.56 128.547072 
+Q 520.56 134.93376 527.256 134.93376 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #edf5f5; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 25.056 238.71744 
+L 153.954 238.71744 
+Q 160.65 238.71744 160.65 232.330752 
+L 160.65 194.542848 
+Q 160.65 188.15616 153.954 188.15616 
+L 25.056 188.15616 
+Q 18.36 188.15616 18.36 194.542848 
+L 18.36 232.330752 
+Q 18.36 238.71744 25.056 238.71744 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #f4f1e8; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 192.456 238.71744 
+L 321.354 238.71744 
+Q 328.05 238.71744 328.05 232.330752 
+L 328.05 194.542848 
+Q 328.05 188.15616 321.354 188.15616 
+L 192.456 188.15616 
+Q 185.76 188.15616 185.76 194.542848 
+L 185.76 232.330752 
+Q 185.76 238.71744 192.456 238.71744 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #f4f1e8; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 359.856 238.71744 
+L 488.754 238.71744 
+Q 495.45 238.71744 495.45 232.330752 
+L 495.45 194.542848 
+Q 495.45 188.15616 488.754 188.15616 
+L 359.856 188.15616 
+Q 353.16 188.15616 353.16 194.542848 
+L 353.16 232.330752 
+Q 353.16 238.71744 359.856 238.71744 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #f4f1e8; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 527.256 238.71744 
+L 656.154 238.71744 
+Q 662.85 238.71744 662.85 232.330752 
+L 662.85 194.542848 
+Q 662.85 188.15616 656.154 188.15616 
+L 527.256 188.15616 
+Q 520.56 188.15616 520.56 194.542848 
+L 520.56 232.330752 
+Q 520.56 238.71744 527.256 238.71744 
+z
+" clip-path="url(#p801ac6c100)" style="fill: #f4f1e8; stroke: #b6cccf; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #19323d; font: 700 16px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="12.78" y="23.16672" transform="rotate(-0 12.78 23.16672)">下一阶段研究设计：把“何时形成状态”与“哪个训练阶段改变”分开</text>
+   </g>
+   <g id="text_2">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(62.005 102.047596)">提示末状态</text>
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(51.005 115.333877)">已有何种信息？</text>
+   </g>
+   <g id="text_3">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(239.634141 101.97369)">t_state</text>
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(212.905 115.333877)">正确关系首次可读</text>
+   </g>
+   <g id="text_4">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(399.716562 101.97369)">t_commit</text>
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(380.305 115.333877)">关系能否稳定保持</text>
+   </g>
+   <g id="text_5">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(569.705 102.047596)">最终答案</text>
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(553.205 115.333877)">是否正确使用？</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 162.652588 105.66144 
+Q 171.811792 105.66144 178.734929 105.66144 
+" style="fill: none; stroke: #137c86; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 174.334929 103.46144 
+L 178.734929 105.66144 
+L 174.334929 107.86144 
+" style="fill: none; stroke: #137c86; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 330.052588 105.66144 
+Q 339.211792 105.66144 346.134929 105.66144 
+" style="fill: none; stroke: #137c86; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 341.734929 103.46144 
+L 346.134929 105.66144 
+L 341.734929 107.86144 
+" style="fill: none; stroke: #137c86; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 497.452588 105.66144 
+Q 506.611792 105.66144 513.534929 105.66144 
+" style="fill: none; stroke: #137c86; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 509.134929 103.46144 
+L 513.534929 105.66144 
+L 509.134929 107.86144 
+" style="fill: none; stroke: #137c86; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="fill: #137c86; font: 12px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="23.94" y="60.4224" transform="rotate(-0 23.94 60.4224)">生成时间轴：固定权重，观察状态形成、保持与使用</text>
+   </g>
+   <g id="text_7">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="89.505" y="216.466097" transform="rotate(-0 89.505 216.466097)">同谱系 Base</text>
+   </g>
+   <g id="text_8">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="256.905" y="216.466097" transform="rotate(-0 256.905 216.466097)">SFT</text>
+   </g>
+   <g id="text_9">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="424.305" y="216.466097" transform="rotate(-0 424.305 216.466097)">DPO</text>
+   </g>
+   <g id="text_10">
+    <text style="font: 11px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="591.705" y="216.466097" transform="rotate(-0 591.705 216.466097)">RLVR / 中间检查点</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 162.652588 213.702912 
+Q 171.811792 213.702912 178.734929 213.702912 
+" style="fill: none; stroke: #c77926; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 174.334929 211.502912 
+L 178.734929 213.702912 
+L 174.334929 215.902912 
+" style="fill: none; stroke: #c77926; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 330.052588 213.702912 
+Q 339.211792 213.702912 346.134929 213.702912 
+" style="fill: none; stroke: #c77926; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 341.734929 211.502912 
+L 346.134929 213.702912 
+L 341.734929 215.902912 
+" style="fill: none; stroke: #c77926; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 497.452588 213.702912 
+Q 506.611792 213.702912 513.534929 213.702912 
+" style="fill: none; stroke: #c77926; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 509.134929 211.502912 
+L 513.534929 213.702912 
+L 509.134929 215.902912 
+" style="fill: none; stroke: #c77926; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: #906022; font: 12px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="23.94" y="169.52832" transform="rotate(-0 23.94 169.52832)">训练时间轴：用共享轨迹比较 token 级 Δlog p、几何与干预效应</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #586474; font: 10px 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="23.94" y="265.32864" transform="rotate(-0 23.94 265.32864)">证据递进：自然行为 → 结构状态可读 → 稳定性／泛化 → 目标特异的因果干预。此图是待执行方案，不是已有实验结果。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p801ac6c100">
+   <rect x="7.2" y="7.2" width="669.6" height="266.112"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "protocol_key": "fg_thinking",
+  "protocol": "FG-T",
+  "generation_seed": 20260924,
+  "row_rng_policy": "canonical sorted batches; batch_seed = first 8 hex of sha256(generation_seed:comma-separated-row-ids) modulo 2^31-1",
+  "batch_size": 4,
+  "rows_expected": 4,
+  "row_ids": [
+    84006,
+    84011,
+    84008,
+    84013
+  ],
+  "row_ids_sha256": "31edbfe28952220f9e4c018e308cc0d5692586325d1b2fba4eb0f0ebf8afac44",
+  "generation_config": {
+    "protocol_key": "fg_thinking",
+    "config": {
+      "protocol": "FG-T",
+      "enable_thinking": true,
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0
+    },
+    "max_new_tokens": 2048,
+    "batch_size": 4,
+    "seed_policy": "canonical sorted batches; batch_seed = first 8 hex of sha256(generation_seed:comma-separated-row-ids) modulo 2^31-1",
+    "parser_spec_sha256": "2fe7efb61411175ea5ac3e455873a871260ef0877f7efea3207dd809406a1039",
+    "model_identity_sha256": "f9096d1e82eb0918fd4d671cbe0f39c5979d03e6a2148593b4ee1d630ade08b9"
+  },
+  "generation_config_hash": "b76e0fef49264b136e43dff6bfdba0e8bf54dba6af8c33094f6163af72861042",
+  "model_identity_sha256": "f9096d1e82eb0918fd4d671cbe0f39c5979d03e6a2148593b4ee1d630ade08b9",
+  "completed_row_ids": [
+    84006,
+    84011,
+    84008,
+    84013
+  ],
+  "shards": {
+    "84006": {
+      "sha256": "f1fa6ecacc7cd1509b9a2203529fc8532767177ce8869aab5d2c7e0e2e1d5e36",
+      "resumed": false
+    },
+    "84011": {
+      "sha256": "4ce11589ad834db9eb7fc295b4c80b34940a4d10fc9cf40340ae9307c7c890b9",
+      "resumed": false
+    },
+    "84008": {
+      "sha256": "57d69de5026a56989e67bdf28befee851ca7a8cb07885b08fb64b1403ced7581",
+      "resumed": false
+    },
+    "84013": {
+      "sha256": "a3333fbcb696001beeedf6b72a507c9cf597b56162296970d45578165496e1b3",
+      "resumed": false
+    }
+  },
+  "last_completed_batch": 1,
+  "last_completed_row_ids": [
+    84006,
+    84011,
+    84008,
+    84013
+  ],
+  "elapsed_generation_seconds_this_invocation": 321.7827915363014,
+  "row_generations_sha256": "16b49a3b3c34502fecedfd1fd76c3bde0f6dad59620bb54a17e0c120f58ea059",
+  "metrics_sha256": "1e745eff3198bc9f271654ee803e2b7280280b8b0a6fd63116ec49276d2d2fe0",
+  "total_generated_tokens": 7949,
+  "attributed_latency_seconds": 321.72961446270347,
+  "tokens_per_second_attributed": 24.707082104564822,
+  "wall_seconds_this_invocation": 321.80488960817456,
+  "max_allocated_gib": 16.62911367416382,
+  "max_reserved_gib": 18.2265625
+}

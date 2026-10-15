@@ -1,0 +1,90 @@
+﻿path,bytes,reason
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/00_0508后训练本基申报书.txt,22533,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/01_26对齐本基申报书.txt,21410,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/02_研究方案附件 初稿.txt,15141,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/03_附件1.1_副本(1).txt,15599,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/04_7月文献调研与研究思路计划.txt,6242,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/05_7月文献调研与研究思路计划v1.0.txt,6464,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/06_3.24 idea.txt,8066,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/07_0707汇报.txt,9819,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_qwen3_generation/analysis_20261013/sources_text/08_0801todolist.txt,336,Unrelated internal proposal/draft source text; not experimental output
+artifacts/stage_b2_3_budget_pilot_20261013/automation_info.json,566,Local automation/process transport metadata
+artifacts/stage_b2_3_budget_pilot_20261013/latest_log_path.txt,125,Local automation/process transport metadata
+artifacts/stage_b2_3_budget_pilot_20261013/launcher.pid,7,Local automation/process transport metadata
+artifacts/stage_b2_3_budget_pilot_20261013/remote_launch.json,1141,Local automation/process transport metadata
+artifacts/stage_b2_3_budget_pilot_20261013/run.lock,81,Local automation/process transport metadata
+artifacts/stage_b2_3_budget100_20261014/automation_info.json,778,Local automation/process transport metadata
+artifacts/stage_b2_3_budget100_20261014/latest_log_path.txt,122,Local automation/process transport metadata
+artifacts/stage_b2_3_budget100_20261014/launcher.pid,7,Local automation/process transport metadata
+artifacts/stage_b2_3_budget100_20261014/remote_launch.json,1275,Local automation/process transport metadata
+artifacts/stage_b2_3_budget100_20261014/run.lock,81,Local automation/process transport metadata
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/conversion_metadata.json,4525,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/export_report_pdf.py,10957,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_01.txt,3097,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_02.txt,3558,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_03.txt,2913,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_04.txt,2146,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_05.txt,208,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_06.txt,1745,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_07.txt,122,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_08.txt,1142,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_09.txt,125,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_10.txt,1121,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_11.txt,126,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_12.txt,1189,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_13.txt,135,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_14.txt,538,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_15.txt,117,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_16.txt,762,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_17.txt,209,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_18.txt,1385,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_19.txt,129,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_20.txt,3442,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_21.txt,3216,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_22.txt,2863,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/page_23.txt,2515,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/pdf_validation.json,4856,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-01.png,174653,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-02.png,365592,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-03.png,291217,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-04.png,232893,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-05.png,118313,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-06.png,174853,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-07.png,101836,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-08.png,122965,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-09.png,95046,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-10.png,109202,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-11.png,119493,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-12.png,127171,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-13.png,115215,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-14.png,60077,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-15.png,104474,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-16.png,81410,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-17.png,108708,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-18.png,145497,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-19.png,107942,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-20.png,345161,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-21.png,332476,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-22.png,307105,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/render-23.png,250442,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_01.png,542477,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_02.png,526547,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_03.png,304681,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_04.png,234585,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_05.png,209796,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_06.png,260311,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_07.png,180240,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_08.png,192363,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_09.png,259313,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_10.png,464695,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_11.png,643000,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/review_pair_12.png,253074,Transient render/review scratch; final figures/PDF preserved
+artifacts/stage_b2_3_synthesis_20261015/tmp/pdfs/verify_report_pdf.py,3011,Transient render/review scratch; final figures/PDF preserved
+scripts/stage-b2_3/__pycache__/audit_b23.cpython-313.pyc,20510,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/common_b23.cpython-313.pyc,25380,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/finalize_b23.cpython-313.pyc,52469,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/prepare_github_sync.cpython-313.pyc,12404,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/restore_archived_results.cpython-313.pyc,4998,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/run_b23.cpython-313.pyc,26293,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/validate_b23.cpython-313.pyc,33915,Python bytecode/cache
+scripts/stage-b2_3/__pycache__/verify_github_sync.cpython-313.pyc,7696,Python bytecode/cache

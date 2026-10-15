@@ -1,0 +1,1991 @@
+{
+  "status": "PASS",
+  "preferred_mapping": {
+    "ABOVE": "A",
+    "BELOW": "B",
+    "LEFT": "C",
+    "RIGHT": "D",
+    "UPPER_LEFT": "E",
+    "UPPER_RIGHT": "F",
+    "LOWER_LEFT": "G",
+    "LOWER_RIGHT": "H"
+  },
+  "preferred_passed": true,
+  "fixed_candidate_pool": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+  "selection_algorithm": "preferred_A_to_H_all_audited_raw_and_native_boundaries_single_token",
+  "relation_to_label": {
+    "ABOVE": "A",
+    "BELOW": "B",
+    "LEFT": "C",
+    "RIGHT": "D",
+    "UPPER_LEFT": "E",
+    "UPPER_RIGHT": "F",
+    "LOWER_LEFT": "G",
+    "LOWER_RIGHT": "H"
+  },
+  "selection_used_only_tokenizer": true,
+  "selection_used_no_model_probabilities": true,
+  "selection_used_no_gold_conditioned_accuracy": true,
+  "audit": {
+    "A": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "A",
+          "standalone_token_ids": [
+            362
+          ],
+          "raw_continuation_token_ids": [
+            362
+          ],
+          "native_continuation_token_ids": [
+            362
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "B": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "B",
+          "standalone_token_ids": [
+            425
+          ],
+          "raw_continuation_token_ids": [
+            425
+          ],
+          "native_continuation_token_ids": [
+            425
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "C": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "C",
+          "standalone_token_ids": [
+            356
+          ],
+          "raw_continuation_token_ids": [
+            356
+          ],
+          "native_continuation_token_ids": [
+            356
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "D": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "D",
+          "standalone_token_ids": [
+            422
+          ],
+          "raw_continuation_token_ids": [
+            422
+          ],
+          "native_continuation_token_ids": [
+            422
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "E": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "E",
+          "standalone_token_ids": [
+            468
+          ],
+          "raw_continuation_token_ids": [
+            468
+          ],
+          "native_continuation_token_ids": [
+            468
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "F": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "F",
+          "standalone_token_ids": [
+            434
+          ],
+          "raw_continuation_token_ids": [
+            434
+          ],
+          "native_continuation_token_ids": [
+            434
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "G": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "G",
+          "standalone_token_ids": [
+            479
+          ],
+          "raw_continuation_token_ids": [
+            479
+          ],
+          "native_continuation_token_ids": [
+            479
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    },
+    "H": {
+      "passed": true,
+      "checks": [
+        {
+          "row_id": 84006,
+          "hop": 1,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84011,
+          "hop": 1,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84064,
+          "hop": 1,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84008,
+          "hop": 2,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84013,
+          "hop": 2,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84029,
+          "hop": 2,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84039,
+          "hop": 3,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84063,
+          "hop": 3,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84141,
+          "hop": 3,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84114,
+          "hop": 4,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84154,
+          "hop": 4,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84178,
+          "hop": 4,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84042,
+          "hop": 5,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84133,
+          "hop": 5,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        },
+        {
+          "row_id": 84233,
+          "hop": 5,
+          "label": "H",
+          "standalone_token_ids": [
+            472
+          ],
+          "raw_continuation_token_ids": [
+            472
+          ],
+          "native_continuation_token_ids": [
+            472
+          ],
+          "raw_single_token": true,
+          "native_single_token": true
+        }
+      ]
+    }
+  }
+}

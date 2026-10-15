@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "initial_max_new_tokens": 1024,
+  "thinking_smoke_rows": 10,
+  "thinking_rows_hit_max": 10,
+  "thinking_truncation_rate": 1.0,
+  "switch_threshold": 0.2,
+  "resolved_max_new_tokens": 2048,
+  "accuracy_was_not_used_for_resolution": true
+}

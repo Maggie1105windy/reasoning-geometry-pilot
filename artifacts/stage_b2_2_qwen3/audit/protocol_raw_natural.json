@@ -1,0 +1,61 @@
+{
+  "stage": "B2.2",
+  "model": "Qwen/Qwen3-8B",
+  "frozen_before_qwen_test_accuracy": true,
+  "primary_test_rows": 2063,
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "relation_order": [
+    "ABOVE",
+    "BELOW",
+    "LEFT",
+    "RIGHT",
+    "UPPER_LEFT",
+    "UPPER_RIGHT",
+    "LOWER_LEFT",
+    "LOWER_RIGHT"
+  ],
+  "bootstrap_unit": "story_group_id",
+  "bootstrap_resamples": 2000,
+  "seed": 20260910,
+  "uniform_chance": 0.125,
+  "derived_metric": "equal-weight arithmetic mean of hop-specific h2,h3,h4,h5 values",
+  "gate_thresholds": {
+    "collapse_cardinal_or_diagonal_frequency": 0.95,
+    "collapse_single_relation_frequency": 0.8,
+    "high_sensitivity_derived_accuracy_range": 0.2,
+    "high_sensitivity_weak_protocol_accuracy": 0.15,
+    "native_stronger_requires_ci_low_above_zero_for": [
+      "accuracy",
+      "macro_f1",
+      "balanced_accuracy"
+    ],
+    "strong_gate_hops": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "no_test_set_tuning": true,
+  "protocols": [
+    "Raw-Sum",
+    "Raw-Mean"
+  ],
+  "prompt": "exact frozen Story/Question prompt; no system/chat/CoT/few-shot/answer instruction/mapping",
+  "bos_policy": "one explicit model config bos_token_id, matching the B2.1 explicit-BOS policy even if tokenizer.bos_token is null",
+  "candidate_strings": {
+    "ABOVE": " above",
+    "BELOW": " below",
+    "LEFT": " left",
+    "RIGHT": " right",
+    "UPPER_LEFT": " upper-left",
+    "UPPER_RIGHT": " upper-right",
+    "LOWER_LEFT": " lower-left",
+    "LOWER_RIGHT": " lower-right"
+  },
+  "scores": [
+    "sum teacher-forced continuation log probability",
+    "arithmetic mean over candidate tokens"
+  ],
+  "protocol_sha256": "b52192f83a524a8fe7e3ca7ee514da9b49a3c3f1f83879835d8b134e5fe89d3a"
+}

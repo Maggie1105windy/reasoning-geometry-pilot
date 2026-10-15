@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "budget_statistics": [
+    {
+      "budget": 8192,
+      "n": 10,
+      "tokens": 46040,
+      "generation_seconds": 1943.8307780325413,
+      "tokens_per_second": 23.685189328363055,
+      "mean_tokens": 4604.0,
+      "min_tokens": 1844,
+      "max_tokens": 8192,
+      "median_tokens": 3694.0,
+      "min_per_row_tps": 23.10038644255163,
+      "max_per_row_tps": 23.99658080490347,
+      "peak_allocated_gib": 16.5433406829834,
+      "peak_reserved_gib": 19.31640625,
+      "EOS_count": 8,
+      "think_close_count": 8,
+      "parse_count": 8,
+      "correct_count": 6,
+      "truncated_count": 2
+    },
+    {
+      "budget": 16384,
+      "n": 10,
+      "tokens": 48489,
+      "generation_seconds": 2058.0976516343653,
+      "tokens_per_second": 23.560106568069877,
+      "mean_tokens": 4848.9,
+      "min_tokens": 1844,
+      "max_tokens": 10580,
+      "median_tokens": 3694.0,
+      "min_per_row_tps": 22.96554282441894,
+      "max_per_row_tps": 24.003569497130428,
+      "peak_allocated_gib": 16.906611442565918,
+      "peak_reserved_gib": 19.31640625,
+      "EOS_count": 10,
+      "think_close_count": 10,
+      "parse_count": 10,
+      "correct_count": 7,
+      "truncated_count": 0
+    },
+    {
+      "budget": 32768,
+      "n": 10,
+      "tokens": 48489,
+      "generation_seconds": 2057.255656655878,
+      "tokens_per_second": 23.569749264328248,
+      "mean_tokens": 4848.9,
+      "min_tokens": 1844,
+      "max_tokens": 10580,
+      "median_tokens": 3694.0,
+      "min_per_row_tps": 22.975746341268252,
+      "max_per_row_tps": 23.978200329726892,
+      "peak_allocated_gib": 16.906611442565918,
+      "peak_reserved_gib": 19.31640625,
+      "EOS_count": 10,
+      "think_close_count": 10,
+      "parse_count": 10,
+      "correct_count": 7,
+      "truncated_count": 0
+    }
+  ],
+  "prefix_comparisons": [
+    {
+      "a": 8192,
+      "b": 16384,
+      "n": 10,
+      "shared_seed_count": 10,
+      "prefix_equal_count": 10,
+      "entire_outputs_equal_count": 8,
+      "different_output_rows": [
+        92078,
+        101041
+      ]
+    },
+    {
+      "a": 8192,
+      "b": 32768,
+      "n": 10,
+      "shared_seed_count": 10,
+      "prefix_equal_count": 10,
+      "entire_outputs_equal_count": 8,
+      "different_output_rows": [
+        92078,
+        101041
+      ]
+    },
+    {
+      "a": 16384,
+      "b": 32768,
+      "n": 10,
+      "shared_seed_count": 10,
+      "prefix_equal_count": 10,
+      "entire_outputs_equal_count": 10,
+      "different_output_rows": []
+    }
+  ],
+  "time_accounting": {
+    "calendar_start_utc": "2026-10-13T13:28:24.349700+00:00",
+    "calendar_end_utc": "2026-10-13T15:13:25.334433+00:00",
+    "calendar_seconds": 6300.984733,
+    "generation_seconds_total": 6059.184086322784,
+    "total_generated_tokens": 143018,
+    "non_generation_seconds_total": 241.8006466772158,
+    "startup_to_first_generation_seconds": 222.730123,
+    "model_load_seconds": 16.990239791572094,
+    "other_startup_seconds": 205.7398832084279,
+    "poststartup_non_generation_seconds": 19.070523677215817,
+    "first_row_started_utc": "2026-10-13T13:32:07.079823+00:00",
+    "last_row_ended_utc": "2026-10-13T15:13:24.506822+00:00",
+    "note": "other_startup combines full weight hash, library import/tokenizer/GPU checks; exact weight hashing duration was not separately persisted. Batch=1, aggregate tokens/s equals aggregate decoder steps/s."
+  },
+  "crosscheck": {
+    "shards": 30,
+    "summary_json_and_csv_rows_checked": 18,
+    "paired_json_and_csv_rows_checked": 30,
+    "token_hashes_and_counts_checked": 30,
+    "additional_paired_result_metadata_cells_checked": 390,
+    "sample_manifest_exact_ids_each_budget": true
+  },
+  "limitations": [
+    "Only ten equal-hop diagnostic samples; no reliable population accuracy or full-set time prediction.",
+    "32K budget runs all terminated by 10580 tokens; full 32768-token memory was not exercised.",
+    "CUDA reserved memory retains allocations across this row-wise sequence of budgets; equal reserved peaks do not prove equal isolated budget memory requirements."
+  ]
+}

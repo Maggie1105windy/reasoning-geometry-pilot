@@ -1,0 +1,5 @@
+﻿sentence,normalized_sentence,total_occurrences,trajectories,row_ids,max_in_one_trace,row_of_max
+"Therefore, J is southwest of N, which is west of O.","therefore, j is southwest of n, which is west of o",2208,1,91319,2208,91319
+"Therefore, Y is left of K, which is right of L.","therefore, y is left of k, which is right of l",2194,1,95732,2194,95732
+"So T is upper of J, which is to the right of K.","so t is upper of j, which is to the right of k",1701,1,99424,1701,99424
+"Therefore, G is located in the south direction from D, which is southwest of F.","therefore, g is located in the south direction from d, which is southwest of f",710,1,94943,710,94943

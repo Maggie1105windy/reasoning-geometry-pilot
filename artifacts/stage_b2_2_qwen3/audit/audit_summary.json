@@ -1,0 +1,32 @@
+{
+  "stage": "B2.2",
+  "phase": "AUDIT_AND_FREEZE",
+  "status": "PASS",
+  "frozen_rows": 2063,
+  "hop_counts": {
+    "1": 712,
+    "2": 505,
+    "3": 422,
+    "4": 282,
+    "5": 142
+  },
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Qwen3-8B",
+  "boundary_checks": 240,
+  "equal_length_mapping": {
+    "ABOVE": "A",
+    "BELOW": "B",
+    "LEFT": "C",
+    "RIGHT": "D",
+    "UPPER_LEFT": "E",
+    "UPPER_RIGHT": "F",
+    "LOWER_LEFT": "G",
+    "LOWER_RIGHT": "H"
+  },
+  "protected_snapshot_sha256": "4a3cae8fac8c3821f984098caaecac6e4ff457f513ecf47decc6962210b40a21",
+  "protocol_checksums": {
+    "raw_natural": "b52192f83a524a8fe7e3ca7ee514da9b49a3c3f1f83879835d8b134e5fe89d3a",
+    "native_natural": "9559dcea2054ac7dc995a04748a53f1dd45786a187fd27e351d9ec905e0a8d72",
+    "equal_length": "1124bda3f169e92c277768b61f8cfd4dfe232911a64a53058e3d30da76212577"
+  }
+}

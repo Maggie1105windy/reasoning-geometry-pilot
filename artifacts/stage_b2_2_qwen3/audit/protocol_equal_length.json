@@ -1,0 +1,58 @@
+{
+  "stage": "B2.2",
+  "model": "Qwen/Qwen3-8B",
+  "frozen_before_qwen_test_accuracy": true,
+  "primary_test_rows": 2063,
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "relation_order": [
+    "ABOVE",
+    "BELOW",
+    "LEFT",
+    "RIGHT",
+    "UPPER_LEFT",
+    "UPPER_RIGHT",
+    "LOWER_LEFT",
+    "LOWER_RIGHT"
+  ],
+  "bootstrap_unit": "story_group_id",
+  "bootstrap_resamples": 2000,
+  "seed": 20260910,
+  "uniform_chance": 0.125,
+  "derived_metric": "equal-weight arithmetic mean of hop-specific h2,h3,h4,h5 values",
+  "gate_thresholds": {
+    "collapse_cardinal_or_diagonal_frequency": 0.95,
+    "collapse_single_relation_frequency": 0.8,
+    "high_sensitivity_derived_accuracy_range": 0.2,
+    "high_sensitivity_weak_protocol_accuracy": 0.15,
+    "native_stronger_requires_ci_low_above_zero_for": [
+      "accuracy",
+      "macro_f1",
+      "balanced_accuracy"
+    ],
+    "strong_gate_hops": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "no_test_set_tuning": true,
+  "protocols": [
+    "EqualLength-Raw",
+    "EqualLength-Native"
+  ],
+  "relation_to_label": {
+    "ABOVE": "A",
+    "BELOW": "B",
+    "LEFT": "C",
+    "RIGHT": "D",
+    "UPPER_LEFT": "E",
+    "UPPER_RIGHT": "F",
+    "LOWER_LEFT": "G",
+    "LOWER_RIGHT": "H"
+  },
+  "score": "sum teacher-forced label continuation log probability",
+  "interpretation": "measurement-control / sensitivity diagnostic; not a gold-standard performance protocol",
+  "label_selection_uses": "tokenizer only; no model probabilities or gold-conditioned accuracy",
+  "protocol_sha256": "1124bda3f169e92c277768b61f8cfd4dfe232911a64a53058e3d30da76212577"
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "B2.3",
+  "phase": 0,
+  "status": "PASS",
+  "checks": {
+    "frozen_data_pass": true,
+    "environment_pass": true,
+    "model_manifest_pass": true,
+    "b22_reference_pass": true,
+    "protected_snapshot_pass": true,
+    "prompt_format_frozen": true,
+    "parser_frozen": true,
+    "pilot_subset_frozen_250": true,
+    "min_p_supported": true
+  },
+  "errors": []
+}

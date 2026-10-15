@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "frequent-expressions",
+      "title": "跨轨迹高频表达",
+      "queries": [
+        {
+          "id": "expression-counts",
+          "source": {
+            "label": "Qwen3-8B预算实验可见思考文本",
+            "files": [
+              {
+                "label": "32K档100个原始shard"
+              }
+            ],
+            "filters": [
+              "输出预算：32768",
+              "每题保留一条轨迹",
+              "字段：thinking_text",
+              "不含prompt和最终回答"
+            ],
+            "caveats": [
+              "100题为等hop诊断集合，只有一个生成seed。",
+              "高频表达不等于无效推理或隐藏神经机制。"
+            ],
+            "metricDefinitions": [
+              {
+                "label": "出现次数和覆盖",
+                "definition": "出现次数统计原词或词组在100条可见思考中的匹配次数；覆盖统计至少出现一次的轨迹数。"
+              }
+            ]
+          },
+          "columns": [
+            "phrase",
+            "total_occurrences",
+            "trajectories_with_phrase"
+          ],
+          "rows": [
+            {
+              "phrase": "maybe",
+              "total_occurrences": 2797,
+              "trajectories_with_phrase": 100
+            },
+            {
+              "phrase": "wait",
+              "total_occurrences": 2601,
+              "trajectories_with_phrase": 100
+            },
+            {
+              "phrase": "alternatively",
+              "total_occurrences": 906,
+              "trajectories_with_phrase": 91
+            },
+            {
+              "phrase": "let me try",
+              "total_occurrences": 816,
+              "trajectories_with_phrase": 96
+            },
+            {
+              "phrase": "coordinates",
+              "total_occurrences": 726,
+              "trajectories_with_phrase": 95
+            },
+            {
+              "phrase": "let me think",
+              "total_occurrences": 620,
+              "trajectories_with_phrase": 91
+            },
+            {
+              "phrase": "for example",
+              "total_occurrences": 566,
+              "trajectories_with_phrase": 90
+            }
+          ],
+          "methods": [
+            {
+              "language": "calculation",
+              "code": "每条轨迹分别匹配英文原词／词组；总次数求和，覆盖数计入至少匹配一次的轨迹。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeated-sentences",
+      "title": "单条轨迹中的整句循环",
+      "queries": [
+        {
+          "id": "literal-sentence-counts",
+          "source": {
+            "label": "Qwen3-8B预算实验可见思考文本",
+            "files": [
+              {
+                "label": "32K档100个原始shard"
+              }
+            ],
+            "filters": [
+              "输出预算：32768",
+              "每题保留一条轨迹",
+              "字段：thinking_text",
+              "不含prompt和最终回答"
+            ],
+            "caveats": [
+              "100题为等hop诊断集合，只有一个生成seed。",
+              "高频表达不等于无效推理或隐藏神经机制。"
+            ],
+            "metricDefinitions": [
+              {
+                "label": "整句重复次数",
+                "definition": "整句计数统一大小写、空白和句尾标点，保留实体字母与坐标。"
+              }
+            ]
+          },
+          "columns": [
+            "row_id",
+            "sentence",
+            "count"
+          ],
+          "rows": [
+            {
+              "row_id": 91319,
+              "sentence": "Therefore, J is southwest of N, which is west of O.",
+              "count": 2208
+            },
+            {
+              "row_id": 95732,
+              "sentence": "Therefore, Y is left of K, which is right of L.",
+              "count": 2194
+            },
+            {
+              "row_id": 99424,
+              "sentence": "So T is upper of J, which is to the right of K.",
+              "count": 1701
+            },
+            {
+              "row_id": 94943,
+              "sentence": "Therefore, G is located in the south direction from D, which is southwest of F.",
+              "count": 710
+            },
+            {
+              "row_id": 94943,
+              "sentence": "Therefore, G is located in the south direction from D, so G is further south than D, which is southwest of F.",
+              "count": 709
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loop-concentration",
+      "title": "4条截断轨迹集中贡献重复文本",
+      "queries": [
+        {
+          "id": "repeat-concentration",
+          "source": {
+            "label": "Qwen3-8B预算实验可见思考文本",
+            "files": [
+              {
+                "label": "32K档100个原始shard"
+              }
+            ],
+            "filters": [
+              "输出预算：32768",
+              "每题保留一条轨迹",
+              "字段：thinking_text",
+              "不含prompt和最终回答"
+            ],
+            "caveats": [
+              "100题为等hop诊断集合，只有一个生成seed。",
+              "高频表达不等于无效推理或隐藏神经机制。",
+              "精确句子重复只描述文本，不能直接估计无效推理比例。"
+            ],
+            "metricDefinitions": [
+              {
+                "label": "额外重复句词数",
+                "definition": "每个规范化句保留第一次出现，其余出现次数乘以该句词数，再对所有句求和。"
+              }
+            ]
+          },
+          "columns": [
+            "group",
+            "n",
+            "thinking_tokens",
+            "words",
+            "extra_repeated_sentence_words"
+          ],
+          "rows": [
+            {
+              "group": "all",
+              "n": 100,
+              "thinking_tokens": 659460,
+              "words": 507319,
+              "extra_repeated_sentence_words": 127357
+            },
+            {
+              "group": "truncated",
+              "n": 4,
+              "thinking_tokens": 131068,
+              "words": 107059,
+              "extra_repeated_sentence_words": 98441
+            }
+          ],
+          "methods": [
+            {
+              "language": "calculation",
+              "code": "4条截断轨迹思考token占比：131068 / 659460 = 19.88%\n额外重复句词数贡献：98441 / 127357 = 77.30%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

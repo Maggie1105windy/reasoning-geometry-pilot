@@ -1,0 +1,61 @@
+Stage B2.3 Qwen3-8B Free-Generation / Thinking Gate
+
+Validation:
+PASS_WITH_LIMITATION
+
+Frozen data:
+PASS
+
+Pilot stochasticity:
+LOW
+
+B2.2 Candidate Native-Sum:
+h2-h5 derived accuracy = 0.1853
+
+FG-N Native Non-Thinking Free Generation:
+h1 = 0.7022
+h2 = 0.3307
+h3 = 0.2393
+h4 = 0.2305
+h5 = 0.2254
+h2-h5 derived accuracy = 0.2565
+h2-h5 Macro-F1 = 0.2565
+h2-h5 Balanced Accuracy = 0.2513
+parse rate = 0.9248
+collapse = NO
+
+FG-T Native Thinking Free Generation:
+h1 = 0.4382
+h2 = 0.0911
+h3 = 0.0142
+h4 = 0.0213
+h5 = 0.0141
+h2-h5 derived accuracy = 0.0352
+h2-h5 Macro-F1 = 0.0617
+h2-h5 Balanced Accuracy = 0.0340
+parse rate = 0.0437
+collapse = NO
+
+FG-T - FG-N:
+derived accuracy difference = -0.2213
+95% CI = [-0.2487, -0.1951]
+thinking benefit = NO
+
+Median thinking tokens:
+h1 = 2047.0
+h2 = 2047.0
+h3 = 2047.0
+h4 = 2047.0
+h5 = 2047.0
+
+Candidate likelihood underestimates behavior:
+UNCERTAIN
+
+Qwen3 normal-use StepGame fitness:
+WEAK
+
+Strong-reasoning target:
+UNCERTAIN
+
+Recommended next step:
+C

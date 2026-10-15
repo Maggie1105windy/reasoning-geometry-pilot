@@ -1,0 +1,109 @@
+﻿file,scope,metric,label,ci95_low_recomputed,ci95_high_recomputed,max_absolute_difference
+bootstrap_ci.csv,h1,accuracy,FG-N,0.6671348314606742,0.7345505617977528,0.0
+bootstrap_ci.csv,h1,macro_f1,FG-N,0.6888458519127628,0.7566053272704959,0.0
+bootstrap_ci.csv,h1,balanced_accuracy,FG-N,0.6702829304935666,0.7331430249534122,0.0
+bootstrap_ci.csv,h2,accuracy,FG-N,0.291039603960396,0.3702970297029703,0.0
+bootstrap_ci.csv,h2,macro_f1,FG-N,0.28508931572887924,0.3634456254611027,5.551115123125783e-17
+bootstrap_ci.csv,h2,balanced_accuracy,FG-N,0.291516670698287,0.3705982392009396,0.0
+bootstrap_ci.csv,h3,accuracy,FG-N,0.1990521327014218,0.2796208530805687,0.0
+bootstrap_ci.csv,h3,macro_f1,FG-N,0.20035628060596045,0.28145839762837344,5.551115123125783e-17
+bootstrap_ci.csv,h3,balanced_accuracy,FG-N,0.19355430301364174,0.2772073415776814,2.7755575615628914e-17
+bootstrap_ci.csv,h4,accuracy,FG-N,0.18085106382978725,0.2801418439716312,5.551115123125783e-17
+bootstrap_ci.csv,h4,macro_f1,FG-N,0.17756919373939262,0.2774813313547605,2.7755575615628914e-17
+bootstrap_ci.csv,h4,balanced_accuracy,FG-N,0.16870382371909626,0.26475492987667815,5.551115123125783e-17
+bootstrap_ci.csv,h5,accuracy,FG-N,0.15492957746478872,0.29577464788732394,5.551115123125783e-17
+bootstrap_ci.csv,h5,macro_f1,FG-N,0.15363183726226826,0.29711854616065264,5.551115123125783e-17
+bootstrap_ci.csv,h5,balanced_accuracy,FG-N,0.15034538665076308,0.3042524068813131,8.326672684688674e-17
+bootstrap_ci.csv,h2-h5-derived,accuracy,FG-N,0.23140354053364257,0.2826385760047599,5.551115123125783e-17
+bootstrap_ci.csv,h2-h5-derived,macro_f1,FG-N,0.22811363347988425,0.2792294790764429,5.551115123125783e-17
+bootstrap_ci.csv,h2-h5-derived,balanced_accuracy,FG-N,0.2254467220333986,0.27828195577440024,5.551115123125783e-17
+bootstrap_ci.csv,h1,accuracy,FG-T,0.4002808988764045,0.47334971910112345,5.551115123125783e-17
+bootstrap_ci.csv,h1,macro_f1,FG-T,0.559543319782491,0.6321417632446253,0.0
+bootstrap_ci.csv,h1,balanced_accuracy,FG-T,0.4003333488482793,0.46961180612329345,5.551115123125783e-17
+bootstrap_ci.csv,h2,accuracy,FG-T,0.06534653465346535,0.11688118811881162,5.551115123125783e-17
+bootstrap_ci.csv,h2,macro_f1,FG-T,0.12218735261226346,0.20032059150981643,5.551115123125783e-17
+bootstrap_ci.csv,h2,balanced_accuracy,FG-T,0.06777285424044054,0.11925272374205044,4.163336342344337e-17
+bootstrap_ci.csv,h3,accuracy,FG-T,0.004739336492890996,0.026066350710900472,9.540979117872439e-17
+bootstrap_ci.csv,h3,macro_f1,FG-T,0.007461396082826972,0.04967105852763074,7.19910242530375e-17
+bootstrap_ci.csv,h3,balanced_accuracy,FG-T,0.00384469696969697,0.027114457164550264,7.025630077706069e-17
+bootstrap_ci.csv,h4,accuracy,FG-T,0.0070921985815602835,0.03900709219858156,8.326672684688674e-17
+bootstrap_ci.csv,h4,macro_f1,FG-T,0.011113709948700699,0.06383705289901546,9.8879238130678e-17
+bootstrap_ci.csv,h4,balanced_accuracy,FG-T,0.005208333333333333,0.035472255767606375,7.632783294297951e-17
+bootstrap_ci.csv,h5,accuracy,FG-T,0.0,0.035211267605633804,6.938893903907228e-18
+bootstrap_ci.csv,h5,macro_f1,FG-T,0.0,0.04601825975748389,9.020562075079397e-17
+bootstrap_ci.csv,h5,balanced_accuracy,FG-T,0.0,0.02589657738095236,5.898059818321144e-17
+bootstrap_ci.csv,h2-h5-derived,accuracy,FG-T,0.02588932638411951,0.04476579747016211,1.0408340855860843e-17
+bootstrap_ci.csv,h2-h5-derived,macro_f1,FG-T,0.04608559577172482,0.07542540605636791,2.0816681711721685e-17
+bootstrap_ci.csv,h2-h5-derived,balanced_accuracy,FG-T,0.025510131738404843,0.04245915348262805,4.85722573273506e-17
+paired_bootstrap.csv,h1,accuracy,FG-T minus FG-N,-0.3103932584269663,-0.21488764044943826,5.551115123125783e-17
+paired_bootstrap.csv,h1,macro_f1,FG-T minus FG-N,-0.1730636097027677,-0.08226516340859708,6.938893903907228e-17
+paired_bootstrap.csv,h1,balanced_accuracy,FG-T minus FG-N,-0.310262085309743,-0.21921554392139203,2.7755575615628914e-17
+paired_bootstrap.csv,h2,accuracy,FG-T minus FG-N,-0.2831683168316832,-0.198019801980198,0.0
+paired_bootstrap.csv,h2,macro_f1,FG-T minus FG-N,-0.21512500903824933,-0.10906693978789939,8.326672684688674e-17
+paired_bootstrap.csv,h2,balanced_accuracy,FG-T minus FG-N,-0.28016919097730975,-0.1971500815794158,5.551115123125783e-17
+paired_bootstrap.csv,h3,accuracy,FG-T minus FG-N,-0.2677725118483412,-0.18246445497630331,2.7755575615628914e-17
+paired_bootstrap.csv,h3,macro_f1,FG-T minus FG-N,-0.261649391403265,-0.16572391982294232,2.7755575615628914e-17
+paired_bootstrap.csv,h3,balanced_accuracy,FG-T minus FG-N,-0.26148059495333986,-0.17834206794340285,5.551115123125783e-17
+paired_bootstrap.csv,h4,accuracy,FG-T minus FG-N,-0.2624113475177305,-0.15602836879432624,5.551115123125783e-17
+paired_bootstrap.csv,h4,macro_f1,FG-T minus FG-N,-0.24649595813680217,-0.13676837314248108,8.326672684688674e-17
+paired_bootstrap.csv,h4,balanced_accuracy,FG-T minus FG-N,-0.24565869897666684,-0.14420758071508016,5.551115123125783e-17
+paired_bootstrap.csv,h5,accuracy,FG-T minus FG-N,-0.28169014084507044,-0.14771126760563477,8.326672684688674e-17
+paired_bootstrap.csv,h5,macro_f1,FG-T minus FG-N,-0.2755925826732805,-0.13396084025957367,5.551115123125783e-17
+paired_bootstrap.csv,h5,balanced_accuracy,FG-T minus FG-N,-0.2940687932673416,-0.13720678933552974,2.7755575615628914e-17
+paired_bootstrap.csv,h2-h5-derived,accuracy,FG-T minus FG-N,-0.24868465725253253,-0.19514128522430405,5.551115123125783e-17
+paired_bootstrap.csv,h2-h5-derived,macro_f1,FG-T minus FG-N,-0.2217797793029252,-0.16464642831540668,8.326672684688674e-17
+paired_bootstrap.csv,h2-h5-derived,balanced_accuracy,FG-T minus FG-N,-0.2451892754001893,-0.1905668684052753,0.0
+paired_bootstrap.csv,h1,accuracy,FG-N minus B2.2 Native-Sum,0.42837078651685395,0.5154494382022472,5.551115123125783e-17
+paired_bootstrap.csv,h1,macro_f1,FG-N minus B2.2 Native-Sum,0.4707029421212888,0.5555367255209627,0.0
+paired_bootstrap.csv,h1,balanced_accuracy,FG-N minus B2.2 Native-Sum,0.427364739872651,0.5065021163128837,0.0
+paired_bootstrap.csv,h2,accuracy,FG-N minus B2.2 Native-Sum,0.10693069306930691,0.20396039603960395,5.551115123125783e-17
+paired_bootstrap.csv,h2,macro_f1,FG-N minus B2.2 Native-Sum,0.15722345263712525,0.2518615709543753,5.551115123125783e-17
+paired_bootstrap.csv,h2,balanced_accuracy,FG-N minus B2.2 Native-Sum,0.1065334009451371,0.20078055416153118,8.326672684688674e-17
+paired_bootstrap.csv,h3,accuracy,FG-N minus B2.2 Native-Sum,0.028436018957345988,0.13033175355450236,8.673617379884035e-17
+paired_bootstrap.csv,h3,macro_f1,FG-N minus B2.2 Native-Sum,0.08360805105780571,0.17856458359059077,8.326672684688674e-17
+paired_bootstrap.csv,h3,balanced_accuracy,FG-N minus B2.2 Native-Sum,0.05166438925751603,0.14687637632284697,8.326672684688674e-17
+paired_bootstrap.csv,h4,accuracy,FG-N minus B2.2 Native-Sum,-0.003546099290780147,0.11356382978723359,8.326672684688674e-17
+paired_bootstrap.csv,h4,macro_f1,FG-N minus B2.2 Native-Sum,0.04670610254911279,0.16565218012879507,9.020562075079397e-17
+paired_bootstrap.csv,h4,balanced_accuracy,FG-N minus B2.2 Native-Sum,0.014213332286193715,0.12239527783470791,1.5612511283791264e-17
+paired_bootstrap.csv,h5,accuracy,FG-N minus B2.2 Native-Sum,-0.1056338028169014,0.09172535211267512,1.3877787807814457e-17
+paired_bootstrap.csv,h5,macro_f1,FG-N minus B2.2 Native-Sum,-4.916161547432429e-05,0.1651673230497873,0.0
+paired_bootstrap.csv,h5,balanced_accuracy,FG-N minus B2.2 Native-Sum,-0.031772410953017555,0.15170069626931038,8.326672684688674e-17
+paired_bootstrap.csv,h2-h5-derived,accuracy,FG-N minus B2.2 Native-Sum,0.038543746428691475,0.10554918150402438,8.326672684688674e-17
+paired_bootstrap.csv,h2-h5-derived,macro_f1,FG-N minus B2.2 Native-Sum,0.10130557420818735,0.16090292837953923,5.551115123125783e-17
+paired_bootstrap.csv,h2-h5-derived,balanced_accuracy,FG-N minus B2.2 Native-Sum,0.06256530933312447,0.12552864039893893,6.938893903907228e-17
+paired_bootstrap.csv,h1,accuracy,FG-T minus B2.2 Native-Sum,0.16429073033707864,0.2542134831460674,2.7755575615628914e-17
+paired_bootstrap.csv,h1,macro_f1,FG-T minus B2.2 Native-Sum,0.3425700622316119,0.4295849664978752,0.0
+paired_bootstrap.csv,h1,balanced_accuracy,FG-T minus B2.2 Native-Sum,0.15838684507574327,0.24437969798412348,8.326672684688674e-17
+paired_bootstrap.csv,h2,accuracy,FG-T minus B2.2 Native-Sum,-0.12475247524752477,-0.04554455445544554,6.938893903907228e-17
+paired_bootstrap.csv,h2,macro_f1,FG-T minus B2.2 Native-Sum,-0.006490189133598635,0.08609754621018428,8.326672684688674e-17
+paired_bootstrap.csv,h2,balanced_accuracy,FG-T minus B2.2 Native-Sum,-0.12194099555778773,-0.04806078119993193,2.7755575615628914e-17
+paired_bootstrap.csv,h3,accuracy,FG-T minus B2.2 Native-Sum,-0.18009478672985782,-0.10894549763033207,6.938893903907228e-17
+paired_bootstrap.csv,h3,macro_f1,FG-T minus B2.2 Native-Sum,-0.11234393480653276,-0.048014735672816715,6.938893903907228e-17
+paired_bootstrap.csv,h3,balanced_accuracy,FG-T minus B2.2 Native-Sum,-0.1511376912839788,-0.09049908547530308,8.326672684688674e-17
+paired_bootstrap.csv,h4,accuracy,FG-T minus B2.2 Native-Sum,-0.19858156028368795,-0.10992907801418439,8.326672684688674e-17
+paired_bootstrap.csv,h4,macro_f1,FG-T minus B2.2 Native-Sum,-0.12734785171762456,-0.04214673975051961,5.551115123125783e-17
+paired_bootstrap.csv,h4,balanced_accuracy,FG-T minus B2.2 Native-Sum,-0.16391995894730274,-0.0929050477035631,2.7755575615628914e-17
+paired_bootstrap.csv,h5,accuracy,FG-T minus B2.2 Native-Sum,-0.2887323943661972,-0.14788732394366197,5.551115123125783e-17
+paired_bootstrap.csv,h5,macro_f1,FG-T minus B2.2 Native-Sum,-0.17257653778204637,-0.07225375918884186,8.326672684688674e-17
+paired_bootstrap.csv,h5,balanced_accuracy,FG-T minus B2.2 Native-Sum,-0.20809697174686165,-0.11356006805294369,9.71445146547012e-17
+paired_bootstrap.csv,h2-h5-derived,accuracy,FG-T minus B2.2 Native-Sum,-0.17403447762292318,-0.12409080619045111,8.326672684688674e-17
+paired_bootstrap.csv,h2-h5-derived,macro_f1,FG-T minus B2.2 Native-Sum,-0.08402517603097422,-0.03890927950132992,2.0816681711721685e-17
+paired_bootstrap.csv,h2-h5-derived,balanced_accuracy,FG-T minus B2.2 Native-Sum,-0.1428168494621498,-0.10494619555004399,8.326672684688674e-17
+paired_bootstrap.csv,h1,accuracy,FG-T-Matched minus FG-N-Matched,-0.3,0.08000000000000007,6.938893903907228e-17
+paired_bootstrap.csv,h1,macro_f1,FG-T-Matched minus FG-N-Matched,-0.12323299655640606,0.266047318909161,5.551115123125783e-17
+paired_bootstrap.csv,h1,balanced_accuracy,FG-T-Matched minus FG-N-Matched,-0.18755377435064927,0.20164479617604603,5.551115123125783e-17
+paired_bootstrap.csv,h2,accuracy,FG-T-Matched minus FG-N-Matched,-0.48,-0.16000000000000003,2.7755575615628914e-17
+paired_bootstrap.csv,h2,macro_f1,FG-T-Matched minus FG-N-Matched,-0.3903944876395534,-0.06504774008885854,4.163336342344337e-17
+paired_bootstrap.csv,h2,balanced_accuracy,FG-T-Matched minus FG-N-Matched,-0.482641369047619,-0.20173532196969698,8.326672684688674e-17
+paired_bootstrap.csv,h3,accuracy,FG-T-Matched minus FG-N-Matched,-0.42,-0.18,0.0
+paired_bootstrap.csv,h3,macro_f1,FG-T-Matched minus FG-N-Matched,-0.4016798989409283,-0.1618960689069385,0.0
+paired_bootstrap.csv,h3,balanced_accuracy,FG-T-Matched minus FG-N-Matched,-0.4312515782828283,-0.17082600559163064,2.7755575615628914e-17
+paired_bootstrap.csv,h4,accuracy,FG-T-Matched minus FG-N-Matched,-0.4,-0.16,0.0
+paired_bootstrap.csv,h4,macro_f1,FG-T-Matched minus FG-N-Matched,-0.37610072767145136,-0.1506628858274079,5.551115123125783e-17
+paired_bootstrap.csv,h4,balanced_accuracy,FG-T-Matched minus FG-N-Matched,-0.3970238095238095,-0.16968750000000013,2.7755575615628914e-17
+paired_bootstrap.csv,h5,accuracy,FG-T-Matched minus FG-N-Matched,-0.24,-0.06,0.0
+paired_bootstrap.csv,h5,macro_f1,FG-T-Matched minus FG-N-Matched,-0.21480555902430903,-0.04164062500000014,4.163336342344337e-17
+paired_bootstrap.csv,h5,balanced_accuracy,FG-T-Matched minus FG-N-Matched,-0.2937680288461539,-0.038854166666666856,5.551115123125783e-17
+paired_bootstrap.csv,h2-h5-derived,accuracy,FG-T-Matched minus FG-N-Matched,-0.32499999999999996,-0.195,5.551115123125783e-17
+paired_bootstrap.csv,h2-h5-derived,macro_f1,FG-T-Matched minus FG-N-Matched,-0.2864966315665329,-0.15958914801390134,2.7755575615628914e-17
+paired_bootstrap.csv,h2-h5-derived,balanced_accuracy,FG-T-Matched minus FG-N-Matched,-0.3392554450757575,-0.20519945549242424,5.551115123125783e-17

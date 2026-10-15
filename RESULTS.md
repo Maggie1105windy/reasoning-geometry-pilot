@@ -74,6 +74,20 @@
 - 关键结果：Final Raw-Sum derived mean 0.1112，Native-Sum 0.1829（增量 95% CI [0.0396, 0.1035]），Raw-Mean 0.1599，Native-Mean 0.1917，EqualLength-Native 0.1522。
 - Fitness decision：接口与 token-length scoring 都明显影响原 Raw 结果，但 Final 在最公平的等长 native 协议下 h2–h5 仍未稳定高于 0.125。建议保留当前模型作 weak-reasoning control，新增 strong-behavior model，不自动进入因果干预。
 
+### B2.2—B2.3 — Qwen行为、思考预算与可见轨迹
+
+- 最新图文综合报告：[`docs/stage-b/STAGE_B2_3_RESEARCH_SUMMARY_ZH.md`](docs/stage-b/STAGE_B2_3_RESEARCH_SUMMARY_ZH.md)。
+- 同步范围、逐文件SHA与压缩还原：[`results/stage-b2_3_sync/README.md`](results/stage-b2_3_sync/README.md)。
+- B2.2参照：[`artifacts/stage_b2_2_qwen3/`](artifacts/stage_b2_2_qwen3/)。
+- 原2063题自由生成：[`artifacts/stage_b2_3_qwen3_generation/`](artifacts/stage_b2_3_qwen3_generation/)。
+- 10题预算：[`artifacts/stage_b2_3_budget_pilot_20261013/`](artifacts/stage_b2_3_budget_pilot_20261013/)。
+- 100题预算：[`artifacts/stage_b2_3_budget100_20261014/`](artifacts/stage_b2_3_budget100_20261014/)。
+- 轨迹高频：[`analysis_high_frequency_20261015/`](artifacts/stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/)。
+- 八张PNG／SVG及图表数据：[`artifacts/stage_b2_3_synthesis_20261015/`](artifacts/stage_b2_3_synthesis_20261015/)。
+- 非思考多步准确率25.65%，原生候选评分18.53%；原2K思考多步3.52%受到严重截断，不能解释为充分预算的thinking纯效应。
+- 新100题三档正确59／64／64、解析77／96／96。单seed等hop预算诊断，非自然总体估计，也不是选预算后的独立能力确认。
+- 本阶段没有完成生成轨迹隐藏状态提取、token级Δlog p或因果激活机制验证。
+
 ### Preliminary — MATH-500 pilot-20
 
 - 四阶段结果与人工复核材料：[`preliminary/math500/`](preliminary/math500/)

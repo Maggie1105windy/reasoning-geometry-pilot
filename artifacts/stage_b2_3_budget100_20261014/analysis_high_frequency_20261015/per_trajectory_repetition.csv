@@ -1,0 +1,301 @@
+﻿row_id,budget,hop,correct,parsed,truncated,thinking_tokens,word_count,sentence_count,unique_sentences,extra_repeated_sentence_words,repeated_sentence_word_fraction,most_repeated_sentence,most_repeated_sentence_count
+100046,8192,3,True,True,False,3696,2876,249,227,145,0.050417246175243395,so x is to the left of y,4
+100256,8192,2,True,True,False,8051,6254,477,422,504,0.08058842340901823,let me think,4
+100614,8192,5,False,False,True,8191,6007,535,469,488,0.08123855501914433,"so, m is northeast of y",9
+100962,8192,3,False,False,True,8191,6388,551,487,391,0.061208515967438946,so a is southeast of l,7
+101092,8192,4,False,False,True,8191,6303,550,465,682,0.1082024432809773,"now, u is parallel to z",10
+101246,8192,4,True,True,False,7077,5603,441,411,190,0.03391040514010352,or maybe not,6
+101274,8192,3,False,False,True,8191,6281,511,432,693,0.11033274956217162,then n is directly below o,8
+101371,8192,2,True,True,False,5223,3908,352,309,282,0.07215967246673491,"so, the relation is ""above""",7
+101760,8192,1,True,True,False,832,688,48,48,0,0.0,"okay, let's try to figure out the relation between agent a and agent b",1
+101850,8192,1,True,True,False,5799,4438,411,352,443,0.09981973862100045,"for example, if u is horizontal, then d is also horizontal",7
+102164,8192,5,False,False,True,8191,5643,454,431,118,0.020910863016126175,"wait, no",11
+102494,8192,5,False,True,False,5740,4180,431,363,442,0.10574162679425837,then y is above and slightly left of v,9
+102510,8192,3,False,False,True,8191,6068,576,493,655,0.10794330916282135,so k is upper right of w,8
+102589,8192,1,True,True,False,1071,830,73,71,21,0.02530120481927711,then y and d are in a vertical line with d below y,2
+102690,8192,3,True,True,False,5994,4549,393,351,280,0.06155198944823038,"wait, no",6
+102788,8192,1,True,True,False,1256,1044,92,89,32,0.03065134099616858,so the relation between d and i is that d is above i,2
+103101,8192,2,False,False,True,8191,5509,480,432,233,0.04229442730078054,"wait, no",17
+103365,8192,2,False,True,False,2177,1670,143,139,26,0.015568862275449102,so m is directly above h,2
+103483,8192,2,False,True,False,2522,1998,189,175,84,0.042042042042042045,let me think,4
+103518,8192,3,True,True,False,6507,4930,438,372,477,0.09675456389452333,"then, u is placed at the lower left of b",5
+103654,8192,5,True,True,False,4040,3025,291,264,175,0.05785123966942149,let me think,5
+103698,8192,2,True,True,False,4575,3582,325,289,295,0.08235622557230597,so f is above and to the left of u,4
+103826,8192,5,False,True,False,4406,3448,288,257,245,0.07105568445475638,so t is to the lower left of e,5
+103906,8192,4,False,False,True,8191,6068,508,453,342,0.056361239288068556,"wait, no",14
+104039,8192,5,True,True,False,7528,5765,465,416,433,0.07510841283607979,then t is in the lower right corner of f,8
+104263,8192,3,True,True,False,3683,2982,244,222,201,0.06740442655935613,"so f is above y, and p is to the left of y",5
+104379,8192,4,True,True,False,7265,5353,456,416,308,0.05753782925462358,"so if i is at 10 o'clock, then g is below i",4
+104683,8192,3,True,True,False,3928,2911,274,246,227,0.07798007557540364,second statement: j is directly northwest of u,3
+84008,8192,2,True,True,False,5834,4511,363,304,474,0.10507647971624917,so k is to the right of i,6
+84114,8192,4,True,True,False,1407,1027,91,88,26,0.02531645569620253,then i is below o with a small gap,3
+84506,8192,5,False,True,False,8071,6061,480,429,494,0.08150470219435736,so o is to the left of l,8
+85242,8192,4,True,True,False,4880,3699,291,278,82,0.02216815355501487,let me think again,3
+85914,8192,5,False,True,False,4546,3518,256,248,39,0.011085844229675953,"wait, no",3
+86290,8192,4,False,False,True,8191,6083,488,449,330,0.054249547920433995,"now, p is below and to the right of z",7
+86592,8192,5,False,True,False,8049,5924,584,507,465,0.07849426063470628,"h is at (2,1)",7
+86606,8192,2,False,True,False,4950,3949,311,272,278,0.07039756900481134,"wait, no",8
+86694,8192,4,True,True,False,2045,1526,124,118,42,0.027522935779816515,so k is to the left and below l,3
+87055,8192,5,False,True,False,6488,4930,416,381,238,0.04827586206896552,let me think,5
+87158,8192,3,False,True,False,4586,3557,305,266,312,0.08771436603879675,so i is below and left of y,6
+88204,8192,3,True,True,False,2045,1605,134,127,56,0.03489096573208723,so g is to the right and below w,2
+88527,8192,1,True,True,False,1952,1548,139,133,48,0.031007751937984496,1,2
+88719,8192,3,True,True,False,2844,2293,229,206,142,0.061927605756650676,so t is above d,4
+88999,8192,4,True,True,False,3135,2396,213,193,139,0.05801335559265442,so q is above w,5
+89054,8192,5,False,True,False,6085,4517,407,365,261,0.057781713526677,let me think,6
+89092,8192,2,True,True,False,2819,2204,215,196,137,0.06215970961887477,j is upper left of h,4
+89435,8192,2,True,True,False,6173,4993,387,348,301,0.060284398157420385,let me think,5
+89458,8192,3,True,True,False,7199,5372,444,405,266,0.04951600893521966,"also, v is above j",5
+89515,8192,1,True,True,False,695,570,47,47,0,0.0,"okay, let's try to figure out the relation between f and g",1
+90120,8192,2,False,True,False,3734,3031,208,197,127,0.041900362916529196,"the object a is above and slightly to the right of the object i."" so a is above and slightly to the right of i",3
+90149,8192,3,True,True,False,3598,2845,252,226,200,0.070298769771529,so j is to the right of z,4
+90179,8192,2,True,True,False,7960,5896,406,387,162,0.027476255088195387,"wait, no",3
+90221,8192,4,False,False,True,8191,6113,554,460,711,0.11630950433502373,so e is to the right and below h,18
+90634,8192,1,True,True,False,3133,2485,213,202,80,0.03219315895372234,"also, a is to the left of d",3
+90898,8192,5,False,True,False,3756,2941,233,216,107,0.03638218293097586,"so, b is below g",4
+91221,8192,1,True,True,False,6059,4709,386,336,390,0.08282013166277341,so e is to the right of h,7
+91319,8192,4,False,False,True,8191,6407,577,107,5138,0.8019353831746527,"therefore, j is southwest of n, which is west of o",452
+91373,8192,5,True,True,False,4674,3521,285,261,146,0.04146549275773928,let me think again,4
+91418,8192,2,True,True,False,6116,4780,411,354,450,0.09414225941422594,e is below and slightly right of o,8
+91880,8192,4,True,True,False,4182,3213,305,264,291,0.09056956115779645,so a is lower left of z,6
+92265,8192,4,True,True,False,3562,2609,238,217,135,0.05174396320429283,so p is southwest of e,4
+92342,8192,1,True,True,False,2493,2042,159,149,83,0.04064642507345739,so x is somewhere left of h,3
+92689,8192,5,True,True,False,6604,4919,419,370,253,0.05143321813376703,"wait, no",10
+92735,8192,3,True,True,False,3318,2521,229,202,220,0.0872669575565252,so m is upper right of g,4
+92970,8192,1,True,True,False,1411,1058,84,82,14,0.013232514177693762,so f is directly to the right of x,2
+93270,8192,1,True,True,False,3067,2483,210,195,136,0.05477245267821184,so u and w could be in the same horizontal line,3
+93532,8192,2,True,True,False,4106,3100,277,255,170,0.054838709677419356,let me think,3
+93706,8192,4,False,True,False,7619,6185,483,425,432,0.0698464025869038,so e is above z,5
+93765,8192,1,True,True,False,685,557,49,49,0,0.0,"okay, let's try to figure out the relation between agent a and agent f",1
+93992,8192,2,False,True,False,7765,6111,491,439,389,0.06365570283096056,let me think,4
+94140,8192,3,True,True,False,3164,2376,211,187,257,0.10816498316498316,"therefore, f is above and to the left of e, which is directly above y",5
+94592,8192,1,True,True,False,4679,3492,305,271,237,0.06786941580756013,let me think again,6
+94828,8192,5,False,True,False,7421,5566,513,440,542,0.09737693136902623,"now, u is lower right of z",6
+94864,8192,1,True,True,False,389,324,33,33,0,0.0,"okay, let me try to figure this out",1
+94943,8192,4,False,False,True,8191,6858,404,94,5638,0.8221055701370662,"therefore, g is located in the south direction from d, which is southwest of f",151
+94974,8192,2,True,True,False,2211,1676,166,152,92,0.05489260143198091,"so, e is above v",5
+95279,8192,4,False,False,True,8191,6305,570,495,575,0.09119746233148295,let me think,7
+95336,8192,1,True,True,False,891,692,76,73,16,0.023121387283236993,so o is above g,2
+95732,8192,3,False,False,True,8191,6465,559,101,5047,0.7806651198762568,"therefore, y is left of k, which is right of l",439
+95870,8192,3,False,False,True,8191,5812,412,392,234,0.04026152787336545,"clue 4: d is at a 45-degree angle to v, in the upper lefthand corner",6
+96087,8192,3,False,False,True,8191,6467,549,478,511,0.07901654553888975,so g is to the right of a,6
+96175,8192,4,False,False,True,8191,6559,521,467,448,0.06830309498399147,"wait, no",13
+96380,8192,1,True,True,False,967,790,82,78,19,0.024050632911392405,so n is above r,2
+97005,8192,5,True,True,False,3140,2315,236,202,215,0.09287257019438445,so o is lower left of m,5
+97223,8192,1,True,True,False,1225,980,83,78,41,0.04183673469387755,so n is above and to the right of h,3
+97230,8192,3,True,True,False,7561,5360,415,373,293,0.054664179104477614,"wait, no",5
+97320,8192,2,False,False,True,8191,6252,523,475,346,0.055342290467050546,let me think,6
+97530,8192,5,False,False,True,8191,6310,514,471,337,0.05340729001584786,let me think again,8
+97550,8192,5,False,True,False,6792,5155,489,382,793,0.15383123181377303,e is directly northeast of r,10
+97613,8192,5,False,False,True,8191,5317,505,467,235,0.044197855933797256,"wait, no",6
+97877,8192,1,True,True,False,3659,2887,232,215,175,0.060616556979563564,so z is to the left of x,4
+98237,8192,4,True,True,False,4952,3567,342,289,355,0.09952340902719373,so b is to the left of p,8
+98424,8192,2,True,True,False,5519,4194,385,351,169,0.040295660467334286,correct,8
+98755,8192,4,True,True,False,6508,5196,395,356,320,0.061585835257890686,k is below a at 7 o'clock,5
+98789,8192,5,False,False,True,8191,5615,454,403,287,0.051113089937666965,let me think,5
+98865,8192,2,True,True,False,1644,1270,117,111,45,0.03543307086614173,so p is directly below q,3
+99404,8192,1,True,True,False,1736,1376,141,129,87,0.06322674418604651,so j is above w,4
+99424,8192,3,False,False,True,8191,6745,591,393,2020,0.2994810971089696,"so t is upper of j, which is to the right of k",63
+99523,8192,4,False,True,False,3531,2679,237,210,207,0.07726763717805152,so n is to the right and below t,7
+99633,8192,1,True,True,False,2446,1913,145,140,41,0.021432305279665446,but i don't know the exact positions yet,2
+99878,8192,2,False,False,True,8191,6493,533,477,432,0.06653318958878793,g is below s and to the right of s,6
+100046,16384,3,True,True,False,3696,2876,249,227,145,0.050417246175243395,so x is to the left of y,4
+100256,16384,2,True,True,False,8051,6254,477,422,504,0.08058842340901823,let me think,4
+100614,16384,5,False,True,False,9002,6675,575,499,584,0.08749063670411986,"so, m is northeast of y",9
+100962,16384,3,False,True,False,9865,7716,642,563,488,0.06324520476931052,so a is southeast of l,8
+101092,16384,4,False,True,False,10581,8159,681,577,887,0.10871430322343424,"now, u is parallel to z",10
+101246,16384,4,True,True,False,7077,5603,441,411,190,0.03391040514010352,or maybe not,6
+101274,16384,3,False,True,False,10115,7663,619,528,767,0.10009134803601723,then n is directly below o,8
+101371,16384,2,True,True,False,5223,3908,352,309,282,0.07215967246673491,"so, the relation is ""above""",7
+101760,16384,1,True,True,False,832,688,48,48,0,0.0,"okay, let's try to figure out the relation between agent a and agent b",1
+101850,16384,1,True,True,False,5799,4438,411,352,443,0.09981973862100045,"for example, if u is horizontal, then d is also horizontal",7
+102164,16384,5,True,True,False,8474,5829,469,446,118,0.020243609538514326,"wait, no",11
+102494,16384,5,False,True,False,5740,4180,431,363,442,0.10574162679425837,then y is above and slightly left of v,9
+102510,16384,3,False,True,False,12066,8973,833,664,1506,0.16783684386492811,"so k is upper right of w, which is to the right of v",14
+102589,16384,1,True,True,False,1071,830,73,71,21,0.02530120481927711,then y and d are in a vertical line with d below y,2
+102690,16384,3,True,True,False,5994,4549,393,351,280,0.06155198944823038,"wait, no",6
+102788,16384,1,True,True,False,1256,1044,92,89,32,0.03065134099616858,so the relation between d and i is that d is above i,2
+103101,16384,2,False,True,False,13048,8549,775,680,511,0.05977307287402035,"wait, no",19
+103365,16384,2,False,True,False,2177,1670,143,139,26,0.015568862275449102,so m is directly above h,2
+103483,16384,2,False,True,False,2522,1998,189,175,84,0.042042042042042045,let me think,4
+103518,16384,3,True,True,False,6507,4930,438,372,477,0.09675456389452333,"then, u is placed at the lower left of b",5
+103654,16384,5,True,True,False,4040,3025,291,264,175,0.05785123966942149,let me think,5
+103698,16384,2,True,True,False,4575,3582,325,289,295,0.08235622557230597,so f is above and to the left of u,4
+103826,16384,5,False,True,False,4406,3448,288,257,245,0.07105568445475638,so t is to the lower left of e,5
+103906,16384,4,False,True,False,14008,10160,910,756,881,0.08671259842519685,"wait, no",18
+104039,16384,5,True,True,False,7528,5765,465,416,433,0.07510841283607979,then t is in the lower right corner of f,8
+104263,16384,3,True,True,False,3683,2982,244,222,201,0.06740442655935613,"so f is above y, and p is to the left of y",5
+104379,16384,4,True,True,False,7265,5353,456,416,308,0.05753782925462358,"so if i is at 10 o'clock, then g is below i",4
+104683,16384,3,True,True,False,3928,2911,274,246,227,0.07798007557540364,second statement: j is directly northwest of u,3
+84008,16384,2,True,True,False,5834,4511,363,304,474,0.10507647971624917,so k is to the right of i,6
+84114,16384,4,True,True,False,1407,1027,91,88,26,0.02531645569620253,then i is below o with a small gap,3
+84506,16384,5,False,True,False,8071,6061,480,429,494,0.08150470219435736,so o is to the left of l,8
+85242,16384,4,True,True,False,4880,3699,291,278,82,0.02216815355501487,let me think again,3
+85914,16384,5,False,True,False,4546,3518,256,248,39,0.011085844229675953,"wait, no",3
+86290,16384,4,True,True,False,10206,7633,601,535,563,0.07375867941831521,"now, p is below and to the right of z",10
+86592,16384,5,False,True,False,8049,5924,584,507,465,0.07849426063470628,"h is at (2,1)",7
+86606,16384,2,False,True,False,4950,3949,311,272,278,0.07039756900481134,"wait, no",8
+86694,16384,4,True,True,False,2045,1526,124,118,42,0.027522935779816515,so k is to the left and below l,3
+87055,16384,5,False,True,False,6488,4930,416,381,238,0.04827586206896552,let me think,5
+87158,16384,3,False,True,False,4586,3557,305,266,312,0.08771436603879675,so i is below and left of y,6
+88204,16384,3,True,True,False,2045,1605,134,127,56,0.03489096573208723,so g is to the right and below w,2
+88527,16384,1,True,True,False,1952,1548,139,133,48,0.031007751937984496,1,2
+88719,16384,3,True,True,False,2844,2293,229,206,142,0.061927605756650676,so t is above d,4
+88999,16384,4,True,True,False,3135,2396,213,193,139,0.05801335559265442,so q is above w,5
+89054,16384,5,False,True,False,6085,4517,407,365,261,0.057781713526677,let me think,6
+89092,16384,2,True,True,False,2819,2204,215,196,137,0.06215970961887477,j is upper left of h,4
+89435,16384,2,True,True,False,6173,4993,387,348,301,0.060284398157420385,let me think,5
+89458,16384,3,True,True,False,7199,5372,444,405,266,0.04951600893521966,"also, v is above j",5
+89515,16384,1,True,True,False,695,570,47,47,0,0.0,"okay, let's try to figure out the relation between f and g",1
+90120,16384,2,False,True,False,3734,3031,208,197,127,0.041900362916529196,"the object a is above and slightly to the right of the object i."" so a is above and slightly to the right of i",3
+90149,16384,3,True,True,False,3598,2845,252,226,200,0.070298769771529,so j is to the right of z,4
+90179,16384,2,True,True,False,7960,5896,406,387,162,0.027476255088195387,"wait, no",3
+90221,16384,4,True,True,False,10839,8165,720,589,937,0.11475811390079609,so e is to the right and below h,18
+90634,16384,1,True,True,False,3133,2485,213,202,80,0.03219315895372234,"also, a is to the left of d",3
+90898,16384,5,False,True,False,3756,2941,233,216,107,0.03638218293097586,"so, b is below g",4
+91221,16384,1,True,True,False,6059,4709,386,336,390,0.08282013166277341,so e is to the right of h,7
+91319,16384,4,False,False,True,16383,12843,1162,106,11584,0.9019699447169665,"therefore, j is southwest of n, which is west of o",1038
+91373,16384,5,True,True,False,4674,3521,285,261,146,0.04146549275773928,let me think again,4
+91418,16384,2,True,True,False,6116,4780,411,354,450,0.09414225941422594,e is below and slightly right of o,8
+91880,16384,4,True,True,False,4182,3213,305,264,291,0.09056956115779645,so a is lower left of z,6
+92265,16384,4,True,True,False,3562,2609,238,217,135,0.05174396320429283,so p is southwest of e,4
+92342,16384,1,True,True,False,2493,2042,159,149,83,0.04064642507345739,so x is somewhere left of h,3
+92689,16384,5,True,True,False,6604,4919,419,370,253,0.05143321813376703,"wait, no",10
+92735,16384,3,True,True,False,3318,2521,229,202,220,0.0872669575565252,so m is upper right of g,4
+92970,16384,1,True,True,False,1411,1058,84,82,14,0.013232514177693762,so f is directly to the right of x,2
+93270,16384,1,True,True,False,3067,2483,210,195,136,0.05477245267821184,so u and w could be in the same horizontal line,3
+93532,16384,2,True,True,False,4106,3100,277,255,170,0.054838709677419356,let me think,3
+93706,16384,4,False,True,False,7619,6185,483,425,432,0.0698464025869038,so e is above z,5
+93765,16384,1,True,True,False,685,557,49,49,0,0.0,"okay, let's try to figure out the relation between agent a and agent f",1
+93992,16384,2,False,True,False,7765,6111,491,439,389,0.06365570283096056,let me think,4
+94140,16384,3,True,True,False,3164,2376,211,187,257,0.10816498316498316,"therefore, f is above and to the left of e, which is directly above y",5
+94592,16384,1,True,True,False,4679,3492,305,271,237,0.06786941580756013,let me think again,6
+94828,16384,5,False,True,False,7421,5566,513,440,542,0.09737693136902623,"now, u is lower right of z",6
+94864,16384,1,True,True,False,389,324,33,33,0,0.0,"okay, let me try to figure this out",1
+94943,16384,4,False,False,True,16383,13746,777,94,12542,0.9124108831660119,"therefore, g is located in the south direction from d, which is southwest of f",337
+94974,16384,2,True,True,False,2211,1676,166,152,92,0.05489260143198091,"so, e is above v",5
+95279,16384,4,True,True,False,12403,9312,845,692,1163,0.1248926116838488,so z is to the right of a,8
+95336,16384,1,True,True,False,891,692,76,73,16,0.023121387283236993,so o is above g,2
+95732,16384,3,False,False,True,16383,12902,1144,101,11482,0.8899395442567044,"therefore, y is left of k, which is right of l",1024
+95870,16384,3,False,True,False,9006,6409,458,428,343,0.0535184896239663,"clue 4: d is at a 45-degree angle to v, in the upper lefthand corner",7
+96087,16384,3,False,True,False,10028,7913,652,563,624,0.07885757614052824,so g is to the right of a,6
+96175,16384,4,False,True,False,11725,9533,694,595,982,0.10301059477604112,"wait, no",15
+96380,16384,1,True,True,False,967,790,82,78,19,0.024050632911392405,so n is above r,2
+97005,16384,5,True,True,False,3140,2315,236,202,215,0.09287257019438445,so o is lower left of m,5
+97223,16384,1,True,True,False,1225,980,83,78,41,0.04183673469387755,so n is above and to the right of h,3
+97230,16384,3,True,True,False,7561,5360,415,373,293,0.054664179104477614,"wait, no",5
+97320,16384,2,False,True,False,9011,6873,572,519,365,0.05310635821329841,let me think,6
+97530,16384,5,True,True,False,8628,6635,533,489,344,0.051846269781461944,let me think again,8
+97550,16384,5,False,True,False,6792,5155,489,382,793,0.15383123181377303,e is directly northeast of r,10
+97613,16384,5,False,True,False,9279,6207,572,523,335,0.05397132270017722,"wait, no",6
+97877,16384,1,True,True,False,3659,2887,232,215,175,0.060616556979563564,so z is to the left of x,4
+98237,16384,4,True,True,False,4952,3567,342,289,355,0.09952340902719373,so b is to the left of p,8
+98424,16384,2,True,True,False,5519,4194,385,351,169,0.040295660467334286,correct,8
+98755,16384,4,True,True,False,6508,5196,395,356,320,0.061585835257890686,k is below a at 7 o'clock,5
+98789,16384,5,False,True,False,12951,9097,678,590,678,0.07453006485654612,let me think,7
+98865,16384,2,True,True,False,1644,1270,117,111,45,0.03543307086614173,so p is directly below q,3
+99404,16384,1,True,True,False,1736,1376,141,129,87,0.06322674418604651,so j is above w,4
+99424,16384,3,False,False,True,16383,13845,1137,393,9118,0.6585771036475262,"so t is upper of j, which is to the right of k",609
+99523,16384,4,False,True,False,3531,2679,237,210,207,0.07726763717805152,so n is to the right and below t,7
+99633,16384,1,True,True,False,2446,1913,145,140,41,0.021432305279665446,but i don't know the exact positions yet,2
+99878,16384,2,False,True,False,9707,7711,630,556,541,0.07015951238490468,so s is to the right of v,6
+100046,32768,3,True,True,False,3696,2876,249,227,145,0.050417246175243395,so x is to the left of y,4
+100256,32768,2,True,True,False,8051,6254,477,422,504,0.08058842340901823,let me think,4
+100614,32768,5,False,True,False,9002,6675,575,499,584,0.08749063670411986,"so, m is northeast of y",9
+100962,32768,3,False,True,False,9865,7716,642,563,488,0.06324520476931052,so a is southeast of l,8
+101092,32768,4,False,True,False,10581,8159,681,577,887,0.10871430322343424,"now, u is parallel to z",10
+101246,32768,4,True,True,False,7077,5603,441,411,190,0.03391040514010352,or maybe not,6
+101274,32768,3,False,True,False,10115,7663,619,528,767,0.10009134803601723,then n is directly below o,8
+101371,32768,2,True,True,False,5223,3908,352,309,282,0.07215967246673491,"so, the relation is ""above""",7
+101760,32768,1,True,True,False,832,688,48,48,0,0.0,"okay, let's try to figure out the relation between agent a and agent b",1
+101850,32768,1,True,True,False,5799,4438,411,352,443,0.09981973862100045,"for example, if u is horizontal, then d is also horizontal",7
+102164,32768,5,True,True,False,8474,5829,469,446,118,0.020243609538514326,"wait, no",11
+102494,32768,5,False,True,False,5740,4180,431,363,442,0.10574162679425837,then y is above and slightly left of v,9
+102510,32768,3,False,True,False,12066,8973,833,664,1506,0.16783684386492811,"so k is upper right of w, which is to the right of v",14
+102589,32768,1,True,True,False,1071,830,73,71,21,0.02530120481927711,then y and d are in a vertical line with d below y,2
+102690,32768,3,True,True,False,5994,4549,393,351,280,0.06155198944823038,"wait, no",6
+102788,32768,1,True,True,False,1256,1044,92,89,32,0.03065134099616858,so the relation between d and i is that d is above i,2
+103101,32768,2,False,True,False,13048,8549,775,680,511,0.05977307287402035,"wait, no",19
+103365,32768,2,False,True,False,2177,1670,143,139,26,0.015568862275449102,so m is directly above h,2
+103483,32768,2,False,True,False,2522,1998,189,175,84,0.042042042042042045,let me think,4
+103518,32768,3,True,True,False,6507,4930,438,372,477,0.09675456389452333,"then, u is placed at the lower left of b",5
+103654,32768,5,True,True,False,4040,3025,291,264,175,0.05785123966942149,let me think,5
+103698,32768,2,True,True,False,4575,3582,325,289,295,0.08235622557230597,so f is above and to the left of u,4
+103826,32768,5,False,True,False,4406,3448,288,257,245,0.07105568445475638,so t is to the lower left of e,5
+103906,32768,4,False,True,False,14008,10160,910,756,881,0.08671259842519685,"wait, no",18
+104039,32768,5,True,True,False,7528,5765,465,416,433,0.07510841283607979,then t is in the lower right corner of f,8
+104263,32768,3,True,True,False,3683,2982,244,222,201,0.06740442655935613,"so f is above y, and p is to the left of y",5
+104379,32768,4,True,True,False,7265,5353,456,416,308,0.05753782925462358,"so if i is at 10 o'clock, then g is below i",4
+104683,32768,3,True,True,False,3928,2911,274,246,227,0.07798007557540364,second statement: j is directly northwest of u,3
+84008,32768,2,True,True,False,5834,4511,363,304,474,0.10507647971624917,so k is to the right of i,6
+84114,32768,4,True,True,False,1407,1027,91,88,26,0.02531645569620253,then i is below o with a small gap,3
+84506,32768,5,False,True,False,8071,6061,480,429,494,0.08150470219435736,so o is to the left of l,8
+85242,32768,4,True,True,False,4880,3699,291,278,82,0.02216815355501487,let me think again,3
+85914,32768,5,False,True,False,4546,3518,256,248,39,0.011085844229675953,"wait, no",3
+86290,32768,4,True,True,False,10206,7633,601,535,563,0.07375867941831521,"now, p is below and to the right of z",10
+86592,32768,5,False,True,False,8049,5924,584,507,465,0.07849426063470628,"h is at (2,1)",7
+86606,32768,2,False,True,False,4950,3949,311,272,278,0.07039756900481134,"wait, no",8
+86694,32768,4,True,True,False,2045,1526,124,118,42,0.027522935779816515,so k is to the left and below l,3
+87055,32768,5,False,True,False,6488,4930,416,381,238,0.04827586206896552,let me think,5
+87158,32768,3,False,True,False,4586,3557,305,266,312,0.08771436603879675,so i is below and left of y,6
+88204,32768,3,True,True,False,2045,1605,134,127,56,0.03489096573208723,so g is to the right and below w,2
+88527,32768,1,True,True,False,1952,1548,139,133,48,0.031007751937984496,1,2
+88719,32768,3,True,True,False,2844,2293,229,206,142,0.061927605756650676,so t is above d,4
+88999,32768,4,True,True,False,3135,2396,213,193,139,0.05801335559265442,so q is above w,5
+89054,32768,5,False,True,False,6085,4517,407,365,261,0.057781713526677,let me think,6
+89092,32768,2,True,True,False,2819,2204,215,196,137,0.06215970961887477,j is upper left of h,4
+89435,32768,2,True,True,False,6173,4993,387,348,301,0.060284398157420385,let me think,5
+89458,32768,3,True,True,False,7199,5372,444,405,266,0.04951600893521966,"also, v is above j",5
+89515,32768,1,True,True,False,695,570,47,47,0,0.0,"okay, let's try to figure out the relation between f and g",1
+90120,32768,2,False,True,False,3734,3031,208,197,127,0.041900362916529196,"the object a is above and slightly to the right of the object i."" so a is above and slightly to the right of i",3
+90149,32768,3,True,True,False,3598,2845,252,226,200,0.070298769771529,so j is to the right of z,4
+90179,32768,2,True,True,False,7960,5896,406,387,162,0.027476255088195387,"wait, no",3
+90221,32768,4,True,True,False,10839,8165,720,589,937,0.11475811390079609,so e is to the right and below h,18
+90634,32768,1,True,True,False,3133,2485,213,202,80,0.03219315895372234,"also, a is to the left of d",3
+90898,32768,5,False,True,False,3756,2941,233,216,107,0.03638218293097586,"so, b is below g",4
+91221,32768,1,True,True,False,6059,4709,386,336,390,0.08282013166277341,so e is to the right of h,7
+91319,32768,4,False,False,True,32767,25716,2333,107,24454,0.9509254938559651,"therefore, j is southwest of n, which is west of o",2208
+91373,32768,5,True,True,False,4674,3521,285,261,146,0.04146549275773928,let me think again,4
+91418,32768,2,True,True,False,6116,4780,411,354,450,0.09414225941422594,e is below and slightly right of o,8
+91880,32768,4,True,True,False,4182,3213,305,264,291,0.09056956115779645,so a is lower left of z,6
+92265,32768,4,True,True,False,3562,2609,238,217,135,0.05174396320429283,so p is southwest of e,4
+92342,32768,1,True,True,False,2493,2042,159,149,83,0.04064642507345739,so x is somewhere left of h,3
+92689,32768,5,True,True,False,6604,4919,419,370,253,0.05143321813376703,"wait, no",10
+92735,32768,3,True,True,False,3318,2521,229,202,220,0.0872669575565252,so m is upper right of g,4
+92970,32768,1,True,True,False,1411,1058,84,82,14,0.013232514177693762,so f is directly to the right of x,2
+93270,32768,1,True,True,False,3067,2483,210,195,136,0.05477245267821184,so u and w could be in the same horizontal line,3
+93532,32768,2,True,True,False,4106,3100,277,255,170,0.054838709677419356,let me think,3
+93706,32768,4,False,True,False,7619,6185,483,425,432,0.0698464025869038,so e is above z,5
+93765,32768,1,True,True,False,685,557,49,49,0,0.0,"okay, let's try to figure out the relation between agent a and agent f",1
+93992,32768,2,False,True,False,7765,6111,491,439,389,0.06365570283096056,let me think,4
+94140,32768,3,True,True,False,3164,2376,211,187,257,0.10816498316498316,"therefore, f is above and to the left of e, which is directly above y",5
+94592,32768,1,True,True,False,4679,3492,305,271,237,0.06786941580756013,let me think again,6
+94828,32768,5,False,True,False,7421,5566,513,440,542,0.09737693136902623,"now, u is lower right of z",6
+94864,32768,1,True,True,False,389,324,33,33,0,0.0,"okay, let me try to figure this out",1
+94943,32768,4,False,False,True,32767,27523,1522,94,26321,0.9563274352359844,"therefore, g is located in the south direction from d, which is southwest of f",710
+94974,32768,2,True,True,False,2211,1676,166,152,92,0.05489260143198091,"so, e is above v",5
+95279,32768,4,True,True,False,12403,9312,845,692,1163,0.1248926116838488,so z is to the right of a,8
+95336,32768,1,True,True,False,891,692,76,73,16,0.023121387283236993,so o is above g,2
+95732,32768,3,False,False,True,32767,25775,2314,101,24352,0.9447914645974782,"therefore, y is left of k, which is right of l",2194
+95870,32768,3,False,True,False,9006,6409,458,428,343,0.0535184896239663,"clue 4: d is at a 45-degree angle to v, in the upper lefthand corner",7
+96087,32768,3,False,True,False,10028,7913,652,563,624,0.07885757614052824,so g is to the right of a,6
+96175,32768,4,False,True,False,11725,9533,694,595,982,0.10301059477604112,"wait, no",15
+96380,32768,1,True,True,False,967,790,82,78,19,0.024050632911392405,so n is above r,2
+97005,32768,5,True,True,False,3140,2315,236,202,215,0.09287257019438445,so o is lower left of m,5
+97223,32768,1,True,True,False,1225,980,83,78,41,0.04183673469387755,so n is above and to the right of h,3
+97230,32768,3,True,True,False,7561,5360,415,373,293,0.054664179104477614,"wait, no",5
+97320,32768,2,False,True,False,9011,6873,572,519,365,0.05310635821329841,let me think,6
+97530,32768,5,True,True,False,8628,6635,533,489,344,0.051846269781461944,let me think again,8
+97550,32768,5,False,True,False,6792,5155,489,382,793,0.15383123181377303,e is directly northeast of r,10
+97613,32768,5,False,True,False,9279,6207,572,523,335,0.05397132270017722,"wait, no",6
+97877,32768,1,True,True,False,3659,2887,232,215,175,0.060616556979563564,so z is to the left of x,4
+98237,32768,4,True,True,False,4952,3567,342,289,355,0.09952340902719373,so b is to the left of p,8
+98424,32768,2,True,True,False,5519,4194,385,351,169,0.040295660467334286,correct,8
+98755,32768,4,True,True,False,6508,5196,395,356,320,0.061585835257890686,k is below a at 7 o'clock,5
+98789,32768,5,False,True,False,12951,9097,678,590,678,0.07453006485654612,let me think,7
+98865,32768,2,True,True,False,1644,1270,117,111,45,0.03543307086614173,so p is directly below q,3
+99404,32768,1,True,True,False,1736,1376,141,129,87,0.06322674418604651,so j is above w,4
+99424,32768,3,False,False,True,32767,28045,2229,393,23314,0.831306828311642,"so t is upper of j, which is to the right of k",1701
+99523,32768,4,False,True,False,3531,2679,237,210,207,0.07726763717805152,so n is to the right and below t,7
+99633,32768,1,True,True,False,2446,1913,145,140,41,0.021432305279665446,but i don't know the exact positions yet,2
+99878,32768,2,False,True,False,9707,7711,630,556,541,0.07015951238490468,so s is to the right of v,6

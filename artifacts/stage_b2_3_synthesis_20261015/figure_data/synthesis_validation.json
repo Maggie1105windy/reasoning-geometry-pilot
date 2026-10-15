@@ -1,0 +1,615 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig01_full_behavior_and_completion.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig02_confusion_with_invalid.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig_01_budget_outcomes_cost.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig_02_budget_hop_accuracy_completion.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig_03_long_tail_repetition.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig_04_trace_frequency_coverage.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig07_state_vs_answer_case.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "figures/fig08_two_time_axes_design.png"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_qwen3_generation/statistics/full_metrics_by_hop.csv"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_qwen3_generation/statistics/paired_bootstrap.csv"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_qwen3_generation/analysis_20261013/evidence_audit.md"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/8K_16K_32K_100题实验总结_20261015.md"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/audit_completion_rows.csv"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/audit_completion_metrics.csv"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/audit_completion.json"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/audit_cases.md"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/readable_traces/row_90898_budget_32768.md"
+    },
+    {
+      "name": "local_link",
+      "pass": true,
+      "detail": "../stage_b2_3_budget100_20261014/analysis_high_frequency_20261015/思考轨迹高频内容_20261015.md"
+    },
+    {
+      "name": "eight_report_figures",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig01_full_behavior_and_completion.png",
+        "pixels": [
+          2374,
+          927
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig01_full_behavior_and_completion.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig01_full_behavior_and_completion.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig02_confusion_with_invalid.png",
+        "pixels": [
+          2231,
+          1016
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig02_confusion_with_invalid.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig02_confusion_with_invalid.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig_01_budget_outcomes_cost.png",
+        "pixels": [
+          2814,
+          1239
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig_01_budget_outcomes_cost.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig_01_budget_outcomes_cost.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig_02_budget_hop_accuracy_completion.png",
+        "pixels": [
+          2667,
+          1575
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig_02_budget_hop_accuracy_completion.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig_02_budget_hop_accuracy_completion.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig_03_long_tail_repetition.png",
+        "pixels": [
+          2814,
+          1344
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig_03_long_tail_repetition.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig_03_long_tail_repetition.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig_04_trace_frequency_coverage.png",
+        "pixels": [
+          3465,
+          1260
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig_04_trace_frequency_coverage.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig_04_trace_frequency_coverage.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig07_state_vs_answer_case.png",
+        "pixels": [
+          2197,
+          934
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig07_state_vs_answer_case.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig07_state_vs_answer_case.png"
+    },
+    {
+      "name": "figure_dimensions",
+      "pass": true,
+      "detail": {
+        "file": "fig08_two_time_axes_design.png",
+        "pixels": [
+          1900,
+          779
+        ]
+      }
+    },
+    {
+      "name": "matching_svg",
+      "pass": true,
+      "detail": "fig08_two_time_axes_design.png"
+    },
+    {
+      "name": "app_asset_matches",
+      "pass": true,
+      "detail": "fig08_two_time_axes_design.png"
+    },
+    {
+      "name": "artifact_identity_preserved",
+      "pass": true,
+      "detail": "report:28540df5-c2d9-4c20-8629-a5c4acb85aa2"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b0_audit"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b0_splits"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b1_probe"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b1_behavior"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b2_behavior"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b2_within"
+    },
+    {
+      "name": "historical_query_preserved",
+      "pass": true,
+      "detail": "b2_transfer"
+    },
+    {
+      "name": "14_sections",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-1",
+        "qwen_derived"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-1",
+        "budget100"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-2",
+        "qwen_full"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-2",
+        "b2_within"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-2",
+        "candidate_sensitivity"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-3",
+        "b0_splits"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-4",
+        "qwen_full"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-4",
+        "candidate_sensitivity"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-5",
+        "qwen_full"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-5",
+        "qwen_confusion"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-5",
+        "qwen_derived"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-6",
+        "budget100"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-6",
+        "budget_hop"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-7",
+        "trace_frequency"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-8",
+        "trajectory_cases"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-11",
+        "budget100"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-11",
+        "qwen_full"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-13",
+        "budget100"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-14",
+        "qwen_full"
+      ]
+    },
+    {
+      "name": "section_binding_exists",
+      "pass": true,
+      "detail": [
+        "current-sec-14",
+        "budget100"
+      ]
+    },
+    {
+      "name": "outcome_denominator",
+      "pass": true,
+      "detail": {
+        "budget": "8K",
+        "hop": "全部",
+        "n": 100,
+        "accuracyRate": 0.59,
+        "parseRate": 0.77,
+        "正确": 59,
+        "已解析但错误": 18,
+        "截断无正式答案": 23,
+        "meanTokens": 5165.28,
+        "generationHours": 6.442018265098127,
+        "meanMinutes": 3.865210959058876,
+        "peakAllocatedGiB": 16.543188095092773
+      }
+    },
+    {
+      "name": "outcome_denominator",
+      "pass": true,
+      "detail": {
+        "budget": "16K",
+        "hop": "全部",
+        "n": 100,
+        "accuracyRate": 0.64,
+        "parseRate": 0.96,
+        "正确": 64,
+        "已解析但错误": 32,
+        "截断无正式答案": 4,
+        "meanTokens": 5947.53,
+        "generationHours": 7.613559975895202,
+        "meanMinutes": 4.568135985537122,
+        "peakAllocatedGiB": 17.79071617126465
+      }
+    },
+    {
+      "name": "outcome_denominator",
+      "pass": true,
+      "detail": {
+        "budget": "32K",
+        "hop": "全部",
+        "n": 100,
+        "accuracyRate": 0.64,
+        "parseRate": 0.96,
+        "正确": 64,
+        "已解析但错误": 32,
+        "截断无正式答案": 4,
+        "meanTokens": 6602.89,
+        "generationHours": 9.313436862124751,
+        "meanMinutes": 5.58806211727485,
+        "peakAllocatedGiB": 20.291894912719727
+      }
+    },
+    {
+      "name": "correct_by_budget",
+      "pass": true,
+      "detail": [
+        59,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "truncated_by_budget",
+      "pass": true,
+      "detail": [
+        23,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "confusion_all_rows",
+      "pass": true,
+      "detail": "FG-N"
+    },
+    {
+      "name": "confusion_includes_invalid",
+      "pass": true,
+      "detail": "FG-N"
+    },
+    {
+      "name": "confusion_all_rows",
+      "pass": true,
+      "detail": "FG-T"
+    },
+    {
+      "name": "confusion_includes_invalid",
+      "pass": true,
+      "detail": "FG-T"
+    },
+    {
+      "name": "strict_boundary_copy_fixed",
+      "pass": true,
+      "detail": "边界定义"
+    },
+    {
+      "name": "no_replacement_character",
+      "pass": true,
+      "detail": "Unicode"
+    }
+  ],
+  "passed": 83,
+  "total": 83,
+  "figures": {
+    "fig01_full_behavior_and_completion.png": [
+      2374,
+      927
+    ],
+    "fig02_confusion_with_invalid.png": [
+      2231,
+      1016
+    ],
+    "fig_01_budget_outcomes_cost.png": [
+      2814,
+      1239
+    ],
+    "fig_02_budget_hop_accuracy_completion.png": [
+      2667,
+      1575
+    ],
+    "fig_03_long_tail_repetition.png": [
+      2814,
+      1344
+    ],
+    "fig_04_trace_frequency_coverage.png": [
+      3465,
+      1260
+    ],
+    "fig07_state_vs_answer_case.png": [
+      2197,
+      934
+    ],
+    "fig08_two_time_axes_design.png": [
+      1900,
+      779
+    ]
+  },
+  "visualReview": "All 8 standalone PNGs inspected; one legend repositioned to avoid overlapping labels.",
+  "webPreview": "NOT VISUALLY VERIFIED: browser policy rejected page access. No alternate browser or indirect screenshot attempted.",
+  "scope": "Focused report/source/binding/link/figure checks. Reuses prior 5075-run audit and 1312-figure evidence checks; does not replace them.",
+  "markdown_sha256": "f3f12470e4307e8b51d46aa4e68650eeaccc29e232b5544c33124522fda7bce2"
+}

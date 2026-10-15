@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "model_eval": true,
+  "dtype": "torch.bfloat16",
+  "inference_mode": true,
+  "load_seconds": 28.914554808288813,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "peak_allocated_gib": 15.25840425491333,
+  "peak_reserved_gib": 15.400390625,
+  "template_checks": {
+    "nonthinking_prompts_have_closed_empty_think_scaffold": true,
+    "thinking_mode_has_official_open_boundary": true,
+    "nonthinking_has_no_nonempty_thinking": true
+  },
+  "nonthinking_nonempty_thinking_row_ids": [],
+  "resolved_max_new_tokens": 2048,
+  "thinking_truncation_rate": 1.0,
+  "thinking_boundary_failures": [
+    84006,
+    84011,
+    84008,
+    84013,
+    84039,
+    84063,
+    84114,
+    84154,
+    84042,
+    84133
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "relation_order": [
+    "ABOVE",
+    "BELOW",
+    "LEFT",
+    "RIGHT",
+    "UPPER_LEFT",
+    "UPPER_RIGHT",
+    "LOWER_LEFT",
+    "LOWER_RIGHT"
+  ],
+  "natural_candidates": {
+    "ABOVE": " above",
+    "BELOW": " below",
+    "LEFT": " left",
+    "RIGHT": " right",
+    "UPPER_LEFT": " upper-left",
+    "UPPER_RIGHT": " upper-right",
+    "LOWER_LEFT": " lower-left",
+    "LOWER_RIGHT": " lower-right"
+  },
+  "raw_checks": 120,
+  "native_checks": 120,
+  "raw_matches_standalone": 120,
+  "native_matches_standalone": 120,
+  "important": "contextual continuation IDs, not assumed standalone IDs, are used for scoring"
+}

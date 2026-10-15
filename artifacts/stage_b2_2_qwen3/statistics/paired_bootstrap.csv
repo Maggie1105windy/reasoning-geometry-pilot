@@ -1,0 +1,37 @@
+comparison,protocol,scope,hop,metric,point_difference,ci95_low,ci95_high,ci_excludes_zero,n_rows,n_bootstrap_units,bootstrap_resamples,bootstrap_unit,seed
+Qwen3-8B minus Tulu Final,Raw-Sum,h1,1,accuracy,-0.040730337078651674,-0.07584269662921347,-0.005617977528089874,True,712,712,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h1,1,macro_f1,-0.03620702124412495,-0.05613016183130255,-0.015838051968207912,True,712,712,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h1,1,balanced_accuracy,-0.047536221289373404,-0.06849066996625897,-0.026473639111004702,True,712,712,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h2,2,accuracy,0.001980198019801982,-0.03564356435643565,0.03960396039603961,False,505,505,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h2,2,macro_f1,-0.0022649637245253235,-0.02026680481218105,0.016488800648733808,False,505,505,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h2,2,balanced_accuracy,0.006775247175141247,-0.018402531356396048,0.031124575368628726,False,505,505,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h3,3,accuracy,-0.018957345971563982,-0.061611374407582936,0.021327014218009477,False,422,422,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h3,3,macro_f1,-0.016246007897505063,-0.04527655721425505,0.011658616112136823,False,422,422,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h3,3,balanced_accuracy,-0.03089415418455918,-0.06477403730625088,-0.00032869213809456145,True,422,422,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h4,4,accuracy,-0.003546099290780147,-0.046099290780141855,0.04255319148936171,False,282,282,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h4,4,macro_f1,-0.0022778989588795456,-0.02969426311586847,0.024401418918362946,False,282,282,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h4,4,balanced_accuracy,0.002403846153846173,-0.035599084138486316,0.03795574719971385,False,282,282,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h5,5,accuracy,0.0,-0.06338028169014084,0.06355633802816807,False,142,142,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h5,5,macro_f1,-0.009475603463464967,-0.0370265656388927,0.021124942514644248,False,142,142,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h5,5,balanced_accuracy,-0.02489177489177491,-0.08260306686777275,0.03333333333333334,False,142,142,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h2_h5_derived,derived,accuracy,-0.005130811810635537,-0.03010058569213769,0.02004341193611525,False,1351,1351,2000,"paired story_group_id within hop, then equal-weight mean across h2-h5",20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h2_h5_derived,derived,macro_f1,-0.007566118511093725,-0.020435248902022335,0.005597978517892619,False,1351,1351,2000,"paired story_group_id within hop, then equal-weight mean across h2-h5",20260910
+Qwen3-8B minus Tulu Final,Raw-Sum,h2_h5_derived,derived,balanced_accuracy,-0.011651708936836667,-0.03249053906056684,0.007773170922220023,False,1351,1351,2000,"paired story_group_id within hop, then equal-weight mean across h2-h5",20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h1,1,accuracy,-0.14747191011235955,-0.1896067415730337,-0.1053370786516854,True,712,712,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h1,1,macro_f1,-0.16673076264368686,-0.2066822574511189,-0.1276086850001318,True,712,712,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h1,1,balanced_accuracy,-0.14043567710894542,-0.17931417245710507,-0.10421047199899808,True,712,712,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h2,2,accuracy,-0.007920792079207928,-0.04554455445544556,0.0297029702970297,False,505,505,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h2,2,macro_f1,-0.04099590006344858,-0.07279509421825998,-0.008268647314254933,True,505,505,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h2,2,balanced_accuracy,-0.00984086367232459,-0.04706207932847341,0.026360226559299725,False,505,505,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h3,3,accuracy,-0.007109004739336483,-0.05213270142180093,0.03791469194312794,False,422,422,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h3,3,macro_f1,-0.029063679792540723,-0.06787791891531841,0.009554634633556191,False,422,422,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h3,3,balanced_accuracy,-0.015732999697397554,-0.05599650347909445,0.02327930608427208,False,422,422,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h4,4,accuracy,0.003546099290780147,-0.04255319148936171,0.05319148936170212,False,282,282,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h4,4,macro_f1,-0.00036628319710164947,-0.03714675605444962,0.036740726463284946,False,282,282,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h4,4,balanced_accuracy,-0.004191841592578988,-0.04478045266360124,0.034796909252831486,False,282,282,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h5,5,accuracy,0.02112676056338028,-0.05633802816901409,0.09859154929577463,False,142,142,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h5,5,macro_f1,0.017645669735777247,-0.03367026345034193,0.0665606360570436,False,142,142,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h5,5,balanced_accuracy,0.009150132275132256,-0.05288030892718395,0.06921920634451544,False,142,142,2000,paired story_group_id,20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h2_h5_derived,derived,accuracy,0.0024107657589040044,-0.025024510305216748,0.029616991821290694,False,1351,1351,2000,"paired story_group_id within hop, then equal-weight mean across h2-h5",20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h2_h5_derived,derived,macro_f1,-0.013195048329328427,-0.03359254070095514,0.005627716912044725,False,1351,1351,2000,"paired story_group_id within hop, then equal-weight mean across h2-h5",20260910
+Qwen3-8B minus Tulu Final,Native-Sum,h2_h5_derived,derived,balanced_accuracy,-0.005153893171792219,-0.028320686194161414,0.016157119452249704,False,1351,1351,2000,"paired story_group_id within hop, then equal-weight mean across h2-h5",20260910

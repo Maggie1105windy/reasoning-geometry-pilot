@@ -1,0 +1,16 @@
+{
+  "stage": "B2.2",
+  "phase": "PREFLIGHT",
+  "status": "PASS",
+  "frozen_rows": 2063,
+  "hop_counts": {
+    "1": 712,
+    "2": 505,
+    "3": 422,
+    "4": 282,
+    "5": 142
+  },
+  "row_ids_sha256": "dbc5bf84903b9d177c7f02f32e4e6226082c61be7498e466b7e3f8e0c84ee950",
+  "model_path": "/home/ai/chenchen/projects/reasoning-geometry-pilot/models/Qwen3-8B",
+  "protected_snapshot_sha256": "4a3cae8fac8c3821f984098caaecac6e4ff457f513ecf47decc6962210b40a21"
+}

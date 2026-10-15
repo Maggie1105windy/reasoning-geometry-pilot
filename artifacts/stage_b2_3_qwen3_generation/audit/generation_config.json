@@ -1,0 +1,99 @@
+{
+  "status": "FROZEN",
+  "stage": "B2.3",
+  "model": "Qwen/Qwen3-8B",
+  "official_use": {
+    "fg_nonthinking": {
+      "protocol": "FG-N",
+      "enable_thinking": false,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0.0
+    },
+    "fg_thinking": {
+      "protocol": "FG-T",
+      "enable_thinking": true,
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0
+    }
+  },
+  "matched_decoding": {
+    "fg_nonthinking_matched": {
+      "protocol": "FG-N-Matched",
+      "enable_thinking": false,
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0
+    },
+    "fg_thinking_matched": {
+      "protocol": "FG-T-Matched",
+      "enable_thinking": true,
+      "do_sample": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0
+    }
+  },
+  "initial_max_new_tokens": 1024,
+  "resolved_max_new_tokens": 2048,
+  "allowed_smoke_resolution": [
+    1024,
+    2048
+  ],
+  "min_p_api_supported": true,
+  "generation_seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "primary_generation_seed": 20260924,
+  "pilot_sampling_seed": 20260924,
+  "row_rng_policy": "torch manual_seed(child_seed) before every row; child_seed = first 8 hex of sha256(generation_seed:row_id) modulo 2^31-1",
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20260910,
+    "unit": "story_group_id"
+  },
+  "decision_thresholds": {
+    "prediction_collapse_cardinal_or_diagonal_frequency": 0.95,
+    "prediction_collapse_single_relation_frequency": 0.8,
+    "strong_derived_accuracy": 0.35,
+    "strong_derived_macro_f1": 0.3,
+    "strong_derived_balanced_accuracy": 0.3,
+    "strong_parse_success": 0.98,
+    "meaningful_relation_recall": 0.05,
+    "minimum_meaningful_relations": 5,
+    "weak_derived_accuracy": 0.3,
+    "weak_derived_macro_f1": 0.2,
+    "weak_derived_balanced_accuracy": 0.2,
+    "uninterpretable_parse_success": 0.95,
+    "underestimation_min_accuracy_gain": 0.1,
+    "underestimation_no_effect_margin": 0.03,
+    "pilot_stochasticity_low_max_range": 0.03,
+    "pilot_stochasticity_moderate_max_range": 0.07,
+    "smoke_truncation_switch_rate": 0.2
+  },
+  "dtype": "torch.bfloat16",
+  "quantization": null,
+  "model_eval": true,
+  "inference_mode": true,
+  "batch_size": 1,
+  "pre_smoke_config_sha256": "da1884bde63cd1f1fba4d2eec1e9aebaa6217685d4864a21a8151b98c6652860",
+  "smoke_thinking_truncation_rate": 1.0,
+  "smoke_resolution_reason": "switched uniformly to 2048 because the preregistered smoke truncation threshold was reached",
+  "resolved_config_sha256": "8f8e6f76a371a165fd63bbaf73ea65f9ee7cde8c014112ab8292f2bfc4a3abb2",
+  "batch_sizes": {
+    "fg_nonthinking": 8,
+    "fg_thinking": 8
+  },
+  "batch_seed_policy": "canonical sorted batches; batch seed is sha256(generation_seed:comma-separated-row-ids); a partial resumed batch is deterministically replayed and completed shards are never overwritten",
+  "batch_size_resolution": "memory/throughput smoke only; accuracy was not inspected or used"
+}

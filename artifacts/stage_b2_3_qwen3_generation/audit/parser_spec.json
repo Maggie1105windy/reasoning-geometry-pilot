@@ -1,0 +1,20 @@
+{
+  "version": "stage_b2_3_v1_frozen_before_generation",
+  "case_sensitive": false,
+  "selection": "last valid line matching Final answer: <relation>",
+  "allowed_labels": [
+    "above",
+    "below",
+    "left",
+    "right",
+    "upper-left",
+    "upper-right",
+    "lower-left",
+    "lower-right"
+  ],
+  "normalization": "case, surrounding whitespace, and separators space/_/- for diagonal labels only",
+  "semantic_synonyms": {},
+  "invalid_policy": "INVALID counts as wrong in primary metrics",
+  "parser_spec_sha256": "2fe7efb61411175ea5ac3e455873a871260ef0877f7efea3207dd809406a1039",
+  "status": "FROZEN"
+}

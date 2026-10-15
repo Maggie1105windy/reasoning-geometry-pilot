@@ -1,0 +1,11 @@
+﻿phrase,group,covered_questions,n_questions,coverage,total_occurrences
+to the right of,主题表达,97,100,0.97,3903
+coordinates,主题表达,95,100,0.95,726
+to the left of,主题表达,90,100,0.9,2052
+clock,主题表达,48,100,0.48,3764
+unit steps,主题表达,4,100,0.04,4
+wait,检查与尝试表达,100,100,1.0,2601
+maybe,检查与尝试表达,100,100,1.0,2797
+let me try,检查与尝试表达,96,100,0.96,816
+alternatively,检查与尝试表达,91,100,0.91,906
+I'm not sure,检查与尝试表达,33,100,0.33,65

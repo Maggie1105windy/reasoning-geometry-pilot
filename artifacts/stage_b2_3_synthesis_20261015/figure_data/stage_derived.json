@@ -1,0 +1,1149 @@
+{
+  "full_behavior": [
+    {
+      "protocol": "B2.2 Native-Sum",
+      "hop": 1,
+      "n": 712,
+      "accuracyRate": 0.2303370786516854,
+      "parseRate": 1.0
+    },
+    {
+      "protocol": "B2.2 Native-Sum",
+      "hop": 2,
+      "n": 505,
+      "accuracyRate": 0.17623762376237623,
+      "parseRate": 1.0
+    },
+    {
+      "protocol": "B2.2 Native-Sum",
+      "hop": 3,
+      "n": 422,
+      "accuracyRate": 0.15876777251184834,
+      "parseRate": 1.0
+    },
+    {
+      "protocol": "B2.2 Native-Sum",
+      "hop": 4,
+      "n": 282,
+      "accuracyRate": 0.17375886524822695,
+      "parseRate": 1.0
+    },
+    {
+      "protocol": "B2.2 Native-Sum",
+      "hop": 5,
+      "n": 142,
+      "accuracyRate": 0.2323943661971831,
+      "parseRate": 1.0
+    },
+    {
+      "protocol": "FG-N",
+      "hop": 1,
+      "n": 712,
+      "accuracyRate": 0.702247191011236,
+      "parseRate": 0.9269662921348315
+    },
+    {
+      "protocol": "FG-N",
+      "hop": 2,
+      "n": 505,
+      "accuracyRate": 0.3306930693069307,
+      "parseRate": 0.9366336633663367
+    },
+    {
+      "protocol": "FG-N",
+      "hop": 3,
+      "n": 422,
+      "accuracyRate": 0.23933649289099526,
+      "parseRate": 0.9004739336492891
+    },
+    {
+      "protocol": "FG-N",
+      "hop": 4,
+      "n": 282,
+      "accuracyRate": 0.23049645390070922,
+      "parseRate": 0.9113475177304965
+    },
+    {
+      "protocol": "FG-N",
+      "hop": 5,
+      "n": 142,
+      "accuracyRate": 0.22535211267605634,
+      "parseRate": 0.9507042253521126
+    },
+    {
+      "protocol": "FG-T",
+      "hop": 1,
+      "n": 712,
+      "accuracyRate": 0.43820224719101125,
+      "parseRate": 0.45224719101123595
+    },
+    {
+      "protocol": "FG-T",
+      "hop": 2,
+      "n": 505,
+      "accuracyRate": 0.09108910891089109,
+      "parseRate": 0.11089108910891089
+    },
+    {
+      "protocol": "FG-T",
+      "hop": 3,
+      "n": 422,
+      "accuracyRate": 0.014218009478672985,
+      "parseRate": 0.02843601895734597
+    },
+    {
+      "protocol": "FG-T",
+      "hop": 4,
+      "n": 282,
+      "accuracyRate": 0.02127659574468085,
+      "parseRate": 0.02127659574468085
+    },
+    {
+      "protocol": "FG-T",
+      "hop": 5,
+      "n": 142,
+      "accuracyRate": 0.014084507042253521,
+      "parseRate": 0.014084507042253521
+    }
+  ],
+  "confusion_8x9": [
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "ABOVE",
+      "count": 108,
+      "rowRate": 0.45188284518828453
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "BELOW",
+      "count": 13,
+      "rowRate": 0.05439330543933055
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "LEFT",
+      "count": 12,
+      "rowRate": 0.0502092050209205
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "RIGHT",
+      "count": 20,
+      "rowRate": 0.08368200836820083
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "UPPER_LEFT",
+      "count": 39,
+      "rowRate": 0.16317991631799164
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "UPPER_RIGHT",
+      "count": 24,
+      "rowRate": 0.100418410041841
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "LOWER_LEFT",
+      "count": 4,
+      "rowRate": 0.016736401673640166
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "LOWER_RIGHT",
+      "count": 8,
+      "rowRate": 0.03347280334728033
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "ABOVE",
+      "prediction": "INVALID",
+      "count": 11,
+      "rowRate": 0.04602510460251046
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "ABOVE",
+      "count": 45,
+      "rowRate": 0.18672199170124482
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "BELOW",
+      "count": 82,
+      "rowRate": 0.34024896265560167
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "LEFT",
+      "count": 14,
+      "rowRate": 0.058091286307053944
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "RIGHT",
+      "count": 14,
+      "rowRate": 0.058091286307053944
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "UPPER_LEFT",
+      "count": 18,
+      "rowRate": 0.07468879668049792
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "UPPER_RIGHT",
+      "count": 15,
+      "rowRate": 0.06224066390041494
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "LOWER_LEFT",
+      "count": 20,
+      "rowRate": 0.08298755186721991
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "LOWER_RIGHT",
+      "count": 17,
+      "rowRate": 0.07053941908713693
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "BELOW",
+      "prediction": "INVALID",
+      "count": 16,
+      "rowRate": 0.06639004149377593
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "ABOVE",
+      "count": 10,
+      "rowRate": 0.04329004329004329
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "BELOW",
+      "count": 6,
+      "rowRate": 0.025974025974025976
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "LEFT",
+      "count": 104,
+      "rowRate": 0.45021645021645024
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "RIGHT",
+      "count": 27,
+      "rowRate": 0.11688311688311688
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "UPPER_LEFT",
+      "count": 26,
+      "rowRate": 0.11255411255411256
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "UPPER_RIGHT",
+      "count": 11,
+      "rowRate": 0.047619047619047616
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "LOWER_LEFT",
+      "count": 27,
+      "rowRate": 0.11688311688311688
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "LOWER_RIGHT",
+      "count": 6,
+      "rowRate": 0.025974025974025976
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LEFT",
+      "prediction": "INVALID",
+      "count": 14,
+      "rowRate": 0.06060606060606061
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "ABOVE",
+      "count": 13,
+      "rowRate": 0.056768558951965066
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "BELOW",
+      "count": 7,
+      "rowRate": 0.03056768558951965
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "LEFT",
+      "count": 28,
+      "rowRate": 0.1222707423580786
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "RIGHT",
+      "count": 97,
+      "rowRate": 0.42358078602620086
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "UPPER_LEFT",
+      "count": 15,
+      "rowRate": 0.06550218340611354
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "UPPER_RIGHT",
+      "count": 26,
+      "rowRate": 0.11353711790393013
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "LOWER_LEFT",
+      "count": 10,
+      "rowRate": 0.043668122270742356
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "LOWER_RIGHT",
+      "count": 18,
+      "rowRate": 0.07860262008733625
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "RIGHT",
+      "prediction": "INVALID",
+      "count": 15,
+      "rowRate": 0.06550218340611354
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "ABOVE",
+      "count": 24,
+      "rowRate": 0.08791208791208792
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "BELOW",
+      "count": 5,
+      "rowRate": 0.018315018315018316
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "LEFT",
+      "count": 28,
+      "rowRate": 0.10256410256410256
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "RIGHT",
+      "count": 12,
+      "rowRate": 0.04395604395604396
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "UPPER_LEFT",
+      "count": 136,
+      "rowRate": 0.4981684981684982
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "UPPER_RIGHT",
+      "count": 11,
+      "rowRate": 0.040293040293040296
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "LOWER_LEFT",
+      "count": 14,
+      "rowRate": 0.05128205128205128
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "LOWER_RIGHT",
+      "count": 22,
+      "rowRate": 0.08058608058608059
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_LEFT",
+      "prediction": "INVALID",
+      "count": 21,
+      "rowRate": 0.07692307692307693
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "ABOVE",
+      "count": 26,
+      "rowRate": 0.0896551724137931
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "BELOW",
+      "count": 5,
+      "rowRate": 0.017241379310344827
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "LEFT",
+      "count": 16,
+      "rowRate": 0.05517241379310345
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "RIGHT",
+      "count": 40,
+      "rowRate": 0.13793103448275862
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "UPPER_LEFT",
+      "count": 26,
+      "rowRate": 0.0896551724137931
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "UPPER_RIGHT",
+      "count": 129,
+      "rowRate": 0.44482758620689655
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "LOWER_LEFT",
+      "count": 22,
+      "rowRate": 0.07586206896551724
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "LOWER_RIGHT",
+      "count": 8,
+      "rowRate": 0.027586206896551724
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "UPPER_RIGHT",
+      "prediction": "INVALID",
+      "count": 18,
+      "rowRate": 0.06206896551724138
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "ABOVE",
+      "count": 7,
+      "rowRate": 0.024734982332155476
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "BELOW",
+      "count": 14,
+      "rowRate": 0.04946996466431095
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "LEFT",
+      "count": 38,
+      "rowRate": 0.13427561837455831
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "RIGHT",
+      "count": 19,
+      "rowRate": 0.06713780918727916
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "UPPER_LEFT",
+      "count": 18,
+      "rowRate": 0.0636042402826855
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "UPPER_RIGHT",
+      "count": 45,
+      "rowRate": 0.15901060070671377
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "LOWER_LEFT",
+      "count": 106,
+      "rowRate": 0.3745583038869258
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "LOWER_RIGHT",
+      "count": 5,
+      "rowRate": 0.0176678445229682
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_LEFT",
+      "prediction": "INVALID",
+      "count": 31,
+      "rowRate": 0.10954063604240283
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "ABOVE",
+      "count": 8,
+      "rowRate": 0.02888086642599278
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "BELOW",
+      "count": 17,
+      "rowRate": 0.061371841155234655
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "LEFT",
+      "count": 18,
+      "rowRate": 0.06498194945848375
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "RIGHT",
+      "count": 39,
+      "rowRate": 0.1407942238267148
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "UPPER_LEFT",
+      "count": 38,
+      "rowRate": 0.1371841155234657
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "UPPER_RIGHT",
+      "count": 15,
+      "rowRate": 0.05415162454873646
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "LOWER_LEFT",
+      "count": 7,
+      "rowRate": 0.02527075812274368
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "LOWER_RIGHT",
+      "count": 103,
+      "rowRate": 0.37184115523465705
+    },
+    {
+      "protocol": "FG-N",
+      "gold": "LOWER_RIGHT",
+      "prediction": "INVALID",
+      "count": 32,
+      "rowRate": 0.11552346570397112
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "ABOVE",
+      "count": 57,
+      "rowRate": 0.2384937238493724
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "BELOW",
+      "count": 3,
+      "rowRate": 0.012552301255230125
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "UPPER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "UPPER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "LOWER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "ABOVE",
+      "prediction": "INVALID",
+      "count": 179,
+      "rowRate": 0.7489539748953975
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "ABOVE",
+      "count": 1,
+      "rowRate": 0.004149377593360996
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "BELOW",
+      "count": 56,
+      "rowRate": 0.23236514522821577
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "UPPER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "UPPER_RIGHT",
+      "count": 1,
+      "rowRate": 0.004149377593360996
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "LOWER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "BELOW",
+      "prediction": "INVALID",
+      "count": 183,
+      "rowRate": 0.7593360995850622
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "ABOVE",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "BELOW",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "LEFT",
+      "count": 36,
+      "rowRate": 0.15584415584415584
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "RIGHT",
+      "count": 3,
+      "rowRate": 0.012987012987012988
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "UPPER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "UPPER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "LOWER_RIGHT",
+      "count": 2,
+      "rowRate": 0.008658008658008658
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LEFT",
+      "prediction": "INVALID",
+      "count": 190,
+      "rowRate": 0.8225108225108225
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "ABOVE",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "BELOW",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "RIGHT",
+      "count": 43,
+      "rowRate": 0.18777292576419213
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "UPPER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "UPPER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "LOWER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "RIGHT",
+      "prediction": "INVALID",
+      "count": 186,
+      "rowRate": 0.8122270742358079
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "ABOVE",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "BELOW",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "UPPER_LEFT",
+      "count": 33,
+      "rowRate": 0.12087912087912088
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "UPPER_RIGHT",
+      "count": 1,
+      "rowRate": 0.003663003663003663
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "LOWER_RIGHT",
+      "count": 5,
+      "rowRate": 0.018315018315018316
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_LEFT",
+      "prediction": "INVALID",
+      "count": 234,
+      "rowRate": 0.8571428571428571
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "ABOVE",
+      "count": 3,
+      "rowRate": 0.010344827586206896
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "BELOW",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "UPPER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "UPPER_RIGHT",
+      "count": 49,
+      "rowRate": 0.16896551724137931
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "LOWER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "UPPER_RIGHT",
+      "prediction": "INVALID",
+      "count": 238,
+      "rowRate": 0.8206896551724138
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "ABOVE",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "BELOW",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "LEFT",
+      "count": 2,
+      "rowRate": 0.007067137809187279
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "UPPER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "UPPER_RIGHT",
+      "count": 4,
+      "rowRate": 0.014134275618374558
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "LOWER_LEFT",
+      "count": 54,
+      "rowRate": 0.19081272084805653
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "LOWER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_LEFT",
+      "prediction": "INVALID",
+      "count": 223,
+      "rowRate": 0.7879858657243817
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "ABOVE",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "BELOW",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "UPPER_LEFT",
+      "count": 1,
+      "rowRate": 0.0036101083032490976
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "UPPER_RIGHT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "LOWER_LEFT",
+      "count": 0,
+      "rowRate": 0.0
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "LOWER_RIGHT",
+      "count": 44,
+      "rowRate": 0.1588447653429603
+    },
+    {
+      "protocol": "FG-T",
+      "gold": "LOWER_RIGHT",
+      "prediction": "INVALID",
+      "count": 232,
+      "rowRate": 0.8375451263537906
+    }
+  ],
+  "raw_counts": [
+    {
+      "protocol": "fg_nonthinking",
+      "total": 2063,
+      "invalid": 158
+    },
+    {
+      "protocol": "fg_thinking",
+      "total": 2063,
+      "invalid": 1665
+    }
+  ],
+  "sources": [
+    {
+      "path": "artifacts/stage_b2_3_qwen3_generation/statistics/full_metrics_by_hop.csv",
+      "sha256": "187adb1063259315703fa79823b2e2c5dca4d4578c87f0b4fe420c6e0d5410ed"
+    },
+    {
+      "path": "artifacts/stage_b2_3_qwen3_generation/analysis_20261013/corrected_generation_stats.csv",
+      "sha256": "87f48d3b1cc2dbb435bf2e1e5003f6ea24357fe06909eb9142c1f5e92adb8ae4"
+    },
+    {
+      "path": "artifacts/stage_b2_3_qwen3_generation/full/fg_nonthinking/row_generations.jsonl",
+      "sha256": "1e86c7bc2e3ccbb988c30f6af090fa3eb2626d90897cee7a688af541393cf804"
+    },
+    {
+      "path": "artifacts/stage_b2_3_qwen3_generation/full/fg_thinking/row_generations.jsonl",
+      "sha256": "364fba2e7a9fc782c0bf2d9a6bb5f16e4be39edc946294450b477117ce2fddc4"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "B2.3",
+  "status": "FINALIZED_PENDING_INDEPENDENT_VALIDATION",
+  "normal_use_task_fitness": "WEAK",
+  "strong_reasoning_target": "UNCERTAIN",
+  "recommended_next_step": "C"
+}

@@ -1,0 +1,12 @@
+# Preserve the exact audited bytes of experiment artifacts across platforms.
+artifacts/stage_b2_2_qwen3/** -text
+artifacts/stage_b2_3_qwen3_generation/** -text
+artifacts/stage_b2_3_budget_pilot_20261013/** -text
+artifacts/stage_b2_3_budget100_20261014/** -text
+artifacts/stage_b2_3_synthesis_20261015/** -text
+scripts/stage-b2_2/** -text
+scripts/stage-b2_3/** -text
+scripts/stage-b2_3_budget_pilot_20261013/** -text
+scripts/stage-b2_3_budget100_20261014/** -text
+reports/stage-b/index.html -text
+reporting/stage-b-reviewed-snapshot.json -text

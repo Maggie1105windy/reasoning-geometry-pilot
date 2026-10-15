@@ -1,0 +1,21 @@
+{
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+  "python_executable": "/home/ai/.miniconda3/envs/chenchen_grounding_mechprobe/bin/python",
+  "platform": "Linux-5.4.0-196-generic-x86_64-with-glibc2.31",
+  "hostname": "BNU",
+  "transformers": "4.57.6",
+  "torch": "2.4.0+cu124",
+  "torch_cuda": "12.4",
+  "cuda_available": true,
+  "bf16_supported": true,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "checks": {
+    "transformers_4_57_6": true,
+    "torch_2_4_0_cu124": true,
+    "cuda_12_4": true,
+    "cuda_available": true,
+    "bf16_supported": true,
+    "rtx_3090": true
+  },
+  "status": "PASS"
+}

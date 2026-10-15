@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checks": {
+    "validation_pass": true,
+    "strong_target_uncertain": true,
+    "native_sum_derived_accuracy_reference": true,
+    "row_score_coverage_exact": true,
+    "row_score_unique": true,
+    "row_score_truth_exact": true
+  },
+  "validation_status": "PASS",
+  "strong_reasoning_target": "UNCERTAIN",
+  "recovered_metrics": {
+    "Raw-Sum": {
+      "accuracy_by_hop": {
+        "1": 0.1418539325842696,
+        "2": 0.1207920792079207,
+        "3": 0.1232227488151658,
+        "4": 0.0957446808510638,
+        "5": 0.0845070422535211
+      },
+      "derived_accuracy_h2_h5": 0.10606663778191786,
+      "derived_macro_f1_h2_h5": 0.048772197065969324,
+      "derived_balanced_accuracy_h2_h5": 0.12892464018476818
+    },
+    "Native-Sum": {
+      "accuracy_by_hop": {
+        "1": 0.2303370786516854,
+        "2": 0.1762376237623762,
+        "3": 0.1587677725118483,
+        "4": 0.1737588652482269,
+        "5": 0.2323943661971831
+      },
+      "derived_accuracy_h2_h5": 0.18528965692990862,
+      "derived_macro_f1_h2_h5": 0.12361307426221665,
+      "derived_balanced_accuracy_h2_h5": 0.1574063352622174
+    },
+    "Native-Mean": {
+      "accuracy_by_hop": {
+        "1": 0.196629213483146,
+        "2": 0.192079207920792,
+        "3": 0.1753554502369668,
+        "4": 0.1879432624113475,
+        "5": 0.2394366197183098
+      },
+      "derived_accuracy_h2_h5": 0.198703635071854,
+      "derived_macro_f1_h2_h5": 0.1157222473104858,
+      "derived_balanced_accuracy_h2_h5": 0.16533699781900985
+    },
+    "EqualLength-Native": {
+      "accuracy_by_hop": {
+        "1": 0.1882022471910112,
+        "2": 0.1485148514851485,
+        "3": 0.1018957345971564,
+        "4": 0.0815602836879432,
+        "5": 0.0704225352112676
+      },
+      "derived_accuracy_h2_h5": 0.10059835124537894,
+      "derived_macro_f1_h2_h5": 0.0558461348534323,
+      "derived_balanced_accuracy_h2_h5": 0.12195839628896277
+    }
+  },
+  "native_sum_row_prediction_hash": "baff14b224ed03ce7d17f837166bae42433f89f96ac851116bf5754b46d94579"
+}

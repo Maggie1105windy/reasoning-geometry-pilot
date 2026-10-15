@@ -1,0 +1,201 @@
+﻿sentence,normalized_sentence,total_occurrences,trajectories,row_ids,max_in_one_trace,row_of_max
+"Therefore, J is southwest of N, which is west of O.","therefore, j is southwest of n, which is west of o",2208,1,91319,2208,91319
+"Therefore, Y is left of K, which is right of L.","therefore, y is left of k, which is right of l",2194,1,95732,2194,95732
+"So T is upper of J, which is to the right of K.","so t is upper of j, which is to the right of k",1701,1,99424,1701,99424
+"Therefore, G is located in the south direction from D, which is southwest of F.","therefore, g is located in the south direction from d, which is southwest of f",710,1,94943,710,94943
+"Therefore, G is located in the south direction from D, so G is further south than D, which is southwest of F.","therefore, g is located in the south direction from d, so g is further south than d, which is southwest of f",709,1,94943,709,94943
+Let me think again.,let me think again,173,73,84008;85242;85914;86290;86592;86606;86694;87055;88204;88527;88719;88999;89054;89092;89435;89458;90120;90149;90221;90634;90898;91221;91319;91373;91418;91880;92265;92689;93270;93532;93706;94140;94592;95279;95870;96175;96380;97230;97320;97530;97550;97613;97877;98237;98424;98755;98789;99424;99523;99633;99878;100046;100256;100614;100962;101092;101274;101371;101850;102164;102494;102510;102690;103101;103518;103654;103698;103826;103906;104039;104263;104379;104683,8,97530
+Let me try to assign coordinates.,let me try to assign coordinates,56,45,85242;86592;87158;88527;88999;89458;90149;90179;90221;90634;91221;91373;91418;91880;92970;93270;93706;93992;94140;94592;95732;95870;96087;97223;97230;97877;98424;98865;99424;99878;100046;100256;100614;101092;101246;101274;101371;101850;102164;102494;102510;103906;104263;104379;104683,3,93992
+Let me check again.,let me check again,48,38,84114;86592;86606;87055;87158;88527;88719;88999;89054;89092;91373;91418;92689;93706;94140;94864;95870;96175;97223;97320;97550;97613;98237;98424;99404;99523;99633;99878;100962;101274;101850;102494;102690;103365;103483;103826;104263;104683,3,87055
+But I'm not sure.,but i'm not sure,36,23,84008;84506;86606;88719;89054;89435;90221;91373;91418;93992;94592;96175;97320;97550;97613;98789;100256;100614;101092;101274;102164;103101;104379,3,84008
+So the answer would be lower-right.,so the answer would be lower-right,33,20,85914;86606;87055;87158;89092;90149;90634;91221;91373;92265;93270;93532;94828;95870;96175;99523;101092;103698;103826;104039,3,90149
+Let me try again.,let me try again,32,20,84506;87055;87158;90179;92265;93532;94592;95870;96087;97877;98237;98789;99424;101246;101274;102164;102494;102510;104039;104379,3,98789
+But let me check again.,but let me check again,30,24,84008;89515;90634;91880;92265;92342;92735;92970;93270;93532;93992;96380;97005;98424;98865;99633;102494;102690;103365;103483;103654;103698;103826;104683,3,102494
+So the relation is left.,so the relation is left,28,12,84008;85242;86592;89054;89458;91418;93992;96087;96175;97550;98424;100962,5,98424
+So the relation is lower-left.,so the relation is lower-left,26,15,88204;91418;91880;96087;97223;97230;98865;100046;100962;102164;102494;103483;103518;104039;104379,4,102494
+But the problem must have a unique answer.,but the problem must have a unique answer,26,12,86290;86592;89458;93706;94828;95279;96087;97530;97550;99878;100614;102690,4,95279
+So the answer would be lower-left.,so the answer would be lower-left,25,13,88204;91880;93706;94592;96087;97223;98865;100962;102164;102494;103483;103654;104379,5,94592
+Let me try to assign coordinates step by step.,let me try to assign coordinates step by step,24,22,85914;86290;86592;87158;89458;90149;91221;91880;92735;97005;97320;97530;99424;99523;99878;100614;101092;101850;102510;102690;103654;104039,2,99878
+Let me assign coordinates.,let me assign coordinates,24,21,84506;86606;87055;88719;89435;90634;90898;91373;92265;94943;96087;97550;99523;100962;101274;101371;102510;102788;103365;103518;104039,2,87055
+So E is to the right and below H.,so e is to the right and below h,22,2,90221;91221,18,90221
+Let me try to sketch this mentally.,let me try to sketch this mentally,19,19,85242;87158;89458;91221;92342;92689;93706;93765;93992;95870;97005;97320;97550;98237;100962;101092;103365;103518;104379,1,85242
+Let me try that.,let me try that,17,13,84506;85914;87055;89458;90179;90898;91221;93706;97230;97530;100962;102690;103906,2,85914
+So the answer would be upper-left.,so the answer would be upper-left,17,8,88527;90120;94140;96175;99633;102510;103365;103698,4,103698
+"So T is upper right of J, which is to the right of K.","so t is upper right of j, which is to the right of k",17,1,99424,17,99424
+Let me try to assign positions step by step.,let me try to assign positions step by step,16,13,89054;90149;90221;93992;96087;98424;98789;100614;102494;103101;103365;103518;104379,3,103518
+So the answer would be left.,so the answer would be left,16,11,84008;85242;86592;89054;89458;89515;91418;93992;97550;98424;100962,2,84008
+So the relation is lower-right?,so the relation is lower-right,16,10,86606;87055;89092;90634;91373;92265;95870;98789;99523;104039,3,89092
+This is not working.,this is not working,15,6,90179;90221;93992;95870;101274;103101,8,103101
+"Wait, let me think again.","wait, let me think again",14,12,87055;89435;93706;97005;97320;98789;98865;99424;99878;100962;101246;103698,2,93706
+Let me try another approach.,let me try another approach,14,11,87055;90221;91221;91880;92735;97230;101092;102164;102494;102510;103906,2,97230
+"So K is upper right of W, which is to the right of V.","so k is upper right of w, which is to the right of v",14,1,102510,14,102510
+Let me break down each part step by step.,let me break down each part step by step,13,13,84008;85242;87158;88204;90120;92342;95279;96175;97230;97877;99404;101092;101274,1,84008
+But the options include lower-right.,but the options include lower-right,13,9,86606;87055;91221;95870;96175;98789;99523;101092;103826,2,86606
+So the relation would be lower-left.,so the relation would be lower-left,13,10,86592;88204;91418;91880;97223;97230;97613;102164;103483;103518,3,103483
+So the relation is right.,so the relation is right,13,6,84008;86606;95279;97005;99878;102690,4,95279
+"So Y is left of K, which is right of L.","so y is left of k, which is right of l",13,1,95732,13,95732
+But maybe there's another way.,but maybe there's another way,12,10,85242;88719;89435;97005;97530;97550;99424;99633;100962;104683,2,85242
+So the relation is below.,so the relation is below,12,6,93706;96087;99424;100962;101092;102690,5,102690
+"Wait, the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right.","wait, the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right",12,12,89092;92689;93270;94592;94974;95870;97320;97613;100962;101371;103698;104039,1,89092
+So the relation would be upper-right.,so the relation would be upper-right,12,8,88719;88999;89435;91418;93706;97530;97550;99878,3,97530
+Let me try to map out the positions step by step.,let me try to map out the positions step by step,11,11,85242;89458;92265;93706;96175;98789;99523;100256;100614;103906;104683,1,85242
+"But the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right.","but the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right",11,10,85914;87158;89054;90149;91221;91373;95870;100256;103365;103518,2,103518
+But how does that help?,but how does that help,11,8,86290;93706;97530;97550;99878;100962;101850;104263,3,101850
+Let me try to map this out.,let me try to map this out,11,11,84008;87055;88999;93270;93532;94974;95732;99424;101092;103826;103906,1,84008
+"The options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right.","the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right",11,8,89435;91880;94592;96175;98789;99523;101371;102494,2,96175
+But how does this help?,but how does this help,10,9,86290;86592;94592;95279;97230;97320;97550;100962;101092,2,100962
+"Now, U is parallel to Z.","now, u is parallel to z",10,1,101092,10,101092
+Let me try to think again.,let me try to think again,10,10,84506;87158;90634;91880;94592;97550;98755;99878;101092;103518,1,84506
+That doesn't make sense.,that doesn't make sense,10,10,84506;87158;88999;90179;91221;93270;101274;103101;104039;104379,1,84506
+But this is getting complicated.,but this is getting complicated,10,10,86592;87055;87158;89435;93992;98789;101850;103826;104039;104263,1,86592
+"Wait, but the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right.","wait, but the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right",10,10,86606;86694;88204;90120;92265;93706;102494;102690;103483;103698,1,86606
+Let me assign coordinates to make it easier.,let me assign coordinates to make it easier,10,10,84114;89092;89458;90221;92265;94140;97530;102690;103698;104263,1,84114
+"Now, P is below and to the right of Z.","now, p is below and to the right of z",10,1,86290,10,86290
+"So J is southwest of N, which is west of O.","so j is southwest of n, which is west of o",10,1,91319,10,91319
+E is directly northeast of R.,e is directly northeast of r,10,1,97550,10,97550
+So T is upper right of J.,so t is upper right of j,10,1,99424,10,99424
+"So, M is northeast of Y.","so, m is northeast of y",9,1,100614,9,100614
+But the options include lower-left.,but the options include lower-left,9,6,91418;93706;100962;102164;102494;103483,2,91418
+This is very confusing.,this is very confusing,9,9,89458;90179;96175;97320;98755;100962;101246;101274;104379,1,89458
+So the relation would be lower-right?,so the relation would be lower-right,9,9,86606;90149;91221;91373;91418;92265;93532;98789;101092,1,86606
+"But without more info, it's hard to say.","but without more info, it's hard to say",9,7,84506;89435;96175;97320;97550;101092;102164,3,97320
+But that's not possible.,but that's not possible,9,5,86592;93992;98237;99878;101246,3,93992
+"Okay, let me try to figure this out.","okay, let me try to figure this out",9,9,87158;92970;94828;94864;95336;96380;101274;102788;103906,1,87158
+Let me try to visualize this.,let me try to visualize this,9,9,84114;89092;92265;95732;99404;101274;102510;102589;103483,1,84114
+But this is too vague.,but this is too vague,9,5,93992;98755;98789;99878;101274,3,101274
+So the relation is upper-left.,so the relation is upper-left,9,8,88527;90221;93706;94140;95870;96087;96175;101274,2,96175
+Let me try to visualize.,let me try to visualize,9,9,91418;92342;94592;94828;96380;101371;102690;102788;103518,1,91418
+Let me try to think of possible positions.,let me try to think of possible positions,9,9,84506;90149;97320;97530;102164;102494;103826;104039;104683,1,84506
+Then Y is above and slightly left of V.,then y is above and slightly left of v,9,1,102494,9,102494
+"So K is upper right of W, which is to the right of V, and V is upper left of E.","so k is upper right of w, which is to the right of v, and v is upper left of e",9,1,102510,9,102510
+"No, that doesn't make sense.","no, that doesn't make sense",9,8,90221;90634;91373;93270;93992;98789;103101;103518,2,90221
+Let me try to assign coordinates to each agent.,let me try to assign coordinates to each agent,9,9,86290;87055;99424;103365;103518;103654;103698;103906;104683,1,86290
+But how to determine?,but how to determine,8,4,84506;86290;97320;100256,4,86290
+"So, U is to the right of L.","so, u is to the right of l",8,1,100614,8,100614
+Let me try to think differently.,let me try to think differently,8,8,84506;90221;93992;97877;98237;100614;103518;103906,1,84506
+So A is southeast of L.,so a is southeast of l,8,1,100962,8,100962
+"But the options are above, below, left, right, upper-left, upper-right, lower-left, lower-right.","but the options are above, below, left, right, upper-left, upper-right, lower-left, lower-right",8,8,87055;88719;91880;95870;96087;99523;100962;101274,1,87055
+"Now, S is in the lower left corner of Z.","now, s is in the lower left corner of z",8,1,101092,8,101092
+Let me try to assign coordinates again.,let me try to assign coordinates again,8,7,88999;91880;93532;97550;101092;101371;102510,2,101092
+"But without knowing the exact positions, it's hard to say.","but without knowing the exact positions, it's hard to say",8,7,86290;90898;94828;96175;97550;98755;101092,2,96175
+Then N is directly below O.,then n is directly below o,8,1,101274,8,101274
+U is diagonally upper right of V.,u is diagonally upper right of v,8,1,101274,8,101274
+"Wait, this is confusing.","wait, this is confusing",8,7,91221;95870;96175;98789;101274;102690;103101,2,98789
+"12 o'clock: (0,1)","12 o'clock: (0,1)",8,5,89054;98789;102164;103101;103906,3,98789
+But let me check if there are other possibilities.,but let me check if there are other possibilities,8,8,86694;88719;88999;89092;94974;97230;102164;103654,1,86694
+So that's not possible.,so that's not possible,8,7,93992;97320;102494;102510;102690;103654;104379,2,102690
+So K is upper right of W.,so k is upper right of w,8,1,102510,8,102510
+Let me think about the positions again.,let me think about the positions again,8,7,88719;89458;94828;95279;97613;98789;102690,2,95279
+But let me confirm.,but let me confirm,8,7,91221;91373;93270;95870;99633;103518;103906,2,103906
+"Okay, let's try to figure out the positions of all these agents based on the given clues.","okay, let's try to figure out the positions of all these agents based on the given clues",8,8,90149;90221;91221;91373;98424;103654;104379;104683,1,90149
+This is getting too tangled.,this is getting too tangled,8,7,90221;93992;95870;96087;103906;104039;104379,2,104379
+Then T is in the lower right corner of F.,then t is in the lower right corner of f,8,1,104039,8,104039
+"Therefore, the relation is lower-right.","therefore, the relation is lower-right",8,5,86606;90149;92265;99523;104039,4,86606
+So O is to the left of L.,so o is to the left of l,8,1,84506,8,84506
+So X is above and to the right of B.,so x is above and to the right of b,8,1,90221,8,90221
+E is below and slightly right of O.,e is below and slightly right of o,8,1,91418,8,91418
+So J is above T.,so j is above t,8,1,92689,8,92689
+So Z is to the right of A.,so z is to the right of a,8,1,95279,8,95279
+So H is upper left of C.,so h is upper left of c,8,1,97530,8,97530
+So B is to the left of P.,so b is to the left of p,8,1,98237,8,98237
+Let me start by breaking down the story step by step.,let me start by breaking down the story step by step,7,7,84114;86290;89092;92735;93270;97550;100256,1,84114
+Let me think of the positions again.,let me think of the positions again,7,7,88719;89054;96175;97320;100256;100614;100962,1,88719
+"Also, L is northwest of A.","also, l is northwest of a",7,1,100962,7,100962
+But how to determine which is correct?,but how to determine which is correct,7,5,86290;86592;93706;100962;101092,3,100962
+But this is another possibility.,but this is another possibility,7,4,86592;97320;99878;100962,3,97320
+"Wait, that can't be.","wait, that can't be",7,6,84506;88719;98755;101246;103518;104379,2,98755
+So this is conflicting.,so this is conflicting,7,6,84506;91221;93270;101246;103101;104379,2,91221
+"So, the relation is ""above"".","so, the relation is ""above""",7,1,101371,7,101371
+"For example, if U is horizontal, then D is also horizontal.","for example, if u is horizontal, then d is also horizontal",7,1,101850,7,101850
+"3 o'clock: (1,0)","3 o'clock: (1,0)",7,5,89054;98789;102164;103101;103906,3,98789
+"6 o'clock: (0,-1)","6 o'clock: (0,-1)",7,5,89054;98789;102164;103101;103906,3,98789
+"9 o'clock: (-1,0)","9 o'clock: (-1,0)",7,5,89054;98789;102164;103101;103906,3,98789
+So the answer is lower-left.,so the answer is lower-left,7,6,86694;88204;91880;93706;96087;102164,2,102164
+So W is to the right of V.,so w is to the right of v,7,1,102510,7,102510
+So K is upper left of E?,so k is upper left of e,7,1,102510,7,102510
+So the answer is upper-left.,so the answer is upper-left,7,5,88527;92342;102510;103365;103698,3,103698
+But let me check if there's another possible configuration.,but let me check if there's another possible configuration,7,7,86290;90634;90898;92735;94140;94828;103826,1,86290
+So Y is to the right and below Z.,so y is to the right and below z,7,1,103906,7,103906
+So L is to the right and below U?,so l is to the right and below u,7,1,84506,7,84506
+"H is at (2,1).","h is at (2,1)",7,1,86592,7,86592
+So Z is left of H.,so z is left of h,7,1,86592,7,86592
+So E is to the right of H.,so e is to the right of h,7,1,91221,7,91221
+So J is above Z.,so j is above z,7,1,92689,7,92689
+"Clue 4: D is at a 45-degree angle to V, in the upper lefthand corner.","clue 4: d is at a 45-degree angle to v, in the upper lefthand corner",7,1,95870,7,95870
+"So K is left of J, which is lower left of T.","so k is left of j, which is lower left of t",7,1,99424,7,99424
+"So T is upper right of J, which is right of K.","so t is upper right of j, which is right of k",7,1,99424,7,99424
+So N is to the right and below T.,so n is to the right and below t,7,1,99523,7,99523
+"But wait, let me check again.","but wait, let me check again",6,6,89458;95279;99633;100046;101092;102589,1,89458
+"But wait, the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right.","but wait, the options are: above, below, left, right, upper-left, upper-right, lower-left, lower-right",6,6,92689;100046;100962;102164;103826;104683,1,92689
+But let me check if there's another possibility.,but let me check if there's another possibility,6,6,85914;95279;97530;97550;100046;104379,1,85914
+"Therefore, the answer should be lower-left.","therefore, the answer should be lower-left",6,6,91880;96087;97223;98865;100046;103654,1,91880
+"But without more info, it's hard to tell.","but without more info, it's hard to tell",6,5,85242;97530;97550;99424;100256,2,99424
+"Okay, let's try to figure out this problem.","okay, let's try to figure out this problem",6,6,92265;93532;98237;100614;102510;103698,1,92265
+"So, Y is west of K.","so, y is west of k",6,1,100614,6,100614
+"Y is southwest of M, so M is northeast of Y.","y is southwest of m, so m is northeast of y",6,1,100614,6,100614
+"Wait, but the options are above, below, left, right, upper-left, upper-right, lower-left, lower-right.","wait, but the options are above, below, left, right, upper-left, upper-right, lower-left, lower-right",6,6,86290;86694;92689;101092;102494;104039,1,86290
+This is getting complicated.,this is getting complicated,6,6,85242;90221;97877;99878;101246;104039,1,85242
+A is above U at 2 o'clock.,a is above u at 2 o'clock,6,1,101274,6,101274
+This is getting too confusing.,this is getting too confusing,6,6,90179;91221;93270;93992;101274;104379,1,90179
+"Yes, that makes sense.","yes, that makes sense",6,6,93532;93992;95870;98237;102164;104379,1,93532
+So the answer should be lower-left.,so the answer should be lower-left,6,5,86694;88204;102164;102494;103483,2,103483
+Then V is lower right of Q.,then v is lower right of q,6,1,102494,6,102494
+"But wait, the options include lower-left.","but wait, the options include lower-left",6,4,91880;97223;98865;102494,3,91880
+Let me try to connect these.,let me try to connect these,6,5,90221;94828;99424;102510;104683,2,90221
+"Wait, this is getting complicated.","wait, this is getting complicated",6,6,90634;96087;98789;102690;103101;104379,1,90634
+So which is correct?,so which is correct,6,4,89435;96175;102690;103698,3,89435
+"So again, same problem.","so again, same problem",6,3,91373;98237;103518,3,103518
+So F is upper right of P.,so f is upper right of p,6,2,103698;104263,3,103698
+Let me start by breaking down each statement step by step.,let me start by breaking down each statement step by step,6,6,91880;92970;93532;95732;98789;103826,1,91880
+But maybe there's more to it.,but maybe there's more to it,6,6,84008;89515;90634;98237;99404;103826,1,84008
+So W is diagonally right and above Y.,so w is diagonally right and above y,6,1,103906,6,103906
+"Wait, this is getting confusing.","wait, this is getting confusing",6,6,90179;90221;92689;94592;97230;104039,1,90179
+But what about the y-coordinate?,but what about the y-coordinate,6,4,89458;95279;97550;104683,2,95279
+"The possible relations are above, below, left, right, upper-left, upper-right, lower-left, lower-right.","the possible relations are above, below, left, right, upper-left, upper-right, lower-left, lower-right",6,4,88999;89435;97320;104683,2,88999
+"Wait, but let me check again.","wait, but let me check again",6,6,84008;84114;88719;90149;94140;94974,1,84008
+So K is to the right of I.,so k is to the right of i,6,1,84008,6,84008
+L and O are side by side with L to the right and O to the left.,l and o are side by side with l to the right and o to the left,6,1,84506,6,84506
+"Therefore, the answer would be lower-right.","therefore, the answer would be lower-right",6,5,85914;87055;91373;93532;94974,2,91373
+So the relation would be upper-left.,so the relation would be upper-left,6,4,86290;86592;94140;98424,3,98424
+So the relation would be above.,so the relation would be above,6,3,86290;89435;97550,3,86290
+But this doesn't help.,but this doesn't help,6,4,86290;86592;93706;97530,2,86290
+So the relation would be right.,so the relation would be right,6,2,86606;99878,3,86606
+So Z is directly above W.,so z is directly above w,6,2,87055;95279,5,95279
+So I is below and left of Y.,so i is below and left of y,6,1,87158,6,87158
+So the answer is lower-right.,so the answer is lower-right,6,5,87158;89092;90634;92265;95870,2,92265
+From clue 4: H is upper left of E.,from clue 4: h is upper left of e,6,1,90221,6,90221
+Let me start by breaking down each part of the story step by step.,let me start by breaking down each part of the story step by step,6,6,90898;97005;97613;98755;98865;99633,1,90898
+But that's not standard.,but that's not standard,6,3,91221;91373;98755,3,91221
+So A is lower left of Z.,so a is lower left of z,6,1,91880,6,91880
+So A is lower-left of Y.,so a is lower-left of y,6,1,91880,6,91880
+"So if P is northeast of S, then S is southwest of P.","so if p is northeast of s, then s is southwest of p",6,1,94592,6,94592
+"Now, U is lower right of Z.","now, u is lower right of z",6,1,94828,6,94828
+Z is directly above W.,z is directly above w,6,1,95279,6,95279
+"So Z is to the right of A, same y.","so z is to the right of a, same y",6,1,95279,6,95279
+Z is to the right and above A.,z is to the right and above a,6,1,95279,6,95279
+So G is to the right of A.,so g is to the right of a,6,1,96087,6,96087
+Z is upper left of E.,z is upper left of e,6,1,96087,6,96087
+A is diagonally upper left of E.,a is diagonally upper left of e,6,1,96087,6,96087
+But this is unclear.,but this is unclear,6,3,96087;96175;99878,2,96087
+"E is at (1,1).","e is at (1,1)",6,1,97550,6,97550
+So S is northeast of R.,so s is northeast of r,6,1,97550,6,97550
+P is above and to the left of I.,p is above and to the left of i,6,1,98237,6,98237
+So G is upper left of P.,so g is upper left of p,6,1,99424,6,99424
+So S is to the right of V.,so s is to the right of v,6,1,99878,6,99878
+G is below S and to the right of S.,g is below s and to the right of s,6,1,99878,6,99878
+But we need more info.,but we need more info,5,4,86592;99424;100046;100256,2,100256
+So lower-left is an option.,so lower-left is an option,5,5,94592;100046;100962;102494;103483,1,94592
+"But wait, the options are above, below, left, right, upper-left, upper-right, lower-left, lower-right.","but wait, the options are above, below, left, right, upper-left, upper-right, lower-left, lower-right",5,4,90898;94828;97005;100256,2,100256
+"But without more info, it's ambiguous.","but without more info, it's ambiguous",5,4,86290;93706;100256;101092,2,100256
+But how to determine which?,but how to determine which,5,5,86290;86592;89435;97530;100256,1,86290
+"Now, L is at (0, b).","now, l is at (0, b)",5,1,100614,5,100614
+But is this the only possibility?,but is this the only possibility,5,5,99878;100614;100962;102164;102510,1,99878
+But this is getting too abstract.,but this is getting too abstract,5,5,91221;93532;93992;96175;100614,1,91221
+But is that the case?,but is that the case,5,5,84506;85242;89435;100962;103826,1,84506
+So the relation would be below.,so the relation would be below,5,4,94828;99424;100962;101092,2,100962
+But this is speculative.,but this is speculative,5,5,94828;96087;100962;101092;104379,1,94828
+So which one is correct?,so which one is correct,5,4,89458;98424;99878;100962,2,98424
+But this is getting too speculative.,but this is getting too speculative,5,5,85242;89458;100962;102510;103906,1,85242
+But how to choose between these?,but how to choose between these,5,3,86592;99878;100962,3,100962
+But how does this relate to Z?,but how does this relate to z,5,4,95279;96087;99523;101092,2,101092
+S is in the lower left corner of Z.,s is in the lower left corner of z,5,1,101092,5,101092

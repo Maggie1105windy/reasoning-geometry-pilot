@@ -36,4 +36,16 @@ https://arxiv.org/abs/2411.15124
 
 ## Redistribution note
 
-This repository cites papers and datasets but does not redistribute paper PDFs, model weights, or raw third-party datasets. Users must obtain those resources under their respective licenses and terms.
+This repository cites papers and datasets but does not redistribute paper PDFs, model weights, or complete upstream raw datasets. B2.3 generation records retain the experimental prompts used for reproducibility. Users must obtain upstream resources under their respective licenses and terms.
+
+## Qwen3 and reasoning-trajectory methods
+
+- Qwen3-8B official model card: https://huggingface.co/Qwen/Qwen3-8B
+- Lanham et al. (2023). *Measuring Faithfulness in Chain-of-Thought Reasoning*. https://arxiv.org/abs/2307.13702
+- Yue et al. (2025). *Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?* https://arxiv.org/abs/2504.13837
+- Wen et al. (2025). *Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs*. https://arxiv.org/abs/2506.14245
+- Kong et al. (2026). *From Reasoning Traces to Reusable Modules: Understanding Compositional Generalization in Language Model Reasoning*. https://arxiv.org/abs/2606.18089
+- Shen et al. (2026). *Understanding Reasoning from Pretraining to Post-Training*. https://arxiv.org/abs/2607.16097
+- Bhupatiraju & Nyaupane (2026). *Are Stated Reasoning Steps Causally Load-Bearing? Activation Patching Says Less Often Than Text Editing Does*. https://arxiv.org/abs/2609.27038
+
+The 2026 studies provide hypotheses and methods; their results are not StepGame/Qwen3-8B mechanism findings in this repository. See the synthesis for scope and preprint caveats.

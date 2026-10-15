@@ -1,0 +1,1261 @@
+{
+  "status": "PASS_WITH_LIMITATION",
+  "checks": {
+    "frozen_rows_2063": true,
+    "frozen_hop_counts_exact": true,
+    "frozen_row_hash_exact": true,
+    "frozen_rows_unique": true,
+    "frozen_relations_exact": true,
+    "fgn_jsonl_rows_2063": true,
+    "fgn_row_ids_unique": true,
+    "fgn_frozen_row_coverage_exact": true,
+    "fgn_primary_seed_exact": true,
+    "fgn_thinking_flag_exact": true,
+    "fgn_generated_token_ids_present": true,
+    "fgn_generated_text_present": true,
+    "fgn_max_new_tokens_exact": true,
+    "fgn_independent_parser_exact": true,
+    "fgn_gold_exact": true,
+    "fgn_hop_exact": true,
+    "fgn_correct_exact": true,
+    "fgn_no_nonempty_thinking_content": true,
+    "fgn_zero_thinking_tokens": true,
+    "fgn_generation_config_core_exact": true,
+    "fgn_prompt_hashes_exact": true,
+    "fgt_jsonl_rows_2063": true,
+    "fgt_row_ids_unique": true,
+    "fgt_frozen_row_coverage_exact": true,
+    "fgt_primary_seed_exact": true,
+    "fgt_thinking_flag_exact": true,
+    "fgt_generated_token_ids_present": true,
+    "fgt_generated_text_present": true,
+    "fgt_max_new_tokens_exact": true,
+    "fgt_independent_parser_exact": true,
+    "fgt_gold_exact": true,
+    "fgt_hop_exact": true,
+    "fgt_correct_exact": true,
+    "fgt_normal_think_boundary_exists": true,
+    "fgt_thinking_content_exists": true,
+    "fgt_generation_config_core_exact": true,
+    "fgt_prompt_hashes_exact": true,
+    "reported_fgn_metrics_exact": true,
+    "reported_fgt_metrics_exact": true,
+    "fg_nonthinking_20260924_rows_250": true,
+    "fg_nonthinking_20260924_seed_exact": true,
+    "fg_nonthinking_20260925_rows_250": true,
+    "fg_nonthinking_20260925_seed_exact": true,
+    "fg_nonthinking_20260926_rows_250": true,
+    "fg_nonthinking_20260926_seed_exact": true,
+    "fg_thinking_20260924_rows_250": true,
+    "fg_thinking_20260924_seed_exact": true,
+    "fg_thinking_20260925_rows_250": true,
+    "fg_thinking_20260925_seed_exact": true,
+    "fg_thinking_20260926_rows_250": true,
+    "fg_thinking_20260926_seed_exact": true,
+    "matched_fg_nonthinking_rows_250": true,
+    "matched_fg_nonthinking_seed_exact": true,
+    "matched_fg_nonthinking_config_exact": true,
+    "matched_fg_thinking_rows_250": true,
+    "matched_fg_thinking_seed_exact": true,
+    "matched_fg_thinking_config_exact": true,
+    "protected_b0_to_b22_unchanged": true,
+    "six_figures_present_and_readable": true,
+    "required_outputs_present": true
+  },
+  "errors": [],
+  "limitations": [
+    "FG-T think-boundary parse success is 0.1929.",
+    "At least one full-run generation reached max_new_tokens."
+  ],
+  "protected_changed_files": [],
+  "figure_dimensions": {
+    "figure_1_behavior_by_hop.png": [
+      2126,
+      1244
+    ],
+    "figure_2_derived_metrics.png": [
+      2346,
+      1246
+    ],
+    "figure_3_thinking_gain_by_hop.png": [
+      2126,
+      1244
+    ],
+    "figure_4_confusion_matrices.png": [
+      3597,
+      1554
+    ],
+    "figure_5_prediction_distribution.png": [
+      3886,
+      1244
+    ],
+    "figure_6_reasoning_token_length.png": [
+      2126,
+      1244
+    ]
+  },
+  "independent_metrics": {
+    "FG-N": {
+      "checks": {
+        "jsonl_rows_2063": true,
+        "row_ids_unique": true,
+        "frozen_row_coverage_exact": true,
+        "primary_seed_exact": true,
+        "thinking_flag_exact": true,
+        "generated_token_ids_present": true,
+        "generated_text_present": true,
+        "max_new_tokens_exact": true,
+        "independent_parser_exact": true,
+        "gold_exact": true,
+        "hop_exact": true,
+        "correct_exact": true,
+        "no_nonempty_thinking_content": true,
+        "zero_thinking_tokens": true,
+        "generation_config_core_exact": true,
+        "prompt_hashes_exact": true
+      },
+      "per_hop": {
+        "1": {
+          "n": 712,
+          "accuracy": 0.702247191011236,
+          "macro_f1": 0.7248391769737983,
+          "balanced_accuracy": 0.7021842822205848,
+          "parse_success_rate": 0.9269662921348315,
+          "per_class_recall": {
+            "ABOVE": 0.8901098901098901,
+            "BELOW": 0.6262626262626263,
+            "LEFT": 0.8111111111111111,
+            "RIGHT": 0.7790697674418605,
+            "UPPER_LEFT": 0.7108433734939759,
+            "UPPER_RIGHT": 0.6966292134831461,
+            "LOWER_LEFT": 0.5632183908045977,
+            "LOWER_RIGHT": 0.5402298850574713
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.17275280898876405,
+            "BELOW": 0.10955056179775281,
+            "LEFT": 0.12780898876404495,
+            "RIGHT": 0.12219101123595505,
+            "UPPER_LEFT": 0.11797752808988764,
+            "UPPER_RIGHT": 0.10814606741573034,
+            "LOWER_LEFT": 0.08286516853932584,
+            "LOWER_RIGHT": 0.08567415730337079
+          },
+          "invalid_frequency": 0.07303370786516854,
+          "confusion_matrix": [
+            [
+              81,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              30,
+              62,
+              0,
+              1,
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              73,
+              11,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              14,
+              67,
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              3,
+              0,
+              59,
+              0,
+              1,
+              10
+            ],
+            [
+              7,
+              0,
+              0,
+              4,
+              5,
+              62,
+              5,
+              1
+            ],
+            [
+              0,
+              3,
+              1,
+              2,
+              1,
+              13,
+              49,
+              2
+            ],
+            [
+              1,
+              2,
+              0,
+              2,
+              16,
+              0,
+              1,
+              47
+            ]
+          ]
+        },
+        "2": {
+          "n": 505,
+          "accuracy": 0.3306930693069307,
+          "macro_f1": 0.32644402408656453,
+          "balanced_accuracy": 0.33094906464333473,
+          "parse_success_rate": 0.9366336633663367,
+          "per_class_recall": {
+            "ABOVE": 0.171875,
+            "BELOW": 0.1694915254237288,
+            "LEFT": 0.23809523809523808,
+            "RIGHT": 0.17647058823529413,
+            "UPPER_LEFT": 0.6,
+            "UPPER_RIGHT": 0.4852941176470588,
+            "LOWER_LEFT": 0.46153846153846156,
+            "LOWER_RIGHT": 0.3448275862068966
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.06732673267326733,
+            "BELOW": 0.053465346534653464,
+            "LEFT": 0.100990099009901,
+            "RIGHT": 0.11287128712871287,
+            "UPPER_LEFT": 0.17227722772277226,
+            "UPPER_RIGHT": 0.17623762376237623,
+            "LOWER_LEFT": 0.1504950495049505,
+            "LOWER_RIGHT": 0.10297029702970296
+          },
+          "invalid_frequency": 0.06336633663366337,
+          "confusion_matrix": [
+            [
+              11,
+              1,
+              4,
+              9,
+              14,
+              15,
+              1,
+              4
+            ],
+            [
+              5,
+              10,
+              7,
+              6,
+              4,
+              6,
+              11,
+              5
+            ],
+            [
+              2,
+              3,
+              15,
+              5,
+              12,
+              4,
+              14,
+              3
+            ],
+            [
+              3,
+              5,
+              6,
+              12,
+              8,
+              10,
+              5,
+              11
+            ],
+            [
+              7,
+              0,
+              3,
+              3,
+              36,
+              1,
+              2,
+              7
+            ],
+            [
+              4,
+              0,
+              2,
+              11,
+              2,
+              33,
+              11,
+              2
+            ],
+            [
+              0,
+              3,
+              10,
+              3,
+              1,
+              14,
+              30,
+              0
+            ],
+            [
+              2,
+              5,
+              4,
+              8,
+              10,
+              6,
+              2,
+              20
+            ]
+          ]
+        },
+        "3": {
+          "n": 422,
+          "accuracy": 0.23933649289099526,
+          "macro_f1": 0.24239655422421574,
+          "balanced_accuracy": 0.23438773994824766,
+          "parse_success_rate": 0.9004739336492891,
+          "per_class_recall": {
+            "ABOVE": 0.21739130434782608,
+            "BELOW": 0.09302325581395349,
+            "LEFT": 0.23076923076923078,
+            "RIGHT": 0.2894736842105263,
+            "UPPER_LEFT": 0.3076923076923077,
+            "UPPER_RIGHT": 0.25396825396825395,
+            "LOWER_LEFT": 0.19047619047619047,
+            "LOWER_RIGHT": 0.2923076923076923
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.08767772511848342,
+            "BELOW": 0.061611374407582936,
+            "LEFT": 0.13033175355450238,
+            "RIGHT": 0.13981042654028436,
+            "UPPER_LEFT": 0.15876777251184834,
+            "UPPER_RIGHT": 0.13507109004739337,
+            "LOWER_LEFT": 0.08530805687203792,
+            "LOWER_RIGHT": 0.1018957345971564
+          },
+          "invalid_frequency": 0.0995260663507109,
+          "confusion_matrix": [
+            [
+              10,
+              1,
+              4,
+              5,
+              15,
+              5,
+              1,
+              2
+            ],
+            [
+              6,
+              4,
+              4,
+              4,
+              7,
+              5,
+              4,
+              6
+            ],
+            [
+              2,
+              1,
+              9,
+              8,
+              5,
+              2,
+              5,
+              2
+            ],
+            [
+              4,
+              1,
+              4,
+              11,
+              1,
+              5,
+              2,
+              5
+            ],
+            [
+              7,
+              3,
+              11,
+              6,
+              20,
+              3,
+              5,
+              4
+            ],
+            [
+              5,
+              5,
+              6,
+              8,
+              12,
+              16,
+              3,
+              2
+            ],
+            [
+              0,
+              5,
+              11,
+              6,
+              4,
+              15,
+              12,
+              3
+            ],
+            [
+              3,
+              6,
+              6,
+              11,
+              3,
+              6,
+              4,
+              19
+            ]
+          ]
+        },
+        "4": {
+          "n": 282,
+          "accuracy": 0.23049645390070922,
+          "macro_f1": 0.23067963104353723,
+          "balanced_accuracy": 0.21380374171426353,
+          "parse_success_rate": 0.9113475177304965,
+          "per_class_recall": {
+            "ABOVE": 0.11538461538461539,
+            "BELOW": 0.15384615384615385,
+            "LEFT": 0.14285714285714285,
+            "RIGHT": 0.17857142857142858,
+            "UPPER_LEFT": 0.35555555555555557,
+            "UPPER_RIGHT": 0.28888888888888886,
+            "LOWER_LEFT": 0.21951219512195122,
+            "LOWER_RIGHT": 0.2558139534883721
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.09929078014184398,
+            "BELOW": 0.03546099290780142,
+            "LEFT": 0.11347517730496454,
+            "RIGHT": 0.15602836879432624,
+            "UPPER_LEFT": 0.19148936170212766,
+            "UPPER_RIGHT": 0.14893617021276595,
+            "LOWER_LEFT": 0.10283687943262411,
+            "LOWER_RIGHT": 0.06382978723404255
+          },
+          "invalid_frequency": 0.08865248226950355,
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              2,
+              4,
+              9,
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              4,
+              2,
+              3,
+              1,
+              4,
+              2,
+              2
+            ],
+            [
+              5,
+              1,
+              4,
+              1,
+              4,
+              4,
+              7,
+              0
+            ],
+            [
+              4,
+              0,
+              2,
+              5,
+              5,
+              8,
+              2,
+              2
+            ],
+            [
+              3,
+              1,
+              7,
+              2,
+              16,
+              5,
+              5,
+              0
+            ],
+            [
+              6,
+              0,
+              3,
+              12,
+              4,
+              13,
+              2,
+              1
+            ],
+            [
+              4,
+              2,
+              8,
+              7,
+              6,
+              3,
+              9,
+              0
+            ],
+            [
+              0,
+              2,
+              4,
+              10,
+              9,
+              3,
+              0,
+              11
+            ]
+          ]
+        },
+        "5": {
+          "n": 142,
+          "accuracy": 0.22535211267605634,
+          "macro_f1": 0.2265498819934304,
+          "balanced_accuracy": 0.2262536075036075,
+          "parse_success_rate": 0.9507042253521126,
+          "per_class_recall": {
+            "ABOVE": 0.25,
+            "BELOW": 0.14285714285714285,
+            "LEFT": 0.2727272727272727,
+            "RIGHT": 0.2222222222222222,
+            "UPPER_LEFT": 0.25,
+            "UPPER_RIGHT": 0.2,
+            "LOWER_LEFT": 0.2222222222222222,
+            "LOWER_RIGHT": 0.25
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.13380281690140844,
+            "BELOW": 0.056338028169014086,
+            "LEFT": 0.20422535211267606,
+            "RIGHT": 0.14788732394366197,
+            "UPPER_LEFT": 0.16901408450704225,
+            "UPPER_RIGHT": 0.07746478873239436,
+            "LOWER_LEFT": 0.07042253521126761,
+            "LOWER_RIGHT": 0.09154929577464789
+          },
+          "invalid_frequency": 0.04929577464788732,
+          "confusion_matrix": [
+            [
+              3,
+              1,
+              2,
+              2,
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              1,
+              0,
+              5,
+              0,
+              1,
+              4
+            ],
+            [
+              1,
+              0,
+              3,
+              2,
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              2,
+              2,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              3,
+              1,
+              4,
+              1,
+              5,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              0,
+              5,
+              5,
+              3,
+              5,
+              1,
+              2
+            ],
+            [
+              3,
+              1,
+              8,
+              1,
+              6,
+              0,
+              6,
+              0
+            ],
+            [
+              2,
+              2,
+              4,
+              8,
+              0,
+              0,
+              0,
+              6
+            ]
+          ]
+        }
+      },
+      "derived_h2_h5": {
+        "accuracy": 0.25646953219367286,
+        "macro_f1": 0.25651752283693696,
+        "balanced_accuracy": 0.2513485384523634,
+        "parse_success_rate": 0.9247898350245587
+      },
+      "truncation_rate": 0.003877847794474067,
+      "think_parse_success_rate": 0.0,
+      "row_generations_sha256": "1e86c7bc2e3ccbb988c30f6af090fa3eb2626d90897cee7a688af541393cf804"
+    },
+    "FG-T": {
+      "checks": {
+        "jsonl_rows_2063": true,
+        "row_ids_unique": true,
+        "frozen_row_coverage_exact": true,
+        "primary_seed_exact": true,
+        "thinking_flag_exact": true,
+        "generated_token_ids_present": true,
+        "generated_text_present": true,
+        "max_new_tokens_exact": true,
+        "independent_parser_exact": true,
+        "gold_exact": true,
+        "hop_exact": true,
+        "correct_exact": true,
+        "normal_think_boundary_exists": true,
+        "thinking_content_exists": true,
+        "generation_config_core_exact": true,
+        "prompt_hashes_exact": true
+      },
+      "per_hop": {
+        "1": {
+          "n": 712,
+          "accuracy": 0.43820224719101125,
+          "macro_f1": 0.5979926547893626,
+          "balanced_accuracy": 0.43620136313156216,
+          "parse_success_rate": 0.45224719101123595,
+          "per_class_recall": {
+            "ABOVE": 0.5494505494505495,
+            "BELOW": 0.494949494949495,
+            "LEFT": 0.36666666666666664,
+            "RIGHT": 0.45348837209302323,
+            "UPPER_LEFT": 0.3253012048192771,
+            "UPPER_RIGHT": 0.4606741573033708,
+            "LOWER_LEFT": 0.4827586206896552,
+            "LOWER_RIGHT": 0.3563218390804598
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.07162921348314606,
+            "BELOW": 0.07303370786516854,
+            "LEFT": 0.046348314606741575,
+            "RIGHT": 0.05758426966292135,
+            "UPPER_LEFT": 0.037921348314606744,
+            "UPPER_RIGHT": 0.060393258426966294,
+            "LOWER_LEFT": 0.05898876404494382,
+            "LOWER_RIGHT": 0.046348314606741575
+          },
+          "invalid_frequency": 0.547752808988764,
+          "confusion_matrix": [
+            [
+              50,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              49,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              33,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              39,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              27,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              41,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              42,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              31
+            ]
+          ]
+        },
+        "2": {
+          "n": 505,
+          "accuracy": 0.09108910891089109,
+          "macro_f1": 0.1635954441979464,
+          "balanced_accuracy": 0.09221631069002478,
+          "parse_success_rate": 0.11089108910891089,
+          "per_class_recall": {
+            "ABOVE": 0.109375,
+            "BELOW": 0.11864406779661017,
+            "LEFT": 0.047619047619047616,
+            "RIGHT": 0.014705882352941176,
+            "UPPER_LEFT": 0.1,
+            "UPPER_RIGHT": 0.08823529411764706,
+            "LOWER_LEFT": 0.13846153846153847,
+            "LOWER_RIGHT": 0.1206896551724138
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.015841584158415842,
+            "BELOW": 0.013861386138613862,
+            "LEFT": 0.007920792079207921,
+            "RIGHT": 0.0039603960396039604,
+            "UPPER_LEFT": 0.013861386138613862,
+            "UPPER_RIGHT": 0.01782178217821782,
+            "LOWER_LEFT": 0.01782178217821782,
+            "LOWER_RIGHT": 0.019801980198019802
+          },
+          "invalid_frequency": 0.8891089108910891,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              2,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              7
+            ]
+          ]
+        },
+        "3": {
+          "n": 422,
+          "accuracy": 0.014218009478672985,
+          "macro_f1": 0.027438684503901897,
+          "balanced_accuracy": 0.014393355182828867,
+          "parse_success_rate": 0.02843601895734597,
+          "per_class_recall": {
+            "ABOVE": 0.0,
+            "BELOW": 0.0,
+            "LEFT": 0.0,
+            "RIGHT": 0.05263157894736842,
+            "UPPER_LEFT": 0.0,
+            "UPPER_RIGHT": 0.0,
+            "LOWER_LEFT": 0.031746031746031744,
+            "LOWER_RIGHT": 0.03076923076923077
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.004739336492890996,
+            "BELOW": 0.0,
+            "LEFT": 0.002369668246445498,
+            "RIGHT": 0.004739336492890996,
+            "UPPER_LEFT": 0.0,
+            "UPPER_RIGHT": 0.002369668246445498,
+            "LOWER_LEFT": 0.004739336492890996,
+            "LOWER_RIGHT": 0.009478672985781991
+          },
+          "invalid_frequency": 0.9715639810426541,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          ]
+        },
+        "4": {
+          "n": 282,
+          "accuracy": 0.02127659574468085,
+          "macro_f1": 0.03631220104233597,
+          "balanced_accuracy": 0.01901177421242651,
+          "parse_success_rate": 0.02127659574468085,
+          "per_class_recall": {
+            "ABOVE": 0.0,
+            "BELOW": 0.0,
+            "LEFT": 0.0,
+            "RIGHT": 0.03571428571428571,
+            "UPPER_LEFT": 0.0,
+            "UPPER_RIGHT": 0.022222222222222223,
+            "LOWER_LEFT": 0.024390243902439025,
+            "LOWER_RIGHT": 0.06976744186046512
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.0,
+            "BELOW": 0.0,
+            "LEFT": 0.0,
+            "RIGHT": 0.0035460992907801418,
+            "UPPER_LEFT": 0.0,
+            "UPPER_RIGHT": 0.0035460992907801418,
+            "LOWER_LEFT": 0.0035460992907801418,
+            "LOWER_RIGHT": 0.010638297872340425
+          },
+          "invalid_frequency": 0.9787234042553191,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          ]
+        },
+        "5": {
+          "n": 142,
+          "accuracy": 0.014084507042253521,
+          "macro_f1": 0.019615384615384618,
+          "balanced_accuracy": 0.010208333333333333,
+          "parse_success_rate": 0.014084507042253521,
+          "per_class_recall": {
+            "ABOVE": 0.0,
+            "BELOW": 0.0,
+            "LEFT": 0.0,
+            "RIGHT": 0.0,
+            "UPPER_LEFT": 0.0,
+            "UPPER_RIGHT": 0.04,
+            "LOWER_LEFT": 0.0,
+            "LOWER_RIGHT": 0.041666666666666664
+          },
+          "prediction_frequency": {
+            "ABOVE": 0.0,
+            "BELOW": 0.0,
+            "LEFT": 0.0,
+            "RIGHT": 0.0,
+            "UPPER_LEFT": 0.0,
+            "UPPER_RIGHT": 0.007042253521126761,
+            "LOWER_LEFT": 0.0,
+            "LOWER_RIGHT": 0.007042253521126761
+          },
+          "invalid_frequency": 0.9859154929577465,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      "derived_h2_h5": {
+        "accuracy": 0.03516705529412461,
+        "macro_f1": 0.06174042858989221,
+        "balanced_accuracy": 0.033957443354653366,
+        "parse_success_rate": 0.04367205271329781
+      },
+      "truncation_rate": 0.8070770722249152,
+      "think_parse_success_rate": 0.19292292777508482,
+      "row_generations_sha256": "364fba2e7a9fc782c0bf2d9a6bb5f16e4be39edc946294450b477117ce2fddc4"
+    }
+  }
+}

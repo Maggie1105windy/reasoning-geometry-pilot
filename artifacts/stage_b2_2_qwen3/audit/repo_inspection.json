@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "stage_b21_scripts": [
+    "scripts/stage-b2_1/audit_and_freeze_b21.py",
+    "scripts/stage-b2_1/common_b21.py",
+    "scripts/stage-b2_1/finalize_b21.py",
+    "scripts/stage-b2_1/reuse_raw_b21.py",
+    "scripts/stage-b2_1/run_protocols_b21.py",
+    "scripts/stage-b2_1/validate_b21.py"
+  ],
+  "stage_b21_report": "docs/stage-b/STAGE_B2_1_MODEL_TASK_FITNESS_REPORT.md",
+  "frozen_split_source": "artifacts/stage_b1/union_manifest.csv",
+  "frozen_primary_crosscheck": "artifacts/stage_b0_2/primary_test.csv",
+  "reused_implementations": {
+    "prompt_and_relation_order": "scripts/stage-b2_1/common_b21.py",
+    "audit_and_protocol_freeze": "scripts/stage-b2_1/audit_and_freeze_b21.py",
+    "teacher_forced_scoring": "scripts/stage-b2_1/run_protocols_b21.py",
+    "bootstrap_and_reporting": "scripts/stage-b2_1/finalize_b21.py",
+    "independent_validation": "scripts/stage-b2_1/validate_b21.py"
+  },
+  "stage_b21_artifact_root": "artifacts/stage_b2_1"
+}

@@ -1,0 +1,5 @@
+﻿row_id,budget,hop,correct,parsed,truncated,thinking_tokens,word_count,sentence_count,unique_sentences,extra_repeated_sentence_words,repeated_sentence_word_fraction,most_repeated_sentence,most_repeated_sentence_count
+91319,32768,4,False,False,True,32767,25716,2333,107,24454,0.9509254938559653,"therefore, j is southwest of n, which is west of o",2208
+94943,32768,4,False,False,True,32767,27523,1522,94,26321,0.9563274352359844,"therefore, g is located in the south direction from d, which is southwest of f",710
+95732,32768,3,False,False,True,32767,25775,2314,101,24352,0.9447914645974782,"therefore, y is left of k, which is right of l",2194
+99424,32768,3,False,False,True,32767,28045,2229,393,23314,0.831306828311642,"so t is upper of j, which is to the right of k",1701

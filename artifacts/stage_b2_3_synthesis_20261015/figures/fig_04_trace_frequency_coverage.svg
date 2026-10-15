@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1188pt" height="432pt" viewBox="0 0 1188 432" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-15T13:21:04.722185</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 432 
+L 1188 432 
+L 1188 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 142.56 328.32 
+L 393.850772 328.32 
+L 393.850772 108 
+L 142.56 108 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 142.56 328.32 
+L 142.56 108 
+" clip-path="url(#p22b75f0b9f)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="142.56" y="339.81375" transform="rotate(-0 142.56 339.81375)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 248.144358 328.32 
+L 248.144358 108 
+" clip-path="url(#p22b75f0b9f)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="248.144358" y="339.81375" transform="rotate(-0 248.144358 339.81375)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 353.728716 328.32 
+L 353.728716 108 
+" clip-path="url(#p22b75f0b9f)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="353.728716" y="339.81375" transform="rotate(-0 353.728716 339.81375)">100%</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="fill: #28333f; font: 11px 'Microsoft YaHei'; text-anchor: middle" x="268.205386" y="355.092813" transform="rotate(-0 268.205386 355.092813)">出现过该表达的题占比</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_5">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="139.06" y="134.966351" transform="rotate(-0 139.06 134.966351)">to the right of</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_6">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="139.06" y="178.72923" transform="rotate(-0 139.06 178.72923)">coordinates</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_7">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="139.06" y="222.556563" transform="rotate(-0 139.06 222.556563)">to the left of</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_8">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="139.06" y="266.383895" transform="rotate(-0 139.06 266.383895)">clock</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11"/>
+     <g id="text_9">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="139.06" y="310.211227" transform="rotate(-0 139.06 310.211227)">unit steps</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 142.56 118.014545 
+L 347.393654 118.014545 
+L 347.393654 142.996125 
+L 142.56 142.996125 
+z
+" clip-path="url(#p22b75f0b9f)" style="fill: #246c9b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 142.56 161.841878 
+L 343.17028 161.841878 
+L 343.17028 186.823457 
+L 142.56 186.823457 
+z
+" clip-path="url(#p22b75f0b9f)" style="fill: #246c9b"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 142.56 205.66921 
+L 332.611844 205.66921 
+L 332.611844 230.65079 
+L 142.56 230.65079 
+z
+" clip-path="url(#p22b75f0b9f)" style="fill: #246c9b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 142.56 249.496543 
+L 243.920984 249.496543 
+L 243.920984 274.478122 
+L 142.56 274.478122 
+z
+" clip-path="url(#p22b75f0b9f)" style="fill: #246c9b"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 142.56 293.323875 
+L 151.006749 293.323875 
+L 151.006749 318.305455 
+L 142.56 318.305455 
+z
+" clip-path="url(#p22b75f0b9f)" style="fill: #246c9b"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 142.56 328.32 
+L 142.56 108 
+" style="fill: none; stroke: #b9c0c7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 142.56 328.32 
+L 393.850772 328.32 
+" style="fill: none; stroke: #b9c0c7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="351.617029" y="133.396937" transform="rotate(-0 351.617029 133.396937)">97%</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="347.393654" y="177.224269" transform="rotate(-0 347.393654 177.224269)">95%</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="336.835218" y="221.051602" transform="rotate(-0 336.835218 221.051602)">90%</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="248.144358" y="264.878934" transform="rotate(-0 248.144358 264.878934)">48%</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="155.230123" y="308.706266" transform="rotate(-0 155.230123 308.706266)">4%</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #28333f; font: 13px 'Microsoft YaHei'; text-anchor: middle" x="268.205386" y="102" transform="rotate(-0 268.205386 102)">任务与空间表达</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_10">
+    <path d="M 546.494958 328.32 
+L 797.78573 328.32 
+L 797.78573 108 
+L 546.494958 108 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_4">
+     <g id="line2d_12">
+      <path d="M 546.494958 328.32 
+L 546.494958 108 
+" clip-path="url(#p6af5cb3235)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13"/>
+     <g id="text_16">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="546.494958" y="339.81375" transform="rotate(-0 546.494958 339.81375)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_14">
+      <path d="M 652.079316 328.32 
+L 652.079316 108 
+" clip-path="url(#p6af5cb3235)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15"/>
+     <g id="text_17">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="652.079316" y="339.81375" transform="rotate(-0 652.079316 339.81375)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_16">
+      <path d="M 757.663674 328.32 
+L 757.663674 108 
+" clip-path="url(#p6af5cb3235)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_17"/>
+     <g id="text_18">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="757.663674" y="339.81375" transform="rotate(-0 757.663674 339.81375)">100%</text>
+     </g>
+    </g>
+    <g id="text_19">
+     <text style="fill: #28333f; font: 11px 'Microsoft YaHei'; text-anchor: middle" x="672.140344" y="355.092813" transform="rotate(-0 672.140344 355.092813)">出现过该表达的题占比</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_6">
+     <g id="line2d_18"/>
+     <g id="text_20">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="542.994958" y="134.901898" transform="rotate(-0 542.994958 134.901898)">wait</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_19"/>
+     <g id="text_21">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="542.994958" y="178.72923" transform="rotate(-0 542.994958 178.72923)">maybe</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_20"/>
+     <g id="text_22">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="542.994958" y="222.556563" transform="rotate(-0 542.994958 222.556563)">let me try</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_21"/>
+     <g id="text_23">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="542.994958" y="266.383895" transform="rotate(-0 542.994958 266.383895)">alternatively</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_22"/>
+     <g id="text_24">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="542.994958" y="310.211227" transform="rotate(-0 542.994958 310.211227)">I'm not sure</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 546.494958 118.014545 
+L 757.663674 118.014545 
+L 757.663674 142.996125 
+L 546.494958 142.996125 
+z
+" clip-path="url(#p6af5cb3235)" style="fill: #d6a548"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 546.494958 161.841878 
+L 757.663674 161.841878 
+L 757.663674 186.823457 
+L 546.494958 186.823457 
+z
+" clip-path="url(#p6af5cb3235)" style="fill: #d6a548"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 546.494958 205.66921 
+L 749.216925 205.66921 
+L 749.216925 230.65079 
+L 546.494958 230.65079 
+z
+" clip-path="url(#p6af5cb3235)" style="fill: #d6a548"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 546.494958 249.496543 
+L 738.658489 249.496543 
+L 738.658489 274.478122 
+L 546.494958 274.478122 
+z
+" clip-path="url(#p6af5cb3235)" style="fill: #d6a548"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 546.494958 293.323875 
+L 616.180634 293.323875 
+L 616.180634 318.305455 
+L 546.494958 318.305455 
+z
+" clip-path="url(#p6af5cb3235)" style="fill: #d6a548"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 546.494958 328.32 
+L 546.494958 108 
+" style="fill: none; stroke: #b9c0c7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 546.494958 328.32 
+L 797.78573 328.32 
+" style="fill: none; stroke: #b9c0c7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_25">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="761.887048" y="133.396937" transform="rotate(-0 761.887048 133.396937)">100%</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="761.887048" y="177.224269" transform="rotate(-0 761.887048 177.224269)">100%</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="753.440299" y="221.051602" transform="rotate(-0 753.440299 221.051602)">96%</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="742.881863" y="264.878934" transform="rotate(-0 742.881863 264.878934)">91%</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="620.404008" y="308.706266" transform="rotate(-0 620.404008 308.706266)">33%</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #28333f; font: 13px 'Microsoft YaHei'; text-anchor: middle" x="672.140344" y="102" transform="rotate(-0 672.140344 102)">检查、尝试与不确定表达</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_18">
+    <path d="M 950.429916 328.32 
+L 1152.36 328.32 
+L 1152.36 108 
+L 950.429916 108 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_7">
+     <g id="line2d_23">
+      <path d="M 950.429916 328.32 
+L 950.429916 108 
+" clip-path="url(#p823b15bc9d)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24"/>
+     <g id="text_31">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="950.429916" y="339.81375" transform="rotate(-0 950.429916 339.81375)">0</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_25">
+      <path d="M 1025.218836 328.32 
+L 1025.218836 108 
+" clip-path="url(#p823b15bc9d)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26"/>
+     <g id="text_32">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="1025.218836" y="339.81375" transform="rotate(-0 1025.218836 339.81375)">1000</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_27">
+      <path d="M 1100.007756 328.32 
+L 1100.007756 108 
+" clip-path="url(#p823b15bc9d)" style="fill: none; stroke: #ebeef1; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28"/>
+     <g id="text_33">
+      <text style="fill: #4c5865; font: 10px 'Microsoft YaHei'; text-anchor: middle" x="1100.007756" y="339.81375" transform="rotate(-0 1100.007756 339.81375)">2000</text>
+     </g>
+    </g>
+    <g id="text_34">
+     <text style="fill: #28333f; font: 11px 'Microsoft YaHei'; text-anchor: middle" x="1051.394958" y="355.092813" transform="rotate(-0 1051.394958 355.092813)">同一句在单题中的出现次数</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_11">
+     <g id="line2d_29"/>
+     <g id="text_35">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="946.929916" y="137.687533" transform="rotate(-0 946.929916 137.687533)">题 91319</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_30"/>
+     <g id="text_36">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="946.929916" y="194.266886" transform="rotate(-0 946.929916 194.266886)">题 95732</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_31"/>
+     <g id="text_37">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="946.929916" y="250.846239" transform="rotate(-0 946.929916 250.846239)">题 99424</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_32"/>
+     <g id="text_38">
+      <text style="fill: #4c5865; font: 11px 'Microsoft YaHei'; text-anchor: end" x="946.929916" y="307.425592" transform="rotate(-0 946.929916 307.425592)">题 94943</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_19">
+    <path d="M 950.429916 118.014545 
+L 1115.563851 118.014545 
+L 1115.563851 148.567396 
+L 950.429916 148.567396 
+z
+" clip-path="url(#p823b15bc9d)" style="fill: #c96340"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 950.429916 174.593898 
+L 1114.516806 174.593898 
+L 1114.516806 205.146749 
+L 950.429916 205.146749 
+z
+" clip-path="url(#p823b15bc9d)" style="fill: #c96340"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 950.429916 231.173251 
+L 1077.645869 231.173251 
+L 1077.645869 261.726102 
+L 950.429916 261.726102 
+z
+" clip-path="url(#p823b15bc9d)" style="fill: #c96340"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 950.429916 287.752604 
+L 1003.530049 287.752604 
+L 1003.530049 318.305455 
+L 950.429916 318.305455 
+z
+" clip-path="url(#p823b15bc9d)" style="fill: #c96340"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 950.429916 328.32 
+L 950.429916 108 
+" style="fill: none; stroke: #b9c0c7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 950.429916 328.32 
+L 1152.36 328.32 
+" style="fill: none; stroke: #b9c0c7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_39">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="1118.929353" y="136.182572" transform="rotate(-0 1118.929353 136.182572)">2,208</text>
+   </g>
+   <g id="text_40">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="1117.882308" y="192.761925" transform="rotate(-0 1117.882308 192.761925)">2,194</text>
+   </g>
+   <g id="text_41">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="1081.01137" y="249.341278" transform="rotate(-0 1081.01137 249.341278)">1,701</text>
+   </g>
+   <g id="text_42">
+    <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="1006.89555" y="305.920631" transform="rotate(-0 1006.89555 305.920631)">710</text>
+   </g>
+   <g id="text_43">
+    <text style="fill: #28333f; font: 13px 'Microsoft YaHei'; text-anchor: middle" x="1051.394958" y="102" transform="rotate(-0 1051.394958 102)">4条循环轨迹的最高频句</text>
+   </g>
+  </g>
+  <g id="text_44">
+   <text style="fill: #28333f; font: 700 18px 'Microsoft YaHei'; text-anchor: start" x="65.34" y="31.66875" transform="rotate(-0 65.34 31.66875)">常见表达覆盖很多题；极高重复次数主要来自少数关系句循环</text>
+  </g>
+  <g id="text_45">
+   <text style="fill: #596774; font: 10.8px 'Microsoft YaHei'; text-anchor: start" x="65.34" y="51.84" transform="rotate(-0 65.34 51.84)">100题各取一条32K上限的可见思考文本；统计不包含题干和正式答案</text>
+  </g>
+  <g id="text_46">
+   <text style="fill: #28333f; font: 10.5px 'Microsoft YaHei'; text-anchor: start" x="65.34" y="369.36" transform="rotate(-0 65.34 369.36)">左、中：覆盖率可避免长文本主导总词频。右：每句均只覆盖1题（1%），却可在该题中重复上千次。</text>
+  </g>
+  <g id="text_47">
+   <text style="fill: #65717d; font: 10px 'Microsoft YaHei'; text-anchor: start" x="65.34" y="393.12" transform="rotate(-0 65.34 393.12)">wait / maybe / let me try 是可见文本行为标记，不能直接证明模型完成了检查或有效纠错。</text>
+  </g>
+  <g id="text_48">
+   <text style="fill: #65717d; font: 9.6px 'Microsoft YaHei'; text-anchor: start" x="65.34" y="412.56" transform="rotate(-0 65.34 412.56)">字面短语按预定义规则匹配，类别不互斥；“unit steps”仅4%不代表仅4题理解了单位步长；clock也匹配o’clock中的clock。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p22b75f0b9f">
+   <rect x="142.56" y="108" width="251.290772" height="220.32"/>
+  </clipPath>
+  <clipPath id="p6af5cb3235">
+   <rect x="546.494958" y="108" width="251.290772" height="220.32"/>
+  </clipPath>
+  <clipPath id="p823b15bc9d">
+   <rect x="950.429916" y="108" width="201.930084" height="220.32"/>
+  </clipPath>
+ </defs>
+</svg>

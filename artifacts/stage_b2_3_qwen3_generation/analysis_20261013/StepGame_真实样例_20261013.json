@@ -1,0 +1,127 @@
+{
+  "source": "D:\\2026本基\\参考文献1\\reasoning-geometry-pilot\\results\\stage-b1\\union_manifest.csv",
+  "primary_membership": "D:\\2026本基\\参考文献1\\reasoning-geometry-pilot\\results\\stage-b0\\b0_2\\primary_test.csv",
+  "note": "Story/question/label/hop are from the frozen test. Path and explanation are added annotations using the dataset unit-grid convention.",
+  "examples": [
+    {
+      "row_id": 84006,
+      "computed_hop": 1,
+      "story": [
+        "H is below Q at 7 o'clock.",
+        "R and J are side by side with R to the right and J to the left.",
+        "P is at Q's 3 o'clock.",
+        "E and J are next to each other with E on the top and J at the bottom.",
+        "E and P are parallel, and E is over P."
+      ],
+      "question": "What is the relation of the agent R to the agent J?",
+      "label": "right",
+      "annotation": {
+        "explanation_zh": "R相对于J在右侧。第2条直接给出，其余4条不在查询路径。",
+        "path": [
+          "J",
+          "R"
+        ],
+        "unit_grid_displacements": [
+          [
+            1,
+            0
+          ]
+        ],
+        "sum_displacement": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "row_id": 84039,
+      "computed_hop": 3,
+      "story": [
+        "O is above E with a small gap between them.",
+        "B is positioned above O and to the left.",
+        "A is to the right of L and is on the same horizontal plane.",
+        "A is over there and B is on the top of it.",
+        "E is over there and R is directly below it."
+      ],
+      "question": "What is the relation of the agent R to the agent B?",
+      "label": "lower-right",
+      "annotation": {
+        "explanation_zh": "从B出发，O在右下，E在O下方，R在E下方；R相对B为(1,-3)，右下。",
+        "path": [
+          "B",
+          "O",
+          "E",
+          "R"
+        ],
+        "unit_grid_displacements": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "sum_displacement": [
+          1,
+          -3
+        ]
+      }
+    },
+    {
+      "row_id": 84042,
+      "computed_hop": 5,
+      "story": [
+        "O is on the top and J is at the bottom.",
+        "The object T is lower and slightly to the right of the object Z.",
+        "Z is sitting at the upper left position to F.",
+        "J is below T at 4 o'clock.",
+        "C is at O's 3 o'clock."
+      ],
+      "question": "What is the relation of the agent C to the agent F?",
+      "label": "right",
+      "annotation": {
+        "explanation_zh": "F→Z→T→J→O→C，位移和为(2,0)，上下分量抵消，答案为正右方。",
+        "path": [
+          "F",
+          "Z",
+          "T",
+          "J",
+          "O",
+          "C"
+        ],
+        "unit_grid_displacements": [
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "sum_displacement": [
+          2,
+          0
+        ]
+      }
+    }
+  ]
+}

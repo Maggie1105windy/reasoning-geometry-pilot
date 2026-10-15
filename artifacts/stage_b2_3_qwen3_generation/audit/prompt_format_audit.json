@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "original_content_source": "frozen row Story/Question reconstructed exactly as Stage B2.2 raw prompt",
+  "only_appended_text": "End your response with exactly one final line in the following format:\n\nFinal answer: <relation>\n\nwhere <relation> must be one of:\nabove, below, left, right, upper-left, upper-right, lower-left, lower-right.",
+  "output_format_instruction_sha256": "c476c9923b62bebdb9a141d14e215c6d09435efb46b026c3c8faab9f868dd3a4",
+  "all_user_messages_sha256": "fa5c8af033e9f20616096aa72714fa1914d2c0d5783abc7d8f98985ad103cd22",
+  "rows": 2063,
+  "forbidden_additions": []
+}

@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_rows_2063": true,
+    "frozen_hop_counts_exact": true,
+    "frozen_row_hash_exact": true,
+    "frozen_rows_unique": true,
+    "frozen_relations_exact": true,
+    "preflight_summary_pass": true,
+    "model_load_smoke_pass": true,
+    "audit_summary_pass": true,
+    "tokenizer_audit_pass": true,
+    "equal_length_gate_pass": true,
+    "full_run_pass": true,
+    "all_four_components_pass": true,
+    "raw_sum_candidate_rows": true,
+    "raw_sum_every_frozen_row_once": true,
+    "raw_sum_eight_candidates": true,
+    "raw_sum_candidate_set": true,
+    "raw_sum_finite": true,
+    "raw_sum_no_truncation": true,
+    "raw_mean_candidate_rows": true,
+    "raw_mean_every_frozen_row_once": true,
+    "raw_mean_eight_candidates": true,
+    "raw_mean_candidate_set": true,
+    "raw_mean_finite": true,
+    "raw_mean_no_truncation": true,
+    "native_sum_candidate_rows": true,
+    "native_sum_every_frozen_row_once": true,
+    "native_sum_eight_candidates": true,
+    "native_sum_candidate_set": true,
+    "native_sum_finite": true,
+    "native_sum_no_truncation": true,
+    "native_mean_candidate_rows": true,
+    "native_mean_every_frozen_row_once": true,
+    "native_mean_eight_candidates": true,
+    "native_mean_candidate_set": true,
+    "native_mean_finite": true,
+    "native_mean_no_truncation": true,
+    "equallength_raw_candidate_rows": true,
+    "equallength_raw_every_frozen_row_once": true,
+    "equallength_raw_eight_candidates": true,
+    "equallength_raw_candidate_set": true,
+    "equallength_raw_finite": true,
+    "equallength_raw_no_truncation": true,
+    "equallength_native_candidate_rows": true,
+    "equallength_native_every_frozen_row_once": true,
+    "equallength_native_eight_candidates": true,
+    "equallength_native_candidate_set": true,
+    "equallength_native_finite": true,
+    "equallength_native_no_truncation": true,
+    "independent_argmax_metrics_confusions": true,
+    "protected_b0_to_b21_unchanged": true,
+    "required_outputs_present": true,
+    "tulu_reference_reproduced": true,
+    "five_nonempty_figures": true
+  },
+  "errors": [],
+  "limitations": [],
+  "protected_changed_files": [],
+  "figure_dimensions": {
+    "figure_1_raw_vs_native_by_hop.png": [
+      1980,
+      1210
+    ],
+    "figure_2_native_metrics_qwen_vs_tulu.png": [
+      3262,
+      1034
+    ],
+    "figure_3_cardinal_diagonal_frequency.png": [
+      2200,
+      1144
+    ],
+    "figure_4_qwen_confusion_matrices.png": [
+      3895,
+      1213
+    ],
+    "figure_5_derived_protocol_comparison.png": [
+      2640,
+      1210
+    ]
+  }
+}

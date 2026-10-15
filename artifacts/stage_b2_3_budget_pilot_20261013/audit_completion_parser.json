@@ -1,0 +1,2443 @@
+{
+  "audit_version": "independent_completion_parser_v1",
+  "audited_utc": "2026-10-13T15:47:17.251141+00:00",
+  "status": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "checked_shards": 30,
+  "checks_passed": 317,
+  "checks_total": 317,
+  "failed_checks": [],
+  "summary_recomputed_from_shards": [
+    {
+      "cap": 8192,
+      "runs": 10,
+      "normal_completions": 8,
+      "think_closed": 8,
+      "parsed": 8,
+      "correct": 6,
+      "truncated": 2,
+      "total_tokens": 46040,
+      "mean_tokens": 4604,
+      "median_tokens": 3694.0,
+      "tokens_min": 1844,
+      "tokens_max": 8192,
+      "total_wall_seconds": 1943.8307780325413,
+      "derived_h2_h5_correct": 4
+    },
+    {
+      "cap": 16384,
+      "runs": 10,
+      "normal_completions": 10,
+      "think_closed": 10,
+      "parsed": 10,
+      "correct": 7,
+      "truncated": 0,
+      "total_tokens": 48489,
+      "mean_tokens": 4848.9,
+      "median_tokens": 3694.0,
+      "tokens_min": 1844,
+      "tokens_max": 10580,
+      "total_wall_seconds": 2058.0976516343653,
+      "derived_h2_h5_correct": 5
+    },
+    {
+      "cap": 32768,
+      "runs": 10,
+      "normal_completions": 10,
+      "think_closed": 10,
+      "parsed": 10,
+      "correct": 7,
+      "truncated": 0,
+      "total_tokens": 48489,
+      "mean_tokens": 4848.9,
+      "median_tokens": 3694.0,
+      "tokens_min": 1844,
+      "tokens_max": 10580,
+      "total_wall_seconds": 2057.255656655878,
+      "derived_h2_h5_correct": 5
+    }
+  ],
+  "row_results": [
+    {
+      "cap": 8192,
+      "row_id": 101041,
+      "hop": 4,
+      "seed": 1639759301,
+      "tokens": 8192,
+      "eos": false,
+      "think_closed": false,
+      "parsed_relation": "INVALID",
+      "gold": "BELOW",
+      "correct": false,
+      "cap_truncated": true,
+      "wall_seconds": 346.9626648463309,
+      "thinking_tokens": 8191
+    },
+    {
+      "cap": 8192,
+      "row_id": 85687,
+      "hop": 2,
+      "seed": 922462639,
+      "tokens": 3808,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "RIGHT",
+      "gold": "LOWER_RIGHT",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 160.37219259887934,
+      "thinking_tokens": 3800
+    },
+    {
+      "cap": 8192,
+      "row_id": 85935,
+      "hop": 1,
+      "seed": 637600724,
+      "tokens": 5035,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 217.96172165870667,
+      "thinking_tokens": 5026
+    },
+    {
+      "cap": 8192,
+      "row_id": 86033,
+      "hop": 3,
+      "seed": 558860459,
+      "tokens": 2431,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LEFT",
+      "gold": "LEFT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 101.7142964117229,
+      "thinking_tokens": 2423
+    },
+    {
+      "cap": 8192,
+      "row_id": 90023,
+      "hop": 3,
+      "seed": 81193947,
+      "tokens": 3580,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "LOWER_LEFT",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 149.38292361795902,
+      "thinking_tokens": 3571
+    },
+    {
+      "cap": 8192,
+      "row_id": 92078,
+      "hop": 4,
+      "seed": 1797698710,
+      "tokens": 8192,
+      "eos": false,
+      "think_closed": false,
+      "parsed_relation": "INVALID",
+      "gold": "UPPER_RIGHT",
+      "correct": false,
+      "cap_truncated": true,
+      "wall_seconds": 345.0986818447709,
+      "thinking_tokens": 8191
+    },
+    {
+      "cap": 8192,
+      "row_id": 93456,
+      "hop": 5,
+      "seed": 1891763155,
+      "tokens": 8100,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "RIGHT",
+      "gold": "RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 341.60405053943396,
+      "thinking_tokens": 8092
+    },
+    {
+      "cap": 8192,
+      "row_id": 94405,
+      "hop": 2,
+      "seed": 757050888,
+      "tokens": 2691,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 112.20353047177196,
+      "thinking_tokens": 2682
+    },
+    {
+      "cap": 8192,
+      "row_id": 94459,
+      "hop": 5,
+      "seed": 1891581269,
+      "tokens": 1844,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 76.84428106620908,
+      "thinking_tokens": 1835
+    },
+    {
+      "cap": 8192,
+      "row_id": 94822,
+      "hop": 1,
+      "seed": 1700087573,
+      "tokens": 2167,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LOWER_LEFT",
+      "gold": "LOWER_LEFT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 91.68643497675657,
+      "thinking_tokens": 2158
+    },
+    {
+      "cap": 16384,
+      "row_id": 101041,
+      "hop": 4,
+      "seed": 1639759301,
+      "tokens": 8253,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LOWER_LEFT",
+      "gold": "BELOW",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 348.3474095277488,
+      "thinking_tokens": 8244
+    },
+    {
+      "cap": 16384,
+      "row_id": 85687,
+      "hop": 2,
+      "seed": 922462639,
+      "tokens": 3808,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "RIGHT",
+      "gold": "LOWER_RIGHT",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 160.4982826076448,
+      "thinking_tokens": 3800
+    },
+    {
+      "cap": 16384,
+      "row_id": 85935,
+      "hop": 1,
+      "seed": 637600724,
+      "tokens": 5035,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 212.98905614763498,
+      "thinking_tokens": 5026
+    },
+    {
+      "cap": 16384,
+      "row_id": 86033,
+      "hop": 3,
+      "seed": 558860459,
+      "tokens": 2431,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LEFT",
+      "gold": "LEFT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 101.45722056180239,
+      "thinking_tokens": 2423
+    },
+    {
+      "cap": 16384,
+      "row_id": 90023,
+      "hop": 3,
+      "seed": 81193947,
+      "tokens": 3580,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "LOWER_LEFT",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 149.41825296729803,
+      "thinking_tokens": 3571
+    },
+    {
+      "cap": 16384,
+      "row_id": 92078,
+      "hop": 4,
+      "seed": 1797698710,
+      "tokens": 10580,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 460.6901774927974,
+      "thinking_tokens": 10571
+    },
+    {
+      "cap": 16384,
+      "row_id": 93456,
+      "hop": 5,
+      "seed": 1891763155,
+      "tokens": 8100,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "RIGHT",
+      "gold": "RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 344.0361715145409,
+      "thinking_tokens": 8092
+    },
+    {
+      "cap": 16384,
+      "row_id": 94405,
+      "hop": 2,
+      "seed": 757050888,
+      "tokens": 2691,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 112.53302176296711,
+      "thinking_tokens": 2682
+    },
+    {
+      "cap": 16384,
+      "row_id": 94459,
+      "hop": 5,
+      "seed": 1891581269,
+      "tokens": 1844,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 76.82190768420696,
+      "thinking_tokens": 1835
+    },
+    {
+      "cap": 16384,
+      "row_id": 94822,
+      "hop": 1,
+      "seed": 1700087573,
+      "tokens": 2167,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LOWER_LEFT",
+      "gold": "LOWER_LEFT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 91.30615136772394,
+      "thinking_tokens": 2158
+    },
+    {
+      "cap": 32768,
+      "row_id": 101041,
+      "hop": 4,
+      "seed": 1639759301,
+      "tokens": 8253,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LOWER_LEFT",
+      "gold": "BELOW",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 349.45591980591416,
+      "thinking_tokens": 8244
+    },
+    {
+      "cap": 32768,
+      "row_id": 85687,
+      "hop": 2,
+      "seed": 922462639,
+      "tokens": 3808,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "RIGHT",
+      "gold": "LOWER_RIGHT",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 158.8109177350998,
+      "thinking_tokens": 3800
+    },
+    {
+      "cap": 32768,
+      "row_id": 85935,
+      "hop": 1,
+      "seed": 637600724,
+      "tokens": 5035,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 213.02659134566784,
+      "thinking_tokens": 5026
+    },
+    {
+      "cap": 32768,
+      "row_id": 86033,
+      "hop": 3,
+      "seed": 558860459,
+      "tokens": 2431,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LEFT",
+      "gold": "LEFT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 101.46409200504422,
+      "thinking_tokens": 2423
+    },
+    {
+      "cap": 32768,
+      "row_id": 90023,
+      "hop": 3,
+      "seed": 81193947,
+      "tokens": 3580,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "LOWER_LEFT",
+      "correct": false,
+      "cap_truncated": false,
+      "wall_seconds": 149.54727613553405,
+      "thinking_tokens": 3571
+    },
+    {
+      "cap": 32768,
+      "row_id": 92078,
+      "hop": 4,
+      "seed": 1797698710,
+      "tokens": 10580,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 460.4855852276087,
+      "thinking_tokens": 10571
+    },
+    {
+      "cap": 32768,
+      "row_id": 93456,
+      "hop": 5,
+      "seed": 1891763155,
+      "tokens": 8100,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "RIGHT",
+      "gold": "RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 343.4836123660207,
+      "thinking_tokens": 8092
+    },
+    {
+      "cap": 32768,
+      "row_id": 94405,
+      "hop": 2,
+      "seed": 757050888,
+      "tokens": 2691,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 112.9796553440392,
+      "thinking_tokens": 2682
+    },
+    {
+      "cap": 32768,
+      "row_id": 94459,
+      "hop": 5,
+      "seed": 1891581269,
+      "tokens": 1844,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "UPPER_RIGHT",
+      "gold": "UPPER_RIGHT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 76.90337949618697,
+      "thinking_tokens": 1835
+    },
+    {
+      "cap": 32768,
+      "row_id": 94822,
+      "hop": 1,
+      "seed": 1700087573,
+      "tokens": 2167,
+      "eos": true,
+      "think_closed": true,
+      "parsed_relation": "LOWER_LEFT",
+      "gold": "LOWER_LEFT",
+      "correct": true,
+      "cap_truncated": false,
+      "wall_seconds": 91.09862719476223,
+      "thinking_tokens": 2158
+    }
+  ],
+  "paired_prefix_and_outcome_comparison": [
+    {
+      "row_id": 85687,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 3808,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 85935,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 5035,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 86033,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 2431,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 90023,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 3580,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 92078,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 8192,
+      "prefix_equal": true,
+      "entire_outputs_equal": false,
+      "correct_a": false,
+      "correct_b": true
+    },
+    {
+      "row_id": 93456,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 8100,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94405,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 2691,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94459,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 1844,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94822,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 2167,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 101041,
+      "cap_a": 8192,
+      "cap_b": 16384,
+      "prefix_tokens": 8192,
+      "prefix_equal": true,
+      "entire_outputs_equal": false,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 85687,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 3808,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 85935,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 5035,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 86033,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 2431,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 90023,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 3580,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 92078,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 8192,
+      "prefix_equal": true,
+      "entire_outputs_equal": false,
+      "correct_a": false,
+      "correct_b": true
+    },
+    {
+      "row_id": 93456,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 8100,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94405,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 2691,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94459,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 1844,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94822,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 2167,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 101041,
+      "cap_a": 8192,
+      "cap_b": 32768,
+      "prefix_tokens": 8192,
+      "prefix_equal": true,
+      "entire_outputs_equal": false,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 85687,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 3808,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 85935,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 5035,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 86033,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 2431,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 90023,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 3580,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    },
+    {
+      "row_id": 92078,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 10580,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 93456,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 8100,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94405,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 2691,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94459,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 1844,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 94822,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 2167,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": true,
+      "correct_b": true
+    },
+    {
+      "row_id": 101041,
+      "cap_a": 16384,
+      "cap_b": 32768,
+      "prefix_tokens": 8253,
+      "prefix_equal": true,
+      "entire_outputs_equal": true,
+      "correct_a": false,
+      "correct_b": false
+    }
+  ],
+  "checks": [
+    {
+      "check": "plan_hash_recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "runtime_plan_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "model_audit_hash_recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_runner_file_hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_common_file_hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "all_five_weight_hashes_match_archive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "weight_hashes_recomputed_in_run",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "config_hash_matches_archive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "sample_size_and_hops",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_exact_ten_shards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_101041_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85687_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_85935_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_86033_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_90023_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_92078_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_93456_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94405_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94459_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "8192_94822_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_exact_ten_shards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_101041_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85687_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_85935_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_86033_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_90023_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_92078_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_93456_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94405_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94459_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "16384_94822_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_exact_ten_shards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_101041_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85687_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_85935_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_86033_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_90023_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_92078_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_93456_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94405_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94459_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_prompt_exact_gold_not_injected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_runtime_token_bundle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_token_integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_boundary_from_special_token_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_whole_text_boundary_projection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_parser_correctness_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_eos_cap_independent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_frozen_generation_config",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "32768_94822_no_other_compute_process_in_snapshots",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "thirty_unique_cap_row_pairs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "no_error_artifacts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "no_oom_traceback_error_in_logs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "thirty_success_events_in_logs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "final_status_complete",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "sha256_of_shards": {
+    "budget_8192\\shards\\row_101041.json": "350120be5bdfda33d8da9212988f0b29dce59fc36a14a792e146a59324ba8946",
+    "budget_8192\\shards\\row_85687.json": "684ce4ff2b56099dbf955d91ea22b4714904168079d5852d87c0f1f2d8781901",
+    "budget_8192\\shards\\row_85935.json": "905dcc6a78bc3633ddf588a0efa0a3efa908f59edc4d770d404e37c2b154de51",
+    "budget_8192\\shards\\row_86033.json": "f4b1b6a1201de286953962078fdc9123bc962b25cf1cc55211ce301ddda930a6",
+    "budget_8192\\shards\\row_90023.json": "a1745abda40dd46708398bde9c6b0e16914c058a80a91443ab20aa9a171ca493",
+    "budget_8192\\shards\\row_92078.json": "6e12ca703c058025902573cba834d4af0589d6e0f818c38e7983319cf3c0aacb",
+    "budget_8192\\shards\\row_93456.json": "7a2d5e72d4ea1e8bb2ea82cf050190ebd62899aa66123e796756c1dfb22412cf",
+    "budget_8192\\shards\\row_94405.json": "e24a163ccffbe8c49c228e3e6bac6d3f4c2a814f97af18bc534379d7a29fdb5f",
+    "budget_8192\\shards\\row_94459.json": "361a0d7984f1b67b61e149e443116b8e50bcd9838ef1e59204199a9162cb4a71",
+    "budget_8192\\shards\\row_94822.json": "d41c024feff1c4cb16e5a4e0bdc6d59e962690cd3da3a829245d2b5158273415",
+    "budget_16384\\shards\\row_101041.json": "29bdb56e85aa44f5507982042666ba69031a3f5d5fd592675b0bfe94961ac47d",
+    "budget_16384\\shards\\row_85687.json": "9075deb450426843f73635f418763e3072f224dbb3c03ef944f4f8fb93c41515",
+    "budget_16384\\shards\\row_85935.json": "1457795748a949643d7040461efab1e83b7ffc307d97ca7f9299727dd59a876e",
+    "budget_16384\\shards\\row_86033.json": "5343c3eff56f64c92723adf1ef90430169b813b6abce717d5931ee0de1598c7b",
+    "budget_16384\\shards\\row_90023.json": "e0f7e334193900fc12cfd62978e99997543ab446521177ec61c533bcf09dea3f",
+    "budget_16384\\shards\\row_92078.json": "69fa41ef7dfadc68b9c60a36a93274ee9d59b4762fb8c29fc35051032e56dd10",
+    "budget_16384\\shards\\row_93456.json": "a0f7e5e7dab02244f18a8e63d25c69db4843b76ee21e93b877a0376d0fd35303",
+    "budget_16384\\shards\\row_94405.json": "3bbea14da6010c134791d48bdd1dfa145d65358b819c5f454a4c93b5e47d490b",
+    "budget_16384\\shards\\row_94459.json": "b71212ae6a3ca9c64ec6a22f24d75e3f8a330a9c1c05a0d1b6afe6c5ccebf951",
+    "budget_16384\\shards\\row_94822.json": "e44386b6d184e6eb423dd50555997be66e7dbfcf4b45fa6e592c2938aad6f15c",
+    "budget_32768\\shards\\row_101041.json": "bf2d4b27a5644788891ba54e0186c55e4bef17bc64e76233e98d76835f820212",
+    "budget_32768\\shards\\row_85687.json": "774daf0822c1916d4237e917f89b4aa28be6eb203548b97da12eab211cf6ae04",
+    "budget_32768\\shards\\row_85935.json": "4b3e543c10d69e7475649c45f98d551564a8eab70e31b0e2700121349cd86d7b",
+    "budget_32768\\shards\\row_86033.json": "905c156380d66c47bf7ffe37b558bd263ff4700f03189ef50fa20ba06c55ab3c",
+    "budget_32768\\shards\\row_90023.json": "35c6522be208a35e59800db7e4361990166f8c40a918522614cb2278473764f5",
+    "budget_32768\\shards\\row_92078.json": "82e73cb5165fa86aacb2076091ed5ba7cdccb8b9271160d4d5b4dcccfdc3a8a0",
+    "budget_32768\\shards\\row_93456.json": "3b90d24dcd0e1caa529f92616574058b1e38c6ca491f344cd65471947fd70205",
+    "budget_32768\\shards\\row_94405.json": "1a8a4e740036f24f083ccd619b0edb059bb557fb367b7516aeb21c557039f8a7",
+    "budget_32768\\shards\\row_94459.json": "8c37ea1641eeaa309b04f6885fb9cf3cf2c17fbeceaaff82b4e4db66f77d7cb2",
+    "budget_32768\\shards\\row_94822.json": "c4cbcf3eeca3591680deb0ba6da79ae4964a235ed4892c8aab2dd9b369e2f78a"
+  },
+  "limitations_and_notes": [
+    "All 30 outputs were re-read directly; the runner and archived summary were not imported or used as the source of the recomputation.",
+    "Strict think closure and post-boundary token slices are independently checked against generated IDs and runtime special IDs (151667/151668).",
+    "Final text is independently projected from full generated_text after </think> and special EOS text removal, then parsed with the frozen regex.",
+    "A local tokenizer asset is unavailable, so complete non-special token-ID-to-text decoding was not independently rerun. Token-list hashes and special-boundary indices are checked.",
+    "EOS ID 151645 is independently obtained from the historical model manifest; all observed normal completions terminate with it.",
+    "Local GPU/model weights are unavailable: runtime full weight SHA records were independently compared with the historical audit, but weights were not hashed again locally.",
+    "Ten paired inputs, two per hop, and one stochastic sample per input do not support a population accuracy or minimum-safe-budget claim. Three caps are repeated experiments on the same inputs, not 30 independent problem samples.",
+    "GPU snapshots bracket each run; they do not prove absence of transient contention or OOM inside an unrecorded interval. No OOM/error artifact or log evidence was observed.",
+    "status.json pending_runs=30 is a stale initialization field; COMPLETE and completed_runs=30 agree with all 30 validated shards."
+  ]
+}

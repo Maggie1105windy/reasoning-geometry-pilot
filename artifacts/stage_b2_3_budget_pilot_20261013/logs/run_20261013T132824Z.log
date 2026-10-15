@@ -1,0 +1,32 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00, 36.68it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 45.38it/s]
+{"status": "ROW_COMPLETE", "row_id": 85935, "hop": 1, "budget": 8192, "tokens": 5035, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 217.96172165870667}
+{"status": "ROW_COMPLETE", "row_id": 85935, "hop": 1, "budget": 16384, "tokens": 5035, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 212.98905614763498}
+{"status": "ROW_COMPLETE", "row_id": 85935, "hop": 1, "budget": 32768, "tokens": 5035, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 213.02659134566784}
+{"status": "ROW_COMPLETE", "row_id": 94822, "hop": 1, "budget": 8192, "tokens": 2167, "eos": true, "think_close": true, "parsed": "LOWER_LEFT", "correct": true, "seconds": 91.68643497675657}
+{"status": "ROW_COMPLETE", "row_id": 94822, "hop": 1, "budget": 16384, "tokens": 2167, "eos": true, "think_close": true, "parsed": "LOWER_LEFT", "correct": true, "seconds": 91.30615136772394}
+{"status": "ROW_COMPLETE", "row_id": 94822, "hop": 1, "budget": 32768, "tokens": 2167, "eos": true, "think_close": true, "parsed": "LOWER_LEFT", "correct": true, "seconds": 91.09862719476223}
+{"status": "ROW_COMPLETE", "row_id": 85687, "hop": 2, "budget": 8192, "tokens": 3808, "eos": true, "think_close": true, "parsed": "RIGHT", "correct": false, "seconds": 160.37219259887934}
+{"status": "ROW_COMPLETE", "row_id": 85687, "hop": 2, "budget": 16384, "tokens": 3808, "eos": true, "think_close": true, "parsed": "RIGHT", "correct": false, "seconds": 160.4982826076448}
+{"status": "ROW_COMPLETE", "row_id": 85687, "hop": 2, "budget": 32768, "tokens": 3808, "eos": true, "think_close": true, "parsed": "RIGHT", "correct": false, "seconds": 158.8109177350998}
+{"status": "ROW_COMPLETE", "row_id": 94405, "hop": 2, "budget": 8192, "tokens": 2691, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 112.20353047177196}
+{"status": "ROW_COMPLETE", "row_id": 94405, "hop": 2, "budget": 16384, "tokens": 2691, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 112.53302176296711}
+{"status": "ROW_COMPLETE", "row_id": 94405, "hop": 2, "budget": 32768, "tokens": 2691, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 112.9796553440392}
+{"status": "ROW_COMPLETE", "row_id": 86033, "hop": 3, "budget": 8192, "tokens": 2431, "eos": true, "think_close": true, "parsed": "LEFT", "correct": true, "seconds": 101.7142964117229}
+{"status": "ROW_COMPLETE", "row_id": 86033, "hop": 3, "budget": 16384, "tokens": 2431, "eos": true, "think_close": true, "parsed": "LEFT", "correct": true, "seconds": 101.45722056180239}
+{"status": "ROW_COMPLETE", "row_id": 86033, "hop": 3, "budget": 32768, "tokens": 2431, "eos": true, "think_close": true, "parsed": "LEFT", "correct": true, "seconds": 101.46409200504422}
+{"status": "ROW_COMPLETE", "row_id": 90023, "hop": 3, "budget": 8192, "tokens": 3580, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": false, "seconds": 149.38292361795902}
+{"status": "ROW_COMPLETE", "row_id": 90023, "hop": 3, "budget": 16384, "tokens": 3580, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": false, "seconds": 149.41825296729803}
+{"status": "ROW_COMPLETE", "row_id": 90023, "hop": 3, "budget": 32768, "tokens": 3580, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": false, "seconds": 149.54727613553405}
+{"status": "ROW_COMPLETE", "row_id": 101041, "hop": 4, "budget": 8192, "tokens": 8192, "eos": false, "think_close": false, "parsed": "INVALID", "correct": false, "seconds": 346.9626648463309}
+{"status": "ROW_COMPLETE", "row_id": 101041, "hop": 4, "budget": 16384, "tokens": 8253, "eos": true, "think_close": true, "parsed": "LOWER_LEFT", "correct": false, "seconds": 348.3474095277488}
+{"status": "ROW_COMPLETE", "row_id": 101041, "hop": 4, "budget": 32768, "tokens": 8253, "eos": true, "think_close": true, "parsed": "LOWER_LEFT", "correct": false, "seconds": 349.45591980591416}
+{"status": "ROW_COMPLETE", "row_id": 92078, "hop": 4, "budget": 8192, "tokens": 8192, "eos": false, "think_close": false, "parsed": "INVALID", "correct": false, "seconds": 345.0986818447709}
+{"status": "ROW_COMPLETE", "row_id": 92078, "hop": 4, "budget": 16384, "tokens": 10580, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 460.6901774927974}
+{"status": "ROW_COMPLETE", "row_id": 92078, "hop": 4, "budget": 32768, "tokens": 10580, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 460.4855852276087}
+{"status": "ROW_COMPLETE", "row_id": 94459, "hop": 5, "budget": 8192, "tokens": 1844, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 76.84428106620908}
+{"status": "ROW_COMPLETE", "row_id": 94459, "hop": 5, "budget": 16384, "tokens": 1844, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 76.82190768420696}
+{"status": "ROW_COMPLETE", "row_id": 94459, "hop": 5, "budget": 32768, "tokens": 1844, "eos": true, "think_close": true, "parsed": "UPPER_RIGHT", "correct": true, "seconds": 76.90337949618697}
+{"status": "ROW_COMPLETE", "row_id": 93456, "hop": 5, "budget": 8192, "tokens": 8100, "eos": true, "think_close": true, "parsed": "RIGHT", "correct": true, "seconds": 341.60405053943396}
+{"status": "ROW_COMPLETE", "row_id": 93456, "hop": 5, "budget": 16384, "tokens": 8100, "eos": true, "think_close": true, "parsed": "RIGHT", "correct": true, "seconds": 344.0361715145409}
+{"status": "ROW_COMPLETE", "row_id": 93456, "hop": 5, "budget": 32768, "tokens": 8100, "eos": true, "think_close": true, "parsed": "RIGHT", "correct": true, "seconds": 343.4836123660207}

@@ -1,0 +1,1583 @@
+{
+  "schema_version": 1,
+  "stage": "B2.3 expanded budget calibration",
+  "frozen_date": "2026-10-14",
+  "selection_seed": 20261014,
+  "sample_size": 100,
+  "sample_size_per_hop": 20,
+  "budget_grid_max_new_tokens": [
+    8192,
+    16384,
+    32768
+  ],
+  "paired_budget_design": "Use the exact same one hundred inputs and row_ids at each budget; hold prompt, thinking setting and decoding constant across budgets.",
+  "selection_algorithm": "Start from the frozen 2063-row Primary test population, exclude the ten rows in the 2026-10-13 diagnostic manifest. For each computed_hop=1..5, sort the remaining rows by SHA256 UTF-8 of stage-b2-3-budget100|20261014|<computed_hop>|<integer row_id>, breaking ties by integer row_id; take the first twenty.",
+  "selection_uses_existing_generated_answers": false,
+  "population": {
+    "split": "frozen Primary test",
+    "rows": 2063,
+    "hop_counts": {
+      "1": 712,
+      "2": 505,
+      "3": 422,
+      "4": 282,
+      "5": 142
+    }
+  },
+  "eligible_after_exclusion": {
+    "rows": 2053,
+    "hop_counts": {
+      "1": 710,
+      "2": 503,
+      "3": 420,
+      "4": 280,
+      "5": 140
+    }
+  },
+  "excluded_prior_diagnostic": {
+    "row_ids": [
+      85687,
+      85935,
+      86033,
+      90023,
+      92078,
+      93456,
+      94405,
+      94459,
+      94822,
+      101041
+    ],
+    "rows": 10,
+    "reason": "These inputs were used in the initial 8K/16K/32K ten-row diagnostic. Excluding them makes the expansion non-overlapping with that diagnostic; exclusion does not depend on correctness or truncation."
+  },
+  "source_files": [
+    {
+      "path": "D:\\2026本基\\参考文献1\\reasoning-geometry-pilot\\results\\stage-b0\\b0_2\\primary_test.csv",
+      "sha256": "daa08915843ae9441c6343a7da47a5d142beb9782f0765c065e0f7b30fbd5049"
+    },
+    {
+      "path": "D:\\2026本基\\参考文献1\\reasoning-geometry-pilot\\results\\stage-b1\\union_manifest.csv",
+      "sha256": "83e6db8374b70ca8a86b466626475a174129a633f3b9a29db2d29672a7eaa50c"
+    },
+    {
+      "path": "D:\\2026本基\\参考文献1\\reasoning-geometry-pilot\\artifacts\\stage_b2_3_budget_pilot_20261013\\sample_manifest.json",
+      "sha256": "016224543e5e4e4ff633c1c640332605917fd04ac2241710d7a9af676d5dadb3"
+    }
+  ],
+  "content_hash_definition": "SHA256 of UTF-8 canonical JSON of {row_id,computed_hop,canonical_relation,story,question}; ensure_ascii=False, sort_keys=True, separators=(comma,colon); story is an array, row_id and computed_hop are integers. Hash excludes hash/digest fields.",
+  "calibration_confirmation_policy": {
+    "purpose": "Expanded budget calibration, not independent post-selection capability confirmation.",
+    "non_overlap": "No overlap with the original ten-row budget diagnostic.",
+    "prior_exposure": "All source rows belong to the previously evaluated B2.3 Primary test population; these are new inputs for the expanded budget experiment, not an entirely never-evaluated dataset.",
+    "confirmation": "Any capability claim after choosing a budget needs a separately frozen confirmation set that was not used for budget selection."
+  },
+  "inference_boundary": "Equal-hop calibration sample, not representative of the natural 2063-row distribution. Aggregate rates are equal-hop averages over twenty examples per hop; report hop-specific denominators and uncertainty. Do not infer population accuracy or optimality from the ten-row pilot or declare this calibration set an independent confirmation set.",
+  "notes": [
+    "No filter based on previous correctness, parseability, length, or truncation was applied.",
+    "canonical_relation is frozen gold metadata and must not be included in the model prompt.",
+    "The selection seed controls sample ordering only; the run must separately record its generation seed and row-seed policy.",
+    "A five-entry story denotes five relation statements; some statements contain more than one grammatical sentence."
+  ],
+  "samples": [
+    {
+      "row_id": 88527,
+      "computed_hop": 1,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "Z is above V at 2 o'clock.",
+        "The object H is upper and slightly to the left of the object B.",
+        "R is to the upper left of U.",
+        "The object labeled H is positioned to the left of the object labeled Z.",
+        "R is diagonally right and below V."
+      ],
+      "question": "What is the relation of the agent V to the agent R?",
+      "sample_content_sha256": "0912914732aacae4029e9b723a3c34c920c5c741d4c34fe41d69d9267c4a1cf7",
+      "selection_digest": "01b293ed4011b788ad75dbfa78e3d273fec08711d24e2aa1c043efdf34644c7f"
+    },
+    {
+      "row_id": 99633,
+      "computed_hop": 1,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "X is positioned below and to the right of D.",
+        "C and Q are horizontal and C is to the left of Q.",
+        "A is diagonally to the bottom right of Q.",
+        "A is placed on the top of L.",
+        "The object L is positioned directly below the object X."
+      ],
+      "question": "What is the relation of the agent Q to the agent A?",
+      "sample_content_sha256": "1fd5828e3b63c9e21318b16fb71775564c5184a4eb1ade30072ef5b06ee3a968",
+      "selection_digest": "01f139d4ca2bebf7ff6eda5d90d58dca13da5671488fb75527c8c6aab2f0f68b"
+    },
+    {
+      "row_id": 94864,
+      "computed_hop": 1,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "Z is directly above N.",
+        "The objects Z and W are over there. The object Z is lower and slightly to the left of the object W.",
+        "P is below L and to the left of L.",
+        "N is above L with a small gap between them.",
+        "P is positioned up and to the right of I."
+      ],
+      "question": "What is the relation of the agent Z to the agent N?",
+      "sample_content_sha256": "bed0c38fceafc35eb6f6910c58a161b23378cffd7e659695b42d3916c5f9602b",
+      "selection_digest": "0209ffae955188f445f7100dd9f59cf6b46f030551311b1f99da74c48af8dc95"
+    },
+    {
+      "row_id": 89515,
+      "computed_hop": 1,
+      "canonical_relation": "LEFT",
+      "story": [
+        "F and G are parallel, and F is to the left of G.",
+        "G is over there and M is on the right.",
+        "W is below F at 4 o'clock.",
+        "W is positioned below B and to the right.",
+        "B is diagonally below S to the left at a 45 degree angle."
+      ],
+      "question": "What is the relation of the agent F to the agent G?",
+      "sample_content_sha256": "2dc787957f63b397d689d9e244bff9d6461a8953951c9495397b6d44ac1173c5",
+      "selection_digest": "022697cd12e969fa5669cd2a5c312ad260559e08c1a28dea28387fc6372c6f11"
+    },
+    {
+      "row_id": 92342,
+      "computed_hop": 1,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "C and Z are in a horizontal line with Z on the right.",
+        "X is to the left of H.",
+        "T is at a 45 degree angle to H, in the upper lefthand corner.",
+        "T is upper right to C.",
+        "D is sitting at the lower left position to X."
+      ],
+      "question": "What is the relation of the agent T to the agent H?",
+      "sample_content_sha256": "8fd25a351cb707bc31e2813b92a9f0fe4971664c786b077649e610d3719844b4",
+      "selection_digest": "028ecd13966f1a80e179004892b51115e6e3e54876e856895254dd1e8c80d75b"
+    },
+    {
+      "row_id": 102788,
+      "computed_hop": 1,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "D and I are parallel, and D is on top of I.",
+        "G is diagonally right and above I.",
+        "Z presents lower right to D.",
+        "G is over there and U is on the left of it.",
+        "Z is positioned down and to the left of Q."
+      ],
+      "question": "What is the relation of the agent D to the agent I?",
+      "sample_content_sha256": "6d0996d4c2715ffc82a50bd813ce036923ab40599da4824f69e305108a74e0cd",
+      "selection_digest": "03c54145c97de681157badc4173f77b3317265abe87d24456cf69d86206487e6"
+    },
+    {
+      "row_id": 97877,
+      "computed_hop": 1,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "X is on the top and J is at the bottom.",
+        "Z is on the right side and top of Q.",
+        "Z and X are next to each other with Z on the left and X on the right.",
+        "Object J is above object V and to the left of it, too.",
+        "Y is diagonally to the bottom left of Q."
+      ],
+      "question": "What is the relation of the agent X to the agent Z?",
+      "sample_content_sha256": "a2e8a24e7b0773ee007a4efbdc3815d8d664cd63cfb326704749fb0bbfc1ef6e",
+      "selection_digest": "04dfe042d02be771b9c1633a86f26a5d71810edcec1bbc0a4199d146f7f67965"
+    },
+    {
+      "row_id": 92970,
+      "computed_hop": 1,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "L is diagonally left and below W.",
+        "W is diagonally right and below F.",
+        "N is diagonally below X to the right at a 45 degree angle.",
+        "N is to the bottom-left of C.",
+        "F is on the same horizontal plane directly right to X."
+      ],
+      "question": "What is the relation of the agent F to the agent X?",
+      "sample_content_sha256": "8923b5ebef9ca52eb2e08d821ffba51053568a0ffdf9db79a7c3a7881a2e0704",
+      "selection_digest": "057075977f460394d2282280c56126a2d0b07f3bbc76b246289bdd1cf9e644a8"
+    },
+    {
+      "row_id": 95336,
+      "computed_hop": 1,
+      "canonical_relation": "BELOW",
+      "story": [
+        "G and M are both there with the object M below the object G.",
+        "M is placed in the right direction of U.",
+        "O presents over N.",
+        "I is placed at the upper right of N.",
+        "G presents below O."
+      ],
+      "question": "What is the relation of the agent G to the agent O?",
+      "sample_content_sha256": "c62d967d147f83a5c436f1f3c39b25513d4fd9caf59a072d9b4b9c1b6670850a",
+      "selection_digest": "05c465a8b487e0c2b0cb652a09d83e72148711dd9d9680ff543591d64121488f"
+    },
+    {
+      "row_id": 101850,
+      "computed_hop": 1,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "D is to the right of X horizontally.",
+        "U and D are parallel, and D is below U.",
+        "H presents lower left to X.",
+        "U is upper right to V.",
+        "H is diagonally right and below S."
+      ],
+      "question": "What is the relation of the agent U to the agent V?",
+      "sample_content_sha256": "54994b74313f9871d3ce909275cd6473f5c71cb501c5d13fe977f79cd6d4e4d9",
+      "selection_digest": "0659c204b2d43a80c4c0e38f777f1298b2d5ade32ef5110e8f1df80cacb29fdc"
+    },
+    {
+      "row_id": 97223,
+      "computed_hop": 1,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "A and H are side by side with A to the right and H to the left.",
+        "B is to the left of T and is on the same horizontal plane.",
+        "H is to the bottom left of N.",
+        "X is positioned in the top left corner of B.",
+        "T is to the left of N and below N at approximately a 45 degree angle."
+      ],
+      "question": "What is the relation of the agent T to the agent N?",
+      "sample_content_sha256": "82dbf8834146dd8efe4f375eb105c3c40a7ecc12c213e68581ee5e149c87f04c",
+      "selection_digest": "06691766a5a843c68dffac4c9789eff02e807191045e53f6f740cc77447a6dc9"
+    },
+    {
+      "row_id": 94592,
+      "computed_hop": 1,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "M is there and S is at the 2 position of a clock face.",
+        "X and P are vertical and X is above P.",
+        "M is at the 3 o'clock position relative to D.",
+        "Z is placed at the lower right of X.",
+        "P is north east of S."
+      ],
+      "question": "What is the relation of the agent S to the agent P?",
+      "sample_content_sha256": "86cb0882c32cd332914035bbffef6655ab535f024e4e2572800c3e3bad338298",
+      "selection_digest": "069919eab2a6db315b80e45217b1b1244aadc56f6d07872af89d7c48502390cb"
+    },
+    {
+      "row_id": 90634,
+      "computed_hop": 1,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "D is below and to the right of I.",
+        "A is on the same horizontal plane directly right to G.",
+        "U and R are side by side with U to the right and R to the left.",
+        "I is to the right of U.",
+        "A and D are parallel, and A is to the left of D."
+      ],
+      "question": "What is the relation of the agent D to the agent I?",
+      "sample_content_sha256": "6ff3bbaad15789e647bb2604047fb7c2603687f4f9428e774b90c24fc7a686fd",
+      "selection_digest": "06a20603c90de5d72b1f1e1eef015779cafe78fc3a2496ba5c9fae84f4349aff"
+    },
+    {
+      "row_id": 91221,
+      "computed_hop": 1,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "O is to the bottom right of E.",
+        "G is sitting at the 9:00 position of O.",
+        "E is below H at 4 o'clock.",
+        "W is directly south west of G.",
+        "H and D are horizontal and H is to the left of D."
+      ],
+      "question": "What is the relation of the agent E to the agent H?",
+      "sample_content_sha256": "548bf945e10c78e1790c6bd3ff3b0aae1ffed352fe89e10c9e527b258f2b2b9f",
+      "selection_digest": "06da357d4ec3478b8830ce7b5169e2872f89b56c7e76ef736c374c3f8c2ac63d"
+    },
+    {
+      "row_id": 99404,
+      "computed_hop": 1,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "J is over W.",
+        "J presents below U.",
+        "The object V is lower and slightly to the right of the object U.",
+        "W is directly north west of E.",
+        "I is positioned in the top left corner of V."
+      ],
+      "question": "What is the relation of the agent J to the agent W?",
+      "sample_content_sha256": "c6330234002fc1eba4bea458c6361bc43cbde6286c02bf631bfdaafcb3bb7045",
+      "selection_digest": "06fe588dadfecb08165f35a338c992293153f2d16d05f9dd52f2b80d39a20595"
+    },
+    {
+      "row_id": 102589,
+      "computed_hop": 1,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "T is on the left and G is on the right.",
+        "E is upper right to T.",
+        "Y is above G with a small gap between them.",
+        "Y and D are in a vertical line with D below Y.",
+        "C is sitting at the 6:00 position to D."
+      ],
+      "question": "What is the relation of the agent Y to the agent D?",
+      "sample_content_sha256": "29837e04246e5f059bd7391eddeddc0df94626c33a57c0e5d1e19c6c842b874e",
+      "selection_digest": "0751f61f4a2181544f6a8110c179f80f8d4ce9305ad37265f4e82b012d44780a"
+    },
+    {
+      "row_id": 101760,
+      "computed_hop": 1,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "A is sitting in the right direction of B.",
+        "The objects I and L are over there. The object I is lower and slightly to the left of the object L.",
+        "L is to the left of O and below O at approximately a 45 degree angle.",
+        "The object I is lower and slightly to the left of the object B.",
+        "U is directly south east of A."
+      ],
+      "question": "What is the relation of the agent A to the agent B?",
+      "sample_content_sha256": "e64e36da97b45df577d6c9aa462f02547f221d32cbe20d5bf70d6f1a66278b25",
+      "selection_digest": "085de2e41ea89c0709ec3b410f041432f8c630cb65d7c2fb38d6a81e16b37280"
+    },
+    {
+      "row_id": 96380,
+      "computed_hop": 1,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "R and N are vertical and R is below N.",
+        "E is lower right of R.",
+        "Q is on top of Y.",
+        "Y and E are parallel, and Y is on top of E.",
+        "G is directly above Q."
+      ],
+      "question": "What is the relation of the agent N to the agent R?",
+      "sample_content_sha256": "4b3e1cd1041546ca4a0b379886b02ae9fb5b26f45aab5bd30844fd937e706227",
+      "selection_digest": "08e3bd2b7ff1cdd17d2700ab820c64381afa57c0b53e540796fb8961edbdaad8"
+    },
+    {
+      "row_id": 93270,
+      "computed_hop": 1,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "The object L is positioned above and to the left of object V.",
+        "W and D are side by side with W on the top and D at the bottom.",
+        "D is on the same vertical plane directly below U.",
+        "U is above V at 2 o'clock.",
+        "A is to the bottom-right of W."
+      ],
+      "question": "What is the relation of the agent A to the agent W?",
+      "sample_content_sha256": "ce977d52ed77444a43129b51ce5abcb94441241fb85a56cc58e1b0bc9d0e4d48",
+      "selection_digest": "090358d6a52a1bff9842cc8d9fb5697ebd3bc4ac25591948e4074193c11803e5"
+    },
+    {
+      "row_id": 93765,
+      "computed_hop": 1,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "O is sitting at the upper left position to Y.",
+        "The object A is positioned directly above the object F.",
+        "The object F is positioned below and to the right of the object Y.",
+        "L is sitting at the lower position to A.",
+        "O is to the left of E and is on the same horizontal plane."
+      ],
+      "question": "What is the relation of the agent A to the agent F?",
+      "sample_content_sha256": "0e4e243f4476ab01db30e9144439a3de555850363816e5b3a4e2939e155be3f2",
+      "selection_digest": "0910999c4fd49ce710875c975b29e0ce810170308de385b1364fa067d5e8560c"
+    },
+    {
+      "row_id": 93532,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "I and W are vertical and I is below W.",
+        "E is north west of W.",
+        "C is to the bottom right of E.",
+        "I is placed in the left direction of R.",
+        "C is there and D is at the 5 position of a clock face."
+      ],
+      "question": "What is the relation of the agent D to the agent E?",
+      "sample_content_sha256": "05bb2411711dbb782a30328e5ebfee2e67300649915d1dcd07f51354d82191a8",
+      "selection_digest": "000de4301d2471cb22f32b60d2da9b670a481a4f70716c8b82c33bed95eebc4c"
+    },
+    {
+      "row_id": 89435,
+      "computed_hop": 2,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "The object C is positioned above and to the left of object E.",
+        "J is over there with G above.",
+        "Y is over there with S above.",
+        "C is positioned above G and to the right.",
+        "Y is above J at 2 o'clock."
+      ],
+      "question": "What is the relation of the agent C to the agent J?",
+      "sample_content_sha256": "1ed7bab0d1c0041aef54fd908f8365dfc9dbbec95e0dc51f3d362cf0159ad39c",
+      "selection_digest": "003fc74bcaff1d487c0d35a20efdfbed176365e88ac24a6f1f2e0ab2aeceb559"
+    },
+    {
+      "row_id": 91418,
+      "computed_hop": 2,
+      "canonical_relation": "LEFT",
+      "story": [
+        "N is above and to the left of L.",
+        "T is placed at the upper right of N.",
+        "Object O is above object T and to the right of it, too.",
+        "I is at the 6 o'clock position relative to E.",
+        "The object E and O are there. The object E is below and slightly to the right of the object O."
+      ],
+      "question": "What is the relation of the agent T to the agent E?",
+      "sample_content_sha256": "76ed16eb4e4b8d2297205af952fa8f6859b44b55eaae726e4299dd948d62519e",
+      "selection_digest": "005d972bc624070070d2ed615c9662bb2e15af861946f303b42274516bd72221"
+    },
+    {
+      "row_id": 100256,
+      "computed_hop": 2,
+      "canonical_relation": "BELOW",
+      "story": [
+        "P is on the left side and above R.",
+        "O is north east of T.",
+        "P is at the bottom of W and is on the same vertical plane.",
+        "W is over there with U below.",
+        "O is below U at 4 o'clock."
+      ],
+      "question": "What is the relation of the agent T to the agent U?",
+      "sample_content_sha256": "280635b72757c05fb556731c237e0448a9a8a27fb5ce75b63ece00cc46d5ce93",
+      "selection_digest": "00e69a701eb2c7a91efd4ee9b607b81e144c289afc4c4c45c134adf94e1661d1"
+    },
+    {
+      "row_id": 93992,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "G is sitting at the lower position to T.",
+        "E is positioned above X.",
+        "V is on the top and A is at the bottom.",
+        "E and A are side by side with E to the left and A to the right.",
+        "X is diagonally to the upper right of G."
+      ],
+      "question": "What is the relation of the agent X to the agent A?",
+      "sample_content_sha256": "ac2cf0166c3df24b2a33bc9e04351ba94443582c5ea4c6a1fafe44d3de636b05",
+      "selection_digest": "0160afe39a386c9fb1f4e99c87b9a1d274202e0248866bc771463bb584615e6c"
+    },
+    {
+      "row_id": 98865,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "F is on the right side and top of B.",
+        "The object L is lower and slightly to the left of the object F.",
+        "R is on the right side and below B.",
+        "Q is over there and P is at the bottom of it.",
+        "Q is lower left to R."
+      ],
+      "question": "What is the relation of the agent P to the agent R?",
+      "sample_content_sha256": "c227fd83479a538dc7ee6e225ed3b8ba5450842562c316502f4b28bdb98fb65a",
+      "selection_digest": "024ba9405e66ee5de8a3c5a864495bc5e23c21b44b145998743d58aa7af1287d"
+    },
+    {
+      "row_id": 103698,
+      "computed_hop": 2,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "U is positioned below F and to the right.",
+        "C and J are parallel, and C is to the left of J.",
+        "U and C are side by side with U to the left and C to the right.",
+        "Y is at J's 12 o'clock.",
+        "F is sitting at the upper right position to P."
+      ],
+      "question": "What is the relation of the agent F to the agent C?",
+      "sample_content_sha256": "3425e392844aaf5343b6aa2b42b07924784f655398a644a13f6ca546d2edfbe2",
+      "selection_digest": "02cceaecbfd287c921f7cdaf5ca2ab26f90821c2e22fe48eac9ebaf1955f331b"
+    },
+    {
+      "row_id": 97320,
+      "computed_hop": 2,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "C is sitting at the lower position to N.",
+        "M is above N.",
+        "A is positioned right to G.",
+        "M is directly north east of W.",
+        "G is sitting in the left direction of W."
+      ],
+      "question": "What is the relation of the agent N to the agent W?",
+      "sample_content_sha256": "13f3182ec08537ef2af542dec3c74130051be0b93cd0a2de6ba00288360b5b02",
+      "selection_digest": "03026ad96de72e62c68170f7c0ecc33bb05cc62c1546bbaba6c07138a6528b3c"
+    },
+    {
+      "row_id": 94974,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "L is placed at the upper left of P.",
+        "C and L are in a vertical line with L below C.",
+        "J is placed in the right direction of P.",
+        "E is over there with V below.",
+        "C presents upper right to V."
+      ],
+      "question": "What is the relation of the agent P to the agent C?",
+      "sample_content_sha256": "14fa4ae1e81a3750cb96dbfbe46776ee2e982065cd1d00542e8d4b7a77d89d99",
+      "selection_digest": "03828a57abe5a7c5b06ff1455462543b8faa97736ce561f5290945264cb9bc3c"
+    },
+    {
+      "row_id": 101371,
+      "computed_hop": 2,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "U is sitting at the upper right position to I.",
+        "L is to the upper left of U.",
+        "L is to the right of Q.",
+        "O presents left to B.",
+        "The object I is positioned below and to the right of the object B."
+      ],
+      "question": "What is the relation of the agent L to the agent I?",
+      "sample_content_sha256": "2c0aded61096bf29551bf9ad1f5af628bed79f8f75483c6db89cbe82522c8d13",
+      "selection_digest": "042f7aaacf3e54464f920ca3f42775e2e039e869a8a8de7cbf6d17579b140030"
+    },
+    {
+      "row_id": 103365,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "Q is north east of M.",
+        "D is over there and L is directly above it.",
+        "X and H are in a horizontal line with H on the right.",
+        "X is on the lower right of D.",
+        "M is sitting at the top position to H."
+      ],
+      "question": "What is the relation of the agent X to the agent L?",
+      "sample_content_sha256": "23b2d899c34fe1dacb09eb253822024cd4a85627d512cfa0e2de2ea0c556b5fb",
+      "selection_digest": "053be240217c251f9cec2c1beda09463d07fd8a232460b8ae1cfa8fe1acae060"
+    },
+    {
+      "row_id": 99878,
+      "computed_hop": 2,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "R and W are in a vertical line with W below R.",
+        "G is over there and V is on the left.",
+        "V is sitting in the left direction of R.",
+        "G is below S and to the right of S.",
+        "S is on the right side and top of U."
+      ],
+      "question": "What is the relation of the agent S to the agent V?",
+      "sample_content_sha256": "9b047422efa79e48cc3495a1fbfb9a110cae7e5eff64aa9f2367d10df07eeba2",
+      "selection_digest": "0543e3b6510d79b861473b282c1b589375245559a67dc26408e4f2a60c4e056d"
+    },
+    {
+      "row_id": 103483,
+      "computed_hop": 2,
+      "canonical_relation": "BELOW",
+      "story": [
+        "The object labeled Q is positioned to the right of the object labeled Y.",
+        "The objects Y and I are over there. The object Y is lower and slightly to the left of the object I.",
+        "Q and K are in a vertical line with Q on top.",
+        "P and X are both there with the object P above the object X.",
+        "X and I are in a horizontal line with I on the right."
+      ],
+      "question": "What is the relation of the agent Y to the agent X?",
+      "sample_content_sha256": "5a013bb52acb24ea43d2889ef0d6c41f64f0f7d49fca156c2f06541518fbd756",
+      "selection_digest": "064511d1cbfe4fc8d61f811580cc9d9bc38cc6570880e343cc3c3cf48f784813"
+    },
+    {
+      "row_id": 84008,
+      "computed_hop": 2,
+      "canonical_relation": "LEFT",
+      "story": [
+        "I presents below G.",
+        "T is directly above K.",
+        "K is lower right of G.",
+        "V is to the left of I horizontally.",
+        "V is at the 12 o'clock position relative to E."
+      ],
+      "question": "What is the relation of the agent I to the agent K?",
+      "sample_content_sha256": "8f846b8f7f1e7a6c7edcb810759caeacf056514332e64e98d510bc764590a210",
+      "selection_digest": "06830d6f2094ac02f3adc197ab7344a5d47cab3f4ee79d7d778ea2dc78539f0f"
+    },
+    {
+      "row_id": 90120,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "I is to the right of E horizontally.",
+        "P is placed on the top of E.",
+        "P is on the right and H is on the left.",
+        "R is to the left of A and below A at approximately a 45 degree angle.",
+        "The objects A and I are over there. The object A is above and slightly to the right of the object I."
+      ],
+      "question": "What is the relation of the agent I to the agent P?",
+      "sample_content_sha256": "f9efa3165668ce7d742bd5c1724e856a1569c7dd6945731066cc16ff99920c27",
+      "selection_digest": "06ad3f8f9ec8dd73c703dc40abda3a053ca82179666ec32c1a178a2d8f79141c"
+    },
+    {
+      "row_id": 89092,
+      "computed_hop": 2,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "Z and G are in a vertical line with Z on top.",
+        "W is below J and to the right of J.",
+        "Z is on the same vertical plane directly above H.",
+        "O is on the lower right of W.",
+        "J is upper left of H."
+      ],
+      "question": "What is the relation of the agent O to the agent J?",
+      "sample_content_sha256": "ae89622b775cd6fc6703308a898452d582928dfbf32c012649693e2d6e812a9c",
+      "selection_digest": "077130f5afcd259e853033a2511496632ea2c8b23c7d2bad3add65ad7d06feb0"
+    },
+    {
+      "row_id": 90179,
+      "computed_hop": 2,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "V and M are vertical and V is below M.",
+        "If T is the center of a clock face, L is located between 10 and 11.",
+        "If S is the center of a clock face, Z is located between 2 and 3.",
+        "V is over there and L is on the right of it.",
+        "S and T are next to each other with T at the bottom S on the top."
+      ],
+      "question": "What is the relation of the agent Z to the agent T?",
+      "sample_content_sha256": "4da01b4639d9ea22b5422eb6091f6cdd30e75f42bc6aced8c38054a08db4f177",
+      "selection_digest": "07fbd7a1cb09ea7bc2c60077699704c92b1732fda3856444af8f050ee185e9cc"
+    },
+    {
+      "row_id": 98424,
+      "computed_hop": 2,
+      "canonical_relation": "LEFT",
+      "story": [
+        "T is on the lower left of K.",
+        "A is on the left side of and below L.",
+        "W and L are side by side with W to the left and L to the right.",
+        "J presents left to T.",
+        "J is to the right of A."
+      ],
+      "question": "What is the relation of the agent A to the agent T?",
+      "sample_content_sha256": "b8075d7385255f5e0eb07d71addc6085ea50f7a9eb61759460c205f3f5b6d01b",
+      "selection_digest": "097a0a6da989590343d7958ffe3f9807359e0ae067832965777ca79523343679"
+    },
+    {
+      "row_id": 86606,
+      "computed_hop": 2,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "B and N are parallel, and N is below B.",
+        "The object L is lower and slightly to the right of the object Z.",
+        "The object B is positioned directly below the object Z.",
+        "I is directly south east of L.",
+        "I is on the same vertical plane directly below T."
+      ],
+      "question": "What is the relation of the agent L to the agent B?",
+      "sample_content_sha256": "9e903372e85f5258548a35579a456a648d170bc22414414c81dd4fc72460a2a2",
+      "selection_digest": "0989fefeda53c690c02e69ee3ad2fad4e0995934626b4ae9a7822cf6d649efda"
+    },
+    {
+      "row_id": 103101,
+      "computed_hop": 2,
+      "canonical_relation": "LEFT",
+      "story": [
+        "If T is the center of a clock face, W is located between 4 and 5.",
+        "Object W is below object O and to the right of it, too.",
+        "T is above G at 2 o'clock.",
+        "I is on the same horizontal plane directly left to O.",
+        "G and B are side by side with G on the top and B at the bottom."
+      ],
+      "question": "What is the relation of the agent G to the agent W?",
+      "sample_content_sha256": "8306c5d6e69d184e0707c3b94c13aa6d2cafb40fcce43b7f8c87f4aa32c08c3d",
+      "selection_digest": "09ac03f74158bebbbaba1cc78cdcc5427cc3bc45af716b7d7d961b209d104948"
+    },
+    {
+      "row_id": 96087,
+      "computed_hop": 3,
+      "canonical_relation": "LEFT",
+      "story": [
+        "K is positioned in the lower left corner of Z.",
+        "Z is sitting at the upper left position to E.",
+        "A is diagonally to the upper left of E.",
+        "The object Y is positioned below and to the left of the object G.",
+        "A is over there and G is on the right of it."
+      ],
+      "question": "What is the relation of the agent Z to the agent G?",
+      "sample_content_sha256": "082c96fe1f2d28752a0dd2fcf2b53a2ea4fc2b174ca7c3b463ac16c8290d9f93",
+      "selection_digest": "001091927cf9efc1a5ca7220a0678e61cfd6ee700a6ac681aa32c11c739f02f4"
+    },
+    {
+      "row_id": 102690,
+      "computed_hop": 3,
+      "canonical_relation": "BELOW",
+      "story": [
+        "P is diagonally left and below M.",
+        "M is below J and to the left of J.",
+        "W is over there and P is on the top of it.",
+        "X is upper right to W.",
+        "J is sitting at the upper left position to U."
+      ],
+      "question": "What is the relation of the agent X to the agent M?",
+      "sample_content_sha256": "d09c3042812fcecc02a35f4cdf2c621e7993df63786d16e0b75476de501614e4",
+      "selection_digest": "001c136ca690e3831622420224b6935b8e85ced7ca9b55dd8a4c6cb0ab14eb2c"
+    },
+    {
+      "row_id": 102510,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "V is placed at the upper left of E.",
+        "Y and G are in a horizontal line with Y on the left.",
+        "W is sitting at the lower left position to K.",
+        "E and G are parallel, and E is under G.",
+        "W is over there and V is on the left of it."
+      ],
+      "question": "What is the relation of the agent K to the agent E?",
+      "sample_content_sha256": "7fe075a167de66b51b14915fe06fbb43a0fb56c10a2591335ee2953b79d55e4f",
+      "selection_digest": "01310450da2cec60a21144ff53f05d74d93629195d9a1e3ff08465239327f92c"
+    },
+    {
+      "row_id": 95732,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "D is at a 45 degree angle to S, in the upper righthand corner.",
+        "S is to the right of Y.",
+        "K is below L at 4 o'clock.",
+        "L is to the right of Q with a small gap between them.",
+        "Y is at K’s 9 o'clock."
+      ],
+      "question": "What is the relation of the agent L to the agent S?",
+      "sample_content_sha256": "3b24440c974779ce716c52c97492b18d07efa907211f28f492e3e6f58c501438",
+      "selection_digest": "0225ea420e4594a4af4560d1c212d571e0591206b21164f175adb429a655d990"
+    },
+    {
+      "row_id": 104683,
+      "computed_hop": 3,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "L is to the top right of U.",
+        "J is directly north west of U.",
+        "L is over H.",
+        "S is placed in the right direction of R.",
+        "J is above and to the right of S."
+      ],
+      "question": "What is the relation of the agent U to the agent R?",
+      "sample_content_sha256": "99c14571fbc1eb4795ae16ba44854c652fd61073b213656da1401e12a6a32bba",
+      "selection_digest": "0234100d1442c2df0841115133889cd92a187ccadfafb0c56bf4cf7781c61a28"
+    },
+    {
+      "row_id": 87158,
+      "computed_hop": 3,
+      "canonical_relation": "BELOW",
+      "story": [
+        "N is placed at the upper left of S.",
+        "R is to the left of Y with a small gap between them.",
+        "S and Q are both there with the object Q below the object S.",
+        "Object Y is above object I and to the right of it, too.",
+        "N is at a 45 degree angle to R, in the lower lefthand corner."
+      ],
+      "question": "What is the relation of the agent Q to the agent R?",
+      "sample_content_sha256": "420161a8e9011b179f60bed90f32153cc9a7127eda749a339f282971dd90c3f6",
+      "selection_digest": "0421b13aa2a569b01a09d7204ac7217f484e9b41c4aaf717772e684acf481954"
+    },
+    {
+      "row_id": 99424,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "K is positioned left to W.",
+        "J is sitting in the right direction of K.",
+        "The object P is upper and slightly to the left of the object T.",
+        "J is positioned in the lower left corner of T.",
+        "P is on the lower right of G."
+      ],
+      "question": "What is the relation of the agent W to the agent T?",
+      "sample_content_sha256": "54150ee01f947d9208f223ba964f4a8bc402c368fd59d15b82a1d04b04164dbd",
+      "selection_digest": "05df4dde496fb4bb2c169f0077c45e5048af05f126166ab0d5e3f509e25d4289"
+    },
+    {
+      "row_id": 89458,
+      "computed_hop": 3,
+      "canonical_relation": "LEFT",
+      "story": [
+        "I is sitting at the 12:00 position to P.",
+        "J and P are parallel, and J on the left of P.",
+        "V is at the 9 o'clock position relative to B.",
+        "V is above J.",
+        "B is positioned above U and to the left."
+      ],
+      "question": "What is the relation of the agent V to the agent I?",
+      "sample_content_sha256": "8edcb1b1133ad688bc30b4755c6bf8b1f647a0cc6c5d66e590fd6319ee4f647e",
+      "selection_digest": "064d944f2f4365b213c1d393608608e7a78a27f53b15934be2ba4eb43be4e7a8"
+    },
+    {
+      "row_id": 97230,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "J presents over X.",
+        "N is at the 9 o'clock position relative to S.",
+        "N is above E at 10 o'clock.",
+        "E is at the 3 o'clock position relative to U.",
+        "J is at a 45 degree angle to S, in the upper lefthand corner."
+      ],
+      "question": "What is the relation of the agent U to the agent S?",
+      "sample_content_sha256": "434ace7359826857e0dff3f866060d5bb79d9a5af338c473f9fe44f98b423c1d",
+      "selection_digest": "081ff7a1574bf14f37aa95d26103c908f214dcf3488ecfac0be131a42b5311da"
+    },
+    {
+      "row_id": 88204,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "Z is diagonally to the bottom left of W.",
+        "G is placed in the right direction of F.",
+        "The objects I and Z are over there. The object I is lower and slightly to the left of the object Z.",
+        "W is above G at 10 o'clock.",
+        "T is to the left of I and below I at approximately a 45 degree angle."
+      ],
+      "question": "What is the relation of the agent I to the agent G?",
+      "sample_content_sha256": "18dcdf56a1ddc376e224919603aaed946da7a80d684f4ec53abf360c1f3f4afe",
+      "selection_digest": "0960484ebaed96029c26ab9a4d2c2693a102c6c3504f8380f83311b7f786bfa4"
+    },
+    {
+      "row_id": 90149,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "U is to the upper left of Q.",
+        "N is diagonally right and above K.",
+        "J is at Z's 3 o'clock.",
+        "J is on the right and Q is on the left.",
+        "Z is under K."
+      ],
+      "question": "What is the relation of the agent Z to the agent U?",
+      "sample_content_sha256": "299964ccb1d88fba5da8b22165db145fb13ef022eef211d3deb1079156a3d5b2",
+      "selection_digest": "09d05e3dbaa718b64be49050ea88664c87fbd547dff1c5f6d470b7b125018573"
+    },
+    {
+      "row_id": 100046,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "Object A is below object K and to the left of it, too.",
+        "Y is sitting in the right direction of X.",
+        "M is sitting at the lower left position to K.",
+        "Y is sitting at the 3:00 position to M.",
+        "A is diagonally above L to the left at a 45 degree angle."
+      ],
+      "question": "What is the relation of the agent X to the agent K?",
+      "sample_content_sha256": "c4826ddd88b9f42603ae1435a139979189de9022920a6199cf41d56a723e839d",
+      "selection_digest": "09dc88e0a7de85f6f46e4be5bb1c5aae8bdff7db859baa00446fcf580d2a6d19"
+    },
+    {
+      "row_id": 104263,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "Z is diagonally to the upper right of P.",
+        "J is at the bottom of F.",
+        "C is positioned below F and to the right.",
+        "Y is over there and P is on the left.",
+        "J and Y are vertical and J is above Y."
+      ],
+      "question": "What is the relation of the agent F to the agent P?",
+      "sample_content_sha256": "1ef2ade668e20482dd180f391517a64a405c38f39f7cdd5db58faa4766b0aabf",
+      "selection_digest": "0a0b56d1b350dd04e4b71e326f68864fad297c9c4c348453093691bb9ec125a4"
+    },
+    {
+      "row_id": 100962,
+      "computed_hop": 3,
+      "canonical_relation": "LEFT",
+      "story": [
+        "L is north west of A.",
+        "P is to the top-right of J.",
+        "W is diagonally right and below P.",
+        "L and W are both there with the object L is to the left of object W.",
+        "E is at the 6 o'clock position relative to J."
+      ],
+      "question": "What is the relation of the agent J to the agent L?",
+      "sample_content_sha256": "3e7ac630671b5793c8fddec301377fec31bb1dd2b8ddf0f0cbf0c4a85e37a57a",
+      "selection_digest": "0a6c44896c1a72b286030fdb3d07fc59de4bb879061ec6e2f27c074cf341418c"
+    },
+    {
+      "row_id": 88719,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "Z and K are parallel, and Z is on top of K.",
+        "Z is placed on the top of U.",
+        "D is positioned below T.",
+        "T is diagonally left and below I.",
+        "D is on the left side of and below U."
+      ],
+      "question": "What is the relation of the agent Z to the agent T?",
+      "sample_content_sha256": "c6790814b1a6c58607802ef10b19fd0dfa14f70602f4abc1b720f266f43963e5",
+      "selection_digest": "0adb68ef90dbba1634a7e04a5b0e8d8e66ed4d125190b6587c23aed085d68f3b"
+    },
+    {
+      "row_id": 94140,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "E is positioned below and to the right of F.",
+        "E is on the same vertical plane directly above Y.",
+        "C is diagonally to the bottom left of F.",
+        "G is to the left of K with a small gap between them.",
+        "K is to the top right of Y."
+      ],
+      "question": "What is the relation of the agent C to the agent Y?",
+      "sample_content_sha256": "d1f62706e7208dc13b91b9a53e79dd674ba32591b2a125d0f764609ea272adf5",
+      "selection_digest": "0b0f0ad72aad4af0d11052dbe58bec785f68a00b7ef71ea9033f4a5562d885db"
+    },
+    {
+      "row_id": 101274,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "D and O are vertical and D is below O.",
+        "A is above U at 2 o'clock.",
+        "The object N is positioned directly below the object O.",
+        "U is diagonally to the upper right of V.",
+        "N is there and V is at the 2 position of a clock face."
+      ],
+      "question": "What is the relation of the agent N to the agent A?",
+      "sample_content_sha256": "653a1e900b7b0e518c389b4fb8c50fb4aeed50e526b5828e8ab44bb0d46f3203",
+      "selection_digest": "0cb5da20441808022663b1e88947a8b191e395278a40bd9addfa168d974f76fc"
+    },
+    {
+      "row_id": 92735,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "G and D are vertical and G is above D.",
+        "I is below G at 4 o'clock.",
+        "L is diagonally to the upper right of I.",
+        "The objects D and N are over there. The object D is lower and slightly to the left of the object N.",
+        "M and L are side by side with L at the bottom and M on the top."
+      ],
+      "question": "What is the relation of the agent M to the agent G?",
+      "sample_content_sha256": "de1951aa3d881d48c31acbb8615dedbb49d8a5a9d59b03a7db5ca565af868a1b",
+      "selection_digest": "0d501756e8ea731efefaf0480de78fea2dd75b9eca29a3891be9487b32dc2519"
+    },
+    {
+      "row_id": 103518,
+      "computed_hop": 3,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "X is on the upper right of U.",
+        "H and I are next to each other with H on the top and I at the bottom.",
+        "I and X are parallel, and I on the left of X.",
+        "B is diagonally above M to the right at a 45 degree.",
+        "U is placed at the lower left of B."
+      ],
+      "question": "What is the relation of the agent M to the agent X?",
+      "sample_content_sha256": "53111ee8c45e4f53a104351ca31383005e591e14d42cd63e93f105044216a6b0",
+      "selection_digest": "0d6c4a30ac1f93ac3fd5d7e2f4ecdcca60cb54167c723a8a27c5471f18f8e7eb"
+    },
+    {
+      "row_id": 95870,
+      "computed_hop": 3,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "C is below W at 4 o'clock.",
+        "T is at a 45 degree angle to D, in the lower lefthand corner.",
+        "U is on the right and T is on the left.",
+        "D is at a 45 degree angle to V, in the upper lefthand corner.",
+        "V is at the 6 o'clock position relative to W."
+      ],
+      "question": "What is the relation of the agent D to the agent C?",
+      "sample_content_sha256": "ca8d66f0c66421a1c4786b1780097124dce4cc6ca714094511595c506a1e10b1",
+      "selection_digest": "0e09cd151b8d26a719d49361be12c89a907070b563443217eab376bad31f1f75"
+    },
+    {
+      "row_id": 90221,
+      "computed_hop": 4,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "E is over there and V is on the left of it.",
+        "B is sitting at the lower position to V.",
+        "H and P are side by side with P at the bottom and H on the top.",
+        "H is upper left of E.",
+        "B is to the bottom left of X."
+      ],
+      "question": "What is the relation of the agent H to the agent X?",
+      "sample_content_sha256": "137e0c3a911a00d1e6645659d5ef696be5e0b32282e0e9f763f218ee44edf9f7",
+      "selection_digest": "005eb6a489e7439039f4063dc821d62a3f887c2407071291a2aea42b7eab675d"
+    },
+    {
+      "row_id": 91319,
+      "computed_hop": 4,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "O is to the top-right of Q.",
+        "N is positioned up and to the right of J.",
+        "Object Q is below object I and to the right of it, too.",
+        "N is at O’s 9 o'clock.",
+        "I is above F at 10 o'clock."
+      ],
+      "question": "What is the relation of the agent I to the agent J?",
+      "sample_content_sha256": "3cf5826cdee4fb16d46237369edbfe3dddc3bce7fd36394cce0a75a2493f388a",
+      "selection_digest": "00610f8d6382a6f42c5f0879b20ead4d38b555eb84c3b4784cd3872ebbcdd3e3"
+    },
+    {
+      "row_id": 92265,
+      "computed_hop": 4,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "F is directly north west of Y.",
+        "A is below H.",
+        "Y and E are both there with the object E below the object Y.",
+        "A is south west of F.",
+        "P is below E at 7 o'clock."
+      ],
+      "question": "What is the relation of the agent P to the agent A?",
+      "sample_content_sha256": "67610e9d62f03dae91feba0bbcdbe895f8292ef4175020265124ad6d1ea7f3a1",
+      "selection_digest": "00f2cc3af4e8f1799b4e829ade1a399eefe4ec49cfa9214c070ef77dd2255834"
+    },
+    {
+      "row_id": 103906,
+      "computed_hop": 4,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "Y is diagonally left and below W.",
+        "A is to the right of E.",
+        "A is there and Z is at the 5 position of a clock face.",
+        "Y is on the right side and below Z.",
+        "K is placed at the lower right of W."
+      ],
+      "question": "What is the relation of the agent K to the agent A?",
+      "sample_content_sha256": "2eb0953bacade9b02f0f097f03edcecc95ce6d69167774487610a509b2114923",
+      "selection_digest": "016d92184ea0cf3169e7a9199356170f742ba5b652a6405049a6fb3db5b9d959"
+    },
+    {
+      "row_id": 93706,
+      "computed_hop": 4,
+      "canonical_relation": "BELOW",
+      "story": [
+        "G is on the left side and above V.",
+        "G and Z are parallel, and G is to the left of Z.",
+        "T and B are both there with the object T is to the left of object B.",
+        "B is positioned below V.",
+        "E is at the 12 o'clock position relative to Z."
+      ],
+      "question": "What is the relation of the agent B to the agent E?",
+      "sample_content_sha256": "709277867614e528d33955aefefa73c1eea5deb2b66fe79b31109a617a27e8e4",
+      "selection_digest": "026a7ad05ce12c4976a9ade172bcde4138611f4030e923e44fdb8850f3b89b9b"
+    },
+    {
+      "row_id": 88999,
+      "computed_hop": 4,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "W and M are next to each other with W on the top and M at the bottom.",
+        "N and K are vertical and N is below K.",
+        "G is sitting at the 9:00 position of N.",
+        "W and Q are vertical and W is below Q.",
+        "M is sitting in the right direction of K."
+      ],
+      "question": "What is the relation of the agent Q to the agent N?",
+      "sample_content_sha256": "5c1797dc5a7eae11d01b84ebbd085ee530818df9d6e15db56e679d6ff1ac31be",
+      "selection_digest": "02e6d936217cc6eefd4a991dbb137c56b230002b05c91e8c6a81a9e6c7ce3a45"
+    },
+    {
+      "row_id": 95279,
+      "computed_hop": 4,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "A is at the bottom of G.",
+        "G is diagonally to the upper left of D.",
+        "Y presents lower right to Z.",
+        "D is above W and to the left of W.",
+        "W is over there and Z is directly above it."
+      ],
+      "question": "What is the relation of the agent Z to the agent A?",
+      "sample_content_sha256": "bc38ae76993c14b74322bea17f3c7863080c63639f0e782ca9d707197af3b3f9",
+      "selection_digest": "02e916229232989a49fece5ac2bdd15328eedd6099102a1c331b31eb409a0196"
+    },
+    {
+      "row_id": 96175,
+      "computed_hop": 4,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "X is lower right of N.",
+        "P and X are parallel, and P is over X.",
+        "N is to the top-left of C.",
+        "O is at the 9 o'clock position relative to C.",
+        "D is lower left to P."
+      ],
+      "question": "What is the relation of the agent C to the agent D?",
+      "sample_content_sha256": "1214a0f925e58bcc738b879c7c812f119e911a4f3ddc227fb320616a13007605",
+      "selection_digest": "0364e0cf17c2151399d521a0c1eac7a18a7ccd33a60b720c7c5e912122e26764"
+    },
+    {
+      "row_id": 91880,
+      "computed_hop": 4,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "J is lower left to W.",
+        "Z is placed on the top of J.",
+        "Y is directly above B.",
+        "Z is on the upper right of A.",
+        "W is positioned below Y and to the right."
+      ],
+      "question": "What is the relation of the agent A to the agent Y?",
+      "sample_content_sha256": "5c28622de82dd4f3548063e4302f8bdb851cdba59754713ea7fc26490eda0430",
+      "selection_digest": "0473f5cafcc1bed8707a2183775a922cc75d35a4680161c5d0414dca9123e7f9"
+    },
+    {
+      "row_id": 101092,
+      "computed_hop": 4,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "I is at the bottom and G is on the top.",
+        "S is positioned in the lower left corner of Z.",
+        "S is directly below C.",
+        "U and Z are parallel, and U on the left of Z.",
+        "U is directly north west of I."
+      ],
+      "question": "What is the relation of the agent S to the agent G?",
+      "sample_content_sha256": "283056320b8d9c79a606ff337530e4cc3645631f16ff85b891af7acdb4f3a6c9",
+      "selection_digest": "04bfc374908cc59dec7b3db2f4b11f6a304f5304affee2d685b01305dfa163ae"
+    },
+    {
+      "row_id": 86290,
+      "computed_hop": 4,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "M is positioned above L and to the left.",
+        "P is positioned below and to the right of Z.",
+        "L is on the same vertical plane directly above B.",
+        "K is to the right of P and is on the same horizontal plane.",
+        "M is at Z's 3 o'clock."
+      ],
+      "question": "What is the relation of the agent P to the agent B?",
+      "sample_content_sha256": "a3cd993f5965a35bb4134553ea3a552375408304fdb16135eaf5b46040466177",
+      "selection_digest": "04dd08067d8d3d5e828db9a6d8a668d5f54e073a61b9d4a2bc8a31f6c2f69c50"
+    },
+    {
+      "row_id": 86694,
+      "computed_hop": 4,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "L is placed at the upper right of H.",
+        "E is on the lower left of K.",
+        "A is to the left of H and below H at approximately a 45 degree angle.",
+        "A and E are next to each other with E at the bottom A on the top.",
+        "The object K is positioned above and to the left of object V."
+      ],
+      "question": "What is the relation of the agent K to the agent L?",
+      "sample_content_sha256": "8df6681f2a0f1ccd06d0ecca66c992ecc451478a3e4ae9d7fbbc065383e089f0",
+      "selection_digest": "0568405a368ae08cffc1e056ca3d3bb503398b438d09a2294b66d13ab652d315"
+    },
+    {
+      "row_id": 104379,
+      "computed_hop": 4,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "I is above G at 10 o'clock.",
+        "Z is upper left of T.",
+        "C and N are both there with the object C is to the left of object N.",
+        "Z is sitting at the upper left position to C.",
+        "I is at a 45 degree angle to T, in the lower lefthand corner."
+      ],
+      "question": "What is the relation of the agent I to the agent N?",
+      "sample_content_sha256": "a6ba77e4bf99389da33473a0a021162222c9b8aef10ada72621cf5c92ce8f077",
+      "selection_digest": "06f7ed3a46588fa5edc0428cb68f43548ab739970bc010331187c5f47e0742c8"
+    },
+    {
+      "row_id": 99523,
+      "computed_hop": 4,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "V is sitting at the lower right position to R.",
+        "R is directly above Z.",
+        "H is to the left of Z and is on the same horizontal plane.",
+        "T is positioned above and to the left of N.",
+        "T is directly below V."
+      ],
+      "question": "What is the relation of the agent Z to the agent N?",
+      "sample_content_sha256": "3e25ceea5e5fb758e5f899467e12aa3f4a0250d34c9d8715515836580954bb1e",
+      "selection_digest": "0875980ebd5b6129b1978bc0077e5ee1f4c943844f68a6c82b5897e382e20cba"
+    },
+    {
+      "row_id": 101246,
+      "computed_hop": 4,
+      "canonical_relation": "LEFT",
+      "story": [
+        "Y is over there and D is directly below it.",
+        "O is on the same vertical plane directly below D.",
+        "P is to the left of N and is on the same horizontal plane.",
+        "Y is at N's 12 o'clock.",
+        "K presents left to P."
+      ],
+      "question": "What is the relation of the agent K to the agent D?",
+      "sample_content_sha256": "77ad4cdede5a71b1399ebc9cac10d1c3a93d978544ae48eabf0201c6d3612873",
+      "selection_digest": "0926c5d437c8909182cec7280dedd943298ae1945c5329934e95d5c19b7fad10"
+    },
+    {
+      "row_id": 94943,
+      "computed_hop": 4,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "D is south west of F.",
+        "G is at D's 6 o'clock.",
+        "U and A are parallel, and U is under A.",
+        "I is on the right side and below G.",
+        "F is sitting at the lower position to A."
+      ],
+      "question": "What is the relation of the agent A to the agent I?",
+      "sample_content_sha256": "35e9843864847482757bfc5d018697c3d493b1cfd073b8fe149f983e9d19c4c4",
+      "selection_digest": "097e3be5636255cc48e0a597f26bced8f1da3ae92bf6f9598c4ea6213a15610f"
+    },
+    {
+      "row_id": 98237,
+      "computed_hop": 4,
+      "canonical_relation": "LEFT",
+      "story": [
+        "O is directly north east of I.",
+        "V is to the left of B.",
+        "P is above and to the left of I.",
+        "R is diagonally left and below O.",
+        "B is on the left side to P."
+      ],
+      "question": "What is the relation of the agent V to the agent O?",
+      "sample_content_sha256": "9532868888b82fceba003a3263a1e05828f35ec534cd1b3ac67d9d75dc84ec09",
+      "selection_digest": "0ab21560f44b99b0611d1c4c0ae4f12cd9ec06f3ecb1f14acf2def7383ad0cf8"
+    },
+    {
+      "row_id": 85242,
+      "computed_hop": 4,
+      "canonical_relation": "LEFT",
+      "story": [
+        "Z is on the upper right of A.",
+        "Y is above S at 10 o'clock.",
+        "S is to the left of A and below A at approximately a 45 degree angle.",
+        "J and Y are parallel, and J is over Y.",
+        "Z is on the top side to I."
+      ],
+      "question": "What is the relation of the agent J to the agent Z?",
+      "sample_content_sha256": "ff4ae0d455288d0fc41bd3246ab5d869cc7d2d192ce2ea8e3dceab8d63aea871",
+      "selection_digest": "0b6388acf3f0059fca4b465d797c69ec2c2e5eea9ab85d80546f23f6851d6021"
+    },
+    {
+      "row_id": 98755,
+      "computed_hop": 4,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "N is on the top and H is at the bottom.",
+        "K is below A at 7 o'clock.",
+        "A and N are in a vertical line with N below A.",
+        "M presents right to J.",
+        "M is over there and H is at the bottom of it."
+      ],
+      "question": "What is the relation of the agent M to the agent K?",
+      "sample_content_sha256": "61b91518e6964fb381a76f35a0b87720a1bda18c4a75b20fb75ad4abcada950e",
+      "selection_digest": "0db1a5f97ba3a04005aee282fb5c71b9a3a7e6cdec1f8a23c05101d42d76cd96"
+    },
+    {
+      "row_id": 84114,
+      "computed_hop": 4,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "H is positioned below F.",
+        "X is directly south west of H.",
+        "The object F is positioned directly below the object B.",
+        "I is below O with a small gap between them.",
+        "O is sitting at the lower left position to B."
+      ],
+      "question": "What is the relation of the agent H to the agent I?",
+      "sample_content_sha256": "3e10dd6ac2c0c98ef14aea4b43005855836347b89f8b834455d2bbcc20685b24",
+      "selection_digest": "0e9cc4aa9a32b78cb2e89f8944dd73d1a41334997d29c061201e2e5670ee6bea"
+    },
+    {
+      "row_id": 98789,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "K is below S at 7 o'clock.",
+        "K is diagonally right and below O.",
+        "S is upper right to D.",
+        "If D is the center of a clock face, V is located between 2 and 3.",
+        "The object Y is positioned above and to the left of object V."
+      ],
+      "question": "What is the relation of the agent Y to the agent O?",
+      "sample_content_sha256": "f84508236b7f2825f443d612d1387d39d5b361ebb8d126dbfeb8175737cd5be1",
+      "selection_digest": "042b300ba0ec024afa42451d43009e2be82da14e667d5b4554160db32a1ed579"
+    },
+    {
+      "row_id": 102164,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "If G is the center of a clock face, M is located between 7 and 8.",
+        "C is sitting at the 12:00 position to L.",
+        "Y is positioned in the lower left corner of L.",
+        "The object labeled R is positioned to the right of the object labeled G.",
+        "The object C is positioned above and to the right of the object M."
+      ],
+      "question": "What is the relation of the agent Y to the agent R?",
+      "sample_content_sha256": "9a263e981e081bf5b0219616ea6408d1211d773704cf5f4b638175b3fcbd12ff",
+      "selection_digest": "073259d5e9563724d6834557072c2326098e9d48c4e77b099c45c9837eec327c"
+    },
+    {
+      "row_id": 97530,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "E is diagonally below V to the right at a 45 degree angle.",
+        "U is to the left of F and is on the same horizontal plane.",
+        "F is at V's 6 o'clock.",
+        "E and C are parallel, and E on the left of C.",
+        "C is to the bottom right of H."
+      ],
+      "question": "What is the relation of the agent H to the agent U?",
+      "sample_content_sha256": "5df6c3c72e33327a0502fac7b6649d882088189d6ff05502a1adabee7c8405a7",
+      "selection_digest": "0886313f80df53000df27722216927f9bf5ed82c37bcd4e88c3dfd8581fec85a"
+    },
+    {
+      "row_id": 97613,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "If T is the center of a clock face, W is located between 4 and 5.",
+        "The object F is lower and slightly to the right of the object T.",
+        "L is below and to the left of W.",
+        "Object F is below object O and to the left of it, too.",
+        "L is sitting at the lower left position to G."
+      ],
+      "question": "What is the relation of the agent G to the agent O?",
+      "sample_content_sha256": "36b14a914e3a8f258340b201720842490e9c72b17b46d8d2f344dd0c6c41cbfc",
+      "selection_digest": "0a388c31f58aa71636d22fbf7aca2343e14a3a211e23d6267c7eaeb08b0415d6"
+    },
+    {
+      "row_id": 103826,
+      "computed_hop": 5,
+      "canonical_relation": "LEFT",
+      "story": [
+        "Q is at the 3 o'clock position relative to B.",
+        "E is positioned in the lower left corner of S.",
+        "D is on the lower right of S.",
+        "Q is diagonally right and above T.",
+        "E is on the upper right of T."
+      ],
+      "question": "What is the relation of the agent B to the agent D?",
+      "sample_content_sha256": "19295111b780de45c5857dc7b9f25d9d0e730ea95cabf3ecea2bee7c5ec8ebcc",
+      "selection_digest": "0b53a92dfbe708623db130d3a5739e2807fdf3d4c613f4ff24630f04831c9138"
+    },
+    {
+      "row_id": 86592,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "Object P is above object H and to the left of it, too.",
+        "P is directly below K.",
+        "V is sitting at the lower position to X.",
+        "X is sitting at the top position to Z.",
+        "V and K are parallel, and V on the left of K."
+      ],
+      "question": "What is the relation of the agent Z to the agent H?",
+      "sample_content_sha256": "2bd0a75fc362779b1682bf2519cf8549660b69f9bd8e4fc87e590bf96896dc09",
+      "selection_digest": "0d9e5c7c8913eae2129e040bb2625a5380013a06d2865257cef15e03a37f9864"
+    },
+    {
+      "row_id": 85914,
+      "computed_hop": 5,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "M is sitting in the right direction of I.",
+        "X is on the left and Q is on the right.",
+        "I is to the left of L with a small gap between them.",
+        "L is directly north east of Q.",
+        "U is at M's 6 o'clock."
+      ],
+      "question": "What is the relation of the agent U to the agent X?",
+      "sample_content_sha256": "ff6e7b1943119a6871e42278786af29845e2bf53ca23e6c538872b3230e4c65e",
+      "selection_digest": "0de7c12defcfcc8fd1c7f7f056e8179da4471fdaa0d17463aff351a1b6641688"
+    },
+    {
+      "row_id": 103654,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "Z is placed at the upper left of A.",
+        "I is directly north east of W.",
+        "R is to the top of A vertically.",
+        "I is placed in the left direction of R.",
+        "Z presents lower left to Y."
+      ],
+      "question": "What is the relation of the agent W to the agent Y?",
+      "sample_content_sha256": "6abe219f0a0faa5da9a768748c040ac3dad2a26f9366b7f81fdb13dd3bfc972f",
+      "selection_digest": "0f0c2f645ab74c168c9c6e9f8727c0c0a060887818f2578423a1123b0385a6a8"
+    },
+    {
+      "row_id": 92689,
+      "computed_hop": 5,
+      "canonical_relation": "BELOW",
+      "story": [
+        "T is to the left of K and is on the same horizontal plane.",
+        "T is at the lower side of J.",
+        "If Z is the center of a clock face, A is located between 2 and 3.",
+        "E is on the left side to A.",
+        "The object K is upper and slightly to the right of the object E."
+      ],
+      "question": "What is the relation of the agent Z to the agent J?",
+      "sample_content_sha256": "2859a5647df21366cbcf747c047272137ddddd0196dd34fd17a16658db6bf6e1",
+      "selection_digest": "13ace29c8ecbaf7fc67b01127f08a060295c79b55638f1e2b7bd96ebde873b54"
+    },
+    {
+      "row_id": 91373,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "C is to the right of J horizontally.",
+        "The object labeled T is positioned to the right of the object labeled C.",
+        "B is directly north west of S.",
+        "S is at J's 3 o'clock.",
+        "G is directly below T."
+      ],
+      "question": "What is the relation of the agent G to the agent B?",
+      "sample_content_sha256": "87282ddb5940267e38968ad579d97ea7fd74a8a47b925d12e59e21a5d5e15942",
+      "selection_digest": "15ae9f333e66c3518c991b1abf51e7285defb777b5477e3f22fd9cfbdaf425c5"
+    },
+    {
+      "row_id": 100614,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "K is over there and W is directly below it.",
+        "U is positioned right to M.",
+        "The object labeled Y is positioned to the left of the object labeled K.",
+        "L is at the 12 o'clock position relative to W.",
+        "Y is south west of M."
+      ],
+      "question": "What is the relation of the agent L to the agent U?",
+      "sample_content_sha256": "64bc9e973efaa46d944a5b7e95c6493b42511cfbf37b9beb9e7a363d65bae052",
+      "selection_digest": "166edc51582a0bce1698c3349c57b8e1bd1887f7e96a2a5c75fda4284f3cfc11"
+    },
+    {
+      "row_id": 87055,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "W is at the bottom of Z vertically.",
+        "Z presents lower right to Q.",
+        "F is on the right and N is on the left.",
+        "M is positioned above W.",
+        "N is north east of Q."
+      ],
+      "question": "What is the relation of the agent F to the agent M?",
+      "sample_content_sha256": "b3256ecb6872f779047c6b8efd9b7d885625895180ac44a7576b3c993d752cfe",
+      "selection_digest": "17557930423aa4722e23153940ca6a7f02eae87c1e5e59120369bf607b81063e"
+    },
+    {
+      "row_id": 104039,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_RIGHT",
+      "story": [
+        "Object F is below object R and to the right of it, too.",
+        "T is positioned in the lower right corner of F.",
+        "E and L are next to each other with L at the bottom E on the top.",
+        "H is to the top-right of E.",
+        "L and R are side by side with L on the top and R at the bottom."
+      ],
+      "question": "What is the relation of the agent T to the agent H?",
+      "sample_content_sha256": "0f668f0a1a48c3d8ad8ed4e923b57989ddc8a72809e49d77040aa17c8b557f6d",
+      "selection_digest": "18980041a972c8621c9662791bc43fa74d7b3ddf90cb576478c6a262facc893c"
+    },
+    {
+      "row_id": 84506,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "The object F is positioned directly below the object U.",
+        "If R is the center of a clock face, K is located between 7 and 8.",
+        "K is over there with F below.",
+        "The object U is positioned above and to the left of object L.",
+        "L and O are side by side with L to the right and O to the left."
+      ],
+      "question": "What is the relation of the agent R to the agent O?",
+      "sample_content_sha256": "eb91c87d59b81f2e27ef76e335908e2e5a05214da377fee8d74db4c672dbdba9",
+      "selection_digest": "2088f30245ecbc6f15b6590afa0d782e81ac0e499e27a04a4b18130ce1bfc67b"
+    },
+    {
+      "row_id": 94828,
+      "computed_hop": 5,
+      "canonical_relation": "BELOW",
+      "story": [
+        "U presents lower right to Z.",
+        "M is positioned right to I.",
+        "O is on the top side to I.",
+        "O is diagonally right and above J.",
+        "Object Z is below object J and to the right of it, too."
+      ],
+      "question": "What is the relation of the agent U to the agent M?",
+      "sample_content_sha256": "25a61fed87a186967deb189bb0e73ad322607d59305bfc3969c8f244803b1cc0",
+      "selection_digest": "2093c2b054a61d734af2e50b49c6e5063a57c304c6b2788d15c738b7782c104a"
+    },
+    {
+      "row_id": 89054,
+      "computed_hop": 5,
+      "canonical_relation": "LOWER_LEFT",
+      "story": [
+        "The object U and K are there. The object K is above and slightly to the left of the object U.",
+        "The object U and Q are there. The object U is below and slightly to the right of the object Q.",
+        "B is under Z.",
+        "If K is the center of a clock face, Z is located between 2 and 3.",
+        "J presents upper right to B."
+      ],
+      "question": "What is the relation of the agent Q to the agent J?",
+      "sample_content_sha256": "b118c2cd7eb1219b66370966ba3394a560c7bc4939cc52f1bf48b2a3189435d9",
+      "selection_digest": "21b457bba66267803b69fddb9df6083a06a8cb9a61edbc79a991e6af88cffa45"
+    },
+    {
+      "row_id": 97550,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_LEFT",
+      "story": [
+        "E is directly north east of R.",
+        "The object Y and L are there. The object Y is below and slightly to the right of the object L.",
+        "S and L are both there with the object S above the object L.",
+        "Y presents over X.",
+        "R is placed at the lower left of S."
+      ],
+      "question": "What is the relation of the agent E to the agent X?",
+      "sample_content_sha256": "be2e6311a7fb23ec324ca131b0b0ac93f6f62a1db3618827a0f2cd7d6c9bb7bd",
+      "selection_digest": "249ff6fd872cac88cc4517020889c24bbc2c5144ea5ecc6adf05c9b9bcf7b5fc"
+    },
+    {
+      "row_id": 97005,
+      "computed_hop": 5,
+      "canonical_relation": "RIGHT",
+      "story": [
+        "W is diagonally to the upper left of E.",
+        "The object M is upper and slightly to the left of the object T.",
+        "T and W are in a horizontal line with W on the right.",
+        "M is above O at 2 o'clock.",
+        "E is directly below S."
+      ],
+      "question": "What is the relation of the agent S to the agent O?",
+      "sample_content_sha256": "6700b3466f4513acf5b50191098e4e482f5f666bedb29a1d85989b638355fb99",
+      "selection_digest": "25e8137043a703eebd8f803e6a54f85795599154e3e074046f7a3bb7c8b5d056"
+    },
+    {
+      "row_id": 102494,
+      "computed_hop": 5,
+      "canonical_relation": "ABOVE",
+      "story": [
+        "H is upper left of Y.",
+        "V is sitting at the lower right position to Q.",
+        "C and Q are vertical and C is below Q.",
+        "The object V and Y are there. The object Y is above and slightly to the left of the object V.",
+        "H is over there and G is on the right of it."
+      ],
+      "question": "What is the relation of the agent G to the agent C?",
+      "sample_content_sha256": "1d54741be3ac9078a84af4149379a7dfa565418dc3dd38d0acddc131cfd76b3c",
+      "selection_digest": "2881bc6db9b441a91c6cea02a5843248bdb7aeb2d9030aa8921b94c3a57e58b5"
+    },
+    {
+      "row_id": 90898,
+      "computed_hop": 5,
+      "canonical_relation": "UPPER_RIGHT",
+      "story": [
+        "D is over there and H is directly above it.",
+        "U is positioned in the lower left corner of H.",
+        "G is on the top side to B.",
+        "G is at P’s 9 o'clock.",
+        "P is lower left to U."
+      ],
+      "question": "What is the relation of the agent D to the agent B?",
+      "sample_content_sha256": "f1a19a8b1ecde78bba2a273dfde4cfac3bd0be8894b9310b02035cb227a78231",
+      "selection_digest": "2c15de900920f5ff8bdc1a8cfd2ad9a3b6b71351909e97acb33eb38e257e8f73"
+    }
+  ]
+}

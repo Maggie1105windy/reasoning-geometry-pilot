@@ -1,0 +1,105 @@
+{
+  "candidate_likelihood_underestimates_behavior": "UNCERTAIN",
+  "thinking_improves_free_generation": "NO",
+  "qwen3_normal_use_task_fitness": {
+    "label": "NO",
+    "display": "WEAK"
+  },
+  "normal_use_task_fitness": "WEAK",
+  "strong_reasoning_target": "UNCERTAIN",
+  "recommended_next_step": "C",
+  "recommendation": "Do not extract Qwen3-8B activations; behavior-gate Qwen/Qwen3.5-9B next.",
+  "fg_n_strong_gate": {
+    "pass": false,
+    "checks": {
+      "derived_accuracy": false,
+      "derived_macro_f1": false,
+      "derived_balanced_accuracy": false,
+      "parse_success": false,
+      "no_prediction_collapse": true,
+      "all_h2_h5_above_majority": true,
+      "majority_relations_meaningful_recall": true,
+      "meaningful_relation_count": 8
+    }
+  },
+  "fg_t_strong_gate": {
+    "pass": false,
+    "checks": {
+      "derived_accuracy": false,
+      "derived_macro_f1": false,
+      "derived_balanced_accuracy": false,
+      "parse_success": false,
+      "no_prediction_collapse": true,
+      "all_h2_h5_above_majority": false,
+      "majority_relations_meaningful_recall": false,
+      "meaningful_relation_count": 1
+    }
+  },
+  "pilot_stochasticity": "LOW",
+  "thinking_primary_evidence": {
+    "comparison": "FG-T minus FG-N",
+    "left": "FG-N",
+    "right": "FG-T",
+    "difference_definition": "FG-T minus FG-N",
+    "scope": "h2-h5-derived",
+    "metric": "accuracy",
+    "point_difference": -0.2213024768995483,
+    "ci95_low": -0.24868465725253253,
+    "ci95_high": -0.19514128522430405,
+    "ci_excludes_zero": true,
+    "bootstrap_resamples": 2000,
+    "seed": 20260910,
+    "unit": "paired story_group_id within hop; derived is equal mean of h2,h3,h4,h5"
+  },
+  "free_generation_descriptive_evidence": {
+    "comparison": "FG-N minus B2.2 Native-Sum",
+    "left": "B2.2 Native-Sum",
+    "right": "FG-N",
+    "difference_definition": "FG-N minus B2.2 Native-Sum",
+    "scope": "h2-h5-derived",
+    "metric": "accuracy",
+    "point_difference": 0.07117987526376424,
+    "ci95_low": 0.038543746428691475,
+    "ci95_high": 0.10554918150402438,
+    "ci_excludes_zero": true,
+    "bootstrap_resamples": 2000,
+    "seed": 20260910,
+    "unit": "paired story_group_id within hop; derived is equal mean of h2,h3,h4,h5"
+  },
+  "matched_decoding_accuracy_evidence": {
+    "comparison": "FG-T-Matched minus FG-N-Matched",
+    "left": "FG-N-Matched",
+    "right": "FG-T-Matched",
+    "difference_definition": "FG-T-Matched minus FG-N-Matched",
+    "scope": "h2-h5-derived",
+    "metric": "accuracy",
+    "point_difference": -0.26,
+    "ci95_low": -0.32499999999999996,
+    "ci95_high": -0.195,
+    "ci_excludes_zero": true,
+    "bootstrap_resamples": 2000,
+    "seed": 20260910,
+    "unit": "paired story_group_id within hop; derived is equal mean of h2,h3,h4,h5"
+  },
+  "decision_thresholds_frozen_before_generation": {
+    "prediction_collapse_cardinal_or_diagonal_frequency": 0.95,
+    "prediction_collapse_single_relation_frequency": 0.8,
+    "strong_derived_accuracy": 0.35,
+    "strong_derived_macro_f1": 0.3,
+    "strong_derived_balanced_accuracy": 0.3,
+    "strong_parse_success": 0.98,
+    "meaningful_relation_recall": 0.05,
+    "minimum_meaningful_relations": 5,
+    "weak_derived_accuracy": 0.3,
+    "weak_derived_macro_f1": 0.2,
+    "weak_derived_balanced_accuracy": 0.2,
+    "uninterpretable_parse_success": 0.95,
+    "underestimation_min_accuracy_gain": 0.1,
+    "underestimation_no_effect_margin": 0.03,
+    "pilot_stochasticity_low_max_range": 0.03,
+    "pilot_stochasticity_moderate_max_range": 0.07,
+    "smoke_truncation_switch_rate": 0.2
+  },
+  "max_full_truncation_rate": 0.9859154929577465,
+  "validation_status": "PASS_WITH_LIMITATION"
+}

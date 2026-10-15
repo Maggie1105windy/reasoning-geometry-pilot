@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "protocol_key": "fg_nonthinking",
+  "protocol": "FG-N",
+  "generation_seed": 20260924,
+  "row_rng_policy": "sha256(generation_seed:row_id) child seed",
+  "rows_expected": 10,
+  "row_ids": [
+    84006,
+    84011,
+    84008,
+    84013,
+    84039,
+    84063,
+    84114,
+    84154,
+    84042,
+    84133
+  ],
+  "row_ids_sha256": "70e90e719c4c02c06c1a6b678cd7a90ae89b0d0314ad74568e8eb3956a0965b1",
+  "generation_config": {
+    "protocol_key": "fg_nonthinking",
+    "config": {
+      "protocol": "FG-N",
+      "enable_thinking": false,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0.0
+    },
+    "max_new_tokens": 1024,
+    "parser_spec_sha256": "2fe7efb61411175ea5ac3e455873a871260ef0877f7efea3207dd809406a1039",
+    "model_identity_sha256": "f9096d1e82eb0918fd4d671cbe0f39c5979d03e6a2148593b4ee1d630ade08b9"
+  },
+  "generation_config_hash": "76891530bc69500f8547816049aef7a48f91d48497339d719f61e98c308f5548",
+  "model_identity_sha256": "f9096d1e82eb0918fd4d671cbe0f39c5979d03e6a2148593b4ee1d630ade08b9",
+  "completed_row_ids": [
+    84006,
+    84011,
+    84008,
+    84013,
+    84039,
+    84063,
+    84114,
+    84154,
+    84042,
+    84133
+  ],
+  "shards": {
+    "84006": {
+      "sha256": "d2e6f96ca0d8fdc9b664d67bfb945dcfd6648ef215799039403a2d9090e4f4a8",
+      "resumed": true
+    },
+    "84011": {
+      "sha256": "70cca570f75ac74d20a8559dd693a7be4cbac5188ffaf25454b0e63387309440",
+      "resumed": true
+    },
+    "84008": {
+      "sha256": "feb269f8ad1bcc5fd9e45ae2da172ce43fc1a72ef6f8928ae17dd4900961a560",
+      "resumed": true
+    },
+    "84013": {
+      "sha256": "2ca46de009b6d0a4c84e253fc7903bf180f126537549670b1555faa4fab5376c",
+      "resumed": true
+    },
+    "84039": {
+      "sha256": "d9f58ecb5874a95bd00233a9ef0ca7da58fabce7b22aac78919a5d466cd25e61",
+      "resumed": true
+    },
+    "84063": {
+      "sha256": "46cb617a399683ff82cb113834db5fe356a61daef4360f1862aea5ef70a4d5b9",
+      "resumed": true
+    },
+    "84114": {
+      "sha256": "3737bb80734ddca17063402b76e17610e526727393b262ca08df74f96cb94816",
+      "resumed": true
+    },
+    "84154": {
+      "sha256": "4ab3aea24649858b3f080b12e5e6006fe8a87c3b133d5151bad7c5d1d48125c7",
+      "resumed": true
+    },
+    "84042": {
+      "sha256": "9c38188a999260e3bd7dbb66998cbab10e5e4afe6f207657b6d4560e7284cfed",
+      "resumed": true
+    },
+    "84133": {
+      "sha256": "aee92771e9fd45a944fb5266ccec64229e57444219723f5b692a4b14dea42512",
+      "resumed": true
+    }
+  },
+  "row_generations_sha256": "b4399269dc7f91b19f751b55d0e691ece831edfcbd15ded7bf6a9ccd8cde74bc",
+  "metrics_sha256": "eade7e7ce778ab2e309bc615dd07953898aa52804f3e7655ae4cf23e7f1c2830",
+  "total_generated_tokens": 3363,
+  "summed_row_latency_seconds": 542.2938662432134,
+  "tokens_per_second_summed": 6.201434700520341,
+  "max_allocated_gib": 15.25840425491333,
+  "max_reserved_gib": 15.400390625
+}

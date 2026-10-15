@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "resolved_max_new_tokens": 2048,
+  "proposals": {
+    "fg_nonthinking": 8,
+    "fg_thinking": 8
+  },
+  "resolved_batch_sizes": {
+    "fg_nonthinking": 8,
+    "fg_thinking": 8
+  },
+  "attempts": [
+    {
+      "protocol_key": "fg_nonthinking",
+      "batch_size": 8,
+      "status": "PASS",
+      "max_allocated_gib": 15.25840425491333,
+      "max_reserved_gib": 15.400390625,
+      "wall_seconds": 0.025234486907720566,
+      "accuracy_not_used": true
+    },
+    {
+      "protocol_key": "fg_thinking",
+      "batch_size": 8,
+      "status": "PASS",
+      "max_allocated_gib": 17.97398090362549,
+      "max_reserved_gib": 23.341796875,
+      "wall_seconds": 319.50471425801516,
+      "accuracy_not_used": true
+    }
+  ],
+  "accuracy_was_not_used": true
+}

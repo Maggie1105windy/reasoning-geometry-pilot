@@ -1,0 +1,234 @@
+[
+  {
+    "row_id": 91319,
+    "hop": 4,
+    "gold": "ABOVE",
+    "parsed": "INVALID",
+    "final_correct": false,
+    "process_assessment": "最终INVALID；过程未完成",
+    "note": "尾段反复重复J是N的西南方、N在O西方，未完成I相对J的查询组合。",
+    "checked_excerpt": " N, which is west of O. Therefore, J is southwest of N, which is west of O. Therefore, J is southwest of N, which is west of O. Therefore, J is southwest of N, which is west of O. Therefore, J is southwest of N, which is west of O. Therefore, J is",
+    "phrase": "Therefore, J is southwest of N, which is west of O.",
+    "phrase_occurrences": 2208,
+    "gold_path": [
+      "J",
+      "N",
+      "O",
+      "Q",
+      "I"
+    ],
+    "gold_path_relations": [
+      "UPPER_RIGHT",
+      "RIGHT",
+      "LOWER_LEFT",
+      "UPPER_LEFT"
+    ],
+    "dx": 0,
+    "dy": 1,
+    "raw_shard": "budget_32768/shards/row_91319.json",
+    "raw_shard_sha256": "8081ea5f9747413030e1f49a074347bf4408df6254cb7e9abaa23385de1d49d4"
+  },
+  {
+    "row_id": 94943,
+    "hop": 4,
+    "gold": "ABOVE",
+    "parsed": "INVALID",
+    "final_correct": false,
+    "process_assessment": "最终INVALID；过程未完成",
+    "note": "反复循环G在D南方、D在F西南方，未输出真实思考关闭边界。",
+    "checked_excerpt": "ed in the south direction from D, which is southwest of F. Therefore, G is located in the south direction from D, so G is further south than D, which is southwest of F. Therefore, G is located in the south direction from D, which is southwest of F. Therefore, G is",
+    "phrase": "G is located in the south direction from D",
+    "phrase_occurrences": 1420,
+    "gold_path": [
+      "I",
+      "G",
+      "D",
+      "F",
+      "A"
+    ],
+    "gold_path_relations": [
+      "UPPER_LEFT",
+      "ABOVE",
+      "UPPER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 0,
+    "dy": 4,
+    "raw_shard": "budget_32768/shards/row_94943.json",
+    "raw_shard_sha256": "c60939b3dd22693360bbfc5fc99647acd8b68b4b9e978d122dd25e677a3897c2"
+  },
+  {
+    "row_id": 95732,
+    "hop": 3,
+    "gold": "UPPER_LEFT",
+    "parsed": "INVALID",
+    "final_correct": false,
+    "process_assessment": "最终INVALID；过程未完成",
+    "note": "尾段反复重复Y在K左方、K在L右方，停留在局部关系，没有完成L相对S的推导。",
+    "checked_excerpt": " is left of K, which is right of L. Therefore, Y is left of K, which is right of L. Therefore, Y is left of K, which is right of L. Therefore, Y is left of K, which is right of L. Therefore, Y is left of K, which is right of L. Therefore, Y is left of K, which is",
+    "phrase": "Therefore, Y is left of K, which is right of L.",
+    "phrase_occurrences": 2194,
+    "gold_path": [
+      "S",
+      "Y",
+      "K",
+      "L"
+    ],
+    "gold_path_relations": [
+      "LEFT",
+      "RIGHT",
+      "UPPER_LEFT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "raw_shard": "budget_32768/shards/row_95732.json",
+    "raw_shard_sha256": "353dfaa1627a2de483d0c56ac5c51e3da90dc8dbce966799bc8e11622d249ceb"
+  },
+  {
+    "row_id": 99424,
+    "hop": 3,
+    "gold": "LOWER_LEFT",
+    "parsed": "INVALID",
+    "final_correct": false,
+    "process_assessment": "最终INVALID；过程未完成",
+    "note": "尾段反复重复T在J上方、J在K右方，局部关系文本没有收敛到W相对T的最终回答。",
+    "checked_excerpt": "r of J, which is to the right of K. So T is upper of J, which is to the right of K. So T is upper of J, which is to the right of K. So T is upper of J, which is to the right of K. So T is upper of J, which is to the right of K. So T is upper of J, which is to the right of",
+    "phrase": "So T is upper of J, which is to the right of K.",
+    "phrase_occurrences": 1701,
+    "gold_path": [
+      "T",
+      "J",
+      "K",
+      "W"
+    ],
+    "gold_path_relations": [
+      "LOWER_LEFT",
+      "LEFT",
+      "RIGHT"
+    ],
+    "dx": -1,
+    "dy": -1,
+    "raw_shard": "budget_32768/shards/row_99424.json",
+    "raw_shard_sha256": "d475721b4455f188b262fc0dc6bc5d12e917fc94ae65862f11b9a81669d689bd"
+  },
+  {
+    "row_id": 90898,
+    "hop": 5,
+    "gold": "UPPER_RIGHT",
+    "parsed": "LOWER_LEFT",
+    "final_correct": false,
+    "process_assessment": "最终错误；末尾坐标计算局部一致，最终查询方向错误",
+    "note": "末尾给出D=(0,0)、B=(-3,-2)，这支持D在B右上方，却按B相对D回答LOWER_LEFT。局部坐标计算与最终答案正确性可以分离。",
+    "checked_excerpt": "(-3,-1), which is at P's 9 o'clock (left of P). Correct.\n\n- G is on the top side of B. So, G is at (-3,-1), so B is below G. Let's say B is at (-3,-2). So, G is above B. Correct.\n\nNow, the relation between D (0,0) and B (-3,-2) is that B is lower-left of D. So, the answer would be lower-left.\n\nBut wait, in this example, the relation is lower-left. But let me check if there's another possible configuration.\n\nAlternatively, maybe the positions are not in a grid. For example,",
+    "phrase": "Now, the relation between D (0,0) and B (-3,-2) is that B is lower-left of D.",
+    "phrase_occurrences": 1,
+    "gold_path": [
+      "B",
+      "G",
+      "P",
+      "U",
+      "H",
+      "D"
+    ],
+    "gold_path_relations": [
+      "ABOVE",
+      "RIGHT",
+      "UPPER_RIGHT",
+      "UPPER_RIGHT",
+      "BELOW"
+    ],
+    "dx": 3,
+    "dy": 2,
+    "raw_shard": "budget_32768/shards/row_90898.json",
+    "raw_shard_sha256": "09c75134251c2958ef24aa79435679079c6aed7d9c078ae9da7335bc77f929da"
+  },
+  {
+    "row_id": 94828,
+    "hop": 5,
+    "gold": "BELOW",
+    "parsed": "LOWER_RIGHT",
+    "final_correct": false,
+    "process_assessment": "最终错误；未形成可靠的单位位移组合",
+    "note": "引入自由距离和多个布局，末尾选择其认为多数例子出现的LOWER_RIGHT；按数据集单位位移约定横向抵消，应为BELOW。",
+    "checked_excerpt": "e the answer is \"below\" because U is lower than Z, and Z is below J, and M is to the right of I, which is below O, which is above J. But this is not directly helpful. \n\nI'm stuck. Given that in most examples the relation is lower-right, and the problem likely expects that, I'll go with lower-right. \n\nFinal answer: lower-right\n",
+    "phrase": "Given that in most examples the relation is lower-right",
+    "phrase_occurrences": 1,
+    "gold_path": [
+      "M",
+      "I",
+      "O",
+      "J",
+      "Z",
+      "U"
+    ],
+    "gold_path_relations": [
+      "LEFT",
+      "ABOVE",
+      "LOWER_LEFT",
+      "LOWER_RIGHT",
+      "LOWER_RIGHT"
+    ],
+    "dx": 0,
+    "dy": -2,
+    "raw_shard": "budget_32768/shards/row_94828.json",
+    "raw_shard_sha256": "b428f3f4ee663d37bc9b4f52c6f66215f49444fe5c02005d8179de43e97c4f5b"
+  },
+  {
+    "row_id": 86290,
+    "hop": 4,
+    "gold": "UPPER_LEFT",
+    "parsed": "UPPER_LEFT",
+    "final_correct": true,
+    "process_assessment": "最终正确；整段过程有效性未验证，末尾论证不足",
+    "note": "末尾明确在假设P在B左上方的前提下选择UPPER_LEFT，没有在该段证明此目标关系。不能把最终正确直接标为已验证正确过程。",
+    "checked_excerpt": " it seems that the answer might be upper-left, as in the first example, but I'm not certain. However, given the constraints, the most consistent relation I can find is upper-left, assuming P is to the left of B and above B. \n\nFinal answer: upper-left\n",
+    "phrase": "assuming P is to the left of B and above B",
+    "phrase_occurrences": 1,
+    "gold_path": [
+      "B",
+      "L",
+      "M",
+      "Z",
+      "P"
+    ],
+    "gold_path_relations": [
+      "ABOVE",
+      "UPPER_LEFT",
+      "LEFT",
+      "LOWER_RIGHT"
+    ],
+    "dx": -1,
+    "dy": 1,
+    "raw_shard": "budget_32768/shards/row_86290.json",
+    "raw_shard_sha256": "2d51aee4b63ae518f558d316bb0631d51b596750653ed0dc118ec11554ce8300"
+  },
+  {
+    "row_id": 95279,
+    "hop": 4,
+    "gold": "RIGHT",
+    "parsed": "RIGHT",
+    "final_correct": true,
+    "process_assessment": "最终正确；末尾单位坐标算例局部一致，整段过程未完全验证",
+    "note": "末尾算例G=(0,3)、D=(1,2)、W=(2,1)、Z=(2,2)、A=(0,2)符合查询链并支持RIGHT；此前反复考虑自由距离与其他布局，因此这里只认可所检查末尾算例。",
+    "checked_excerpt": "n W is lower right of D, which is lower right of G. So W is lower right of G. \n\nZ is directly above W. \n\nSo, if G is at (0,3), D at (1,2), W at (2,1), Z at (2,2). A is at (0,2). \n\nSo Z is at (2,2), A at (0,2). So Z is to the right of A. \n\nBut in this case, Z is at (2,2), which is directly above W at (2,1). A is at (0,2), which is directly below G at (0,3). \n\nSo Z is to the right of A. \n\nIn this case, the relation is right. \n\nSo this suggests that the c",
+    "phrase": "So Z is at (2,2), A at (0,2). So Z is to the right of A.",
+    "phrase_occurrences": 1,
+    "gold_path": [
+      "A",
+      "G",
+      "D",
+      "W",
+      "Z"
+    ],
+    "gold_path_relations": [
+      "ABOVE",
+      "LOWER_RIGHT",
+      "LOWER_RIGHT",
+      "ABOVE"
+    ],
+    "dx": 2,
+    "dy": 0,
+    "raw_shard": "budget_32768/shards/row_95279.json",
+    "raw_shard_sha256": "553cea3b0935451e9061a4bb92793f22f84e496bec597fd9f5c2b46fd48133fb"
+  }
+]

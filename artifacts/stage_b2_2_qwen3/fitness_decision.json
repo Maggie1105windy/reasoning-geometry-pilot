@@ -1,0 +1,104 @@
+{
+  "data_integrity": "PASS",
+  "tokenizer_boundary_audit": "PASS",
+  "native_behavior_stronger_than_tulu": "UNCERTAIN",
+  "above_uniform_chance": "YES",
+  "above_majority_baseline": "YES",
+  "macro_f1_improved": "UNCERTAIN",
+  "balanced_accuracy_improved": "UNCERTAIN",
+  "prediction_collapse": {
+    "status": "NO",
+    "raw": "YES",
+    "native": "NO",
+    "raw_flags": [
+      {
+        "scope": "all",
+        "predicted_cardinal_frequency": 1.0,
+        "predicted_diagonal_frequency": 0.0,
+        "max_single_relation_frequency": 0.825496849248667,
+        "dominant_relation": "BELOW"
+      },
+      {
+        "scope": "h1",
+        "predicted_cardinal_frequency": 1.0,
+        "predicted_diagonal_frequency": 0.0,
+        "max_single_relation_frequency": 0.8103932584269663,
+        "dominant_relation": "BELOW"
+      },
+      {
+        "scope": "h2",
+        "predicted_cardinal_frequency": 1.0,
+        "predicted_diagonal_frequency": 0.0,
+        "max_single_relation_frequency": 0.8297029702970297,
+        "dominant_relation": "BELOW"
+      },
+      {
+        "scope": "h3",
+        "predicted_cardinal_frequency": 1.0,
+        "predicted_diagonal_frequency": 0.0,
+        "max_single_relation_frequency": 0.8151658767772512,
+        "dominant_relation": "BELOW"
+      },
+      {
+        "scope": "h4",
+        "predicted_cardinal_frequency": 1.0,
+        "predicted_diagonal_frequency": 0.0,
+        "max_single_relation_frequency": 0.8546099290780141,
+        "dominant_relation": "BELOW"
+      },
+      {
+        "scope": "h5",
+        "predicted_cardinal_frequency": 1.0,
+        "predicted_diagonal_frequency": 0.0,
+        "max_single_relation_frequency": 0.8591549295774648,
+        "dominant_relation": "BELOW"
+      }
+    ],
+    "native_flags": []
+  },
+  "protocol_sensitivity": {
+    "status": "HIGH",
+    "native_protocol_derived_accuracy_range": 0.09810528382647511,
+    "protocol_collapse": {
+      "Native-Sum": false,
+      "Native-Mean": true,
+      "EqualLength-Native": false
+    }
+  },
+  "strong_reasoning_target": "UNCERTAIN",
+  "recommended_next_step": "C. Qwen remains weak or uncertain: do not start full activation extraction; examine free generation/thinking-mode evaluation or a stronger model in a future preregistered stage.",
+  "gate_thresholds_frozen_before_accuracy": {
+    "collapse_cardinal_or_diagonal_frequency": 0.95,
+    "collapse_single_relation_frequency": 0.8,
+    "high_sensitivity_derived_accuracy_range": 0.2,
+    "high_sensitivity_weak_protocol_accuracy": 0.15,
+    "native_stronger_requires_ci_low_above_zero_for": [
+      "accuracy",
+      "macro_f1",
+      "balanced_accuracy"
+    ],
+    "strong_gate_hops": [
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "native_comparison_evidence": {
+    "accuracy": {
+      "point_difference": 0.0024107657589040044,
+      "ci95_low": -0.025024510305216748,
+      "ci95_high": 0.029616991821290694
+    },
+    "macro_f1": {
+      "point_difference": -0.013195048329328427,
+      "ci95_low": -0.03359254070095514,
+      "ci95_high": 0.005627716912044725
+    },
+    "balanced_accuracy": {
+      "point_difference": -0.005153893171792219,
+      "ci95_low": -0.028320686194161414,
+      "ci95_high": 0.016157119452249704
+    }
+  }
+}

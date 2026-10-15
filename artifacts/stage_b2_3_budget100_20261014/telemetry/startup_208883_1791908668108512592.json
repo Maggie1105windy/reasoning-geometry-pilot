@@ -1,0 +1,18 @@
+{
+  "index": "0",
+  "uuid": "GPU-96d04dc4-7b93-64e2-b437-7f549134115c",
+  "name": "NVIDIA GeForce RTX 3090",
+  "memory.total": "24576",
+  "memory.used": "20",
+  "memory.free": "24234",
+  "temperature.gpu": "30",
+  "power.draw": "15.95",
+  "pstate": "P8",
+  "clocks.current.sm": "0",
+  "clocks.current.memory": "405",
+  "utilization.gpu": "0",
+  "compute_processes": [],
+  "captured_utc": "2026-10-13T16:23:39.585827+00:00",
+  "raw_gpu_query": "0, GPU-96d04dc4-7b93-64e2-b437-7f549134115c, NVIDIA GeForce RTX 3090, 24576, 20, 24234, 30, 15.95, P8, 0, 405, 0\n",
+  "raw_process_query": ""
+}
